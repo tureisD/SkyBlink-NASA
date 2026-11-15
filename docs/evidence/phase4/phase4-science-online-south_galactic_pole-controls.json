@@ -1,0 +1,439 @@
+{
+  "field": {
+    "id": "south_galactic_pole",
+    "ra": 12.85948,
+    "dec": -27.12825,
+    "research_radius_deg": 0.5
+  },
+  "catalog_eligible_count": 10,
+  "locked_controls": [
+    {
+      "gaia": {
+        "source_id": "2342655178203440640",
+        "ra": 13.176985218331916,
+        "dec": -27.37246904160862,
+        "ref_epoch": 2016.0,
+        "pmra": 9.475853423675197,
+        "pmdec": -0.9923035373834883,
+        "parallax": 1.127280699711778,
+        "ruwe": 1.2304877042770386,
+        "phot_g_mean_mag": 10.071656227111816,
+        "phot_variable_flag": "NOT_AVAILABLE"
+      },
+      "allwise": {
+        "designation": "J005242.46-272220.8",
+        "ra": 13.1769422,
+        "dec": -27.3724711,
+        "clon": "00h52m42.47s",
+        "clat": "-27d22m20.90s",
+        "w1mpro": 7.938,
+        "w2mpro": 8.029,
+        "w1snr": 44.8,
+        "w2snr": 54.0,
+        "ph_qual": "AAAB",
+        "cc_flags": "0000",
+        "var_flg": "111n",
+        "ext_flg": 0,
+        "dist": 1343.608401,
+        "angle": 130.943249
+      },
+      "query_2025_8": {
+        "ra": 13.17701426639907,
+        "dec": -27.372471742914257
+      },
+      "nearest_gaia_arcsec": 39.19863224860423,
+      "nearest_allwise_arcsec": 39.15356592468693,
+      "allwise_match_arcsec": 0.08637022325574777
+    },
+    {
+      "gaia": {
+        "source_id": "2342673285785556864",
+        "ra": 13.042609056603682,
+        "dec": -27.17163511523821,
+        "ref_epoch": 2016.0,
+        "pmra": 26.23182909523882,
+        "pmdec": -0.00823146710275581,
+        "parallax": 0.902251413004084,
+        "ruwe": 1.006798267364502,
+        "phot_g_mean_mag": 13.38871955871582,
+        "phot_variable_flag": "NOT_AVAILABLE"
+      },
+      "allwise": {
+        "designation": "J005210.20-271017.8",
+        "ra": 13.0425411,
+        "dec": -27.1716365,
+        "clon": "00h52m10.21s",
+        "clat": "-27d10m17.89s",
+        "w1mpro": 11.408,
+        "w2mpro": 11.475,
+        "w1snr": 48.0,
+        "w2snr": 53.2,
+        "ph_qual": "AABU",
+        "cc_flags": "0000",
+        "var_flg": "00nn",
+        "ext_flg": 0,
+        "dist": 606.8507,
+        "angle": 104.956426
+      },
+      "query_2025_8": {
+        "ra": 13.042689324650167,
+        "dec": -27.171635137623568
+      },
+      "nearest_gaia_arcsec": 53.00857282939043,
+      "nearest_allwise_arcsec": 32.216193976483545,
+      "allwise_match_arcsec": 0.07353381268553032
+    },
+    {
+      "gaia": {
+        "source_id": "2342678886422908544",
+        "ra": 13.019488074135523,
+        "dec": -27.08197580512447,
+        "ref_epoch": 2016.0,
+        "pmra": 19.97357124327213,
+        "pmdec": -31.4845793298267,
+        "parallax": 1.4387690437709744,
+        "ruwe": 0.9967020153999329,
+        "phot_g_mean_mag": 13.537294387817383,
+        "phot_variable_flag": "NOT_AVAILABLE"
+      },
+      "allwise": {
+        "designation": "J005204.66-270454.9",
+        "ra": 13.0194369,
+        "dec": -27.0819403,
+        "clon": "00h52m04.66s",
+        "clat": "-27d04m54.99s",
+        "w1mpro": 12.075,
+        "w2mpro": 12.108,
+        "w1snr": 47.2,
+        "w2snr": 46.7,
+        "ph_qual": "AABU",
+        "cc_flags": "0000",
+        "var_flg": "11nn",
+        "ext_flg": 0,
+        "dist": 539.030344,
+        "angle": 72.020204
+      },
+      "query_2025_8": {
+        "ra": 13.01954914330323,
+        "dec": -27.08206151433529
+      },
+      "nearest_gaia_arcsec": 55.35307812546735,
+      "nearest_allwise_arcsec": 39.16698495403984,
+      "allwise_match_arcsec": 0.07064893311812871
+    },
+    {
+      "gaia": {
+        "source_id": "2342687545077003136",
+        "ra": 13.28879157437692,
+        "dec": -27.047093787539293,
+        "ref_epoch": 2016.0,
+        "pmra": 17.383293988866043,
+        "pmdec": -2.855940103262208,
+        "parallax": 1.023632082623419,
+        "ruwe": 0.973094642162323,
+        "phot_g_mean_mag": 13.816693305969238,
+        "phot_variable_flag": "NOT_AVAILABLE"
+      },
+      "allwise": {
+        "designation": "J005309.29-270249.5",
+        "ra": 13.288725,
+        "dec": -27.0471041,
+        "clon": "00h53m09.29s",
+        "clat": "-27d02m49.57s",
+        "w1mpro": 12.258,
+        "w2mpro": 12.292,
+        "w1snr": 47.3,
+        "w2snr": 45.0,
+        "ph_qual": "AABU",
+        "cc_flags": "0000",
+        "var_flg": "11nn",
+        "ext_flg": 0,
+        "dist": 1406.452504,
+        "angle": 78.109981
+      },
+      "query_2025_8": {
+        "ra": 13.288844707207959,
+        "dec": -27.04710156214201
+      },
+      "nearest_gaia_arcsec": 73.40613033852003,
+      "nearest_allwise_arcsec": 34.11694687922839,
+      "allwise_match_arcsec": 0.12914379376345653
+    },
+    {
+      "gaia": {
+        "source_id": "2342875699006181376",
+        "ra": 12.450380248901105,
+        "dec": -27.047109763241977,
+        "ref_epoch": 2016.0,
+        "pmra": 7.072773544960452,
+        "pmdec": -0.7865490938043578,
+        "parallax": 0.8984061450031425,
+        "ruwe": 0.9501441717147827,
+        "phot_g_mean_mag": 14.349837303161621,
+        "phot_variable_flag": "NOT_AVAILABLE"
+      },
+      "allwise": {
+        "designation": "J004948.08-270249.6",
+        "ra": 12.4503678,
+        "dec": -27.0471339,
+        "clon": "00h49m48.09s",
+        "clat": "-27d02m49.68s",
+        "w1mpro": 13.084,
+        "w2mpro": 13.117,
+        "w1snr": 45.9,
+        "w2snr": 39.3,
+        "ph_qual": "AAUU",
+        "cc_flags": "0000",
+        "var_flg": "11nn",
+        "ext_flg": 0,
+        "dist": 1343.375191,
+        "angle": 282.461773
+      },
+      "query_2025_8": {
+        "ra": 12.450401867158071,
+        "dec": -27.047111904431787
+      },
+      "nearest_gaia_arcsec": 38.73882349507323,
+      "nearest_allwise_arcsec": 39.64438991086924,
+      "allwise_match_arcsec": 0.0912242312187819
+    },
+    {
+      "gaia": {
+        "source_id": "2342656002837160832",
+        "ra": 13.158505343805684,
+        "dec": -27.351152319495355,
+        "ref_epoch": 2016.0,
+        "pmra": 11.14827352570346,
+        "pmdec": -9.568391027947204,
+        "parallax": 1.582417440357723,
+        "ruwe": 1.0066406726837158,
+        "phot_g_mean_mag": 16.882858276367188,
+        "phot_variable_flag": "NOT_AVAILABLE"
+      },
+      "allwise": {
+        "designation": "J005238.03-272104.0",
+        "ra": 13.1584679,
+        "dec": -27.3511264,
+        "clon": "00h52m38.03s",
+        "clat": "-27d21m04.06s",
+        "w1mpro": 13.779,
+        "w2mpro": 13.738,
+        "w1snr": 41.8,
+        "w2snr": 30.6,
+        "ph_qual": "AAUU",
+        "cc_flags": "0000",
+        "var_flg": "00nn",
+        "ext_flg": 0,
+        "dist": 1248.83832,
+        "angle": 130.045385
+      },
+      "query_2025_8": {
+        "ra": 13.158539512076088,
+        "dec": -27.35117836714334
+      },
+      "nearest_gaia_arcsec": 56.24459001293309,
+      "nearest_allwise_arcsec": 32.70858147708192,
+      "allwise_match_arcsec": 0.07117964846429789
+    },
+    {
+      "gaia": {
+        "source_id": "2342663149662738432",
+        "ra": 13.20455361921122,
+        "dec": -27.146490362427578,
+        "ref_epoch": 2016.0,
+        "pmra": -5.371906130765231,
+        "pmdec": -1.8348829626503411,
+        "parallax": 0.7317571179452753,
+        "ruwe": 1.019453763961792,
+        "phot_g_mean_mag": 15.189262390136719,
+        "phot_variable_flag": "NOT_AVAILABLE"
+      },
+      "allwise": {
+        "designation": "J005249.09-270847.3",
+        "ra": 13.2045542,
+        "dec": -27.1464808,
+        "clon": "00h52m49.09s",
+        "clat": "-27d08m47.33s",
+        "w1mpro": 13.814,
+        "w2mpro": 13.833,
+        "w1snr": 39.5,
+        "w2snr": 30.0,
+        "ph_qual": "AAUU",
+        "cc_flags": "0000",
+        "var_flg": "01nn",
+        "ext_flg": 0,
+        "dist": 1107.458888,
+        "angle": 93.476174
+      },
+      "query_2025_8": {
+        "ra": 13.204537185154788,
+        "dec": -27.146495357455887
+      },
+      "nearest_gaia_arcsec": 48.381994320008,
+      "nearest_allwise_arcsec": 31.85985088978076,
+      "allwise_match_arcsec": 0.0368594241536014
+    },
+    {
+      "gaia": {
+        "source_id": "2342557733985442176",
+        "ra": 12.81946457170383,
+        "dec": -27.480143916729354,
+        "ref_epoch": 2016.0,
+        "pmra": 2.0450984354536126,
+        "pmdec": -6.634364601654383,
+        "parallax": 0.6068203822762475,
+        "ruwe": 1.0316630601882935,
+        "phot_g_mean_mag": 15.677995681762695,
+        "phot_variable_flag": "NOT_AVAILABLE"
+      },
+      "allwise": {
+        "designation": "J005116.66-272848.5",
+        "ra": 12.8194359,
+        "dec": -27.4801582,
+        "clon": "00h51m16.66s",
+        "clat": "-27d28m48.57s",
+        "w1mpro": 14.204,
+        "w2mpro": 14.204,
+        "w1snr": 39.8,
+        "w2snr": 24.9,
+        "ph_qual": "AAUU",
+        "cc_flags": "0000",
+        "var_flg": "00nn",
+        "ext_flg": 0,
+        "dist": 1273.329163,
+        "angle": 185.764556
+      },
+      "query_2025_8": {
+        "ra": 12.819470847035959,
+        "dec": -27.48016197719735
+      },
+      "nearest_gaia_arcsec": 82.70827887554105,
+      "nearest_allwise_arcsec": 38.791860234198985,
+      "allwise_match_arcsec": 0.11908062265111524
+    },
+    {
+      "gaia": {
+        "source_id": "2342863363860108032",
+        "ra": 12.535131668602927,
+        "dec": -27.06855279612726,
+        "ref_epoch": 2016.0,
+        "pmra": 2.841787100160176,
+        "pmdec": -5.967816359276688,
+        "parallax": 0.6177180234254199,
+        "ruwe": 0.9854742288589478,
+        "phot_g_mean_mag": 16.002681732177734,
+        "phot_variable_flag": "NOT_AVAILABLE"
+      },
+      "allwise": {
+        "designation": "J005008.43-270406.8",
+        "ra": 12.5351557,
+        "dec": -27.0685747,
+        "clon": "00h50m08.44s",
+        "clat": "-27d04m06.87s",
+        "w1mpro": 14.236,
+        "w2mpro": 14.283,
+        "w1snr": 39.1,
+        "w2snr": 23.9,
+        "ph_qual": "AAUU",
+        "cc_flags": "0000",
+        "var_flg": "00nn",
+        "ext_flg": 0,
+        "dist": 1061.367213,
+        "angle": 281.604007
+      },
+      "query_2025_8": {
+        "ra": 12.535140356317369,
+        "dec": -27.06856904207724
+      },
+      "nearest_gaia_arcsec": 101.61851548299852,
+      "nearest_allwise_arcsec": 37.68666580774243,
+      "allwise_match_arcsec": 0.1451187072571988
+    },
+    {
+      "gaia": {
+        "source_id": "2342646966225943296",
+        "ra": 12.96314593296387,
+        "dec": -27.562484657641917,
+        "ref_epoch": 2016.0,
+        "pmra": 17.20799915258418,
+        "pmdec": -8.25112384744267,
+        "parallax": 0.8760695662103943,
+        "ruwe": 0.9673182964324951,
+        "phot_g_mean_mag": 16.724531173706055,
+        "phot_variable_flag": "NOT_AVAILABLE"
+      },
+      "allwise": {
+        "designation": "J005151.14-273344.8",
+        "ra": 12.9631012,
+        "dec": -27.562466,
+        "clon": "00h51m51.14s",
+        "clat": "-27d33m44.88s",
+        "w1mpro": 14.568,
+        "w2mpro": 14.688,
+        "w1snr": 35.6,
+        "w2snr": 18.1,
+        "ph_qual": "AAUU",
+        "cc_flags": "0000",
+        "var_flg": "00nn",
+        "ext_flg": 0,
+        "dist": 1597.910107,
+        "angle": 168.05578
+      },
+      "query_2025_8": {
+        "ra": 12.963198774823283,
+        "dec": -27.562507119339767
+      },
+      "nearest_gaia_arcsec": 84.5357108658808,
+      "nearest_allwise_arcsec": 31.801357431615294,
+      "allwise_match_arcsec": 0.052813734784561285
+    }
+  ],
+  "rejections": {
+    "gaia_quality": 984,
+    "region_margin": 62,
+    "missing_quality": 15,
+    "allwise_neighbor": 155,
+    "gaia_neighbor": 88,
+    "allwise_quality": 1
+  },
+  "gaia_missing_neighbor_pm": 15,
+  "position_check": "Catalog lock at2025.8; per-exposure geometry and propagated neighbor checks repeated before flux",
+  "preregistration_sha256": "e913d6ae59d84f084a8c09cef50b8a18cf2e76cad45460351d2bf02e9a2c5d5a",
+  "sources": {
+    "gaia": {
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync",
+      "parameters": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "votable",
+        "QUERY": "SELECT TOP 20000 source_id,ra,dec,ref_epoch,pmra,pmdec,parallax,ruwe,phot_g_mean_mag,phot_variable_flag FROM gaiadr3.gaia_source WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',12.85948,-27.12825,0.5)) AND phot_g_mean_mag<=20 ORDER BY source_id"
+      },
+      "retrieved_at": "2026-11-14T20:51:41.834124+00:00",
+      "sha256": "637ec5ecc46e25467b68da7e4483f7b42d647a9c181e84cefd2a37a6bb1a2169",
+      "bytes": 152574,
+      "rows": 1315,
+      "elapsed_seconds": 3.483999999240041,
+      "path": "backend/.cache/phase4/online-science/south_galactic_pole/gaia.xml",
+      "is_simulated_fallback": false
+    },
+    "allwise": {
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+      "parameters": {
+        "catalog": "allwise_p3as_psd",
+        "spatial": "Cone",
+        "objstr": "12.85948 -27.12825",
+        "radius": "30",
+        "radunits": "arcmin",
+        "outfmt": "3",
+        "selcols": "designation,ra,dec,w1mpro,w2mpro,w1snr,w2snr,ph_qual,cc_flags,var_flg,ext_flg"
+      },
+      "retrieved_at": "2026-11-14T20:51:55.247689+00:00",
+      "sha256": "0b3f6976017f8cbc7227ea15cf2d2e05000c2e3829463f88fc977c7af103dae2",
+      "bytes": 5898525,
+      "rows": 11028,
+      "elapsed_seconds": 16.921999998390675,
+      "path": "backend/.cache/phase4/online-science/south_galactic_pole/allwise.xml",
+      "is_simulated_fallback": false
+    }
+  }
+}

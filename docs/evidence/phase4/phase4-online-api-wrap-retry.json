@@ -1,0 +1,182 @@
+{
+  "scope": "one identical retry of the failed fixed coordinate, original failure retained",
+  "results": [
+    {
+      "name": "ra_wrap",
+      "endpoint": "sky",
+      "query": {
+        "source": "archive",
+        "ra": 359.9999999,
+        "dec": -20.0,
+        "size": 0.05
+      },
+      "requested_at": "2026-11-14T21:43:58.862036+00:00",
+      "http_status": 200,
+      "elapsed_seconds": 80.609,
+      "analysis_id": "sha256:da5a54893206a71cc4f2f52267e0619c1217c285d02eedb33267d8e7d805a402",
+      "data_access": "archive",
+      "record_sha256": "fd5b5ba199dd5e644f5964dec02ca9b05c18267fe6ea8928466132ae851d2e9c",
+      "comparison_status": "unmatched_single_epoch",
+      "comparison_reason": "NO_MATCHED_PAIR_IN_BOUNDED_SAMPLE",
+      "discovery": {
+        "collection_results": [
+          {
+            "collection": "spherex_dr1",
+            "rows": 231,
+            "status": "complete"
+          },
+          {
+            "collection": "spherex_qr3",
+            "rows": 132,
+            "status": "complete"
+          },
+          {
+            "collection": "spherex_dr1_deep",
+            "rows": 0,
+            "status": "complete"
+          },
+          {
+            "collection": "spherex_qr3_deep",
+            "rows": 0,
+            "status": "complete"
+          }
+        ],
+        "collections": [
+          "spherex_dr1",
+          "spherex_qr3",
+          "spherex_dr1_deep",
+          "spherex_qr3_deep"
+        ],
+        "completeness_scope": "requested_current_release_collections_at_query_time",
+        "ingestion_note": "Official IRSA documentation notes SIA may lag new directory/TAP products by about one day",
+        "method": "sia2",
+        "missing_collections": [],
+        "parallel_collections": true,
+        "policy": "sia2_then_tap",
+        "query": {
+          "dec": -20.0,
+          "ra": 359.9999999
+        },
+        "record_count": 363,
+        "responses": [
+          {
+            "cache_relative_path": "discovery-responses/fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_dr1_deep",
+              "MAXREC": 100000,
+              "POS": "circle 359.99999990 -20.00000000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd",
+            "size_bytes": 27474,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_dr1_deep&POS=circle+359.99999990+-20.00000000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          },
+          {
+            "cache_relative_path": "discovery-responses/fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_qr3_deep",
+              "MAXREC": 100000,
+              "POS": "circle 359.99999990 -20.00000000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd",
+            "size_bytes": 27474,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3_deep&POS=circle+359.99999990+-20.00000000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          },
+          {
+            "cache_relative_path": "discovery-responses/a2e0b215cb7967caebdb5dbaffafe4b926a66e86918c7eefb4e760681e911ad1.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_qr3",
+              "MAXREC": 100000,
+              "POS": "circle 359.99999990 -20.00000000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "a2e0b215cb7967caebdb5dbaffafe4b926a66e86918c7eefb4e760681e911ad1",
+            "size_bytes": 303693,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=circle+359.99999990+-20.00000000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          },
+          {
+            "cache_relative_path": "discovery-responses/46ac837e99a78050cb13286f9a5fcb3b35a2c4aab260167e8525964de9a68042.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_dr1",
+              "MAXREC": 100000,
+              "POS": "circle 359.99999990 -20.00000000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "46ac837e99a78050cb13286f9a5fcb3b35a2c4aab260167e8525964de9a68042",
+            "size_bytes": 510800,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_dr1&POS=circle+359.99999990+-20.00000000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          }
+        ],
+        "status": "complete"
+      },
+      "acquired_inputs": 54,
+      "linked_inputs": 54,
+      "fresh_input_receipts": true,
+      "all_inputs_have_fresh_receipts": true,
+      "epochs": [
+        {
+          "id": "2026_E1",
+          "range": {
+            "mjd_min": 61229.433288,
+            "mjd_max": 61229.842948,
+            "date_start_iso": "2026-07-08",
+            "date_end_iso": "2026-07-08",
+            "time_scale": "utc"
+          },
+          "release": "QR3",
+          "availability": null
+        }
+      ],
+      "access_verified": true,
+      "science_acceptance": "not_established_by_access_probe",
+      "assets": [
+        {
+          "url": "/api/v1/assets/live_b589f5e3bd80eee1/2026_E1_ALL_59b1929590aa0a8fd968a921dc31663cdce83d6bf9ec3f86040dbf03c8458304.webp",
+          "sha256": "59b1929590aa0a8fd968a921dc31663cdce83d6bf9ec3f86040dbf03c8458304"
+        },
+        {
+          "url": "/api/v1/assets/live_b589f5e3bd80eee1/2026_E1_B56_beadae6dba507c19e794fb5be0283b129f3d957d367288f511d615acfba507c5.webp",
+          "sha256": "beadae6dba507c19e794fb5be0283b129f3d957d367288f511d615acfba507c5"
+        },
+        {
+          "url": "/api/v1/assets/live_b589f5e3bd80eee1/2026_E1_D1_6d6fc57e45e4b61f04ef988fd37b09dfa034b3d78b659f8a0bce177b6fdcf53b.webp",
+          "sha256": "6d6fc57e45e4b61f04ef988fd37b09dfa034b3d78b659f8a0bce177b6fdcf53b"
+        },
+        {
+          "url": "/api/v1/assets/live_b589f5e3bd80eee1/2026_E1_D2_818cdc4c2acbc9b1c6be7092378f4d75d234d6413b40cbd2825bb1a15a10db38.webp",
+          "sha256": "818cdc4c2acbc9b1c6be7092378f4d75d234d6413b40cbd2825bb1a15a10db38"
+        },
+        {
+          "url": "/api/v1/assets/live_b589f5e3bd80eee1/2026_E1_D3_8a7736e6f3e7ecac235e2a427075a6cc70d330f556ff53903e78da70b53b6f3a.webp",
+          "sha256": "8a7736e6f3e7ecac235e2a427075a6cc70d330f556ff53903e78da70b53b6f3a"
+        },
+        {
+          "url": "/api/v1/assets/live_b589f5e3bd80eee1/2026_E1_D4_b4df9fa081d87775abf6ac314a3ddbbe5cbefa15725057b90faaf71291283d5f.webp",
+          "sha256": "b4df9fa081d87775abf6ac314a3ddbbe5cbefa15725057b90faaf71291283d5f"
+        },
+        {
+          "url": "/api/v1/assets/live_b589f5e3bd80eee1/2026_E1_D5_3ecbbb9e343fe1201ebce71547110acb24efef6f4a42aa7d5246ee58dc6e174c.webp",
+          "sha256": "3ecbbb9e343fe1201ebce71547110acb24efef6f4a42aa7d5246ee58dc6e174c"
+        },
+        {
+          "url": "/api/v1/assets/live_b589f5e3bd80eee1/2026_E1_D6_c5d053c40a520ecf022c1433571c1ee1e6b91c527d342fcbed5a4523776f0032.webp",
+          "sha256": "c5d053c40a520ecf022c1433571c1ee1e6b91c527d342fcbed5a4523776f0032"
+        },
+        {
+          "url": "/api/v1/assets/live_b589f5e3bd80eee1/2026_E1_FLAGS_aa769131b437a6e47d67c5598f15b3efbffada89e01f8ec22898ab9e42a57ff1.webp",
+          "sha256": "aa769131b437a6e47d67c5598f15b3efbffada89e01f8ec22898ab9e42a57ff1"
+        }
+      ],
+      "differences": []
+    }
+  ]
+}

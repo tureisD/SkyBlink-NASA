@@ -1,0 +1,199 @@
+{
+  "registered_at": "2026-11-14T20:08:58.596599+00:00",
+  "status": "frozen_before_new_candidate_control_flux_inspection",
+  "previous_empty_result_sha256": "a5cd1c7b4c70b7658b11acff279b042f57e7780f4cd27cc579608a370d6c1aa8",
+  "inherited_protocol_sha256": "75840b11617cea84a777aae74ff3506dbbf3591ca0e6f72c7a4a99b8e249a858",
+  "protocol": {
+    "registered_at": "2026-11-14T20:03:40.018013+00:00",
+    "status": "frozen_before_holdout_catalog_or_flux_inspection",
+    "scope": "Strictly disjoint Gaia sources in recorded Epsilon Indi D3 pair; the shared pair is not an independent detector/systematics sample.",
+    "phase3_report_sha256": "15b31d406e68c910a9d96ff2babe8222632898c993b457b0e12dadf642225466",
+    "samples": [
+      {
+        "id": "eps_indi_b_2024_E1_D3",
+        "uri": "ibe/data/spherex/dr1/level2/2025W18_1B/l2b-v27-2026-196/3/level2_2025W18_1B_0081_2D3_spx_l2b-v27-2026-196.fits",
+        "path": "backend/.cache/phase3/cutouts/91825cf5584ae5f5f3c82e34803cd4ce28bbcf30ea7cf087f7ae1b724d6037e5.fits",
+        "sha256": "9d4fb57bf944c155ca65c8885581cb2d36cb4152fe382ddf0980072c363a179c",
+        "ra": 331.0962,
+        "dec": -56.8005,
+        "band": 3,
+        "release": "DR1"
+      },
+      {
+        "id": "eps_indi_b_2025_E1_D3",
+        "uri": "ibe/data/spherex/dr1/level2/2025W18_2B/l2b-v27-2026-197/3/level2_2025W18_2B_0011_2D3_spx_l2b-v27-2026-197.fits",
+        "path": "backend/.cache/phase3/cutouts/a4aa1da2935465a18a90103b54520b1170fe3a2bdd3fca63673a14a63850cfb0.fits",
+        "sha256": "730d8183e77882b0a37e61256250956d67b5b7730db465e402dbae4337e05661",
+        "ra": 331.0962,
+        "dec": -56.8005,
+        "band": 3,
+        "release": "DR1"
+      }
+    ],
+    "excluded_phase3_source_ids": [
+      "6412591751539163136",
+      "6412591957697593728",
+      "6412591992057334144",
+      "6412592370014523776",
+      "6412592404374220928",
+      "6412593435166417536",
+      "6412593916202695552",
+      "6412593916202695936",
+      "6412594259800093568",
+      "6412595771628639616"
+    ],
+    "catalog_selection": {
+      "gaia_query_radius_deg": 0.18,
+      "gaia_neighborhood_g_limit": 20,
+      "control_g_range": [
+        10,
+        17
+      ],
+      "max_ruwe": 1.4,
+      "max_pm_mas_year": 100,
+      "max_abs_parallax_mas": 10,
+      "exclude_gaia_variable": true,
+      "target_exclusion_arcsec": 30,
+      "gaia_neighbor_exclusion_arcsec": 30.75,
+      "allwise_match_arcsec": 3,
+      "allwise_reference_decimalyear": 2010.5,
+      "allwise_neighbor_exclusion_arcsec": 30.75,
+      "allwise_quality": "W1/W2 ph_qual A or B, cc_flags00, var_flg digits0or1, ext_flg0, W1/W2 SNR>=10",
+      "allwise_neighbors": "All returned source-catalog entries, no magnitude cut; unresolved/subthreshold blends remain possible",
+      "max_controls": 20,
+      "ordering": "numeric Gaia source_id ascending; lock first20 catalog-eligible; never replace flux/quality failures",
+      "proper_motion": "Propagate controls and Gaia neighbors with measured PM to both FITS epochs; AllWISE match at2010.5. Missing neighbor PM retains catalog position and is counted as a completeness limitation.",
+      "field": "Entire31arcsec neighborhood must lie within requested .2degree TAN square in both exposures"
+    },
+    "measurement_gates": {
+      "complete_aperture_support_both_methods": true,
+      "minimum_clean_annulus_pixels": 10,
+      "require_supported_field_background": true,
+      "minimum_snr_both_methods_both_visits": 5,
+      "minimum_controls": 3,
+      "max_abs_median_z": 1,
+      "max_robust_scatter_z": 2,
+      "max_abs_z": 5,
+      "astrometry_minimum_stars_each_visit": 3,
+      "astrometry_max_robust_rms_arcsec": 1.5375,
+      "spectral_tolerance_narrower_bandwidth": 0.25,
+      "minimum_bandwidth_ratio": 0.8
+    },
+    "methods": {
+      "center": "distance<=12.3/native_scale_arcsec; weight1",
+      "fractional": "Photutils CircularAperture.to_mask(method=subpixel,subpixels=5)",
+      "annulus": "Same native pixel-center annulus3<=r<=5, excludeSOURCE/hard/warning, median; N>=10 mandatory",
+      "background_variance": "max[(pi/2)*mean(V_ann)/N_ann,(1.2533*MAD_scaled_ann)^2/N_ann]",
+      "flux": "1e12*Omega*sum(w*(I-background))",
+      "variance": "(1e12*Omega)^2*(sum(w^2*V)+sum(w)^2*background_variance)",
+      "unmodeled": "Detector/plane covariance, aperture correction, PSF variations, unresolved companions and infrared variability; no absolute calibrated-flux claim"
+    },
+    "failure_policy": "No threshold relaxation, no residual-based rejection, no replacement of unavailable inputs. Fewer than3 controls or failed prerequisite => insufficient, not pass.",
+    "independence": "Excluded all Phase3controlIDs; no flux of new controls has been inspected. Samefield residual systematics may persist; validation does not generalize to all bands."
+  },
+  "candidates_in_fixed_order": [
+    {
+      "target": "wise_0855",
+      "samples": [
+        {
+          "id": "wise_0855_D1_holdout_0",
+          "uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/1/level2_2025W19_1B_0241_1D1_spx_l2b-v27-2026-197.fits",
+          "path": "backend\\.cache\\phase3\\astrometry\\51fb1916f7f4228c31bd7650d75ca23f94cbae48ebd66919545ff5e22047863c.fits",
+          "sha256": "7b411076552ea4743c75d41933f48904a5eff79f5368503eb7cdbd8ba6ff98d5",
+          "ra": 133.75921,
+          "dec": -7.24216,
+          "band": 1,
+          "release": "DR1"
+        },
+        {
+          "id": "wise_0855_D1_holdout_1",
+          "uri": "ibe/data/spherex/dr1/level2/2026W18_2A/l2b-v27-2026-244/1/level2_2026W18_2A_0264_1D1_spx_l2b-v27-2026-244.fits",
+          "path": "backend\\.cache\\phase3\\astrometry\\9acb6f169b7fe5d84c8017d62e21827778bddd99f86a4d79fb01bdf67131bbc1.fits",
+          "sha256": "175cd9ca38e2ca6c26d5a12a75dcb5f3663ae584b288ed81fa3897a9c7a87aae",
+          "ra": 133.75921,
+          "dec": -7.24216,
+          "band": 1,
+          "release": "DR1"
+        }
+      ]
+    },
+    {
+      "target": "r_draconis",
+      "samples": [
+        {
+          "id": "r_draconis_D1_holdout_0",
+          "uri": "ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0206_1D1_spx_l2b-v27-2026-201.fits",
+          "path": "backend\\.cache\\phase3\\astrometry\\52d3bd39329eb2d438a70546358f700277670bf592fb6793d4b8187b4ade9677.fits",
+          "sha256": "0062478d328a4ce2ced736be97c55462f963d6432e405591b5429eeb5e7cc796",
+          "ra": 248.1674,
+          "dec": 66.7548,
+          "band": 1,
+          "release": "DR1"
+        },
+        {
+          "id": "r_draconis_D1_holdout_1",
+          "uri": "ibe/data/spherex/qr3/level2/2026W28_1A/l2b-v27-2026-275/1/level2_2026W28_1A_0104_1D1_spx_l2b-v27-2026-275.fits",
+          "path": "backend\\.cache\\phase3\\astrometry\\1e202e87ad84c19cce7874522822f352dd8badc9a6f9779c326645ce1dec6ca2.fits",
+          "sha256": "83eb86fe56a0045c1882945d2978e4c45e626a3d1f9f8ebe05a7693b8ace1a94",
+          "ra": 248.1674,
+          "dec": 66.7548,
+          "band": 1,
+          "release": "QR3"
+        }
+      ]
+    },
+    {
+      "target": "barnards_star",
+      "samples": [
+        {
+          "id": "barnards_star_D1_holdout_0",
+          "uri": "ibe/data/spherex/dr1/level2/2025W35_1A/l2b-v27-2026-230/1/level2_2025W35_1A_0432_4D1_spx_l2b-v27-2026-230.fits",
+          "path": "backend\\.cache\\phase3\\astrometry\\ef062498b8db07eb9321a180d88dee3ba3a86f3010f5fb65aa2f3b2d95ea067b.fits",
+          "sha256": "a816b9b0026b87b7a615e25969b5e30250273565e4af014a1e101aef30d4a236",
+          "ra": 269.4463,
+          "dec": 4.7676,
+          "band": 1,
+          "release": "DR1"
+        },
+        {
+          "id": "barnards_star_D1_holdout_1",
+          "uri": "ibe/data/spherex/qr3/level2/2026W34_2A/l2b-v27-2026-243/1/level2_2026W34_2A_0757_1D1_spx_l2b-v27-2026-243.fits",
+          "path": "backend\\.cache\\phase3\\astrometry\\08576179031b2480fc9163a1cb3f09b749e99c295943b89981d626cb9a773bec.fits",
+          "sha256": "d6b5e05b00ae427efe0be57972cb2e25621cdddf296e62995aeacd0710ce8f38",
+          "ra": 269.4463,
+          "dec": 4.7676,
+          "band": 1,
+          "release": "QR3"
+        }
+      ]
+    },
+    {
+      "target": "rw_aurigae",
+      "samples": [
+        {
+          "id": "rw_aurigae_D1_holdout_0",
+          "uri": "ibe/data/spherex/dr1/level2/2025W36_1A/l2b-v27-2026-232/1/level2_2025W36_1A_0095_1D1_spx_l2b-v27-2026-232.fits",
+          "path": "backend\\.cache\\phase3\\astrometry\\37f56351da0529a7a98fb34863edc48124163fe9c3f73d91c59fea94349fc76c.fits",
+          "sha256": "8bbfc56241cf845f69aa104a98cf6687eabd7b2050804a73953fda5f33f6ac48",
+          "ra": 76.9561,
+          "dec": 30.4011,
+          "band": 1,
+          "release": "DR1"
+        },
+        {
+          "id": "rw_aurigae_D1_holdout_1",
+          "uri": "ibe/data/spherex/qr3/level2/2026W36_1A/l2b-v27-2026-252/1/level2_2026W36_1A_0476_1D1_spx_l2b-v27-2026-252.fits",
+          "path": "backend\\.cache\\phase3\\astrometry\\02e48217d73c3cdd279dcf6a6394cdc7770bfd89490da5cde8e1eaa9de383d92.fits",
+          "sha256": "ead5c22892bb138b39f991fd28106519f99b447bffb31f818c78b452db0c8be9",
+          "ra": 76.9561,
+          "dec": 30.4011,
+          "band": 1,
+          "release": "QR3"
+        }
+      ]
+    }
+  ],
+  "selection": "Recorded first/lastD1 pair perfield, fixedorder WISE,RDraconis,Barnard,RWAur. Screen9points withincentral.12deg usingexistingrealcutouts; incompatiblepair rejected beforecatalog/flux. Ifcoarsepasses, obtainpadded.2degcutouts anddensevalidateactual.2deggrid, thenapplyUNCHANGEDGaia/AllWISEselection. Firstpairwith>=3catalogeligiblecontrols islocked beforeflux; no substitution afterflux failures. Stopafter4pairs.",
+  "astrometry_independence": "Phase3D1astrometry may have inspectedthese images globally, but no Phase4heldout-source aperture fluxes wereused. AllPhase3controlIDs remainexcluded.",
+  "thresholds": "All sourcequality/isolation/photometry/astrometry gates inherited unchanged; neverrelax toobtaincontrols"
+}

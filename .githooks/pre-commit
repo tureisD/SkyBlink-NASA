@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+# Versioned pre-commit guardrails for SPHEREx SkyBlink.
+# Installed via: git config core.hooksPath .githooks
+set -e
+
+echo "[pre-commit] SPHEREx SkyBlink guardrails"
+
+check_forbidden() {
+  local pattern="$1"
+  local label="$2"
+  if [ ! -d backend ] && [ ! -d scripts ]; then
+    return 0
+  fi
+  if grep -rn -E "$pattern" backend scripts 2>/dev/null; then
+    echo "ERROR: $label"
+    exit 1
+  fi
+}
+
+# 1. Never read the empty PrimaryHDU.
+check_forbidden 'hdul\[0\]\.data' "forbidden hdul[0].data access"
+
+# 2. Never mask all non-zero flags (BIT_SOURCE must survive).
+check_forbidden 'flags (>|!=) 0' "naive flag masking (use HARD_BAD_MASK only)"
+
+# 3. Run Python tests if any test files exist, using the shared 3.11 venv.
+PYTHON_BIN="python"
+if [ -x "../.venv311/Scripts/python.exe" ]; then
+  PYTHON_BIN="../.venv311/Scripts/python.exe"
+elif [ -x ".venv311/Scripts/python.exe" ]; then
+  PYTHON_BIN=".venv311/Scripts/python.exe"
+fi
+
+if [ -d backend/tests ]; then
+  if find backend/tests -name 'test_*.py' -print -quit | grep -q .; then
+    echo "[pre-commit] pytest ($PYTHON_BIN)"
+    "$PYTHON_BIN" -m pytest backend/tests -q
+  fi
+fi
+
+# Reject unapproved/changed observation products and retired fixture assets.
+if [ -f scripts/verify_real_data.py ]; then
+  echo "[pre-commit] real-data packaging inventory"
+  "$PYTHON_BIN" scripts/verify_real_data.py
+fi
+
+# 4. Typecheck the frontend only when its dependencies are installed.
+if [ -f frontend/package.json ] && command -v npm >/dev/null 2>&1; then
+  if [ -d frontend/node_modules ]; then
+    echo "[pre-commit] frontend typecheck"
+    (cd frontend && npm run typecheck --if-present)
+  else
+    echo "[pre-commit] frontend node_modules absent; skipping typecheck (run in main before merge)"
+  fi
+fi
+
+echo "[pre-commit] passed"

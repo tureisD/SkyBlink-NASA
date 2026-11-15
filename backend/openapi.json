@@ -1,0 +1,1805 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "SPHEREx SkyBlink API",
+    "description": "Contract for the SPHEREx SkyBlink public web tool. Schemas are defined in backend/models and AGENTS.md \u00a73.",
+    "version": "1.6.0"
+  },
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "tags": [
+          "health"
+        ],
+        "summary": "Health",
+        "operationId": "health_api_v1_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/targets": {
+      "get": {
+        "tags": [
+          "targets"
+        ],
+        "summary": "List Targets",
+        "operationId": "list_targets_api_v1_targets_get",
+        "parameters": [
+          {
+            "name": "source",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "archive",
+                "saved"
+              ],
+              "type": "string",
+              "default": "archive",
+              "title": "Source"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TargetListResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sky": {
+      "get": {
+        "tags": [
+          "sky"
+        ],
+        "summary": "Get Sky",
+        "operationId": "get_sky_api_v1_sky_get",
+        "parameters": [
+          {
+            "name": "ra",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "minimum": 0.0,
+              "exclusiveMaximum": 360.0,
+              "description": "ICRS degrees",
+              "title": "Ra"
+            },
+            "description": "ICRS degrees"
+          },
+          {
+            "name": "dec",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "maximum": 90.0,
+              "minimum": -90.0,
+              "description": "ICRS degrees",
+              "title": "Dec"
+            },
+            "description": "ICRS degrees"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "description": "Cutout/crop size in degrees; clamped to 0.05-0.2",
+              "default": 0.2,
+              "title": "Size"
+            },
+            "description": "Cutout/crop size in degrees; clamped to 0.05-0.2"
+          },
+          {
+            "name": "target_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "wise_0855",
+                    "barnards_star",
+                    "eps_indi_b",
+                    "rw_aurigae",
+                    "r_draconis"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Target Id"
+            }
+          },
+          {
+            "name": "epochs",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "all",
+              "title": "Epochs"
+            }
+          },
+          {
+            "name": "bands",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "all",
+              "title": "Bands"
+            }
+          },
+          {
+            "name": "include_diff",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": true,
+              "title": "Include Diff"
+            }
+          },
+          {
+            "name": "source",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "archive",
+                "saved"
+              ],
+              "type": "string",
+              "default": "archive",
+              "title": "Source"
+            }
+          },
+          {
+            "name": "discovery",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "live",
+                "known"
+              ],
+              "type": "string",
+              "default": "live",
+              "title": "Discovery"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SkyResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/spectrum": {
+      "get": {
+        "tags": [
+          "spectrum"
+        ],
+        "summary": "Get Spectrum",
+        "operationId": "get_spectrum_api_v1_spectrum_get",
+        "parameters": [
+          {
+            "name": "ra",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "minimum": 0.0,
+              "exclusiveMaximum": 360.0,
+              "description": "ICRS degrees",
+              "title": "Ra"
+            },
+            "description": "ICRS degrees"
+          },
+          {
+            "name": "dec",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "maximum": 90.0,
+              "minimum": -90.0,
+              "description": "ICRS degrees",
+              "title": "Dec"
+            },
+            "description": "ICRS degrees"
+          },
+          {
+            "name": "target_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "wise_0855",
+                    "barnards_star",
+                    "eps_indi_b",
+                    "rw_aurigae",
+                    "r_draconis"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Target Id"
+            }
+          },
+          {
+            "name": "epoch_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Epoch Id"
+            }
+          },
+          {
+            "name": "source",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "archive",
+                "saved"
+              ],
+              "type": "string",
+              "default": "archive",
+              "title": "Source"
+            }
+          },
+          {
+            "name": "discovery",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "live",
+                "known"
+              ],
+              "type": "string",
+              "default": "live",
+              "title": "Discovery"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpectrumResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/assets/{target_id}/{filename}": {
+      "get": {
+        "tags": [
+          "assets"
+        ],
+        "summary": "Get Asset",
+        "operationId": "get_asset_api_v1_assets__target_id___filename__get",
+        "parameters": [
+          {
+            "name": "target_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Target Id"
+            }
+          },
+          {
+            "name": "filename",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Filename"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Confidence": {
+        "type": "string",
+        "enum": [
+          "high",
+          "low"
+        ],
+        "title": "Confidence"
+      },
+      "DetectedCandidate": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "ra": {
+            "type": "number",
+            "exclusiveMaximum": 360.0,
+            "minimum": 0.0,
+            "title": "Ra"
+          },
+          "dec": {
+            "type": "number",
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "title": "Dec"
+          },
+          "x_px": {
+            "type": "number",
+            "title": "X Px"
+          },
+          "y_px": {
+            "type": "number",
+            "title": "Y Px"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "dipole",
+              "variable"
+            ],
+            "title": "Kind"
+          },
+          "snr": {
+            "type": "number",
+            "title": "Snr"
+          },
+          "delta_flux_mjy_sr": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Delta Flux Mjy Sr"
+          },
+          "is_artifact_clean": {
+            "type": "boolean",
+            "title": "Is Artifact Clean",
+            "default": true
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "ra",
+          "dec",
+          "x_px",
+          "y_px",
+          "kind",
+          "snr",
+          "label"
+        ],
+        "title": "DetectedCandidate",
+        "description": "Objective difference-frame candidate; no confidence score (contract 1.1.0)."
+      },
+      "Epoch": {
+        "properties": {
+          "epoch_id": {
+            "type": "string",
+            "title": "Epoch Id"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "collection": {
+            "type": "string",
+            "title": "Collection"
+          },
+          "release": {
+            "type": "string",
+            "title": "Release"
+          },
+          "mjd_mean": {
+            "type": "number",
+            "title": "Mjd Mean"
+          },
+          "date_iso": {
+            "type": "string",
+            "format": "date",
+            "title": "Date Iso"
+          },
+          "frames": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Frames"
+          },
+          "flag_summary": {
+            "$ref": "#/components/schemas/FlagSummary"
+          },
+          "telemetry": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TelemetryAsset"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "lvf_geometry": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/LVFGeometry"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lvf Geometry"
+          },
+          "candidates": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/DetectedCandidate"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Candidates"
+          },
+          "core_inpainted": {
+            "type": "boolean",
+            "title": "Core Inpainted",
+            "default": false
+          },
+          "observation_range": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ObservationRange"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "epoch_id",
+          "label",
+          "collection",
+          "release",
+          "mjd_mean",
+          "date_iso",
+          "frames",
+          "flag_summary"
+        ],
+        "title": "Epoch"
+      },
+      "FlagStatus": {
+        "type": "string",
+        "enum": [
+          "NOMINAL",
+          "CAUTION",
+          "ALERT"
+        ],
+        "title": "FlagStatus"
+      },
+      "FlagSummary": {
+        "properties": {
+          "status": {
+            "$ref": "#/components/schemas/FlagStatus"
+          },
+          "source_bit_set": {
+            "type": "boolean",
+            "title": "Source Bit Set"
+          },
+          "artifact_pixel_fraction": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Artifact Pixel Fraction"
+          },
+          "active_warning_flags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Active Warning Flags"
+          },
+          "human_explanation": {
+            "type": "string",
+            "title": "Human Explanation"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "status",
+          "source_bit_set",
+          "artifact_pixel_fraction",
+          "active_warning_flags",
+          "human_explanation"
+        ],
+        "title": "FlagSummary"
+      },
+      "FluxNormalization": {
+        "properties": {
+          "method": {
+            "type": "string",
+            "title": "Method"
+          },
+          "scope": {
+            "type": "string",
+            "title": "Scope"
+          },
+          "reference_epoch": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reference Epoch"
+          },
+          "applied": {
+            "type": "boolean",
+            "title": "Applied"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "clamped": {
+            "type": "boolean",
+            "title": "Clamped",
+            "default": false
+          },
+          "raw_stats_location": {
+            "type": "string",
+            "title": "Raw Stats Location",
+            "default": "server_only"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "method",
+          "scope",
+          "applied",
+          "status"
+        ],
+        "title": "FluxNormalization"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HealthResponse": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "version": {
+            "type": "string",
+            "title": "Version"
+          },
+          "irsa_reachable": {
+            "type": "boolean",
+            "title": "Irsa Reachable"
+          },
+          "cache_entries": {
+            "type": "integer",
+            "title": "Cache Entries"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "status",
+          "version",
+          "irsa_reachable",
+          "cache_entries"
+        ],
+        "title": "HealthResponse"
+      },
+      "LVFGeometry": {
+        "properties": {
+          "detector": {
+            "type": "integer",
+            "maximum": 6.0,
+            "minimum": 1.0,
+            "title": "Detector"
+          },
+          "pa_deg": {
+            "type": "number",
+            "title": "Pa Deg"
+          },
+          "grad_um_per_arcsec": {
+            "type": "number",
+            "title": "Grad Um Per Arcsec"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "detector",
+          "pa_deg",
+          "grad_um_per_arcsec"
+        ],
+        "title": "LVFGeometry",
+        "description": "Per-detector LVF dispersion geometry (contract 1.1.0)."
+      },
+      "MeasurementAvailability": {
+        "properties": {
+          "total_channels": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Total Channels"
+          },
+          "finite_channels": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Finite Channels"
+          },
+          "usable_channels": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Usable Channels"
+          },
+          "reasons": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Reasons"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "total_channels",
+          "finite_channels",
+          "usable_channels"
+        ],
+        "title": "MeasurementAvailability"
+      },
+      "MolecularFeature": {
+        "properties": {
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "wavelength_um": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Wavelength Um"
+          },
+          "band": {
+            "type": "integer",
+            "maximum": 6.0,
+            "minimum": 1.0,
+            "title": "Band"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "label",
+          "wavelength_um",
+          "band"
+        ],
+        "title": "MolecularFeature"
+      },
+      "ObservationRange": {
+        "properties": {
+          "mjd_min": {
+            "type": "number",
+            "title": "Mjd Min"
+          },
+          "mjd_max": {
+            "type": "number",
+            "title": "Mjd Max"
+          },
+          "date_start_iso": {
+            "type": "string",
+            "format": "date",
+            "title": "Date Start Iso"
+          },
+          "date_end_iso": {
+            "type": "string",
+            "format": "date",
+            "title": "Date End Iso"
+          },
+          "time_scale": {
+            "type": "string",
+            "const": "utc",
+            "title": "Time Scale",
+            "default": "utc"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "mjd_min",
+          "mjd_max",
+          "date_start_iso",
+          "date_end_iso"
+        ],
+        "title": "ObservationRange"
+      },
+      "SkyProvenance": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "title": "Source"
+          },
+          "collection": {
+            "type": "string",
+            "title": "Collection"
+          },
+          "release": {
+            "type": "string",
+            "title": "Release"
+          },
+          "zodi_subtracted": {
+            "type": "boolean",
+            "title": "Zodi Subtracted"
+          },
+          "background_subtracted": {
+            "type": "boolean",
+            "title": "Background Subtracted"
+          },
+          "flux_normalization": {
+            "$ref": "#/components/schemas/FluxNormalization"
+          },
+          "is_simulated_fallback": {
+            "type": "boolean",
+            "title": "Is Simulated Fallback"
+          },
+          "generated_at": {
+            "type": "string",
+            "title": "Generated At"
+          },
+          "citation": {
+            "type": "string",
+            "title": "Citation"
+          },
+          "analysis_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Analysis Id"
+          },
+          "analysis_record_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Analysis Record Url"
+          },
+          "processing_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Processing Version"
+          },
+          "data_access": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "archive",
+                  "saved"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Data Access"
+          },
+          "discovery_mode": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "live",
+                  "known"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Discovery Mode"
+          },
+          "comparison_status": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "matched_visual",
+                  "single_epoch",
+                  "unmatched_single_epoch",
+                  "legacy_unvalidated"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Comparison Status"
+          },
+          "comparison_reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Comparison Reason"
+          },
+          "discovery_status": {
+            "type": "string",
+            "enum": [
+              "complete",
+              "partial",
+              "unknown"
+            ],
+            "title": "Discovery Status",
+            "default": "unknown"
+          },
+          "missing_collections": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Missing Collections"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "source",
+          "collection",
+          "release",
+          "zodi_subtracted",
+          "background_subtracted",
+          "flux_normalization",
+          "is_simulated_fallback",
+          "generated_at",
+          "citation"
+        ],
+        "title": "SkyProvenance"
+      },
+      "SkyQueryInfo": {
+        "properties": {
+          "ra": {
+            "type": "number",
+            "title": "Ra"
+          },
+          "dec": {
+            "type": "number",
+            "title": "Dec"
+          },
+          "size_deg": {
+            "type": "number",
+            "title": "Size Deg"
+          },
+          "target_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "wise_0855",
+                  "barnards_star",
+                  "eps_indi_b",
+                  "rw_aurigae",
+                  "r_draconis"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Target Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "ra",
+          "dec",
+          "size_deg",
+          "target_id"
+        ],
+        "title": "SkyQueryInfo"
+      },
+      "SkyResponse": {
+        "properties": {
+          "query": {
+            "$ref": "#/components/schemas/SkyQueryInfo"
+          },
+          "target": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Target"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "wcs": {
+            "$ref": "#/components/schemas/WCS"
+          },
+          "epochs": {
+            "items": {
+              "$ref": "#/components/schemas/Epoch"
+            },
+            "type": "array",
+            "title": "Epochs"
+          },
+          "differences": {
+            "additionalProperties": {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            "type": "object",
+            "title": "Differences"
+          },
+          "reference_overlays": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Reference Overlays"
+          },
+          "provenance": {
+            "$ref": "#/components/schemas/SkyProvenance"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "query",
+          "target",
+          "wcs",
+          "epochs",
+          "provenance"
+        ],
+        "title": "SkyResponse"
+      },
+      "SpectrumChannel": {
+        "properties": {
+          "detector": {
+            "type": "integer",
+            "maximum": 6.0,
+            "minimum": 1.0,
+            "title": "Detector"
+          },
+          "wavelength_um": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Wavelength Um"
+          },
+          "bandwidth_um": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Bandwidth Um"
+          },
+          "flux_ujy": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Flux Ujy",
+            "description": "Clean-pixel aperture flux; null without usable pixels or supported background."
+          },
+          "flux_err_ujy": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Flux Err Ujy",
+            "description": "Approximate uncertainty including median-background estimation; null when flux is unavailable."
+          },
+          "flags": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Flags"
+          },
+          "is_flagged_bad": {
+            "type": "boolean",
+            "title": "Is Flagged Bad"
+          },
+          "clean_fraction": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Clean Fraction"
+          },
+          "is_used_in_photometry": {
+            "type": "boolean",
+            "title": "Is Used In Photometry",
+            "description": "Archive 1.5.0: full clean aperture inside image, >=10 clean local-annulus pixels, supported field background, and no hard-bad centre. Necessary screening, not calibrated accuracy. Saved products retain historical eligibility."
+          },
+          "photometry_method": {
+            "type": "string",
+            "enum": [
+              "aperture_12.3",
+              "crowded_diff_6.8"
+            ],
+            "title": "Photometry Method",
+            "default": "aperture_12.3"
+          },
+          "aperture_mode": {
+            "type": "string",
+            "enum": [
+              "standard_12.3",
+              "crowded_diff_6.8"
+            ],
+            "title": "Aperture Mode",
+            "default": "standard_12.3"
+          },
+          "aperture_radius_arcsec": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Aperture Radius Arcsec",
+            "default": 12.3
+          },
+          "input_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Input Id"
+          },
+          "extraction_ra": {
+            "anyOf": [
+              {
+                "type": "number",
+                "exclusiveMaximum": 360.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Extraction Ra"
+          },
+          "extraction_dec": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 90.0,
+                "minimum": -90.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Extraction Dec"
+          },
+          "measurement_reasons": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Measurement Reasons"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "detector",
+          "wavelength_um",
+          "bandwidth_um",
+          "flags",
+          "is_flagged_bad",
+          "clean_fraction",
+          "is_used_in_photometry"
+        ],
+        "title": "SpectrumChannel"
+      },
+      "SpectrumEpoch": {
+        "properties": {
+          "epoch_id": {
+            "type": "string",
+            "title": "Epoch Id"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "collection": {
+            "type": "string",
+            "title": "Collection"
+          },
+          "release": {
+            "type": "string",
+            "title": "Release"
+          },
+          "channels": {
+            "items": {
+              "$ref": "#/components/schemas/SpectrumChannel"
+            },
+            "type": "array",
+            "title": "Channels"
+          },
+          "observation_range": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ObservationRange"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "measurement_availability": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/MeasurementAvailability"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "epoch_id",
+          "label",
+          "collection",
+          "release",
+          "channels"
+        ],
+        "title": "SpectrumEpoch"
+      },
+      "SpectrumProvenance": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "title": "Source"
+          },
+          "collection": {
+            "type": "string",
+            "title": "Collection"
+          },
+          "release": {
+            "type": "string",
+            "title": "Release"
+          },
+          "zodi_subtracted": {
+            "type": "boolean",
+            "title": "Zodi Subtracted"
+          },
+          "background_subtracted": {
+            "type": "boolean",
+            "title": "Background Subtracted"
+          },
+          "is_simulated_fallback": {
+            "type": "boolean",
+            "title": "Is Simulated Fallback"
+          },
+          "generated_at": {
+            "type": "string",
+            "title": "Generated At"
+          },
+          "citation": {
+            "type": "string",
+            "title": "Citation"
+          },
+          "analysis_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Analysis Id"
+          },
+          "analysis_record_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Analysis Record Url"
+          },
+          "processing_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Processing Version"
+          },
+          "data_access": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "archive",
+                  "saved"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Data Access"
+          },
+          "discovery_mode": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "live",
+                  "known"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Discovery Mode"
+          },
+          "discovery_status": {
+            "type": "string",
+            "enum": [
+              "complete",
+              "partial",
+              "unknown"
+            ],
+            "title": "Discovery Status",
+            "default": "unknown"
+          },
+          "missing_collections": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Missing Collections"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "source",
+          "collection",
+          "release",
+          "zodi_subtracted",
+          "background_subtracted",
+          "is_simulated_fallback",
+          "generated_at",
+          "citation"
+        ],
+        "title": "SpectrumProvenance"
+      },
+      "SpectrumResponse": {
+        "properties": {
+          "target_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "wise_0855",
+                  "barnards_star",
+                  "eps_indi_b",
+                  "rw_aurigae",
+                  "r_draconis"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Target Id"
+          },
+          "ra": {
+            "type": "number",
+            "title": "Ra"
+          },
+          "dec": {
+            "type": "number",
+            "title": "Dec"
+          },
+          "aperture_radius_arcsec": {
+            "type": "number",
+            "title": "Aperture Radius Arcsec",
+            "default": 12.3
+          },
+          "wavelength_calibration": {
+            "type": "string",
+            "title": "Wavelength Calibration"
+          },
+          "confidence": {
+            "$ref": "#/components/schemas/Confidence"
+          },
+          "epochs": {
+            "items": {
+              "$ref": "#/components/schemas/SpectrumEpoch"
+            },
+            "type": "array",
+            "title": "Epochs"
+          },
+          "molecular_features": {
+            "items": {
+              "$ref": "#/components/schemas/MolecularFeature"
+            },
+            "type": "array",
+            "title": "Molecular Features"
+          },
+          "provenance": {
+            "$ref": "#/components/schemas/SpectrumProvenance"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "target_id",
+          "ra",
+          "dec",
+          "wavelength_calibration",
+          "confidence",
+          "epochs",
+          "molecular_features",
+          "provenance"
+        ],
+        "title": "SpectrumResponse"
+      },
+      "Target": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "wise_0855",
+              "barnards_star",
+              "eps_indi_b",
+              "rw_aurigae",
+              "r_draconis"
+            ],
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "category": {
+            "type": "string",
+            "title": "Category"
+          },
+          "ra_ref": {
+            "type": "number",
+            "exclusiveMaximum": 360.0,
+            "minimum": 0.0,
+            "title": "Ra Ref"
+          },
+          "dec_ref": {
+            "type": "number",
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "title": "Dec Ref"
+          },
+          "ref_epoch": {
+            "type": "string",
+            "title": "Ref Epoch"
+          },
+          "ra_epoch2025": {
+            "type": "number",
+            "exclusiveMaximum": 360.0,
+            "minimum": 0.0,
+            "title": "Ra Epoch2025"
+          },
+          "dec_epoch2025": {
+            "type": "number",
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "title": "Dec Epoch2025"
+          },
+          "pm_ra_mas_yr": {
+            "type": "number",
+            "title": "Pm Ra Mas Yr"
+          },
+          "pm_dec_mas_yr": {
+            "type": "number",
+            "title": "Pm Dec Mas Yr"
+          },
+          "recommended_bands": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Recommended Bands"
+          },
+          "story_headline": {
+            "type": "string",
+            "title": "Story Headline"
+          },
+          "story_body": {
+            "type": "string",
+            "title": "Story Body"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "category",
+          "ra_ref",
+          "dec_ref",
+          "ref_epoch",
+          "ra_epoch2025",
+          "dec_epoch2025",
+          "pm_ra_mas_yr",
+          "pm_dec_mas_yr",
+          "recommended_bands",
+          "story_headline",
+          "story_body"
+        ],
+        "title": "Target"
+      },
+      "TargetListResponse": {
+        "properties": {
+          "targets": {
+            "items": {
+              "$ref": "#/components/schemas/Target"
+            },
+            "type": "array",
+            "title": "Targets"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "targets"
+        ],
+        "title": "TargetListResponse"
+      },
+      "TelemetryAsset": {
+        "properties": {
+          "url": {
+            "type": "string",
+            "title": "Url"
+          },
+          "format": {
+            "type": "string",
+            "const": "float16_uint32_le_gzip",
+            "title": "Format"
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Width"
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Height"
+          },
+          "byte_size": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Byte Size"
+          },
+          "flux_band": {
+            "type": "string",
+            "enum": [
+              "thermal",
+              "all"
+            ],
+            "title": "Flux Band",
+            "default": "all"
+          },
+          "quantity": {
+            "anyOf": [
+              {
+                "type": "string",
+                "const": "normalized_display_intensity"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Quantity"
+          },
+          "normalization_applied": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Normalization Applied"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "url",
+          "format",
+          "width",
+          "height",
+          "byte_size"
+        ],
+        "title": "TelemetryAsset",
+        "description": "Optional per-epoch float16 + uint32 telemetry sidecar (contract 1.1.0)."
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "WCS": {
+        "properties": {
+          "crval1": {
+            "type": "number",
+            "title": "Crval1"
+          },
+          "crval2": {
+            "type": "number",
+            "title": "Crval2"
+          },
+          "crpix1": {
+            "type": "number",
+            "title": "Crpix1"
+          },
+          "crpix2": {
+            "type": "number",
+            "title": "Crpix2"
+          },
+          "cdelt1": {
+            "type": "number",
+            "title": "Cdelt1"
+          },
+          "cdelt2": {
+            "type": "number",
+            "title": "Cdelt2"
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Width"
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Height"
+          },
+          "pixel_scale_arcsec": {
+            "type": "number",
+            "title": "Pixel Scale Arcsec"
+          },
+          "native_pixel_scale_arcsec": {
+            "type": "number",
+            "title": "Native Pixel Scale Arcsec"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "crval1",
+          "crval2",
+          "crpix1",
+          "crpix2",
+          "cdelt1",
+          "cdelt2",
+          "width",
+          "height",
+          "pixel_scale_arcsec",
+          "native_pixel_scale_arcsec"
+        ],
+        "title": "WCS"
+      }
+    }
+  }
+}

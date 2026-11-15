@@ -1,0 +1,3 @@
+# Preserve exact bytes of provenance records, approved data and hashed source files.
+# Platform-dependent line-ending conversion would invalidate recorded SHA-256 hashes.
+* -text

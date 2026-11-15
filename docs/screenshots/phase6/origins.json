@@ -1,0 +1,342 @@
+{
+  "created_at": "2026-11-15T16:15:16.035Z",
+  "scope": "Real saved observations, final production build; screenshots are UI evidence, not scientific products",
+  "captures": [
+    {
+      "path": "docs/screenshots/phase6/workspace-1440.png",
+      "url": "http://127.0.0.1:8177/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&discovery=live&spectrumDiscovery=inherit&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "width": 1440,
+      "height": 1000,
+      "source": "Explicit saved real WISE0855 revision3",
+      "sha256": "2dd178e724611d2dcd8d32a85182a7fabd672f26142e05afb026ed17fac3fca6"
+    },
+    {
+      "path": "docs/screenshots/phase6/shortcuts-1440.png",
+      "url": "http://127.0.0.1:8177/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&discovery=live&spectrumDiscovery=inherit&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "width": 1440,
+      "height": 1000,
+      "source": "Same explicit saved observation; help overlay",
+      "sha256": "419f409b20a070f547e37ff24e59c633436f1e0e99b94eb5ab9d0da2d3d910d5"
+    },
+    {
+      "path": "docs/screenshots/phase6/workspace-390.png",
+      "url": "http://127.0.0.1:8177/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&discovery=live&spectrumDiscovery=inherit&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "width": 390,
+      "height": 844,
+      "source": "Explicit saved real WISE0855 revision3",
+      "sha256": "2c887f00a47294916102be68d66b484678ab2b14055ed439df8371a6e27da9e4"
+    },
+    {
+      "path": "docs/screenshots/phase6/workspace-320.png",
+      "url": "http://127.0.0.1:8177/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&discovery=live&spectrumDiscovery=inherit&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "width": 320,
+      "height": 844,
+      "source": "Explicit saved real WISE0855 revision3",
+      "sha256": "4d69605654a1f229d0d57a7cc135804bffb0bb90044596cc7707a3e51acea3f3"
+    },
+    {
+      "path": "docs/screenshots/phase6/known-spectrum-320.png",
+      "sha256": "729dab7d3a4198b5dc885b59a73690ad9965a1e3cdccc5ec6dac98a3b3b36144",
+      "width": 320,
+      "height": 844,
+      "source": "Isolated unchanged actual archive sky and current known spectrum API responses with real asset bytes; no fresh browser acquisition",
+      "evidence": "backend/.cache/phase6/spectrum-final-build/results.json"
+    },
+    {
+      "path": "docs/screenshots/phase6/null-spectrum-320.png",
+      "sha256": "5f83d24dadd8d2b6b2274eb377b50427d0115f52ad3693df15fc9a58e37d3386",
+      "width": 320,
+      "height": 844,
+      "source": "Isolated unchanged actual archive sky and current known spectrum API responses with real asset bytes; no fresh browser acquisition",
+      "evidence": "backend/.cache/phase6/spectrum-final-build/results.json"
+    }
+  ],
+  "source_and_build": [
+    {
+      "path": "frontend/src/App.tsx",
+      "sha256": "fa99b67006965469bd3c9806f0473470b100a5690ace1a186224338436b20eac"
+    },
+    {
+      "path": "frontend/src/components/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/components/ArtifactShield.tsx",
+      "sha256": "baf343c108382789eed1c9eec13676085c1c64d7003e342451713f2ff8c3f31a"
+    },
+    {
+      "path": "frontend/src/components/AudioPanel.tsx",
+      "sha256": "9efa9d6ad5f8105bfd00bfc5f889c4a5bc9ffeb24af7b27dad61e26081a481f3"
+    },
+    {
+      "path": "frontend/src/components/BlinkCanvas.tsx",
+      "sha256": "6de71970fcadbf4f034422a2fe1b358b2db0fa187d056b6bdd32ab798a5774c8"
+    },
+    {
+      "path": "frontend/src/components/CrossMissionCurtain.tsx",
+      "sha256": "45c28a59157585bd0068d7ea430eca525f34ad0d348f11915ece5ce17e39dc42"
+    },
+    {
+      "path": "frontend/src/components/DisplayPanel.tsx",
+      "sha256": "e9cb5488efd35ae62796bd8fece931ca2f3891e1b6f50203a2e9b4d3c3b96a3b"
+    },
+    {
+      "path": "frontend/src/components/FieldsPanel.tsx",
+      "sha256": "1c0f84f208681f9b7c6142e3451642db496bdc76cbfe9112fdd0f07f61625223"
+    },
+    {
+      "path": "frontend/src/components/HelpDialog.tsx",
+      "sha256": "3e5efb3fead16a2b90d473112dcde4cd1b07f313f10831681e8bf379a5a0638f"
+    },
+    {
+      "path": "frontend/src/components/KeyboardShortcuts.tsx",
+      "sha256": "793581d4be5786158daed0fce887d5aba3e4ea2b7f9afa4943a818e8b863d9f7"
+    },
+    {
+      "path": "frontend/src/components/Modal.tsx",
+      "sha256": "f74aa6183b2635100890397a317df5715d365da5c413d38065c138fe139eb8e4"
+    },
+    {
+      "path": "frontend/src/components/SearchDialog.tsx",
+      "sha256": "3e0ac5e5847df6ba6131e7b664fcaa2569770d1feff2dbc5bd6dfc84be7ee1fb"
+    },
+    {
+      "path": "frontend/src/components/SourceSelector.tsx",
+      "sha256": "1ebd11503246c5821e19e9ca7c8dbc177c544d65403cf448f67acc9637aa49f5"
+    },
+    {
+      "path": "frontend/src/components/SpectrumDrawer.tsx",
+      "sha256": "856a75ffd9b59ca5f73beced7ed4b5b215f7a6e089fb4a09c259458e723d7589"
+    },
+    {
+      "path": "frontend/src/components/SpectrumPlot.tsx",
+      "sha256": "2de3ab2d2fa57dbb0fa3bd2c775242942ae4e826995bc01ff0f40ddaa5c7badf"
+    },
+    {
+      "path": "frontend/src/components/TargetPanel.tsx",
+      "sha256": "7e57b506e726ecb5a067cd7fabdcc2c62435025f7e9f3fde72ecfb1c32f8060a"
+    },
+    {
+      "path": "frontend/src/components/TimelineDock.tsx",
+      "sha256": "86b194e38096e92dd95cc6b1acb7a5286828f3299b3f48d58f6c04e1d8e550f4"
+    },
+    {
+      "path": "frontend/src/components/TopBar.tsx",
+      "sha256": "2e7bb82cd73db666234bf78f7c66837870082b2d1fe4e81c68635dc1113e8875"
+    },
+    {
+      "path": "frontend/src/components/TriageModal.tsx",
+      "sha256": "4a97e051428275406a597e263e723a054ee23a5126e3f9eccb8308aff4e1bb99"
+    },
+    {
+      "path": "frontend/src/components/TrialMotionPanel.tsx",
+      "sha256": "3bf1280b61a50a44bde10a9ea51efe2a3eb5fb52aab91903fe0328dbe67755c9"
+    },
+    {
+      "path": "frontend/src/hooks/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/hooks/useGaiaSources.ts",
+      "sha256": "8b7f7159bf03b9c87f360f6683e862cdb13f434fc69f4d1373ce78e62b0fa921"
+    },
+    {
+      "path": "frontend/src/hooks/usePrefersReducedMotion.ts",
+      "sha256": "b08b8700a2b135ef16bb1fadb15ca6dc397f7507c4da0d41c5362c99f29b0ca0"
+    },
+    {
+      "path": "frontend/src/hooks/useRecentFields.ts",
+      "sha256": "4b027b6328344d7ac860c48dd866699d515d80cf5cfafe4426a2e4130c5a930c"
+    },
+    {
+      "path": "frontend/src/hooks/useSkyData.ts",
+      "sha256": "6c47bc1cd321542010d272c676a5bb01db30b2f341b3e30992bac89e83b55a82"
+    },
+    {
+      "path": "frontend/src/hooks/useSpectrum.ts",
+      "sha256": "202a4366bd61ee8fa7dfff31788410d23960a2071e103f170aaa1c84a9d2064b"
+    },
+    {
+      "path": "frontend/src/hooks/useUrlState.ts",
+      "sha256": "3269272d18a4916a045af2d510a8242bcc691f755e976b20414000445d968a7b"
+    },
+    {
+      "path": "frontend/src/lib/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/lib/api.ts",
+      "sha256": "ed2e57df43cbe4f0bc27a4235a876e9a848a31a57f64cd0fa70bbbe776483544"
+    },
+    {
+      "path": "frontend/src/lib/audio.ts",
+      "sha256": "3595a721349915c91b9feb27083428d7187baed8f1d2062f280e528348f46e43"
+    },
+    {
+      "path": "frontend/src/lib/colormaps.ts",
+      "sha256": "b86ec0b733aedeb5e6a8af80921782d5dbe14c3726464ce8879ed75c371d21b7"
+    },
+    {
+      "path": "frontend/src/lib/comparisonRecovery.ts",
+      "sha256": "713b4a86875e8ae6a7f245b532bd0314971a3212cc927a10b0f9d6fb98f772ae"
+    },
+    {
+      "path": "frontend/src/lib/coordinates.ts",
+      "sha256": "621b8b5225349e090d5d53567d556cf86408c211607cfef42657334273de4dec"
+    },
+    {
+      "path": "frontend/src/lib/display.ts",
+      "sha256": "73b1ee154e44c6f022aaa3817880d0a42a2dcbe3557c529a2a7e122d8d818e26"
+    },
+    {
+      "path": "frontend/src/lib/flags.ts",
+      "sha256": "477d260a9e5cefd340d23dea6d3324db47cb0d3d7d439a07b5d12941c72a6b3a"
+    },
+    {
+      "path": "frontend/src/lib/frames.ts",
+      "sha256": "02f08751dc98473dd12ae7cd6dca969dc150b9e73d199cc6d83e548574f8995e"
+    },
+    {
+      "path": "frontend/src/lib/gaia.ts",
+      "sha256": "634606bff2373fcf0fa496e06a7bee261c33658fd6544cbfeb1835498776bf89"
+    },
+    {
+      "path": "frontend/src/lib/lvf.ts",
+      "sha256": "923c870ab9ab6ca1716e11e6c738dbb6eeffe41a30e2a8e7e6b491ff76a375ad"
+    },
+    {
+      "path": "frontend/src/lib/semantics.ts",
+      "sha256": "31177ef58d5081e634e9bd705a35e6af8e8fa56d50a04855b5098aa54f4d1e16"
+    },
+    {
+      "path": "frontend/src/lib/share.ts",
+      "sha256": "5a0983162a985f51d640c3e21449b6aad33ae36e77a474ac1445e0f192af8b13"
+    },
+    {
+      "path": "frontend/src/lib/targets.ts",
+      "sha256": "5ea68f5bed39ee6ec4c191dc3b0f0027939293da362dac99996114304cb50c16"
+    },
+    {
+      "path": "frontend/src/lib/telemetry.ts",
+      "sha256": "8259b9601ea8c5ee28045e324aa4b8bceafd64dfad143f7e204d14f97ba7e725"
+    },
+    {
+      "path": "frontend/src/lib/triage.ts",
+      "sha256": "70781bd94db32d9ce58fc476d2f3bfbc014f8388dff45e04dcb17d162874ffe7"
+    },
+    {
+      "path": "frontend/src/lib/trial.ts",
+      "sha256": "db5d111338a902e6cf45fa571590d6549dfe9654331b30d835f8ac81f23c2715"
+    },
+    {
+      "path": "frontend/src/lib/types.ts",
+      "sha256": "c5f1cf9697a5db9ec2775c66c784b3954f62bbd46f386f92957b9d35e936b34b"
+    },
+    {
+      "path": "frontend/src/lib/wcs.ts",
+      "sha256": "15c8e8753b7eb746b44a3004dcc92d465204b8d5d36ebfb4cee6f7fc200bb0fb"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "sha256": "39712b6173d682cf17dcbb5783851f73c080776989ba5e4603a9a63f0510baa9"
+    },
+    {
+      "path": "frontend/src/styles/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/styles/global.css",
+      "sha256": "8992b47ed09621cbf6691b210cc4f2976f1feb2142452e4ddcbade18cc3efdfe"
+    },
+    {
+      "path": "frontend/src/vite-env.d.ts",
+      "sha256": "6f3aec004321e961cc3ed41138c382317ff8acb8589143f8b26ce516751193e1"
+    },
+    {
+      "path": "frontend/dist/assets/index-Bn097oJ0.js",
+      "sha256": "1d70584c77a7714f8b60c38e1f0f0acb4665ad0455ca64787d1e97c2a26a01ed"
+    },
+    {
+      "path": "frontend/dist/assets/index-D2F3SyWT.css",
+      "sha256": "e065cca4d1d189f70ab51d3848802f672228504a204d360bf03b83884ce67d29"
+    },
+    {
+      "path": "frontend/dist/favicon.svg",
+      "sha256": "db37835412da24e2c1e390e02ea0ee09d0508c928cc940bb656cfe58844fcee5"
+    },
+    {
+      "path": "frontend/dist/help/how-it-works.svg",
+      "sha256": "d7cb539cc72121826f22670c22b0aed86c661b3df1e6fc4251a3bb77d8d99c1e"
+    },
+    {
+      "path": "frontend/dist/index.html",
+      "sha256": "bb7aa9a8dccf805458c96941a4958db716a1f65a7972b29c6fcf9296ff411282"
+    },
+    {
+      "path": "frontend/qa/phase6/browser-captures.mjs",
+      "sha256": "30abbb1e0f03745359473762aa0c060bdd31f3e4ba659469de304859f9f93222"
+    },
+    {
+      "path": "frontend/qa/phase6/browser-release.mjs",
+      "sha256": "40f71093c495dcd43d373d6c9939497e4402bc206de074dce73cccace445d498"
+    },
+    {
+      "path": "frontend/qa/phase6/browser-requests.mjs",
+      "sha256": "c46fc6debb44c5687edaad9357c078e105f38efeca291ed4dd04be609364fdcd"
+    },
+    {
+      "path": "frontend/qa/phase6/browser-shortcuts.mjs",
+      "sha256": "d0334d56ad4454c25ed5759482d88002fbf61072891f193100c182878c72e58c"
+    },
+    {
+      "path": "frontend/qa/phase6/browser-spectrum-recovery.mjs",
+      "sha256": "024d26db0ec298cd33954a7128cff2f5decaae921ae6ab48807807d3646b6b6c"
+    }
+  ],
+  "observation_sources": [
+    {
+      "path": "golden_cache/wise_0855/manifest.json",
+      "sha256": "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1"
+    },
+    {
+      "path": "golden_cache/wise_0855/spectrum.json",
+      "sha256": "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884"
+    }
+  ],
+  "http_response_hashes": [
+    {
+      "url": "http://127.0.0.1:8177/api/v1/sky?source=saved&discovery=live&ra=133.75921&dec=-7.24216&size=0.2&bands=all&epochs=all&include_diff=true&target_id=wise_0855",
+      "sha256": "3e084f9db423d53ead04f8750f595ade0fa5f47ea773a7b6d256a31adef1adeb"
+    }
+  ],
+  "retained_observation_sources": [
+    {
+      "path": "backend/.cache/phase5/recurrent-download-diagnosis/final/rw_aurigae-response.json",
+      "sha256": "1d38abe31a0c76c749bbfa10d16acfb59d2083f6c562f8a0235beadc8cba1480"
+    },
+    {
+      "path": "backend/.cache/phase6/spectrum-final/rw_aurigae-live-response.json",
+      "sha256": "c726252554a95d326d0f5d18e8a5f6e1f40e7bb40864ee3ad5fef7a3543ffb0c"
+    },
+    {
+      "path": "backend/.cache/phase6/spectrum-final/rw_aurigae-known-response.json",
+      "sha256": "9492194ef6916546c39d26715f0f355cb7b07a1f2d485df0e658a1ac291311aa"
+    },
+    {
+      "path": "backend/.cache/phase5/recurrent-download-diagnosis/final/r_draconis-response.json",
+      "sha256": "36243e932bd2e89913601dc2f76f1ce875fe7614861a6eaf2b364e0e896cc1e1"
+    },
+    {
+      "path": "backend/.cache/phase6/spectrum-final/r_draconis-known-response.json",
+      "sha256": "d6249a22cfc94274f7ac547732600bc0e9501ed3bd02e6651ccea92a775a486c"
+    },
+    {
+      "path": "backend/.cache/phase5/recurrent-download-diagnosis/final/wise_0855-response.json",
+      "sha256": "601497ccd54893957db48d9912e286390067552f4862e41fcb8ffdbc4102de66"
+    },
+    {
+      "path": "backend/.cache/phase6/spectrum-final/wise_0855-known-response.json",
+      "sha256": "2a5c6845ab2cfcb11e24e44e67d3c6ddcbf34d488929957ca36efc60d07207fa"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "target_id": "eps_indi_b",
+  "generated_at": "2026-11-13T20:01:30+00:00",
+  "is_simulated_fallback": false,
+  "note": "Reference/display fields only. These surveys are not SPHEREx data and are not calibrated photometry; the stretch is chosen for display.",
+  "attribution_text": "DSS2 Red via NASA/GSFC SkyView; Digitized Sky Survey (STScI). WISE 3.4/4.6 um (AllWISE) via NASA/GSFC SkyView and NASA/JPL/Caltech WISE. Gaia DR3 via ESA/Gaia/DPAC through NASA/IPAC IRSA TAP. These are display-only reference fields, not calibrated photometry and not SPHEREx data.",
+  "credits": [
+    {
+      "asset": "ref_optical.webp",
+      "survey": "DSS2 Red",
+      "provider": "NASA/GSFC SkyView",
+      "credit": "Digitized Sky Survey (STScI), DSS2 Red"
+    },
+    {
+      "asset": "ref_wise.webp",
+      "survey": "WISE 3.4",
+      "provider": "NASA/GSFC SkyView",
+      "credit": "NASA/JPL/Caltech WISE (AllWISE), 3.4 um"
+    },
+    {
+      "asset": "ref_wise_w2.webp",
+      "survey": "WISE 4.6",
+      "provider": "NASA/GSFC SkyView",
+      "credit": "NASA/JPL/Caltech WISE (AllWISE), 4.6 um"
+    },
+    {
+      "asset": "gaia_dr3.json",
+      "survey": "Gaia DR3",
+      "provider": "NASA/IPAC IRSA TAP",
+      "credit": "ESA/Gaia/DPAC, Gaia DR3"
+    }
+  ]
+}

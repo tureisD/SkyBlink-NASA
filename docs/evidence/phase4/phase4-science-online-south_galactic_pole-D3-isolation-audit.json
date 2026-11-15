@@ -1,0 +1,220 @@
+{
+  "audited_at": "2026-11-14T21:11:40.102017+00:00",
+  "field": "south_galactic_pole",
+  "detector": 3,
+  "pair_lock_sha256": "a6decb6cee21f0e1c3fb925c207e01948cf2c422a79d1b8604fb46e990d08aff",
+  "all_locked_controls_pass": true,
+  "controls": [
+    {
+      "source_id": "2342655178203440640",
+      "visits": [
+        {
+          "mjd": 61213.205787393,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 39.19451655111103,
+          "nearest_allwise_arcsec": 39.273005705979706,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        },
+        {
+          "mjd": 61228.619325298,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 39.194257846917225,
+          "nearest_allwise_arcsec": 39.273176819021806,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        }
+      ]
+    },
+    {
+      "source_id": "2342673285785556864",
+      "visits": [
+        {
+          "mjd": 61213.205787393,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 53.02089296733135,
+          "nearest_allwise_arcsec": 32.40565861285374,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        },
+        {
+          "mjd": 61228.619325298,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 53.02166753772863,
+          "nearest_allwise_arcsec": 32.406081294823004,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        }
+      ]
+    },
+    {
+      "source_id": "2342678886422908544",
+      "visits": [
+        {
+          "mjd": 61213.205787393,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 55.33789312254259,
+          "nearest_allwise_arcsec": 39.641522860447964,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        },
+        {
+          "mjd": 61228.619325298,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 55.33693865995043,
+          "nearest_allwise_arcsec": 39.64267234614829,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        }
+      ]
+    },
+    {
+      "source_id": "2342687545077003136",
+      "visits": [
+        {
+          "mjd": 61213.205787393,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 73.40000958923474,
+          "nearest_allwise_arcsec": 33.985045373005,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        },
+        {
+          "mjd": 61228.619325298,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 73.39962486296761,
+          "nearest_allwise_arcsec": 33.9849317856105,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        }
+      ]
+    },
+    {
+      "source_id": "2342875699006181376",
+      "visits": [
+        {
+          "mjd": 61213.205787393,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 38.698864543261166,
+          "nearest_allwise_arcsec": 39.50803219925641,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        },
+        {
+          "mjd": 61228.619325298,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 38.696353587991986,
+          "nearest_allwise_arcsec": 39.507843304757465,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        }
+      ]
+    },
+    {
+      "source_id": "2342656002837160832",
+      "visits": [
+        {
+          "mjd": 61213.205787393,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 56.23929393483686,
+          "nearest_allwise_arcsec": 32.41065114600619,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        },
+        {
+          "mjd": 61228.619325298,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 56.238961034128586,
+          "nearest_allwise_arcsec": 32.41004369613021,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        }
+      ]
+    },
+    {
+      "source_id": "2342663149662738432",
+      "visits": [
+        {
+          "mjd": 61213.205787393,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 48.37562873686672,
+          "nearest_allwise_arcsec": 31.782059322187003,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        },
+        {
+          "mjd": 61228.619325298,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 48.37522860486152,
+          "nearest_allwise_arcsec": 31.781826354926665,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        }
+      ]
+    },
+    {
+      "source_id": "2342557733985442176",
+      "visits": [
+        {
+          "mjd": 61213.205787393,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 82.71073078178009,
+          "nearest_allwise_arcsec": 38.70869610500419,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        },
+        {
+          "mjd": 61228.619325298,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 82.71088490729207,
+          "nearest_allwise_arcsec": 38.70842142684603,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        }
+      ]
+    },
+    {
+      "source_id": "2342863363860108032",
+      "visits": [
+        {
+          "mjd": 61213.205787393,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 101.62132273850663,
+          "nearest_allwise_arcsec": 37.654140967661405,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        },
+        {
+          "mjd": 61228.619325298,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 101.62149920188202,
+          "nearest_allwise_arcsec": 37.65441921423005,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        }
+      ]
+    },
+    {
+      "source_id": "2342646966225943296",
+      "visits": [
+        {
+          "mjd": 61213.205787393,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 84.53183499544394,
+          "nearest_allwise_arcsec": 31.63153466989138,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        },
+        {
+          "mjd": 61228.619325298,
+          "time_scale": "utc",
+          "nearest_gaia_arcsec": 84.53159144468579,
+          "nearest_allwise_arcsec": 31.631153456655163,
+          "passed": true,
+          "limits": "Gaia missing PM retained at reference position; AllWISE has no PM in this query, so neighbors use catalog positions; unresolved/faint blends remain possible"
+        }
+      ]
+    }
+  ],
+  "timing": "Supplement after first D3 measurements discovered omitted per-exposure repeat of catalog isolation; unchanged threshold, no control deletion or replacement"
+}

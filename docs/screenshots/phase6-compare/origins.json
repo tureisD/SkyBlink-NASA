@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-11-15T16:33:49.142Z",
+  "scope": "Actual explicit saved Epsilon Indi B; existing development UI, no archive queries",
+  "files": [
+    {
+      "path": "frontend/src/App.tsx",
+      "sha256": "e1cff1ae09f628dbffdd8d6ea2c805a0c2ebe063a419050dd7af7c527d24569d"
+    },
+    {
+      "path": "frontend/src/styles/global.css",
+      "sha256": "9fe5e3ac5f0a2c0fba886da7496f963a06ecab936d50df384ceb6dbee809953a"
+    },
+    {
+      "path": "frontend/src/components/FieldsPanel.tsx",
+      "sha256": "1c0f84f208681f9b7c6142e3451642db496bdc76cbfe9112fdd0f07f61625223"
+    },
+    {
+      "path": "frontend/src/components/TimelineDock.tsx",
+      "sha256": "86b194e38096e92dd95cc6b1acb7a5286828f3299b3f48d58f6c04e1d8e550f4"
+    },
+    {
+      "path": "frontend/qa/phase6/browser-compare-sidebar.mjs",
+      "sha256": "e27f3677a637347623d3f82b5fc890580b832184faf753ccb362750a7492a54b"
+    },
+    {
+      "path": "golden_cache/eps_indi_b/manifest.json",
+      "sha256": "0c746f10bc8d64ff430067bce4eba438ef52fc8d0ad66d674ccad8b1e4bdb2b9"
+    },
+    {
+      "path": "frontend/dist/assets/index-B6nUFx8T.js",
+      "sha256": "e61b6154c81a65f50e5e3ba9468c141d88d595f60ed12fe8e402a3af74146c7b"
+    },
+    {
+      "path": "frontend/dist/assets/index-D952MtbI.css",
+      "sha256": "cf8f8033e0c7d4d208486a387f9793eda7a92451aebd063f719dcf8678bfb5af"
+    }
+  ],
+  "origin": "http://localhost:5173",
+  "captures": [
+    {
+      "path": "docs/screenshots/phase6-compare/compare-1440.png",
+      "sha256": "5f4f3aa5c2cba3753a0ecc1ac36b18b1ff3f856d60c85a21316734847a296ecc",
+      "width": 1440,
+      "source": "Explicit saved Epsilon Indi B, selected last two real epochs; development UI after final build"
+    },
+    {
+      "path": "docs/screenshots/phase6-compare/compare-320.png",
+      "sha256": "36e72726f78f409665a259329ad2823b81803e0d5926cf78fb361a5739458cd1",
+      "width": 320,
+      "source": "Explicit saved Epsilon Indi B, selected last two real epochs; development UI after final build"
+    }
+  ]
+}

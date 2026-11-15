@@ -1,0 +1,162 @@
+{
+  "captured_at": "2026-11-14T23:43:09.885Z",
+  "browser": "159.0.8154.6",
+  "api_version": "1.5.0",
+  "mode": "Live local API explicit saved mode; no route interception and no upstream acquisition",
+  "source_revision": [
+    {
+      "path": "frontend/src/App.tsx",
+      "sha256": "51ae9b2fd828a5bf56a00e2bae134474bbde14fed925a5a9a659e3566159865c"
+    },
+    {
+      "path": "frontend/src/components/SpectrumDrawer.tsx",
+      "sha256": "45508e1a7a6cc15a154c662d2eafb5ff42c08b325dbba5dbc6552802d9d3ed51"
+    },
+    {
+      "path": "frontend/src/components/SpectrumPlot.tsx",
+      "sha256": "15804d0b578dadf46014ffb890d935960b3b0702c836241e24a251fced0f523f"
+    },
+    {
+      "path": "frontend/src/lib/semantics.ts",
+      "sha256": "cc45da788ac0fb4f7b6f2e5de37a0046dadb43e38081e140c46ff7221aaa5192"
+    },
+    {
+      "path": "frontend/src/styles/global.css",
+      "sha256": "cbab8ad4c621e93a26f7fe992ae88fa4e63c8f08b5686e84aef0c047b6fa16d1"
+    }
+  ],
+  "images": [
+    {
+      "file": "workspace-desktop.png",
+      "sha256": "d38d4aa45a9fff88694f93aca89b16abf28472782e79f5d7f7dd9b9b2197dd90",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Real historical saved WISE; paused Observe workspace, unvalidated comparison explicitly labeled.",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/wise_0855/manifest.json",
+          "sha256": "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1"
+        },
+        {
+          "path": "golden_cache/wise_0855/spectrum.json",
+          "sha256": "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884"
+        }
+      ]
+    },
+    {
+      "file": "comparison-desktop.png",
+      "sha256": "4445cf50ce3673e9b2a094380826a0616ad2424396cafa3d658d550097c4e693",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=compare&comparisonLayout=side-by-side&pingpong=0&advanced=0&source=saved&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Actual saved A/B frames with shared display controls; dates and comparison limitations remain visible.",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/wise_0855/manifest.json",
+          "sha256": "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1"
+        },
+        {
+          "path": "golden_cache/wise_0855/spectrum.json",
+          "sha256": "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884"
+        }
+      ]
+    },
+    {
+      "file": "workspace-mobile-390.png",
+      "sha256": "6489f58585dd73ed08fe7fbf2e970df37611057fbdc72fe71f62e9dde8a07fb9",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Real historical saved WISE; paused Observe workspace, unvalidated comparison explicitly labeled.",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/wise_0855/manifest.json",
+          "sha256": "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1"
+        },
+        {
+          "path": "golden_cache/wise_0855/spectrum.json",
+          "sha256": "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884"
+        }
+      ]
+    },
+    {
+      "file": "workspace-mobile-320.png",
+      "sha256": "291750c0dca5aa8240a3158816d4911710846686dd01237d7f25244b4c7602dc",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Real historical saved WISE; paused Observe workspace, unvalidated comparison explicitly labeled.",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/wise_0855/manifest.json",
+          "sha256": "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1"
+        },
+        {
+          "path": "golden_cache/wise_0855/spectrum.json",
+          "sha256": "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884"
+        }
+      ]
+    },
+    {
+      "file": "spectrum-signed.png",
+      "sha256": "e5b4cc2635b476bd89ccbd19d48d356a47a23643f6b7fabee6490b81dd6ebdfa",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2024_E1&epochB=2025_E1&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=measure&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=331.0962&dec=-56.8005&size=0.2&target=eps_indi_b&bands=all&epoch=2024_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Actual saved Epsilon Indi spectrum retains its negative flux sample and complete error range.",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/eps_indi_b/manifest.json",
+          "sha256": "0c746f10bc8d64ff430067bce4eba438ef52fc8d0ad66d674ccad8b1e4bdb2b9"
+        },
+        {
+          "path": "golden_cache/eps_indi_b/spectrum.json",
+          "sha256": "3904ff476a81a5ca00562d648b941bdecdd448004b71cb5c24a05bcc4c027501"
+        }
+      ]
+    },
+    {
+      "file": "spectrum-unavailable.png",
+      "sha256": "270ee3e8e1184a56d4b3dd582bcec01010f8d5ec1759989bb2ef71dea2d7766e",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2024_E1&epochB=2025_E1&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=248.1674&dec=66.7548&size=0.2&target=r_draconis&bands=all&epoch=2024_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Actual saved R Draconis: all240 flux values unavailable; metadata and reasons remain accessible.",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/r_draconis/manifest.json",
+          "sha256": "16edff53c4c79e8cef4840971d6335916246aeb7c8c82013c3bc2fccf546ca87"
+        },
+        {
+          "path": "golden_cache/r_draconis/spectrum.json",
+          "sha256": "9fef380de4d6aeab7c3ebf05154687bbafadb11fd72b84381d0dbacff1c110a7"
+        }
+      ]
+    }
+  ]
+}

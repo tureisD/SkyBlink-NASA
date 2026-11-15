@@ -1,0 +1,476 @@
+{
+  "generated_at": "2026-11-14T18:23:37.398603+00:00",
+  "method": "Actual FastAPI TestClient requests through the live IRSA pipeline; isolated per-case cache; no network stubs.",
+  "limitations": "Does not test browser or public reverse proxy. field_offset samples a shifted cutout, not a proven detector-footprint boundary. 503 is not evidence of absent sky coverage.",
+  "case_timeout_seconds": 145.0,
+  "cases": [
+    {
+      "field": "high_latitude",
+      "ra": 210.80227,
+      "dec": 54.34895,
+      "size_deg": 0.05,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 120.063,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Cutout download deadline exhausted",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 123.546
+    },
+    {
+      "field": "high_latitude",
+      "ra": 210.80227,
+      "dec": 54.34895,
+      "size_deg": 0.2,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 63.656,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request deadline exhausted; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 70.687
+    },
+    {
+      "field": "low_latitude",
+      "ra": 83.82,
+      "dec": -5.39,
+      "size_deg": 0.05,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 68.235,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request deadline exhausted; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 72.031
+    },
+    {
+      "field": "low_latitude",
+      "ra": 83.82,
+      "dec": -5.39,
+      "size_deg": 0.2,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 3.782,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 11.75
+    },
+    {
+      "field": "dense_plane",
+      "ra": 266.4051,
+      "dec": -28.936175,
+      "size_deg": 0.05,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 5.813,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 10.921
+    },
+    {
+      "field": "dense_plane",
+      "ra": 266.4051,
+      "dec": -28.936175,
+      "size_deg": 0.2,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 5.766,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 10.579
+    },
+    {
+      "field": "north_pole",
+      "ra": 20.0,
+      "dec": 89.9,
+      "size_deg": 0.05,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 15.312,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 20.406
+    },
+    {
+      "field": "north_pole",
+      "ra": 20.0,
+      "dec": 89.9,
+      "size_deg": 0.2,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 8.75,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 14.297
+    },
+    {
+      "field": "south_pole",
+      "ra": 200.0,
+      "dec": -89.9,
+      "size_deg": 0.05,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 6.39,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 11.125
+    },
+    {
+      "field": "south_pole",
+      "ra": 200.0,
+      "dec": -89.9,
+      "size_deg": 0.2,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 3.875,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 9.937
+    },
+    {
+      "field": "ra_zero_west",
+      "ra": 359.99,
+      "dec": -20.0,
+      "size_deg": 0.05,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 67.391,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request deadline exhausted; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 71.766
+    },
+    {
+      "field": "ra_zero_west",
+      "ra": 359.99,
+      "dec": -20.0,
+      "size_deg": 0.2,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 14.484,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 18.812
+    },
+    {
+      "field": "ra_zero_east",
+      "ra": 0.01,
+      "dec": -20.0,
+      "size_deg": 0.05,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 26.875,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed: The read operation timed out",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 30.563
+    },
+    {
+      "field": "ra_zero_east",
+      "ra": 0.01,
+      "dec": -20.0,
+      "size_deg": 0.2,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 62.765,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request deadline exhausted; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 66.406
+    },
+    {
+      "field": "field_offset",
+      "ra": 210.90227,
+      "dec": 54.44895,
+      "size_deg": 0.05,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 6.843,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 9.906
+    },
+    {
+      "field": "field_offset",
+      "ra": 210.90227,
+      "dec": 54.44895,
+      "size_deg": 0.2,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 4.609,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 7.844
+    },
+    {
+      "field": "high_latitude",
+      "ra": 210.80227,
+      "dec": 54.34895,
+      "size_deg": 0.05,
+      "concurrent": true,
+      "results": [
+        {
+          "mode": "concurrent_1",
+          "status": 503,
+          "seconds": 85.906,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request deadline exhausted; SIA2=SIA2 collection discovery is incomplete: IRSA request failed: The read operation timed out",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "concurrent_2",
+          "status": 503,
+          "seconds": 85.906,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request deadline exhausted; SIA2=SIA2 collection discovery is incomplete: IRSA request failed: The read operation timed out",
+            "detail": {}
+          }
+        }
+      ],
+      "wall_seconds": 88.875
+    }
+  ]
+}

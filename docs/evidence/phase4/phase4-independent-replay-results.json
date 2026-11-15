@@ -1,0 +1,334 @@
+{
+  "schema": "skyblink.independent-replay-review/1",
+  "reviewer": "separate frontend reviewer agent",
+  "independence_scope": "same Windows host; new isolated Python virtual environment; not an independent human or different OS",
+  "venv": "backend/.cache/phase4/independent-venv",
+  "include_system_site_packages": false,
+  "enable_user_site": false,
+  "bundle_manifest_sha256": "6c4dc3870b711c29e596631ed94d9f05dfe84511d0b2d3135d2215411392bc18",
+  "bundle_files_independently_verified": 52,
+  "pinned_distribution_versions_verified": 66,
+  "pip_check": "No broken requirements found.",
+  "source_digest": "bc353ea79ef26a4e2a1bcdd648665452115effd634a45fa7dfff6f2223d0feaa",
+  "drift_overrides": false,
+  "execution": "bundled source/scripts/replay_analysis.py replay --record records/<id>.json --store inputs --output ../independent-results/<kind>",
+  "replays": [
+    {
+      "actual_environment": {
+        "implementation": "CPython",
+        "machine": "AMD64",
+        "native_libraries": {
+          "wcslib": "8.6",
+          "webp": "1.6.0"
+        },
+        "packages": {
+          "Pillow": "13.0.0",
+          "astropy": "8.0.2",
+          "astropy-healpix": "2.0.1",
+          "astropy-iers-data": "0.2026.11.9.0.35.9",
+          "dask": "2026.8.0",
+          "fastapi": "0.163.0",
+          "fsspec": "2026.9.0",
+          "httpx": "0.28.1",
+          "numpy": "2.4.6",
+          "photutils": "3.0.0",
+          "pydantic": "2.14.3",
+          "pyerfa": "2.0.1.5",
+          "pyvo": "1.10.0",
+          "reproject": "0.21.0",
+          "scipy": "1.17.1",
+          "sep": "1.4.1",
+          "zarr": "3.1.6"
+        },
+        "platform": "win32",
+        "python": "3.11.9"
+      },
+      "analysis_id": "sha256:ff6a61bd4ebab141f2bdaf8e7f6e92927b9412f5dca8adae6413c8264e750c75",
+      "code_matches": true,
+      "environment_matches": true,
+      "image_replay": {
+        "artifact_hashes_match": true,
+        "asset_hashes": {
+          "2024_E1_ALL.webp": "3fd30ebb06617fdc49ceba159f73c1e5e8c04ac468e0ab18c62aad443dca9433",
+          "2024_E1_D3.webp": "3fd30ebb06617fdc49ceba159f73c1e5e8c04ac468e0ab18c62aad443dca9433",
+          "2024_E1_FLAGS.webp": "9e32e07624db1e1fae36808b7b31ee730652c138d7f38bba58f95070ec1230a7",
+          "2025_E1_ALL.webp": "0cb036c7aa2a2c4fa84459c3e396709ab34a920f01d49fda641fb480f0e87451",
+          "2025_E1_D3.webp": "0cb036c7aa2a2c4fa84459c3e396709ab34a920f01d49fda641fb480f0e87451",
+          "2025_E1_FLAGS.webp": "f69c405c33d7710ea6a421ee3e07b2a46a9ed547df886ad55f24e393967b4464",
+          "diff_2025_E1_minus_2024_E1_ALL.webp": "9745cfa07858d51bc7f41cf5fb0bf385d3e365db2c25332c62bb560aa35868a0",
+          "diff_2025_E1_minus_2024_E1_D3.webp": "9745cfa07858d51bc7f41cf5fb0bf385d3e365db2c25332c62bb560aa35868a0",
+          "telemetry_2024_E1.bin.gz": "e8ddba7727509bf0351abb90b40a30ba74e41512f9948d89db6b22c9f69f68fa",
+          "telemetry_2025_E1.bin.gz": "fd165cd25a70cdb33462274b40763273af7a0e78d4c5f6d149124babf56049aa"
+        },
+        "normalization": {
+          "applied": true,
+          "band_weights_by_epoch": {
+            "2024_E1": {
+              "3": 1.0
+            },
+            "2025_E1": {
+              "3": 1.0
+            }
+          },
+          "clamped": false,
+          "method": "static_source_p99_5",
+          "method_by_epoch_band": {
+            "2024_E1": {
+              "3": "static_source_p99_5"
+            },
+            "2025_E1": {
+              "3": "static_source_p99_5"
+            }
+          },
+          "n_fallback_by_epoch_band": {
+            "2024_E1": {
+              "3": 50341
+            },
+            "2025_E1": {
+              "3": 50958
+            }
+          },
+          "n_static_by_epoch_band": {
+            "2024_E1": {
+              "3": 42153
+            },
+            "2025_E1": {
+              "3": 42798
+            }
+          },
+          "raw_scale_by_epoch_band": {
+            "2024_E1": {
+              "3": 1.0
+            },
+            "2025_E1": {
+              "3": 1.0016936743331213
+            }
+          },
+          "reference_epoch": "2024_E1",
+          "reference_epoch_by_band": {
+            "3": "2024_E1"
+          },
+          "reference_mode_by_band": {
+            "3": "static_source_p99_5"
+          },
+          "reference_percentile_by_band": {
+            "3": 10.313100958936326
+          },
+          "scale_by_epoch_band": {
+            "2024_E1": {
+              "3": 1.0
+            },
+            "2025_E1": {
+              "3": 1.0016936743331213
+            }
+          },
+          "status": "ok",
+          "status_by_epoch_band": {
+            "2024_E1": {
+              "3": "ok"
+            },
+            "2025_E1": {
+              "3": "ok"
+            }
+          }
+        },
+        "numerical_match": true,
+        "science_planes": {
+          "2024_E1:D3": {
+            "finite_measurement_pixels": 51578,
+            "flags_sha256": "d17c4d353fb7c7fed481417d88d0b315558a74f22f599877365e0d1cb440e8b2",
+            "measurement_sha256": "e2c03b1cf5f26db3428a181a162174281224cd43ad56b3e9201aa0b9b0a832f3",
+            "normalized_display_sha256": "685a46b1cb9199cedb6f64df0e4d6f7a9298a2b135a3d68ec67eddbfeb380f8d",
+            "variance_sha256": "faa2030befcddccf3b16272a1a8ae7621c077629b5f25bd9e7e715fc68d60db1"
+          },
+          "2025_E1:D3": {
+            "finite_measurement_pixels": 52198,
+            "flags_sha256": "d3ce40493f6e047baf226d395d82dc94adcd59bd6171a7d230eecfcf5129fb4b",
+            "measurement_sha256": "755836eb4eb7f45d7b1420e2e0d8d6b6d32e07985e0d95ed253599298b5b7baa",
+            "normalized_display_sha256": "470b06c62895ff5949a693c0b42ae482912fcbe2be4b1fcaf8b7e9f3bc30ff2c",
+            "variance_sha256": "7e8e34d4c6b889b1b85114292a7e7f7ab997f9ba5d33b0930258c88f6fbb6a79"
+          }
+        },
+        "selection_replay": "pinned_selected_inputs; dense_gate_rechecked; archive_discovery_not_requeried",
+        "validation": "numerical_replay_only_not_independent_scientific_acceptance"
+      },
+      "input_hashes_verified": [
+        "730d8183e77882b0a37e61256250956d67b5b7730db465e402dbae4337e05661",
+        "9d4fb57bf944c155ca65c8885581cb2d36cb4152fe382ddf0980072c363a179c"
+      ],
+      "kind": "image",
+      "numerical_match": true,
+      "replayed_at": "2026-11-14T20:29:35.962082+00:00",
+      "scientific_validation": "not_established_by_replay",
+      "strict_replay": true,
+      "verified": true,
+      "report_sha256": "68b3fad2cd90c126e97ff9484055b83f8a011525cf24ce542511ba62af3c48e0",
+      "local_report": "backend/.cache/phase4/independent-results/image/replay-report.json"
+    },
+    {
+      "actual_environment": {
+        "implementation": "CPython",
+        "machine": "AMD64",
+        "native_libraries": {
+          "wcslib": "8.6",
+          "webp": "1.6.0"
+        },
+        "packages": {
+          "Pillow": "13.0.0",
+          "astropy": "8.0.2",
+          "astropy-healpix": "2.0.1",
+          "astropy-iers-data": "0.2026.11.9.0.35.9",
+          "dask": "2026.8.0",
+          "fastapi": "0.163.0",
+          "fsspec": "2026.9.0",
+          "httpx": "0.28.1",
+          "numpy": "2.4.6",
+          "photutils": "3.0.0",
+          "pydantic": "2.14.3",
+          "pyerfa": "2.0.1.5",
+          "pyvo": "1.10.0",
+          "reproject": "0.21.0",
+          "scipy": "1.17.1",
+          "sep": "1.4.1",
+          "zarr": "3.1.6"
+        },
+        "platform": "win32",
+        "python": "3.11.9"
+      },
+      "analysis_id": "sha256:441f928c80516d19d068572041deafffb70474edb14494583e24e40a8e09e245",
+      "code_matches": true,
+      "differences": [],
+      "environment_matches": true,
+      "input_hashes_verified": [
+        "730d8183e77882b0a37e61256250956d67b5b7730db465e402dbae4337e05661",
+        "9d4fb57bf944c155ca65c8885581cb2d36cb4152fe382ddf0980072c363a179c"
+      ],
+      "kind": "spectrum",
+      "numerical_match": true,
+      "outputs": {
+        "channels.json": {
+          "sha256": "a438a9613d7ce8754b2fd12a7fe72d9b3dab70d02adb26811100711c32c4cfb6",
+          "size_bytes": 1607
+        }
+      },
+      "replayed_at": "2026-11-14T20:31:33.208250+00:00",
+      "scientific_validation": "not_established_by_replay",
+      "strict_replay": true,
+      "verified": true,
+      "report_sha256": "193c2654e8517358401be09f426b93b17841bdada0eea9930413bada3030f659",
+      "local_report": "backend/.cache/phase4/independent-results/spectrum/replay-report.json"
+    },
+    {
+      "actual_environment": {
+        "implementation": "CPython",
+        "machine": "AMD64",
+        "native_libraries": {
+          "wcslib": "8.6",
+          "webp": "1.6.0"
+        },
+        "packages": {
+          "Pillow": "13.0.0",
+          "astropy": "8.0.2",
+          "astropy-healpix": "2.0.1",
+          "astropy-iers-data": "0.2026.11.9.0.35.9",
+          "dask": "2026.8.0",
+          "fastapi": "0.163.0",
+          "fsspec": "2026.9.0",
+          "httpx": "0.28.1",
+          "numpy": "2.4.6",
+          "photutils": "3.0.0",
+          "pydantic": "2.14.3",
+          "pyerfa": "2.0.1.5",
+          "pyvo": "1.10.0",
+          "reproject": "0.21.0",
+          "scipy": "1.17.1",
+          "sep": "1.4.1",
+          "zarr": "3.1.6"
+        },
+        "platform": "win32",
+        "python": "3.11.9"
+      },
+      "analysis_id": "sha256:c4b8656866e0e7d9e028c14a862aafc82fe5870c220b759e060a6e1953833e34",
+      "code_matches": true,
+      "differences": [],
+      "environment_matches": true,
+      "input_hashes_verified": [
+        "0062478d328a4ce2ced736be97c55462f963d6432e405591b5429eeb5e7cc796",
+        "0bb5c9e8469631cf58a7795df83bae836507e09c6e272137ea6dea0ded8a9922",
+        "114fbfc073891c17e6d7d4c476a4da8062fe6032a7306b3b46042dc5c0f67048",
+        "133315d52a728127011d226072b07bbd80f3e5efb62a63a2cfb1f3066ef5488d",
+        "17423559d878a5c79cd745de81266eaba6e668e4507bb7a3be2a4e090872c68e",
+        "19a5be8a48ceaffef353fae7c3f4914d00e3c5f1070267e1cf479e01850929b9",
+        "2bba382d4307b32f4c2b7afbef2a36e460cf733887a774793547a4b45a431f29",
+        "2d70ad0b36289bd08213c43d8e791f8691e8fbac4bdbd5d39067e97e766468f7",
+        "32101138fb78fb99219a9e80005b46fbb9e8dd386fafaca4370362b405454a5d",
+        "39d42265c6b9a7d9ef4714ecd3fe67aed57d9a99960de30bf61e7e0d89af3d65",
+        "3a1cdd4b60746b1e093d7a0366b13827934e2ee8e4ab184ed1e8499612b6b764",
+        "3c75d6d1753d9c00ba2ddc496b0fccce86d1eb356bd955b7383f0b6822b56bb4",
+        "434b7cdf279a367bdf67ade9e5bf4de72220683acbd635a759314fedd4efb2c6",
+        "4b50e82097a57dda28b073ff31d4e88cd61fb448656658f3dac62040ffd23cbd",
+        "5a7ceac4e2a63edc05c73c876d96ff536724fbf41e9930f088ae35efe1ad3ea0",
+        "60e0d9e003e6dd5abd314ab89a54c7c8faaedd32bf070a10354c37b8296e9dfd",
+        "613318f44d1a2d22c9a3fa1f355b57e57628be3426a19eaf09f1f6c1c7528f4f",
+        "81d10232cbf37725e435d38e3d5bb922efe4304c775b684c3837355f47647fa2",
+        "83eb86fe56a0045c1882945d2978e4c45e626a3d1f9f8ebe05a7693b8ace1a94",
+        "86d366b24474f539d972ed2204030be10777593ad45924f46017c600bf3614b8",
+        "8d97c44d01cb79ab14db3c4ba1e6d83e2d39f6baf1a6524110176980bb3fd791",
+        "9d5f6b23c3487d975703dbbef40cf12e6637c2664122943029418990d6885c04",
+        "9f7e52f7700307f774af316710c3ac3dcd1c9539f6fb1c6bac6023bff631ff33",
+        "a0e316a9ec4e31f901cb35f1316bc17625e6ce44655df0496760d4eaf5c1b650",
+        "afbad96c11e3b6db1ead61e0c5c0737a1eaee4bac216e1634fc3d315f1430ecc",
+        "c48b5cb6637a0e28a32231f86979e5f798e18a6a7b5354e1fe57f6e946373dc0",
+        "c754862b3d0873246ddfe33fefb7b90575195a155d0b97c0fef3b365ba8f23d2",
+        "c8aa6f28c5d828a29057c430ef018622cb68a973e119ca1f7ab177678a3d5690",
+        "d16933b0298e7e888ee85f2214d8068c6a1cff13c427b626e807910a142daf8a",
+        "d43dae1e4975b25916715f03865f68d53166f59e701abbdf79875f770cd5ec99",
+        "e1c779001c8a0687665621d8831382efcd78019bc5b796a0fbcaf8bac1f20d9f",
+        "e2770b25b7b21f58396c401a8dcc769c69981134f60f14d594389a059135ce11",
+        "f1aea44a7aa48f78407eb14c8b77543929cc984a26cca7f1e7bcc13a27128616",
+        "f5612cbb2fa8712327c853239021978e618d08d214dcaa242f00e73bb56c7145"
+      ],
+      "kind": "spectrum",
+      "numerical_match": true,
+      "outputs": {
+        "channels.json": {
+          "sha256": "f211a32e6c743e850b98a92d9fa22f69281e16d04bfbb729823d5d8fb1c277d9",
+          "size_bytes": 22622
+        }
+      },
+      "replayed_at": "2026-11-14T20:39:39.915771+00:00",
+      "scientific_validation": "not_established_by_replay",
+      "strict_replay": true,
+      "verified": true,
+      "report_sha256": "dec371d32070c4b50d0966d9ebbb962770feeed67b6b5f498ca5c6e3dc92eb6f",
+      "local_report": "backend/.cache/phase4/independent-results/null/replay-report.json",
+      "independent_channel_check": {
+        "present_channels": 34,
+        "null_flux_channels": 34,
+        "null_error_channels": 34,
+        "usable_channels": 0,
+        "hard_bad_centres": 34,
+        "reason_counts": {
+          "NO_CLEAN_APERTURE_PIXELS": 34,
+          "HARD_BAD_EXTRACTION_CENTRE": 34,
+          "UNSUPPORTED_BACKGROUND": 30
+        },
+        "all_per_exposure_differences_empty": true
+      }
+    }
+  ],
+  "null_spectrum_replay": "strict pass; all 34 real channels preserve null flux/error, false eligibility and matching reasons",
+  "limitations": [
+    "Replay uses pinned selected inputs; archive discovery was not requeried.",
+    "Exact numerical/asset agreement is reproducibility evidence, not independent scientific acceptance or calibrated variability.",
+    "Completed replay covers the original fixed-query Epsilon Indi D3 image pair/native spectrum and the corrected-coordinate R Draconis 34-channel null spectrum; it does not validate all fields or all archived observations."
+  ],
+  "null_bundle_integrity": {
+    "bundle_sha256": "6ab98594cfb6c627bb226107b3f49525d25547109d4cc09878ec765c57e2ff85",
+    "verified_files": 83,
+    "payload_bytes": 142693784,
+    "pinned_distributions_verified": 66,
+    "venv": "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\independent-venv",
+    "enable_user_site": false
+  }
+}

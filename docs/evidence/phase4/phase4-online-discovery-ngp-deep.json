@@ -1,0 +1,56 @@
+{
+  "run": "ngp-deep",
+  "created_at": "2026-11-14T20:53:33.989072+00:00",
+  "position": {
+    "ra": 192.85948,
+    "dec": 27.12825
+  },
+  "scope": "fresh upstream request diagnosis; single TOP page probes do not establish completeness",
+  "requests": [
+    {
+      "id": "sia_qr3_deep",
+      "requested_at": "2026-11-14T20:53:33.992025+00:00",
+      "method": "GET",
+      "endpoint": "https://irsa.ipac.caltech.edu/SIA",
+      "parameters": {
+        "COLLECTION": "spherex_qr3_deep",
+        "POS": "circle 192.85948000 27.12825000 0.000000",
+        "RESPONSEFORMAT": "votable",
+        "MAXREC": 100000
+      },
+      "trust_env": true,
+      "timeout_seconds": 45,
+      "user_agent": "SPHEREx-SkyBlink/1.0 (NASA Space Apps 2026)",
+      "status": 200,
+      "bytes": 27474,
+      "sha256": "fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd",
+      "response_path": "backend/.cache/phase4/online-discovery/ngp-deep/sia_qr3_deep-fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd.response",
+      "response_headers": {
+        "server": "nginx",
+        "content-type": "application/x-votable+xml",
+        "date": "Sat, 14 Nov 2026 20:53:35 GMT"
+      },
+      "votable_rows": 0,
+      "columns": [],
+      "elapsed_seconds": 2.016
+    },
+    {
+      "id": "sia_dr1_deep",
+      "requested_at": "2026-11-14T20:53:33.991040+00:00",
+      "method": "GET",
+      "endpoint": "https://irsa.ipac.caltech.edu/SIA",
+      "parameters": {
+        "COLLECTION": "spherex_dr1_deep",
+        "POS": "circle 192.85948000 27.12825000 0.000000",
+        "RESPONSEFORMAT": "votable",
+        "MAXREC": 100000
+      },
+      "trust_env": true,
+      "timeout_seconds": 45,
+      "user_agent": "SPHEREx-SkyBlink/1.0 (NASA Space Apps 2026)",
+      "error": "ConnectTimeout",
+      "message": "_ssl.c:989: The handshake operation timed out",
+      "elapsed_seconds": 10.89
+    }
+  ]
+}

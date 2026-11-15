@@ -1,0 +1,442 @@
+{
+  "created_at": "2026-11-14T20:12:29.240855+00:00",
+  "input_sha256": [
+    "9d4fb57bf944c155ca65c8885581cb2d36cb4152fe382ddf0980072c363a179c",
+    "730d8183e77882b0a37e61256250956d67b5b7730db465e402dbae4337e05661"
+  ],
+  "gaia_sha256": "370d89e569f3313e6b3a49fe560621af5436ec57141b95d447b59a2522e02389",
+  "astrometry": [
+    {
+      "summary": {
+        "status": "pass",
+        "count": 12,
+        "median_offset_arcsec": [
+          -0.18656933683711086,
+          0.10986668527307857
+        ],
+        "robust_sigma_axes_arcsec": [
+          0.25012769461055906,
+          0.2818332282796408
+        ],
+        "robust_rms_including_bias_arcsec": 0.43459479766151166,
+        "raw_radial_rms_arcsec": 0.37136356056624586,
+        "maximum_residual_arcsec": 0.5865337248823445,
+        "above_threshold": 0,
+        "threshold_arcsec": 1.5375
+      },
+      "matches": [
+        {
+          "gaia_source_id": "6412591133063877504",
+          "native_dra_cosdec_arcsec": -0.36770384418224206,
+          "native_ddec_arcsec": 0.28764570463046535,
+          "centroid": {
+            "x": 80.78921343072706,
+            "y": 30.880627724872323,
+            "peak_snr_approx": 91.18673916774634,
+            "sigma_x_px": 0.4556702848467641,
+            "sigma_y_px": 0.4439531391789732,
+            "reduced_chi2_approx": 1.6240212077234064
+          }
+        },
+        {
+          "gaia_source_id": "6412591751539163136",
+          "native_dra_cosdec_arcsec": 0.162234108547181,
+          "native_ddec_arcsec": 0.04687535459518857,
+          "centroid": {
+            "x": 48.098663441305845,
+            "y": 32.350135870134054,
+            "peak_snr_approx": 168.24509333350082,
+            "sigma_x_px": 0.47056887158568905,
+            "sigma_y_px": 0.44366428819004133,
+            "reduced_chi2_approx": 2.2903611063651077
+          }
+        },
+        {
+          "gaia_source_id": "6412591992057334144",
+          "native_dra_cosdec_arcsec": 0.01435053765635754,
+          "native_ddec_arcsec": 0.0922386162397385,
+          "centroid": {
+            "x": 60.236736491611325,
+            "y": 37.977286347869914,
+            "peak_snr_approx": 213.85156640892978,
+            "sigma_x_px": 0.4773047248476043,
+            "sigma_y_px": 0.4558964684790085,
+            "reduced_chi2_approx": 11.534782252648178
+          }
+        },
+        {
+          "gaia_source_id": "6412592370014523776",
+          "native_dra_cosdec_arcsec": 0.13618309604755857,
+          "native_ddec_arcsec": 0.12749475430641863,
+          "centroid": {
+            "x": 40.08230365779755,
+            "y": 45.533233804019495,
+            "peak_snr_approx": 548.1892596775741,
+            "sigma_x_px": 0.49651780026625186,
+            "sigma_y_px": 0.5191404354586052,
+            "reduced_chi2_approx": 1.2970430965069908
+          }
+        },
+        {
+          "gaia_source_id": "6412592404374220928",
+          "native_dra_cosdec_arcsec": -0.09971550652700824,
+          "native_ddec_arcsec": -0.2710923806092971,
+          "centroid": {
+            "x": 50.83688575968505,
+            "y": 46.99594313755948,
+            "peak_snr_approx": 303.9699181737504,
+            "sigma_x_px": 0.4512009723666944,
+            "sigma_y_px": 0.44606679863898957,
+            "reduced_chi2_approx": 3.644993023758662
+          }
+        },
+        {
+          "gaia_source_id": "6412593155992667136",
+          "native_dra_cosdec_arcsec": -0.2734231671472135,
+          "native_ddec_arcsec": 0.4872326463640388,
+          "centroid": {
+            "x": 55.28917930577237,
+            "y": 65.641738818086,
+            "peak_snr_approx": 29.794471594351556,
+            "sigma_x_px": 0.49926614650256596,
+            "sigma_y_px": 0.5557222735601394,
+            "reduced_chi2_approx": 0.9531974174132742
+          }
+        },
+        {
+          "gaia_source_id": "6412594397239098752",
+          "native_dra_cosdec_arcsec": -0.4215059956865318,
+          "native_ddec_arcsec": 0.15397826264232717,
+          "centroid": {
+            "x": 102.78980279240189,
+            "y": 66.50453382465935,
+            "peak_snr_approx": 38.063284786485625,
+            "sigma_x_px": 0.5534205491494848,
+            "sigma_y_px": 0.5488182833956603,
+            "reduced_chi2_approx": 1.5739669750933698
+          }
+        },
+        {
+          "gaia_source_id": "6412592576172954112",
+          "native_dra_cosdec_arcsec": -0.3428524668999914,
+          "native_ddec_arcsec": -0.12089355443133412,
+          "centroid": {
+            "x": 35.57945458517059,
+            "y": 66.86724696989056,
+            "peak_snr_approx": 104.84864858809858,
+            "sigma_x_px": 0.5077946775089924,
+            "sigma_y_px": 0.44017866179963566,
+            "reduced_chi2_approx": 1.9054037924094989
+          }
+        },
+        {
+          "gaia_source_id": "6412593435166417536",
+          "native_dra_cosdec_arcsec": -0.04821278003078187,
+          "native_ddec_arcsec": 0.2174126110108861,
+          "centroid": {
+            "x": 59.098418197654745,
+            "y": 77.91982860227712,
+            "peak_snr_approx": 399.02167340291567,
+            "sigma_x_px": 0.4648514544899907,
+            "sigma_y_px": 0.44622902736502745,
+            "reduced_chi2_approx": 2.155304637025249
+          }
+        },
+        {
+          "gaia_source_id": "6412616834148241280",
+          "native_dra_cosdec_arcsec": -0.06181343547219842,
+          "native_ddec_arcsec": -0.3417475419633574,
+          "centroid": {
+            "x": 26.50301584512101,
+            "y": 82.00259303028622,
+            "peak_snr_approx": 48.489966070530116,
+            "sigma_x_px": 0.5065743088610115,
+            "sigma_y_px": 0.4665797801130662,
+            "reduced_chi2_approx": 1.064103907624676
+          }
+        },
+        {
+          "gaia_source_id": "6412617177745627136",
+          "native_dra_cosdec_arcsec": -0.49649353831017234,
+          "native_ddec_arcsec": 0.31227548229184293,
+          "centroid": {
+            "x": 33.6463890636635,
+            "y": 114.06808458507801,
+            "peak_snr_approx": 103.83202239440206,
+            "sigma_x_px": 0.4654588346209083,
+            "sigma_y_px": 0.4401090269295183,
+            "reduced_chi2_approx": 1.41877324887841
+          }
+        },
+        {
+          "gaia_source_id": "6412597077298696576",
+          "native_dra_cosdec_arcsec": -0.33046132903657066,
+          "native_ddec_arcsec": -0.11131663038879903,
+          "centroid": {
+            "x": 109.79094212597153,
+            "y": 121.7792729629778,
+            "peak_snr_approx": 54.346917316488295,
+            "sigma_x_px": 0.44939763626380713,
+            "sigma_y_px": 0.41404122686018785,
+            "reduced_chi2_approx": 8.341694614082904
+          }
+        }
+      ],
+      "rejections": {
+        "outside_requested_field": 35,
+        "unmatched_or_ambiguous": 9,
+        "neighbor": 21,
+        "catalog_quality": 20
+      },
+      "gaia_missing_pm": 0,
+      "detected_peaks": 97,
+      "method": "Independent10sigma local maxima and ellipticalGaussian centroids; no fitting towardGaia; catalogG<=17,RUWE<=1.4,|parallax|<=10mas,neighbors>=30.75arcsec; associations12.3arcsec; no residual clipping",
+      "scope": "Native D3 stars within requested .2degree TAN field, not padded perimeter or golden coadds; freshG<=20Gaia neighborhood; missingPM rows would leave isolation incomplete",
+      "sample_id": "eps_indi_b_2024_E1_D3"
+    },
+    {
+      "summary": {
+        "status": "pass",
+        "count": 14,
+        "median_offset_arcsec": [
+          0.13704034200337686,
+          -0.09952722405543168
+        ],
+        "robust_sigma_axes_arcsec": [
+          0.11338855726536194,
+          0.2092920314792349
+        ],
+        "robust_rms_including_bias_arcsec": 0.2921401085506882,
+        "raw_radial_rms_arcsec": 0.3552850822941232,
+        "maximum_residual_arcsec": 0.9133847080276346,
+        "above_threshold": 0,
+        "threshold_arcsec": 1.5375
+      },
+      "matches": [
+        {
+          "gaia_source_id": "6412591133063877504",
+          "native_dra_cosdec_arcsec": 0.14284095426267387,
+          "native_ddec_arcsec": -0.12798984686900555,
+          "centroid": {
+            "x": 80.46450635086218,
+            "y": 31.46991393487188,
+            "peak_snr_approx": 65.81475929152107,
+            "sigma_x_px": 0.5819715917610464,
+            "sigma_y_px": 0.5218943312695105,
+            "reduced_chi2_approx": 1.2856686343035983
+          }
+        },
+        {
+          "gaia_source_id": "6412591751539163136",
+          "native_dra_cosdec_arcsec": 0.07105208006346032,
+          "native_ddec_arcsec": -0.10762352723270104,
+          "centroid": {
+            "x": 47.8465196131377,
+            "y": 33.01611194068925,
+            "peak_snr_approx": 200.207570695929,
+            "sigma_x_px": 0.43006553019616356,
+            "sigma_y_px": 0.41760107701309257,
+            "reduced_chi2_approx": 3.7992555524920912
+          }
+        },
+        {
+          "gaia_source_id": "6412591992057334144",
+          "native_dra_cosdec_arcsec": 0.07233848158796702,
+          "native_ddec_arcsec": 0.002924575817807038,
+          "centroid": {
+            "x": 59.9580292316633,
+            "y": 38.64414119691373,
+            "peak_snr_approx": 225.23158744346478,
+            "sigma_x_px": 0.46939482403322763,
+            "sigma_y_px": 0.4340451546916415,
+            "reduced_chi2_approx": 8.862777030383018
+          }
+        },
+        {
+          "gaia_source_id": "6412590926905472128",
+          "native_dra_cosdec_arcsec": 0.1729378699637209,
+          "native_ddec_arcsec": 0.08188225001201323,
+          "centroid": {
+            "x": 118.23007378969055,
+            "y": 42.94280525380846,
+            "peak_snr_approx": 21.951044973719174,
+            "sigma_x_px": 0.5768981696252987,
+            "sigma_y_px": 0.44061747273529595,
+            "reduced_chi2_approx": 1.3135058825160597
+          }
+        },
+        {
+          "gaia_source_id": "6412592370014523776",
+          "native_dra_cosdec_arcsec": 0.1968483486552757,
+          "native_ddec_arcsec": -0.23407078517223381,
+          "centroid": {
+            "x": 39.822480270043144,
+            "y": 46.16004260441267,
+            "peak_snr_approx": 682.4960553490372,
+            "sigma_x_px": 0.44404593009263654,
+            "sigma_y_px": 0.44032549135037097,
+            "reduced_chi2_approx": 4.240664598258243
+          }
+        },
+        {
+          "gaia_source_id": "6412592404374220928",
+          "native_dra_cosdec_arcsec": 0.011329418201632661,
+          "native_ddec_arcsec": -0.09143092087816233,
+          "centroid": {
+            "x": 50.53307557089173,
+            "y": 47.70078913284981,
+            "peak_snr_approx": 256.1064319603922,
+            "sigma_x_px": 0.5256444705441372,
+            "sigma_y_px": 0.49382640938188144,
+            "reduced_chi2_approx": 4.016479401103671
+          }
+        },
+        {
+          "gaia_source_id": "6412593155992667136",
+          "native_dra_cosdec_arcsec": 0.5046252423340276,
+          "native_ddec_arcsec": -0.761331064424703,
+          "centroid": {
+            "x": 54.98309734856644,
+            "y": 66.09300005780757,
+            "peak_snr_approx": 34.1071611715051,
+            "sigma_x_px": 0.4747334487613992,
+            "sigma_y_px": 0.49052273477665864,
+            "reduced_chi2_approx": 1.8066585539549325
+          }
+        },
+        {
+          "gaia_source_id": "6412592576172954112",
+          "native_dra_cosdec_arcsec": 0.05006953573155464,
+          "native_ddec_arcsec": -0.21769835522020697,
+          "centroid": {
+            "x": 35.25392728453022,
+            "y": 67.51521530887722,
+            "peak_snr_approx": 127.42759904295438,
+            "sigma_x_px": 0.4773994214775535,
+            "sigma_y_px": 0.4224778694050568,
+            "reduced_chi2_approx": 1.6782526997816174
+          }
+        },
+        {
+          "gaia_source_id": "6412594397239098752",
+          "native_dra_cosdec_arcsec": 0.026870758782528554,
+          "native_ddec_arcsec": 0.07542151037417762,
+          "centroid": {
+            "x": 102.45233476795497,
+            "y": 67.15081367143115,
+            "peak_snr_approx": 45.56617465203914,
+            "sigma_x_px": 0.505652784751091,
+            "sigma_y_px": 0.48502269458421515,
+            "reduced_chi2_approx": 2.3391205263945687
+          }
+        },
+        {
+          "gaia_source_id": "6412593435166417536",
+          "native_dra_cosdec_arcsec": 0.18770256160909093,
+          "native_ddec_arcsec": -0.1367866726529805,
+          "centroid": {
+            "x": 58.812894262065946,
+            "y": 78.53946354077233,
+            "peak_snr_approx": 377.97053676111625,
+            "sigma_x_px": 0.4729889516083234,
+            "sigma_y_px": 0.5081236824862063,
+            "reduced_chi2_approx": 2.4321453719130735
+          }
+        },
+        {
+          "gaia_source_id": "6412616834148241280",
+          "native_dra_cosdec_arcsec": 0.01700735407260027,
+          "native_ddec_arcsec": 0.04826029735742343,
+          "centroid": {
+            "x": 26.192155998225463,
+            "y": 82.74427318619571,
+            "peak_snr_approx": 54.91595965625703,
+            "sigma_x_px": 0.4646148884496375,
+            "sigma_y_px": 0.5166683280397587,
+            "reduced_chi2_approx": 0.8398021562910347
+          }
+        },
+        {
+          "gaia_source_id": "6412593400806675840",
+          "native_dra_cosdec_arcsec": 0.13123972974407985,
+          "native_ddec_arcsec": -0.3052444092194411,
+          "centroid": {
+            "x": 35.12559216700548,
+            "y": 85.05018747731064,
+            "peak_snr_approx": 68.47743347216237,
+            "sigma_x_px": 0.45290680711232767,
+            "sigma_y_px": 0.43613315007324105,
+            "reduced_chi2_approx": 1.4631989057925507
+          }
+        },
+        {
+          "gaia_source_id": "6412617177745627136",
+          "native_dra_cosdec_arcsec": 0.5171917655669189,
+          "native_ddec_arcsec": 0.2105809273134915,
+          "centroid": {
+            "x": 33.231706939833515,
+            "y": 114.68160513019723,
+            "peak_snr_approx": 73.60782590531097,
+            "sigma_x_px": 0.5746441957892743,
+            "sigma_y_px": 0.5310238436095028,
+            "reduced_chi2_approx": 1.1425095076723557
+          }
+        },
+        {
+          "gaia_source_id": "6412617620126459136",
+          "native_dra_cosdec_arcsec": 0.3835407566941438,
+          "native_ddec_arcsec": 0.23111203794946603,
+          "centroid": {
+            "x": 13.158671962210597,
+            "y": 117.93204496553449,
+            "peak_snr_approx": 50.53360232083381,
+            "sigma_x_px": 0.46451042946679494,
+            "sigma_y_px": 0.42018002459383214,
+            "reduced_chi2_approx": 0.9514311249755654
+          }
+        }
+      ],
+      "rejections": {
+        "outside_requested_field": 36,
+        "unmatched_or_ambiguous": 10,
+        "neighbor": 19,
+        "catalog_quality": 20
+      },
+      "gaia_missing_pm": 0,
+      "detected_peaks": 99,
+      "method": "Independent10sigma local maxima and ellipticalGaussian centroids; no fitting towardGaia; catalogG<=17,RUWE<=1.4,|parallax|<=10mas,neighbors>=30.75arcsec; associations12.3arcsec; no residual clipping",
+      "scope": "Native D3 stars within requested .2degree TAN field, not padded perimeter or golden coadds; freshG<=20Gaia neighborhood; missingPM rows would leave isolation incomplete",
+      "sample_id": "eps_indi_b_2025_E1_D3"
+    }
+  ],
+  "calibration": {
+    "status": "pass",
+    "source": {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/3/spectral_wcs_D3_spx_cal-swcs-v5-2026-191.fits",
+      "path": "backend/.cache/phase4/science/spectral_wcs_D3_spx_cal-swcs-v5-2026-191.fits",
+      "sha256": "51750c8f948a30541d391e54930279aa067c62c398a7cc2679e592bc6044427a",
+      "bytes": 33312960
+    },
+    "samples": [
+      {
+        "sample_id": "eps_indi_b_2024_E1_D3",
+        "wcs_wave_arrays_identical": true,
+        "orientation": "sky",
+        "max_lookup_wave_error_nm": 1.0637309352090618,
+        "max_lookup_bandwidth_error_nm": 1.6370827587325123
+      },
+      {
+        "sample_id": "eps_indi_b_2025_E1_D3",
+        "wcs_wave_arrays_identical": true,
+        "orientation": "sky",
+        "max_lookup_wave_error_nm": 1.0732151544687873,
+        "max_lookup_bandwidth_error_nm": 1.6275204216616017
+      }
+    ],
+    "retained_pixel_centers": 54756,
+    "method": "CWAVE/CBAND bilinear sampling at eachoutputcenter mappedthroughspatialWCS and originaldetector x=1+xcut-CRPIX1A; releaseD3/sky/exactX,Y,VALUES matching verified; same quarterwidth/.8bandwidthgate",
+    "maximum_center_separation_fraction_narrower_bandwidth": 0.005690127869826935,
+    "minimum_bandwidth_ratio": 0.9866408411410624,
+    "limitation": "Perpixel calibration interpolation, not identicalfullfilterresponse or PSF matching; no universalallband validation"
+  }
+}

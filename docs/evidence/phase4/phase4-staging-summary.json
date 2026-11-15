@@ -1,0 +1,245 @@
+{
+  "scope": "full historical recorded image URI inventory attempted; partial upstream successes retained, not complete archive discovery",
+  "promotion_eligible": false,
+  "source_report_sha256": "99f60efae5dc96ddee0cfa60ea0781b09c1adf32e035edab847a9d67707d6c59",
+  "source_report": "docs/phase4-staging-results.json",
+  "frozen_code_digest": "bc353ea79ef26a4e2a1bcdd648665452115effd634a45fa7dfff6f2223d0feaa",
+  "environment": {
+    "python": "3.11.9",
+    "implementation": "CPython",
+    "platform": "win32",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "astropy": "8.0.2",
+      "astropy-iers-data": "0.2026.11.9.0.35.9",
+      "reproject": "0.21.0",
+      "photutils": "3.0.0",
+      "Pillow": "13.0.0",
+      "httpx": "0.28.1",
+      "pydantic": "2.14.3",
+      "fastapi": "0.163.0",
+      "pyerfa": "2.0.1.5",
+      "astropy-healpix": "2.0.1",
+      "dask": "2026.8.0",
+      "zarr": "3.1.6",
+      "fsspec": "2026.9.0",
+      "sep": "1.4.1",
+      "pyvo": "1.10.0"
+    },
+    "native_libraries": {
+      "webp": "1.6.0",
+      "wcslib": "8.6"
+    }
+  },
+  "targets": [
+    {
+      "target_id": "wise_0855",
+      "recorded_source_uris": 54,
+      "attempted_source_uris": 54,
+      "padded_metadata_verified_exposures": 28,
+      "padded_missing_or_invalid_exposures": 26,
+      "retained_cutouts_by_serialized_size_deg": {
+        "0.293330": 28,
+        "0.200000": 13
+      },
+      "image": {
+        "exception": "IRSANoData",
+        "reason": "No spectrally comparable epoch pair was found in the bounded live sample. Try a smaller field; additional archive observations may still be available.",
+        "status": "failed"
+      },
+      "spectrum": {
+        "scope": "staged_unpromoted",
+        "status": "built"
+      },
+      "spectrum_record": {
+        "analysis_id": "sha256:dc397ffdccfa0ccc74a7cc0ec16516c9b4d4bbdbdb57ce9610dbdf2a55211aa6",
+        "path": "backend/.cache/phase4/stage-frozen/golden/wise_0855/analysis_dc397ffdccfa0ccc74a7cc0ec16516c9b4d4bbdbdb57ce9610dbdf2a55211aa6.json",
+        "verified_input_count": 13,
+        "code_matches": true,
+        "environment_matches": true
+      },
+      "spectrum_counts": {
+        "present_channels": 13,
+        "finite_flux_channels": 12,
+        "usable_finite_channels": 12,
+        "null_flux_channels": 1,
+        "omitted_channels": 0,
+        "null_reason_counts": {
+          "UNSUPPORTED_BACKGROUND": 1,
+          "NO_CLEAN_APERTURE_PIXELS": 1
+        },
+        "exact_input_cutout_sizes_deg": [
+          0.2
+        ]
+      }
+    },
+    {
+      "target_id": "barnards_star",
+      "recorded_source_uris": 54,
+      "attempted_source_uris": 54,
+      "padded_metadata_verified_exposures": 29,
+      "padded_missing_or_invalid_exposures": 25,
+      "retained_cutouts_by_serialized_size_deg": {
+        "0.293330": 29,
+        "0.200000": 13
+      },
+      "image": {
+        "exception": "IRSANoData",
+        "reason": "No spectrally comparable epoch pair was found in the bounded live sample. Try a smaller field; additional archive observations may still be available.",
+        "status": "failed"
+      },
+      "spectrum": {
+        "scope": "staged_unpromoted",
+        "status": "built"
+      },
+      "spectrum_record": {
+        "analysis_id": "sha256:850ce9925ea9462b0bfc8222bf0c5f910028514652bb7e6f73ef28d950e6f170",
+        "path": "backend/.cache/phase4/stage-frozen/golden/barnards_star/analysis_850ce9925ea9462b0bfc8222bf0c5f910028514652bb7e6f73ef28d950e6f170.json",
+        "verified_input_count": 13,
+        "code_matches": true,
+        "environment_matches": true
+      },
+      "spectrum_counts": {
+        "present_channels": 13,
+        "finite_flux_channels": 1,
+        "usable_finite_channels": 0,
+        "null_flux_channels": 12,
+        "omitted_channels": 0,
+        "null_reason_counts": {
+          "UNSUPPORTED_BACKGROUND": 11,
+          "NO_CLEAN_APERTURE_PIXELS": 11,
+          "HARD_BAD_EXTRACTION_CENTRE": 12,
+          "INSUFFICIENT_CLEAN_APERTURE": 1
+        },
+        "exact_input_cutout_sizes_deg": [
+          0.2
+        ]
+      }
+    },
+    {
+      "target_id": "eps_indi_b",
+      "recorded_source_uris": 68,
+      "attempted_source_uris": 68,
+      "padded_metadata_verified_exposures": 53,
+      "padded_missing_or_invalid_exposures": 15,
+      "retained_cutouts_by_serialized_size_deg": {
+        "0.293330": 53,
+        "0.200000": 37
+      },
+      "image": {
+        "scope": "staged_unpromoted",
+        "status": "built"
+      },
+      "spectrum": {
+        "scope": "staged_unpromoted",
+        "status": "built"
+      },
+      "spectrum_record": {
+        "analysis_id": "sha256:4e6195e81fd44e3222aabaf76a0b2502e56cb0aa1cc8ee55fd010dc8d8932616",
+        "path": "backend/.cache/phase4/stage-frozen/golden/eps_indi_b/analysis_4e6195e81fd44e3222aabaf76a0b2502e56cb0aa1cc8ee55fd010dc8d8932616.json",
+        "verified_input_count": 37,
+        "code_matches": true,
+        "environment_matches": true
+      },
+      "spectrum_counts": {
+        "present_channels": 37,
+        "finite_flux_channels": 21,
+        "usable_finite_channels": 20,
+        "null_flux_channels": 16,
+        "omitted_channels": 0,
+        "null_reason_counts": {
+          "UNSUPPORTED_BACKGROUND": 16,
+          "PARTIAL_CLEAN_APERTURE": 5,
+          "HARD_BAD_EXTRACTION_CENTRE": 1
+        },
+        "exact_input_cutout_sizes_deg": [
+          0.2
+        ]
+      }
+    },
+    {
+      "target_id": "rw_aurigae",
+      "recorded_source_uris": 53,
+      "attempted_source_uris": 53,
+      "padded_metadata_verified_exposures": 43,
+      "padded_missing_or_invalid_exposures": 10,
+      "retained_cutouts_by_serialized_size_deg": {
+        "0.293330": 43,
+        "0.200000": 34
+      },
+      "image": {
+        "exception": "IRSANoData",
+        "reason": "No spectrally comparable epoch pair was found in the bounded live sample. Try a smaller field; additional archive observations may still be available.",
+        "status": "failed"
+      },
+      "spectrum": {
+        "scope": "staged_unpromoted",
+        "status": "built"
+      },
+      "spectrum_record": {
+        "analysis_id": "sha256:d2fc4d23679fac536356199e79e089b738f4a01f6b90132951cab37e968c6dbd",
+        "path": "backend/.cache/phase4/stage-frozen/golden/rw_aurigae/analysis_d2fc4d23679fac536356199e79e089b738f4a01f6b90132951cab37e968c6dbd.json",
+        "verified_input_count": 34,
+        "code_matches": true,
+        "environment_matches": true
+      },
+      "spectrum_counts": {
+        "present_channels": 34,
+        "finite_flux_channels": 30,
+        "usable_finite_channels": 16,
+        "null_flux_channels": 4,
+        "omitted_channels": 0,
+        "null_reason_counts": {
+          "NO_CLEAN_APERTURE_PIXELS": 4,
+          "HARD_BAD_EXTRACTION_CENTRE": 4
+        },
+        "exact_input_cutout_sizes_deg": [
+          0.2
+        ]
+      }
+    },
+    {
+      "target_id": "r_draconis",
+      "recorded_source_uris": 60,
+      "attempted_source_uris": 60,
+      "padded_metadata_verified_exposures": 42,
+      "padded_missing_or_invalid_exposures": 18,
+      "retained_cutouts_by_serialized_size_deg": {
+        "0.293330": 42,
+        "0.200000": 34
+      },
+      "image": {
+        "scope": "staged_unpromoted",
+        "status": "built"
+      },
+      "spectrum": {
+        "scope": "staged_unpromoted",
+        "status": "built"
+      },
+      "spectrum_record": {
+        "analysis_id": "sha256:c4b8656866e0e7d9e028c14a862aafc82fe5870c220b759e060a6e1953833e34",
+        "path": "backend/.cache/phase4/stage-frozen/golden/r_draconis/analysis_c4b8656866e0e7d9e028c14a862aafc82fe5870c220b759e060a6e1953833e34.json",
+        "verified_input_count": 34,
+        "code_matches": true,
+        "environment_matches": true
+      },
+      "spectrum_counts": {
+        "present_channels": 34,
+        "finite_flux_channels": 0,
+        "usable_finite_channels": 0,
+        "null_flux_channels": 34,
+        "omitted_channels": 0,
+        "null_reason_counts": {
+          "NO_CLEAN_APERTURE_PIXELS": 34,
+          "HARD_BAD_EXTRACTION_CENTRE": 34,
+          "UNSUPPORTED_BACKGROUND": 30
+        },
+        "exact_input_cutout_sizes_deg": [
+          0.2
+        ]
+      }
+    }
+  ]
+}

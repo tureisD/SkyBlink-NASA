@@ -1,0 +1,936 @@
+{
+  "attribution_required": [
+    "NASA/GSFC SkyView (DSS2 Red, WISE 3.4)",
+    "Digitized Sky Survey (STScI) for DSS2",
+    "NASA/JPL/Caltech WISE (AllWISE) for WISE 3.4 um",
+    "ESA/Gaia/DPAC for Gaia DR3 via NASA/IPAC IRSA TAP"
+  ],
+  "commands": {
+    "offline_dry_run": "../.venv311/Scripts/python.exe scripts/spike_w0_overlays.py --no-write",
+    "run": "../.venv311/Scripts/python.exe scripts/spike_w0_overlays.py"
+  },
+  "elapsed_seconds": 146.6,
+  "gaia": {
+    "barnards_star": {
+      "counts": {
+        "G_le_14": 95,
+        "G_le_16": 455,
+        "G_le_18": 1876,
+        "all": 9909
+      },
+      "dec_deg": 4.7676,
+      "field_availability": {
+        "dec": true,
+        "phot_g_mean_mag": true,
+        "pmdec": true,
+        "pmra": true,
+        "ra": true,
+        "source_id": true
+      },
+      "field_metadata": {
+        "dec": {
+          "datatype": "double",
+          "unit": "deg"
+        },
+        "phot_g_mean_mag": {
+          "datatype": "float",
+          "unit": "mag"
+        },
+        "pmdec": {
+          "datatype": "double",
+          "unit": "mas/yr"
+        },
+        "pmra": {
+          "datatype": "double",
+          "unit": "mas/yr"
+        },
+        "ra": {
+          "datatype": "double",
+          "unit": "deg"
+        },
+        "source_id": {
+          "datatype": "long",
+          "unit": ""
+        }
+      },
+      "fields_requested": [
+        "source_id",
+        "ra",
+        "dec",
+        "phot_g_mean_mag",
+        "pmra",
+        "pmdec"
+      ],
+      "null_counts": {
+        "phot_g_mean_mag": 11,
+        "pmdec": 1174,
+        "pmra": 1174
+      },
+      "query": {
+        "bright_subset_json_bytes": {
+          "G_le_14": {
+            "count": 95,
+            "json_bytes": 13309
+          },
+          "G_le_16": {
+            "count": 455,
+            "json_bytes": 63736
+          },
+          "G_le_18": {
+            "count": 1876,
+            "json_bytes": 262395
+          }
+        },
+        "completeness": {
+          "latency_s": 5.195,
+          "status": 200,
+          "votable_bytes": 927
+        },
+        "counts": {
+          "latency_s": 5.338,
+          "status": 200,
+          "votable_bytes": 911
+        },
+        "full_catalog": {
+          "latency_s": 14.067,
+          "status": 200,
+          "votable_bytes": 2274785
+        },
+        "full_catalog_json_bytes": 1382284,
+        "full_catalog_rows_returned": 9909,
+        "sample": {
+          "latency_s": 14.673,
+          "status": 200,
+          "votable_bytes": 3097
+        }
+      },
+      "ra_deg": 269.4463,
+      "radius_deg": 0.2,
+      "sample_brightest": [
+        {
+          "dec": 4.73942005111,
+          "phot_g_mean_mag": 8.193973541259766,
+          "pmdec": 10362.394,
+          "pmra": -801.551,
+          "ra": 269.44850252544,
+          "source_id": 4472832130942575872
+        },
+        {
+          "dec": 4.88738620519,
+          "phot_g_mean_mag": 8.52013874053955,
+          "pmdec": -15.447,
+          "pmra": -17.337,
+          "ra": 269.33275475417,
+          "source_id": 4472885495904088704
+        },
+        {
+          "dec": 4.60269163274,
+          "phot_g_mean_mag": 10.20148754119873,
+          "pmdec": 31.016,
+          "pmra": -6.463,
+          "ra": 269.3516978125,
+          "source_id": 4472807838594395392
+        },
+        {
+          "dec": 4.75989126907,
+          "phot_g_mean_mag": 10.6006498336792,
+          "pmdec": -2.011,
+          "pmra": -2.739,
+          "ra": 269.32875972664,
+          "source_id": 4472836460256445696
+        },
+        {
+          "dec": 4.58615501364,
+          "phot_g_mean_mag": 11.123177528381348,
+          "pmdec": -23.811,
+          "pmra": -17.116,
+          "ra": 269.39549324321,
+          "source_id": 4472806910881460992
+        }
+      ],
+      "table": "gaia_dr3_source",
+      "target_id": "barnards_star"
+    },
+    "schema": {
+      "all_requested_fields_available": true,
+      "columns": [
+        {
+          "column_name": "dec",
+          "datatype": "double",
+          "unit": "deg"
+        },
+        {
+          "column_name": "phot_g_mean_mag",
+          "datatype": "float",
+          "unit": "mag"
+        },
+        {
+          "column_name": "pmdec",
+          "datatype": "double",
+          "unit": "mas/yr"
+        },
+        {
+          "column_name": "pmra",
+          "datatype": "double",
+          "unit": "mas/yr"
+        },
+        {
+          "column_name": "ra",
+          "datatype": "double",
+          "unit": "deg"
+        },
+        {
+          "column_name": "source_id",
+          "datatype": "long",
+          "unit": ""
+        }
+      ],
+      "field_availability": {
+        "dec": true,
+        "phot_g_mean_mag": true,
+        "pmdec": true,
+        "pmra": true,
+        "ra": true,
+        "source_id": true
+      },
+      "query": {
+        "latency_s": 0.74,
+        "status": 200,
+        "votable_bytes": 1716
+      },
+      "requested_fields": [
+        "source_id",
+        "ra",
+        "dec",
+        "phot_g_mean_mag",
+        "pmra",
+        "pmdec"
+      ],
+      "table": "gaia_dr3_source"
+    },
+    "wise_0855": {
+      "counts": {
+        "G_le_14": 39,
+        "G_le_16": 133,
+        "G_le_18": 360,
+        "all": 1196
+      },
+      "dec_deg": -7.24216,
+      "field_availability": {
+        "dec": true,
+        "phot_g_mean_mag": true,
+        "pmdec": true,
+        "pmra": true,
+        "ra": true,
+        "source_id": true
+      },
+      "field_metadata": {
+        "dec": {
+          "datatype": "double",
+          "unit": "deg"
+        },
+        "phot_g_mean_mag": {
+          "datatype": "float",
+          "unit": "mag"
+        },
+        "pmdec": {
+          "datatype": "double",
+          "unit": "mas/yr"
+        },
+        "pmra": {
+          "datatype": "double",
+          "unit": "mas/yr"
+        },
+        "ra": {
+          "datatype": "double",
+          "unit": "deg"
+        },
+        "source_id": {
+          "datatype": "long",
+          "unit": ""
+        }
+      },
+      "fields_requested": [
+        "source_id",
+        "ra",
+        "dec",
+        "phot_g_mean_mag",
+        "pmra",
+        "pmdec"
+      ],
+      "null_counts": {
+        "phot_g_mean_mag": 0,
+        "pmdec": 150,
+        "pmra": 150
+      },
+      "query": {
+        "bright_subset_json_bytes": {
+          "G_le_14": {
+            "count": 39,
+            "json_bytes": 5508
+          },
+          "G_le_16": {
+            "count": 133,
+            "json_bytes": 18742
+          },
+          "G_le_18": {
+            "count": 360,
+            "json_bytes": 50718
+          }
+        },
+        "completeness": {
+          "latency_s": 4.379,
+          "status": 200,
+          "votable_bytes": 924
+        },
+        "counts": {
+          "latency_s": 8.278,
+          "status": 200,
+          "votable_bytes": 910
+        },
+        "full_catalog": {
+          "latency_s": 15.977,
+          "status": 200,
+          "votable_bytes": 277162
+        },
+        "full_catalog_json_bytes": 167876,
+        "full_catalog_rows_returned": 1196,
+        "sample": {
+          "latency_s": 14.877,
+          "status": 200,
+          "votable_bytes": 3093
+        }
+      },
+      "ra_deg": 133.75921,
+      "radius_deg": 0.2,
+      "sample_brightest": [
+        {
+          "dec": -7.37242576064,
+          "phot_g_mean_mag": 8.179364204406738,
+          "pmdec": -4.526,
+          "pmra": -0.488,
+          "ra": 133.65254532756,
+          "source_id": 5756860711998380288
+        },
+        {
+          "dec": -7.11590496464,
+          "phot_g_mean_mag": 10.089276313781738,
+          "pmdec": 6.999,
+          "pmra": -4.633,
+          "ra": 133.85465576417,
+          "source_id": 5756959290087677312
+        },
+        {
+          "dec": -7.2988689983,
+          "phot_g_mean_mag": 10.246809959411621,
+          "pmdec": 0.107,
+          "pmra": -3.595,
+          "ra": 133.68156212131,
+          "source_id": 5756862120747649024
+        },
+        {
+          "dec": -7.34632252201,
+          "phot_g_mean_mag": 10.762511253356934,
+          "pmdec": 0.537,
+          "pmra": -17.848,
+          "ra": 133.73621927397,
+          "source_id": 5756860952516616704
+        },
+        {
+          "dec": -7.14601014057,
+          "phot_g_mean_mag": 10.789581298828125,
+          "pmdec": -13.954,
+          "pmra": -8.149,
+          "ra": 133.68415262205,
+          "source_id": 5756961076794790528
+        }
+      ],
+      "table": "gaia_dr3_source",
+      "target_id": "wise_0855"
+    }
+  },
+  "generated_at": "2026-11-09T14:06:05+00:00",
+  "notes": [
+    "SkyView FITS WCS is checked against the exact contract 240x240 TAN grid: CRVAL=target, CRPIX=120.5, CDELT=+/-0.0008541667 deg.",
+    "SkyView FITS headers are minimal; attribution is external.",
+    "The `DSS2` colour composite returns 200x150; `DSS2 Red` returns 240x240 and matches the golden grid exactly.",
+    "One earlier WISE 3.4 240x240 FITS request returned a blank 1-element FITS with HTTP 200 (5,760 B); the final run's direct request and all three reliability probes succeeded (3/3). Retry on shape==(1,) is still recommended, with a reliable 200x200 FITS fallback.",
+    "One earlier DSS2 Red JPEG request returned HTTP 200 text/html (537 B) instead of JPEG; retry on non-JPEG bytes. The final run returned a 240x240 JPEG (16,472 B).",
+    "Gaia counts are within a 0.2-deg radius; the 0.205-deg square's corner radius is 0.145 deg, so the 0.2-deg query includes a margin.",
+    "Gaia full-catalog JSON sizes are measured from real TAP rows, not estimated.",
+    "No product code, contract, or existing golden-cache frame was modified; this script writes only --out."
+  ],
+  "positions": {
+    "barnards_star": {
+      "dec": 4.7676,
+      "label": "Barnard's Star 2025.8",
+      "ra": 269.4463
+    },
+    "wise_0855": {
+      "dec": -7.24216,
+      "label": "WISE 0855 2025.8",
+      "ra": 133.75921
+    }
+  },
+  "read_only": true,
+  "script": "scripts/spike_w0_overlays.py",
+  "service_endpoints": {
+    "irsa_tap": "https://irsa.ipac.caltech.edu/TAP/sync",
+    "skyview": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl"
+  },
+  "skyview": {
+    "dss2_red": {
+      "direct_240": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "bytes": 241920,
+            "content_type": "image/fits",
+            "dtype": ">f4",
+            "finite_fraction": 1.0,
+            "latency_s": 2.455,
+            "max": 21863.0,
+            "median": 5091.0,
+            "ok": true,
+            "shape": [
+              240,
+              240
+            ],
+            "status": 200
+          }
+        ],
+        "data_stats": {
+          "finite_fraction": 1.0,
+          "max": 21863.0,
+          "median": 5091.0,
+          "shape": [
+            240,
+            240
+          ]
+        },
+        "full_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Survey=DSS2+Red&position=133.75921%2C-7.24216&size=0.205&pixels=240&return=FITS",
+        "params": {
+          "Survey": "DSS2 Red",
+          "pixels": "240",
+          "position": "133.75921,-7.24216",
+          "return": "FITS",
+          "size": "0.205"
+        },
+        "service_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl",
+        "usable": true,
+        "wcs": {
+          "cdelt1": -0.0008541666666666664,
+          "cdelt2": 0.0008541666666666664,
+          "crpix1": 120.5,
+          "crpix2": 120.5,
+          "crval1": 133.75921,
+          "crval2": -7.24216,
+          "ctype1": "RA---TAN",
+          "ctype2": "DEC--TAN",
+          "equinox": 2000.0,
+          "fov_deg": [
+            0.20499999999999993,
+            0.20499999999999993
+          ],
+          "frame_note": "SkyView FITS uses RADESYS=FK5/EQUINOX=2000; the golden grid is ICRS. The FK5-ICRS offset is << 1 pixel at 6.15 arcsec/px.",
+          "matches_golden_grid": true,
+          "naxis1": 240,
+          "naxis2": 240,
+          "pixel_scale_arcsec": 3.0749999999999993,
+          "radesys": "FK5"
+        },
+        "webp_from_fits": {
+          "bytes": 21382,
+          "ms": 21.76,
+          "quality": 90,
+          "stretch_limits": [
+            4469.0,
+            12415.059999999969
+          ],
+          "stretch_percentiles": [
+            0.5,
+            99.5
+          ]
+        },
+        "webp_from_jpeg": {
+          "bytes": 19588,
+          "ms": 21.17,
+          "quality": 90
+        }
+      },
+      "direct_240_reliability_probe": [
+        {
+          "bytes": 241920,
+          "latency_s": 2.261,
+          "note": null,
+          "probe": 1,
+          "shape": [
+            240,
+            240
+          ],
+          "status": 200,
+          "usable": true
+        },
+        {
+          "bytes": 241920,
+          "latency_s": 2.27,
+          "note": null,
+          "probe": 2,
+          "shape": [
+            240,
+            240
+          ],
+          "status": 200,
+          "usable": true
+        },
+        {
+          "bytes": 241920,
+          "latency_s": 2.448,
+          "note": null,
+          "probe": 3,
+          "shape": [
+            240,
+            240
+          ],
+          "status": 200,
+          "usable": true
+        }
+      ],
+      "fallback_200": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "bytes": 172800,
+            "content_type": "image/fits",
+            "dtype": ">f4",
+            "finite_fraction": 1.0,
+            "latency_s": 2.323,
+            "max": 22015.0,
+            "median": 5091.0,
+            "ok": true,
+            "shape": [
+              200,
+              200
+            ],
+            "status": 200
+          }
+        ],
+        "data_stats": {
+          "finite_fraction": 1.0,
+          "max": 22015.0,
+          "median": 5091.0,
+          "shape": [
+            200,
+            200
+          ]
+        },
+        "full_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Survey=DSS2+Red&position=133.75921%2C-7.24216&size=0.205&pixels=200&return=FITS",
+        "params": {
+          "Survey": "DSS2 Red",
+          "pixels": "200",
+          "position": "133.75921,-7.24216",
+          "return": "FITS",
+          "size": "0.205"
+        },
+        "service_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl",
+        "usable": true,
+        "wcs": {
+          "cdelt1": -0.001025,
+          "cdelt2": 0.001025,
+          "crpix1": 100.5,
+          "crpix2": 100.5,
+          "crval1": 133.75921,
+          "crval2": -7.24216,
+          "ctype1": "RA---TAN",
+          "ctype2": "DEC--TAN",
+          "equinox": 2000.0,
+          "fov_deg": [
+            0.20500000000000002,
+            0.20500000000000002
+          ],
+          "frame_note": "SkyView FITS uses RADESYS=FK5/EQUINOX=2000; the golden grid is ICRS. The FK5-ICRS offset is << 1 pixel at 6.15 arcsec/px.",
+          "matches_golden_grid": false,
+          "naxis1": 200,
+          "naxis2": 200,
+          "pixel_scale_arcsec": 3.6900000000000004,
+          "radesys": "FK5"
+        }
+      },
+      "fallback_used": false,
+      "jpeg_240": {
+        "attempt": 1,
+        "attempts": [
+          {
+            "attempt": 1,
+            "bytes": 16472,
+            "content_type": "image/jpeg",
+            "latency_s": 1.553,
+            "mode": "L",
+            "ok": true,
+            "size": [
+              240,
+              240
+            ],
+            "status": 200
+          }
+        ],
+        "bytes": 16472,
+        "content_type": "image/jpeg",
+        "full_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Survey=DSS2+Red&position=133.75921%2C-7.24216&size=0.205&pixels=240&return=JPEG",
+        "latency_s": 1.553,
+        "mode": "L",
+        "ok": true,
+        "params": {
+          "Survey": "DSS2 Red",
+          "pixels": "240",
+          "position": "133.75921,-7.24216",
+          "return": "JPEG",
+          "size": "0.205"
+        },
+        "service_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl",
+        "size": [
+          240,
+          240
+        ],
+        "status": 200,
+        "survey": "DSS2 Red"
+      },
+      "requested_fov_deg": 0.205,
+      "requested_pixels": 240,
+      "resample_200_to_240": {
+        "comparison_to_direct_240": {
+          "mean_abs_diff": 206.8528989116633,
+          "median_abs_diff": 145.60590337483654,
+          "p99_abs_diff": 1277.948480124852,
+          "pearson_r": 0.9330752879624635
+        },
+        "direct_240_max_abs_change": 169.54992218701227,
+        "direct_240_shape": [
+          240,
+          240
+        ],
+        "direct_240_to_golden_ms": 33.72,
+        "finite_fraction": 1.0,
+        "input_shape": [
+          200,
+          200
+        ],
+        "output_shape": [
+          240,
+          240
+        ],
+        "resample_ms": 34.21,
+        "webp_from_resampled_240": {
+          "bytes": 16992,
+          "ms": 19.71,
+          "quality": 90,
+          "stretch_limits": [
+            4654.865920167577,
+            11311.554536791013
+          ],
+          "stretch_percentiles": [
+            0.5,
+            99.5
+          ]
+        }
+      },
+      "survey": "DSS2 Red",
+      "target_id": "wise_0855",
+      "usable_for_overlay": true
+    },
+    "wise_3p4": {
+      "direct_240": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "bytes": 241920,
+            "content_type": "image/fits",
+            "dtype": ">f4",
+            "finite_fraction": 1.0,
+            "latency_s": 7.292,
+            "max": 1479.996337890625,
+            "median": 3.061455488204956,
+            "ok": true,
+            "shape": [
+              240,
+              240
+            ],
+            "status": 200
+          }
+        ],
+        "data_stats": {
+          "finite_fraction": 1.0,
+          "max": 1479.996337890625,
+          "median": 3.061455488204956,
+          "shape": [
+            240,
+            240
+          ]
+        },
+        "full_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Survey=WISE+3.4&position=133.75921%2C-7.24216&size=0.205&pixels=240&return=FITS",
+        "params": {
+          "Survey": "WISE 3.4",
+          "pixels": "240",
+          "position": "133.75921,-7.24216",
+          "return": "FITS",
+          "size": "0.205"
+        },
+        "service_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl",
+        "usable": true,
+        "wcs": {
+          "cdelt1": -0.0008541666666666664,
+          "cdelt2": 0.0008541666666666664,
+          "crpix1": 120.5,
+          "crpix2": 120.5,
+          "crval1": 133.75921,
+          "crval2": -7.24216,
+          "ctype1": "RA---TAN",
+          "ctype2": "DEC--TAN",
+          "equinox": 2000.0,
+          "fov_deg": [
+            0.20499999999999993,
+            0.20499999999999993
+          ],
+          "frame_note": "SkyView FITS uses RADESYS=FK5/EQUINOX=2000; the golden grid is ICRS. The FK5-ICRS offset is << 1 pixel at 6.15 arcsec/px.",
+          "matches_golden_grid": true,
+          "naxis1": 240,
+          "naxis2": 240,
+          "pixel_scale_arcsec": 3.0749999999999993,
+          "radesys": "FK5"
+        },
+        "webp_from_fits": {
+          "bytes": 5834,
+          "ms": 63.39,
+          "quality": 90,
+          "stretch_limits": [
+            2.8168690371513367,
+            16.414507684707186
+          ],
+          "stretch_percentiles": [
+            0.5,
+            99.5
+          ]
+        },
+        "webp_from_jpeg": {
+          "bytes": 10866,
+          "ms": 15.32,
+          "quality": 90
+        }
+      },
+      "direct_240_reliability_probe": [
+        {
+          "bytes": 241920,
+          "latency_s": 7.334,
+          "note": null,
+          "probe": 1,
+          "shape": [
+            240,
+            240
+          ],
+          "status": 200,
+          "usable": true
+        },
+        {
+          "bytes": 5760,
+          "latency_s": 16.827,
+          "note": "SkyView returned a blank 1-element FITS; retrying.",
+          "probe": 2,
+          "shape": [
+            1
+          ],
+          "status": 200,
+          "usable": false
+        },
+        {
+          "bytes": 241920,
+          "latency_s": 7.238,
+          "note": null,
+          "probe": 3,
+          "shape": [
+            240,
+            240
+          ],
+          "status": 200,
+          "usable": true
+        }
+      ],
+      "fallback_200": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "bytes": 172800,
+            "content_type": "image/fits",
+            "dtype": ">f4",
+            "finite_fraction": 1.0,
+            "latency_s": 5.163,
+            "max": 1430.426025390625,
+            "median": 3.0615763664245605,
+            "ok": true,
+            "shape": [
+              200,
+              200
+            ],
+            "status": 200
+          }
+        ],
+        "data_stats": {
+          "finite_fraction": 1.0,
+          "max": 1430.426025390625,
+          "median": 3.0615763664245605,
+          "shape": [
+            200,
+            200
+          ]
+        },
+        "full_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Survey=WISE+3.4&position=133.75921%2C-7.24216&size=0.205&pixels=200&return=FITS",
+        "params": {
+          "Survey": "WISE 3.4",
+          "pixels": "200",
+          "position": "133.75921,-7.24216",
+          "return": "FITS",
+          "size": "0.205"
+        },
+        "service_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl",
+        "usable": true,
+        "wcs": {
+          "cdelt1": -0.001025,
+          "cdelt2": 0.001025,
+          "crpix1": 100.5,
+          "crpix2": 100.5,
+          "crval1": 133.75921,
+          "crval2": -7.24216,
+          "ctype1": "RA---TAN",
+          "ctype2": "DEC--TAN",
+          "equinox": 2000.0,
+          "fov_deg": [
+            0.20500000000000002,
+            0.20500000000000002
+          ],
+          "frame_note": "SkyView FITS uses RADESYS=FK5/EQUINOX=2000; the golden grid is ICRS. The FK5-ICRS offset is << 1 pixel at 6.15 arcsec/px.",
+          "matches_golden_grid": false,
+          "naxis1": 200,
+          "naxis2": 200,
+          "pixel_scale_arcsec": 3.6900000000000004,
+          "radesys": "FK5"
+        }
+      },
+      "fallback_used": false,
+      "jpeg_240": {
+        "attempt": 1,
+        "attempts": [
+          {
+            "attempt": 1,
+            "bytes": 11992,
+            "content_type": "image/jpeg",
+            "latency_s": 4.977,
+            "mode": "L",
+            "ok": true,
+            "size": [
+              240,
+              240
+            ],
+            "status": 200
+          }
+        ],
+        "bytes": 11992,
+        "content_type": "image/jpeg",
+        "full_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Survey=WISE+3.4&position=133.75921%2C-7.24216&size=0.205&pixels=240&return=JPEG",
+        "latency_s": 4.977,
+        "mode": "L",
+        "ok": true,
+        "params": {
+          "Survey": "WISE 3.4",
+          "pixels": "240",
+          "position": "133.75921,-7.24216",
+          "return": "JPEG",
+          "size": "0.205"
+        },
+        "service_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl",
+        "size": [
+          240,
+          240
+        ],
+        "status": 200,
+        "survey": "WISE 3.4"
+      },
+      "requested_fov_deg": 0.205,
+      "requested_pixels": 240,
+      "resample_200_to_240": {
+        "comparison_to_direct_240": {
+          "mean_abs_diff": 0.11027605334782513,
+          "median_abs_diff": 0.014267499054485544,
+          "p99_abs_diff": 0.9776374823342713,
+          "pearson_r": 0.9867639567473102
+        },
+        "direct_240_max_abs_change": 10.668190462593657,
+        "direct_240_shape": [
+          240,
+          240
+        ],
+        "direct_240_to_golden_ms": 33.56,
+        "finite_fraction": 1.0,
+        "input_shape": [
+          200,
+          200
+        ],
+        "output_shape": [
+          240,
+          240
+        ],
+        "resample_ms": 38.99,
+        "webp_from_resampled_240": {
+          "bytes": 5188,
+          "ms": 11.11,
+          "quality": 90,
+          "stretch_limits": [
+            2.826705753619963,
+            16.937829894684214
+          ],
+          "stretch_percentiles": [
+            0.5,
+            99.5
+          ]
+        }
+      },
+      "survey": "WISE 3.4",
+      "target_id": "wise_0855",
+      "usable_for_overlay": true
+    }
+  },
+  "suitability": {
+    "gaia_sources_json": {
+      "G_le_16_json_bytes": {
+        "barnards_star": 63736,
+        "wise_0855": 18742
+      },
+      "attribution": "ESA/Gaia/DPAC, Gaia DR3; retrieved via NASA/IPAC IRSA TAP.",
+      "counts_0p2deg": {
+        "barnards_star": 9909,
+        "wise_0855": 1196
+      },
+      "full_json_bytes": {
+        "barnards_star": 1382284,
+        "wise_0855": 167876
+      },
+      "limitations": "The full 0.2-deg catalog is 1,196 rows at WISE 0855 and 9,909 at Barnard's Star (168 KB / 1.38 MB JSON). Cap to G<=16 (19 KB / 64 KB) or the brightest ~200 pins. pmra/pmdec are null for ~12% of rows; handle nulls.",
+      "source": "IRSA TAP gaia_dr3_source",
+      "verdict": "GO_WITH_CAP"
+    },
+    "ref_optical_webp": {
+      "attribution": "DSS2 Red via NASA/GSFC SkyView; Digitized Sky Survey (STScI). Display-only stretch.",
+      "limitations": "WISE 0855 is not detected in DSS2; this is a reference field, not a detection. SkyView FITS header lacks BUNIT/TELESCOP/INSTRUME/DATE-OBS/REFERENC; add attribution and display-only notes in the golden-cache manifest/README. The `DSS2` colour composite returns 200x150; use `DSS2 Red`.",
+      "source": "SkyView DSS2 Red FITS/JPEG, 240x240",
+      "verdict": "GO",
+      "wcs": "exact contract TAN grid (FK5/J2000; negligible vs ICRS)",
+      "webp_size_bytes": 21382
+    },
+    "ref_wise_webp": {
+      "attribution": "WISE 3.4 um (AllWISE) via NASA/GSFC SkyView; NASA/JPL/Caltech WISE.",
+      "limitations": "The WISE 3.4 240x240 FITS path was observed to return a blank 1-element FITS with HTTP 200 (5,760 B) once during this session; the final run's direct request and 3/3 reliability probes succeeded. Retry on shape==(1,) or use the reliable 200x200 FITS and resample to 240 (~36-40 ms). WISE 0855 is extremely faint at 3.4 um, so this is a reference field, not a detection. No BUNIT in the header; display-only.",
+      "source": "SkyView WISE 3.4 um (AllWISE release), 240x240",
+      "verdict": "GO_WITH_RETRY",
+      "wcs": "exact contract TAN grid (FK5/J2000; negligible vs ICRS)",
+      "webp_size_bytes": 5834
+    }
+  }
+}

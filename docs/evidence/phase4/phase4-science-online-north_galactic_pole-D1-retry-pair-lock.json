@@ -1,0 +1,2152 @@
+{
+  "created_at": "2026-11-14T21:23:31.420223+00:00",
+  "field": {
+    "id": "north_galactic_pole",
+    "ra": 192.85948,
+    "dec": 27.12825,
+    "research_radius_deg": 0.5
+  },
+  "detector": 1,
+  "pair_ranks_sha256": "81c742860974a5345371770c8e484a6c30401d5ffe7d3d0ef79b5aac2d09260d",
+  "attempts": [
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 704.7652942944239,
+        "time_separation_days": 4.887450000001991,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/180d3e3b70e3329e96332e1ff45bbcd27496e827a0ca422c3dbb7294e7d4a8b8.fits",
+          "sha256": "2df24bbc6bfa28af93d3b469fab3ad526e1903c9184e3afc771557fcf44c7c0b",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:30.914696+00:00",
+          "elapsed_seconds": 5.17200000025332,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/3f05b403dae185e2db423890134c2592c52925134acd37d45439cd19c66bd4cb.fits",
+          "sha256": "3e281a6fd9871ee8a373e20b67dcf107ef36c60773ca4efd9bb36a772abc831b",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:03:35.985249+00:00",
+          "elapsed_seconds": 10.234999999403954,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 704.9285103156591,
+        "time_separation_days": 1.1504920000006678,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/5431de7f4864b47e27155c17ab420dd976e0bf4b688a78b380ea32957a96fec3.fits",
+          "sha256": "bc64934e0cae459dae4797c83357c7570856b8d847b02492e4db8fef311e538d",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:48.045452+00:00",
+          "elapsed_seconds": 5.984000001102686,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/f0b20676cc940e9b129c4272fd58f487093ced3f6fccbbc5d5acf227f20ac405.fits",
+          "sha256": "cac7100cb742dd9e6b8214b136aad3b8be7d5adfc89c02cbbf437e6be109f388",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:47.465663+00:00",
+          "elapsed_seconds": 5.406000001356006,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 1410.9743683960019,
+        "time_separation_days": 4.888942000005045,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/6739091aee086583126d1d7148ce45d8ac9defbf56767a1828dafdb1f6107ea2.fits",
+          "sha256": "5e80f65686c644768634025073463fec0f365d11a5c9dd500041aabee3832ae2",
+          "bytes": 13250880,
+          "retrieved_at": "2026-11-14T21:04:07.584274+00:00",
+          "elapsed_seconds": 13.343000000342727,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/3f05b403dae185e2db423890134c2592c52925134acd37d45439cd19c66bd4cb.fits",
+          "sha256": "3e281a6fd9871ee8a373e20b67dcf107ef36c60773ca4efd9bb36a772abc831b",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:03:35.985249+00:00",
+          "elapsed_seconds": 10.234999999403954,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 1411.3367207731042,
+        "time_separation_days": 1.151984000003722,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/5431de7f4864b47e27155c17ab420dd976e0bf4b688a78b380ea32957a96fec3.fits",
+          "sha256": "bc64934e0cae459dae4797c83357c7570856b8d847b02492e4db8fef311e538d",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:48.045452+00:00",
+          "elapsed_seconds": 5.984000001102686,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/ffafa34c54ea615560c8b9fcfad262637192b494cbc2f44174cd0dc8f3c46c65.fits",
+          "sha256": "35852cd9897e9aae0fff480d1467c77cabf55a80dcd957ccc9711d2d8951abae",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:05:17.357558+00:00",
+          "elapsed_seconds": 16.437999999150634,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 1411.6600560196225,
+        "time_separation_days": 1.151983999996446,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/16112d2c85f8f6d20f0ec3ebfe71730dfe3a06db3706a7430b92d8436d41af0c.fits",
+          "sha256": "9be6ed55a66f77adb208b8924df59a1d42b841700ac1ed0c64254bb1ad8307b8",
+          "bytes": 14679360,
+          "retrieved_at": "2026-11-14T21:04:37.234767+00:00",
+          "elapsed_seconds": 22.21900000050664,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/f0b20676cc940e9b129c4272fd58f487093ced3f6fccbbc5d5acf227f20ac405.fits",
+          "sha256": "cac7100cb742dd9e6b8214b136aad3b8be7d5adfc89c02cbbf437e6be109f388",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:47.465663+00:00",
+          "elapsed_seconds": 5.406000001356006,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 1411.8680127296298,
+        "time_separation_days": 5.566531999997096,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/180d3e3b70e3329e96332e1ff45bbcd27496e827a0ca422c3dbb7294e7d4a8b8.fits",
+          "sha256": "2df24bbc6bfa28af93d3b469fab3ad526e1903c9184e3afc771557fcf44c7c0b",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:30.914696+00:00",
+          "elapsed_seconds": 5.17200000025332,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/809adc6a674f4503d9f66505bddb0149adf5328ec35162250b665cf9a61ba9e9.fits",
+          "sha256": "e81aaf6189bb614736370fabe63d21e6521568e7dbac248b41cb2bf3dfd93107",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:04:48.599846+00:00",
+          "elapsed_seconds": 5.141000000759959,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 2118.200736493902,
+        "time_separation_days": 5.56802400000015,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/6739091aee086583126d1d7148ce45d8ac9defbf56767a1828dafdb1f6107ea2.fits",
+          "sha256": "5e80f65686c644768634025073463fec0f365d11a5c9dd500041aabee3832ae2",
+          "bytes": 13250880,
+          "retrieved_at": "2026-11-14T21:04:07.584274+00:00",
+          "elapsed_seconds": 13.343000000342727,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/809adc6a674f4503d9f66505bddb0149adf5328ec35162250b665cf9a61ba9e9.fits",
+          "sha256": "e81aaf6189bb614736370fabe63d21e6521568e7dbac248b41cb2bf3dfd93107",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:04:48.599846+00:00",
+          "elapsed_seconds": 5.141000000759959,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 2118.20178778192,
+        "time_separation_days": 1.1534759999995003,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/16112d2c85f8f6d20f0ec3ebfe71730dfe3a06db3706a7430b92d8436d41af0c.fits",
+          "sha256": "9be6ed55a66f77adb208b8924df59a1d42b841700ac1ed0c64254bb1ad8307b8",
+          "bytes": 14679360,
+          "retrieved_at": "2026-11-14T21:04:37.234767+00:00",
+          "elapsed_seconds": 22.21900000050664,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/ffafa34c54ea615560c8b9fcfad262637192b494cbc2f44174cd0dc8f3c46c65.fits",
+          "sha256": "35852cd9897e9aae0fff480d1467c77cabf55a80dcd957ccc9711d2d8951abae",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:05:17.357558+00:00",
+          "elapsed_seconds": 16.437999999150634,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 5592.677228023142,
+        "time_separation_days": 7.878227999994124,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/16112d2c85f8f6d20f0ec3ebfe71730dfe3a06db3706a7430b92d8436d41af0c.fits",
+          "sha256": "9be6ed55a66f77adb208b8924df59a1d42b841700ac1ed0c64254bb1ad8307b8",
+          "bytes": 14679360,
+          "retrieved_at": "2026-11-14T21:04:37.234767+00:00",
+          "elapsed_seconds": 22.21900000050664,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/809adc6a674f4503d9f66505bddb0149adf5328ec35162250b665cf9a61ba9e9.fits",
+          "sha256": "e81aaf6189bb614736370fabe63d21e6521568e7dbac248b41cb2bf3dfd93107",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:04:48.599846+00:00",
+          "elapsed_seconds": 5.141000000759959,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 5860.206717653982,
+        "time_separation_days": 7.199145999999018,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/16112d2c85f8f6d20f0ec3ebfe71730dfe3a06db3706a7430b92d8436d41af0c.fits",
+          "sha256": "9be6ed55a66f77adb208b8924df59a1d42b841700ac1ed0c64254bb1ad8307b8",
+          "bytes": 14679360,
+          "retrieved_at": "2026-11-14T21:04:37.234767+00:00",
+          "elapsed_seconds": 22.21900000050664,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/3f05b403dae185e2db423890134c2592c52925134acd37d45439cd19c66bd4cb.fits",
+          "sha256": "3e281a6fd9871ee8a373e20b67dcf107ef36c60773ca4efd9bb36a772abc831b",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:03:35.985249+00:00",
+          "elapsed_seconds": 10.234999999403954,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 5865.361970701899,
+        "time_separation_days": 7.8767359999983455,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/5431de7f4864b47e27155c17ab420dd976e0bf4b688a78b380ea32957a96fec3.fits",
+          "sha256": "bc64934e0cae459dae4797c83357c7570856b8d847b02492e4db8fef311e538d",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:48.045452+00:00",
+          "elapsed_seconds": 5.984000001102686,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/809adc6a674f4503d9f66505bddb0149adf5328ec35162250b665cf9a61ba9e9.fits",
+          "sha256": "e81aaf6189bb614736370fabe63d21e6521568e7dbac248b41cb2bf3dfd93107",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:04:48.599846+00:00",
+          "elapsed_seconds": 5.141000000759959,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 6202.134293874785,
+        "time_separation_days": 7.19765400000324,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/5431de7f4864b47e27155c17ab420dd976e0bf4b688a78b380ea32957a96fec3.fits",
+          "sha256": "bc64934e0cae459dae4797c83357c7570856b8d847b02492e4db8fef311e538d",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:48.045452+00:00",
+          "elapsed_seconds": 5.984000001102686,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/3f05b403dae185e2db423890134c2592c52925134acd37d45439cd19c66bd4cb.fits",
+          "sha256": "3e281a6fd9871ee8a373e20b67dcf107ef36c60773ca4efd9bb36a772abc831b",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:03:35.985249+00:00",
+          "elapsed_seconds": 10.234999999403954,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 6213.707144454703,
+        "time_separation_days": 2.3116959999970277,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/16112d2c85f8f6d20f0ec3ebfe71730dfe3a06db3706a7430b92d8436d41af0c.fits",
+          "sha256": "9be6ed55a66f77adb208b8924df59a1d42b841700ac1ed0c64254bb1ad8307b8",
+          "bytes": 14679360,
+          "retrieved_at": "2026-11-14T21:04:37.234767+00:00",
+          "elapsed_seconds": 22.21900000050664,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/180d3e3b70e3329e96332e1ff45bbcd27496e827a0ca422c3dbb7294e7d4a8b8.fits",
+          "sha256": "2df24bbc6bfa28af93d3b469fab3ad526e1903c9184e3afc771557fcf44c7c0b",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:30.914696+00:00",
+          "elapsed_seconds": 5.17200000025332,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 6223.879150145971,
+        "time_separation_days": 6.726243999997678,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/f0b20676cc940e9b129c4272fd58f487093ced3f6fccbbc5d5acf227f20ac405.fits",
+          "sha256": "cac7100cb742dd9e6b8214b136aad3b8be7d5adfc89c02cbbf437e6be109f388",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:47.465663+00:00",
+          "elapsed_seconds": 5.406000001356006,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/809adc6a674f4503d9f66505bddb0149adf5328ec35162250b665cf9a61ba9e9.fits",
+          "sha256": "e81aaf6189bb614736370fabe63d21e6521568e7dbac248b41cb2bf3dfd93107",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:04:48.599846+00:00",
+          "elapsed_seconds": 5.141000000759959,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 6604.330702489236,
+        "time_separation_days": 2.3102039999939734,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/16112d2c85f8f6d20f0ec3ebfe71730dfe3a06db3706a7430b92d8436d41af0c.fits",
+          "sha256": "9be6ed55a66f77adb208b8924df59a1d42b841700ac1ed0c64254bb1ad8307b8",
+          "bytes": 14679360,
+          "retrieved_at": "2026-11-14T21:04:37.234767+00:00",
+          "elapsed_seconds": 22.21900000050664,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/6739091aee086583126d1d7148ce45d8ac9defbf56767a1828dafdb1f6107ea2.fits",
+          "sha256": "5e80f65686c644768634025073463fec0f365d11a5c9dd500041aabee3832ae2",
+          "bytes": 13250880,
+          "retrieved_at": "2026-11-14T21:04:07.584274+00:00",
+          "elapsed_seconds": 13.343000000342727,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 6612.933962943268,
+        "time_separation_days": 2.3102040000012494,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/5431de7f4864b47e27155c17ab420dd976e0bf4b688a78b380ea32957a96fec3.fits",
+          "sha256": "bc64934e0cae459dae4797c83357c7570856b8d847b02492e4db8fef311e538d",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:48.045452+00:00",
+          "elapsed_seconds": 5.984000001102686,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/180d3e3b70e3329e96332e1ff45bbcd27496e827a0ca422c3dbb7294e7d4a8b8.fits",
+          "sha256": "2df24bbc6bfa28af93d3b469fab3ad526e1903c9184e3afc771557fcf44c7c0b",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:30.914696+00:00",
+          "elapsed_seconds": 5.17200000025332,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 6617.5398579470975,
+        "time_separation_days": 6.7247519999946235,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/ffafa34c54ea615560c8b9fcfad262637192b494cbc2f44174cd0dc8f3c46c65.fits",
+          "sha256": "35852cd9897e9aae0fff480d1467c77cabf55a80dcd957ccc9711d2d8951abae",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:05:17.357558+00:00",
+          "elapsed_seconds": 16.437999999150634,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/809adc6a674f4503d9f66505bddb0149adf5328ec35162250b665cf9a61ba9e9.fits",
+          "sha256": "e81aaf6189bb614736370fabe63d21e6521568e7dbac248b41cb2bf3dfd93107",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:04:48.599846+00:00",
+          "elapsed_seconds": 5.141000000759959,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 6617.943759870676,
+        "time_separation_days": 6.047162000002572,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/f0b20676cc940e9b129c4272fd58f487093ced3f6fccbbc5d5acf227f20ac405.fits",
+          "sha256": "cac7100cb742dd9e6b8214b136aad3b8be7d5adfc89c02cbbf437e6be109f388",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:47.465663+00:00",
+          "elapsed_seconds": 5.406000001356006,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/3f05b403dae185e2db423890134c2592c52925134acd37d45439cd19c66bd4cb.fits",
+          "sha256": "3e281a6fd9871ee8a373e20b67dcf107ef36c60773ca4efd9bb36a772abc831b",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:03:35.985249+00:00",
+          "elapsed_seconds": 10.234999999403954,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 7052.424756831602,
+        "time_separation_days": 2.308711999998195,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/5431de7f4864b47e27155c17ab420dd976e0bf4b688a78b380ea32957a96fec3.fits",
+          "sha256": "bc64934e0cae459dae4797c83357c7570856b8d847b02492e4db8fef311e538d",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:48.045452+00:00",
+          "elapsed_seconds": 5.984000001102686,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/6739091aee086583126d1d7148ce45d8ac9defbf56767a1828dafdb1f6107ea2.fits",
+          "sha256": "5e80f65686c644768634025073463fec0f365d11a5c9dd500041aabee3832ae2",
+          "bytes": 13250880,
+          "retrieved_at": "2026-11-14T21:04:07.584274+00:00",
+          "elapsed_seconds": 13.343000000342727,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+        "corner_distance_arcsec": 7060.598611394507,
+        "time_separation_days": 6.045669999999518,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/ffafa34c54ea615560c8b9fcfad262637192b494cbc2f44174cd0dc8f3c46c65.fits",
+          "sha256": "35852cd9897e9aae0fff480d1467c77cabf55a80dcd957ccc9711d2d8951abae",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:05:17.357558+00:00",
+          "elapsed_seconds": 16.437999999150634,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/3f05b403dae185e2db423890134c2592c52925134acd37d45439cd19c66bd4cb.fits",
+          "sha256": "3e281a6fd9871ee8a373e20b67dcf107ef36c60773ca4efd9bb36a772abc831b",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:03:35.985249+00:00",
+          "elapsed_seconds": 10.234999999403954,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 7074.976827626334,
+        "time_separation_days": 1.1597120000005816,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/f0b20676cc940e9b129c4272fd58f487093ced3f6fccbbc5d5acf227f20ac405.fits",
+          "sha256": "cac7100cb742dd9e6b8214b136aad3b8be7d5adfc89c02cbbf437e6be109f388",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:47.465663+00:00",
+          "elapsed_seconds": 5.406000001356006,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/180d3e3b70e3329e96332e1ff45bbcd27496e827a0ca422c3dbb7294e7d4a8b8.fits",
+          "sha256": "2df24bbc6bfa28af93d3b469fab3ad526e1903c9184e3afc771557fcf44c7c0b",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:30.914696+00:00",
+          "elapsed_seconds": 5.17200000025332,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 7553.554007313883,
+        "time_separation_days": 1.1582199999975273,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/f0b20676cc940e9b129c4272fd58f487093ced3f6fccbbc5d5acf227f20ac405.fits",
+          "sha256": "cac7100cb742dd9e6b8214b136aad3b8be7d5adfc89c02cbbf437e6be109f388",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:47.465663+00:00",
+          "elapsed_seconds": 5.406000001356006,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/6739091aee086583126d1d7148ce45d8ac9defbf56767a1828dafdb1f6107ea2.fits",
+          "sha256": "5e80f65686c644768634025073463fec0f365d11a5c9dd500041aabee3832ae2",
+          "bytes": 13250880,
+          "retrieved_at": "2026-11-14T21:04:07.584274+00:00",
+          "elapsed_seconds": 13.343000000342727,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 7556.84546013875,
+        "time_separation_days": 1.1582199999975273,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/ffafa34c54ea615560c8b9fcfad262637192b494cbc2f44174cd0dc8f3c46c65.fits",
+          "sha256": "35852cd9897e9aae0fff480d1467c77cabf55a80dcd957ccc9711d2d8951abae",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:05:17.357558+00:00",
+          "elapsed_seconds": 16.437999999150634,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/180d3e3b70e3329e96332e1ff45bbcd27496e827a0ca422c3dbb7294e7d4a8b8.fits",
+          "sha256": "2df24bbc6bfa28af93d3b469fab3ad526e1903c9184e3afc771557fcf44c7c0b",
+          "bytes": 14667840,
+          "retrieved_at": "2026-11-14T21:03:30.914696+00:00",
+          "elapsed_seconds": 5.17200000025332,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+        "corner_distance_arcsec": 8068.786913557499,
+        "time_separation_days": 1.156727999994473,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "status": "rejected_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D1.fits",
+        "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:59:49.733170+00:00",
+        "elapsed_seconds": 6.3440000005066395,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/ffafa34c54ea615560c8b9fcfad262637192b494cbc2f44174cd0dc8f3c46c65.fits",
+          "sha256": "35852cd9897e9aae0fff480d1467c77cabf55a80dcd957ccc9711d2d8951abae",
+          "bytes": 14690880,
+          "retrieved_at": "2026-11-14T21:05:17.357558+00:00",
+          "elapsed_seconds": 16.437999999150634,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits?center=192.859480,27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_galactic_pole/fits/6739091aee086583126d1d7148ce45d8ac9defbf56767a1828dafdb1f6107ea2.fits",
+          "sha256": "5e80f65686c644768634025073463fec0f365d11a5c9dd500041aabee3832ae2",
+          "bytes": 13250880,
+          "retrieved_at": "2026-11-14T21:04:07.584274+00:00",
+          "elapsed_seconds": 13.343000000342727,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [],
+      "control_rejections": [
+        {
+          "index": 0,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 1,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 2,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 3,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 4,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 5,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 6,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 7,
+          "reason": "calibrated_wavelength_mismatch"
+        },
+        {
+          "index": 8,
+          "reason": "calibrated_wavelength_mismatch"
+        }
+      ],
+      "reason": "Fewer than3 lockedcontrols pass calibrated neighborhood matching"
+    }
+  ],
+  "selected": null,
+  "flux_extracted": false,
+  "scope": "Calibrated geometry first; astrometry/support prerequisites will be assessed without flux residual-based selection"
+}

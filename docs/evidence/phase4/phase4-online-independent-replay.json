@@ -1,0 +1,667 @@
+{
+  "schema": "skyblink.online-independent-replay/1",
+  "reviewed_at": "2026-11-14T21:36:07.560750+00:00",
+  "reviewer": "separate frontend reviewer agent, same Windows host; not a separate human or different platform",
+  "scope": "Frozen API 1.5 d070c73e2172adbf999010c9e12e39c029c288e1e1f8eb2d0a89ec0f31f2a182 WISE image/finite spectrum and R Draconis null spectrum, plus final publication image source 16113fcdab8afb50c915a10828d8bdd19f33d0d6ec6db81339f7ded9eb40aa9a. Every result remains tied to its own recorded source.",
+  "bundle": {
+    "directory": "backend/.cache/phase4/online-replay-bundle",
+    "manifest_sha256": "2e3d44151e004438dd85f3032448c5a3c2b57371788141306161e468a7f2b595",
+    "verified_files": 122,
+    "payload_bytes": 309225204
+  },
+  "environment": {
+    "venv": "backend/.cache/phase4/independent-venv",
+    "created_fresh_for_independent_review": true,
+    "reused_after_current_bundle_pin_check": true,
+    "include_system_site_packages": false,
+    "enable_user_site": false,
+    "pinned_distributions_verified": 66,
+    "pip_check": "No broken requirements found.",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]"
+  },
+  "drift_overrides": false,
+  "fresh_acquisition": {
+    "full_spectrum_acquisition": "failed twice before any input was published; HTTPStatusError; original CLI omits HTTP status",
+    "full_image_acquisition": "failed after 2 of 54 inputs were acquired and hash verified; original CLI omits HTTP status",
+    "stores_initially_empty": true,
+    "bundled_bytes_copied_to_fresh_stores": false,
+    "spectrum_store_published_inputs": 0,
+    "image_store_published_inputs": [
+      {
+        "sha256": "024a2ba2763bf43c1cc4bd1f4a7baa6a06bf47a6d6b3ddff725898e6e0aea645",
+        "size_bytes": 4389120,
+        "method": "frozen acquire CLI; new initially empty image store"
+      },
+      {
+        "sha256": "074482cb830433d8d66ba13947e3243c4d36c6e05aeebdbaf0ea4361e774d07f",
+        "size_bytes": 4320000,
+        "method": "frozen acquire CLI; new initially empty image store"
+      }
+    ],
+    "supplemental_exact_url_probes": [
+      {
+        "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2026W19_2A/l2b-v27-2026-245/3/level2_2026W19_2A_0568_1D3_spx_l2b-v27-2026-245.fits?center=133.760216,-7.242224&size=0.200000",
+        "trust_env": false,
+        "tls_verification": true,
+        "requested_at": "2026-11-14T21:33:08.373139+00:00",
+        "http_status": 503,
+        "bytes": 25,
+        "elapsed_seconds": 1.1099999994039536,
+        "error_excerpt": "Server busy, retry later."
+      },
+      {
+        "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2026W19_2A/l2b-v27-2026-245/3/level2_2026W19_2A_0568_1D3_spx_l2b-v27-2026-245.fits?center=133.760216,-7.242224&size=0.200000",
+        "trust_env": true,
+        "tls_verification": true,
+        "requested_at": "2026-11-14T21:33:09.485586+00:00",
+        "http_status": 200,
+        "bytes": 4256640,
+        "elapsed_seconds": 7.359000001102686,
+        "sha256": "0c4c01a8739a6c6122276ac7f900b5ec1d676e7e4fc591d1716af0268b4bc06c",
+        "hash_matches": true,
+        "size_matches": true
+      },
+      {
+        "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2026W19_2A/l2b-v27-2026-245/6/level2_2026W19_2A_0782_1D6_spx_l2b-v27-2026-245.fits?center=133.760216,-7.242224&size=0.286259",
+        "trust_env": false,
+        "tls_verification": true,
+        "requested_at": "2026-11-14T21:34:28.555248+00:00",
+        "http_status": 200,
+        "bytes": 4389120,
+        "elapsed_seconds": 7.25,
+        "sha256": "0b545360dd507a450e2e5f449918df6b92c6ae875f04b22fc31a5cc4ef799c30",
+        "hash_matches": true,
+        "size_matches": true
+      }
+    ],
+    "fresh_unique_inputs_verified": 4,
+    "fresh_only_full_replay": "not completed; all strict numerical replays used bundled retained inputs",
+    "transport_interpretation": "Sequential attempts differ in timing; no causal claim that environment transport settings explain success. No TLS or hash verification disabled."
+  },
+  "runs": [
+    {
+      "stage": "acquire-image",
+      "started_at": "2026-11-14T21:33:17.219841+00:00",
+      "command": [
+        "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\independent-venv\\Scripts\\python.exe",
+        "source/scripts/replay_analysis.py",
+        "acquire",
+        "--record",
+        "records/a765011409e036cda50762e9555fd5b22d8f4cc7dfe71e7c56b3ffaa14293ab3.json",
+        "--store",
+        "../online-independent-review/fresh-image-inputs",
+        "--timeout",
+        "600"
+      ],
+      "cwd": "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\online-replay-bundle",
+      "drift_overrides": false,
+      "exit_code": 2,
+      "elapsed_seconds": 12.07799999974668,
+      "completed_at": "2026-11-14T21:33:29.297258+00:00"
+    },
+    {
+      "stage": "acquire-spectrum-retry1",
+      "started_at": "2026-11-14T21:32:11.261994+00:00",
+      "command": [
+        "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\independent-venv\\Scripts\\python.exe",
+        "source/scripts/replay_analysis.py",
+        "acquire",
+        "--record",
+        "records/52c60f604f53110fff43fbf5484020b30a499a5ea90026be8e5c1420e4c2fbb1.json",
+        "--store",
+        "../online-independent-review/fresh-spectrum-inputs",
+        "--timeout",
+        "600"
+      ],
+      "cwd": "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\online-replay-bundle",
+      "drift_overrides": false,
+      "exit_code": 2,
+      "elapsed_seconds": 1.359000001102686,
+      "completed_at": "2026-11-14T21:32:12.624663+00:00"
+    },
+    {
+      "stage": "acquire-spectrum",
+      "started_at": "2026-11-14T21:31:47.389074+00:00",
+      "command": [
+        "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\independent-venv\\Scripts\\python.exe",
+        "source/scripts/replay_analysis.py",
+        "acquire",
+        "--record",
+        "records/52c60f604f53110fff43fbf5484020b30a499a5ea90026be8e5c1420e4c2fbb1.json",
+        "--store",
+        "../online-independent-review/fresh-spectrum-inputs",
+        "--timeout",
+        "600"
+      ],
+      "cwd": "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\online-replay-bundle",
+      "drift_overrides": false,
+      "exit_code": 2,
+      "elapsed_seconds": 1.4060000013560057,
+      "completed_at": "2026-11-14T21:31:48.793423+00:00"
+    },
+    {
+      "stage": "replay-image-bundled",
+      "started_at": "2026-11-14T21:34:17.947122+00:00",
+      "command": [
+        "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\independent-venv\\Scripts\\python.exe",
+        "source/scripts/replay_analysis.py",
+        "replay",
+        "--record",
+        "records/a765011409e036cda50762e9555fd5b22d8f4cc7dfe71e7c56b3ffaa14293ab3.json",
+        "--store",
+        "inputs",
+        "--output",
+        "../online-independent-review/image-bundled"
+      ],
+      "cwd": "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\online-replay-bundle",
+      "drift_overrides": false,
+      "exit_code": 0,
+      "elapsed_seconds": 42.90699999965727,
+      "completed_at": "2026-11-14T21:35:00.855264+00:00"
+    },
+    {
+      "stage": "replay-spectrum-bundled",
+      "started_at": "2026-11-14T21:32:24.017151+00:00",
+      "command": [
+        "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\independent-venv\\Scripts\\python.exe",
+        "source/scripts/replay_analysis.py",
+        "replay",
+        "--record",
+        "records/52c60f604f53110fff43fbf5484020b30a499a5ea90026be8e5c1420e4c2fbb1.json",
+        "--store",
+        "inputs",
+        "--output",
+        "../online-independent-review/spectrum-bundled"
+      ],
+      "cwd": "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\online-replay-bundle",
+      "drift_overrides": false,
+      "exit_code": 0,
+      "elapsed_seconds": 6.375,
+      "completed_at": "2026-11-14T21:32:30.394452+00:00"
+    },
+    {
+      "stage": "replay-null-bundled",
+      "cwd": "backend/.cache/phase4/online-null-replay-bundle",
+      "command": [
+        "../independent-venv/Scripts/python.exe",
+        "source/scripts/replay_analysis.py",
+        "replay",
+        "--record",
+        "records/0e8558538049aa3a1fe8478522e92db1b0e349827821362a2d8485268e4e5701.json",
+        "--store",
+        "inputs",
+        "--output",
+        "../online-independent-review/null-bundled"
+      ],
+      "exit_code": 0,
+      "drift_overrides": false,
+      "elapsed_seconds": 6.8179689
+    },
+    {
+      "stage": "replay-publication-bundled",
+      "started_at": "2026-11-14T21:42:18.214306+00:00",
+      "command": [
+        "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\independent-venv\\Scripts\\python.exe",
+        "source/scripts/replay_analysis.py",
+        "replay",
+        "--record",
+        "records/be1aec7271e5730165ba8be854b97174b68938895597257b6a3869d3e6072e3e.json",
+        "--store",
+        "inputs",
+        "--output",
+        "../online-independent-review/publication-bundled"
+      ],
+      "cwd": "C:\\Users\\dima2\\IdeaProjects\\SkyBlink\\backend\\.cache\\phase4\\online-publication-replay-bundle",
+      "drift_overrides": false,
+      "exit_code": 0,
+      "elapsed_seconds": 13.546999998390675,
+      "completed_at": "2026-11-14T21:42:31.762406+00:00"
+    }
+  ],
+  "strict_bundled_replays": [
+    {
+      "analysis_id": "sha256:52c60f604f53110fff43fbf5484020b30a499a5ea90026be8e5c1420e4c2fbb1",
+      "kind": "spectrum",
+      "verified": true,
+      "strict_replay": true,
+      "code_matches": true,
+      "environment_matches": true,
+      "numerical_match": true,
+      "replayed_at": "2026-11-14T21:32:26.795783+00:00",
+      "scientific_validation": "not_established_by_replay",
+      "input_store": "bundle/inputs (retained original bytes; not the fresh acquisition stores)",
+      "input_hashes_verified": 17,
+      "source_digest": "d070c73e2172adbf999010c9e12e39c029c288e1e1f8eb2d0a89ec0f31f2a182",
+      "environment": {
+        "implementation": "CPython",
+        "machine": "AMD64",
+        "native_libraries": {
+          "wcslib": "8.6",
+          "webp": "1.6.0"
+        },
+        "packages": {
+          "Pillow": "13.0.0",
+          "astropy": "8.0.2",
+          "astropy-healpix": "2.0.1",
+          "astropy-iers-data": "0.2026.11.9.0.35.9",
+          "dask": "2026.8.0",
+          "fastapi": "0.163.0",
+          "fsspec": "2026.9.0",
+          "httpx": "0.28.1",
+          "numpy": "2.4.6",
+          "photutils": "3.0.0",
+          "pydantic": "2.14.3",
+          "pyerfa": "2.0.1.5",
+          "pyvo": "1.10.0",
+          "reproject": "0.21.0",
+          "scipy": "1.17.1",
+          "sep": "1.4.1",
+          "zarr": "3.1.6"
+        },
+        "platform": "win32",
+        "python": "3.11.9"
+      },
+      "report_sha256": "6b6610917f015e86ba1e2030bfc7494643799f99fd259a4bd7432c675794d73a",
+      "local_report": "backend/.cache/phase4/online-independent-review/spectrum-bundled/replay-report.json",
+      "channel_summary": {
+        "present": 17,
+        "finite": 17,
+        "eligible": 16,
+        "reason_counts": {
+          "PARTIAL_CLEAN_APERTURE": 1
+        },
+        "source_matches": true,
+        "environment_matches": true,
+        "verified": true,
+        "numerical_match": true,
+        "strict_replay": true,
+        "differences": []
+      }
+    },
+    {
+      "analysis_id": "sha256:a765011409e036cda50762e9555fd5b22d8f4cc7dfe71e7c56b3ffaa14293ab3",
+      "kind": "image",
+      "verified": true,
+      "strict_replay": true,
+      "code_matches": true,
+      "environment_matches": true,
+      "numerical_match": true,
+      "replayed_at": "2026-11-14T21:34:21.049443+00:00",
+      "scientific_validation": "not_established_by_replay",
+      "input_store": "bundle/inputs (retained original bytes; not the fresh acquisition stores)",
+      "input_hashes_verified": 54,
+      "source_digest": "d070c73e2172adbf999010c9e12e39c029c288e1e1f8eb2d0a89ec0f31f2a182",
+      "environment": {
+        "implementation": "CPython",
+        "machine": "AMD64",
+        "native_libraries": {
+          "wcslib": "8.6",
+          "webp": "1.6.0"
+        },
+        "packages": {
+          "Pillow": "13.0.0",
+          "astropy": "8.0.2",
+          "astropy-healpix": "2.0.1",
+          "astropy-iers-data": "0.2026.11.9.0.35.9",
+          "dask": "2026.8.0",
+          "fastapi": "0.163.0",
+          "fsspec": "2026.9.0",
+          "httpx": "0.28.1",
+          "numpy": "2.4.6",
+          "photutils": "3.0.0",
+          "pydantic": "2.14.3",
+          "pyerfa": "2.0.1.5",
+          "pyvo": "1.10.0",
+          "reproject": "0.21.0",
+          "scipy": "1.17.1",
+          "sep": "1.4.1",
+          "zarr": "3.1.6"
+        },
+        "platform": "win32",
+        "python": "3.11.9"
+      },
+      "report_sha256": "265d7bac9a98c550e779572ae542c5ba269a1f04345bb68eda5409f5b9869ce9",
+      "local_report": "backend/.cache/phase4/online-independent-review/image-bundled/replay-report.json",
+      "image_results": {
+        "artifact_hashes_match": true,
+        "asset_hashes": {
+          "2025_E2_ALL.webp": "481ddba77076c1bdf21b0256f0af6e56d0d5b79e28dafb318590e534653b04ea",
+          "2025_E2_B56.webp": "c26110d2912d6e572fa4e9f85ee06549ed473fbb42e77b83df2ae3cb6bed5eab",
+          "2025_E2_D3.webp": "900eaa702ee17c3fc150c99a2403790a2dd68478a138f31b4a745754e32aec2a",
+          "2025_E2_D6.webp": "c26110d2912d6e572fa4e9f85ee06549ed473fbb42e77b83df2ae3cb6bed5eab",
+          "2025_E2_FLAGS.webp": "7b2ff56f0c65952af5981b1c4949ee03b370dc953ef9968e02ca190ee6db412a",
+          "2026_E1_ALL.webp": "f29defe8d943fd99a362675a675ded83a05155df062e256e3f9ce8c0c097251b",
+          "2026_E1_B56.webp": "9136d489da74498cd3a1fcfd0ab97936206613de56320fdb4d054497763f0141",
+          "2026_E1_D3.webp": "1dca19d7f248934ceeffe043dfff1ea39c195bab5a586af21c34a15d4920211a",
+          "2026_E1_D6.webp": "9136d489da74498cd3a1fcfd0ab97936206613de56320fdb4d054497763f0141",
+          "2026_E1_FLAGS.webp": "370887b6e1e8626bd349c6f91a1dc43eb23616c009c6f7cd956b37d47e46155e",
+          "diff_2026_E1_minus_2025_E2_ALL.webp": "70ed6076f59176d045c2bc31b0a6db013600cb2737f77aa56fefebd8d74f22a1",
+          "diff_2026_E1_minus_2025_E2_D3.webp": "95e36933a49834b075931adcfa6dce79b66067ff5128ba0ca720e55bcf4c98b8",
+          "diff_2026_E1_minus_2025_E2_D6.webp": "d18a7a9919f3485e399a46fa4e733b2a4994b0de0c631cb1ca8fb134241ce470",
+          "telemetry_2025_E2.bin.gz": "c4ce91e6bd8dd48de727217b9045352ac8c15adc280f14ab0863044dc21507e3",
+          "telemetry_2026_E1.bin.gz": "6296665872e0dded12977598ddcd1c2d99ffc10fca7539f26082269f3c634dfd"
+        },
+        "science_planes": {
+          "2025_E2:D3": {
+            "finite_measurement_pixels": 47093,
+            "flags_sha256": "c7f0eb7e6bc11e6310faaede7ffd6a98bc1db6b14a9c90e9177b5f7c2fcd63a6",
+            "measurement_sha256": "f37e258e49c5294022bcba51b3d51eeaa9b94e1e0152b0b16c055f42f4edd6e7",
+            "normalized_display_sha256": "5d337af2f345af61cf28832968407208a4c6bad79235b1f0cc310f2fb5cc4746",
+            "variance_sha256": "d9b77beb5cfdf53c3650210b7984c33a985fa93fa116ad3dc8fb84bd05b9bae0"
+          },
+          "2025_E2:D6": {
+            "finite_measurement_pixels": 49191,
+            "flags_sha256": "9013e2cfcf41fcd85d0a99e655796fa240d1e802e2c92f78d17f75e85e8be775",
+            "measurement_sha256": "998bbe40d182b84afb31f2896a5b4bdd0088c062ea33be240873725d189daebe",
+            "normalized_display_sha256": "859d9577b422668fa259cf62106d9a21abca6b1f9e0f2cc15b0fae3ecefc8e9a",
+            "variance_sha256": "d80befbc5b5c8b4407a60a33cffa22d551425240cf7dc9236a68f632769e280f"
+          },
+          "2026_E1:D3": {
+            "finite_measurement_pixels": 45549,
+            "flags_sha256": "2e397e8be289edaa2cfc982021f9c7c6441f165c6a6e137b01f9b3a48ae63608",
+            "measurement_sha256": "e46522b5a33069e1046c437607af26e7b9d7ae9092dabec8ca7b4deee6f76c6a",
+            "normalized_display_sha256": "8e6734d1177e044b264a23bb76010cb2d2773713b022418a774cd4cf66591286",
+            "variance_sha256": "02ca707b0936bc6577835158f26cdb3b1a4098445422828614d70324a533dc84"
+          },
+          "2026_E1:D6": {
+            "finite_measurement_pixels": 45349,
+            "flags_sha256": "39d94f5ccab42b6207b17971780cf2334790669ae98f1060785d1677c7671ac6",
+            "measurement_sha256": "04faf523a9b3d2a25d9caf67446ed49e49a72e980655c4b662f15b5ee1a7a13c",
+            "normalized_display_sha256": "c9244a4d0b267b624001a05562bf7a93b63c5077b3f80840d01030a55d3d8965",
+            "variance_sha256": "4113cc1b799e8114ab324b859f8b93792a24e674ce3e98a565d092fbf416920e"
+          }
+        },
+        "selection_replay": "pinned_selected_inputs; dense_gate_rechecked; archive_discovery_not_requeried",
+        "validation": "numerical_replay_only_not_independent_scientific_acceptance"
+      }
+    },
+    {
+      "analysis_id": "sha256:0e8558538049aa3a1fe8478522e92db1b0e349827821362a2d8485268e4e5701",
+      "kind": "spectrum",
+      "verified": true,
+      "strict_replay": true,
+      "code_matches": true,
+      "environment_matches": true,
+      "numerical_match": true,
+      "replayed_at": "2026-11-14T21:40:30.008957+00:00",
+      "scientific_validation": "not_established_by_replay",
+      "input_store": "online-null-replay-bundle/inputs (retained original bytes; no new acquisition requested)",
+      "input_hashes_verified": 18,
+      "source_digest": "d070c73e2172adbf999010c9e12e39c029c288e1e1f8eb2d0a89ec0f31f2a182",
+      "environment": {
+        "implementation": "CPython",
+        "machine": "AMD64",
+        "native_libraries": {
+          "wcslib": "8.6",
+          "webp": "1.6.0"
+        },
+        "packages": {
+          "Pillow": "13.0.0",
+          "astropy": "8.0.2",
+          "astropy-healpix": "2.0.1",
+          "astropy-iers-data": "0.2026.11.9.0.35.9",
+          "dask": "2026.8.0",
+          "fastapi": "0.163.0",
+          "fsspec": "2026.9.0",
+          "httpx": "0.28.1",
+          "numpy": "2.4.6",
+          "photutils": "3.0.0",
+          "pydantic": "2.14.3",
+          "pyerfa": "2.0.1.5",
+          "pyvo": "1.10.0",
+          "reproject": "0.21.0",
+          "scipy": "1.17.1",
+          "sep": "1.4.1",
+          "zarr": "3.1.6"
+        },
+        "platform": "win32",
+        "python": "3.11.9"
+      },
+      "report_sha256": "67d40dc145053c83527795064930c56516256f28859077f0956ce01a1f9bd651",
+      "local_report": "backend/.cache/phase4/online-independent-review/null-bundled/replay-report.json",
+      "channel_summary": {
+        "present": 18,
+        "finite": 0,
+        "eligible": 0,
+        "null_flux": 18,
+        "null_error": 18,
+        "reason_counts": {
+          "UNSUPPORTED_BACKGROUND": 15,
+          "NO_CLEAN_APERTURE_PIXELS": 18,
+          "HARD_BAD_EXTRACTION_CENTRE": 18
+        },
+        "all_per_exposure_differences_empty": true
+      }
+    },
+    {
+      "analysis_id": "sha256:be1aec7271e5730165ba8be854b97174b68938895597257b6a3869d3e6072e3e",
+      "kind": "image",
+      "verified": true,
+      "strict_replay": true,
+      "code_matches": true,
+      "environment_matches": true,
+      "numerical_match": true,
+      "replayed_at": "2026-11-14T21:42:20.624853+00:00",
+      "scientific_validation": "not_established_by_replay",
+      "input_store": "online-publication-replay-bundle/inputs (verified retained bytes; no new public acquisition requested)",
+      "input_hashes_verified": 52,
+      "source_digest": "16113fcdab8afb50c915a10828d8bdd19f33d0d6ec6db81339f7ded9eb40aa9a",
+      "environment": {
+        "implementation": "CPython",
+        "machine": "AMD64",
+        "native_libraries": {
+          "wcslib": "8.6",
+          "webp": "1.6.0"
+        },
+        "packages": {
+          "Pillow": "13.0.0",
+          "astropy": "8.0.2",
+          "astropy-healpix": "2.0.1",
+          "astropy-iers-data": "0.2026.11.9.0.35.9",
+          "dask": "2026.8.0",
+          "fastapi": "0.163.0",
+          "fsspec": "2026.9.0",
+          "httpx": "0.28.1",
+          "numpy": "2.4.6",
+          "photutils": "3.0.0",
+          "pydantic": "2.14.3",
+          "pyerfa": "2.0.1.5",
+          "pyvo": "1.10.0",
+          "reproject": "0.21.0",
+          "scipy": "1.17.1",
+          "sep": "1.4.1",
+          "zarr": "3.1.6"
+        },
+        "platform": "win32",
+        "python": "3.11.9"
+      },
+      "report_sha256": "23ac2d542b99bedc10ae7a4ad63d448798e110900649f24105de3c393bc2655c",
+      "local_report": "backend/.cache/phase4/online-independent-review/publication-bundled/replay-report.json",
+      "image_results": {
+        "artifact_hashes_match": true,
+        "asset_hashes": {
+          "2026_E1_ALL_6e08472db6edbf5b05df2b52b73fb80ed7d39514fc3317b2ffe05bf1198179c1.webp": "6e08472db6edbf5b05df2b52b73fb80ed7d39514fc3317b2ffe05bf1198179c1",
+          "2026_E1_B56_6c9c9f4e8e953348d9152bd75af982658512079480e691c3d8626fb65382c3e2.webp": "6c9c9f4e8e953348d9152bd75af982658512079480e691c3d8626fb65382c3e2",
+          "2026_E1_D1_20f0b55b476127d9339a96d78bce2f9178ca9a04f196201f66aaad2c3bbe9d34.webp": "20f0b55b476127d9339a96d78bce2f9178ca9a04f196201f66aaad2c3bbe9d34",
+          "2026_E1_D2_1660d3827cc384114d10f559e1c2e758a283183cd639ea32a55ae1eae93a1e13.webp": "1660d3827cc384114d10f559e1c2e758a283183cd639ea32a55ae1eae93a1e13",
+          "2026_E1_D3_3f07b706b00edc98d6b79505d62950c8c5e24b08b173381355c8dcc3ee00d705.webp": "3f07b706b00edc98d6b79505d62950c8c5e24b08b173381355c8dcc3ee00d705",
+          "2026_E1_D4_4a653940a17807944eb3b5716b66e9612a4f8337796b12968db8a212e7d3ecfa.webp": "4a653940a17807944eb3b5716b66e9612a4f8337796b12968db8a212e7d3ecfa",
+          "2026_E1_D5_0ada89a7272c5e91c835cb264cb590cefd6e46d7b2f5ef1f815466ca43604bd1.webp": "0ada89a7272c5e91c835cb264cb590cefd6e46d7b2f5ef1f815466ca43604bd1",
+          "2026_E1_D6_e5ea6afb93e790c7eae8ff228c0cee83e34f2bfc43c2b0fe5ee34dfdbec2615f.webp": "e5ea6afb93e790c7eae8ff228c0cee83e34f2bfc43c2b0fe5ee34dfdbec2615f",
+          "2026_E1_FLAGS_45fccb65d5d89fb5df104cebedff6e1edbd1680c42d6ccf0ad0a5fc47c774d8b.webp": "45fccb65d5d89fb5df104cebedff6e1edbd1680c42d6ccf0ad0a5fc47c774d8b",
+          "telemetry_2026_E1_ec603bbb19e35f1d7e7b6b6f96ab4f3604079f3f0475f2d1b18f90e644dfe914.bin.gz": "ec603bbb19e35f1d7e7b6b6f96ab4f3604079f3f0475f2d1b18f90e644dfe914"
+        },
+        "science_planes": {
+          "2026_E1:D1": {
+            "finite_measurement_pixels": 2841,
+            "flags_sha256": "42d83b644a58c6cf451031532f284bf84adc3b5f1f5844507af9c56acf8442e5",
+            "measurement_sha256": "277a0e7524c1f9e134eba218185aba47c134913091223422bff83b94357722e4",
+            "normalized_display_sha256": "7b05a144456a1ff7f96be6c95c2bcc1a5fcff70428cb32e7e59eb35a2a471b09",
+            "variance_sha256": "88936f3a6b526fb03a67772e2edce8c2ba661754805f8b29727dd9c32f70509d"
+          },
+          "2026_E1:D2": {
+            "finite_measurement_pixels": 2938,
+            "flags_sha256": "a4d50227e611e2ae244caecfbe21f11f375c29531703cfb11cbfd9b3cf9e5db6",
+            "measurement_sha256": "c468e004c253f4c62449a24d424b89e1dc0b4ce076f7cd90cb99568610e675cc",
+            "normalized_display_sha256": "956c4f576d7152316551ce2ab14839de4bacc8aea266418f8e1ad3dafae2ad08",
+            "variance_sha256": "b75ddfc2fd349b7beea16752c6b35039403952d4cb17e112d859f63f49674c46"
+          },
+          "2026_E1:D3": {
+            "finite_measurement_pixels": 3046,
+            "flags_sha256": "01c7e524b3561a4942e92a0d2951286c33c9195d4698e0db8a351256efc28a7c",
+            "measurement_sha256": "8af36b9b2fd9bbd9ff259b7bcd5c664c0eeccd7c6c342da27a64808655d0c248",
+            "normalized_display_sha256": "5fd0ae870dac17c2442b9b20df7cabdcf12f9d2c9082aa8f867d79f0da7987a5",
+            "variance_sha256": "640fc3aa91e63a991222f53c8fc84d17c77798302b76f4ba5779793e7778ec8a"
+          },
+          "2026_E1:D4": {
+            "finite_measurement_pixels": 2891,
+            "flags_sha256": "0121912ee606a6263404c6e7bd1c4127d707a20abc98aed4d392815644e5948a",
+            "measurement_sha256": "65872cb5de06ccc1770b0f46896e0367e23c0d6d0d74744df6b9d92d9520b082",
+            "normalized_display_sha256": "eb954291550f488c469127f8bd0c59e5585b0ce30ee940f8eb1d3247f9efc8aa",
+            "variance_sha256": "97bd943f251d65e2b375469e01cfb8ada8cb3621fa88b81a7051ddd23d4bf7d8"
+          },
+          "2026_E1:D5": {
+            "finite_measurement_pixels": 3186,
+            "flags_sha256": "b083ff32901374d06e137c8e8a87d1f6d8da6cc7418ee02f606fe65bb70d3491",
+            "measurement_sha256": "36c1ae0eef8a74a3e8d75203776c76add13c309fe5914d8e5412028acfa43013",
+            "normalized_display_sha256": "8c48f3c94c8b314fbfeac953af8fab73540ef03f191830c1cd7e2131c9060f68",
+            "variance_sha256": "2ea9a53677f72c44d6d74d03a798095573a9b4080ceddd88aedfa4bd4a48d73d"
+          },
+          "2026_E1:D6": {
+            "finite_measurement_pixels": 3026,
+            "flags_sha256": "d0d04a759ac38637389984f35858c804e9a200e8778ea7f8c73d3aeff20e5d7f",
+            "measurement_sha256": "ce14f6f10ac08dbce1ac87f6ec9c7661eb82c78c46eeaf6c92555cee8961ccb6",
+            "normalized_display_sha256": "c50f68afb4f28a939c5715f5469d70791875533eb2d6f4c2a6372f63c138ba5c",
+            "variance_sha256": "8eefdac423cc776d3d04b7f70f8666c0c30e2714e317f82a55919eab4032fee5"
+          }
+        },
+        "selection_replay": "pinned_selected_inputs; dense_gate_rechecked; archive_discovery_not_requeried",
+        "validation": "numerical_replay_only_not_independent_scientific_acceptance"
+      }
+    }
+  ],
+  "limitations": [
+    "No observation URL, expected hash, input bytes, source, or environment pin was changed to obtain a pass.",
+    "Archive public reacquisition is incomplete; successful bounded examples do not guarantee upstream availability.",
+    "Replay verifies repeated arithmetic and encoded assets, not calibrated flux, isolation, temporal comparability, or astrophysical variability.",
+    "Image replay emitted Astropy SIP/CTYPE informational diagnostics; full stdout is retained and no warning-based validation claim is made.",
+    "This new source bundle is separate from earlier API 1.4 replay evidence."
+  ],
+  "null_bundle": {
+    "bundle_manifest_sha256": "35a39e5bcbbcb21d5f841dc47c065c2c95c4c593443aed120e4d734f2577f3aa",
+    "verified_files": 68,
+    "payload_bytes": 76983263,
+    "pinned_distributions_verified": 66,
+    "analysis_id": "sha256:0e8558538049aa3a1fe8478522e92db1b0e349827821362a2d8485268e4e5701",
+    "record": "records/0e8558538049aa3a1fe8478522e92db1b0e349827821362a2d8485268e4e5701.json",
+    "source_digest": "d070c73e2172adbf999010c9e12e39c029c288e1e1f8eb2d0a89ec0f31f2a182",
+    "inputs": 18
+  },
+  "publication_bundle": {
+    "bundle_manifest_sha256": "77f2e4a4bc4d0c296bada15d3e6e4c5fc0b3a982474008f22c9261a51bfe9e9c",
+    "verified_files": 102,
+    "payload_bytes": 208322026,
+    "pinned_distributions_verified": 66,
+    "analysis_id": "sha256:be1aec7271e5730165ba8be854b97174b68938895597257b6a3869d3e6072e3e",
+    "record": "records/be1aec7271e5730165ba8be854b97174b68938895597257b6a3869d3e6072e3e.json",
+    "source_digest": "16113fcdab8afb50c915a10828d8bdd19f33d0d6ec6db81339f7ded9eb40aa9a",
+    "inputs": 52
+  },
+  "publication_browser": {
+    "checked_at": "2026-11-14T21:43:01.507Z",
+    "browser": "installed Chrome",
+    "base": "http://127.0.0.1:8015",
+    "analysis_id": "sha256:be1aec7271e5730165ba8be854b97174b68938895597257b6a3869d3e6072e3e",
+    "scope": "Actual published content-addressed URLs only; no new sky/discovery query, no response interception",
+    "assets": [
+      {
+        "url": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_ALL_6e08472db6edbf5b05df2b52b73fb80ed7d39514fc3317b2ffe05bf1198179c1.webp",
+        "status": 200,
+        "size_bytes": 2670,
+        "sha256": "6e08472db6edbf5b05df2b52b73fb80ed7d39514fc3317b2ffe05bf1198179c1",
+        "filename_hash_matches": true,
+        "cache_control": "no-store"
+      },
+      {
+        "url": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_B56_6c9c9f4e8e953348d9152bd75af982658512079480e691c3d8626fb65382c3e2.webp",
+        "status": 200,
+        "size_bytes": 2816,
+        "sha256": "6c9c9f4e8e953348d9152bd75af982658512079480e691c3d8626fb65382c3e2",
+        "filename_hash_matches": true,
+        "cache_control": "no-store"
+      },
+      {
+        "url": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D1_20f0b55b476127d9339a96d78bce2f9178ca9a04f196201f66aaad2c3bbe9d34.webp",
+        "status": 200,
+        "size_bytes": 2648,
+        "sha256": "20f0b55b476127d9339a96d78bce2f9178ca9a04f196201f66aaad2c3bbe9d34",
+        "filename_hash_matches": true,
+        "cache_control": "no-store"
+      },
+      {
+        "url": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D2_1660d3827cc384114d10f559e1c2e758a283183cd639ea32a55ae1eae93a1e13.webp",
+        "status": 200,
+        "size_bytes": 2768,
+        "sha256": "1660d3827cc384114d10f559e1c2e758a283183cd639ea32a55ae1eae93a1e13",
+        "filename_hash_matches": true,
+        "cache_control": "no-store"
+      },
+      {
+        "url": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D3_3f07b706b00edc98d6b79505d62950c8c5e24b08b173381355c8dcc3ee00d705.webp",
+        "status": 200,
+        "size_bytes": 2856,
+        "sha256": "3f07b706b00edc98d6b79505d62950c8c5e24b08b173381355c8dcc3ee00d705",
+        "filename_hash_matches": true,
+        "cache_control": "no-store"
+      },
+      {
+        "url": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D4_4a653940a17807944eb3b5716b66e9612a4f8337796b12968db8a212e7d3ecfa.webp",
+        "status": 200,
+        "size_bytes": 2596,
+        "sha256": "4a653940a17807944eb3b5716b66e9612a4f8337796b12968db8a212e7d3ecfa",
+        "filename_hash_matches": true,
+        "cache_control": "no-store"
+      },
+      {
+        "url": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D5_0ada89a7272c5e91c835cb264cb590cefd6e46d7b2f5ef1f815466ca43604bd1.webp",
+        "status": 200,
+        "size_bytes": 2960,
+        "sha256": "0ada89a7272c5e91c835cb264cb590cefd6e46d7b2f5ef1f815466ca43604bd1",
+        "filename_hash_matches": true,
+        "cache_control": "no-store"
+      },
+      {
+        "url": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D6_e5ea6afb93e790c7eae8ff228c0cee83e34f2bfc43c2b0fe5ee34dfdbec2615f.webp",
+        "status": 200,
+        "size_bytes": 2806,
+        "sha256": "e5ea6afb93e790c7eae8ff228c0cee83e34f2bfc43c2b0fe5ee34dfdbec2615f",
+        "filename_hash_matches": true,
+        "cache_control": "no-store"
+      },
+      {
+        "url": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_FLAGS_45fccb65d5d89fb5df104cebedff6e1edbd1680c42d6ccf0ad0a5fc47c774d8b.webp",
+        "status": 200,
+        "size_bytes": 336,
+        "sha256": "45fccb65d5d89fb5df104cebedff6e1edbd1680c42d6ccf0ad0a5fc47c774d8b",
+        "filename_hash_matches": true,
+        "cache_control": "no-store"
+      },
+      {
+        "url": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/telemetry_2026_E1_ec603bbb19e35f1d7e7b6b6f96ab4f3604079f3f0475f2d1b18f90e644dfe914.bin.gz",
+        "status": 200,
+        "size_bytes": 8486,
+        "sha256": "ec603bbb19e35f1d7e7b6b6f96ab4f3604079f3f0475f2d1b18f90e644dfe914",
+        "filename_hash_matches": true,
+        "cache_control": "no-store"
+      }
+    ],
+    "errors": [],
+    "rendered_image": {
+      "complete": true,
+      "width": 240,
+      "height": 240,
+      "src": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_ALL_6e08472db6edbf5b05df2b52b73fb80ed7d39514fc3317b2ffe05bf1198179c1.webp"
+    },
+    "analysis_url": "http://127.0.0.1:8015/api/v1/assets/live_0adc6c1e975f34dd/analysis_be1aec7271e5730165ba8be854b97174b68938895597257b6a3869d3e6072e3e.json"
+  }
+}

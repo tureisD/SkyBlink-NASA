@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // Shared guardrails for every agent in this project.
+  // Agent-specific edit allowlists live in .opencode/agents/*.md.
+  "permissions": [
+    { "action": "shell", "resource": "*", "effect": "allow" },
+    { "action": "shell", "resource": "*reset --hard*", "effect": "deny" },
+    { "action": "shell", "resource": "*clean -*", "effect": "deny" },
+    { "action": "shell", "resource": "*push --force*", "effect": "deny" },
+    { "action": "shell", "resource": "*push -f*", "effect": "deny" },
+    { "action": "shell", "resource": "*worktree remove*", "effect": "deny" },
+    { "action": "shell", "resource": "*branch -D*", "effect": "deny" },
+    { "action": "shell", "resource": "*rm -rf*", "effect": "deny" },
+    { "action": "shell", "resource": "*rm -r *", "effect": "deny" },
+    { "action": "shell", "resource": "*del /s*", "effect": "deny" },
+    { "action": "shell", "resource": "*shutdown*", "effect": "deny" },
+    { "action": "shell", "resource": "*reboot*", "effect": "deny" }
+  ]
+}

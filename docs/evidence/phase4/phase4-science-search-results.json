@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-11-14T20:09:02.216778+00:00",
+  "search_preregistration_sha256": "a4649d7a62da0f58d7f3e49068398a1704e37a5d961367b27efaa2483a0ce3dd",
+  "status": "insufficient",
+  "candidates": [
+    {
+      "target": "wise_0855",
+      "status": "not_selected",
+      "coarse_compatibility": false,
+      "center_wavelength_um": [
+        0.9926080065443095,
+        1.090830386191134
+      ],
+      "center_bandwidth_um": [
+        0.02634567164132851,
+        0.029394602308954083
+      ],
+      "reason": "Recorded pair fails wavelength screening; no control flux extracted"
+    },
+    {
+      "target": "r_draconis",
+      "status": "not_selected",
+      "coarse_compatibility": false,
+      "center_wavelength_um": [
+        0.9435964929865119,
+        1.0082259399412594
+      ],
+      "center_bandwidth_um": [
+        0.024135950199459386,
+        0.02700054555624343
+      ],
+      "reason": "Recorded pair fails wavelength screening; no control flux extracted"
+    },
+    {
+      "target": "barnards_star",
+      "status": "not_selected",
+      "coarse_compatibility": false,
+      "center_wavelength_um": [
+        0.7501431968467257,
+        0.7756085841171088
+      ],
+      "center_bandwidth_um": [
+        0.018068001621350503,
+        0.01931040539263949
+      ],
+      "reason": "Recorded pair fails wavelength screening; no control flux extracted"
+    },
+    {
+      "target": "rw_aurigae",
+      "status": "not_selected",
+      "coarse_compatibility": false,
+      "center_wavelength_um": [
+        1.068349639042768,
+        0.9817633492490543
+      ],
+      "center_bandwidth_um": [
+        0.02826419024743,
+        0.025708097797946316
+      ],
+      "reason": "Recorded pair fails wavelength screening; no control flux extracted"
+    }
+  ],
+  "reason": "No production adoption without passing independent control and calibration/astrometry gates"
+}

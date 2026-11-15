@@ -1,0 +1,94 @@
+{
+  "created_at": "2026-11-14T20:05:46.799885+00:00",
+  "preregistration_sha256": "75840b11617cea84a777aae74ff3506dbbf3591ca0e6f72c7a4a99b8e249a858",
+  "status": "insufficient",
+  "production_method_changed": false,
+  "golden_modified": false,
+  "controls": [],
+  "limitations": [
+    "Catalog screening does not certify infrared constancy or exclude unresolved/faint blends.",
+    "Disjoint sources share the earlier exposure pair; independent of prior control fluxes, not independent of detector systematics.",
+    "WCS-WAVE matching is approximate; D3 CWAVE/CBAND calibration still required."
+  ],
+  "catalogs": {
+    "gaia": {
+      "status": "downloaded",
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync",
+      "query": "SELECT TOP 20000 source_id,ra,dec,ref_epoch,pmra,pmdec,parallax,ruwe,phot_g_mean_mag,phot_variable_flag FROM gaiadr3.gaia_source WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',331.0962,-56.8005,0.18)) AND phot_g_mean_mag<=20 ORDER BY source_id",
+      "path": "backend/.cache/phase4/science/gaia.xml",
+      "sha256": "370d89e569f3313e6b3a49fe560621af5436ec57141b95d447b59a2522e02389",
+      "bytes": 52393,
+      "rows": 422,
+      "retrieved_at": "2026-11-14T20:03:53.317545+00:00"
+    },
+    "allwise": {
+      "status": "downloaded",
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+      "query": "SELECT TOP 20000 designation,ra,dec,w1mpro,w2mpro,w1snr,w2snr,ph_qual,cc_flags,var_flg,ext_flg FROM allwise_p3as_psd WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',331.0962,-56.8005,0.18)) ORDER BY designation",
+      "path": "backend/.cache/phase4/science/allwise.xml",
+      "sha256": "63745c82a04869d84863bf7a166faa778cb54c0cf3241db2bef49ddc15357ece",
+      "bytes": 766964,
+      "rows": 1413,
+      "retrieved_at": "2026-11-14T20:05:46.796894+00:00",
+      "prior_attempt": {
+        "status": "unavailable",
+        "url": "https://irsa.ipac.caltech.edu/TAP/sync",
+        "query": "SELECT TOP 20000 designation,ra,dec,w1mpro,w2mpro,w1snr,w2snr,ph_qual,cc_flags,var_flg,ext_flg FROM allwise_p3as_psd WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',331.0962,-56.8005,0.18)) ORDER BY designation",
+        "error": "The read operation timed out"
+      },
+      "actual_parameters": {
+        "catalog": "allwise_p3as_psd",
+        "spatial": "Cone",
+        "objstr": "331.0962 -56.8005",
+        "radius": "10.8",
+        "radunits": "arcmin",
+        "outfmt": "3",
+        "selcols": "designation,ra,dec,w1mpro,w2mpro,w1snr,w2snr,ph_qual,cc_flags,var_flg,ext_flg"
+      }
+    }
+  },
+  "input_headers": [
+    {
+      "DATE-OBS": "2025-04-29T01:33:19.819",
+      "MJD-AVG": 60794.065478909,
+      "TIMESYS": "UTC"
+    },
+    {
+      "DATE-OBS": "2025-05-01T13:55:43.194",
+      "MJD-AVG": 60796.581027231,
+      "TIMESYS": "UTC"
+    }
+  ],
+  "control_lock_sha256": "2d95821dedca25f99ba05dc83d2be9706291d61a8f6623273da5f51c2b3b3247",
+  "catalog_rejections": {
+    "gaia_quality": 321,
+    "outside_guarded_field": 58,
+    "allwise_neighbor": 12,
+    "gaia_neighbor": 21,
+    "phase3_control": 10
+  },
+  "catalog_selected_count": 0,
+  "gaia_neighbors_without_proper_motion": 0,
+  "wcs_wave_dense_compatibility": {
+    "passed": true,
+    "pixels": 54756,
+    "calibration": "approximate WCS-WAVE; independent CWAVE pending"
+  },
+  "stability": {
+    "center": {
+      "status": "insufficient",
+      "controls": 0,
+      "z": []
+    },
+    "fractional": {
+      "status": "insufficient",
+      "controls": 0,
+      "z": []
+    }
+  },
+  "astrometry": {
+    "status": "not_established",
+    "reason": "D1 Phase3 validation cannot certify this D3 pair; independent D3 centroids required"
+  },
+  "reason": "No promotion: require sufficient independent controls, D3 external astrometry, calibrated wavelength matching and reviewed method adoption"
+}

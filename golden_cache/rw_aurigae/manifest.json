@@ -1,0 +1,2460 @@
+{
+  "golden_cache_version": 2,
+  "target_id": "rw_aurigae",
+  "target_name": "RW Aurigae",
+  "generated_at": "2026-11-13T19:51:05Z",
+  "generated_by": "scripts/build_golden_cache.py",
+  "target": {
+    "id": "rw_aurigae",
+    "name": "RW Aurigae",
+    "category": "Classical T Tauri Binary (~156 pc)",
+    "ra_ref": 76.95607,
+    "dec_ref": 30.40133,
+    "ref_epoch": "J2000",
+    "ra_epoch2025": 76.9561,
+    "dec_epoch2025": 30.4011,
+    "pm_ra_mas_yr": 2.6,
+    "pm_dec_mas_yr": -27.4,
+    "recommended_bands": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "story_headline": "A Young Disk That Dims and Recovers",
+    "story_body": "RW Aurigae is a classical T Tauri binary whose inner disk can occult the star. Its near-infrared brightness and spectral shape change between epochs because of variable dust extinction and disk structure."
+  },
+  "query": {
+    "ra": 76.9561,
+    "dec": 30.4011,
+    "cutout_size_deg": 0.2
+  },
+  "available_epoch_ids": [
+    "2025_E1",
+    "2025_E2",
+    "2026_E1"
+  ],
+  "epochs": [
+    {
+      "epoch_id": "2025_E1",
+      "label": "Survey Epoch 1 (May–Oct 2025)",
+      "collection": "spherex_dr1",
+      "release": "DR1",
+      "mjd_mean": 60928.29610782353,
+      "date_iso": "2025-09-10",
+      "frames": {
+        "1": "2025_E1_D1.webp",
+        "2": "2025_E1_D2.webp",
+        "3": "2025_E1_D3.webp",
+        "4": "2025_E1_D4.webp",
+        "5": "2025_E1_D5.webp",
+        "6": "2025_E1_D6.webp",
+        "all": "2025_E1_ALL.webp",
+        "thermal": "2025_E1_B56.webp",
+        "flag_overlay": "2025_E1_FLAGS.webp"
+      },
+      "bands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_bands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thermal_bands": [
+        5,
+        6
+      ],
+      "halo_display_mode": false,
+      "flag_summary": {
+        "status": "ALERT",
+        "source_bit_set": true,
+        "artifact_pixel_fraction": 0.06647724127751435,
+        "active_warning_flags": [
+          "HALO",
+          "OVERFLOW",
+          "TRANSIENT"
+        ],
+        "human_explanation": "Multiple bands. Warning flags in the 12.3″ target aperture: OVERFLOW, TRANSIENT. Bit 21 (SOURCE) confirms a cataloged object. Artifact pixels cover 6.6% of the finite frame. Alert-level warning flags are present; inspect the flag data. HALO display-only mode is active: HALO pixels are visible in the displayed frames and flag overlay, but remain hard-bad for photometry and is_flagged_bad."
+      },
+      "telemetry": {
+        "url": "/api/v1/assets/rw_aurigae/telemetry_2025_E1.bin.gz",
+        "format": "float16_uint32_le_gzip",
+        "width": 240,
+        "height": 240,
+        "byte_size": 109001,
+        "flux_band": "all"
+      },
+      "lvf_geometry": [
+        {
+          "detector": 1,
+          "pa_deg": 168.70107222623915,
+          "grad_um_per_arcsec": 3.255307127228103e-05
+        },
+        {
+          "detector": 2,
+          "pa_deg": 180.69615612576996,
+          "grad_um_per_arcsec": 4.5701745348555955e-05
+        },
+        {
+          "detector": 3,
+          "pa_deg": 179.3773903302129,
+          "grad_um_per_arcsec": 7.166841051897793e-05
+        },
+        {
+          "detector": 4,
+          "pa_deg": 168.6088498238228,
+          "grad_um_per_arcsec": 0.00011808546345032788
+        },
+        {
+          "detector": 5,
+          "pa_deg": 180.70947915199037,
+          "grad_um_per_arcsec": 5.016366057112296e-05
+        },
+        {
+          "detector": 6,
+          "pa_deg": 179.20935214293584,
+          "grad_um_per_arcsec": 5.009662947577984e-05
+        }
+      ],
+      "band_stats": {
+        "1": {
+          "band": 1,
+          "wavelength_um": 0.9640902484552575,
+          "bandwidth_um": 0.024943707691412326,
+          "native_pixel_scale_arcsec": 6.152479445774323,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 60921.071184500004,
+          "p5_mjy_sr": -0.07990541896633802,
+          "p50_mjy_sr": 0.07158347058664566,
+          "p99_5_mjy_sr": 6.009364555701273,
+          "min_mjy_sr": -0.45445560669064733,
+          "max_mjy_sr": 87.07847211977662,
+          "finite_pixels": 54199,
+          "coverage_fraction": 0.9409548611111112,
+          "artifact_pixel_count": 3603,
+          "artifact_pixel_fraction": 0.06647724127751435,
+          "source_pixel_count": 46470,
+          "source_pixel_fraction": 0.8573958929131534,
+          "hard_bad_pixel_count": 437,
+          "hard_bad_fraction": 0.008062879388918615,
+          "halo_pixel_count": 809,
+          "halo_fraction": 0.02017959590920429,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 37,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2025W36_1A/l2b-v27-2026-232/1/level2_2025W36_1A_0095_1D1_spx_l2b-v27-2026-232.fits",
+            "ibe/data/spherex/dr1/level2/2025W36_1A/l2b-v27-2026-232/1/level2_2025W36_1A_0606_1D1_spx_l2b-v27-2026-232.fits",
+            "ibe/data/spherex/dr1/level2/2025W36_1A/l2b-v27-2026-232/1/level2_2025W36_1A_0677_2D1_spx_l2b-v27-2026-232.fits"
+          ],
+          "normalization": {
+            "scale": 1.0,
+            "raw_scale": 1.0,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 40591,
+            "n_fallback": 47240,
+            "p_static": 5.321267412502155,
+            "p_fallback": 4.5102508258678125
+          }
+        },
+        "2": {
+          "band": 2,
+          "wavelength_um": 1.3618518151302652,
+          "bandwidth_um": 0.033073656175579745,
+          "native_pixel_scale_arcsec": 6.139998490450304,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 60927.63556566668,
+          "p5_mjy_sr": -0.011219087179333627,
+          "p50_mjy_sr": 0.025013154722343806,
+          "p99_5_mjy_sr": 6.52848107940498,
+          "min_mjy_sr": -0.08493536249229579,
+          "max_mjy_sr": 128.27441935033835,
+          "finite_pixels": 53917,
+          "coverage_fraction": 0.9360590277777778,
+          "artifact_pixel_count": 1967,
+          "artifact_pixel_fraction": 0.03648200011128216,
+          "source_pixel_count": 49849,
+          "source_pixel_fraction": 0.9245506982955283,
+          "hard_bad_pixel_count": 310,
+          "hard_bad_fraction": 0.005749578055158855,
+          "halo_pixel_count": 401,
+          "halo_fraction": 0.009897568801678391,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 36,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2025W37_1A/l2b-v27-2026-235/2/level2_2025W37_1A_0068_1D2_spx_l2b-v27-2026-235.fits",
+            "ibe/data/spherex/dr1/level2/2025W37_1A/l2b-v27-2026-235/2/level2_2025W37_1A_0366_2D2_spx_l2b-v27-2026-235.fits",
+            "ibe/data/spherex/dr1/level2/2025W37_1A/l2b-v27-2026-235/2/level2_2025W37_1A_0553_1D2_spx_l2b-v27-2026-235.fits"
+          ],
+          "normalization": {
+            "scale": 1.0,
+            "raw_scale": 1.0,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 46180,
+            "n_fallback": 49532,
+            "p_static": 5.684580960129078,
+            "p_fallback": 5.379690347478769
+          }
+        },
+        "3": {
+          "band": 3,
+          "wavelength_um": 2.228918040987177,
+          "bandwidth_um": 0.05558396717315076,
+          "native_pixel_scale_arcsec": 6.152851367061214,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 60934.702274166666,
+          "p5_mjy_sr": -0.008783850064378566,
+          "p50_mjy_sr": 0.020534600478824758,
+          "p99_5_mjy_sr": 5.002157104803446,
+          "min_mjy_sr": -0.03752915297952286,
+          "max_mjy_sr": 126.49835482262293,
+          "finite_pixels": 54020,
+          "coverage_fraction": 0.9378472222222223,
+          "artifact_pixel_count": 2752,
+          "artifact_pixel_fraction": 0.05094409477971122,
+          "source_pixel_count": 49345,
+          "source_pixel_fraction": 0.9134579785264717,
+          "hard_bad_pixel_count": 541,
+          "hard_bad_fraction": 0.010014809329877822,
+          "halo_pixel_count": 757,
+          "halo_fraction": 0.01887309897781102,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 38,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2025W37_2A/l2b-v27-2026-236/3/level2_2025W37_2A_0051_1D3_spx_l2b-v27-2026-236.fits",
+            "ibe/data/spherex/dr1/level2/2025W38_1A/l2b-v27-2026-237/3/level2_2025W38_1A_0738_2D3_spx_l2b-v27-2026-237.fits",
+            "ibe/data/spherex/dr1/level2/2025W38_2C/l2b-v27-2026-237/3/level2_2025W38_2C_0342_2D3_spx_l2b-v27-2026-237.fits"
+          ],
+          "normalization": {
+            "scale": 1.0,
+            "raw_scale": 1.0,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 44195,
+            "n_fallback": 47892,
+            "p_static": 4.637839149155762,
+            "p_fallback": 4.328481090338103
+          }
+        },
+        "4": {
+          "band": 4,
+          "wavelength_um": 3.0486899915996384,
+          "bandwidth_um": 0.08822694552832444,
+          "native_pixel_scale_arcsec": 6.160411028784367,
+          "requested_visits": 3,
+          "used_visits": 2,
+          "mjd_mean": 60921.89662025,
+          "p5_mjy_sr": -0.018258800330494807,
+          "p50_mjy_sr": 0.017917548202785523,
+          "p99_5_mjy_sr": 3.498154082420602,
+          "min_mjy_sr": -4.898408604616174,
+          "max_mjy_sr": 70.98878227030674,
+          "finite_pixels": 53951,
+          "coverage_fraction": 0.9366493055555556,
+          "artifact_pixel_count": 1059,
+          "artifact_pixel_fraction": 0.01962892254082408,
+          "source_pixel_count": 49898,
+          "source_pixel_fraction": 0.9248762766213786,
+          "hard_bad_pixel_count": 383,
+          "hard_bad_fraction": 0.007099034308909936,
+          "halo_pixel_count": 302,
+          "halo_fraction": 0.011225931157534756,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 28,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2025W36_1A/l2b-v27-2026-232/4/level2_2025W36_1A_0606_1D4_spx_l2b-v27-2026-232.fits",
+            "ibe/data/spherex/dr1/level2/2025W36_1A/l2b-v27-2026-232/4/level2_2025W36_1A_0677_2D4_spx_l2b-v27-2026-232.fits"
+          ],
+          "normalization": {
+            "scale": 1.0,
+            "raw_scale": 1.0,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 47274,
+            "n_fallback": 50885,
+            "p_static": 3.5584449637206044,
+            "p_fallback": 3.299560498562363
+          }
+        },
+        "5": {
+          "band": 5,
+          "wavelength_um": 4.128896535776362,
+          "bandwidth_um": 0.036633635640628846,
+          "native_pixel_scale_arcsec": 6.1472576727979265,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 60927.63556566668,
+          "p5_mjy_sr": -0.01992891576855868,
+          "p50_mjy_sr": 0.014764889841114057,
+          "p99_5_mjy_sr": 4.066576744998888,
+          "min_mjy_sr": -0.17338775667648257,
+          "max_mjy_sr": 182.7579987005392,
+          "finite_pixels": 54166,
+          "coverage_fraction": 0.9403819444444445,
+          "artifact_pixel_count": 1630,
+          "artifact_pixel_fraction": 0.030092678063730015,
+          "source_pixel_count": 46794,
+          "source_pixel_fraction": 0.8638998633829339,
+          "hard_bad_pixel_count": 501,
+          "hard_bad_fraction": 0.009249344607318244,
+          "halo_pixel_count": 556,
+          "halo_fraction": 0.013777039918725377,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 37,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2025W37_1A/l2b-v27-2026-235/5/level2_2025W37_1A_0068_1D5_spx_l2b-v27-2026-235.fits",
+            "ibe/data/spherex/dr1/level2/2025W37_1A/l2b-v27-2026-235/5/level2_2025W37_1A_0366_2D5_spx_l2b-v27-2026-235.fits",
+            "ibe/data/spherex/dr1/level2/2025W37_1A/l2b-v27-2026-235/5/level2_2025W37_1A_0553_1D5_spx_l2b-v27-2026-235.fits"
+          ],
+          "normalization": {
+            "scale": 1.0,
+            "raw_scale": 1.0,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 43053,
+            "n_fallback": 49637,
+            "p_static": 3.753392540251095,
+            "p_fallback": 2.9881557570074895
+          }
+        },
+        "6": {
+          "band": 6,
+          "wavelength_um": 4.873791071126407,
+          "bandwidth_um": 0.036716353291901475,
+          "native_pixel_scale_arcsec": 6.18617471789599,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 60934.702274166666,
+          "p5_mjy_sr": -0.03785061997758113,
+          "p50_mjy_sr": 0.01817906615201491,
+          "p99_5_mjy_sr": 2.3125419392439324,
+          "min_mjy_sr": -0.2982103455057897,
+          "max_mjy_sr": 829.3362650920328,
+          "finite_pixels": 53975,
+          "coverage_fraction": 0.9370659722222222,
+          "artifact_pixel_count": 2780,
+          "artifact_pixel_fraction": 0.051505326540064844,
+          "source_pixel_count": 41418,
+          "source_pixel_fraction": 0.7673552570634553,
+          "hard_bad_pixel_count": 824,
+          "hard_bad_fraction": 0.015266327003242241,
+          "halo_pixel_count": 1002,
+          "halo_fraction": 0.025442449787979587,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 38,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2025W37_2A/l2b-v27-2026-236/6/level2_2025W37_2A_0051_1D6_spx_l2b-v27-2026-236.fits",
+            "ibe/data/spherex/dr1/level2/2025W38_1A/l2b-v27-2026-237/6/level2_2025W38_1A_0738_2D6_spx_l2b-v27-2026-237.fits",
+            "ibe/data/spherex/dr1/level2/2025W38_2C/l2b-v27-2026-237/6/level2_2025W38_2C_0342_2D6_spx_l2b-v27-2026-237.fits"
+          ],
+          "normalization": {
+            "scale": 1.0,
+            "raw_scale": 1.0,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 36450,
+            "n_fallback": 47307,
+            "p_static": 1.5017746792569906,
+            "p_fallback": 1.246600738214224
+          }
+        }
+      },
+      "display_limits": {
+        "1": [
+          -0.13287270827733397,
+          0.7607207368261348
+        ],
+        "2": [
+          -0.044469782927230236,
+          0.352389258669578
+        ],
+        "3": [
+          -0.03254806896645203,
+          0.2791161768323544
+        ],
+        "4": [
+          -0.040813586211035875,
+          0.25247698200880925
+        ],
+        "5": [
+          -0.04053951310589644,
+          0.21324812267680376
+        ],
+        "6": [
+          -0.09697264830103418,
+          0.2708282931518747
+        ]
+      }
+    },
+    {
+      "epoch_id": "2025_E2",
+      "label": "Survey Epoch 2 (Nov 2025–Apr 2026)",
+      "collection": "spherex_dr1",
+      "release": "DR1",
+      "mjd_mean": 61102.95329472222,
+      "date_iso": "2026-03-03",
+      "frames": {
+        "1": "2025_E2_D1.webp",
+        "2": "2025_E2_D2.webp",
+        "3": "2025_E2_D3.webp",
+        "4": "2025_E2_D4.webp",
+        "5": "2025_E2_D5.webp",
+        "6": "2025_E2_D6.webp",
+        "all": "2025_E2_ALL.webp",
+        "thermal": "2025_E2_B56.webp",
+        "flag_overlay": "2025_E2_FLAGS.webp"
+      },
+      "bands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_bands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thermal_bands": [
+        5,
+        6
+      ],
+      "halo_display_mode": false,
+      "flag_summary": {
+        "status": "ALERT",
+        "source_bit_set": true,
+        "artifact_pixel_fraction": 0.04883864860929081,
+        "active_warning_flags": [
+          "HALO",
+          "OVERFLOW",
+          "TRANSIENT"
+        ],
+        "human_explanation": "Multiple bands. Warning flags in the 12.3″ target aperture: OVERFLOW, TRANSIENT. Bit 21 (SOURCE) confirms a cataloged object. Artifact pixels cover 4.9% of the finite frame. Alert-level warning flags are present; inspect the flag data. HALO display-only mode is active: HALO pixels are visible in the displayed frames and flag overlay, but remain hard-bad for photometry and is_flagged_bad."
+      },
+      "telemetry": {
+        "url": "/api/v1/assets/rw_aurigae/telemetry_2025_E2.bin.gz",
+        "format": "float16_uint32_le_gzip",
+        "width": 240,
+        "height": 240,
+        "byte_size": 111918,
+        "flux_band": "all"
+      },
+      "lvf_geometry": [
+        {
+          "detector": 1,
+          "pa_deg": 350.3736029901938,
+          "grad_um_per_arcsec": 2.6794451638151246e-05
+        },
+        {
+          "detector": 2,
+          "pa_deg": 350.2281350980321,
+          "grad_um_per_arcsec": 4.5769812856918983e-05
+        },
+        {
+          "detector": 3,
+          "pa_deg": 4.908583487613703,
+          "grad_um_per_arcsec": 5.989577304541882e-05
+        },
+        {
+          "detector": 4,
+          "pa_deg": 350.09619492400657,
+          "grad_um_per_arcsec": 9.78192942113389e-05
+        },
+        {
+          "detector": 5,
+          "pa_deg": 350.3016630794668,
+          "grad_um_per_arcsec": 5.0350279596327845e-05
+        },
+        {
+          "detector": 6,
+          "pa_deg": 4.714609567498744,
+          "grad_um_per_arcsec": 4.753281482660027e-05
+        }
+      ],
+      "band_stats": {
+        "1": {
+          "band": 1,
+          "wavelength_um": 0.8228018227373098,
+          "bandwidth_um": 0.020062284304733346,
+          "native_pixel_scale_arcsec": 6.151327288338887,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61107.336929000005,
+          "p5_mjy_sr": -0.012772836530896017,
+          "p50_mjy_sr": 0.01627245528905752,
+          "p99_5_mjy_sr": 5.337266286626616,
+          "min_mjy_sr": -0.09471796427112679,
+          "max_mjy_sr": 63.61186333938147,
+          "finite_pixels": 53857,
+          "coverage_fraction": 0.9350173611111111,
+          "artifact_pixel_count": 2368,
+          "artifact_pixel_fraction": 0.04396828638802756,
+          "source_pixel_count": 46152,
+          "source_pixel_fraction": 0.8569359600423343,
+          "hard_bad_pixel_count": 410,
+          "hard_bad_fraction": 0.007612752288467609,
+          "halo_pixel_count": 595,
+          "halo_fraction": 0.014758774649634132,
+          "halo_aperture_pixel_count": 1,
+          "halo_aperture_fraction": 0.024390243902439025,
+          "aperture_pixel_count": 41,
+          "aperture_warning_flags": [
+            "OVERFLOW"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2026W10_1A/l2b-v27-2026-229/1/level2_2026W10_1A_0445_1D1_spx_l2b-v27-2026-229.fits",
+            "ibe/data/spherex/dr1/level2/2026W10_2B/l2b-v27-2026-231/1/level2_2026W10_2B_0591_4D1_spx_l2b-v27-2026-231.fits",
+            "ibe/data/spherex/dr1/level2/2026W11_1A/l2b-v27-2026-232/1/level2_2026W11_1A_0645_1D1_spx_l2b-v27-2026-232.fits"
+          ],
+          "normalization": {
+            "scale": 0.9545068975116839,
+            "raw_scale": 0.9545068975116839,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 41625,
+            "n_fallback": 48441,
+            "p_static": 5.574886285656221,
+            "p_fallback": 4.459498638135244
+          }
+        },
+        "2": {
+          "band": 2,
+          "wavelength_um": 1.3663189403816574,
+          "bandwidth_um": 0.03310737630700857,
+          "native_pixel_scale_arcsec": 6.138831595225748,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61104.212586,
+          "p5_mjy_sr": -0.01106835837726765,
+          "p50_mjy_sr": 0.025713506093012026,
+          "p99_5_mjy_sr": 6.888059250221716,
+          "min_mjy_sr": -0.049607110568452226,
+          "max_mjy_sr": 102.55983524964108,
+          "finite_pixels": 53938,
+          "coverage_fraction": 0.9364236111111112,
+          "artifact_pixel_count": 1336,
+          "artifact_pixel_fraction": 0.024769179428232414,
+          "source_pixel_count": 50087,
+          "source_pixel_fraction": 0.9286032110942193,
+          "hard_bad_pixel_count": 366,
+          "hard_bad_fraction": 0.006785568615818162,
+          "halo_pixel_count": 306,
+          "halo_fraction": 0.007537131456439814,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 38,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2026W09_2A/l2b-v27-2026-229/2/level2_2026W09_2A_0503_1D2_spx_l2b-v27-2026-229.fits",
+            "ibe/data/spherex/dr1/level2/2026W10_1A/l2b-v27-2026-229/2/level2_2026W10_1A_0602_2D2_spx_l2b-v27-2026-229.fits",
+            "ibe/data/spherex/dr1/level2/2026W11_1A/l2b-v27-2026-232/2/level2_2026W11_1A_0042_1D2_spx_l2b-v27-2026-232.fits"
+          ],
+          "normalization": {
+            "scale": 1.0548490932980972,
+            "raw_scale": 1.0548490932980972,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 47138,
+            "n_fallback": 50363,
+            "p_static": 5.388999238133328,
+            "p_fallback": 5.136893188210251
+          }
+        },
+        "3": {
+          "band": 3,
+          "wavelength_um": 1.8455046238857749,
+          "bandwidth_um": 0.04479456357907946,
+          "native_pixel_scale_arcsec": 6.152573715262229,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61097.31036916667,
+          "p5_mjy_sr": -0.009547065509802312,
+          "p50_mjy_sr": 0.024886869185873867,
+          "p99_5_mjy_sr": 7.1447798033357754,
+          "min_mjy_sr": -0.058017571311860326,
+          "max_mjy_sr": 199.65466418118945,
+          "finite_pixels": 54936,
+          "coverage_fraction": 0.95375,
+          "artifact_pixel_count": 2683,
+          "artifact_pixel_fraction": 0.04883864860929081,
+          "source_pixel_count": 50236,
+          "source_pixel_fraction": 0.9144459006844328,
+          "hard_bad_pixel_count": 583,
+          "hard_bad_fraction": 0.010612348915101209,
+          "halo_pixel_count": 400,
+          "halo_fraction": 0.009886063122513037,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 40,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2026W08_2A/l2b-v27-2026-227/3/level2_2026W08_2A_0233_1D3_spx_l2b-v27-2026-227.fits",
+            "ibe/data/spherex/dr1/level2/2026W09_2A/l2b-v27-2026-229/3/level2_2026W09_2A_0224_3D3_spx_l2b-v27-2026-229.fits",
+            "ibe/data/spherex/dr1/level2/2026W10_1A/l2b-v27-2026-229/3/level2_2026W10_1A_0120_1D3_spx_l2b-v27-2026-229.fits"
+          ],
+          "normalization": {
+            "scale": 0.8593828008315662,
+            "raw_scale": 0.8593828008315662,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 45850,
+            "n_fallback": 49737,
+            "p_static": 5.396709294935902,
+            "p_fallback": 5.053844765401747
+          }
+        },
+        "4": {
+          "band": 4,
+          "wavelength_um": 2.707798709962925,
+          "bandwidth_um": 0.07684635978750332,
+          "native_pixel_scale_arcsec": 6.157432138721127,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61107.336929000005,
+          "p5_mjy_sr": -0.00833408022755248,
+          "p50_mjy_sr": 0.01814256128072709,
+          "p99_5_mjy_sr": 4.1715417698771695,
+          "min_mjy_sr": -0.1145497950334293,
+          "max_mjy_sr": 95.30872746921446,
+          "finite_pixels": 53955,
+          "coverage_fraction": 0.93671875,
+          "artifact_pixel_count": 2390,
+          "artifact_pixel_fraction": 0.044296172736539706,
+          "source_pixel_count": 50732,
+          "source_pixel_fraction": 0.9402650356778797,
+          "hard_bad_pixel_count": 1150,
+          "hard_bad_fraction": 0.021314058011305717,
+          "halo_pixel_count": 371,
+          "halo_fraction": 0.009207554662100116,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 37,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2026W10_1A/l2b-v27-2026-229/4/level2_2026W10_1A_0445_1D4_spx_l2b-v27-2026-229.fits",
+            "ibe/data/spherex/dr1/level2/2026W10_2B/l2b-v27-2026-231/4/level2_2026W10_2B_0591_4D4_spx_l2b-v27-2026-231.fits",
+            "ibe/data/spherex/dr1/level2/2026W11_1A/l2b-v27-2026-232/4/level2_2026W11_1A_0645_1D4_spx_l2b-v27-2026-232.fits"
+          ],
+          "normalization": {
+            "scale": 0.8144147548092323,
+            "raw_scale": 0.8144147548092323,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 46275,
+            "n_fallback": 48931,
+            "p_static": 4.36932771994551,
+            "p_fallback": 3.962851975685436
+          }
+        },
+        "5": {
+          "band": 5,
+          "wavelength_um": 4.1302658761983615,
+          "bandwidth_um": 0.0370079828026085,
+          "native_pixel_scale_arcsec": 6.143938941966083,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61104.212586,
+          "p5_mjy_sr": -0.020838220089957716,
+          "p50_mjy_sr": 0.014431343927753726,
+          "p99_5_mjy_sr": 4.752559666012835,
+          "min_mjy_sr": -0.3448173048157177,
+          "max_mjy_sr": 627.9733549249279,
+          "finite_pixels": 54209,
+          "coverage_fraction": 0.9411284722222222,
+          "artifact_pixel_count": 2050,
+          "artifact_pixel_fraction": 0.03781659871976978,
+          "source_pixel_count": 46940,
+          "source_pixel_fraction": 0.8659078750760943,
+          "hard_bad_pixel_count": 798,
+          "hard_bad_fraction": 0.014720802818720138,
+          "halo_pixel_count": 778,
+          "halo_fraction": 0.01941117764471058,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 38,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2026W09_2A/l2b-v27-2026-229/5/level2_2026W09_2A_0503_1D5_spx_l2b-v27-2026-229.fits",
+            "ibe/data/spherex/dr1/level2/2026W10_1A/l2b-v27-2026-229/5/level2_2026W10_1A_0602_2D5_spx_l2b-v27-2026-229.fits",
+            "ibe/data/spherex/dr1/level2/2026W11_1A/l2b-v27-2026-232/5/level2_2026W11_1A_0042_1D5_spx_l2b-v27-2026-232.fits"
+          ],
+          "normalization": {
+            "scale": 1.0722251698076763,
+            "raw_scale": 1.0722251698076763,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 42310,
+            "n_fallback": 48670,
+            "p_static": 3.500563730400337,
+            "p_fallback": 2.877655057418291
+          }
+        },
+        "6": {
+          "band": 6,
+          "wavelength_um": 4.589996483793534,
+          "bandwidth_um": 0.03617147120999296,
+          "native_pixel_scale_arcsec": 6.1574453318145475,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61097.31036916667,
+          "p5_mjy_sr": -0.031765299375364264,
+          "p50_mjy_sr": 0.014612230784457406,
+          "p99_5_mjy_sr": 4.283796579438401,
+          "min_mjy_sr": -0.8994801773600449,
+          "max_mjy_sr": 445.73086476195715,
+          "finite_pixels": 55242,
+          "coverage_fraction": 0.9590625,
+          "artifact_pixel_count": 2264,
+          "artifact_pixel_fraction": 0.0409833098005141,
+          "source_pixel_count": 42868,
+          "source_pixel_fraction": 0.7760037652510771,
+          "hard_bad_pixel_count": 844,
+          "hard_bad_fraction": 0.015278230331993773,
+          "halo_pixel_count": 548,
+          "halo_fraction": 0.01359835231643465,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 39,
+          "aperture_warning_flags": [
+            "OVERFLOW"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/dr1/level2/2026W08_2A/l2b-v27-2026-227/6/level2_2026W08_2A_0233_1D6_spx_l2b-v27-2026-227.fits",
+            "ibe/data/spherex/dr1/level2/2026W09_2A/l2b-v27-2026-229/6/level2_2026W09_2A_0224_3D6_spx_l2b-v27-2026-229.fits",
+            "ibe/data/spherex/dr1/level2/2026W10_1A/l2b-v27-2026-229/6/level2_2026W10_1A_0120_1D6_spx_l2b-v27-2026-229.fits"
+          ],
+          "normalization": {
+            "scale": 0.5,
+            "raw_scale": 0.4886732227489859,
+            "method": "static_source_p99_5",
+            "status": "clamped",
+            "reference_epoch": "2025_E1",
+            "n_static": 38993,
+            "n_fallback": 50037,
+            "p_static": 3.073167526571021,
+            "p_fallback": 2.2376753515521752
+          }
+        }
+      },
+      "display_limits": {
+        "1": [
+          -0.13287270827733397,
+          0.7607207368261348
+        ],
+        "2": [
+          -0.044469782927230236,
+          0.352389258669578
+        ],
+        "3": [
+          -0.03254806896645203,
+          0.2791161768323544
+        ],
+        "4": [
+          -0.040813586211035875,
+          0.25247698200880925
+        ],
+        "5": [
+          -0.04053951310589644,
+          0.21324812267680376
+        ],
+        "6": [
+          -0.09697264830103418,
+          0.2708282931518747
+        ]
+      }
+    },
+    {
+      "epoch_id": "2026_E1",
+      "label": "Survey Epoch 1 (May–Oct 2026)",
+      "collection": "spherex_qr3",
+      "release": "QR3",
+      "mjd_mean": 61294.58735894444,
+      "date_iso": "2026-09-11",
+      "frames": {
+        "1": "2026_E1_D1.webp",
+        "2": "2026_E1_D2.webp",
+        "3": "2026_E1_D3.webp",
+        "4": "2026_E1_D4.webp",
+        "5": "2026_E1_D5.webp",
+        "6": "2026_E1_D6.webp",
+        "all": "2026_E1_ALL.webp",
+        "thermal": "2026_E1_B56.webp",
+        "flag_overlay": "2026_E1_FLAGS.webp"
+      },
+      "bands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_bands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thermal_bands": [
+        5,
+        6
+      ],
+      "halo_display_mode": false,
+      "flag_summary": {
+        "status": "ALERT",
+        "source_bit_set": true,
+        "artifact_pixel_fraction": 0.07148389952417837,
+        "active_warning_flags": [
+          "HALO",
+          "OVERFLOW",
+          "PERSIST",
+          "TRANSIENT"
+        ],
+        "human_explanation": "Multiple bands. Warning flags in the 12.3″ target aperture: OVERFLOW, PERSIST, TRANSIENT. Bit 21 (SOURCE) confirms a cataloged object. Artifact pixels cover 7.1% of the finite frame. Alert-level warning flags are present; inspect the flag data. HALO display-only mode is active: HALO pixels are visible in the displayed frames and flag overlay, but remain hard-bad for photometry and is_flagged_bad."
+      },
+      "telemetry": {
+        "url": "/api/v1/assets/rw_aurigae/telemetry_2026_E1.bin.gz",
+        "format": "float16_uint32_le_gzip",
+        "width": 240,
+        "height": 240,
+        "byte_size": 111882,
+        "flux_band": "all"
+      },
+      "lvf_geometry": [
+        {
+          "detector": 1,
+          "pa_deg": 170.2142403474739,
+          "grad_um_per_arcsec": 3.08703224974957e-05
+        },
+        {
+          "detector": 2,
+          "pa_deg": 181.96135579394684,
+          "grad_um_per_arcsec": 4.587591959115584e-05
+        },
+        {
+          "detector": 3,
+          "pa_deg": 180.94531034492775,
+          "grad_um_per_arcsec": 7.3308201675972e-05
+        },
+        {
+          "detector": 4,
+          "pa_deg": 169.22629286001035,
+          "grad_um_per_arcsec": 0.00011645704049162255
+        },
+        {
+          "detector": 5,
+          "pa_deg": 181.94691098433202,
+          "grad_um_per_arcsec": 5.032920945624209e-05
+        },
+        {
+          "detector": 6,
+          "pa_deg": 181.02748353736047,
+          "grad_um_per_arcsec": 4.9776883728011104e-05
+        }
+      ],
+      "band_stats": {
+        "1": {
+          "band": 1,
+          "wavelength_um": 0.9151879876234753,
+          "bandwidth_um": 0.023387295185141144,
+          "native_pixel_scale_arcsec": 6.149631507358516,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61289.76054583333,
+          "p5_mjy_sr": -0.011843953672236271,
+          "p50_mjy_sr": 0.02038046535931105,
+          "p99_5_mjy_sr": 5.831597740324984,
+          "min_mjy_sr": -0.07316274583187497,
+          "max_mjy_sr": 80.86995934045554,
+          "finite_pixels": 54231,
+          "coverage_fraction": 0.9415104166666667,
+          "artifact_pixel_count": 3415,
+          "artifact_pixel_fraction": 0.06297136324242592,
+          "source_pixel_count": 46927,
+          "source_pixel_fraction": 0.8653168851763752,
+          "hard_bad_pixel_count": 508,
+          "hard_bad_fraction": 0.00936733602552046,
+          "halo_pixel_count": 962,
+          "halo_fraction": 0.024100007515594858,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 35,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/qr3/level2/2026W36_1A/l2b-v27-2026-252/1/level2_2026W36_1A_0476_1D1_spx_l2b-v27-2026-252.fits",
+            "ibe/data/spherex/qr3/level2/2026W37_1A/l2b-v27-2026-255/1/level2_2026W37_1A_0234_4D1_spx_l2b-v27-2026-255.fits",
+            "ibe/data/spherex/qr3/level2/2026W37_1A/l2b-v27-2026-255/1/level2_2026W37_1A_0524_1D1_spx_l2b-v27-2026-255.fits"
+          ],
+          "normalization": {
+            "scale": 0.8805124016403224,
+            "raw_scale": 0.8805124016403224,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 40847,
+            "n_fallback": 46950,
+            "p_static": 6.043375882712237,
+            "p_fallback": 5.0875945795228
+          }
+        },
+        "2": {
+          "band": 2,
+          "wavelength_um": 1.3816272709698916,
+          "bandwidth_um": 0.03368044510735619,
+          "native_pixel_scale_arcsec": 6.139400859027478,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61295.89330516666,
+          "p5_mjy_sr": -0.010675343152963424,
+          "p50_mjy_sr": 0.026847137980987267,
+          "p99_5_mjy_sr": 8.20385613390136,
+          "min_mjy_sr": -0.0436022773934253,
+          "max_mjy_sr": 214.46551282971424,
+          "finite_pixels": 54045,
+          "coverage_fraction": 0.93828125,
+          "artifact_pixel_count": 3053,
+          "artifact_pixel_fraction": 0.056489962068646496,
+          "source_pixel_count": 50271,
+          "source_pixel_fraction": 0.9301693033583125,
+          "hard_bad_pixel_count": 294,
+          "hard_bad_fraction": 0.005439911185123508,
+          "halo_pixel_count": 898,
+          "halo_fraction": 0.022426452225163578,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 35,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "PERSIST",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/qr3/level2/2026W37_1A/l2b-v27-2026-255/2/level2_2026W37_1A_0615_1D2_spx_l2b-v27-2026-255.fits",
+            "ibe/data/spherex/qr3/level2/2026W37_2A/l2b-v27-2026-259/2/level2_2026W37_2A_0516_4D2_spx_l2b-v27-2026-259.fits",
+            "ibe/data/spherex/qr3/level2/2026W38_1A/l2b-v27-2026-261/2/level2_2026W38_1A_0254_3D2_spx_l2b-v27-2026-261.fits"
+          ],
+          "normalization": {
+            "scale": 0.9604336979574936,
+            "raw_scale": 0.9604336979574936,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 44547,
+            "n_fallback": 47511,
+            "p_static": 5.918764587517278,
+            "p_fallback": 5.530128385804264
+          }
+        },
+        "3": {
+          "band": 3,
+          "wavelength_um": 2.241749609049206,
+          "bandwidth_um": 0.055841325589127466,
+          "native_pixel_scale_arcsec": 6.1532406842009095,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61298.10822583333,
+          "p5_mjy_sr": -0.008918162507021647,
+          "p50_mjy_sr": 0.02098102602166807,
+          "p99_5_mjy_sr": 5.72719999991064,
+          "min_mjy_sr": -0.04196700252373217,
+          "max_mjy_sr": 235.26890445712291,
+          "finite_pixels": 54222,
+          "coverage_fraction": 0.9413541666666667,
+          "artifact_pixel_count": 3876,
+          "artifact_pixel_fraction": 0.07148389952417837,
+          "source_pixel_count": 49641,
+          "source_pixel_fraction": 0.9155139980081886,
+          "hard_bad_pixel_count": 469,
+          "hard_bad_fraction": 0.008649625613219726,
+          "halo_pixel_count": 458,
+          "halo_fraction": 0.011325700437696283,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 37,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/qr3/level2/2026W37_2A/l2b-v27-2026-259/3/level2_2026W37_2A_0581_1D3_spx_l2b-v27-2026-259.fits",
+            "ibe/data/spherex/qr3/level2/2026W38_1A/l2b-v27-2026-261/3/level2_2026W38_1A_0213_1D3_spx_l2b-v27-2026-261.fits",
+            "ibe/data/spherex/qr3/level2/2026W38_1A/l2b-v27-2026-261/3/level2_2026W38_1A_0565_1D3_spx_l2b-v27-2026-261.fits"
+          ],
+          "normalization": {
+            "scale": 1.0144944224074248,
+            "raw_scale": 1.0144944224074248,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 44109,
+            "n_fallback": 47826,
+            "p_static": 4.5715767841779105,
+            "p_fallback": 4.27185840522345
+          }
+        },
+        "4": {
+          "band": 4,
+          "wavelength_um": 3.0631029736566036,
+          "bandwidth_um": 0.08865173294030532,
+          "native_pixel_scale_arcsec": 6.1585671127494015,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61289.76054583333,
+          "p5_mjy_sr": -0.011206751847449225,
+          "p50_mjy_sr": 0.01718199105629251,
+          "p99_5_mjy_sr": 3.3485336127919494,
+          "min_mjy_sr": -0.4606084358351516,
+          "max_mjy_sr": 54.67538133103993,
+          "finite_pixels": 54281,
+          "coverage_fraction": 0.9423784722222223,
+          "artifact_pixel_count": 1999,
+          "artifact_pixel_fraction": 0.03682688233451852,
+          "source_pixel_count": 51029,
+          "source_pixel_fraction": 0.9400895340911184,
+          "hard_bad_pixel_count": 1034,
+          "hard_bad_fraction": 0.01904902267828522,
+          "halo_pixel_count": 575,
+          "halo_fraction": 0.014328789653367889,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 37,
+          "aperture_warning_flags": [
+            "OVERFLOW",
+            "TRANSIENT"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/qr3/level2/2026W36_1A/l2b-v27-2026-252/4/level2_2026W36_1A_0476_1D4_spx_l2b-v27-2026-252.fits",
+            "ibe/data/spherex/qr3/level2/2026W37_1A/l2b-v27-2026-255/4/level2_2026W37_1A_0234_4D4_spx_l2b-v27-2026-255.fits",
+            "ibe/data/spherex/qr3/level2/2026W37_1A/l2b-v27-2026-255/4/level2_2026W37_1A_0524_1D4_spx_l2b-v27-2026-255.fits"
+          ],
+          "normalization": {
+            "scale": 1.0779441651460047,
+            "raw_scale": 1.0779441651460047,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 46595,
+            "n_fallback": 49321,
+            "p_static": 3.3011403361867284,
+            "p_fallback": 3.0215160054428343
+          }
+        },
+        "5": {
+          "band": 5,
+          "wavelength_um": 4.150608317211319,
+          "bandwidth_um": 0.03668500702032804,
+          "native_pixel_scale_arcsec": 6.143841864276207,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61295.89330516666,
+          "p5_mjy_sr": -0.020526265305888303,
+          "p50_mjy_sr": 0.013692900975279405,
+          "p99_5_mjy_sr": 4.454500348741207,
+          "min_mjy_sr": -0.19501137173875954,
+          "max_mjy_sr": 353.09565602662155,
+          "finite_pixels": 54326,
+          "coverage_fraction": 0.9431597222222222,
+          "artifact_pixel_count": 2696,
+          "artifact_pixel_fraction": 0.049626329934101536,
+          "source_pixel_count": 47126,
+          "source_pixel_fraction": 0.8674667746567021,
+          "hard_bad_pixel_count": 682,
+          "hard_bad_fraction": 0.012553841622795714,
+          "halo_pixel_count": 1053,
+          "halo_fraction": 0.026436695036529335,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 40,
+          "aperture_warning_flags": [
+            "OVERFLOW"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/qr3/level2/2026W37_1A/l2b-v27-2026-255/5/level2_2026W37_1A_0615_1D5_spx_l2b-v27-2026-255.fits",
+            "ibe/data/spherex/qr3/level2/2026W37_2A/l2b-v27-2026-259/5/level2_2026W37_2A_0516_4D5_spx_l2b-v27-2026-259.fits",
+            "ibe/data/spherex/qr3/level2/2026W38_1A/l2b-v27-2026-261/5/level2_2026W38_1A_0254_3D5_spx_l2b-v27-2026-261.fits"
+          ],
+          "normalization": {
+            "scale": 1.1296725264079812,
+            "raw_scale": 1.1296725264079812,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 41680,
+            "n_fallback": 47799,
+            "p_static": 3.3225491923626347,
+            "p_fallback": 2.7109428609004746
+          }
+        },
+        "6": {
+          "band": 6,
+          "wavelength_um": 4.882733143856613,
+          "bandwidth_um": 0.03642850041237476,
+          "native_pixel_scale_arcsec": 6.175261878292367,
+          "requested_visits": 3,
+          "used_visits": 3,
+          "mjd_mean": 61298.10822583333,
+          "p5_mjy_sr": -0.039549959017494384,
+          "p50_mjy_sr": 0.016199438335978054,
+          "p99_5_mjy_sr": 3.63093690453627,
+          "min_mjy_sr": -0.20224657139034077,
+          "max_mjy_sr": 403.0381499226712,
+          "finite_pixels": 54092,
+          "coverage_fraction": 0.9390972222222222,
+          "artifact_pixel_count": 2146,
+          "artifact_pixel_fraction": 0.03967314944908674,
+          "source_pixel_count": 41964,
+          "source_pixel_fraction": 0.7757893958441174,
+          "hard_bad_pixel_count": 730,
+          "hard_bad_fraction": 0.013495526140649264,
+          "halo_pixel_count": 550,
+          "halo_fraction": 0.013719131953105512,
+          "halo_aperture_pixel_count": 0,
+          "halo_aperture_fraction": 0.0,
+          "aperture_pixel_count": 38,
+          "aperture_warning_flags": [
+            "OVERFLOW"
+          ],
+          "source_bit_set": true,
+          "artifact_uris": [
+            "ibe/data/spherex/qr3/level2/2026W37_2A/l2b-v27-2026-259/6/level2_2026W37_2A_0581_1D6_spx_l2b-v27-2026-259.fits",
+            "ibe/data/spherex/qr3/level2/2026W38_1A/l2b-v27-2026-261/6/level2_2026W38_1A_0213_1D6_spx_l2b-v27-2026-261.fits",
+            "ibe/data/spherex/qr3/level2/2026W38_1A/l2b-v27-2026-261/6/level2_2026W38_1A_0565_1D6_spx_l2b-v27-2026-261.fits"
+          ],
+          "normalization": {
+            "scale": 0.5066243209646721,
+            "raw_scale": 0.5066243209646721,
+            "method": "static_source_p99_5",
+            "status": "ok",
+            "reference_epoch": "2025_E1",
+            "n_static": 38405,
+            "n_fallback": 49067,
+            "p_static": 2.96427671770166,
+            "p_fallback": 2.1426123014049794
+          }
+        }
+      },
+      "display_limits": {
+        "1": [
+          -0.13287270827733397,
+          0.7607207368261348
+        ],
+        "2": [
+          -0.044469782927230236,
+          0.352389258669578
+        ],
+        "3": [
+          -0.03254806896645203,
+          0.2791161768323544
+        ],
+        "4": [
+          -0.040813586211035875,
+          0.25247698200880925
+        ],
+        "5": [
+          -0.04053951310589644,
+          0.21324812267680376
+        ],
+        "6": [
+          -0.09697264830103418,
+          0.2708282931518747
+        ]
+      }
+    }
+  ],
+  "differences": {
+    "2025_E2_minus_2025_E1": {
+      "frames": {
+        "1": "diff_2025_E2_minus_2025_E1_D1.webp",
+        "2": "diff_2025_E2_minus_2025_E1_D2.webp",
+        "3": "diff_2025_E2_minus_2025_E1_D3.webp",
+        "4": "diff_2025_E2_minus_2025_E1_D4.webp",
+        "5": "diff_2025_E2_minus_2025_E1_D5.webp",
+        "6": "diff_2025_E2_minus_2025_E1_D6.webp",
+        "all": "diff_2025_E2_minus_2025_E1_ALL.webp",
+        "thermal": "diff_2025_E2_minus_2025_E1_B56.webp"
+      },
+      "common_bands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thermal_bands": [
+        5,
+        6
+      ]
+    },
+    "2026_E1_minus_2025_E2": {
+      "frames": {
+        "1": "diff_2026_E1_minus_2025_E2_D1.webp",
+        "2": "diff_2026_E1_minus_2025_E2_D2.webp",
+        "3": "diff_2026_E1_minus_2025_E2_D3.webp",
+        "4": "diff_2026_E1_minus_2025_E2_D4.webp",
+        "5": "diff_2026_E1_minus_2025_E2_D5.webp",
+        "6": "diff_2026_E1_minus_2025_E2_D6.webp",
+        "all": "diff_2026_E1_minus_2025_E2_ALL.webp",
+        "thermal": "diff_2026_E1_minus_2025_E2_B56.webp"
+      },
+      "common_bands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "thermal_bands": [
+        5,
+        6
+      ]
+    }
+  },
+  "reference_overlays": {
+    "optical_dss_gaia": "/api/v1/assets/rw_aurigae/ref_optical.webp",
+    "mid_ir_wise": "/api/v1/assets/rw_aurigae/ref_wise.webp",
+    "optical_dss2_red": "/api/v1/assets/rw_aurigae/ref_optical.webp",
+    "mid_ir_wise_w1": "/api/v1/assets/rw_aurigae/ref_wise.webp",
+    "gaia_sources_url": "/api/v1/assets/rw_aurigae/gaia_dr3.json",
+    "attribution": "DSS2 Red via NASA/GSFC SkyView; Digitized Sky Survey (STScI). WISE 3.4/4.6 um (AllWISE) via NASA/GSFC SkyView and NASA/JPL/Caltech WISE. Gaia DR3 via ESA/Gaia/DPAC through NASA/IPAC IRSA TAP. These are display-only reference fields, not calibrated photometry and not SPHEREx data.",
+    "attribution_json": "/api/v1/assets/rw_aurigae/ref_attribution.json"
+  },
+  "normalization": {
+    "method": "static_source_p99_5",
+    "status": "clamped",
+    "reference_epoch": "2025_E1",
+    "reference_epoch_by_band": {
+      "1": "2025_E1",
+      "2": "2025_E1",
+      "3": "2025_E1",
+      "4": "2025_E1",
+      "5": "2025_E1",
+      "6": "2025_E1"
+    },
+    "reference_percentile_by_band": {
+      "1": 5.321267412502155,
+      "2": 5.684580960129078,
+      "3": 4.637839149155762,
+      "4": 3.5584449637206044,
+      "5": 3.753392540251095,
+      "6": 1.5017746792569906
+    },
+    "reference_mode_by_band": {
+      "1": "static_source_p99_5",
+      "2": "static_source_p99_5",
+      "3": "static_source_p99_5",
+      "4": "static_source_p99_5",
+      "5": "static_source_p99_5",
+      "6": "static_source_p99_5"
+    },
+    "applied": true,
+    "clamped": true,
+    "raw_scale_by_epoch_band": {
+      "2025_E1": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0
+      },
+      "2025_E2": {
+        "1": 0.9545068975116839,
+        "2": 1.0548490932980972,
+        "3": 0.8593828008315662,
+        "4": 0.8144147548092323,
+        "5": 1.0722251698076763,
+        "6": 0.4886732227489859
+      },
+      "2026_E1": {
+        "1": 0.8805124016403224,
+        "2": 0.9604336979574936,
+        "3": 1.0144944224074248,
+        "4": 1.0779441651460047,
+        "5": 1.1296725264079812,
+        "6": 0.5066243209646721
+      }
+    },
+    "scale_by_epoch_band": {
+      "2025_E1": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0
+      },
+      "2025_E2": {
+        "1": 0.9545068975116839,
+        "2": 1.0548490932980972,
+        "3": 0.8593828008315662,
+        "4": 0.8144147548092323,
+        "5": 1.0722251698076763,
+        "6": 0.5
+      },
+      "2026_E1": {
+        "1": 0.8805124016403224,
+        "2": 0.9604336979574936,
+        "3": 1.0144944224074248,
+        "4": 1.0779441651460047,
+        "5": 1.1296725264079812,
+        "6": 0.5066243209646721
+      }
+    },
+    "method_by_epoch_band": {
+      "2025_E1": {
+        "1": "static_source_p99_5",
+        "2": "static_source_p99_5",
+        "3": "static_source_p99_5",
+        "4": "static_source_p99_5",
+        "5": "static_source_p99_5",
+        "6": "static_source_p99_5"
+      },
+      "2025_E2": {
+        "1": "static_source_p99_5",
+        "2": "static_source_p99_5",
+        "3": "static_source_p99_5",
+        "4": "static_source_p99_5",
+        "5": "static_source_p99_5",
+        "6": "static_source_p99_5"
+      },
+      "2026_E1": {
+        "1": "static_source_p99_5",
+        "2": "static_source_p99_5",
+        "3": "static_source_p99_5",
+        "4": "static_source_p99_5",
+        "5": "static_source_p99_5",
+        "6": "static_source_p99_5"
+      }
+    },
+    "status_by_epoch_band": {
+      "2025_E1": {
+        "1": "ok",
+        "2": "ok",
+        "3": "ok",
+        "4": "ok",
+        "5": "ok",
+        "6": "ok"
+      },
+      "2025_E2": {
+        "1": "ok",
+        "2": "ok",
+        "3": "ok",
+        "4": "ok",
+        "5": "ok",
+        "6": "clamped"
+      },
+      "2026_E1": {
+        "1": "ok",
+        "2": "ok",
+        "3": "ok",
+        "4": "ok",
+        "5": "ok",
+        "6": "ok"
+      }
+    },
+    "n_static_by_epoch_band": {
+      "2025_E1": {
+        "1": 40591,
+        "2": 46180,
+        "3": 44195,
+        "4": 47274,
+        "5": 43053,
+        "6": 36450
+      },
+      "2025_E2": {
+        "1": 41625,
+        "2": 47138,
+        "3": 45850,
+        "4": 46275,
+        "5": 42310,
+        "6": 38993
+      },
+      "2026_E1": {
+        "1": 40847,
+        "2": 44547,
+        "3": 44109,
+        "4": 46595,
+        "5": 41680,
+        "6": 38405
+      }
+    },
+    "n_fallback_by_epoch_band": {
+      "2025_E1": {
+        "1": 47240,
+        "2": 49532,
+        "3": 47892,
+        "4": 50885,
+        "5": 49637,
+        "6": 47307
+      },
+      "2025_E2": {
+        "1": 48441,
+        "2": 50363,
+        "3": 49737,
+        "4": 48931,
+        "5": 48670,
+        "6": 50037
+      },
+      "2026_E1": {
+        "1": 46950,
+        "2": 47511,
+        "3": 47826,
+        "4": 49321,
+        "5": 47799,
+        "6": 49067
+      }
+    },
+    "band_weights_by_epoch": {
+      "2025_E1": {
+        "1": 0.16666666666666666,
+        "2": 0.16666666666666666,
+        "3": 0.16666666666666666,
+        "4": 0.16666666666666666,
+        "5": 0.16666666666666666,
+        "6": 0.16666666666666666
+      },
+      "2025_E2": {
+        "1": 0.16666666666666666,
+        "2": 0.16666666666666666,
+        "3": 0.16666666666666666,
+        "4": 0.16666666666666666,
+        "5": 0.16666666666666666,
+        "6": 0.16666666666666666
+      },
+      "2026_E1": {
+        "1": 0.16666666666666666,
+        "2": 0.16666666666666666,
+        "3": 0.16666666666666666,
+        "4": 0.16666666666666666,
+        "5": 0.16666666666666666,
+        "6": 0.16666666666666666
+      }
+    }
+  },
+  "provenance": {
+    "source": "NASA/IPAC IRSA SPHEREx DR1/QR3",
+    "collection": "mixed",
+    "release": "DR1+QR3",
+    "zodi_subtracted": true,
+    "background_subtracted": true,
+    "flux_normalization": {
+      "method": "static_source_p99_5",
+      "scope": "per_band_across_epochs",
+      "reference_epoch": "2025_E1",
+      "applied": true,
+      "status": "clamped",
+      "clamped": true,
+      "raw_stats_location": "server_only"
+    },
+    "is_simulated_fallback": false,
+    "citation": "SPHEREx Quick Release (JPL/Caltech/IRSA)",
+    "generated_at": "2026-11-13T19:51:05Z"
+  },
+  "reference_overlay_provenance": {
+    "is_simulated_fallback": false,
+    "generated_at": "2026-11-13T20:01:30+00:00",
+    "generated_by": "scripts/reference_overlays.py",
+    "target_id": "rw_aurigae",
+    "query_center": {
+      "ra": 76.9561,
+      "dec": 30.4011
+    },
+    "display_only": true,
+    "display_note": "Reference/display products only. They never replace SPHEREx frames, never feed photometry, and are not calibrated photometry.",
+    "attribution_text": "DSS2 Red via NASA/GSFC SkyView; Digitized Sky Survey (STScI). WISE 3.4/4.6 um (AllWISE) via NASA/GSFC SkyView and NASA/JPL/Caltech WISE. Gaia DR3 via ESA/Gaia/DPAC through NASA/IPAC IRSA TAP. These are display-only reference fields, not calibrated photometry and not SPHEREx data.",
+    "credits": [
+      {
+        "asset": "ref_optical.webp",
+        "survey": "DSS2 Red",
+        "provider": "NASA/GSFC SkyView",
+        "credit": "Digitized Sky Survey (STScI), DSS2 Red"
+      },
+      {
+        "asset": "ref_wise.webp",
+        "survey": "WISE 3.4",
+        "provider": "NASA/GSFC SkyView",
+        "credit": "NASA/JPL/Caltech WISE (AllWISE), 3.4 um"
+      },
+      {
+        "asset": "ref_wise_w2.webp",
+        "survey": "WISE 4.6",
+        "provider": "NASA/GSFC SkyView",
+        "credit": "NASA/JPL/Caltech WISE (AllWISE), 4.6 um"
+      },
+      {
+        "asset": "gaia_dr3.json",
+        "survey": "Gaia DR3",
+        "provider": "NASA/IPAC IRSA TAP",
+        "credit": "ESA/Gaia/DPAC, Gaia DR3"
+      }
+    ],
+    "assets": {
+      "ref_optical.webp": {
+        "kind": "optical",
+        "survey": "DSS2 Red",
+        "wavelength_um": null,
+        "file": "ref_optical.webp",
+        "service_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl",
+        "request_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Survey=DSS2+Red&position=76.95610%2C30.40110&size=0.205&pixels=240&return=FITS",
+        "request_params": {
+          "Survey": "DSS2 Red",
+          "position": "76.95610,30.40110",
+          "size": "0.205",
+          "pixels": "240",
+          "return": "FITS"
+        },
+        "requested_pixels": 240,
+        "fallback_200_used": false,
+        "primary_request_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Survey=DSS2+Red&position=76.95610%2C30.40110&size=0.205&pixels=240&return=FITS",
+        "primary_requested_pixels": 240,
+        "primary_attempts": [
+          {
+            "attempt": 1,
+            "status": 200,
+            "latency_s": 2.788,
+            "content_type": "image/fits",
+            "bytes": 241920,
+            "ok": true,
+            "shape": [
+              240,
+              240
+            ],
+            "finite_fraction": 1.0
+          }
+        ],
+        "http_status": 200,
+        "content_type": "image/fits",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": 200,
+            "latency_s": 2.788,
+            "content_type": "image/fits",
+            "bytes": 241920,
+            "ok": true,
+            "shape": [
+              240,
+              240
+            ],
+            "finite_fraction": 1.0
+          }
+        ],
+        "fetched_at": "2026-11-09T14:48:42+00:00",
+        "input_shape": [
+          240,
+          240
+        ],
+        "output_shape": [
+          240,
+          240
+        ],
+        "resampled_to_golden_grid": false,
+        "golden_grid": "240x240 TAN, north-up, 3.075 arcsec/pixel, CRPIX=(120.5, 120.5)",
+        "finite_fraction": 1.0,
+        "display": {
+          "stretch_percentiles": [
+            0.5,
+            99.5
+          ],
+          "stretch_limits": [
+            4140.0,
+            14719.044999999976
+          ],
+          "quality": 90,
+          "mode": "L"
+        },
+        "bytes": 20454,
+        "sha256": "22038e639caa073c7882ea9fe292e711f71eab68868467671e0c949bac6d0b34",
+        "is_simulated_fallback": false,
+        "limitations": "Display-only reference field, not calibrated photometry and not SPHEREx data. The target may not be detected at this wavelength."
+      },
+      "ref_wise.webp": {
+        "kind": "mid_ir",
+        "survey": "WISE 3.4",
+        "wavelength_um": 3.4,
+        "file": "ref_wise.webp",
+        "service_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl",
+        "request_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Survey=WISE+3.4&position=76.95610%2C30.40110&size=0.205&pixels=240&return=FITS",
+        "request_params": {
+          "Survey": "WISE 3.4",
+          "position": "76.95610,30.40110",
+          "size": "0.205",
+          "pixels": "240",
+          "return": "FITS"
+        },
+        "requested_pixels": 240,
+        "fallback_200_used": false,
+        "primary_request_url": "https://skyview.gsfc.nasa.gov/current/cgi/runquery.pl?Survey=WISE+3.4&position=76.95610%2C30.40110&size=0.205&pixels=240&return=FITS",
+        "primary_requested_pixels": 240,
+        "primary_attempts": [
+          {
+            "attempt": 1,
+            "status": 200,
+            "latency_s": 11.927,
+            "content_type": "image/fits",
+            "bytes": 241920,
+            "ok": true,
+            "shape": [
+              240,
+              240
+            ],
+            "finite_fraction": 1.0
+          }
+        ],
+        "http_status": 200,
+        "content_type": "image/fits",
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": 200,
+            "latency_s": 11.927,
+            "content_type": "image/fits",
+            "bytes": 241920,
+            "ok": true,
+            "shape": [
+              240,
+              240
+            ],
+            "finite_fraction": 1.0
+          }
+        ],
+        "fetched_at": "2026-11-09T14:48:54+00:00",
+        "input_shape": [
+          240,
+          240
+        ],
+        "output_shape": [
+          240,
+          240
+        ],
+        "resampled_to_golden_grid": false,
+        "golden_grid": "240x240 TAN, north-up, 3.075 arcsec/pixel, CRPIX=(120.5, 120.5)",
+        "finite_fraction": 1.0,
+        "display": {
+          "stretch_percentiles": [
+            0.5,
+            99.5
+          ],
+          "stretch_limits": [
+            4.707306685447693,
+            106.59324272155744
+          ],
+          "quality": 90,
+          "mode": "L"
+        },
+        "bytes": 3876,
+        "sha256": "880b75ada38b8df239756019a81cfbbcf26c0f63939371dca4583c0c0c29555d",
+        "is_simulated_fallback": false,
+        "limitations": "Display-only reference field, not calibrated photometry and not SPHEREx data. The target may not be detected at this wavelength."
+      },
+      "gaia_dr3.json": {
+        "bytes": 44154,
+        "sha256": "89e47ff1263b156d26f1312c772c6ca76ddb1673e9be0bfb3587f0dac9d34c12",
+        "is_simulated_fallback": false,
+        "query": {
+          "ra": 76.9561,
+          "dec": 30.4011,
+          "radius_deg": 0.2,
+          "g_limit": 16.0,
+          "cap": 200,
+          "total_all": 4436,
+          "total_g_le_limit": 310,
+          "returned": 200,
+          "truncated": true,
+          "null_pm_count": 0
+        },
+        "source": "NASA/IPAC IRSA TAP gaia_dr3_source (Gaia DR3)",
+        "attribution": "ESA/Gaia/DPAC, Gaia DR3; retrieved via NASA/IPAC IRSA TAP."
+      },
+      "ref_attribution.json": {
+        "file": "ref_attribution.json",
+        "bytes": 1257,
+        "sha256": "191251a718a687d02d6932975b2284224aace700538f141077c7c3983b7e0e18",
+        "is_simulated_fallback": false,
+        "attribution_text": "DSS2 Red via NASA/GSFC SkyView; Digitized Sky Survey (STScI). WISE 3.4/4.6 um (AllWISE) via NASA/GSFC SkyView and NASA/JPL/Caltech WISE. Gaia DR3 via ESA/Gaia/DPAC through NASA/IPAC IRSA TAP. These are display-only reference fields, not calibrated photometry and not SPHEREx data."
+      }
+    },
+    "reference_overlay_urls": {
+      "optical_dss_gaia": "/api/v1/assets/rw_aurigae/ref_optical.webp",
+      "mid_ir_wise": "/api/v1/assets/rw_aurigae/ref_wise.webp",
+      "optical_dss2_red": "/api/v1/assets/rw_aurigae/ref_optical.webp",
+      "mid_ir_wise_w1": "/api/v1/assets/rw_aurigae/ref_wise.webp",
+      "gaia_sources_url": "/api/v1/assets/rw_aurigae/gaia_dr3.json",
+      "attribution": "DSS2 Red via NASA/GSFC SkyView; Digitized Sky Survey (STScI). WISE 3.4/4.6 um (AllWISE) via NASA/GSFC SkyView and NASA/JPL/Caltech WISE. Gaia DR3 via ESA/Gaia/DPAC through NASA/IPAC IRSA TAP. These are display-only reference fields, not calibrated photometry and not SPHEREx data.",
+      "attribution_json": "/api/v1/assets/rw_aurigae/ref_attribution.json"
+    }
+  },
+  "halo_display_mode": true,
+  "halo_decision": {
+    "evaluated": true,
+    "rule": "O1 contract decision §9: use the display-only HALO mask when halo_fraction > 0.05 in any band or halo_aperture_fraction > 0 for the target. HALO remains hard for photometry and is_flagged_bad.",
+    "thresholds": {
+      "halo_fraction": 0.05,
+      "halo_aperture_fraction": 0.0
+    },
+    "triggered": true,
+    "halo_display_mode": true,
+    "triggering_measurements": [
+      {
+        "epoch_id": "2025_E1",
+        "band": 1,
+        "used_visits": 3,
+        "halo_pixels_native": 809,
+        "native_pixels": 40899,
+        "halo_fraction_native_coverage": 0.01978043472945549,
+        "halo_fraction_native_pipeline": 0.02017959590920429,
+        "halo_pixels_reprojected": 3068,
+        "coverage_pixels_reprojected": 54267,
+        "halo_fraction_reprojected": 0.05653527926732637,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": true
+      },
+      {
+        "epoch_id": "2025_E1",
+        "band": 3,
+        "used_visits": 3,
+        "halo_pixels_native": 757,
+        "native_pixels": 40867,
+        "halo_fraction_native_coverage": 0.01852350307093743,
+        "halo_fraction_native_pipeline": 0.01887309897781102,
+        "halo_pixels_reprojected": 2928,
+        "coverage_pixels_reprojected": 54120,
+        "halo_fraction_reprojected": 0.0541019955654102,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": true
+      },
+      {
+        "epoch_id": "2025_E1",
+        "band": 6,
+        "used_visits": 3,
+        "halo_pixels_native": 1002,
+        "native_pixels": 40385,
+        "halo_fraction_native_coverage": 0.02481119227435929,
+        "halo_fraction_native_pipeline": 0.025442449787979587,
+        "halo_pixels_reprojected": 3822,
+        "coverage_pixels_reprojected": 53998,
+        "halo_fraction_reprojected": 0.07078039927404718,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": true
+      },
+      {
+        "epoch_id": "2025_E2",
+        "band": 1,
+        "used_visits": 3,
+        "halo_pixels_native": 595,
+        "native_pixels": 40910,
+        "halo_fraction_native_coverage": 0.014544121241750183,
+        "halo_fraction_native_pipeline": 0.014758774649634132,
+        "halo_pixels_reprojected": 2331,
+        "coverage_pixels_reprojected": 53937,
+        "halo_fraction_reprojected": 0.04321708660103454,
+        "halo_aperture_pixels_native": 1,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.024390243902439025,
+        "halo_aperture_pixels_reprojected": 4,
+        "halo_aperture_fraction_reprojected": 0.07692307692307693,
+        "triggered": true
+      },
+      {
+        "epoch_id": "2025_E2",
+        "band": 5,
+        "used_visits": 3,
+        "halo_pixels_native": 778,
+        "native_pixels": 40858,
+        "halo_fraction_native_coverage": 0.019041558568701357,
+        "halo_fraction_native_pipeline": 0.01941117764471058,
+        "halo_pixels_reprojected": 2990,
+        "coverage_pixels_reprojected": 54228,
+        "halo_fraction_reprojected": 0.05513756730840157,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 1,
+        "halo_aperture_fraction_reprojected": 0.019230769230769232,
+        "triggered": true
+      },
+      {
+        "epoch_id": "2026_E1",
+        "band": 1,
+        "used_visits": 3,
+        "halo_pixels_native": 962,
+        "native_pixels": 40879,
+        "halo_fraction_native_coverage": 0.023532865285354337,
+        "halo_fraction_native_pipeline": 0.024100007515594858,
+        "halo_pixels_reprojected": 3736,
+        "coverage_pixels_reprojected": 54340,
+        "halo_fraction_reprojected": 0.0687523003312477,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 4,
+        "halo_aperture_fraction_reprojected": 0.07692307692307693,
+        "triggered": true
+      },
+      {
+        "epoch_id": "2026_E1",
+        "band": 2,
+        "used_visits": 3,
+        "halo_pixels_native": 898,
+        "native_pixels": 40940,
+        "halo_fraction_native_coverage": 0.021934538348803125,
+        "halo_fraction_native_pipeline": 0.022426452225163578,
+        "halo_pixels_reprojected": 3465,
+        "coverage_pixels_reprojected": 54120,
+        "halo_fraction_reprojected": 0.06402439024390244,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": true
+      },
+      {
+        "epoch_id": "2026_E1",
+        "band": 5,
+        "used_visits": 3,
+        "halo_pixels_native": 1053,
+        "native_pixels": 40884,
+        "halo_fraction_native_coverage": 0.02575579688875844,
+        "halo_fraction_native_pipeline": 0.026436695036529335,
+        "halo_pixels_reprojected": 4096,
+        "coverage_pixels_reprojected": 54356,
+        "halo_fraction_reprojected": 0.07535506659798366,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": true
+      }
+    ],
+    "triggering_epoch_bands": [
+      "2025_E1_D1",
+      "2025_E1_D3",
+      "2025_E1_D6",
+      "2025_E2_D1",
+      "2025_E2_D5",
+      "2026_E1_D1",
+      "2026_E1_D2",
+      "2026_E1_D5"
+    ],
+    "worst_measurement": {
+      "epoch_id": "2025_E2",
+      "band": 1,
+      "used_visits": 3,
+      "halo_pixels_native": 595,
+      "native_pixels": 40910,
+      "halo_fraction_native_coverage": 0.014544121241750183,
+      "halo_fraction_native_pipeline": 0.014758774649634132,
+      "halo_pixels_reprojected": 2331,
+      "coverage_pixels_reprojected": 53937,
+      "halo_fraction_reprojected": 0.04321708660103454,
+      "halo_aperture_pixels_native": 1,
+      "aperture_pixels": 52,
+      "halo_aperture_fraction_native": 0.024390243902439025,
+      "halo_aperture_pixels_reprojected": 4,
+      "halo_aperture_fraction_reprojected": 0.07692307692307693,
+      "triggered": true
+    },
+    "bands_with_halo": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "hard_bad_mask": 1006685764,
+    "halo_bit": 268435456,
+    "display_bad_mask": 738250308,
+    "display_bad_mask_rule": "HARD_BAD_MASK & ~(1 << 28)",
+    "photometry_exclude_mask": 1071304391,
+    "photometry_includes_halo": true,
+    "is_flagged_bad_includes_halo": true,
+    "grid_width": 240,
+    "grid_height": 240,
+    "frames_rebuilt": true,
+    "per_epoch_band": {
+      "2025_E1_D1": {
+        "epoch_id": "2025_E1",
+        "band": 1,
+        "used_visits": 3,
+        "halo_pixels_native": 809,
+        "native_pixels": 40899,
+        "halo_fraction_native_coverage": 0.01978043472945549,
+        "halo_fraction_native_pipeline": 0.02017959590920429,
+        "halo_pixels_reprojected": 3068,
+        "coverage_pixels_reprojected": 54267,
+        "halo_fraction_reprojected": 0.05653527926732637,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": true
+      },
+      "2025_E1_D2": {
+        "epoch_id": "2025_E1",
+        "band": 2,
+        "used_visits": 3,
+        "halo_pixels_native": 401,
+        "native_pixels": 40916,
+        "halo_fraction_native_coverage": 0.009800567015348519,
+        "halo_fraction_native_pipeline": 0.009897568801678391,
+        "halo_pixels_reprojected": 1588,
+        "coverage_pixels_reprojected": 53991,
+        "halo_fraction_reprojected": 0.029412309458983904,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": false
+      },
+      "2025_E1_D3": {
+        "epoch_id": "2025_E1",
+        "band": 3,
+        "used_visits": 3,
+        "halo_pixels_native": 757,
+        "native_pixels": 40867,
+        "halo_fraction_native_coverage": 0.01852350307093743,
+        "halo_fraction_native_pipeline": 0.01887309897781102,
+        "halo_pixels_reprojected": 2928,
+        "coverage_pixels_reprojected": 54120,
+        "halo_fraction_reprojected": 0.0541019955654102,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": true
+      },
+      "2025_E1_D4": {
+        "epoch_id": "2025_E1",
+        "band": 4,
+        "used_visits": 2,
+        "halo_pixels_native": 302,
+        "native_pixels": 27204,
+        "halo_fraction_native_coverage": 0.011101308631083663,
+        "halo_fraction_native_pipeline": 0.011225931157534756,
+        "halo_pixels_reprojected": 1209,
+        "coverage_pixels_reprojected": 54101,
+        "halo_fraction_reprojected": 0.022347091550987967,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": false
+      },
+      "2025_E1_D5": {
+        "epoch_id": "2025_E1",
+        "band": 5,
+        "used_visits": 3,
+        "halo_pixels_native": 556,
+        "native_pixels": 40913,
+        "halo_fraction_native_coverage": 0.013589812529025004,
+        "halo_fraction_native_pipeline": 0.013777039918725377,
+        "halo_pixels_reprojected": 2171,
+        "coverage_pixels_reprojected": 54219,
+        "halo_fraction_reprojected": 0.04004131393054095,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": false
+      },
+      "2025_E1_D6": {
+        "epoch_id": "2025_E1",
+        "band": 6,
+        "used_visits": 3,
+        "halo_pixels_native": 1002,
+        "native_pixels": 40385,
+        "halo_fraction_native_coverage": 0.02481119227435929,
+        "halo_fraction_native_pipeline": 0.025442449787979587,
+        "halo_pixels_reprojected": 3822,
+        "coverage_pixels_reprojected": 53998,
+        "halo_fraction_reprojected": 0.07078039927404718,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": true
+      },
+      "2025_E2_D1": {
+        "epoch_id": "2025_E2",
+        "band": 1,
+        "used_visits": 3,
+        "halo_pixels_native": 595,
+        "native_pixels": 40910,
+        "halo_fraction_native_coverage": 0.014544121241750183,
+        "halo_fraction_native_pipeline": 0.014758774649634132,
+        "halo_pixels_reprojected": 2331,
+        "coverage_pixels_reprojected": 53937,
+        "halo_fraction_reprojected": 0.04321708660103454,
+        "halo_aperture_pixels_native": 1,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.024390243902439025,
+        "halo_aperture_pixels_reprojected": 4,
+        "halo_aperture_fraction_reprojected": 0.07692307692307693,
+        "triggered": true
+      },
+      "2025_E2_D2": {
+        "epoch_id": "2025_E2",
+        "band": 2,
+        "used_visits": 3,
+        "halo_pixels_native": 306,
+        "native_pixels": 40905,
+        "halo_fraction_native_coverage": 0.007480748074807481,
+        "halo_fraction_native_pipeline": 0.007537131456439814,
+        "halo_pixels_reprojected": 1164,
+        "coverage_pixels_reprojected": 54010,
+        "halo_fraction_reprojected": 0.021551564525087948,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": false
+      },
+      "2025_E2_D3": {
+        "epoch_id": "2025_E2",
+        "band": 3,
+        "used_visits": 3,
+        "halo_pixels_native": 400,
+        "native_pixels": 40861,
+        "halo_fraction_native_coverage": 0.009789285626881378,
+        "halo_fraction_native_pipeline": 0.009886063122513037,
+        "halo_pixels_reprojected": 1579,
+        "coverage_pixels_reprojected": 55018,
+        "halo_fraction_reprojected": 0.028699698280562725,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": false
+      },
+      "2025_E2_D4": {
+        "epoch_id": "2025_E2",
+        "band": 4,
+        "used_visits": 3,
+        "halo_pixels_native": 371,
+        "native_pixels": 40664,
+        "halo_fraction_native_coverage": 0.009123549085185914,
+        "halo_fraction_native_pipeline": 0.009207554662100116,
+        "halo_pixels_reprojected": 1412,
+        "coverage_pixels_reprojected": 54048,
+        "halo_fraction_reprojected": 0.02612492599171107,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": false
+      },
+      "2025_E2_D5": {
+        "epoch_id": "2025_E2",
+        "band": 5,
+        "used_visits": 3,
+        "halo_pixels_native": 778,
+        "native_pixels": 40858,
+        "halo_fraction_native_coverage": 0.019041558568701357,
+        "halo_fraction_native_pipeline": 0.01941117764471058,
+        "halo_pixels_reprojected": 2990,
+        "coverage_pixels_reprojected": 54228,
+        "halo_fraction_reprojected": 0.05513756730840157,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 1,
+        "halo_aperture_fraction_reprojected": 0.019230769230769232,
+        "triggered": true
+      },
+      "2025_E2_D6": {
+        "epoch_id": "2025_E2",
+        "band": 6,
+        "used_visits": 3,
+        "halo_pixels_native": 548,
+        "native_pixels": 40847,
+        "halo_fraction_native_coverage": 0.01341591793766984,
+        "halo_fraction_native_pipeline": 0.01359835231643465,
+        "halo_pixels_reprojected": 2174,
+        "coverage_pixels_reprojected": 55261,
+        "halo_fraction_reprojected": 0.039340583775175984,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": false
+      },
+      "2026_E1_D1": {
+        "epoch_id": "2026_E1",
+        "band": 1,
+        "used_visits": 3,
+        "halo_pixels_native": 962,
+        "native_pixels": 40879,
+        "halo_fraction_native_coverage": 0.023532865285354337,
+        "halo_fraction_native_pipeline": 0.024100007515594858,
+        "halo_pixels_reprojected": 3736,
+        "coverage_pixels_reprojected": 54340,
+        "halo_fraction_reprojected": 0.0687523003312477,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 4,
+        "halo_aperture_fraction_reprojected": 0.07692307692307693,
+        "triggered": true
+      },
+      "2026_E1_D2": {
+        "epoch_id": "2026_E1",
+        "band": 2,
+        "used_visits": 3,
+        "halo_pixels_native": 898,
+        "native_pixels": 40940,
+        "halo_fraction_native_coverage": 0.021934538348803125,
+        "halo_fraction_native_pipeline": 0.022426452225163578,
+        "halo_pixels_reprojected": 3465,
+        "coverage_pixels_reprojected": 54120,
+        "halo_fraction_reprojected": 0.06402439024390244,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": true
+      },
+      "2026_E1_D3": {
+        "epoch_id": "2026_E1",
+        "band": 3,
+        "used_visits": 3,
+        "halo_pixels_native": 458,
+        "native_pixels": 40897,
+        "halo_fraction_native_coverage": 0.011198865442452991,
+        "halo_fraction_native_pipeline": 0.011325700437696283,
+        "halo_pixels_reprojected": 1741,
+        "coverage_pixels_reprojected": 54267,
+        "halo_fraction_reprojected": 0.03208211251773638,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": false
+      },
+      "2026_E1_D4": {
+        "epoch_id": "2026_E1",
+        "band": 4,
+        "used_visits": 3,
+        "halo_pixels_native": 575,
+        "native_pixels": 40704,
+        "halo_fraction_native_coverage": 0.014126375786163521,
+        "halo_fraction_native_pipeline": 0.014328789653367889,
+        "halo_pixels_reprojected": 2184,
+        "coverage_pixels_reprojected": 54403,
+        "halo_fraction_reprojected": 0.04014484495340331,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": false
+      },
+      "2026_E1_D5": {
+        "epoch_id": "2026_E1",
+        "band": 5,
+        "used_visits": 3,
+        "halo_pixels_native": 1053,
+        "native_pixels": 40884,
+        "halo_fraction_native_coverage": 0.02575579688875844,
+        "halo_fraction_native_pipeline": 0.026436695036529335,
+        "halo_pixels_reprojected": 4096,
+        "coverage_pixels_reprojected": 54356,
+        "halo_fraction_reprojected": 0.07535506659798366,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": true
+      },
+      "2026_E1_D6": {
+        "epoch_id": "2026_E1",
+        "band": 6,
+        "used_visits": 3,
+        "halo_pixels_native": 550,
+        "native_pixels": 40640,
+        "halo_fraction_native_coverage": 0.013533464566929134,
+        "halo_fraction_native_pipeline": 0.013719131953105512,
+        "halo_pixels_reprojected": 2152,
+        "coverage_pixels_reprojected": 54108,
+        "halo_fraction_reprojected": 0.0397723072373771,
+        "halo_aperture_pixels_native": 0,
+        "aperture_pixels": 52,
+        "halo_aperture_fraction_native": 0.0,
+        "halo_aperture_pixels_reprojected": 0,
+        "halo_aperture_fraction_reprojected": 0.0,
+        "triggered": false
+      }
+    },
+    "epochs_with_halo": [
+      "2025_E1",
+      "2025_E2",
+      "2026_E1"
+    ],
+    "telemetry_rebuilt": [
+      "2025_E1",
+      "2025_E2",
+      "2026_E1"
+    ],
+    "rendered_frames": 46,
+    "render_failures": []
+  },
+  "spectrum": {
+    "available": true,
+    "file": "spectrum.json",
+    "path": "golden_cache/rw_aurigae/spectrum.json",
+    "sha256": "745c755d03322f5446f259bd3f07f79ebec4a255dc7962af8d303893434486d1",
+    "size_bytes": 83931,
+    "source": "backend/.cache/live/rw_aurigae/spectrum.json",
+    "generated_at": "2026-11-13T19:51:05.496811+00:00",
+    "confidence": "high",
+    "available_epoch_ids": [
+      "2025_E1",
+      "2025_E2",
+      "2026_E1"
+    ],
+    "channel_counts": {
+      "2025_E1": 72,
+      "2025_E2": 72,
+      "2026_E1": 72
+    },
+    "provenance": {
+      "background_subtracted": true,
+      "citation": "SPHEREx Quick Release (JPL/Caltech/IRSA)",
+      "collection": "mixed",
+      "is_simulated_fallback": false,
+      "release": "DR1+QR3",
+      "source": "NASA/IPAC IRSA SPHEREx DR1/QR3",
+      "zodi_subtracted": true
+    }
+  },
+  "pipeline": {
+    "module": "services.spherex_pipeline",
+    "cache_version": 5,
+    "max_visits_per_band": 3,
+    "cutout_size_deg": 0.2,
+    "source_manifest": "backend/.cache/live/rw_aurigae/frame.json",
+    "source_manifest_sha256": "97c4d267aa9fdcf1bfbf6379f063cf11e9c1486511aee574b67615658695eb70",
+    "source_generated_at": "2026-11-13T19:46:33.794821+00:00"
+  },
+  "assets": {
+    "count": 43,
+    "total_bytes": 1161454,
+    "image_shape": [
+      240,
+      240
+    ],
+    "sha256": {
+      "2025_E1_ALL.webp": "664962b2c0afa2de1049f57cd5f81f334a9b725c139ee3217fa3abd50bcb1ecc",
+      "2025_E1_B56.webp": "564d654bc551d491cd431be99c1c8dbd7e5971bc1be5edce48cfdf4c4af00a96",
+      "2025_E1_D1.webp": "c9f1f99282ab92cfbf81bb12b03cabd195fb77fae7c11fb4297808d1f0bd3d93",
+      "2025_E1_D2.webp": "e6674916fb5893c74e6e33a78165c25c9b177cec6227316e51b50f27cf401cef",
+      "2025_E1_D3.webp": "446229de16caf9b489928fdfa59acf9a04c7538403e7601aa52941fbfd61f544",
+      "2025_E1_D4.webp": "bd2d85d3c13da64eac50ee3e9da4fdc81667271dff648a9a601a3bcd31bcfa50",
+      "2025_E1_D5.webp": "8fbb8629efb76588e912ae99d32babd6107db0065339d7854db9618886f26566",
+      "2025_E1_D6.webp": "14acce88b669828e4d3be24d421a2db2d7f8dccc1ca9d6819c743e9b5314e186",
+      "2025_E1_FLAGS.webp": "be95c309b7901f2f3dd2f3ce9f7776f904c269f8302a2b8eeb69857160724857",
+      "2025_E2_ALL.webp": "ff05dbffaf7f03a7259e4f793746ade545f1b0f2a0e0dfd9d12f78d9885471e0",
+      "2025_E2_B56.webp": "4a93f812fb6a3ef215427b5ad370e617404e3190f87158369becfd95a47af354",
+      "2025_E2_D1.webp": "c7294301db6ec32e9e30362385e3042ae2185bd0c5eab16abd449b15717c38db",
+      "2025_E2_D2.webp": "d4bccc92d697f2e2a66cf56c9d0772683ed4f890e9b8aba4988e8d7884aa80e3",
+      "2025_E2_D3.webp": "4ab5b2ff7d1080b6d0c9d93f4139c00264c264ca2f8d9f6d95981cc488c74b23",
+      "2025_E2_D4.webp": "4e91000f51ac6b5329b93115accb98c8d30783dc4f83875ec30230b919498cfd",
+      "2025_E2_D5.webp": "8f32ea1b299a81243a8326a02473387c549547364552c791ee6ef9f21b3e7926",
+      "2025_E2_D6.webp": "702579dec69c0585322a70ac6bdc850b71740556d849df36ff3333ab00250bae",
+      "2025_E2_FLAGS.webp": "6ca3694993ed779a79e3bad12dc73e1ee7adbb946f3f5b462eb8a6be128702ef",
+      "2026_E1_ALL.webp": "dda7b2b8db9b44f5f48c9fb9dabe59dc3a298d5c81fc3bcbf0034ebe541ca30b",
+      "2026_E1_B56.webp": "4159e887209fcb30fe00ebf3288f9b9523de161573c1e85c5aff8311e94be2a4",
+      "2026_E1_D1.webp": "ed60a0f71572131661847bb2198823b93509c7fbadcd473bfed3169e1c991ffa",
+      "2026_E1_D2.webp": "50328c9bf2b5e1eb7ed70af105bc81b3046c86ed1a31faf027f9c396caa4ad82",
+      "2026_E1_D3.webp": "96b234c6699e6084b50ef6ab84aebefb626b27738fcd485f8aece4ea03af71f9",
+      "2026_E1_D4.webp": "e2b81a68bced219e9f9ff3eb08a04242a43d17cc2db74cb270b6890ff06e4c9c",
+      "2026_E1_D5.webp": "9b5c110f9a1e42aeae45585687c9caa29ef2249d2f9d899e485a20027f020e54",
+      "2026_E1_D6.webp": "25d224211a4bef0e5b897637c8b16f93fa466c0998846bf6987b10adc1a09e9d",
+      "2026_E1_FLAGS.webp": "9f6faf3e30409c5ba16a717c42db12dd2f211bd96414b9b6b5074ce0e7a84187",
+      "diff_2025_E2_minus_2025_E1_ALL.webp": "6e221c1b4c06a5e31c5104572582b88aa4fea5ba97843ac04d499c545760551b",
+      "diff_2025_E2_minus_2025_E1_B56.webp": "081234e8bc8681146a22adf03be40bba4844f2dde00390f3cdbe71326e56a5b2",
+      "diff_2025_E2_minus_2025_E1_D1.webp": "c14d1b7d56bae910e156b4afc2796a440779051f170c22202c41593bfbf16a52",
+      "diff_2025_E2_minus_2025_E1_D2.webp": "cdf063b7d79cde4340317f76c191e51075094fc4c544763efd988c1e1df84986",
+      "diff_2025_E2_minus_2025_E1_D3.webp": "95627602bf993cf0d48d828fd5f3731b1b81f7ef6c35c2ee58343af506beb5c0",
+      "diff_2025_E2_minus_2025_E1_D4.webp": "92ca4238b84b3eab6a8ed4b7ea739f775209e31cdb294da0715a20e068c8c099",
+      "diff_2025_E2_minus_2025_E1_D5.webp": "cb87fec78947758f4353e746dffff2a6d0e7e6ea14c89102ee09e48106bd5bb2",
+      "diff_2025_E2_minus_2025_E1_D6.webp": "067bd0fb7783531da086fb1d8435d3ebe2271b9124d97243148741fc66bac5d4",
+      "diff_2026_E1_minus_2025_E2_ALL.webp": "e3921f50a3aa1b74277898787a60808b00d10aa88fb81913add866aea5807fbd",
+      "diff_2026_E1_minus_2025_E2_B56.webp": "4b87f7f6845b13f1bcba10b0098bae3f014009fd6aa4732e4943d315f96deada",
+      "diff_2026_E1_minus_2025_E2_D1.webp": "60a8770533b8b7d642af6ea7cb56f56b11c096f3c129e5bf8feb17783898b4c9",
+      "diff_2026_E1_minus_2025_E2_D2.webp": "5a03317259352b8adb0e35ed1c66f0944ee58428e1ba539fcd8c0d99b37bbfb7",
+      "diff_2026_E1_minus_2025_E2_D3.webp": "1e8c871e1bf0266bc720e3707948c857bf526c3daa381e451e1b99a614207605",
+      "diff_2026_E1_minus_2025_E2_D4.webp": "405d2023684fab06d3259fdc4b20169cd6dc1fa2871a5fac862bc6ed7a43f452",
+      "diff_2026_E1_minus_2025_E2_D5.webp": "4c20b687e2d5c9859de906fc4204261659bfa842dc445c2f7191214f62849a02",
+      "diff_2026_E1_minus_2025_E2_D6.webp": "47a4bba6b831e1dd2cb123dfb2612b6704dc9162b8a3a7d1f41353747bf5c997"
+    },
+    "reference_count": 4,
+    "reference_total_bytes": 71577,
+    "telemetry": {
+      "count": 3,
+      "total_bytes": 332801,
+      "sha256": {
+        "telemetry_2025_E1.bin.gz": "fa918a4b13d5f24a2ccffe0714e8ec0b13325e209e3f92266b4a36de2a51d9c8",
+        "telemetry_2025_E2.bin.gz": "2c3e3dc8ef02bb062d5848bc708d38e3baba6bb39c4c9c1594aebac52e9681c1",
+        "telemetry_2026_E1.bin.gz": "762c8b24b6acb2bca813409b67403463925ee4fd9203e34fd809b0633ac4c349"
+      },
+      "format": "float16_uint32_le_gzip",
+      "width": 240,
+      "height": 240
+    }
+  },
+  "data_quality": {
+    "missing_bands_by_epoch": {},
+    "normalization_status": "clamped",
+    "flag_status_by_epoch": {
+      "2025_E1": "ALERT",
+      "2025_E2": "ALERT",
+      "2026_E1": "ALERT"
+    },
+    "halo_display_mode": true,
+    "halo_triggering_epoch_bands": [
+      "2025_E1_D1",
+      "2025_E1_D3",
+      "2025_E1_D6",
+      "2025_E2_D1",
+      "2025_E2_D5",
+      "2026_E1_D1",
+      "2026_E1_D2",
+      "2026_E1_D5"
+    ]
+  },
+  "notes": [
+    "Real NASA/IPAC IRSA SPHEREx data; is_simulated_fallback=false.",
+    "Frames are pre-normalized by the B2 pipeline (LAW 8); do not re-normalize.",
+    "Difference frames use un-normalized, ZODI/background-subtracted coadds.",
+    "HALO display-only mode is active: displayed frames and flag_overlay show HALO pixels; photometry, clean_fraction, and is_flagged_bad keep HALO hard.",
+    "spectrum.json is copied from the B3 spectrophotometry cache when available.",
+    "Per-epoch telemetry sidecars carry the float16 MJy/sr display coadd and the raw uint32 Table 16 flag plane (BIT_SOURCE preserved); they are separate from frames and never feed photometry.",
+    "Real reference overlays (DSS2 Red, WISE 3.4/4.6, Gaia DR3 pins) are display-only and marked is_simulated_fallback=false.",
+    "Real reference overlays: DSS2 Red (NASA/GSFC SkyView; STScI), WISE 3.4 um and WISE 4.6 um for WISE 0855 (NASA/GSFC SkyView; NASA/JPL/Caltech), and Gaia DR3 pins via IRSA TAP. Display-only, not calibrated photometry, is_simulated_fallback=false."
+  ]
+}

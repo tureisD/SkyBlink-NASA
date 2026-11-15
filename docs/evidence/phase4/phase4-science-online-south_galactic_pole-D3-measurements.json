@@ -1,0 +1,1311 @@
+{
+  "measured_at": "2026-11-14T21:06:27.112329+00:00",
+  "field": "south_galactic_pole",
+  "detector": 3,
+  "primary_method": "exact_SAPM",
+  "preflight_sha256": "0e150a5514698714775ab325f13e4bd61bcebbc3c5e2d9e8674b904862eff9c0",
+  "amendment_sha256": "71c349523647ba8d275f6d34c128af93fcd273ea6e50b76800ff88748f4feb98",
+  "sapm": {
+    "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/solid_angle_pixel_map/cal-sapm-v3-2026-191/3/solid_angle_pixel_map_D3_spx_cal-sapm-v3-2026-191.fits",
+    "path": "backend/.cache/phase4/online-science/calibration/qr3_sapm_D3.fits",
+    "sha256": "4c731f195020b227ae05afc38463d30a0d18cab5a3786bc7af0bd49c46f87ea5",
+    "bytes": 16652160,
+    "retrieved_at": "2026-11-14T21:04:00.278221+00:00",
+    "elapsed_seconds": 3.312999999150634,
+    "is_simulated_fallback": false
+  },
+  "controls": [
+    {
+      "source_id": "2342678886422908544",
+      "positions": [
+        {
+          "ra": 13.019553326729287,
+          "dec": -27.082067385674417,
+          "x": 321.8407676555148,
+          "y": 402.69361614015685,
+          "mjd": 61213.205787393,
+          "time_scale": "utc"
+        },
+        {
+          "ra": 13.019553589696937,
+          "dec": -27.08206775474324,
+          "x": 321.71816011389643,
+          "y": 402.3512664713397,
+          "mjd": 61228.619325298,
+          "time_scale": "utc"
+        }
+      ],
+      "visits": [
+        {
+          "sapm": {
+            "center": {
+              "flux_ujy": 11898.932715835554,
+              "error_ujy": 128.56217570495028,
+              "snr": 92.5539152599872,
+              "weighted_area_pixels": 13.0,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.004028290299739348,
+              "background_variance_mjy_sr2": 1.6725729845282344e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6695622118926,
+                890.6979851568423
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 11793.293347701454,
+              "error_ujy": 125.24446493872688,
+              "snr": 94.16219194573641,
+              "weighted_area_pixels": 12.600000000000001,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.004028290299739348,
+              "background_variance_mjy_sr2": 1.6725729845282344e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6667826809985,
+                890.7027372580484
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 11791.80710777589,
+              "error_ujy": 125.14035905872636,
+              "snr": 94.22865010513662,
+              "weighted_area_pixels": 12.543424188919595,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.004028290299739348,
+              "background_variance_mjy_sr2": 1.6725729845282344e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6667826809985,
+                890.7055167889424
+              ],
+              "method": "exact"
+            }
+          },
+          "constant_wcs": {
+            "center": {
+              "flux_ujy": 11898.098169575558,
+              "error_ujy": 128.55322312229646,
+              "snr": 92.55386897811616,
+              "weighted_area_pixels": 13.0,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.004028290299739348,
+              "background_variance_mjy_sr2": 1.6725729845282344e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 11792.465132110641,
+              "error_ujy": 125.23567779697645,
+              "snr": 94.16218556526506,
+              "weighted_area_pixels": 12.600000000000001,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.004028290299739348,
+              "background_variance_mjy_sr2": 1.6725729845282344e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 11790.978926363068,
+              "error_ujy": 125.13157820510992,
+              "snr": 94.22864392420463,
+              "weighted_area_pixels": 12.543424188919595,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.004028290299739348,
+              "background_variance_mjy_sr2": 1.6725729845282344e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "exact"
+            }
+          },
+          "epsf_diagnostic": {
+            "status": "diagnostic_only",
+            "zone_index": 300,
+            "native_stamp_size": 11,
+            "template_sum": 1.0,
+            "aperture_response_fraction": {
+              "center": 0.9643757549574177,
+              "subpixel": 0.9577850752785424,
+              "exact": 0.9576292498441481
+            },
+            "psf_amplitude_ujy": 12283.15430542743,
+            "approx_error_ujy": 119.4857441860601,
+            "residual_background_mjy_sr": -0.004271916502652393,
+            "reduced_chi2": 1.209294419173646,
+            "source_position_fixed": true,
+            "limits": "Local amplitude+constant background, no neighbor fit, finite ePSF stamp renormalized; no absolute totalflux or officialTractor equivalence claimed"
+          },
+          "subpixel_minus_exact_sigma": 0.011876583515842615
+        },
+        {
+          "sapm": {
+            "center": {
+              "flux_ujy": 11773.026594136003,
+              "error_ujy": 126.81170001741262,
+              "snr": 92.83864653276818,
+              "weighted_area_pixels": 13.0,
+              "annulus_pixels": 25,
+              "annulus_background_mjy_sr": 0.004333348287731253,
+              "background_variance_mjy_sr2": 1.4556136415222938e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6640031501043,
+                890.6894672395861
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 11700.323679637462,
+              "error_ujy": 124.07850331733742,
+              "snr": 94.2977499471706,
+              "weighted_area_pixels": 12.64,
+              "annulus_pixels": 25,
+              "annulus_background_mjy_sr": 0.004333348287731253,
+              "background_variance_mjy_sr2": 1.4556136415222938e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6563818557172,
+                890.6923364327671
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 11693.919485973569,
+              "error_ujy": 123.8782722134871,
+              "snr": 94.39847099110902,
+              "weighted_area_pixels": 12.561387717516013,
+              "annulus_pixels": 25,
+              "annulus_background_mjy_sr": 0.004333348287731253,
+              "background_variance_mjy_sr2": 1.4556136415222938e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6563818557172,
+                890.6923364327671
+              ],
+              "method": "exact"
+            }
+          },
+          "constant_wcs": {
+            "center": {
+              "flux_ujy": 11755.483436766915,
+              "error_ujy": 126.6227443090368,
+              "snr": 92.83864049002412,
+              "weighted_area_pixels": 13.0,
+              "annulus_pixels": 25,
+              "annulus_background_mjy_sr": 0.004333348287731253,
+              "background_variance_mjy_sr2": 1.4556136415222938e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 11682.889193772355,
+              "error_ujy": 123.89362123692389,
+              "snr": 94.29774573648926,
+              "weighted_area_pixels": 12.64,
+              "annulus_pixels": 25,
+              "annulus_background_mjy_sr": 0.004333348287731253,
+              "background_variance_mjy_sr2": 1.4556136415222938e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 11676.494548179135,
+              "error_ujy": 123.69368968676629,
+              "snr": 94.39846590192205,
+              "weighted_area_pixels": 12.561387717516013,
+              "annulus_pixels": 25,
+              "annulus_background_mjy_sr": 0.004333348287731253,
+              "background_variance_mjy_sr2": 1.4556136415222938e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "exact"
+            }
+          },
+          "epsf_diagnostic": {
+            "status": "diagnostic_only",
+            "zone_index": 300,
+            "native_stamp_size": 11,
+            "template_sum": 1.0,
+            "aperture_response_fraction": {
+              "center": 0.9662446635698856,
+              "subpixel": 0.9610698099992588,
+              "exact": 0.9604611616390478
+            },
+            "psf_amplitude_ujy": 12180.746437258682,
+            "approx_error_ujy": 118.92739182306707,
+            "residual_background_mjy_sr": -1.947181098162261e-05,
+            "reduced_chi2": 1.431206616004529,
+            "source_position_fixed": true,
+            "limits": "Local amplitude+constant background, no neighbor fit, finite ePSF stamp renormalized; no absolute totalflux or officialTractor equivalence claimed"
+          },
+          "subpixel_minus_exact_sigma": 0.051697473249033496
+        }
+      ],
+      "snr_eligible": true
+    },
+    {
+      "source_id": "2342687545077003136",
+      "positions": [
+        {
+          "ra": 13.288848346967805,
+          "dec": -27.04710209472507,
+          "x": 185.61693644581283,
+          "y": 367.69783084270335,
+          "mjd": 61213.205787393,
+          "time_scale": "utc"
+        },
+        {
+          "ra": 13.28884857576091,
+          "dec": -27.04710212820292,
+          "x": 185.49084697648578,
+          "y": 367.3550772425221,
+          "mjd": 61228.619325298,
+          "time_scale": "utc"
+        }
+      ],
+      "visits": [
+        {
+          "sapm": {
+            "center": {
+              "flux_ujy": 9561.039954457263,
+              "error_ujy": 117.57908849115185,
+              "snr": 81.31581965084511,
+              "weighted_area_pixels": 13.0,
+              "annulus_pixels": 27,
+              "annulus_background_mjy_sr": 0.002885145841794577,
+              "background_variance_mjy_sr2": 1.4063952498497399e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.0404019446622,
+                890.0681075913166
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 9512.144941184666,
+              "error_ujy": 114.76716804131497,
+              "snr": 82.88210908681125,
+              "weighted_area_pixels": 12.559999999999999,
+              "annulus_pixels": 27,
+              "annulus_background_mjy_sr": 0.002885145841794577,
+              "background_variance_mjy_sr2": 1.4063952498497399e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.0378914006287,
+                890.0731286793834
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 9508.50992865317,
+              "error_ujy": 114.63877378808871,
+              "snr": 82.9432277968166,
+              "weighted_area_pixels": 12.543424188919596,
+              "annulus_pixels": 27,
+              "annulus_background_mjy_sr": 0.002885145841794577,
+              "background_variance_mjy_sr2": 1.4063952498497399e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.0378914006287,
+                890.0731286793834
+              ],
+              "method": "exact"
+            }
+          },
+          "constant_wcs": {
+            "center": {
+              "flux_ujy": 9567.133168435286,
+              "error_ujy": 117.65407358616713,
+              "snr": 81.31578343888398,
+              "weighted_area_pixels": 13.0,
+              "annulus_pixels": 27,
+              "annulus_background_mjy_sr": 0.002885145841794577,
+              "background_variance_mjy_sr2": 1.4063952498497399e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 9518.206396374657,
+              "error_ujy": 114.84032607968787,
+              "snr": 82.88209134629206,
+              "weighted_area_pixels": 12.559999999999999,
+              "annulus_pixels": 27,
+              "annulus_background_mjy_sr": 0.002885145841794577,
+              "background_variance_mjy_sr2": 1.4063952498497399e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 9514.569051531222,
+              "error_ujy": 114.71184754164113,
+              "snr": 82.94321166850156,
+              "weighted_area_pixels": 12.543424188919596,
+              "annulus_pixels": 27,
+              "annulus_background_mjy_sr": 0.002885145841794577,
+              "background_variance_mjy_sr2": 1.4063952498497399e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "exact"
+            }
+          },
+          "epsf_diagnostic": {
+            "status": "diagnostic_only",
+            "zone_index": 288,
+            "native_stamp_size": 11,
+            "template_sum": 1.0,
+            "aperture_response_fraction": {
+              "center": 0.97115905458207,
+              "subpixel": 0.965963287929527,
+              "exact": 0.9656016164645234
+            },
+            "psf_amplitude_ujy": 9883.943349355717,
+            "approx_error_ujy": 107.4243492174368,
+            "residual_background_mjy_sr": -0.001134049419631378,
+            "reduced_chi2": 0.9130290732408708,
+            "source_position_fixed": true,
+            "limits": "Local amplitude+constant background, no neighbor fit, finite ePSF stamp renormalized; no absolute totalflux or officialTractor equivalence claimed"
+          },
+          "subpixel_minus_exact_sigma": 0.03170840380948232
+        },
+        {
+          "sapm": {
+            "center": {
+              "flux_ujy": 9632.382013093636,
+              "error_ujy": 116.16089769601827,
+              "snr": 82.92275803774038,
+              "weighted_area_pixels": 12.0,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.0015282775573152753,
+              "background_variance_mjy_sr2": 1.6943929417562206e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.0352911943085,
+                890.0604862969294
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 9618.973246968306,
+              "error_ujy": 115.99884741776982,
+              "snr": 82.92300709097199,
+              "weighted_area_pixels": 12.64,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.0015282775573152753,
+              "background_variance_mjy_sr2": 1.6943929417562206e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.0277595622082,
+                890.0629968409629
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 9609.800800449611,
+              "error_ujy": 115.72423925405164,
+              "snr": 83.04051823881971,
+              "weighted_area_pixels": 12.561387717516011,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.0015282775573152753,
+              "background_variance_mjy_sr2": 1.6943929417562206e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.0277595622082,
+                890.0629968409629
+              ],
+              "method": "exact"
+            }
+          },
+          "constant_wcs": {
+            "center": {
+              "flux_ujy": 9624.828667397374,
+              "error_ujy": 116.0697709457281,
+              "snr": 82.9227850539806,
+              "weighted_area_pixels": 12.0,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.0015282775573152753,
+              "background_variance_mjy_sr2": 1.6943929417562206e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 9611.430946679657,
+              "error_ujy": 115.90789820361408,
+              "snr": 82.92300262226622,
+              "weighted_area_pixels": 12.64,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.0015282775573152753,
+              "background_variance_mjy_sr2": 1.6943929417562206e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 9602.265669029466,
+              "error_ujy": 115.63350469421287,
+              "snr": 83.04051403113817,
+              "weighted_area_pixels": 12.561387717516011,
+              "annulus_pixels": 23,
+              "annulus_background_mjy_sr": -0.0015282775573152753,
+              "background_variance_mjy_sr2": 1.6943929417562206e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "exact"
+            }
+          },
+          "epsf_diagnostic": {
+            "status": "diagnostic_only",
+            "zone_index": 288,
+            "native_stamp_size": 11,
+            "template_sum": 1.0,
+            "aperture_response_fraction": {
+              "center": 0.9618041452076567,
+              "subpixel": 0.9600409120841727,
+              "exact": 0.959208917484368
+            },
+            "psf_amplitude_ujy": 10055.667807642749,
+            "approx_error_ujy": 108.26218852791874,
+            "residual_background_mjy_sr": -0.002838413065333109,
+            "reduced_chi2": 1.230639630475556,
+            "source_position_fixed": true,
+            "limits": "Local amplitude+constant background, no neighbor fit, finite ePSF stamp renormalized; no absolute totalflux or officialTractor equivalence claimed"
+          },
+          "subpixel_minus_exact_sigma": 0.07926123842177926
+        }
+      ],
+      "snr_eligible": true
+    },
+    {
+      "source_id": "2342875699006181376",
+      "positions": [
+        {
+          "ra": 12.450403348074069,
+          "dec": -27.04711205110964,
+          "x": 583.5377356712094,
+          "y": 533.7549495426401,
+          "mjd": 61213.205787393,
+          "time_scale": "utc"
+        },
+        {
+          "ra": 12.450403441163553,
+          "dec": -27.04711206032972,
+          "x": 583.4231868135785,
+          "y": 533.418983068994,
+          "mjd": 61228.619325298,
+          "time_scale": "utc"
+        }
+      ],
+      "visits": [
+        {
+          "sapm": {
+            "center": {
+              "flux_ujy": 4985.040193622231,
+              "error_ujy": 98.09619590278274,
+              "snr": 50.81787471720723,
+              "weighted_area_pixels": 14.0,
+              "annulus_pixels": 35,
+              "annulus_background_mjy_sr": -0.00025981127698536735,
+              "background_variance_mjy_sr2": 1.137812941764728e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.4732984376122,
+                892.5030663168656
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 4922.00164201976,
+              "error_ujy": 92.39195246205004,
+              "snr": 53.27305583288187,
+              "weighted_area_pixels": 12.6,
+              "annulus_pixels": 35,
+              "annulus_background_mjy_sr": -0.00025981127698536735,
+              "background_variance_mjy_sr2": 1.137812941764728e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.4699809329966,
+                892.5075494312108
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 4917.765355905664,
+              "error_ujy": 92.11526793293712,
+              "snr": 53.38708192746024,
+              "weighted_area_pixels": 12.543424188919595,
+              "annulus_pixels": 35,
+              "annulus_background_mjy_sr": -0.00025981127698536735,
+              "background_variance_mjy_sr2": 1.137812941764728e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.4699809329966,
+                892.5108669358265
+              ],
+              "method": "exact"
+            }
+          },
+          "constant_wcs": {
+            "center": {
+              "flux_ujy": 4974.618745463759,
+              "error_ujy": 97.89113344027459,
+              "snr": 50.817868489579574,
+              "weighted_area_pixels": 14.0,
+              "annulus_pixels": 35,
+              "annulus_background_mjy_sr": -0.00025981127698536735,
+              "background_variance_mjy_sr2": 1.137812941764728e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 4911.711635513191,
+              "error_ujy": 92.19878612979423,
+              "snr": 53.27306184485612,
+              "weighted_area_pixels": 12.6,
+              "annulus_pixels": 35,
+              "annulus_background_mjy_sr": -0.00025981127698536735,
+              "background_variance_mjy_sr2": 1.137812941764728e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 4907.48417231362,
+              "error_ujy": 91.9226756014295,
+              "snr": 53.387090184277696,
+              "weighted_area_pixels": 12.543424188919595,
+              "annulus_pixels": 35,
+              "annulus_background_mjy_sr": -0.00025981127698536735,
+              "background_variance_mjy_sr2": 1.137812941764728e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "exact"
+            }
+          },
+          "epsf_diagnostic": {
+            "status": "diagnostic_only",
+            "zone_index": 323,
+            "native_stamp_size": 11,
+            "template_sum": 1.0,
+            "aperture_response_fraction": {
+              "center": 0.9722268266121008,
+              "subpixel": 0.9635030002685547,
+              "exact": 0.9627660542135033
+            },
+            "psf_amplitude_ujy": 5078.844525002594,
+            "approx_error_ujy": 81.55143342045648,
+            "residual_background_mjy_sr": 0.002255813053431754,
+            "reduced_chi2": 16.9233943457302,
+            "source_position_fixed": true,
+            "limits": "Local amplitude+constant background, no neighbor fit, finite ePSF stamp renormalized; no absolute totalflux or officialTractor equivalence claimed"
+          },
+          "subpixel_minus_exact_sigma": 0.045988968052284716
+        },
+        {
+          "sapm": {
+            "center": {
+              "flux_ujy": 4919.340529813993,
+              "error_ujy": 93.18982055097699,
+              "snr": 52.78838934047523,
+              "weighted_area_pixels": 12.0,
+              "annulus_pixels": 31,
+              "annulus_background_mjy_sr": -0.00544486788360642,
+              "background_variance_mjy_sr2": 1.2726382159368348e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.4667530906679,
+                892.4932034653057
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 4905.881354323603,
+              "error_ujy": 92.83960349064581,
+              "snr": 52.84254962180985,
+              "weighted_area_pixels": 12.56,
+              "annulus_pixels": 31,
+              "annulus_background_mjy_sr": -0.00544486788360642,
+              "background_variance_mjy_sr2": 1.2726382159368348e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.4634355860524,
+                892.4965209699212
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 4902.322603395073,
+              "error_ujy": 92.60453334848735,
+              "snr": 52.938257190355465,
+              "weighted_area_pixels": 12.561387717516013,
+              "annulus_pixels": 31,
+              "annulus_background_mjy_sr": -0.00544486788360642,
+              "background_variance_mjy_sr2": 1.2726382159368348e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.458952471707,
+                892.4965209699212
+              ],
+              "method": "exact"
+            }
+          },
+          "constant_wcs": {
+            "center": {
+              "flux_ujy": 4902.0900005944695,
+              "error_ujy": 92.86297684763659,
+              "snr": 52.788421898616214,
+              "weighted_area_pixels": 12.0,
+              "annulus_pixels": 31,
+              "annulus_background_mjy_sr": -0.00544486788360642,
+              "background_variance_mjy_sr2": 1.2726382159368348e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 4888.6780542970255,
+              "error_ujy": 92.51402777071637,
+              "snr": 52.842559902515106,
+              "weighted_area_pixels": 12.56,
+              "annulus_pixels": 31,
+              "annulus_background_mjy_sr": -0.00544486788360642,
+              "background_variance_mjy_sr2": 1.2726382159368348e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 4885.1317762225435,
+              "error_ujy": 92.27978508752216,
+              "snr": 52.93826564061969,
+              "weighted_area_pixels": 12.561387717516013,
+              "annulus_pixels": 31,
+              "annulus_background_mjy_sr": -0.00544486788360642,
+              "background_variance_mjy_sr2": 1.2726382159368348e-05,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "exact"
+            }
+          },
+          "epsf_diagnostic": {
+            "status": "diagnostic_only",
+            "zone_index": 323,
+            "native_stamp_size": 11,
+            "template_sum": 1.0,
+            "aperture_response_fraction": {
+              "center": 0.9666409685073882,
+              "subpixel": 0.9660321153665765,
+              "exact": 0.9650928061875181
+            },
+            "psf_amplitude_ujy": 5051.3187949950925,
+            "approx_error_ujy": 81.75713840598277,
+            "residual_background_mjy_sr": 0.0018410251397290207,
+            "reduced_chi2": 13.893229893581989,
+            "source_position_fixed": true,
+            "limits": "Local amplitude+constant background, no neighbor fit, finite ePSF stamp renormalized; no absolute totalflux or officialTractor equivalence claimed"
+          },
+          "subpixel_minus_exact_sigma": 0.0384295541465281
+        }
+      ],
+      "snr_eligible": true
+    },
+    {
+      "source_id": "2342557733985442176",
+      "positions": [
+        {
+          "ra": 12.819471276915257,
+          "dec": -27.480163214394,
+          "x": 512.5707599707407,
+          "y": 226.8723359707553,
+          "mjd": 61213.205787393,
+          "time_scale": "utc"
+        },
+        {
+          "ra": 12.819471303937213,
+          "dec": -27.48016329216344,
+          "x": 512.4525667180831,
+          "y": 226.53830308221922,
+          "mjd": 61228.619325298,
+          "time_scale": "utc"
+        }
+      ],
+      "visits": [
+        {
+          "sapm": {
+            "center": {
+              "flux_ujy": 1707.9905261996676,
+              "error_ujy": 73.58948842507276,
+              "snr": 23.20970783672055,
+              "weighted_area_pixels": 14.0,
+              "annulus_pixels": 49,
+              "annulus_background_mjy_sr": -0.0010990708630228968,
+              "background_variance_mjy_sr2": 7.712748693411807e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.9233926602477,
+                889.9519052674843
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 1687.8791300451644,
+              "error_ujy": 67.36882399097776,
+              "snr": 25.054305983895613,
+              "weighted_area_pixels": 12.559999999999999,
+              "annulus_pixels": 49,
+              "annulus_background_mjy_sr": -0.0010990708630228968,
+              "background_variance_mjy_sr2": 7.712748693411807e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.9201648179192,
+                889.956119394969
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 1685.3581189721426,
+              "error_ujy": 67.1265282637297,
+              "snr": 25.107184336282558,
+              "weighted_area_pixels": 12.543424188919595,
+              "annulus_pixels": 49,
+              "annulus_background_mjy_sr": -0.0010990708630228968,
+              "background_variance_mjy_sr2": 7.712748693411807e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.9201648179192,
+                889.9592575750108
+              ],
+              "method": "exact"
+            }
+          },
+          "constant_wcs": {
+            "center": {
+              "flux_ujy": 1709.301581326078,
+              "error_ujy": 73.64608717371975,
+              "snr": 23.209672732430434,
+              "weighted_area_pixels": 14.0,
+              "annulus_pixels": 49,
+              "annulus_background_mjy_sr": -0.0010990708630228968,
+              "background_variance_mjy_sr2": 7.712748693411807e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 1689.1748293683793,
+              "error_ujy": 67.42056086098056,
+              "snr": 25.054298092408544,
+              "weighted_area_pixels": 12.559999999999999,
+              "annulus_pixels": 49,
+              "annulus_background_mjy_sr": -0.0010990708630228968,
+              "background_variance_mjy_sr2": 7.712748693411807e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 1686.6518984904021,
+              "error_ujy": 67.17808213265391,
+              "snr": 25.10717550941447,
+              "weighted_area_pixels": 12.543424188919595,
+              "annulus_pixels": 49,
+              "annulus_background_mjy_sr": -0.0010990708630228968,
+              "background_variance_mjy_sr2": 7.712748693411807e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "exact"
+            }
+          },
+          "epsf_diagnostic": {
+            "status": "diagnostic_only",
+            "zone_index": 257,
+            "native_stamp_size": 11,
+            "template_sum": 1.0,
+            "aperture_response_fraction": {
+              "center": 0.9707199952335428,
+              "subpixel": 0.9622783378291161,
+              "exact": 0.9619233991426257
+            },
+            "psf_amplitude_ujy": 1647.3063100038748,
+            "approx_error_ujy": 49.88599701727811,
+            "residual_background_mjy_sr": -0.002812672996393783,
+            "reduced_chi2": 0.8355484314760401,
+            "source_position_fixed": true,
+            "limits": "Local amplitude+constant background, no neighbor fit, finite ePSF stamp renormalized; no absolute totalflux or officialTractor equivalence claimed"
+          },
+          "subpixel_minus_exact_sigma": 0.037556106925672086
+        },
+        {
+          "sapm": {
+            "center": {
+              "flux_ujy": 1718.5977519148328,
+              "error_ujy": 67.3440218223873,
+              "snr": 25.51967799677084,
+              "weighted_area_pixels": 12.0,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.004494155294990164,
+              "background_variance_mjy_sr2": 7.384103093582324e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.9170266378774,
+                889.9424010650722
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 1714.2770004699469,
+              "error_ujy": 66.90223484425839,
+              "snr": 25.623613388410863,
+              "weighted_area_pixels": 12.64,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.004494155294990164,
+              "background_variance_mjy_sr2": 7.384103093582324e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.9138884578356,
+                889.945539245114
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 1712.4051436128686,
+              "error_ujy": 66.51818712548481,
+              "snr": 25.74341270579821,
+              "weighted_area_pixels": 12.561387717516013,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.004494155294990164,
+              "background_variance_mjy_sr2": 7.384103093582324e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.9138884578356,
+                889.9497533725986
+              ],
+              "method": "exact"
+            }
+          },
+          "constant_wcs": {
+            "center": {
+              "flux_ujy": 1717.475639168546,
+              "error_ujy": 67.3000697287016,
+              "snr": 25.519671021025562,
+              "weighted_area_pixels": 12.0,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.004494155294990164,
+              "background_variance_mjy_sr2": 7.384103093582324e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 1713.1576944533126,
+              "error_ujy": 66.85856753568297,
+              "snr": 25.62360752851886,
+              "weighted_area_pixels": 12.64,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.004494155294990164,
+              "background_variance_mjy_sr2": 7.384103093582324e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 1711.2870380766713,
+              "error_ujy": 66.47476603261075,
+              "snr": 25.743408216542793,
+              "weighted_area_pixels": 12.561387717516013,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.004494155294990164,
+              "background_variance_mjy_sr2": 7.384103093582324e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "exact"
+            }
+          },
+          "epsf_diagnostic": {
+            "status": "diagnostic_only",
+            "zone_index": 257,
+            "native_stamp_size": 11,
+            "template_sum": 1.0,
+            "aperture_response_fraction": {
+              "center": 0.9647513030727015,
+              "subpixel": 0.9635880549613538,
+              "exact": 0.9625938999642654
+            },
+            "psf_amplitude_ujy": 1710.842173702209,
+            "approx_error_ujy": 52.3693623278778,
+            "residual_background_mjy_sr": -0.0011407191909986612,
+            "reduced_chi2": 0.810369664162316,
+            "source_position_fixed": true,
+            "limits": "Local amplitude+constant background, no neighbor fit, finite ePSF stamp renormalized; no absolute totalflux or officialTractor equivalence claimed"
+          },
+          "subpixel_minus_exact_sigma": 0.02814052724478223
+        }
+      ],
+      "snr_eligible": true
+    },
+    {
+      "source_id": "2342863363860108032",
+      "positions": [
+        {
+          "ra": 12.535140951452169,
+          "dec": -27.06857015497392,
+          "x": 548.4577096064395,
+          "y": 505.5795992005072,
+          "mjd": 61213.205787393,
+          "time_scale": "utc"
+        },
+        {
+          "ra": 12.53514098886198,
+          "dec": -27.068570224929932,
+          "x": 548.3420983086393,
+          "y": 505.2425580925039,
+          "mjd": 61228.619325298,
+          "time_scale": "utc"
+        }
+      ],
+      "visits": [
+        {
+          "sapm": {
+            "center": {
+              "flux_ujy": 1891.294708792953,
+              "error_ujy": 74.99874271549874,
+              "snr": 25.217685527975004,
+              "weighted_area_pixels": 12.0,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.005831984403197692,
+              "background_variance_mjy_sr2": 8.594686101939838e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.1429825726447,
+                892.1692536227087
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 1887.9330208922138,
+              "error_ujy": 73.9547820087906,
+              "snr": 25.52820750208966,
+              "weighted_area_pixels": 12.48,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.005831984403197692,
+              "background_variance_mjy_sr2": 8.594686101939838e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.139754730316,
+                892.1725711273241
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 1889.0799941343282,
+              "error_ujy": 73.93912061240219,
+              "snr": 25.549127153365994,
+              "weighted_area_pixels": 12.543424188919596,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.005831984403197692,
+              "background_variance_mjy_sr2": 8.594686101939838e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.139754730316,
+                892.1769645793827
+              ],
+              "method": "exact"
+            }
+          },
+          "constant_wcs": {
+            "center": {
+              "flux_ujy": 1888.0442590937255,
+              "error_ujy": 74.86983905109443,
+              "snr": 25.217688230974318,
+              "weighted_area_pixels": 12.0,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.005831984403197692,
+              "background_variance_mjy_sr2": 8.594686101939838e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 1884.6882351868182,
+              "error_ujy": 73.82764352617127,
+              "snr": 25.52821876969041,
+              "weighted_area_pixels": 12.48,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.005831984403197692,
+              "background_variance_mjy_sr2": 8.594686101939838e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 1885.8332195436274,
+              "error_ujy": 73.81201026439909,
+              "snr": 25.549137772951294,
+              "weighted_area_pixels": 12.543424188919596,
+              "annulus_pixels": 45,
+              "annulus_background_mjy_sr": -0.005831984403197692,
+              "background_variance_mjy_sr2": 8.594686101939838e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                890.6226174566094,
+                890.6226174566094
+              ],
+              "method": "exact"
+            }
+          },
+          "epsf_diagnostic": {
+            "status": "diagnostic_only",
+            "zone_index": 323,
+            "native_stamp_size": 11,
+            "template_sum": 0.9999999999999998,
+            "aperture_response_fraction": {
+              "center": 0.969787083232852,
+              "subpixel": 0.9668502397502902,
+              "exact": 0.9667526737738673
+            },
+            "psf_amplitude_ujy": 1839.2214466035437,
+            "approx_error_ujy": 58.20547223011821,
+            "residual_background_mjy_sr": -0.003381539424141277,
+            "reduced_chi2": 0.9754672673606111,
+            "source_position_fixed": true,
+            "limits": "Local amplitude+constant background, no neighbor fit, finite ePSF stamp renormalized; no absolute totalflux or officialTractor equivalence claimed"
+          },
+          "subpixel_minus_exact_sigma": -0.015512400372287353
+        },
+        {
+          "sapm": {
+            "center": {
+              "flux_ujy": 1732.5153841465612,
+              "error_ujy": 73.55708916531523,
+              "snr": 23.55334344800995,
+              "weighted_area_pixels": 13.0,
+              "annulus_pixels": 47,
+              "annulus_background_mjy_sr": -0.0060233163047065975,
+              "background_variance_mjy_sr2": 9.3378972540006e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.1332093833718,
+                892.1627979380512
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 1732.3310219711584,
+              "error_ujy": 69.8772577004201,
+              "snr": 24.79105618881125,
+              "weighted_area_pixels": 12.600000000000001,
+              "annulus_pixels": 47,
+              "annulus_background_mjy_sr": -0.0060233163047065975,
+              "background_variance_mjy_sr2": 9.3378972540006e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.1288159313133,
+                892.1660257803799
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 1731.9493933862568,
+              "error_ujy": 69.74391827976225,
+              "snr": 24.83298094091769,
+              "weighted_area_pixels": 12.561387717516013,
+              "annulus_pixels": 47,
+              "annulus_background_mjy_sr": -0.0060233163047065975,
+              "background_variance_mjy_sr2": 9.3378972540006e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                892.1255880889846,
+                892.1660257803799
+              ],
+              "method": "exact"
+            }
+          },
+          "constant_wcs": {
+            "center": {
+              "flux_ujy": 1727.0829983659892,
+              "error_ujy": 73.32633274619681,
+              "snr": 23.5533802616846,
+              "weighted_area_pixels": 13.0,
+              "annulus_pixels": 47,
+              "annulus_background_mjy_sr": -0.0060233163047065975,
+              "background_variance_mjy_sr2": 9.3378972540006e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "center"
+            },
+            "subpixel": {
+              "flux_ujy": 1726.899179716902,
+              "error_ujy": 69.65811667269455,
+              "snr": 24.791069041259814,
+              "weighted_area_pixels": 12.600000000000001,
+              "annulus_pixels": 47,
+              "annulus_background_mjy_sr": -0.0060233163047065975,
+              "background_variance_mjy_sr2": 9.3378972540006e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "subpixel"
+            },
+            "exact": {
+              "flux_ujy": 1726.5187604580804,
+              "error_ujy": 69.52519525556923,
+              "snr": 24.83299405505488,
+              "weighted_area_pixels": 12.561387717516013,
+              "annulus_pixels": 47,
+              "annulus_background_mjy_sr": -0.0060233163047065975,
+              "background_variance_mjy_sr2": 9.3378972540006e-06,
+              "pixel_conversion_min_max_ujy_per_mjy_sr": [
+                889.348974351478,
+                889.348974351478
+              ],
+              "method": "exact"
+            }
+          },
+          "epsf_diagnostic": {
+            "status": "diagnostic_only",
+            "zone_index": 323,
+            "native_stamp_size": 11,
+            "template_sum": 0.9999999999999999,
+            "aperture_response_fraction": {
+              "center": 0.9685415428048256,
+              "subpixel": 0.9641322703245001,
+              "exact": 0.963724813932229
+            },
+            "psf_amplitude_ujy": 1770.2473736517263,
+            "approx_error_ujy": 53.12327116463118,
+            "residual_background_mjy_sr": -0.002765183200464859,
+            "reduced_chi2": 1.0127046078392234,
+            "source_position_fixed": true,
+            "limits": "Local amplitude+constant background, no neighbor fit, finite ePSF stamp renormalized; no absolute totalflux or officialTractor equivalence claimed"
+          },
+          "subpixel_minus_exact_sigma": 0.005471854669403185
+        }
+      ],
+      "snr_eligible": true
+    }
+  ],
+  "summaries": {
+    "sapm": {
+      "center": {
+        "status": "pass",
+        "count": 5,
+        "median_z": -0.4855702935543399,
+        "robust_scatter_z": 0.8775588914315411,
+        "max_abs_z": 1.511467430665385,
+        "z": [
+          -0.6972285693126645,
+          0.43163795589279397,
+          -0.4855702935543399,
+          0.1063350696127592,
+          -1.511467430665385
+        ]
+      },
+      "subpixel": {
+        "status": "pass",
+        "count": 5,
+        "median_z": -0.12307548137755091,
+        "robust_scatter_z": 0.5993599213993277,
+        "max_abs_z": 1.5293260423850064,
+        "z": [
+          -0.5273382099620159,
+          0.6546712986553068,
+          -0.12307548137755091,
+          0.27803460623671666,
+          -1.5293260423850064
+        ]
+      },
+      "exact": {
+        "status": "pass",
+        "count": 5,
+        "median_z": -0.11822919514937041,
+        "robust_scatter_z": 0.6489072109551505,
+        "max_abs_z": 1.5459136242760758,
+        "z": [
+          -0.5559111126963491,
+          0.6218243655394329,
+          -0.11822919514937041,
+          0.2862056512281841,
+          -1.5459136242760758
+        ]
+      }
+    },
+    "constant_wcs": {
+      "center": {
+        "status": "pass",
+        "count": 5,
+        "median_z": -0.5375271810901631,
+        "robust_scatter_z": 0.918411903356043,
+        "max_abs_z": 1.5359455614106852,
+        "z": [
+          -0.7903640768400699,
+          0.34909524442148554,
+          -0.5375271810901631,
+          0.08193316111679969,
+          -1.5359455614106852
+        ]
+      },
+      "subpixel": {
+        "status": "pass",
+        "count": 5,
+        "median_z": -0.17635135764933788,
+        "robust_scatter_z": 0.6607371593312351,
+        "max_abs_z": 1.5545324291361329,
+        "z": [
+          -0.6220124660610707,
+          0.5713500626065725,
+          -0.17635135764933788,
+          0.2525827835295393,
+          -1.5545324291361329
+        ]
+      },
+      "exact": {
+        "status": "pass",
+        "count": 5,
+        "median_z": -0.17161009782792508,
+        "robust_scatter_z": 0.7102513510821292,
+        "max_abs_z": 1.571148081190951,
+        "z": [
+          -0.6506680710385883,
+          0.5384122226928252,
+          -0.17161009782792508,
+          0.26066684419537134,
+          -1.571148081190951
+        ]
+      }
+    }
+  },
+  "status": "pass",
+  "scope": "Independent scoped repeatability; no totalflux calibration, globalerror fitting or allskyclaim; bothconstantWCS andSAPM reported distinctly"
+}

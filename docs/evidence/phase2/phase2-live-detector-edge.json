@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-11-14T18:29:45.610599+00:00",
+  "method": "Actual FastAPI TestClient requests through the live IRSA pipeline; isolated per-case cache; no network stubs.",
+  "limitations": "Does not test browser or public reverse proxy. field_offset samples a shifted cutout, not a proven detector-footprint boundary. 503 is not evidence of absent sky coverage.",
+  "case_timeout_seconds": 145.0,
+  "cases": [
+    {
+      "field": "detector_edge",
+      "ra": 134.90921145189702,
+      "dec": -7.347808815089828,
+      "size_deg": 0.05,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 120.047,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "IRSA request deadline exhausted",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 123.875
+    },
+    {
+      "field": "detector_edge",
+      "ra": 134.90921145189702,
+      "dec": -7.347808815089828,
+      "size_deg": 0.2,
+      "concurrent": false,
+      "results": [
+        {
+          "mode": "cold",
+          "status": 503,
+          "seconds": 6.766,
+          "epoch_ids": [],
+          "difference_pairs": [],
+          "provenance": null,
+          "error": {
+            "code": "UPSTREAM_UNAVAILABLE",
+            "message": "Observation discovery incomplete: TAP=IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot; SIA2=SIA2 collection discovery is incomplete: IRSA request failed with HTTP 502: <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Proxy Error</title> </head><body> <h1>Proxy Error</h1> <p>The proxy server received an invalid\r response from an upstream server.<br />\r The proxy server could not handle the request<p>Reason: <strong>Error reading from remot",
+            "detail": {}
+          }
+        },
+        {
+          "mode": "warm",
+          "skipped": "Cold retrieval failed; no warm product exists."
+        }
+      ],
+      "wall_seconds": 9.782
+    }
+  ]
+}

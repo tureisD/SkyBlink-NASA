@@ -1,0 +1,228 @@
+{
+  "schema_version": "skyblink.replay-bundle/1",
+  "distribution": "local_unpublished",
+  "scientific_validation": "not_established_by_packaging",
+  "analyses": [
+    {
+      "analysis_id": "sha256:ff6a61bd4ebab141f2bdaf8e7f6e92927b9412f5dca8adae6413c8264e750c75",
+      "kind": "image",
+      "record": "records/ff6a61bd4ebab141f2bdaf8e7f6e92927b9412f5dca8adae6413c8264e750c75.json"
+    },
+    {
+      "analysis_id": "sha256:441f928c80516d19d068572041deafffb70474edb14494583e24e40a8e09e245",
+      "kind": "spectrum",
+      "record": "records/441f928c80516d19d068572041deafffb70474edb14494583e24e40a8e09e245.json"
+    }
+  ],
+  "files": {
+    "source/backend/app/__init__.py": {
+      "sha256": "ada82d96f31584e717a9d8733590728a1f9f4d2e0238c92c90923aa6aa2cb332",
+      "size_bytes": 36
+    },
+    "source/backend/app/errors.py": {
+      "sha256": "f4049c1017c718b9c72619f273c89041e154cea005ef0633aa02315c6672a262",
+      "size_bytes": 3747
+    },
+    "source/backend/app/main.py": {
+      "sha256": "145a84ea836533244ae9e2469460593733119f2719a536e5828061915589e4cd",
+      "size_bytes": 1894
+    },
+    "source/backend/core/__init__.py": {
+      "sha256": "fbd68c5ad6e87e3d3ee7272e96b66112d1dd17759ac669e0311a7e98fe4d2dac",
+      "size_bytes": 81
+    },
+    "source/backend/core/cachekeys.py": {
+      "sha256": "b20963b7196a47bc1d045fb88693daa3f6c50819e6e3cc5af8e883bb47c93718",
+      "size_bytes": 4025
+    },
+    "source/backend/core/config.py": {
+      "sha256": "47715d402e6e33efce74552071301999a81ccb5318b26b8372be6ab445f95f9d",
+      "size_bytes": 7060
+    },
+    "source/backend/core/flags.py": {
+      "sha256": "a7c92717e89745e28a57ce3a50e234ee800c220ea9320a86e1bf1c35a237cbc0",
+      "size_bytes": 6893
+    },
+    "source/backend/core/staged_astrometry.json": {
+      "sha256": "449b79b6958186333da4d0a96030ed73ddd36019151ba6d4abcb3f8a33903f45",
+      "size_bytes": 5880
+    },
+    "source/backend/core/target_profiles.py": {
+      "sha256": "2092d7b41969923352c13656296689dd5d84d5b7644255f2d2d1a81f28b11293",
+      "size_bytes": 1440
+    },
+    "source/backend/core/targets.py": {
+      "sha256": "0281d9b5d7c272de6760b6404d6c9e2c1f4b5f259e31743d5c4fafc5c57dfed6",
+      "size_bytes": 9422
+    },
+    "source/backend/models/__init__.py": {
+      "sha256": "832129f9b46671b24393f0d161ec1bd9744d26dede24840ac4a385f1d6f11bd0",
+      "size_bytes": 1505
+    },
+    "source/backend/models/common.py": {
+      "sha256": "75ecc0ae0baeefc4c84cc37f5e4a47891c3b6f4c84f26f7be6eaaba87b4e9a79",
+      "size_bytes": 706
+    },
+    "source/backend/models/errors.py": {
+      "sha256": "26abb54e7732cf4cece2a08802434f59be7e6ffe5c5b257c4ea08c08d06a589a",
+      "size_bytes": 363
+    },
+    "source/backend/models/health.py": {
+      "sha256": "3cc5554b78adf8f08f563acab79dd4214262192a0b5f65521c98edb7a9aa8aa1",
+      "size_bytes": 235
+    },
+    "source/backend/models/sky.py": {
+      "sha256": "4f95bef65fe2d7cb8e3e46487ef8f6fbf903ad4a85851b6bf0b52fd6bce5f9e3",
+      "size_bytes": 6271
+    },
+    "source/backend/models/spectrum.py": {
+      "sha256": "54007873e81c89c11004c609c0415d2ae2af94ae9a013b648b7205acbab16305",
+      "size_bytes": 3868
+    },
+    "source/backend/models/targets.py": {
+      "sha256": "499b566f4ce3f3385f71f21e53da811f931c2a6aa83ec2acdedfb306f461aeea",
+      "size_bytes": 1007
+    },
+    "source/backend/models/version.py": {
+      "sha256": "c95f74a38ab27cab06da12a75af1d6c771df207c30e4e723b1c33dec42975448",
+      "size_bytes": 1058
+    },
+    "source/backend/requirements.txt": {
+      "sha256": "3bff4a91e915f4afc6b0e250d8959e01e975d47146549601446a530b542d42ab",
+      "size_bytes": 249
+    },
+    "source/backend/routers/__init__.py": {
+      "sha256": "f8b1f99ba63298e91ae7763f25ab1667b4a2e46cb6cf28783c6d66b45bf739bb",
+      "size_bytes": 20
+    },
+    "source/backend/routers/assets.py": {
+      "sha256": "73490865547aedb201a60a52527dd5bd3b9d96a8725492871b5c868249cecd21",
+      "size_bytes": 3283
+    },
+    "source/backend/routers/health.py": {
+      "sha256": "a326c337cf654f4269203e060ef4b761a897fd56ae04b791e2c498b2af4d71fd",
+      "size_bytes": 1087
+    },
+    "source/backend/routers/sky.py": {
+      "sha256": "459e67b3624bc22b1dfa163e63b65c2402ca4d2ff98f67658f6121c5269f7545",
+      "size_bytes": 20342
+    },
+    "source/backend/routers/spectrum.py": {
+      "sha256": "835ab5f8c936f2adaf4c73395fe4a443fa0c1dc4759d52b4085fbf45cbe7c2d0",
+      "size_bytes": 9810
+    },
+    "source/backend/routers/targets.py": {
+      "sha256": "7b490e8b60fd10804ce4397cb78d84b7effe37e74e59b961f0fcabc234c71dc9",
+      "size_bytes": 498
+    },
+    "source/backend/services/__init__.py": {
+      "sha256": "f523337e57637eab44b378eba14708a5b20d114b9717f470118ec6f112797b38",
+      "size_bytes": 70
+    },
+    "source/backend/services/background.py": {
+      "sha256": "24d45ab83b79b8577d659c2c99ef2723788aa3dbc265f85c40e3ff1388cc4a14",
+      "size_bytes": 4832
+    },
+    "source/backend/services/golden_cache.py": {
+      "sha256": "fb684b79ba7e342bd1f36a344c1d345cf89856396a6af393bd85f95861eb9ac4",
+      "size_bytes": 13419
+    },
+    "source/backend/services/halo.py": {
+      "sha256": "762b738f6f44c99a1cd6949c6e1f60fe35e366920f7e9712b2a31b48383da372",
+      "size_bytes": 5350
+    },
+    "source/backend/services/irsa_client.py": {
+      "sha256": "9794a3e9f4f6672650b7230ec4ee42d03cc4b2e7bca77f872c25575d3006a8dc",
+      "size_bytes": 31565
+    },
+    "source/backend/services/live_selection.py": {
+      "sha256": "8c6a7cb9e55a6f03418bd6e864af006634c3827804e89c35150b4692b43e4171",
+      "size_bytes": 6785
+    },
+    "source/backend/services/lvf.py": {
+      "sha256": "d58bf68d0f7d1098f4b81c6f9c6bc7b3c854b849b2b11cf923c941b8b65ad1b1",
+      "size_bytes": 6553
+    },
+    "source/backend/services/product_metadata.py": {
+      "sha256": "dc7c8734d1c22ac3ff661feb61e39f6c6e80866f804cea0181080294c395f189",
+      "size_bytes": 2217
+    },
+    "source/backend/services/provenance.py": {
+      "sha256": "731058c97970ceb488f63aaf1890c0a697f5e6bb4fa55738e61fe1333c8368d1",
+      "size_bytes": 20312
+    },
+    "source/backend/services/recording.py": {
+      "sha256": "503488db526a54e0a77950d9f1d7eecb15cd90c896199dd276361949f2134851",
+      "size_bytes": 7212
+    },
+    "source/backend/services/singleflight.py": {
+      "sha256": "8386357160716c04dbcb52da2dc1623ff83ad5ff1e481fe48a2e6f9709bc95f6",
+      "size_bytes": 1327
+    },
+    "source/backend/services/spectrophotometry.py": {
+      "sha256": "58185f3c31ab9c70b3578685a7e206c43ef7f52b89ef03fb842b14618fe2d324",
+      "size_bytes": 22941
+    },
+    "source/backend/services/spherex_pipeline.py": {
+      "sha256": "6084f5d14d62cb15195dbab3240c7f61187e62e38b0ea740f6471d158308a991",
+      "size_bytes": 98563
+    },
+    "source/backend/services/telemetry.py": {
+      "sha256": "2620e0a501b160514f70ff793f4f1102cf7f4e646332ceeb5a45282236ebca62",
+      "size_bytes": 8376
+    },
+    "source/Dockerfile": {
+      "sha256": "96022094a95d5034b900539903afb66516cb1ff887b9dbd38def8847ee58fe86",
+      "size_bytes": 2349
+    },
+    "source/scripts/build_golden_cache.py": {
+      "sha256": "8eae66bb505b3b5f49778297ce8c419b93f73abe068d0c0211e4eb0e93dd466c",
+      "size_bytes": 90120
+    },
+    "source/scripts/bundle_analysis.py": {
+      "sha256": "9432c864c93f789be5549cc0751e9389c9bb1804cd7b2d3c9c30a6c1ae21b1a3",
+      "size_bytes": 5488
+    },
+    "source/scripts/curate_phase4_replay.py": {
+      "sha256": "e2d13780603a61094ea68dc1fbf00f04843adbc2ec8cbee0d8fd426d40d13d33",
+      "size_bytes": 8559
+    },
+    "source/scripts/replay_analysis.py": {
+      "sha256": "dab9f7f03bd6a85bd3745455d854693507863b061b2ac70a9b37d724221e6ff7",
+      "size_bytes": 7417
+    },
+    "source/scripts/stage_phase4.py": {
+      "sha256": "b4384745c2dc456cbc65fc8acfda704a63abec0c8a4015484e933dc0a0d5639e",
+      "size_bytes": 22380
+    },
+    "records/ff6a61bd4ebab141f2bdaf8e7f6e92927b9412f5dca8adae6413c8264e750c75.json": {
+      "sha256": "796f32dc004606c94cc4257f75958f7bf8e301fb0b15bde0e48327d2f01835d1",
+      "size_bytes": 22907
+    },
+    "inputs/sha256/73/730d8183e77882b0a37e61256250956d67b5b7730db465e402dbae4337e05661.bin": {
+      "sha256": "730d8183e77882b0a37e61256250956d67b5b7730db465e402dbae4337e05661",
+      "size_bytes": 4475520
+    },
+    "inputs/sha256/9d/9d4fb57bf944c155ca65c8885581cb2d36cb4152fe382ddf0980072c363a179c.bin": {
+      "sha256": "9d4fb57bf944c155ca65c8885581cb2d36cb4152fe382ddf0980072c363a179c",
+      "size_bytes": 4475520
+    },
+    "records/441f928c80516d19d068572041deafffb70474edb14494583e24e40a8e09e245.json": {
+      "sha256": "4d41a46f7f1b39f5bd58f531368299df502ecab3f6b07661186682a5320e5161",
+      "size_bytes": 14423
+    },
+    "requirements-frozen.txt": {
+      "sha256": "d1a2b752b3e25b02cfc6364cdcdefeae2da40f6628b0af43f5b54dec3a9e55a5",
+      "size_bytes": 1143
+    },
+    "environment.json": {
+      "sha256": "dd9ea70bcc0f00b31ab6c753d23e495882f4909c66793151e25d93a8c31201a4",
+      "size_bytes": 629
+    },
+    "REPLAY.txt": {
+      "sha256": "a3106fcf10baef7d7a7cdafdfd5595a55ffdf578e29ebb670bc807edc8a37f2d",
+      "size_bytes": 499
+    }
+  },
+  "total_payload_bytes": 9447256
+}

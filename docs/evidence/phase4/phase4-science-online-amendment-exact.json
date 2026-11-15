@@ -1,0 +1,16 @@
+{
+  "amended_at": "2026-11-14T20:58:28.540359+00:00",
+  "parent_preregistration_sha256": "e913d6ae59d84f084a8c09cef50b8a18cf2e76cad45460351d2bf02e9a2c5d5a",
+  "approval": "Orchestrator approved before any new SPHEREx control flux inspection/extraction",
+  "new_control_flux_inspected": false,
+  "data_seen": "Fresh Gaia/AllWISE catalog values; SIA exposure/footprint metadata; raw cutouts downloaded but no control aperture flux evaluated",
+  "primary_candidate": "Photutils CircularAperture exact circle-pixel intersection weights, radius12.3arcsec",
+  "baselines": [
+    "original center-pixel",
+    "five-by-five subpixel"
+  ],
+  "rationale": "Exact geometric integration removes arbitrary finite-subpixel quadrature error under the same assumption of constant intensity within each measured native pixel. It is deterministic and not chosen using holdout fluxes. It does not repair PSF/aperture loss or blending.",
+  "primary_source": "https://docs.astropy.org/projects/photutils/en/stable/user_guide/aperture.html",
+  "unchanged": "All field/order/catalog isolation, source IDs, pair ranking, astrometry/calibration/background/support/SNR gates; squared-weight variance; >=3controls percell,>=2fields and>=2detectors; |median z|<=1,robustscatter<=2,max|z|<=5; no scale/error fitting or residual clipping",
+  "convergence": "Report five-subpixel versus exact deviations in sigma units; the original0.1sigma convergence diagnostic remains reported but is not a gate on exact integration. Exact stability is the sole primary candidate gate; no method swapping after outcomes."
+}

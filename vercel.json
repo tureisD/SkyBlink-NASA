@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "cd frontend && npm ci --no-audit --no-fund && npm run build",
+  "functions": {
+    "server.py": {
+      "maxDuration": 300,
+      "excludeFiles": "{docs,agents,frontend/node_modules,frontend/src,frontend/qa,backend/tests}/**"
+    }
+  }
+}

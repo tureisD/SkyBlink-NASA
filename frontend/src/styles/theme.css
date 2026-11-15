@@ -1,0 +1,71 @@
+/* SkyBlink visual theme, loaded after global.css.
+   Colour and type only: no layout, behaviour or science/rendering semantics
+   change here. The sky image canvas and band colours are left as they were. */
+
+:root {
+  --font-body: "SkyBlink Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-mono: "SkyBlink Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-display: "SkyBlink Serif", "Iowan Old Style", Palatino, Georgia, serif;
+
+  /* Surfaces: Charcoal purple ground, #46334f panels. */
+  --bg: #2b1f31;
+  --panel: #382a40;
+  --panel-raised: #46334f;
+  --panel-inset: #241a29;
+  --hairline: #55435f;
+  --hairline-strong: #8082a6;
+
+  /* Text: pale lavender tints for contrast on the purples. */
+  --text: #f1eff7;
+  --text-bright: #ffffff;
+  --text-muted: #b4b5cf;
+  --text-dim: #a9aac6;
+
+  /* Accent orange; status colours keep their meaning and their text labels. */
+  --accent: #f2921d;
+  --accent-soft: #5b4468;
+  --caution: #f2c230;
+  --alert: #ff8a5c;
+  --nominal: #b4b5cf;
+
+  --chart-bg: #2b1f31;
+  --chart-grid: #55435f;
+  --chart-text: #f1eff7;
+  --chart-muted: #b4b5cf;
+  --chart-series-1: #f2921d;
+  --chart-series-2: #f2c230;
+  --chart-series-3: #b4b5cf;
+  --chart-series-4: #f1eff7;
+  --chart-series-5: #ff8a5c;
+  --chart-warning: #f2c230;
+  --chart-danger: #ff8a5c;
+  --chart-accent: #f2921d;
+}
+
+/* Space Mono runs wide; a slight tightening keeps the existing layouts. */
+body {
+  letter-spacing: -0.02em;
+}
+
+h1,
+h2,
+.brand-name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+::selection {
+  background: rgba(242, 146, 29, 0.4);
+}

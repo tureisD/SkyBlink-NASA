@@ -6,7 +6,7 @@ SkyBlink is an observing workspace for the **NASA Space Apps Challenge 2026: Pla
 
 The project brings image comparison, spectrum inspection and traceable evidence into one browser interface. It supports exploration; it does not claim to discover Planet X, identify a source automatically or establish astrophysical variability from a blinking image.
 
-[Start here](#start-here) · [Run locally](#run-locally) · [Current status](#current-status) · [Presentation guide](docs/video.md) · [Documentation](docs/README.md)
+[Start here](#start-here) · [Run locally](#run-locally) · [Current status](#current-status) · [7-slide deck (PowerPoint)](docs/presentation/SkyBlink-Space-Apps-2026.pptx) · [Presentation guide](docs/video.md) · [Documentation](docs/README.md)
 
 ![Current SkyBlink workspace with numbered highlights for search, task navigation, data source and evidence](frontend/public/help/guide-workspace.png)
 

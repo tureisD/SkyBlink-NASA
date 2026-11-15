@@ -19,8 +19,6 @@ The project brings image comparison, spectrum inspection and traceable evidence 
 3. **Choose a task.** Use the left navigation (2): **Observe**, **Compare**, **Spectrum** or **Evidence**. Views start paused. Begin with manual date changes or side-by-side comparison.
 4. **Read the evidence.** The Inspector (4) separates where the data came from, whether the images can be compared, what can be measured and what has actually been validated.
 
-The **Help** button opens the same illustrated guide inside the app, with expandable screenshots, numbered explanations and keyboard controls. On smaller screens, use the hamburger controls to reopen the Fields and Inspector panels.
-
 ### Choose the appropriate data source
 
 | Source | What happens | Supported fields |

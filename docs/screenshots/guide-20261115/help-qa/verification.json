@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-11-15T21:15:42.737043+00:00",
+  "scope": "Illustrated help only, explicit saved real WISE observations; no fresh discovery claim. Main workspace remains unchanged.",
+  "browser_cases": 9,
+  "browsers": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "widths": [
+    1440,
+    390,
+    320
+  ],
+  "checks": [
+    "three images decode at full resolution",
+    "no horizontal document overflow",
+    "enlargement and arrow scrolling",
+    "modal keyboard focus containment",
+    "Escape restores focus and clears inert",
+    "persistent canvas identity",
+    "zero console errors",
+    "Chromium axe WCAG 2 A/AA and 2.1 AA: zero violations at three widths"
+  ],
+  "other_checks": [
+    "production build",
+    "frontend real-data, semantics, views suites",
+    "backend real-only tests: 11 passed",
+    "packaging inventory with dist",
+    "394 documentation links",
+    "all 387 prior inventory entries unchanged"
+  ],
+  "files": [
+    {
+      "path": "frontend/src/components/HelpDialog.tsx",
+      "sha256": "b597da3f64ab358f3c0cf43b61aea3227a00ea84b54d51abf91f787ec35b9648"
+    },
+    {
+      "path": "frontend/src/styles/help-guide.css",
+      "sha256": "d4856b560bcb9b67a3d1b6fe711239794097c47a207ac72b976fec0ac4c1577b"
+    },
+    {
+      "path": "frontend/qa/phase1/check-real-data.mjs",
+      "sha256": "ed9c4e5bb3b66db5f9ee7d689254387ad32c292e9cfe5f836d88703482a6dae0"
+    },
+    {
+      "path": "scripts/verify_real_data.py",
+      "sha256": "2ad64df1a3df2f71981505b9d8fab4d9123fd4092a9e25e2394cb0f5cf532f85"
+    },
+    {
+      "path": "README.md",
+      "sha256": "806970e8b529a7cb7b100800b61c65613ce7bb0797acedc22afa583c20b0a92b"
+    },
+    {
+      "path": "docs/video.md",
+      "sha256": "6526509156b7dda78a60aca05240d401c52dab96a03f396ff670da5122492199"
+    },
+    {
+      "path": "docs/screenshots/guide-20261115/verify-help.mjs",
+      "sha256": "716028c72a7fcae417b1dfdea530b5217cc48d6273b8d54156e2216c59c2c7f9"
+    }
+  ],
+  "final_copy_edit": "Help opening note simplified after browser checks; build passed after the wording-only change."
+}

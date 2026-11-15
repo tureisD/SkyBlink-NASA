@@ -1,0 +1,66 @@
+/* Illustrated educational guide; selectors do not affect the workspace. */
+.modal-panel.modal-panel--help { padding: 0; }
+.modal-panel--help .guide-header {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background: #15243a;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 0;
+  padding: 24px 24px 20px;
+}
+.guide-header > div { min-width: 0; }
+.guide-header > .btn { flex-shrink: 0; }
+.modal-panel--help .visual-guide { padding: 20px 24px 30px; overflow-wrap: anywhere; }
+.visual-guide p { margin: 10px 0; }
+.visual-guide strong { color: var(--text-bright); }
+.visual-guide .guide-start {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  list-style-position: inside;
+  padding: 0;
+  margin: 22px 0;
+}
+.guide-start li { border: 1px solid var(--hairline-strong); background: linear-gradient(135deg, #1d354b, #18243c); padding: 14px; }
+.guide-start li::marker { color: var(--accent); font-weight: 600; }
+.guide-start span { display: block; color: var(--text-muted); font-size: 13px; margin-top: 5px; }
+.visual-guide .guide-recording-note { font-size: 13px; color: var(--text-muted); border-left: 2px solid #80a2c0; padding-left: 12px; }
+.visual-guide .guide-step { padding-top: 24px; margin: 30px 0; border-top: 1px solid var(--hairline-strong); }
+.visual-guide .guide-step-label { color: var(--accent); font-size: 13px; letter-spacing: 0.04em; margin-bottom: 5px; }
+.visual-guide .guide-step h3 { font-size: 24px; margin: 0 0 12px; }
+.guide-figure { margin: 20px 0; }
+.guide-image-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding: 10px; color: var(--text-muted); background: #0e1b2d; border: 1px solid var(--hairline-strong); font-size: 13px; }
+.guide-image-toolbar .btn { white-space: normal; }
+.guide-image-scroll { max-width: 100%; overflow: auto; border: 1px solid var(--hairline-strong); border-top: 0; background: #080e1a; }
+.guide-image-scroll img { display: block; width: 100%; height: auto; }
+.guide-image-scroll.is-expanded { max-height: min(65dvh, 720px); }
+.guide-image-scroll.is-expanded img { width: auto; max-width: none; }
+.visual-guide .guide-image-hint { font-size: 13px; color: var(--text-muted); }
+.guide-callouts { padding-left: 26px; margin: 16px 0; }
+.guide-callouts li { padding-left: 5px; margin-bottom: 10px; }
+.guide-callouts li::marker { color: #9ceafa; font-weight: 700; }
+.guide-source-list { margin: 20px 0; }
+.guide-source-list > div { border-top: 1px solid var(--hairline); padding: 12px 0; }
+.guide-source-list dt { color: #c2eaf6; font-weight: 600; }
+.guide-source-list dd { color: var(--text-muted); margin: 5px 0 0; }
+.guide-tip, .guide-caution { padding: 14px 16px; border-left: 3px solid #77cfdf; background: #18324880; }
+.guide-caution { border-color: #dfbb79; background: #322f2880; }
+.guide-caution > strong { color: #ffe2b0; }
+.visual-guide .guide-caution p { margin-bottom: 0; }
+.guide-more > details { padding: 15px 0; border-top: 1px solid var(--hairline-strong); }
+.guide-more > details > summary { cursor: pointer; color: #d5eafa; font-weight: 550; }
+.guide-more > details > summary:hover { color: #9ceafa; }
+.guide-more .keyboard-reference { margin: 16px 0; }
+@media (max-width: 600px) {
+  .modal-panel--help .guide-header { padding: 18px 14px; gap: 12px; flex-wrap: wrap; }
+  .modal-panel--help .guide-header h2 { font-size: 24px; }
+  .modal-panel--help .visual-guide { padding: 12px 14px 24px; }
+  .visual-guide .guide-start { grid-template-columns: 1fr; gap: 8px; }
+  .visual-guide .guide-step h3 { font-size: 21px; }
+  .guide-image-toolbar { align-items: stretch; flex-direction: column; }
+  .guide-image-toolbar .btn { justify-content: center; }
+}

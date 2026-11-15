@@ -1,0 +1,944 @@
+{
+  "captured_at": "2026-11-15T21:07:04.912Z",
+  "browser": "159.0.8154.6",
+  "scope": "Unchanged retained real HTTP bodies and analysis-verified immutable assets; isolated browser route playback, no new live acquisition. Screenshot only; no astrophysical certification.",
+  "captures": [
+    {
+      "path": "docs/screenshots/guide-20261115/guide-workspace.png",
+      "runtime_help_path": "frontend/public/help/guide-workspace.png",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".search-primary",
+          "rect": {
+            "x": 279.4375,
+            "y": 18.59375,
+            "width": 260,
+            "height": 44
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".fields-sidebar .task-nav",
+          "rect": {
+            "x": 39,
+            "y": 187.78125,
+            "width": 218,
+            "height": 188
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".field-source",
+          "rect": {
+            "x": 39,
+            "y": 440.28125,
+            "width": 218,
+            "height": 117.796875
+          }
+        },
+        {
+          "number": 4,
+          "selector": ".inspector-sidebar .quality-dimensions",
+          "rect": {
+            "x": 1343,
+            "y": 300.578125,
+            "width": 218,
+            "height": 434.8125
+          }
+        }
+      ],
+      "sha256": "45e964f53538e383328127f038efc598ff692cef8929e39501d34f35046aa8b0",
+      "url": "http://localhost:5173/?v=1&epochA=2025_E1&epochB=2026_E1&analysis=sha256%3A62409c5a0cd88218662d3420d60ae677366da90d5e66d6d37f21218c9ab625fb&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=archive&discovery=known&spectrumDiscovery=inherit&ra=133.76021647484097&dec=-7.242224282436729&size=0.2&target=wise_0855&bands=6&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "viewport": {
+        "width": 1600,
+        "height": 1200
+      },
+      "caption": "Retained real-response playback in an isolated browser; no new live acquisition.",
+      "response_paths": [
+        "backend/.cache/phase6/discovery-diagnosis/known-postfix/wise_0855-response.json"
+      ],
+      "analysis_ids": [
+        "sha256:62409c5a0cd88218662d3420d60ae677366da90d5e66d6d37f21218c9ab625fb"
+      ],
+      "generated_at": [
+        "2026-11-15T16:55:35Z"
+      ],
+      "visible_text": "Workspace\n\nWISE 0855\nObserve\nCompare\nSpectrum\nEvidence\nField settings\nData source\nOnline archive — fresh search\nKnown exposures — fresh downloads\nSaved catalog data\n\nVerified exposure list, fresh downloads. No new coverage search.\n\nField position\nRA\n133.760216°\nDec\n-7.242224°\nView width\n0.20°\n\nICRS / catalog query epoch 2025.8\n\nKnown exposures / fresh downloads / DR1\n\nObservation viewer\nFocus image\n\n2 epochs; visual comparison; known exposure list\n\n1 notice\n\nObservation 2025-05-05\n\nPixel warnings: CAUTION. Aperture status is distinct from field-wide warning coverage; inspect Evidence for the flags.\n\n2025-05-05 · DR1 · PAUSED\nPrevious\nPlay blink\nNext\nImage bands\nAvailable bands combined\nBand 6\nThermal: available B5/B6\nObservation date\n2025-05-05\n2026-05-11\n\nReduced motion: playback disabled. Use manual steps or side by side.\n\nZoom 1.00x\nZoom in\nZoom out\nReset view\n/\nSearch\n·\nR\nReset camera\n·\n←\n→\nStep\n·\nSpace\nPlay / pause\nKeyboard shortcuts\n?\n\nDetector band 6. Known-exposure spectra use this catalog center only; coordinate Search starts fresh discovery. Dark uncovered margins are unavailable sky, not zero flux. Inspect coordinates through Search and measurements through the Spectrum table.\n\nInterpret\n\nInspector\nEvidence\nDisplay\nWhat this view supports\nOrigin\nPreviously verified exposure list; images downloaded afresh. No new coverage search.\nComparison\nVisual comparison available. Compatible sampling does not establish astrophysical variability.\nMeasurement\nImage brightness is display intensity. Inspect Spectrum for native flux availability and exclusions.\nValidation scope\nScientific validity for this selected field and pair is not established by real origin or reproducible arithmetic.\n\nArtifacts, wavelength samples, point-spread functions and blending at 6.15 arcseconds can explain differences.\n\nInspect spectrum\nEvidence report\nCopy view link\nTechnical evidence and pixel warnings"
+    },
+    {
+      "path": "docs/screenshots/guide-20261115/guide-compare.png",
+      "runtime_help_path": "frontend/public/help/guide-compare.png",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".comparison-controls",
+          "rect": {
+            "x": 39,
+            "y": 391.78125,
+            "width": 218,
+            "height": 382.859375
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".observation-selectors label:first-child",
+          "rect": {
+            "x": 587,
+            "y": 1116.625,
+            "width": 352,
+            "height": 67.796875
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".observation-caption",
+          "rect": {
+            "x": 286,
+            "y": 221.984375,
+            "width": 1028,
+            "height": 54.640625
+          }
+        },
+        {
+          "number": 4,
+          "selector": ".observation-status",
+          "rect": {
+            "x": 286,
+            "y": 178.984375,
+            "width": 1028,
+            "height": 43
+          }
+        }
+      ],
+      "sha256": "9d35e4c81e9e94d16035193631bade4c008c7f05c0249599c18cd926687db83c",
+      "url": "http://localhost:5173/?v=1&epochA=2025_E1&epochB=2026_E1&analysis=sha256%3A62409c5a0cd88218662d3420d60ae677366da90d5e66d6d37f21218c9ab625fb&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=compare&comparisonLayout=side-by-side&pingpong=0&advanced=0&source=archive&discovery=known&spectrumDiscovery=inherit&ra=133.76021647484097&dec=-7.242224282436729&size=0.2&target=wise_0855&bands=6&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "viewport": {
+        "width": 1600,
+        "height": 1200
+      },
+      "caption": "Retained real-response playback in an isolated browser; no new live acquisition.",
+      "response_paths": [
+        "backend/.cache/phase6/discovery-diagnosis/known-postfix/wise_0855-response.json"
+      ],
+      "analysis_ids": [
+        "sha256:62409c5a0cd88218662d3420d60ae677366da90d5e66d6d37f21218c9ab625fb"
+      ],
+      "generated_at": [
+        "2026-11-15T16:55:35Z"
+      ],
+      "visible_text": "Workspace\n\nWISE 0855\nObserve\nCompare\nSpectrum\nEvidence\nCompare dates\nA\n2025-05-05\n2026-05-11\nB\n2025-05-05\n2026-05-11\nSide by side\nShow A\nShow B\n\nSelection is ordinal, not a time-proportional axis. 370.4 days between mean dates.\n\nField settings\nData source\nOnline archive — fresh search\nKnown exposures — fresh downloads\nSaved catalog data\n\nVerified exposure list, fresh downloads. No new coverage search.\n\nField position\nRA\n133.760216°\nDec\n-7.242224°\nView width\n0.20°\n\nICRS / catalog query epoch 2025.8\n\nKnown exposures / fresh downloads / DR1\n\nObservation viewer\nFocus image\n\n2 epochs; visual comparison; known exposure list\n\n1 notice\n\nA / B observations A: 2025-05-05; B: 2026-05-11\n\nPixel warnings: A: CAUTION; B: CAUTION. Aperture status is distinct from field-wide warning coverage; inspect Evidence for the flags.\n\n2025-05-05 · DR1 · PAUSED\n2026-05-11 · DR1 · PAUSED\nPrevious\nSwitch to blink\nNext\nImage bands\nAvailable bands combined\nBand 6\nThermal: available B5/B6\nObservation date\n2025-05-05\n2026-05-11\n\nReduced motion: playback disabled. Use manual steps or side by side.\n\nDifference (B minus A)\nPlayback rate\n1 frames / second\n2 frames / second\n3 frames / second\n4 frames / second\n5 frames / second\n6 frames / second\n7 frames / second\n8 frames / second\nReverse at end\nZoom 1.00x\nZoom in\nZoom out\nReset view\n/\nSearch\n·\nR\nReset camera\n·\n←\n→\nStep\n·\nSpace\nPlay / pause\nKeyboard shortcuts\n?\n\nDetector band 6. Known-exposure spectra use this catalog center only; coordinate Search starts fresh discovery. Dark uncovered margins are unavailable sky, not zero flux. Inspect coordinates through Search and measurements through the Spectrum table.\n\nInterpret\n\nInspector\nEvidence\nDisplay\nWhat this view supports\nOrigin\nPreviously verified exposure list; images downloaded afresh. No new coverage search.\nComparison\nVisual comparison available. Compatible sampling does not establish astrophysical variability.\nMeasurement\nImage brightness is display intensity. Inspect Spectrum for native flux availability and exclusions.\nValidation scope\nScientific validity for this selected field and pair is not established by real origin or reproducible arithmetic.\n\nArtifacts, wavelength samples, point-spread functions and blending at 6.15 arcseconds can explain differences.\n\nInspect spectrum\nEvidence report\nCopy view link\nTechnical evidence and pixel warnings"
+    },
+    {
+      "path": "docs/screenshots/guide-20261115/guide-spectrum.png",
+      "runtime_help_path": "frontend/public/help/guide-spectrum.png",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".spectrum-counts",
+          "rect": {
+            "x": 233,
+            "y": 319.734375,
+            "width": 1134,
+            "height": 24
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".spectrum-banner",
+          "rect": {
+            "x": 233,
+            "y": 343.734375,
+            "width": 1134,
+            "height": 52
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".spec-table-wrap",
+          "rect": {
+            "x": 233,
+            "y": 930.640625,
+            "width": 1134,
+            "height": 429.171875
+          }
+        },
+        {
+          "number": 4,
+          "selector": ".spectrum-method-details",
+          "rect": {
+            "x": 233,
+            "y": 426.125,
+            "width": 1134,
+            "height": 209.734375
+          }
+        }
+      ],
+      "sha256": "53c0fe0718acae6015b5879eb2a8ec9101976896f6140af21717eae4c285385b",
+      "url": "http://localhost:5173/?v=1&epochA=2025_E1&epochB=2025_E2&analysis=sha256%3A6aaf376960902a60d477a8a9d1103855bb214261b6f4208c4af985431d057791&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=measure&comparisonLayout=single&pingpong=0&advanced=0&source=archive&discovery=known&spectrumDiscovery=inherit&ra=248.16723597981732&dec=66.7550234840942&size=0.2&target=r_draconis&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "viewport": {
+        "width": 1600,
+        "height": 1450
+      },
+      "caption": "Retained real-response playback in an isolated browser; no new live acquisition.",
+      "response_paths": [
+        "backend/.cache/phase5/discovery-outage/recovery-final/r_draconis-sky-known-response.json",
+        "backend/.cache/phase6/spectrum-final/r_draconis-known-response.json"
+      ],
+      "analysis_ids": [
+        "sha256:6aaf376960902a60d477a8a9d1103855bb214261b6f4208c4af985431d057791",
+        "sha256:ed0168c12096d74a39a8d8330befec7d0daaec5b57db02ca7497cb12673b1608"
+      ],
+      "generated_at": [
+        "2026-11-15T13:23:11Z",
+        "2026-11-15T16:04:20Z"
+      ],
+      "visible_text": "Spectrum · fixed 12.3″ aperture\n\nR Draconis spectrum\n\n248.167236°, 66.755023°\n· r_draconis\n\n✕\n\nCatalog-centered measurements from the previously verified exposure list, downloaded afresh. Sampling may be sparse; no new archive search was performed. To inspect another position, use coordinate Search to start fresh discovery.\n\nUsing a previously verified exposure list; no new archive search. Newer observations may exist.\n\nDR1 · NASA/IPAC IRSA SPHEREX DR1\nKNOWN EXPOSURES / FRESH DOWNLOADS\nExtraction: best-effort aperture — not a discovery probability\nZODI subtracted · background not subtracted\n2025_E1\n2025-05-01\nspherex_dr1 · DR1\n2025_E2\n2026-04-17\nspherex_dr1 · DR1\nFetched 3 samples; 0 recorded eligible\n· 0 finite excluded · 3 unavailable · 3 total samples\nNo usable flux measurements. All recorded flux values are unavailable; no flux plot is drawn. Inspect the recorded reasons and metadata below. Missing flux is not zero or a nondetection limit.\n\nEligibility does not establish source isolation, calibrated total flux or astrophysical variability.\n\nMeasurement rules and per-observation reasons\n\nWavelength lookup: WCS-WAVE (sip=None; approximate visualization lookup, not CWAVE/CBAND science calibration)\n\nCurrent archive extractions require the full center-selected aperture inside the image, all selected aperture pixels clean, supported field background, at least 10 clean local-annulus pixels, and a center without hard-bad flags. Finite partial-aperture or insufficient-annulus sums remain exploratory and are excluded from eligible summaries. Saved datasets retain their historical eligibility flags; they are not revalidated by this display.\n\n2025_E1: 0/2 eligible; 0 finite. Recorded reasons: HARD_BAD_EXTRACTION_CENTRE, NO_CLEAN_APERTURE_PIXELS, NO_FINITE_FLUX, UNSUPPORTED_BACKGROUND.\n\n2025_E2: 0/1 eligible; 0 finite. Recorded reasons: HARD_BAD_EXTRACTION_CENTRE, NO_CLEAN_APERTURE_PIXELS, NO_FINITE_FLUX, UNSUPPORTED_BACKGROUND.\n\nRecorded channels and reasons remain available in the table and metadata export.\n\nPrevious sample\nInspect first sample\n\nSelect a sample to retain its value, uncertainty, eligibility and source information. The table includes unavailable measurements.\n\nExport channel metadata CSV\n3 channels · 2 epochs\nDATA TABLE (3 CHANNELS)\nMeasurement status\nAll recorded samples\nRecorded eligible\nFinite excluded\nUnavailable flux\nTable epoch\nAll epochs\n2025_E1\n2025_E2\nSort samples\nRecorded order\nWavelength, increasing\nFlux, increasing\nFlux, decreasing\nReset table\n\nShowing 3 of 3 recorded samples. Table filters do not change the plot or CSV export; exports include all samples. Unavailable flux sorts last.\n\nRecorded channels matching the table filters. Null flux means a measurement is unavailable, including missing clean pixels or unsupported background; missing channels are omitted, not marked bad.\nINSPECT\tEPOCH\tDET\tΛ (ΜM)\tΔΛ (ΜM)\tFLUX (ΜJY)\tERROR (ΜJY)\tFLAGS\tHARD BAD\tCLEAN\tUSED\tRECORDED REASONS\nInspect\t2025_E1\t3\t1.797\t0.044\t—\t—\t69206022\tyes\t0%\tno\tUNSUPPORTED_BACKGROUND, NO_CLEAN_APERTURE_PIXELS, HARD_BAD_EXTRACTION_CENTRE\nInspect\t2025_E1\t6\t4.554\t0.036\t—\t—\t69206022\tyes\t0%\tno\tNO_CLEAN_APERTURE_PIXELS, HARD_BAD_EXTRACTION_CENTRE\nInspect\t2025_E2\t3\t1.797\t0.044\t—\t—\t69206022\tyes\t0%\tno\tUNSUPPORTED_BACKGROUND, NO_CLEAN_APERTURE_PIXELS, HARD_BAD_EXTRACTION_CENTRE\n\nNASA/IPAC IRSA SPHEREx DR1 · SPHEREx Quick Release (JPL/Caltech/IRSA) · 2026-11-15T16:04:20Z\n\nProcessing version: native_aperture/2 · Analysis: sha256:ed0168c12096d74a39a8d8330befec7d0daaec5b57db02ca7497cb12673b1608"
+    }
+  ],
+  "source_and_build": [
+    {
+      "path": "frontend/src/App.tsx",
+      "sha256": "e1cff1ae09f628dbffdd8d6ea2c805a0c2ebe063a419050dd7af7c527d24569d"
+    },
+    {
+      "path": "frontend/src/components/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/components/ArtifactShield.tsx",
+      "sha256": "baf343c108382789eed1c9eec13676085c1c64d7003e342451713f2ff8c3f31a"
+    },
+    {
+      "path": "frontend/src/components/AudioPanel.tsx",
+      "sha256": "9efa9d6ad5f8105bfd00bfc5f889c4a5bc9ffeb24af7b27dad61e26081a481f3"
+    },
+    {
+      "path": "frontend/src/components/BlinkCanvas.tsx",
+      "sha256": "6de71970fcadbf4f034422a2fe1b358b2db0fa187d056b6bdd32ab798a5774c8"
+    },
+    {
+      "path": "frontend/src/components/CrossMissionCurtain.tsx",
+      "sha256": "45c28a59157585bd0068d7ea430eca525f34ad0d348f11915ece5ce17e39dc42"
+    },
+    {
+      "path": "frontend/src/components/DisplayPanel.tsx",
+      "sha256": "e9cb5488efd35ae62796bd8fece931ca2f3891e1b6f50203a2e9b4d3c3b96a3b"
+    },
+    {
+      "path": "frontend/src/components/FieldsPanel.tsx",
+      "sha256": "1c0f84f208681f9b7c6142e3451642db496bdc76cbfe9112fdd0f07f61625223"
+    },
+    {
+      "path": "frontend/src/components/HelpDialog.tsx",
+      "sha256": "3e5efb3fead16a2b90d473112dcde4cd1b07f313f10831681e8bf379a5a0638f"
+    },
+    {
+      "path": "frontend/src/components/KeyboardShortcuts.tsx",
+      "sha256": "793581d4be5786158daed0fce887d5aba3e4ea2b7f9afa4943a818e8b863d9f7"
+    },
+    {
+      "path": "frontend/src/components/Modal.tsx",
+      "sha256": "f74aa6183b2635100890397a317df5715d365da5c413d38065c138fe139eb8e4"
+    },
+    {
+      "path": "frontend/src/components/SearchDialog.tsx",
+      "sha256": "3e0ac5e5847df6ba6131e7b664fcaa2569770d1feff2dbc5bd6dfc84be7ee1fb"
+    },
+    {
+      "path": "frontend/src/components/SourceSelector.tsx",
+      "sha256": "1ebd11503246c5821e19e9ca7c8dbc177c544d65403cf448f67acc9637aa49f5"
+    },
+    {
+      "path": "frontend/src/components/SpectrumDrawer.tsx",
+      "sha256": "856a75ffd9b59ca5f73beced7ed4b5b215f7a6e089fb4a09c259458e723d7589"
+    },
+    {
+      "path": "frontend/src/components/SpectrumPlot.tsx",
+      "sha256": "2de3ab2d2fa57dbb0fa3bd2c775242942ae4e826995bc01ff0f40ddaa5c7badf"
+    },
+    {
+      "path": "frontend/src/components/TargetPanel.tsx",
+      "sha256": "7e57b506e726ecb5a067cd7fabdcc2c62435025f7e9f3fde72ecfb1c32f8060a"
+    },
+    {
+      "path": "frontend/src/components/TimelineDock.tsx",
+      "sha256": "86b194e38096e92dd95cc6b1acb7a5286828f3299b3f48d58f6c04e1d8e550f4"
+    },
+    {
+      "path": "frontend/src/components/TopBar.tsx",
+      "sha256": "2e7bb82cd73db666234bf78f7c66837870082b2d1fe4e81c68635dc1113e8875"
+    },
+    {
+      "path": "frontend/src/components/TriageModal.tsx",
+      "sha256": "4a97e051428275406a597e263e723a054ee23a5126e3f9eccb8308aff4e1bb99"
+    },
+    {
+      "path": "frontend/src/components/TrialMotionPanel.tsx",
+      "sha256": "3bf1280b61a50a44bde10a9ea51efe2a3eb5fb52aab91903fe0328dbe67755c9"
+    },
+    {
+      "path": "frontend/src/hooks/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/hooks/useGaiaSources.ts",
+      "sha256": "8b7f7159bf03b9c87f360f6683e862cdb13f434fc69f4d1373ce78e62b0fa921"
+    },
+    {
+      "path": "frontend/src/hooks/usePrefersReducedMotion.ts",
+      "sha256": "b08b8700a2b135ef16bb1fadb15ca6dc397f7507c4da0d41c5362c99f29b0ca0"
+    },
+    {
+      "path": "frontend/src/hooks/useRecentFields.ts",
+      "sha256": "4b027b6328344d7ac860c48dd866699d515d80cf5cfafe4426a2e4130c5a930c"
+    },
+    {
+      "path": "frontend/src/hooks/useSkyData.ts",
+      "sha256": "6c47bc1cd321542010d272c676a5bb01db30b2f341b3e30992bac89e83b55a82"
+    },
+    {
+      "path": "frontend/src/hooks/useSpectrum.ts",
+      "sha256": "202a4366bd61ee8fa7dfff31788410d23960a2071e103f170aaa1c84a9d2064b"
+    },
+    {
+      "path": "frontend/src/hooks/useUrlState.ts",
+      "sha256": "3269272d18a4916a045af2d510a8242bcc691f755e976b20414000445d968a7b"
+    },
+    {
+      "path": "frontend/src/lib/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/lib/api.ts",
+      "sha256": "ed2e57df43cbe4f0bc27a4235a876e9a848a31a57f64cd0fa70bbbe776483544"
+    },
+    {
+      "path": "frontend/src/lib/audio.ts",
+      "sha256": "3595a721349915c91b9feb27083428d7187baed8f1d2062f280e528348f46e43"
+    },
+    {
+      "path": "frontend/src/lib/colormaps.ts",
+      "sha256": "b86ec0b733aedeb5e6a8af80921782d5dbe14c3726464ce8879ed75c371d21b7"
+    },
+    {
+      "path": "frontend/src/lib/comparisonRecovery.ts",
+      "sha256": "713b4a86875e8ae6a7f245b532bd0314971a3212cc927a10b0f9d6fb98f772ae"
+    },
+    {
+      "path": "frontend/src/lib/coordinates.ts",
+      "sha256": "621b8b5225349e090d5d53567d556cf86408c211607cfef42657334273de4dec"
+    },
+    {
+      "path": "frontend/src/lib/display.ts",
+      "sha256": "73b1ee154e44c6f022aaa3817880d0a42a2dcbe3557c529a2a7e122d8d818e26"
+    },
+    {
+      "path": "frontend/src/lib/flags.ts",
+      "sha256": "477d260a9e5cefd340d23dea6d3324db47cb0d3d7d439a07b5d12941c72a6b3a"
+    },
+    {
+      "path": "frontend/src/lib/frames.ts",
+      "sha256": "02f08751dc98473dd12ae7cd6dca969dc150b9e73d199cc6d83e548574f8995e"
+    },
+    {
+      "path": "frontend/src/lib/gaia.ts",
+      "sha256": "634606bff2373fcf0fa496e06a7bee261c33658fd6544cbfeb1835498776bf89"
+    },
+    {
+      "path": "frontend/src/lib/lvf.ts",
+      "sha256": "923c870ab9ab6ca1716e11e6c738dbb6eeffe41a30e2a8e7e6b491ff76a375ad"
+    },
+    {
+      "path": "frontend/src/lib/semantics.ts",
+      "sha256": "31177ef58d5081e634e9bd705a35e6af8e8fa56d50a04855b5098aa54f4d1e16"
+    },
+    {
+      "path": "frontend/src/lib/share.ts",
+      "sha256": "5a0983162a985f51d640c3e21449b6aad33ae36e77a474ac1445e0f192af8b13"
+    },
+    {
+      "path": "frontend/src/lib/targets.ts",
+      "sha256": "5ea68f5bed39ee6ec4c191dc3b0f0027939293da362dac99996114304cb50c16"
+    },
+    {
+      "path": "frontend/src/lib/telemetry.ts",
+      "sha256": "8259b9601ea8c5ee28045e324aa4b8bceafd64dfad143f7e204d14f97ba7e725"
+    },
+    {
+      "path": "frontend/src/lib/triage.ts",
+      "sha256": "70781bd94db32d9ce58fc476d2f3bfbc014f8388dff45e04dcb17d162874ffe7"
+    },
+    {
+      "path": "frontend/src/lib/trial.ts",
+      "sha256": "db5d111338a902e6cf45fa571590d6549dfe9654331b30d835f8ac81f23c2715"
+    },
+    {
+      "path": "frontend/src/lib/types.ts",
+      "sha256": "c5f1cf9697a5db9ec2775c66c784b3954f62bbd46f386f92957b9d35e936b34b"
+    },
+    {
+      "path": "frontend/src/lib/wcs.ts",
+      "sha256": "15c8e8753b7eb746b44a3004dcc92d465204b8d5d36ebfb4cee6f7fc200bb0fb"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "sha256": "bcc0da18ff24f09bddd9db513e67160f2ab6e1fc0ed58134418904d0a62c14ac"
+    },
+    {
+      "path": "frontend/src/styles/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/styles/global.css",
+      "sha256": "9fe5e3ac5f0a2c0fba886da7496f963a06ecab936d50df384ceb6dbee809953a"
+    },
+    {
+      "path": "frontend/src/styles/observatory.css",
+      "sha256": "7a9bec47455e16c35159bb58162d729b97d83d65110f2759d7572ad9e613a454"
+    },
+    {
+      "path": "frontend/src/vite-env.d.ts",
+      "sha256": "6f3aec004321e961cc3ed41138c382317ff8acb8589143f8b26ce516751193e1"
+    },
+    {
+      "path": "frontend/dist/assets/index-B3cHEDkp.js",
+      "sha256": "e61b6154c81a65f50e5e3ba9468c141d88d595f60ed12fe8e402a3af74146c7b"
+    },
+    {
+      "path": "frontend/dist/assets/index-BvW7k4Ir.css",
+      "sha256": "3932743bd1663a67c41a719d4bb70be9201c4c64afa77c181a0416e315bf49a2"
+    },
+    {
+      "path": "frontend/dist/favicon.svg",
+      "sha256": "db37835412da24e2c1e390e02ea0ee09d0508c928cc940bb656cfe58844fcee5"
+    },
+    {
+      "path": "frontend/dist/help/how-it-works.svg",
+      "sha256": "d7cb539cc72121826f22670c22b0aed86c661b3df1e6fc4251a3bb77d8d99c1e"
+    },
+    {
+      "path": "frontend/dist/index.html",
+      "sha256": "b5b629d04290e4dbb9b947b47dbddd7767e89c32c6d54c098c254108e035cd70"
+    }
+  ],
+  "retained_sources": [
+    {
+      "path": "backend/.cache/phase6/discovery-diagnosis/known-postfix/wise_0855-response.json",
+      "sha256": "37b953bf356f8e862628848263f8ff6786921d0f591ef428eb40b0c95f25f540"
+    },
+    {
+      "path": "backend/.cache/phase6/discovery-diagnosis/known-postfix/wise_0855-analysis.json",
+      "sha256": "d54f1bb3288e347504a1a518275ad4bcf2b2204cc2659b7076337a20444c8469"
+    },
+    {
+      "path": "backend/.cache/phase5/discovery-outage/recovery-final/r_draconis-sky-known-response.json",
+      "sha256": "ece511cdfed6c39ccceac70749a6725f9112e39a83357d6185241f8a53d75457"
+    },
+    {
+      "path": "backend/.cache/phase6/spectrum-final/r_draconis-known-response.json",
+      "sha256": "d6249a22cfc94274f7ac547732600bc0e9501ed3bd02e6651ccea92a775a486c"
+    },
+    {
+      "path": "backend/.cache/phase6/spectrum-final/r_draconis-known-analysis.json",
+      "sha256": "c918c37aeb7fb9d19341a80e60429f967be44e8ddc086b82b48a8220d3259ff2"
+    },
+    {
+      "path": "backend/.cache/phase5/discovery-outage/recovery-final/r_draconis-sky-known-analysis.json",
+      "sha256": "39eb9bf7b04034023e47d2fb77292df82b4376742c6864e52e8e6740c9bf5269"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/2025_E1_ALL_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp",
+      "sha256": "aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/2025_E1_B56_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp",
+      "sha256": "aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/2025_E1_D6_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp",
+      "sha256": "aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/2025_E1_FLAGS_91c4d81a94fee950b1b87ca1985057bf56b729bf1a4b4ad316e74854358ac33b.webp",
+      "sha256": "91c4d81a94fee950b1b87ca1985057bf56b729bf1a4b4ad316e74854358ac33b"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/2026_E1_ALL_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp",
+      "sha256": "d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/2026_E1_B56_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp",
+      "sha256": "d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/2026_E1_D6_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp",
+      "sha256": "d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/2026_E1_FLAGS_9344f807d9498dcb6695b419c6553e263628c7d1e9c2b3fc28c5e42b896209e6.webp",
+      "sha256": "9344f807d9498dcb6695b419c6553e263628c7d1e9c2b3fc28c5e42b896209e6"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_ALL_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp",
+      "sha256": "a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_D6_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp",
+      "sha256": "a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/telemetry_2025_E1_88d78b38250e013f961d4f9a631e6517d43a3d593ef9642801597792b4da7f33.bin.gz",
+      "sha256": "88d78b38250e013f961d4f9a631e6517d43a3d593ef9642801597792b4da7f33"
+    },
+    {
+      "path": "backend/.cache/live/live_37c143853d7d5104/telemetry_2026_E1_244a4f43f5125990be443455851a97b8c7dd35dc1d79eb18397eb4263b1c2181.bin.gz",
+      "sha256": "244a4f43f5125990be443455851a97b8c7dd35dc1d79eb18397eb4263b1c2181"
+    },
+    {
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E1_ALL_5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0.webp",
+      "sha256": "5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0"
+    },
+    {
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E1_D3_5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0.webp",
+      "sha256": "5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0"
+    },
+    {
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E1_FLAGS_e11aebe961fc985cc09cb06ca3c2edcf608ee5542f9b1a1a6ea1ed16edcfb948.webp",
+      "sha256": "e11aebe961fc985cc09cb06ca3c2edcf608ee5542f9b1a1a6ea1ed16edcfb948"
+    },
+    {
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E2_ALL_10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639.webp",
+      "sha256": "10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639"
+    },
+    {
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E2_D3_10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639.webp",
+      "sha256": "10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639"
+    },
+    {
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E2_FLAGS_ca2fb24f9f3a124968da7fee366b1b75fc502f4d02e24afce2a08085b69bd5e3.webp",
+      "sha256": "ca2fb24f9f3a124968da7fee366b1b75fc502f4d02e24afce2a08085b69bd5e3"
+    },
+    {
+      "path": "backend/.cache/live/live_a246c268ccfe0501/diff_2025_E2_minus_2025_E1_ALL_1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472.webp",
+      "sha256": "1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472"
+    },
+    {
+      "path": "backend/.cache/live/live_a246c268ccfe0501/diff_2025_E2_minus_2025_E1_D3_1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472.webp",
+      "sha256": "1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472"
+    },
+    {
+      "path": "backend/.cache/live/live_a246c268ccfe0501/telemetry_2025_E1_5b478fd129919a162d0205cee77fb2f967211b8fcad074354d979a7a6b1fa129.bin.gz",
+      "sha256": "5b478fd129919a162d0205cee77fb2f967211b8fcad074354d979a7a6b1fa129"
+    },
+    {
+      "path": "backend/.cache/live/live_a246c268ccfe0501/telemetry_2025_E2_d5de40906bdbd825b1891ecf27bc281a1690aef0446ad3bbdb28b321f4770c7c.bin.gz",
+      "sha256": "d5de40906bdbd825b1891ecf27bc281a1690aef0446ad3bbdb28b321f4770c7c"
+    }
+  ],
+  "asset_verification": [
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/2025_E1_ALL_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp",
+      "path": "backend/.cache/live/live_37c143853d7d5104/2025_E1_ALL_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp",
+      "sha256": "aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/2025_E1_B56_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp",
+      "path": "backend/.cache/live/live_37c143853d7d5104/2025_E1_B56_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp",
+      "sha256": "aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/2025_E1_D6_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp",
+      "path": "backend/.cache/live/live_37c143853d7d5104/2025_E1_D6_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp",
+      "sha256": "aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/2025_E1_FLAGS_91c4d81a94fee950b1b87ca1985057bf56b729bf1a4b4ad316e74854358ac33b.webp",
+      "path": "backend/.cache/live/live_37c143853d7d5104/2025_E1_FLAGS_91c4d81a94fee950b1b87ca1985057bf56b729bf1a4b4ad316e74854358ac33b.webp",
+      "sha256": "91c4d81a94fee950b1b87ca1985057bf56b729bf1a4b4ad316e74854358ac33b",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/2026_E1_ALL_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp",
+      "path": "backend/.cache/live/live_37c143853d7d5104/2026_E1_ALL_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp",
+      "sha256": "d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/2026_E1_B56_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp",
+      "path": "backend/.cache/live/live_37c143853d7d5104/2026_E1_B56_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp",
+      "sha256": "d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/2026_E1_D6_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp",
+      "path": "backend/.cache/live/live_37c143853d7d5104/2026_E1_D6_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp",
+      "sha256": "d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/2026_E1_FLAGS_9344f807d9498dcb6695b419c6553e263628c7d1e9c2b3fc28c5e42b896209e6.webp",
+      "path": "backend/.cache/live/live_37c143853d7d5104/2026_E1_FLAGS_9344f807d9498dcb6695b419c6553e263628c7d1e9c2b3fc28c5e42b896209e6.webp",
+      "sha256": "9344f807d9498dcb6695b419c6553e263628c7d1e9c2b3fc28c5e42b896209e6",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_ALL_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp",
+      "path": "backend/.cache/live/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_ALL_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp",
+      "sha256": "a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_D6_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp",
+      "path": "backend/.cache/live/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_D6_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp",
+      "sha256": "a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/telemetry_2025_E1_88d78b38250e013f961d4f9a631e6517d43a3d593ef9642801597792b4da7f33.bin.gz",
+      "path": "backend/.cache/live/live_37c143853d7d5104/telemetry_2025_E1_88d78b38250e013f961d4f9a631e6517d43a3d593ef9642801597792b4da7f33.bin.gz",
+      "sha256": "88d78b38250e013f961d4f9a631e6517d43a3d593ef9642801597792b4da7f33",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_37c143853d7d5104/telemetry_2026_E1_244a4f43f5125990be443455851a97b8c7dd35dc1d79eb18397eb4263b1c2181.bin.gz",
+      "path": "backend/.cache/live/live_37c143853d7d5104/telemetry_2026_E1_244a4f43f5125990be443455851a97b8c7dd35dc1d79eb18397eb4263b1c2181.bin.gz",
+      "sha256": "244a4f43f5125990be443455851a97b8c7dd35dc1d79eb18397eb4263b1c2181",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_a246c268ccfe0501/2025_E1_ALL_5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0.webp",
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E1_ALL_5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0.webp",
+      "sha256": "5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_a246c268ccfe0501/2025_E1_D3_5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0.webp",
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E1_D3_5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0.webp",
+      "sha256": "5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_a246c268ccfe0501/2025_E1_FLAGS_e11aebe961fc985cc09cb06ca3c2edcf608ee5542f9b1a1a6ea1ed16edcfb948.webp",
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E1_FLAGS_e11aebe961fc985cc09cb06ca3c2edcf608ee5542f9b1a1a6ea1ed16edcfb948.webp",
+      "sha256": "e11aebe961fc985cc09cb06ca3c2edcf608ee5542f9b1a1a6ea1ed16edcfb948",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_a246c268ccfe0501/2025_E2_ALL_10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639.webp",
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E2_ALL_10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639.webp",
+      "sha256": "10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_a246c268ccfe0501/2025_E2_D3_10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639.webp",
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E2_D3_10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639.webp",
+      "sha256": "10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_a246c268ccfe0501/2025_E2_FLAGS_ca2fb24f9f3a124968da7fee366b1b75fc502f4d02e24afce2a08085b69bd5e3.webp",
+      "path": "backend/.cache/live/live_a246c268ccfe0501/2025_E2_FLAGS_ca2fb24f9f3a124968da7fee366b1b75fc502f4d02e24afce2a08085b69bd5e3.webp",
+      "sha256": "ca2fb24f9f3a124968da7fee366b1b75fc502f4d02e24afce2a08085b69bd5e3",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_a246c268ccfe0501/diff_2025_E2_minus_2025_E1_ALL_1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472.webp",
+      "path": "backend/.cache/live/live_a246c268ccfe0501/diff_2025_E2_minus_2025_E1_ALL_1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472.webp",
+      "sha256": "1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_a246c268ccfe0501/diff_2025_E2_minus_2025_E1_D3_1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472.webp",
+      "path": "backend/.cache/live/live_a246c268ccfe0501/diff_2025_E2_minus_2025_E1_D3_1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472.webp",
+      "sha256": "1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_a246c268ccfe0501/telemetry_2025_E1_5b478fd129919a162d0205cee77fb2f967211b8fcad074354d979a7a6b1fa129.bin.gz",
+      "path": "backend/.cache/live/live_a246c268ccfe0501/telemetry_2025_E1_5b478fd129919a162d0205cee77fb2f967211b8fcad074354d979a7a6b1fa129.bin.gz",
+      "sha256": "5b478fd129919a162d0205cee77fb2f967211b8fcad074354d979a7a6b1fa129",
+      "analysis_hash_verified": true
+    },
+    {
+      "url": "/api/v1/assets/live_a246c268ccfe0501/telemetry_2025_E2_d5de40906bdbd825b1891ecf27bc281a1690aef0446ad3bbdb28b321f4770c7c.bin.gz",
+      "path": "backend/.cache/live/live_a246c268ccfe0501/telemetry_2025_E2_d5de40906bdbd825b1891ecf27bc281a1690aef0446ad3bbdb28b321f4770c7c.bin.gz",
+      "sha256": "d5de40906bdbd825b1891ecf27bc281a1690aef0446ad3bbdb28b321f4770c7c",
+      "analysis_hash_verified": true
+    }
+  ],
+  "requests": [
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/sky?source=archive&discovery=known&ra=133.76021647484097&dec=-7.242224282436729&size=0.2&bands=all&epochs=all&include_diff=true&target_id=wise_0855"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/sky?source=archive&discovery=known&ra=133.76021647484097&dec=-7.242224282436729&size=0.2&bands=all&epochs=all&include_diff=true&target_id=wise_0855"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_D6_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_ALL_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_B56_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_FLAGS_91c4d81a94fee950b1b87ca1985057bf56b729bf1a4b4ad316e74854358ac33b.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_D6_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_ALL_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_B56_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_FLAGS_91c4d81a94fee950b1b87ca1985057bf56b729bf1a4b4ad316e74854358ac33b.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_D6_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_ALL_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_B56_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_FLAGS_9344f807d9498dcb6695b419c6553e263628c7d1e9c2b3fc28c5e42b896209e6.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_D6_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_ALL_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/telemetry_2025_E1_88d78b38250e013f961d4f9a631e6517d43a3d593ef9642801597792b4da7f33.bin.gz"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/sky?source=archive&discovery=known&ra=133.76021647484097&dec=-7.242224282436729&size=0.2&bands=all&epochs=all&include_diff=true&target_id=wise_0855"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/sky?source=archive&discovery=known&ra=133.76021647484097&dec=-7.242224282436729&size=0.2&bands=all&epochs=all&include_diff=true&target_id=wise_0855"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_D6_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_ALL_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_B56_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_FLAGS_91c4d81a94fee950b1b87ca1985057bf56b729bf1a4b4ad316e74854358ac33b.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_D6_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_ALL_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_B56_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_FLAGS_91c4d81a94fee950b1b87ca1985057bf56b729bf1a4b4ad316e74854358ac33b.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_D6_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_ALL_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_B56_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_FLAGS_9344f807d9498dcb6695b419c6553e263628c7d1e9c2b3fc28c5e42b896209e6.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_D6_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_ALL_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/telemetry_2025_E1_88d78b38250e013f961d4f9a631e6517d43a3d593ef9642801597792b4da7f33.bin.gz"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_D6_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_ALL_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_B56_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_FLAGS_91c4d81a94fee950b1b87ca1985057bf56b729bf1a4b4ad316e74854358ac33b.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_D6_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_ALL_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_B56_aebe6eabbf4e37457b8be9ad0c1707d3fc0da1d377bd2ace62bf21e7b9ba7c51.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2025_E1_FLAGS_91c4d81a94fee950b1b87ca1985057bf56b729bf1a4b4ad316e74854358ac33b.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_D6_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_ALL_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_B56_d7807439624e82c8bf86178c381a0d641bc5a7ebdeb6b06396644363c208c2d0.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/2026_E1_FLAGS_9344f807d9498dcb6695b419c6553e263628c7d1e9c2b3fc28c5e42b896209e6.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_D6_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/diff_2026_E1_minus_2025_E1_ALL_a7501d8a746c3af5cd1d8ea300595b5cbee9d6733c685abed4445255bf6cfc23.webp"
+    },
+    {
+      "target": "wise_0855",
+      "url": "http://localhost:5173/api/v1/assets/live_37c143853d7d5104/telemetry_2026_E1_244a4f43f5125990be443455851a97b8c7dd35dc1d79eb18397eb4263b1c2181.bin.gz"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/sky?source=archive&discovery=known&ra=248.16723597981732&dec=66.7550234840942&size=0.2&bands=all&epochs=all&include_diff=true&target_id=r_draconis"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/sky?source=archive&discovery=known&ra=248.16723597981732&dec=66.7550234840942&size=0.2&bands=all&epochs=all&include_diff=true&target_id=r_draconis"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/2025_E1_D3_5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/2025_E1_ALL_5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/2025_E1_FLAGS_e11aebe961fc985cc09cb06ca3c2edcf608ee5542f9b1a1a6ea1ed16edcfb948.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/2025_E2_D3_10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/2025_E1_D3_5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/2025_E1_ALL_5258e21509afb0aac1f7bc7ae4fc95907f6b4fcbda34ba221b7b4b6dd86eadd0.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/2025_E1_FLAGS_e11aebe961fc985cc09cb06ca3c2edcf608ee5542f9b1a1a6ea1ed16edcfb948.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/2025_E2_D3_10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/2025_E2_ALL_10109adaeec459e922441533c4590c25869a178d73e729febebe3c93ce67c639.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/2025_E2_FLAGS_ca2fb24f9f3a124968da7fee366b1b75fc502f4d02e24afce2a08085b69bd5e3.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/diff_2025_E2_minus_2025_E1_D3_1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/diff_2025_E2_minus_2025_E1_ALL_1fe4c64fe6a9727adcc84d868cedf02e2b6ccf9109c3f4195779fdf8fac24472.webp"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/assets/live_a246c268ccfe0501/telemetry_2025_E1_5b478fd129919a162d0205cee77fb2f967211b8fcad074354d979a7a6b1fa129.bin.gz"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/spectrum?source=archive&discovery=known&ra=248.16723597981732&dec=66.7550234840942&target_id=r_draconis"
+    },
+    {
+      "target": "r_draconis",
+      "url": "http://localhost:5173/api/v1/spectrum?source=archive&discovery=known&ra=248.16723597981732&dec=66.7550234840942&target_id=r_draconis"
+    }
+  ],
+  "errors": [],
+  "capture_script": {
+    "path": "scripts/capture_user_guide.mjs",
+    "sha256": "f20da2efdb81fc0593d29ca43899e77d0422dc6a9bd603f23ace7e1915ce5ffc"
+  }
+}

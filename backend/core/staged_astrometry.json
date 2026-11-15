@@ -1,0 +1,142 @@
+{
+  "status": "proposed_staged_profile_not_promoted",
+  "frame": "ICRS",
+  "propagation": "Astropy apply_space_motion; angular barycentric direction only. Parallax retained as source metadata, not applied; no radial velocity/perspective acceleration.",
+  "time_warning": "Preserve format+scale internally. J2016.0 TCB is not decimalyear2016.0 TT; do not replace exactMJD with rounded label.",
+  "targets": [
+    {
+      "target_id": "wise_0855",
+      "reference_ra_deg": 133.780984,
+      "reference_dec_deg": -7.243932,
+      "reference_time": {
+        "value": 57633.39,
+        "format": "mjd",
+        "scale": "utc",
+        "scale_caveat": "Publication epoch scale not explicit in table; UTC convention retained; negligible relative to positional uncertainty"
+      },
+      "pm_ra_cosdec_mas_yr": -8123.7,
+      "pm_dec_mas_yr": 673.2,
+      "parallax_mas_metadata_only": 439.0,
+      "source": {
+        "bytes": 4807,
+        "sha256": "1b63fb11cd01e0669eaaa7e09a0f46bb61323593656e9f886b0ff405b77656bb",
+        "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv"
+      },
+      "citation": "Kirkpatrick et al.2021 ApJS253:7 Table5; doi:10.3847/1538-4365/abd107; CDS J/ApJS/253/7/plx",
+      "caveat": "Full fit covariance unavailable; no observer-parallax or perspective correction",
+      "query_2025_8_tt": {
+        "ra_deg": 133.76021647484097,
+        "dec_deg": -7.242224282436729
+      },
+      "display_reference_epoch": "2016.6704644808742"
+    },
+    {
+      "target_id": "r_draconis",
+      "source_id": "1648328016354496384",
+      "reference_ra_deg": 248.1673783672889,
+      "reference_dec_deg": 66.75500674547219,
+      "reference_time": {
+        "value": 2016.0,
+        "format": "jyear",
+        "scale": "tcb"
+      },
+      "pm_ra_cosdec_mas_yr": -20.642811719160797,
+      "pm_dec_mas_yr": 6.148818852711324,
+      "parallax_mas_metadata_only": 1.2509180143740992,
+      "ruwe": 1.297982,
+      "source": {
+        "bytes": 690,
+        "sha256": "e2039397d2c804c42c44ea0d7d694a2ccb55d9b5c0580b026080d4b32326d1ef",
+        "url": "https://gea.esac.esa.int/tap-server/tap/sync"
+      },
+      "citation": "Gaia DR3 gaiadr3.gaia_source; exact source_id and query retained in Phase3 audit",
+      "caveat": "Unresolved infrared photocenter may differ; Epsilon Indi highRUWE4.30/binary and RW Aur binary/variable especially limit precision",
+      "query_2025_8_tt": {
+        "ra_deg": 248.16723597981732,
+        "dec_deg": 66.7550234840942
+      },
+      "display_reference_epoch": "J2016.0"
+    },
+    {
+      "target_id": "rw_aurigae",
+      "source_id": "156430822114424576",
+      "reference_ra_deg": 76.95608119552952,
+      "reference_dec_deg": 30.401204589097233,
+      "reference_time": {
+        "value": 2016.0,
+        "format": "jyear",
+        "scale": "tcb"
+      },
+      "pm_ra_cosdec_mas_yr": 2.6406431770317083,
+      "pm_dec_mas_yr": -27.397582540455325,
+      "parallax_mas_metadata_only": 6.406249329219477,
+      "ruwe": 1.5003728,
+      "source": {
+        "bytes": 690,
+        "sha256": "e2039397d2c804c42c44ea0d7d694a2ccb55d9b5c0580b026080d4b32326d1ef",
+        "url": "https://gea.esac.esa.int/tap-server/tap/sync"
+      },
+      "citation": "Gaia DR3 gaiadr3.gaia_source; exact source_id and query retained in Phase3 audit",
+      "caveat": "Unresolved infrared photocenter may differ; Epsilon Indi highRUWE4.30/binary and RW Aur binary/variable especially limit precision",
+      "query_2025_8_tt": {
+        "ra_deg": 76.95608953000796,
+        "dec_deg": 30.401130005742516
+      },
+      "display_reference_epoch": "J2016.0"
+    },
+    {
+      "target_id": "barnards_star",
+      "source_id": "4472832130942575872",
+      "reference_ra_deg": 269.44850252543836,
+      "reference_dec_deg": 4.739420051112412,
+      "reference_time": {
+        "value": 2016.0,
+        "format": "jyear",
+        "scale": "tcb"
+      },
+      "pm_ra_cosdec_mas_yr": -801.5509783684709,
+      "pm_dec_mas_yr": 10362.394206546573,
+      "parallax_mas_metadata_only": 546.975939730948,
+      "ruwe": 1.0848505,
+      "source": {
+        "bytes": 690,
+        "sha256": "e2039397d2c804c42c44ea0d7d694a2ccb55d9b5c0580b026080d4b32326d1ef",
+        "url": "https://gea.esac.esa.int/tap-server/tap/sync"
+      },
+      "citation": "Gaia DR3 gaiadr3.gaia_source; exact source_id and query retained in Phase3 audit",
+      "caveat": "Unresolved infrared photocenter may differ; Epsilon Indi highRUWE4.30/binary and RW Aur binary/variable especially limit precision",
+      "query_2025_8_tt": {
+        "ra_deg": 269.44631291911435,
+        "dec_deg": 4.767629180929986
+      },
+      "display_reference_epoch": "J2016.0"
+    },
+    {
+      "target_id": "eps_indi_b",
+      "source_id": "6412596012146801152",
+      "reference_ra_deg": 331.07645259656397,
+      "reference_dec_deg": -56.79381206688221,
+      "reference_time": {
+        "value": 2016.0,
+        "format": "jyear",
+        "scale": "tcb"
+      },
+      "pm_ra_cosdec_mas_yr": 3981.97666296105,
+      "pm_dec_mas_yr": -2466.8318147663504,
+      "parallax_mas_metadata_only": 270.6580324694526,
+      "ruwe": 4.2955413,
+      "source": {
+        "bytes": 690,
+        "sha256": "e2039397d2c804c42c44ea0d7d694a2ccb55d9b5c0580b026080d4b32326d1ef",
+        "url": "https://gea.esac.esa.int/tap-server/tap/sync"
+      },
+      "citation": "Gaia DR3 gaiadr3.gaia_source; exact source_id and query retained in Phase3 audit",
+      "caveat": "Unresolved infrared photocenter may differ; Epsilon Indi highRUWE4.30/binary and RW Aur binary/variable especially limit precision",
+      "query_2025_8_tt": {
+        "ra_deg": 331.0962496336297,
+        "dec_deg": -56.80052585840758
+      },
+      "display_reference_epoch": "J2016.0"
+    }
+  ]
+}

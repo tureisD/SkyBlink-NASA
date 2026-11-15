@@ -1,0 +1,1026 @@
+{
+  "format": "skyblink.documentation-relocations/1",
+  "date": "2026-11-15",
+  "scope": "Paths changed; scientific JSON and screenshot bytes are preserved. Old paths inside immutable evidence remain historical identifiers. Markdown links and executable readers use current paths.",
+  "files": [
+    {
+      "old": "docs/102-channel-cube-feasibility.md",
+      "new": "docs/research/102-channel-cube-feasibility.md",
+      "sha256_before": "a2d264753676f6c9edfc87287211b27a640746418c51e8f5b1fce6e3d35b5141",
+      "bytes": 4195,
+      "sha256_after": "a2d264753676f6c9edfc87287211b27a640746418c51e8f5b1fce6e3d35b5141",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/catalog-acquisition-source-review.md",
+      "new": "docs/research/catalog-acquisition-source-review.md",
+      "sha256_before": "e786bb1b759b5cba88703b78626fb98e0fa32dd818a3f6eba0e115e41718e2b6",
+      "bytes": 7854,
+      "sha256_after": "4137432b1d62e97cc2a75d462a4ccf6e7abbc3f69ef7b9ecbc60dee24494a8f6",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/comparison-retrieval-decision.md",
+      "new": "docs/decisions/comparison-retrieval-decision.md",
+      "sha256_before": "d66f728c5746dfcc6c7728e81f2bb4dbf3937eb27a1568b99047d9f027dd89bd",
+      "bytes": 3548,
+      "sha256_after": "04b5068c09eb8e2e3c9d9ee9eb50c870cce05321a0e06e3a8395b85d6164bffb",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/contributing.md",
+      "new": "docs/guides/contributing.md",
+      "sha256_before": "42688aa86458184a7d8bce720df81d76d33cc94dd70cbbe1d8eca1f71580b410",
+      "bytes": 7516,
+      "sha256_after": "6a63b0a967c29aead553ef8f3c121b928c05d5fc83007f281bfb542008a343fd",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/deployment.md",
+      "new": "docs/guides/deployment.md",
+      "sha256_before": "0dd54097c569e83574165436994b2c049eb661706882e4eb71d5f61ef9b561ad",
+      "bytes": 5632,
+      "sha256_after": "3cb7dfac217a0c19459dd68cf9f523d47a5cf258f8ac81bb3993fd8152b71afb",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/documentation-writing-plan.md",
+      "new": "docs/plans/documentation-writing-plan.md",
+      "sha256_before": "53afcf95d644acec99f94e94072039c6b56dc1df8718fe1ffb8efbc8fa2eeefa",
+      "bytes": 42518,
+      "sha256_after": "0e81c79c1b03dd9143d5ff90015b1722326648ec554b8d75c70d05c03d8c0f19",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/event-compliance.md",
+      "new": "docs/reference/event-compliance.md",
+      "sha256_before": "20409f7cd8e43652882252cdd09a66a3555e83fd2c5730d4ae6799fc3bfff17f",
+      "bytes": 3218,
+      "sha256_after": "76f46749cb0c75bf80ae2c439ba5c167e830688c7fe6101091c51e536602dffa",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/known-exposure-contract-decision.md",
+      "new": "docs/decisions/known-exposure-contract-decision.md",
+      "sha256_before": "858de77e68a6e95774f95ee9806a5bb0b8a03f85cb19e14da2b8dd75a093e8d5",
+      "bytes": 3626,
+      "sha256_after": "d4d89ad7360c4501d19751db270b8edde2b1da38e68785ad0e997e291f223f5a",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/o1-contract-decisions.md",
+      "new": "docs/decisions/o1-contract-decisions.md",
+      "sha256_before": "ba338ae4667f0299f7beb8263990fb047a5ec0e71adc2c394fd0b1f53e345f08",
+      "bytes": 34294,
+      "sha256_after": "96cb6b6c2d3aadae946143f8f3f2c3abe2a314f3ae0c717c3b81ab9d042859d5",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/observing-guide.md",
+      "new": "docs/guides/observing-guide.md",
+      "sha256_before": "a175030ab6427c2750c32d47f1ed4c3e645b264cbdca440ce4fa8714ed8bb49c",
+      "bytes": 8496,
+      "sha256_after": "a175030ab6427c2750c32d47f1ed4c3e645b264cbdca440ce4fa8714ed8bb49c",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase1-data-inventory.json",
+      "new": "docs/evidence/phase1/phase1-data-inventory.json",
+      "sha256_before": "868591da23e832683423bbd3aa350336dce09520802540ccf708818f34f49dea",
+      "bytes": 299329,
+      "sha256_after": "e48f3aceef16adf4b18247f7f35f44b1da27924ebd07420aeac053c6e9e1b298",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase2-live-baseline.json",
+      "new": "docs/evidence/phase2/phase2-live-baseline.json",
+      "sha256_before": "4c6ded3bc7c25eb062f9a67f0fa0e15923e115bcebd58c01985f0b2766dd7f8c",
+      "bytes": 2133,
+      "sha256_after": "4c6ded3bc7c25eb062f9a67f0fa0e15923e115bcebd58c01985f0b2766dd7f8c",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase2-live-detector-edge.json",
+      "new": "docs/evidence/phase2/phase2-live-detector-edge.json",
+      "sha256_before": "cb06edb4197093e6e03beefdd8bf65b384569438d380a9561ea3080b12e1f635",
+      "bytes": 2590,
+      "sha256_after": "cb06edb4197093e6e03beefdd8bf65b384569438d380a9561ea3080b12e1f635",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase2-live-extended-budget.json",
+      "new": "docs/evidence/phase2/phase2-live-extended-budget.json",
+      "sha256_before": "9f5307365d2c178160b588e5cbf20aa37ccd39500b8da36ae21906a4e8a5e9db",
+      "bytes": 1900,
+      "sha256_after": "9f5307365d2c178160b588e5cbf20aa37ccd39500b8da36ae21906a4e8a5e9db",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase2-live-results.json",
+      "new": "docs/evidence/phase2/phase2-live-results.json",
+      "sha256_before": "36ca005904cfdf2ba2363bc6e4188ea06bb806da4a79c028ef8ceac49e60c4bc",
+      "bytes": 22119,
+      "sha256_after": "36ca005904cfdf2ba2363bc6e4188ea06bb806da4a79c028ef8ceac49e60c4bc",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase2-real-spectral-signature-unpadded.json",
+      "new": "docs/evidence/phase2/phase2-real-spectral-signature-unpadded.json",
+      "sha256_before": "97ab3cee5fd153ad67e00e50ed0989899ce1baa981df540fe8c7102bf0eb627c",
+      "bytes": 1056,
+      "sha256_after": "97ab3cee5fd153ad67e00e50ed0989899ce1baa981df540fe8c7102bf0eb627c",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase2-real-spectral-signature.json",
+      "new": "docs/evidence/phase2/phase2-real-spectral-signature.json",
+      "sha256_before": "30f1ec88846576eb0aa22118e0a68c092791ddcb0528380c72c9ceb60463934f",
+      "bytes": 2228,
+      "sha256_after": "30f1ec88846576eb0aa22118e0a68c092791ddcb0528380c72c9ceb60463934f",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase2-verification.md",
+      "new": "docs/verification/phase2-verification.md",
+      "sha256_before": "c61d0d261d373cb058c10dd2cd489d2bbfc46c667e3db19fda668fc050402453",
+      "bytes": 14105,
+      "sha256_after": "ca9904cdd976e58fff38a8373c2fef558a56e6b1c191bb4b496a178e508ead81",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase3-astrometry-results.json",
+      "new": "docs/evidence/phase3/phase3-astrometry-results.json",
+      "sha256_before": "e92b1924b02e254d63ee277eb3510b7347897c759283032c319c5bf05a63ca41",
+      "bytes": 438119,
+      "sha256_after": "e92b1924b02e254d63ee277eb3510b7347897c759283032c319c5bf05a63ca41",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase3-astrometry-results.md",
+      "new": "docs/verification/phase3-astrometry-results.md",
+      "sha256_before": "622dcf3b4f2695fa3f9b9315f3a14860e596b3211138f75fe3055e98ff5bf4ff",
+      "bytes": 3154,
+      "sha256_after": "622dcf3b4f2695fa3f9b9315f3a14860e596b3211138f75fe3055e98ff5bf4ff",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase3-calibration-audit.json",
+      "new": "docs/evidence/phase3/phase3-calibration-audit.json",
+      "sha256_before": "8beb8e141a889fc769ee7e8a8fe32b928539a07a8c55ca4f6cb3dabbe43e5649",
+      "bytes": 26598,
+      "sha256_after": "8beb8e141a889fc769ee7e8a8fe32b928539a07a8c55ca4f6cb3dabbe43e5649",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase3-calibration-audit.md",
+      "new": "docs/verification/phase3-calibration-audit.md",
+      "sha256_before": "36075e1358353585f22dee8d557ff568e5ab2d143eea8694f9b7e65c9656828d",
+      "bytes": 13107,
+      "sha256_after": "9e4ba50039d0f639c270e1451d41c23d8cdeed4f9f48da02a1abab64d61deea8",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase3-contract-decision.md",
+      "new": "docs/decisions/phase3-contract-decision.md",
+      "sha256_before": "15c6cee9cafa7368344c87d0d4fedc656383d73bd84730502b80991ced9d8f33",
+      "bytes": 2575,
+      "sha256_after": "15c6cee9cafa7368344c87d0d4fedc656383d73bd84730502b80991ced9d8f33",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase3-science-results.json",
+      "new": "docs/evidence/phase3/phase3-science-results.json",
+      "sha256_before": "15b31d406e68c910a9d96ff2babe8222632898c993b457b0e12dadf642225466",
+      "bytes": 146284,
+      "sha256_after": "15b31d406e68c910a9d96ff2babe8222632898c993b457b0e12dadf642225466",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase3-verification.md",
+      "new": "docs/verification/phase3-verification.md",
+      "sha256_before": "433f2d3da35e73aca42c1a77ab95f775fa872e7f830f3f81a14e841ef32b46ae",
+      "bytes": 14283,
+      "sha256_after": "709b42220489405404d500f0b3c67c07f83001200c101f5b1f6a63e8f219b681",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase4-contract-decision.md",
+      "new": "docs/decisions/phase4-contract-decision.md",
+      "sha256_before": "f5e138ea144b7b17c68838e16146e078cf642e6f5078b01ca7388746261d86ac",
+      "bytes": 3234,
+      "sha256_after": "f5e138ea144b7b17c68838e16146e078cf642e6f5078b01ca7388746261d86ac",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-curated-bundle-index.json",
+      "new": "docs/evidence/phase4/phase4-curated-bundle-index.json",
+      "sha256_before": "6c4dc3870b711c29e596631ed94d9f05dfe84511d0b2d3135d2215411392bc18",
+      "bytes": 9339,
+      "sha256_after": "6c4dc3870b711c29e596631ed94d9f05dfe84511d0b2d3135d2215411392bc18",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-evidence-walkthrough.md",
+      "new": "docs/guides/phase4-evidence-walkthrough.md",
+      "sha256_before": "d061b890304cd0683833ed983d21e24d3be8832adc2cb67e2bec4996eec5eb37",
+      "bytes": 7736,
+      "sha256_after": "8f1c9da45004dfd7a0f4e91f8b24f3095797737d70f0804b53386937f21c1753",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase4-independent-replay-results.json",
+      "new": "docs/evidence/phase4/phase4-independent-replay-results.json",
+      "sha256_before": "cf9475e4b1e5f17c89e748fe42f1b2e5e6a8a4765ceebc6b0f996bba0f997600",
+      "bytes": 14375,
+      "sha256_after": "cf9475e4b1e5f17c89e748fe42f1b2e5e6a8a4765ceebc6b0f996bba0f997600",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-null-bundle-index.json",
+      "new": "docs/evidence/phase4/phase4-null-bundle-index.json",
+      "sha256_before": "6ab98594cfb6c627bb226107b3f49525d25547109d4cc09878ec765c57e2ff85",
+      "bytes": 15877,
+      "sha256_after": "6ab98594cfb6c627bb226107b3f49525d25547109d4cc09878ec765c57e2ff85",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-api-coordinates.json",
+      "new": "docs/evidence/phase4/phase4-online-api-coordinates.json",
+      "sha256_before": "af7db3122f395532dc8120c95e77db9ab991419bfe3731ab90feeae7e11317b1",
+      "bytes": 16638,
+      "sha256_after": "af7db3122f395532dc8120c95e77db9ab991419bfe3731ab90feeae7e11317b1",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-api-targets.json",
+      "new": "docs/evidence/phase4/phase4-online-api-targets.json",
+      "sha256_before": "ece3b68de449dfa34aac9eecb9276defd3a5ecd2e7b7609afcbb8771398c2669",
+      "bytes": 78843,
+      "sha256_after": "ece3b68de449dfa34aac9eecb9276defd3a5ecd2e7b7609afcbb8771398c2669",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-api-wrap-retry.json",
+      "new": "docs/evidence/phase4/phase4-online-api-wrap-retry.json",
+      "sha256_before": "dd77778cb9c477bdd78cfddae1aa9bc3d50a16ff5938f52a86b94b864e592ecc",
+      "bytes": 8045,
+      "sha256_after": "dd77778cb9c477bdd78cfddae1aa9bc3d50a16ff5938f52a86b94b864e592ecc",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-contract-decision.md",
+      "new": "docs/decisions/phase4-online-contract-decision.md",
+      "sha256_before": "dd758d6bc39ffce6d0ac154fa8e7fbb817101640b720002c53e4b1465d466678",
+      "bytes": 4418,
+      "sha256_after": "dd758d6bc39ffce6d0ac154fa8e7fbb817101640b720002c53e4b1465d466678",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-discovery-geometry-final-policy.json",
+      "new": "docs/evidence/phase4/phase4-online-discovery-geometry-final-policy.json",
+      "sha256_before": "dd6c050965cc9a7d9014e0f04268e62d6ef4274a9b69c062849cf5d706a49e72",
+      "bytes": 1713665,
+      "sha256_after": "dd6c050965cc9a7d9014e0f04268e62d6ef4274a9b69c062849cf5d706a49e72",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-discovery-geometry-retry3.json",
+      "new": "docs/evidence/phase4/phase4-online-discovery-geometry-retry3.json",
+      "sha256_before": "adf4120e7d0336a3698e8f8e8f4a3bd2d5fb6759989f5859e423b94a4791a921",
+      "bytes": 1594328,
+      "sha256_after": "adf4120e7d0336a3698e8f8e8f4a3bd2d5fb6759989f5859e423b94a4791a921",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-discovery-geometry-wrap-poles.json",
+      "new": "docs/evidence/phase4/phase4-online-discovery-geometry-wrap-poles.json",
+      "sha256_before": "265c4cbb67aab38345520213cf7670dc8133730b72234c7386fc67c9bac89542",
+      "bytes": 417200,
+      "sha256_after": "265c4cbb67aab38345520213cf7670dc8133730b72234c7386fc67c9bac89542",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-discovery-ngp-combined.json",
+      "new": "docs/evidence/phase4/phase4-online-discovery-ngp-combined.json",
+      "sha256_before": "7342a159c938706a03f3950ea1d7bd534d466549410487f643879433392dd123",
+      "bytes": 1769,
+      "sha256_after": "7342a159c938706a03f3950ea1d7bd534d466549410487f643879433392dd123",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-discovery-ngp-deep.json",
+      "new": "docs/evidence/phase4/phase4-online-discovery-ngp-deep.json",
+      "sha256_before": "bb533c0bf0c970e838c0e69f9b583821df66a71a24f1a354e0b26a33ebfaf39c",
+      "bytes": 1959,
+      "sha256_after": "bb533c0bf0c970e838c0e69f9b583821df66a71a24f1a354e0b26a33ebfaf39c",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-discovery-ngp-transport-initial.json",
+      "new": "docs/evidence/phase4/phase4-online-discovery-ngp-transport-initial.json",
+      "sha256_before": "6d5a4bcc5fec5ec1ff6d4951b545920357df6bfa643b3f309de0f579cf1c5225",
+      "bytes": 9386,
+      "sha256_after": "6d5a4bcc5fec5ec1ff6d4951b545920357df6bfa643b3f309de0f579cf1c5225",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-discovery-science-retry3.json",
+      "new": "docs/evidence/phase4/phase4-online-discovery-science-retry3.json",
+      "sha256_before": "efad1c3d09ee17af353a46c58b6f892f9e82a5d0cfdfab848341856ccf5372f3",
+      "bytes": 306554,
+      "sha256_after": "efad1c3d09ee17af353a46c58b6f892f9e82a5d0cfdfab848341856ccf5372f3",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-discovery-sgp-combined.json",
+      "new": "docs/evidence/phase4/phase4-online-discovery-sgp-combined.json",
+      "sha256_before": "455921236c0a031a00e3e97a0b8459ddc5e319655dbd5089b92e380ef516ae34",
+      "bytes": 1769,
+      "sha256_after": "455921236c0a031a00e3e97a0b8459ddc5e319655dbd5089b92e380ef516ae34",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-discovery-sgp-sia.json",
+      "new": "docs/evidence/phase4/phase4-online-discovery-sgp-sia.json",
+      "sha256_before": "d9179c1fbcb24761a35d1c6a4297769e5cfce7ec4464ec01af51ca8e71548832",
+      "bytes": 7659,
+      "sha256_after": "d9179c1fbcb24761a35d1c6a4297769e5cfce7ec4464ec01af51ca8e71548832",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-discovery-south-pole-post.json",
+      "new": "docs/evidence/phase4/phase4-online-discovery-south-pole-post.json",
+      "sha256_before": "96e1c2ba5f0b847477df4a47e66dd1d34ee372e3c0f284dc40e5c504b84ea948",
+      "bytes": 3103,
+      "sha256_after": "96e1c2ba5f0b847477df4a47e66dd1d34ee372e3c0f284dc40e5c504b84ea948",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-discovery.md",
+      "new": "docs/verification/phase4-online-discovery.md",
+      "sha256_before": "8801d603a48357af9081517c4afba2ab34db95f1085e92217693944423ab3663",
+      "bytes": 8066,
+      "sha256_after": "54f5604550adca5e8c065f358c80ffd461fff309b7454c742dd9ad1871a1e6eb",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase4-online-independent-replay.json",
+      "new": "docs/evidence/phase4/phase4-online-independent-replay.json",
+      "sha256_before": "8865da3fd4d4762155c7b07d90b9c531cfcd4e42751dbd44c006e937091fd7f9",
+      "bytes": 32649,
+      "sha256_after": "8865da3fd4d4762155c7b07d90b9c531cfcd4e42751dbd44c006e937091fd7f9",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-null-replay-bundle-index.json",
+      "new": "docs/evidence/phase4/phase4-online-null-replay-bundle-index.json",
+      "sha256_before": "35a39e5bcbbcb21d5f841dc47c065c2c95c4c593443aed120e4d734f2577f3aa",
+      "bytes": 12555,
+      "sha256_after": "35a39e5bcbbcb21d5f841dc47c065c2c95c4c593443aed120e4d734f2577f3aa",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-publication-replay-bundle-index.json",
+      "new": "docs/evidence/phase4/phase4-online-publication-replay-bundle-index.json",
+      "sha256_before": "77f2e4a4bc4d0c296bada15d3e6e4c5fc0b3a982474008f22c9261a51bfe9e9c",
+      "bytes": 19964,
+      "sha256_after": "77f2e4a4bc4d0c296bada15d3e6e4c5fc0b3a982474008f22c9261a51bfe9e9c",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-replay-bundle-index.json",
+      "new": "docs/evidence/phase4/phase4-online-replay-bundle-index.json",
+      "sha256_before": "2e3d44151e004438dd85f3032448c5a3c2b57371788141306161e468a7f2b595",
+      "bytes": 24551,
+      "sha256_after": "2e3d44151e004438dd85f3032448c5a3c2b57371788141306161e468a7f2b595",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-verification.md",
+      "new": "docs/verification/phase4-online-verification.md",
+      "sha256_before": "88e90665118dbd772db5db0581a2b6f3a214cd9ca2d6cda10662ddb63d14edcb",
+      "bytes": 14306,
+      "sha256_after": "f20020e5c325cc1d850994127ded0e99572edcd2e2da301d3a0e8cc3da50f8f5",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase4-replay-schema.md",
+      "new": "docs/reference/phase4-replay-schema.md",
+      "sha256_before": "c4b5fc1a60edc5c86ffb4a363ed60c79bddb743dcdd0b2a0777e89e873c05f21",
+      "bytes": 15846,
+      "sha256_after": "c4b5fc1a60edc5c86ffb4a363ed60c79bddb743dcdd0b2a0777e89e873c05f21",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-control-lock.json",
+      "new": "docs/evidence/phase4/phase4-science-control-lock.json",
+      "sha256_before": "2d95821dedca25f99ba05dc83d2be9706291d61a8f6623273da5f51c2b3b3247",
+      "bytes": 489,
+      "sha256_after": "2d95821dedca25f99ba05dc83d2be9706291d61a8f6623273da5f51c2b3b3247",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-coordinate-profile.json",
+      "new": "docs/evidence/phase4/phase4-science-coordinate-profile.json",
+      "sha256_before": "2643a8c9502fd916b3c90ddb8e32551c7760d742000a80a88b266f09fca620a0",
+      "bytes": 6203,
+      "sha256_after": "2643a8c9502fd916b3c90ddb8e32551c7760d742000a80a88b266f09fca620a0",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-amendment-exact.json",
+      "new": "docs/evidence/phase4/phase4-science-online-amendment-exact.json",
+      "sha256_before": "71c349523647ba8d275f6d34c128af93fcd273ea6e50b76800ff88748f4feb98",
+      "bytes": 1596,
+      "sha256_after": "71c349523647ba8d275f6d34c128af93fcd273ea6e50b76800ff88748f4feb98",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-catalog-results.json",
+      "new": "docs/evidence/phase4/phase4-science-online-catalog-results.json",
+      "sha256_before": "3c7c8d07d765cb29a2768b0ebce39080cf54296b77a1cfbf4f5bb20ceb30f14e",
+      "bytes": 2212,
+      "sha256_after": "3c7c8d07d765cb29a2768b0ebce39080cf54296b77a1cfbf4f5bb20ceb30f14e",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-historical-diagnostic.json",
+      "new": "docs/evidence/phase4/phase4-science-online-historical-diagnostic.json",
+      "sha256_before": "98ada406459a5f5ccd505082c977a2200aa49c015a59e5eb29bf516d6f97f24c",
+      "bytes": 43470,
+      "sha256_after": "98ada406459a5f5ccd505082c977a2200aa49c015a59e5eb29bf516d6f97f24c",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-historical-eligibility.json",
+      "new": "docs/evidence/phase4/phase4-science-online-historical-eligibility.json",
+      "sha256_before": "f82e8b5403790e9bd4bf091ec959cc8c7fb36b91b943befa403d3bb834937cc3",
+      "bytes": 6784,
+      "sha256_after": "f82e8b5403790e9bd4bf091ec959cc8c7fb36b91b943befa403d3bb834937cc3",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_b60-controls.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_b60-controls.json",
+      "sha256_before": "7ac348d533919a3d0ab819cc17f1fc4866443ebc529097a591878a0d1cd399be",
+      "bytes": 20775,
+      "sha256_after": "7ac348d533919a3d0ab819cc17f1fc4866443ebc529097a591878a0d1cd399be",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_b60-D1-measurements.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_b60-D1-measurements.json",
+      "sha256_before": "8e28b49f78b5f4ab3fa9eed0fff26f0b44ee56283de765f4838e6bc084d2e0d0",
+      "bytes": 31839,
+      "sha256_after": "8e28b49f78b5f4ab3fa9eed0fff26f0b44ee56283de765f4838e6bc084d2e0d0",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_b60-D1-pair-lock.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_b60-D1-pair-lock.json",
+      "sha256_before": "69935432f45688ef488a89b4310a19c4e252fcf7e20e808f0988dca757e19415",
+      "bytes": 8966,
+      "sha256_after": "69935432f45688ef488a89b4310a19c4e252fcf7e20e808f0988dca757e19415",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_b60-D1-preflight.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_b60-D1-preflight.json",
+      "sha256_before": "ac2b51d950dba5a23cb53ea89bfd99ee82e0808c6aa4195025a519359096ed0b",
+      "bytes": 110831,
+      "sha256_after": "ac2b51d950dba5a23cb53ea89bfd99ee82e0808c6aa4195025a519359096ed0b",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_b60-D3-measurements.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_b60-D3-measurements.json",
+      "sha256_before": "46094e9d151151355d7918379d7e392feec03d665a2a98a8ffc3fbb2ebd0c056",
+      "bytes": 71042,
+      "sha256_after": "46094e9d151151355d7918379d7e392feec03d665a2a98a8ffc3fbb2ebd0c056",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_b60-D3-pair-lock.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_b60-D3-pair-lock.json",
+      "sha256_before": "f97afe4c8b46858327cb43e099b8268da4dd85d4f15167c5c5564d3a58a39919",
+      "bytes": 8968,
+      "sha256_after": "f97afe4c8b46858327cb43e099b8268da4dd85d4f15167c5c5564d3a58a39919",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_b60-D3-preflight.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_b60-D3-preflight.json",
+      "sha256_before": "f5448e5fae756ca45c5bf1d84033152aa0b116a582149e8f3f41c4840bb7b4a2",
+      "bytes": 107554,
+      "sha256_after": "f5448e5fae756ca45c5bf1d84033152aa0b116a582149e8f3f41c4840bb7b4a2",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_b60-pair-ranks.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_b60-pair-ranks.json",
+      "sha256_before": "2064ab09bbb3628aee8f071b4ad27dd9cb9f3baeade692359de1f064a82c79b6",
+      "bytes": 50855,
+      "sha256_after": "2064ab09bbb3628aee8f071b4ad27dd9cb9f3baeade692359de1f064a82c79b6",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_galactic_pole-controls.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_galactic_pole-controls.json",
+      "sha256_before": "46302334aad02d5cf4b19895dc10b3ee412e65dadbb57605a036ffac8ed29e4c",
+      "bytes": 12686,
+      "sha256_after": "46302334aad02d5cf4b19895dc10b3ee412e65dadbb57605a036ffac8ed29e4c",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_galactic_pole-D1-pair-lock.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_galactic_pole-D1-pair-lock.json",
+      "sha256_before": "29baf9535a0d583e676093937ff65245b378f3a7ced1955c748c37ecded5234a",
+      "bytes": 85389,
+      "sha256_after": "29baf9535a0d583e676093937ff65245b378f3a7ced1955c748c37ecded5234a",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_galactic_pole-D1-retry-pair-lock.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_galactic_pole-D1-retry-pair-lock.json",
+      "sha256_before": "c95c762775e69524753ee4e402459caa40f4cd8113e97ec5c2133d0d9b210ae0",
+      "bytes": 87930,
+      "sha256_after": "c95c762775e69524753ee4e402459caa40f4cd8113e97ec5c2133d0d9b210ae0",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_galactic_pole-D3-isolation-audit.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_galactic_pole-D3-isolation-audit.json",
+      "sha256_before": "94e0285f11ed0d903d7de57d8f27525c85e98053153edba6b99822d747b914f6",
+      "bytes": 8509,
+      "sha256_after": "94e0285f11ed0d903d7de57d8f27525c85e98053153edba6b99822d747b914f6",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_galactic_pole-D3-measurements.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_galactic_pole-D3-measurements.json",
+      "sha256_before": "ac6496a24ffd6e13816b6c7eef3bb707c8bf6f3c3cd246c0c78d07ce16de5480",
+      "bytes": 31890,
+      "sha256_after": "ac6496a24ffd6e13816b6c7eef3bb707c8bf6f3c3cd246c0c78d07ce16de5480",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_galactic_pole-D3-pair-lock.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_galactic_pole-D3-pair-lock.json",
+      "sha256_before": "2c464b1a9fb350ceb713d6afa68a5cd04f01b24e4ca4ac0f0dfa3d64ff6e9a0e",
+      "bytes": 7231,
+      "sha256_after": "2c464b1a9fb350ceb713d6afa68a5cd04f01b24e4ca4ac0f0dfa3d64ff6e9a0e",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_galactic_pole-D3-preflight.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_galactic_pole-D3-preflight.json",
+      "sha256_before": "2e957e84d2e3591dd9334356be94d708782cfc0c7b36ef25de00c2edb518a489",
+      "bytes": 103049,
+      "sha256_after": "2e957e84d2e3591dd9334356be94d708782cfc0c7b36ef25de00c2edb518a489",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-north_galactic_pole-pair-ranks.json",
+      "new": "docs/evidence/phase4/phase4-science-online-north_galactic_pole-pair-ranks.json",
+      "sha256_before": "81c742860974a5345371770c8e484a6c30401d5ffe7d3d0ef79b5aac2d09260d",
+      "bytes": 45315,
+      "sha256_after": "81c742860974a5345371770c8e484a6c30401d5ffe7d3d0ef79b5aac2d09260d",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-preregistration.json",
+      "new": "docs/evidence/phase4/phase4-science-online-preregistration.json",
+      "sha256_before": "e913d6ae59d84f084a8c09cef50b8a18cf2e76cad45460351d2bf02e9a2c5d5a",
+      "bytes": 5674,
+      "sha256_after": "e913d6ae59d84f084a8c09cef50b8a18cf2e76cad45460351d2bf02e9a2c5d5a",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-results.json",
+      "new": "docs/evidence/phase4/phase4-science-online-results.json",
+      "sha256_before": "a222177884468e1994a1763cdf6843e876e7c8cdf3919018f85b4ad4b4356571",
+      "bytes": 28057,
+      "sha256_after": "a222177884468e1994a1763cdf6843e876e7c8cdf3919018f85b4ad4b4356571",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_b60-controls.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_b60-controls.json",
+      "sha256_before": "f114c0a13f5326c2cd927f74c0236556760610414ad832b977635c6c3ff4ee80",
+      "bytes": 16236,
+      "sha256_after": "f114c0a13f5326c2cd927f74c0236556760610414ad832b977635c6c3ff4ee80",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_b60-D1-pair-lock.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_b60-D1-pair-lock.json",
+      "sha256_before": "92409284f193dd4838eb41f1a2ddf3620003115fcb7650030ee1a9ebd4a21410",
+      "bytes": 80677,
+      "sha256_after": "92409284f193dd4838eb41f1a2ddf3620003115fcb7650030ee1a9ebd4a21410",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_b60-D3-measurements.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_b60-D3-measurements.json",
+      "sha256_before": "e38a99bcf626bf7e236efac1e2eaf789e30fb07884a8089cd2aa28cde6717a4c",
+      "bytes": 51490,
+      "sha256_after": "e38a99bcf626bf7e236efac1e2eaf789e30fb07884a8089cd2aa28cde6717a4c",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_b60-D3-pair-lock.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_b60-D3-pair-lock.json",
+      "sha256_before": "7a133c0c61dbfa96beba9676956bbdfdfe93e7a38cdef3035fd07de1ced8ed98",
+      "bytes": 12002,
+      "sha256_after": "7a133c0c61dbfa96beba9676956bbdfdfe93e7a38cdef3035fd07de1ced8ed98",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_b60-D3-preflight.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_b60-D3-preflight.json",
+      "sha256_before": "f5ceec8e6d90f85600ec229107056bbe203ded5415ddaa326bc511e4359db27b",
+      "bytes": 199456,
+      "sha256_after": "f5ceec8e6d90f85600ec229107056bbe203ded5415ddaa326bc511e4359db27b",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_b60-pair-ranks.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_b60-pair-ranks.json",
+      "sha256_before": "d286ceb5669e1f29b9385e1385017f69f4a4482b028771643fd45c0277132707",
+      "bytes": 49559,
+      "sha256_after": "d286ceb5669e1f29b9385e1385017f69f4a4482b028771643fd45c0277132707",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_galactic_pole-controls.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_galactic_pole-controls.json",
+      "sha256_before": "3eaa2044e843391a561cee067883e334c6342655bedb83a03f9491652ee4eede",
+      "bytes": 13867,
+      "sha256_after": "3eaa2044e843391a561cee067883e334c6342655bedb83a03f9491652ee4eede",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_galactic_pole-D1-pair-lock.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_galactic_pole-D1-pair-lock.json",
+      "sha256_before": "a019f6b853cb365a881d8be3a087082d7143e34377a0d4abf5cb1fda6f8c790b",
+      "bytes": 31646,
+      "sha256_after": "a019f6b853cb365a881d8be3a087082d7143e34377a0d4abf5cb1fda6f8c790b",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_galactic_pole-D1-retry-measurements.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_galactic_pole-D1-retry-measurements.json",
+      "sha256_before": "502362e0b69148b980217bb2dc2709c7225b2d9cb4d7afd0c32c2a1efdbcfcc9",
+      "bytes": 90709,
+      "sha256_after": "502362e0b69148b980217bb2dc2709c7225b2d9cb4d7afd0c32c2a1efdbcfcc9",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_galactic_pole-D1-retry-pair-lock.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_galactic_pole-D1-retry-pair-lock.json",
+      "sha256_before": "6b88260350986ec85885dffd496a261e83330f1e06e40fbe7b82b53df0f61f57",
+      "bytes": 7372,
+      "sha256_after": "6b88260350986ec85885dffd496a261e83330f1e06e40fbe7b82b53df0f61f57",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_galactic_pole-D1-retry-preflight.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_galactic_pole-D1-retry-preflight.json",
+      "sha256_before": "5f24f4769d7f66fabbf713303fb12858584b06c18a1c2c962f95c0923fde4190",
+      "bytes": 162759,
+      "sha256_after": "5f24f4769d7f66fabbf713303fb12858584b06c18a1c2c962f95c0923fde4190",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_galactic_pole-D3-isolation-audit.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_galactic_pole-D3-isolation-audit.json",
+      "sha256_before": "fb7d5ffde5707ea33faec6ad4efc229ab165dcd66d82efc641603760c4bedf8b",
+      "bytes": 9415,
+      "sha256_after": "fb7d5ffde5707ea33faec6ad4efc229ab165dcd66d82efc641603760c4bedf8b",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_galactic_pole-D3-measurements.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_galactic_pole-D3-measurements.json",
+      "sha256_before": "7102e1a531dbbc03480c846cc51d1a01a3aa55cbc472e8f9497f4b8737b50c9f",
+      "bytes": 51487,
+      "sha256_after": "7102e1a531dbbc03480c846cc51d1a01a3aa55cbc472e8f9497f4b8737b50c9f",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_galactic_pole-D3-pair-lock.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_galactic_pole-D3-pair-lock.json",
+      "sha256_before": "a6decb6cee21f0e1c3fb925c207e01948cf2c422a79d1b8604fb46e990d08aff",
+      "bytes": 6366,
+      "sha256_after": "a6decb6cee21f0e1c3fb925c207e01948cf2c422a79d1b8604fb46e990d08aff",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_galactic_pole-D3-preflight.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_galactic_pole-D3-preflight.json",
+      "sha256_before": "0e150a5514698714775ab325f13e4bd61bcebbc3c5e2d9e8674b904862eff9c0",
+      "bytes": 159986,
+      "sha256_after": "0e150a5514698714775ab325f13e4bd61bcebbc3c5e2d9e8674b904862eff9c0",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-south_galactic_pole-pair-ranks.json",
+      "new": "docs/evidence/phase4/phase4-science-online-south_galactic_pole-pair-ranks.json",
+      "sha256_before": "0d42f9e750f3078313295454415a66adb57f0f23467c692338c9188586546894",
+      "bytes": 32082,
+      "sha256_after": "0d42f9e750f3078313295454415a66adb57f0f23467c692338c9188586546894",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-online-verification.md",
+      "new": "docs/verification/phase4-science-online-verification.md",
+      "sha256_before": "f4a2eded30bf6996ed5f87dbb7933ef500da3ce9112f184ccc328c3f16049656",
+      "bytes": 16811,
+      "sha256_after": "4c4e929d33fae00459c265c5edcac09792e22e6cdddbcfb9510e7771b7d39dbd",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase4-science-preregistration.json",
+      "new": "docs/evidence/phase4/phase4-science-preregistration.json",
+      "sha256_before": "75840b11617cea84a777aae74ff3506dbbf3591ca0e6f72c7a4a99b8e249a858",
+      "bytes": 4406,
+      "sha256_after": "75840b11617cea84a777aae74ff3506dbbf3591ca0e6f72c7a4a99b8e249a858",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-prerequisites.json",
+      "new": "docs/evidence/phase4/phase4-science-prerequisites.json",
+      "sha256_before": "303ce369a2dd6200bff89756374d53337ca78a47f8b9633779b014930219e88a",
+      "bytes": 17442,
+      "sha256_after": "303ce369a2dd6200bff89756374d53337ca78a47f8b9633779b014930219e88a",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-results.json",
+      "new": "docs/evidence/phase4/phase4-science-results.json",
+      "sha256_before": "a5cd1c7b4c70b7658b11acff279b042f57e7780f4cd27cc579608a370d6c1aa8",
+      "bytes": 3918,
+      "sha256_after": "a5cd1c7b4c70b7658b11acff279b042f57e7780f4cd27cc579608a370d6c1aa8",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-search-preregistration.json",
+      "new": "docs/evidence/phase4/phase4-science-search-preregistration.json",
+      "sha256_before": "a4649d7a62da0f58d7f3e49068398a1704e37a5d961367b27efaa2483a0ce3dd",
+      "bytes": 10176,
+      "sha256_after": "a4649d7a62da0f58d7f3e49068398a1704e37a5d961367b27efaa2483a0ce3dd",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-search-results.json",
+      "new": "docs/evidence/phase4/phase4-science-search-results.json",
+      "sha256_before": "cb14ccc8d295a76d0483310e7818f2552bd5835d3b054f376a71ddc245d914fa",
+      "bytes": 1944,
+      "sha256_after": "cb14ccc8d295a76d0483310e7818f2552bd5835d3b054f376a71ddc245d914fa",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-science-verification.md",
+      "new": "docs/verification/phase4-science-verification.md",
+      "sha256_before": "3acb76416a2e9f174b9be8f3d66a83a3ffc0c0d0a96594e76fdb64306904178e",
+      "bytes": 14677,
+      "sha256_after": "2630b2ae6548ab70b51495e07650845a9d330ddedc9654c680bdcf6f652e822a",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase4-source-recheck.md",
+      "new": "docs/verification/phase4-source-recheck.md",
+      "sha256_before": "835f8c76b318cd24ca1c2318d05d17462cffa8384dce258f99fde46459477888",
+      "bytes": 8252,
+      "sha256_after": "5472b6486602325c6f6b4fa2188507b415de2ad1198043f3baeff84e21f06d88",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase4-staging-results.json",
+      "new": "docs/evidence/phase4/phase4-staging-results.json",
+      "sha256_before": "99f60efae5dc96ddee0cfa60ea0781b09c1adf32e035edab847a9d67707d6c59",
+      "bytes": 362698,
+      "sha256_after": "99f60efae5dc96ddee0cfa60ea0781b09c1adf32e035edab847a9d67707d6c59",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-staging-summary.json",
+      "new": "docs/evidence/phase4/phase4-staging-summary.json",
+      "sha256_before": "bde96247c173c8b293d63b2802544ef2ed864ff38c01257653cc789a8c80e764",
+      "bytes": 8485,
+      "sha256_after": "bde96247c173c8b293d63b2802544ef2ed864ff38c01257653cc789a8c80e764",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-ui-metadata-verification.md",
+      "new": "docs/verification/phase4-ui-metadata-verification.md",
+      "sha256_before": "ca7c2b7249a27657b48bb2b0f16414387b83177eb571c48f986f50c704ec11c2",
+      "bytes": 16654,
+      "sha256_after": "a430fdcb24513ee2fe506d57b59406deb5bd61fc246f2cf09380c77c0e5635b5",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase4-verification.md",
+      "new": "docs/verification/phase4-verification.md",
+      "sha256_before": "5c2ef1423c553a57054594f53c93ae688596a8283cf43ceab185868f6010d9fe",
+      "bytes": 13026,
+      "sha256_after": "dea0075287f7323dac50ee5d4c847ef1ef4d7a86a5ea7e40c48b22d72253f3de",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase5-acceptance.md",
+      "new": "docs/plans/phase5-acceptance.md",
+      "sha256_before": "53b1dd67f19539e9baec81bad717aa85b7c116926c08163f07d8720ea761637e",
+      "bytes": 4476,
+      "sha256_after": "53b1dd67f19539e9baec81bad717aa85b7c116926c08163f07d8720ea761637e",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase5-catalog-reliability-and-viewer.md",
+      "new": "docs/verification/phase5-catalog-reliability-and-viewer.md",
+      "sha256_before": "e381523b30c8bb5ae2a2c36ca24a4140bb86601f22794a0ec4836c0dc941f8a2",
+      "bytes": 10561,
+      "sha256_after": "10c07349230a9eabb75d240da0e18d69b6a3beb7347ed280b34ca221922b1e5e",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase5-centered-workspace-verification.md",
+      "new": "docs/verification/phase5-centered-workspace-verification.md",
+      "sha256_before": "2399f08eba833027e75313d7174a44bce9b5f95da4e5e9356ae9bb9157e8eb27",
+      "bytes": 12154,
+      "sha256_after": "145e3ff6c6af373ef31d377518f861e741000ca4e98c1c5375b67195644576fb",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase5-design.md",
+      "new": "docs/plans/phase5-design.md",
+      "sha256_before": "25867933a106d7fa07dc53e78128e19c3e5d91715acb199d798990cd2fa6fad3",
+      "bytes": 8426,
+      "sha256_after": "ba7e80c86a6116aca591bf94e6f853a8b4385bcece555cd9c7a2df8a99d763d0",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase5-discovery-outage-verification.md",
+      "new": "docs/verification/phase5-discovery-outage-verification.md",
+      "sha256_before": "922968d9ae8df5922012518265c950f92a779ab7ce0a15963f5609b54fe8a82d",
+      "bytes": 12523,
+      "sha256_after": "c6ee12275ca0b28e4f61f41d178463905d3d314a2837d7ff076fc5d87938dcef",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase5-live-comparison-results.json",
+      "new": "docs/evidence/phase5/phase5-live-comparison-results.json",
+      "sha256_before": "f424c2d6b90f83e17627ceacc728a257952f1c9cd25fd424a8e4044ca6c9f63a",
+      "bytes": 253885,
+      "sha256_after": "f424c2d6b90f83e17627ceacc728a257952f1c9cd25fd424a8e4044ca6c9f63a",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase5-live-comparison-verification.md",
+      "new": "docs/verification/phase5-live-comparison-verification.md",
+      "sha256_before": "8fab95e50123a2a6e25cc97e304e86a5c58d638ffe7220c962deb3dac480d28b",
+      "bytes": 9576,
+      "sha256_after": "ce040eba4ff9795a9d20d18e6b99660831df8c1bb0a835dfccf49789dfd8ef61",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase5-polish-verification.md",
+      "new": "docs/verification/phase5-polish-verification.md",
+      "sha256_before": "fde5fff8d5c2d95dd0823bf5b635d298ac95f3a881e4edbf622825963d9a9db1",
+      "bytes": 9405,
+      "sha256_after": "b50b33c15ec12da4aa1e28ca2a4b08c559523817a24b3df52728a2b10db2e563",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase5-verification.md",
+      "new": "docs/verification/phase5-verification.md",
+      "sha256_before": "7389b2796df3bdb0f305ac8af8a75e2700e88f6ef5b0308185bca38fdc1174c6",
+      "bytes": 12832,
+      "sha256_after": "6f5ec546729bc875f6e92f925b0f77e7f372602c91c37f15f8e82af80657dfe7",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase6-archive-search-renewed.md",
+      "new": "docs/verification/phase6-archive-search-renewed.md",
+      "sha256_before": "5894d18f2bd4c8d057c81ee46a2b521965d409802e479c4e40d6a00d0828e4b7",
+      "bytes": 5065,
+      "sha256_after": "5894d18f2bd4c8d057c81ee46a2b521965d409802e479c4e40d6a00d0828e4b7",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase6-live-discovery-diagnosis.md",
+      "new": "docs/verification/phase6-live-discovery-diagnosis.md",
+      "sha256_before": "ce48997036e26adeaf2054fddfd5867a0e7c02bdb4e278d38e734fba59b8026b",
+      "bytes": 8953,
+      "sha256_after": "ce48997036e26adeaf2054fddfd5867a0e7c02bdb4e278d38e734fba59b8026b",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase6-pair-download-recovery-decision.md",
+      "new": "docs/decisions/phase6-pair-download-recovery-decision.md",
+      "sha256_before": "991208208355256a59ad69b40ce624ad72da3735d31ab55a403fd636e782bd7a",
+      "bytes": 3535,
+      "sha256_after": "c3ac5c66a92a515ced936b12c46af463d1d87475d47049bf0e84f257daa6ab6c",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase6-verification.md",
+      "new": "docs/verification/phase6-verification.md",
+      "sha256_before": "21e68ed04d487ef689d978fd6bd9bc375e73d13b335106826390a43d74c413f5",
+      "bytes": 12705,
+      "sha256_after": "95989c6b169a9cce07c9783418855a25f2e282e5bab29eddaf02e1d787db405b",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/pre-event-verification.md",
+      "new": "docs/verification/pre-event-verification.md",
+      "sha256_before": "0f6b7e54fef03f23ed44d3cc478c291935c3bb7558543d663d0f0a0e672aa278",
+      "bytes": 26535,
+      "sha256_after": "54bd19326ddc9857ac2c48e6a3dfdf01c690f4c8ec87e4f56ef4def114404049",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/real-data-policy.md",
+      "new": "docs/guides/real-data-policy.md",
+      "sha256_before": "5a9fd1bfe8e94ba075cf069a382de64239630e63aaa1f1a7518f0c0fc22351bd",
+      "bytes": 6573,
+      "sha256_after": "5a9fd1bfe8e94ba075cf069a382de64239630e63aaa1f1a7518f0c0fc22351bd",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/reproducibility.md",
+      "new": "docs/guides/reproducibility.md",
+      "sha256_before": "5eb631dbfa169a952d7730ee841cb67501a75d4d236ec6c298e4b4227e5fae46",
+      "bytes": 13505,
+      "sha256_after": "fce895b361283b56ce2aea851e263e24a1cbbc05224ab82790ef1e711bb681aa",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/resource-release-2026-11-13.md",
+      "new": "docs/reference/resource-release-2026-11-13.md",
+      "sha256_before": "25eb99022e3172fbf8a5e603caba3a33f263a4016fad83a0eb4027eba302262b",
+      "bytes": 18642,
+      "sha256_after": "6ef0c025f23610d7866d555d26519b4bb107b5c49c9ca974c4bdc2bb0906e40b",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/result-meaning.md",
+      "new": "docs/guides/result-meaning.md",
+      "sha256_before": "6531f0002bbc5b04c9656def1e62d332f546480243a4d47d7f6bf71baeeba423",
+      "bytes": 11571,
+      "sha256_after": "d6cf273729a4b45c5ce8a36986674e40337fb6400a9e7c660143bfc4b2c5d2ed",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/w0-feasibility-report.md",
+      "new": "docs/research/w0-feasibility-report.md",
+      "sha256_before": "0b527f4cdb8b58df409e42baadfc15c17d48913fc0421c55075d55e46aca3ba2",
+      "bytes": 13103,
+      "sha256_after": "0b527f4cdb8b58df409e42baadfc15c17d48913fc0421c55075d55e46aca3ba2",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/why-a-live-view-has-one-epoch.md",
+      "new": "docs/guides/why-a-live-view-has-one-epoch.md",
+      "sha256_before": "7fadf64de3e5cf345dcf5ee12c9ce934bf5dd67c9b00fe5c0318f95c86188db4",
+      "bytes": 2973,
+      "sha256_after": "b3a67900a4662c3d52124813805c9ef74915b91730034fc5b4da62d3035e22b0",
+      "bytes_preserved": false
+    },
+    {
+      "old": "docs/phase4-online-records/north_galactic_pole-sky.json",
+      "new": "docs/evidence/phase4/records/north_galactic_pole-sky.json",
+      "sha256_before": "f5af9af20958f65fc7f247a34894730ee1aabb1080a1d693cd1603b496117d51",
+      "bytes": 254988,
+      "sha256_after": "f5af9af20958f65fc7f247a34894730ee1aabb1080a1d693cd1603b496117d51",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-records/r_draconis-spectrum.json",
+      "new": "docs/evidence/phase4/records/r_draconis-spectrum.json",
+      "sha256_before": "5bdca600c202df01482f6943ef4758b8840d8a6e4b039ec4112bea9844907d94",
+      "bytes": 890986,
+      "sha256_after": "5bdca600c202df01482f6943ef4758b8840d8a6e4b039ec4112bea9844907d94",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-records/wise_0855-sky.json",
+      "new": "docs/evidence/phase4/records/wise_0855-sky.json",
+      "sha256_before": "2b19329d721cfab4ba403f05e9c40943aef9bd8396296ce7301bdec4c145e5ff",
+      "bytes": 208555,
+      "sha256_after": "2b19329d721cfab4ba403f05e9c40943aef9bd8396296ce7301bdec4c145e5ff",
+      "bytes_preserved": true
+    },
+    {
+      "old": "docs/phase4-online-records/wise_0855-spectrum.json",
+      "new": "docs/evidence/phase4/records/wise_0855-spectrum.json",
+      "sha256_before": "bcf8d851f2668310b00da4de376e6df25612dc05c72fe6611853eceae3cc6c96",
+      "bytes": 157410,
+      "sha256_after": "bcf8d851f2668310b00da4de376e6df25612dc05c72fe6611853eceae3cc6c96",
+      "bytes_preserved": true
+    }
+  ],
+  "directories": {
+    "docs/phase4-online-records": "docs/evidence/phase4/records"
+  }
+}

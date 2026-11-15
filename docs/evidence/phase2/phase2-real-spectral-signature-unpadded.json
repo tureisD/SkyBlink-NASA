@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-11-14T18:28:16.652857+00:00",
+  "source_uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/6/level2_2025W19_1B_0116_1D6_spx_l2b-v27-2026-197.fits",
+  "source_metadata": "golden_cache/wise_0855/manifest.json#epochs[0].band_stats.6.artifact_uris[0]",
+  "ra": 133.75921,
+  "dec": -7.24216,
+  "size_deg": 0.05,
+  "limitation": "One recorded input exercises actual spectral WCS; not proof of pair compatibility or whole-field science correctness.",
+  "status": "success",
+  "bytes": 3962880,
+  "sha256": "4002e3ab6962be08f754ec0c776e3e407c61e5af6c3017bb99c7c8e7d0baa1fd",
+  "wavelength_um": [
+    null,
+    4.963335462128921,
+    null,
+    4.968353464152418,
+    4.967329876813456,
+    4.9663083073067895,
+    null,
+    4.971323155863921,
+    null
+  ],
+  "bandwidth_um": [
+    null,
+    0.03713936374587103,
+    null,
+    0.037190096785428645,
+    0.03718706870371085,
+    0.03718715032310666,
+    null,
+    0.03723194438663307,
+    null
+  ],
+  "finite_samples": 5,
+  "seconds": 9.343
+}

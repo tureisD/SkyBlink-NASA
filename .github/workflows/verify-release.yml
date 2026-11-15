@@ -1,0 +1,102 @@
+name: Verify release
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  local-and-container:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install Python dependencies
+        run: python -m pip install -r backend/requirements.txt
+      - name: Backend regression
+        run: python -m pytest backend/tests -q
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci --no-audit --no-fund
+      - name: Frontend regression and production build
+        working-directory: frontend
+        run: |
+          npm run test:real-data
+          npm run test:wcs
+          npm run test:semantics
+          npm run test:views
+          npm run build
+      - name: Real-only inventory and saved observation checks
+        run: |
+          python scripts/verify_real_data.py --require-dist
+          python scripts/build_golden_cache.py --target all --verify-only --require-telemetry
+      - name: Build current container
+        run: docker build --tag skyblink:verify .
+      - name: Start container with persistent volume and unavailable upstream
+        run: |
+          mkdir -p release-reports
+          docker volume create skyblink-verify-cache
+          docker run --detach --name skyblink-verify --memory 2g \
+            --publish 127.0.0.1:8080:8000 \
+            --mount source=skyblink-verify-cache,target=/data/cache \
+            --env IRSA_TAP=http://127.0.0.1:9/TAP \
+            --env IRSA_SIA2=http://127.0.0.1:9/SIA \
+            skyblink:verify
+          python - <<'PY'
+          import time, urllib.request
+          deadline = time.monotonic() + 60
+          while True:
+              try:
+                  with urllib.request.urlopen('http://127.0.0.1:8080/api/v1/targets?source=saved', timeout=2) as response:
+                      assert response.status == 200
+                  break
+              except Exception:
+                  if time.monotonic() >= deadline:
+                      raise
+                  time.sleep(1)
+          PY
+      - name: Production HTTP smoke with no archive dependency
+        run: python scripts/release_smoke.py --base-url http://127.0.0.1:8080 --offline --out release-reports/container-smoke.json
+      - name: Verify runtime user and volume persistence
+        run: |
+          docker exec skyblink-verify python -c "import os; assert os.getuid() != 0; from pathlib import Path; Path('/data/cache/release-check.txt').write_text('operational volume probe')"
+          docker restart skyblink-verify
+          docker exec skyblink-verify python -c "from pathlib import Path; assert Path('/data/cache/release-check.txt').read_text() == 'operational volume probe'; Path('/data/cache/release-check.txt').unlink()"
+      - name: Capture container evidence
+        if: always()
+        run: |
+          mkdir -p release-reports
+          docker logs skyblink-verify > release-reports/container.log 2>&1 || true
+          docker inspect skyblink-verify > release-reports/container-inspect.json || true
+          docker stats --no-stream skyblink-verify > release-reports/container-resources.txt || true
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: release-verification
+          path: release-reports/
+          retention-days: 14
+      - name: Remove this job's container and volume
+        if: always()
+        run: |
+          docker rm --force skyblink-verify || true
+          docker volume rm skyblink-verify-cache || true

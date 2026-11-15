@@ -1,0 +1,292 @@
+{
+  "created_at": "2026-11-14T21:23:18.841413+00:00",
+  "field": {
+    "id": "south_b60",
+    "ra": 339.8833073544,
+    "dec": -39.5544404047,
+    "research_radius_deg": 0.5
+  },
+  "detector": 3,
+  "pair_ranks_sha256": "d286ceb5669e1f29b9385e1385017f69f4a4482b028771643fd45c0277132707",
+  "attempts": [
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W20_2D/l2b-v27-2026-198/3/level2_2025W20_2D_0217_2D3_spx_l2b-v27-2026-198.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W20_2D/l2b-v27-2026-198/3/level2_2025W20_2D_0589_1D3_spx_l2b-v27-2026-198.fits",
+        "corner_distance_arcsec": 12.261647941665707,
+        "time_separation_days": 2.178333999996539,
+        "control_indices_inside": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          9,
+          10,
+          11
+        ]
+      },
+      "status": "rejected_before_flux",
+      "error": {
+        "type": "ValueError",
+        "message": "Exact-input bounded retries failed: [{\"attempt\": 1, \"time\": \"2026-11-14T21:19:57.842938+00:00\", \"error\": \"Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W20_2D/l2b-v27-2026-198/3/level2_2025W20_2D_0217_2D3_spx_l2b-v27-2026-198.fits?center=339.883307,-39.554440&size=1.400000'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503\"}, {\"attempt\": 2, \"time\": \"2026-11-14T21:19:58.963686+00:00\", \"error\": \"Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W20_2D/l2b-v27-2026-198/3/level2_2025W20_2D_0217_2D3_spx_l2b-v27-2026-198.fits?center=339.883307,-39.554440&size=1.400000'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503\"}, {\"attempt\": 3, \"time\": \"2026-11-14T21:19:59.986910+00:00\", \"error\": \"Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W20_2D/l2b-v27-2026-198/3/level2_2025W20_2D_0217_2D3_spx_l2b-v27-2026-198.fits?center=339.883307,-39.554440&size=1.400000'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503\"}]"
+      }
+    },
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W43_1A/l2b-v27-2026-244/3/level2_2025W43_1A_0686_1D3_spx_l2b-v27-2026-244.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W46_2A/l2b-v27-2026-207/3/level2_2025W46_2A_0612_1D3_spx_l2b-v27-2026-207.fits",
+        "corner_distance_arcsec": 22.393797763031948,
+        "time_separation_days": 24.249266999999236,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "status": "calibrated_candidate_locked_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/3/spectral_wcs_D3_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D3.fits",
+        "sha256": "51750c8f948a30541d391e54930279aa067c62c398a7cc2679e592bc6044427a",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T21:18:53.650848+00:00",
+        "elapsed_seconds": 8.09400000050664,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W43_1A/l2b-v27-2026-244/3/level2_2025W43_1A_0686_1D3_spx_l2b-v27-2026-244.fits?center=339.883307,-39.554440&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/south_b60/fits/72528153469e12b7242cf98989f7afaba0f726f3c9101c877e63c00606506290.fits",
+          "sha256": "6c26c02bee2c4083a42c8eb2f92d5c9b1cfadec09242f68d36f93fc0c3d5bcb2",
+          "bytes": 14463360,
+          "retrieved_at": "2026-11-14T21:20:36.054866+00:00",
+          "elapsed_seconds": 20.140999998897314,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W46_2A/l2b-v27-2026-207/3/level2_2025W46_2A_0612_1D3_spx_l2b-v27-2026-207.fits?center=339.883307,-39.554440&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/south_b60/fits/1804e0955498cc7af58fe32688c8c6cdd088f8ddb273813d6b12dffbf976b1cc.fits",
+          "sha256": "797e92eaa3300f28d89372ed1c833b8b903d20f2c6e97ccb76dfbd11e4e1e6f5",
+          "bytes": 14463360,
+          "retrieved_at": "2026-11-14T21:20:37.169699+00:00",
+          "elapsed_seconds": 19.92200000025332,
+          "is_simulated_fallback": false,
+          "retry_failures": [
+            {
+              "attempt": 1,
+              "time": "2026-11-14T21:20:17.251190+00:00",
+              "error": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W46_2A/l2b-v27-2026-207/3/level2_2025W46_2A_0612_1D3_spx_l2b-v27-2026-207.fits?center=339.883307,-39.554440&size=1.400000'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+            }
+          ]
+        }
+      ],
+      "calibrated_control_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "control_rejections": [],
+      "support_qualified_control_indices": [
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "independent_astrometry_prerequisite": [
+        {
+          "status": "pass",
+          "count": 179,
+          "median_offset_arcsec": [
+            -0.2378555989444268,
+            0.04189208499530942
+          ],
+          "robust_sigma_axes_arcsec": [
+            0.2357318516332088,
+            0.20288784398297327
+          ],
+          "robust_rms_including_bias_arcsec": 0.39378066971976505,
+          "raw_radial_rms_arcsec": 0.47054170040473686,
+          "maximum_residual_arcsec": 2.7256574165127696,
+          "above_threshold": 2,
+          "threshold_arcsec": 1.5375
+        },
+        {
+          "status": "pass",
+          "count": 169,
+          "median_offset_arcsec": [
+            -0.15913976422140952,
+            0.09615818695999771
+          ],
+          "robust_sigma_axes_arcsec": [
+            0.1819035882769562,
+            0.21997388448336838
+          ],
+          "robust_rms_including_bias_arcsec": 0.3406600750874901,
+          "raw_radial_rms_arcsec": 0.42021919695387033,
+          "maximum_residual_arcsec": 1.8283238750157502,
+          "above_threshold": 1,
+          "threshold_arcsec": 1.5375
+        }
+      ],
+      "positions": [
+        {
+          "mjd": 60971.204947763,
+          "scale": "UTC"
+        },
+        {
+          "mjd": 60995.454215657,
+          "scale": "UTC"
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "pair": {
+      "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W43_1A/l2b-v27-2026-244/3/level2_2025W43_1A_0686_1D3_spx_l2b-v27-2026-244.fits",
+      "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W46_2A/l2b-v27-2026-207/3/level2_2025W46_2A_0612_1D3_spx_l2b-v27-2026-207.fits",
+      "corner_distance_arcsec": 22.393797763031948,
+      "time_separation_days": 24.249266999999236,
+      "control_indices_inside": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "status": "calibrated_candidate_locked_before_flux",
+    "calibration": {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/3/spectral_wcs_D3_spx_cal-swcs-v5-2026-191.fits",
+      "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D3.fits",
+      "sha256": "51750c8f948a30541d391e54930279aa067c62c398a7cc2679e592bc6044427a",
+      "bytes": 33312960,
+      "retrieved_at": "2026-11-14T21:18:53.650848+00:00",
+      "elapsed_seconds": 8.09400000050664,
+      "is_simulated_fallback": false
+    },
+    "inputs": [
+      {
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W43_1A/l2b-v27-2026-244/3/level2_2025W43_1A_0686_1D3_spx_l2b-v27-2026-244.fits?center=339.883307,-39.554440&size=1.400000",
+        "path": "backend/.cache/phase4/online-science/south_b60/fits/72528153469e12b7242cf98989f7afaba0f726f3c9101c877e63c00606506290.fits",
+        "sha256": "6c26c02bee2c4083a42c8eb2f92d5c9b1cfadec09242f68d36f93fc0c3d5bcb2",
+        "bytes": 14463360,
+        "retrieved_at": "2026-11-14T21:20:36.054866+00:00",
+        "elapsed_seconds": 20.140999998897314,
+        "is_simulated_fallback": false
+      },
+      {
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W46_2A/l2b-v27-2026-207/3/level2_2025W46_2A_0612_1D3_spx_l2b-v27-2026-207.fits?center=339.883307,-39.554440&size=1.400000",
+        "path": "backend/.cache/phase4/online-science/south_b60/fits/1804e0955498cc7af58fe32688c8c6cdd088f8ddb273813d6b12dffbf976b1cc.fits",
+        "sha256": "797e92eaa3300f28d89372ed1c833b8b903d20f2c6e97ccb76dfbd11e4e1e6f5",
+        "bytes": 14463360,
+        "retrieved_at": "2026-11-14T21:20:37.169699+00:00",
+        "elapsed_seconds": 19.92200000025332,
+        "is_simulated_fallback": false,
+        "retry_failures": [
+          {
+            "attempt": 1,
+            "time": "2026-11-14T21:20:17.251190+00:00",
+            "error": "Server error '503 Service Unavailable' for url 'https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W46_2A/l2b-v27-2026-207/3/level2_2025W46_2A_0612_1D3_spx_l2b-v27-2026-207.fits?center=339.883307,-39.554440&size=1.400000'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+          }
+        ]
+      }
+    ],
+    "calibrated_control_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "control_rejections": [],
+    "support_qualified_control_indices": [
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "independent_astrometry_prerequisite": [
+      {
+        "status": "pass",
+        "count": 179,
+        "median_offset_arcsec": [
+          -0.2378555989444268,
+          0.04189208499530942
+        ],
+        "robust_sigma_axes_arcsec": [
+          0.2357318516332088,
+          0.20288784398297327
+        ],
+        "robust_rms_including_bias_arcsec": 0.39378066971976505,
+        "raw_radial_rms_arcsec": 0.47054170040473686,
+        "maximum_residual_arcsec": 2.7256574165127696,
+        "above_threshold": 2,
+        "threshold_arcsec": 1.5375
+      },
+      {
+        "status": "pass",
+        "count": 169,
+        "median_offset_arcsec": [
+          -0.15913976422140952,
+          0.09615818695999771
+        ],
+        "robust_sigma_axes_arcsec": [
+          0.1819035882769562,
+          0.21997388448336838
+        ],
+        "robust_rms_including_bias_arcsec": 0.3406600750874901,
+        "raw_radial_rms_arcsec": 0.42021919695387033,
+        "maximum_residual_arcsec": 1.8283238750157502,
+        "above_threshold": 1,
+        "threshold_arcsec": 1.5375
+      }
+    ],
+    "positions": [
+      {
+        "mjd": 60971.204947763,
+        "scale": "UTC"
+      },
+      {
+        "mjd": 60995.454215657,
+        "scale": "UTC"
+      }
+    ]
+  },
+  "flux_extracted": false,
+  "scope": "Calibrated geometry first; astrometry/support prerequisites will be assessed without flux residual-based selection"
+}

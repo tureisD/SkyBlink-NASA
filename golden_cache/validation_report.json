@@ -1,0 +1,1051 @@
+{
+  "generated_at": "2026-11-13T20:03:46Z",
+  "roadmap": "ROADMAP.md §10.3 five-target test card",
+  "golden_cache_revision": 3,
+  "golden_cache_revision_note": "Revision 3: rebuilt from live IRSA DR1+QR3 after B10 (spherex_dr1/DR1, spherex_qr3/QR3, mixed/DR1+QR3 release labels), with re-measured dense 12-visit/band spectra and per-epoch telemetry sidecars. The real SkyView DSS2 Red / AllWISE overlays and Gaia DR3 pins were reused SHA-256-verified. No synthetic data is used in the five real target caches.",
+  "golden_dir": "C:\\Users\\Dmitry Koryakin\\Desktop\\SPHEREx SkyBlink\\orchestrator\\golden_cache",
+  "method": "Measured on golden-cache frames and B3 spectra. Bright cores are saturated/hard-masked, so the card uses saturated-halo centroids, difference frames, and used-channel spectra; caveats are recorded with every target.",
+  "w0_findings": {
+    "source": "docs/w0-feasibility-report.md",
+    "metrics": "golden_cache/w0_overlay_metrics.json",
+    "psf_wing_photometry": {
+      "verdict": "NO-GO",
+      "measured": "Barnard's Star 0/54 and R Draconis 0/60 channels pass f_wing >= 0.12 with >=8 clean wing pixels; even with no flags only 23/38 and 10/56 pass. The 1.2-4.2 native-px annulus is dominated by BIT_SOURCE/OVERFLOW/SUR_ERROR.",
+      "decision": "PSF-wing photometry is dropped; no psf_wing_fit photometry method is emitted. Saturation remains an honest limitation."
+    },
+    "r_draconis_nep_clustering": {
+      "verdict": "NO-GO",
+      "measured": "2,483 TAP rows form one continuous 520.4-day season (MJD 60789.9-61310.3; largest night-to-night gap 37.8 days). Only one all-6-band block at a 10-day gap; D2/D5 have 89 exposures each.",
+      "decision": "Keep the existing four R Draconis epochs; do not interpolate or invent epochs. 2024_E1 remains B3/B6-only."
+    },
+    "telemetry_sidecar_budget": {
+      "verdict": "GO (revised budget)",
+      "measured_gzip_kib": [
+        78.5,
+        101.0
+      ],
+      "measured_base64_json_kib": [
+        104.1,
+        134.0
+      ],
+      "claim_lt_45_kb": false,
+      "decision": "Ship the float16 MJy/sr + uint32 Table 16 gzipped sidecar, but state the measured 80-105 KiB gzip (104-134 KiB base64) budget. Do not claim <45 KB."
+    },
+    "cds_hips2fits": {
+      "verdict": "NO-GO",
+      "measured": "6/6 CDS hips2fits requests timed out from this environment.",
+      "decision": "Use SkyView FITS cutouts for the real reference overlays."
+    },
+    "skyview_overlays_gaia": {
+      "verdict": "GO",
+      "measured": "DSS2 Red 240x240 on the exact golden TAN grid (21.4 KB WebP, 3/3); WISE 3.4 240x240 with retry (5.8 KB WebP, 2/3 with one blank 1-element FITS); Gaia DR3 fields available, G<=16 cap.",
+      "decision": "Real DSS2 Red + WISE 3.4 (plus WISE 4.6 for WISE 0855) and Gaia DR3 G<=16 pins are attached to the golden cache."
+    },
+    "lvf_visits": {
+      "verdict": "GO-METADATA",
+      "measured": "12 visits per band/epoch adds +106 distinct 5-nm samples on WISE 0855 and +172 on Epsilon Indi B; 12 visits cost about 15-17 s per band including downloads.",
+      "decision": "Use 12 visits/band/epoch as the target tier with 9/6/available fallbacks; no 102-channel claim."
+    },
+    "live_multi_epoch_blink": {
+      "verdict": "NO-GO as scoped",
+      "measured": "3 epochs x B3/B5/B6 = 34.6 s cold / 20.3 s warm; best case 2 epochs x B5+B6 = 22.7 s cold / 10.1 s warm. The PSF cube is 96.9% of a cutout, so 0.08 deg saves only 3.4%.",
+      "decision": "Do not promise a <15 s cold multi-epoch arbitrary blink; keep the bounded best-effort path."
+    }
+  },
+  "revision_3_build": {
+    "source": "S7 rebuild log (2026-11-13)",
+    "command": "python scripts/build_golden_cache.py --target all --force-refresh --rebuild-spectrum --verbose",
+    "started_at_utc": "2026-11-13T19:21:50Z",
+    "completed_at_utc": "2026-11-13T20:00:31Z",
+    "wall_clock_seconds": 2321.2,
+    "result": "5/5 targets built, 0 failures",
+    "transient_irsa_503_retries": 170,
+    "verify_only_require_telemetry": "5/5 targets, 17/17 sidecars",
+    "overlays": "5/5 targets reused SHA-256-verified SkyView DSS2 Red / AllWISE / Gaia DR3 assets; no downloads were needed"
+  },
+  "stage2": {
+    "golden_cache_revision": 3,
+    "rebuild": "S7: live IRSA DR1+QR3 refresh (B10 release labels; B8 telemetry/LVF + dense spectra)",
+    "spectrum_max_visits_per_band": 12,
+    "dense_channels_note": "Channels are measured from the committed spectrum.json; the tier is up to 12 visits/band/epoch (72 when all six detectors yield distinct samples). Saturated targets keep null/unused channels; nothing is fabricated.",
+    "dense_channel_counts_used_total": {
+      "wise_0855": {
+        "2025_E1": "43/46",
+        "2025_E2": "59/60",
+        "2026_E1": "56/58"
+      },
+      "barnards_star": {
+        "2025_E1": "1/71",
+        "2025_E2": "1/72",
+        "2026_E1": "0/72"
+      },
+      "eps_indi_b": {
+        "2024_E1": "50/55",
+        "2025_E1": "64/72",
+        "2025_E2": "67/69",
+        "2026_E1": "47/50"
+      },
+      "rw_aurigae": {
+        "2025_E1": "23/72",
+        "2025_E2": "41/72",
+        "2026_E1": "38/72"
+      },
+      "r_draconis": {
+        "2024_E1": "0/24",
+        "2025_E1": "0/72",
+        "2025_E2": "0/72",
+        "2026_E1": "0/72"
+      }
+    },
+    "telemetry_format": "float16_uint32_le_gzip",
+    "telemetry_layout": "240x240 float16 MJy/sr + 240x240 uint32 Table 16 flags",
+    "telemetry_sidecar_kib_by_target": {
+      "wise_0855": [
+        100.0,
+        102.3,
+        100.2
+      ],
+      "barnards_star": [
+        107.7,
+        111.4,
+        108.0
+      ],
+      "eps_indi_b": [
+        92.1,
+        93.6,
+        93.6,
+        89.1
+      ],
+      "rw_aurigae": [
+        106.4,
+        109.3,
+        109.3
+      ],
+      "r_draconis": [
+        82.6,
+        94.4,
+        95.0,
+        95.2
+      ]
+    },
+    "telemetry_budget_note": "Measured gzip sizes across all 17 sidecars: 82.6-111.4 KiB. WISE 0855 100.0-102.3 KiB, Barnard's Star 107.7-111.4 KiB, Epsilon Indi B 89.1-93.6 KiB, RW Aurigae 106.4-109.3 KiB, R Draconis 82.6-95.2 KiB; the real budget is 80-112 KiB, not <45 KB.",
+    "telemetry_flux_band": {
+      "wise_0855": "thermal",
+      "other_targets": "all"
+    },
+    "ivw_psf_matching": "Not applied: the B8 PSF-matched/IVW residual criterion was not met, so frames keep the documented direct-subtraction behaviour.",
+    "crowded_diff_6.8": "Not implemented; channels use the standard 12.3 arcsec aperture.",
+    "r_draconis_epochs": "Unchanged four epochs; no NEP re-clustering (W0 NO-GO)."
+  },
+  "real_overlay_verification": {
+    "grid": "240x240 TAN golden WCS",
+    "sources": "NASA/GSFC SkyView (DSS2 Red, AllWISE 3.4/4.6 um); NASA/IPAC IRSA TAP (Gaia DR3)",
+    "verified_targets": 5,
+    "total_targets": 5,
+    "result": "5/5",
+    "targets": {
+      "wise_0855": {
+        "ok": true,
+        "overlay_keys": [
+          "attribution",
+          "attribution_json",
+          "gaia_sources_url",
+          "mid_ir_wise",
+          "mid_ir_wise_w1",
+          "mid_ir_wise_w2",
+          "optical_dss2_red",
+          "optical_dss_gaia"
+        ],
+        "assets": {
+          "gaia_dr3.json": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 30052,
+            "sha256": "9fefaf6353b0516931c1a5b39f6408eb13ed0f22fcc7aad2385bcb0de65d94a9",
+            "sha256_matches": true,
+            "json_valid": true,
+            "ok": true
+          },
+          "ref_attribution.json": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 1256,
+            "sha256": "b1b5475f6171c9fef002f8c6631e42013f73f83259ca8927134f930be7b392ea",
+            "sha256_matches": true,
+            "json_valid": true,
+            "ok": true
+          },
+          "ref_optical.webp": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 21244,
+            "sha256": "4db824526fd3294cf3815bc16852be1f3b90941031d624f2d9064d24e549eb73",
+            "sha256_matches": true,
+            "webp_magic": true,
+            "width": 240,
+            "height": 240,
+            "is_240x240": true,
+            "ok": true
+          },
+          "ref_wise.webp": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 5862,
+            "sha256": "7071cf6e5befce81ab262100371bdf4d23ddacae8411900af00abad99897de58",
+            "sha256_matches": true,
+            "webp_magic": true,
+            "width": 240,
+            "height": 240,
+            "is_240x240": true,
+            "ok": true
+          },
+          "ref_wise_w2.webp": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 7012,
+            "sha256": "af8d25257755aa4b47c738b62ba2ff503a917ecf87bfcc6b88bbd804c18859f3",
+            "sha256_matches": true,
+            "webp_magic": true,
+            "width": 240,
+            "height": 240,
+            "is_240x240": true,
+            "ok": true
+          }
+        },
+        "gaia_dr3": {
+          "sources": 133,
+          "g_limit": 16.0,
+          "cap": 200,
+          "returned": 133,
+          "truncated": false,
+          "is_simulated_fallback": false,
+          "source": "NASA/IPAC IRSA TAP gaia_dr3_source (Gaia DR3)"
+        }
+      },
+      "barnards_star": {
+        "ok": true,
+        "overlay_keys": [
+          "attribution",
+          "attribution_json",
+          "gaia_sources_url",
+          "mid_ir_wise",
+          "mid_ir_wise_w1",
+          "optical_dss2_red",
+          "optical_dss_gaia"
+        ],
+        "assets": {
+          "gaia_dr3.json": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 44420,
+            "sha256": "8a2393f3b5d2c53dce92e6f1e7ec0691d259970b149508cd289851e25728482c",
+            "sha256_matches": true,
+            "json_valid": true,
+            "ok": true
+          },
+          "ref_attribution.json": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 1260,
+            "sha256": "a02a08875f5091a377e0bd4b0d5be38d393903fd8b8cc0f2260378279fefbbdc",
+            "sha256_matches": true,
+            "json_valid": true,
+            "ok": true
+          },
+          "ref_optical.webp": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 25354,
+            "sha256": "e0d308c88f9553566efd19f5d069734a7b7b7bf693204c92ad0d7e9e2d25143d",
+            "sha256_matches": true,
+            "webp_magic": true,
+            "width": 240,
+            "height": 240,
+            "is_240x240": true,
+            "ok": true
+          },
+          "ref_wise.webp": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 4092,
+            "sha256": "03c7539293590dba7ff5a13a9fc05eec216ff4e8e1adab6c6ff77f108064742a",
+            "sha256_matches": true,
+            "webp_magic": true,
+            "width": 240,
+            "height": 240,
+            "is_240x240": true,
+            "ok": true
+          }
+        },
+        "gaia_dr3": {
+          "sources": 200,
+          "g_limit": 16.0,
+          "cap": 200,
+          "returned": 200,
+          "truncated": true,
+          "is_simulated_fallback": false,
+          "source": "NASA/IPAC IRSA TAP gaia_dr3_source (Gaia DR3)"
+        }
+      },
+      "eps_indi_b": {
+        "ok": true,
+        "overlay_keys": [
+          "attribution",
+          "attribution_json",
+          "gaia_sources_url",
+          "mid_ir_wise",
+          "mid_ir_wise_w1",
+          "optical_dss2_red",
+          "optical_dss_gaia"
+        ],
+        "assets": {
+          "gaia_dr3.json": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 18022,
+            "sha256": "9b390c55b27b5e764b3017ea169181be340d5dba7334ffe3afcfc767bde11d9b",
+            "sha256_matches": true,
+            "json_valid": true,
+            "ok": true
+          },
+          "ref_attribution.json": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 1257,
+            "sha256": "2360eae0fe6961537f81a9050e7097e1e9a6331137ac6c147272abfd34fa3610",
+            "sha256_matches": true,
+            "json_valid": true,
+            "ok": true
+          },
+          "ref_optical.webp": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 22205,
+            "sha256": "67e4daa591010d56aebbfcc590c35b4c6c182525a5e3980ad83ed3feb4a025ef",
+            "sha256_matches": true,
+            "webp_magic": true,
+            "width": 240,
+            "height": 240,
+            "is_240x240": true,
+            "ok": true
+          },
+          "ref_wise.webp": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 5652,
+            "sha256": "d4f818ff2418090befd4123781714af941a88d65b0a131476465010e94f7d540",
+            "sha256_matches": true,
+            "webp_magic": true,
+            "width": 240,
+            "height": 240,
+            "is_240x240": true,
+            "ok": true
+          }
+        },
+        "gaia_dr3": {
+          "sources": 77,
+          "g_limit": 16.0,
+          "cap": 200,
+          "returned": 77,
+          "truncated": false,
+          "is_simulated_fallback": false,
+          "source": "NASA/IPAC IRSA TAP gaia_dr3_source (Gaia DR3)"
+        }
+      },
+      "rw_aurigae": {
+        "ok": true,
+        "overlay_keys": [
+          "attribution",
+          "attribution_json",
+          "gaia_sources_url",
+          "mid_ir_wise",
+          "mid_ir_wise_w1",
+          "optical_dss2_red",
+          "optical_dss_gaia"
+        ],
+        "assets": {
+          "gaia_dr3.json": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 44154,
+            "sha256": "89e47ff1263b156d26f1312c772c6ca76ddb1673e9be0bfb3587f0dac9d34c12",
+            "sha256_matches": true,
+            "json_valid": true,
+            "ok": true
+          },
+          "ref_attribution.json": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 1257,
+            "sha256": "191251a718a687d02d6932975b2284224aace700538f141077c7c3983b7e0e18",
+            "sha256_matches": true,
+            "json_valid": true,
+            "ok": true
+          },
+          "ref_optical.webp": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 20454,
+            "sha256": "22038e639caa073c7882ea9fe292e711f71eab68868467671e0c949bac6d0b34",
+            "sha256_matches": true,
+            "webp_magic": true,
+            "width": 240,
+            "height": 240,
+            "is_240x240": true,
+            "ok": true
+          },
+          "ref_wise.webp": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 3876,
+            "sha256": "880b75ada38b8df239756019a81cfbbcf26c0f63939371dca4583c0c0c29555d",
+            "sha256_matches": true,
+            "webp_magic": true,
+            "width": 240,
+            "height": 240,
+            "is_240x240": true,
+            "ok": true
+          }
+        },
+        "gaia_dr3": {
+          "sources": 200,
+          "g_limit": 16.0,
+          "cap": 200,
+          "returned": 200,
+          "truncated": true,
+          "is_simulated_fallback": false,
+          "source": "NASA/IPAC IRSA TAP gaia_dr3_source (Gaia DR3)"
+        }
+      },
+      "r_draconis": {
+        "ok": true,
+        "overlay_keys": [
+          "attribution",
+          "attribution_json",
+          "gaia_sources_url",
+          "mid_ir_wise",
+          "mid_ir_wise_w1",
+          "optical_dss2_red",
+          "optical_dss_gaia"
+        ],
+        "assets": {
+          "gaia_dr3.json": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 17257,
+            "sha256": "33aa046156abdeeabf3a4aadd387a130a0d235b288994cd949b5795a1f27b655",
+            "sha256_matches": true,
+            "json_valid": true,
+            "ok": true
+          },
+          "ref_attribution.json": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 1257,
+            "sha256": "235ed6f8353c2515f2c0c55973e11e3186986117f7abb1f797fb13e1d140e1b0",
+            "sha256_matches": true,
+            "json_valid": true,
+            "ok": true
+          },
+          "ref_optical.webp": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 17829,
+            "sha256": "bd0e6ab4ae371f60b4269cbaa1ec568bcbd8245e10909b9e0bdb571dff8b48a1",
+            "sha256_matches": true,
+            "webp_magic": true,
+            "width": 240,
+            "height": 240,
+            "is_240x240": true,
+            "ok": true
+          },
+          "ref_wise.webp": {
+            "present": true,
+            "is_simulated_fallback": false,
+            "bytes": 1018,
+            "sha256": "d46702dfe4b1f63162149488a1d778a69b9344e4dd42b66061ef9c9dbc36331b",
+            "sha256_matches": true,
+            "webp_magic": true,
+            "width": 240,
+            "height": 240,
+            "is_240x240": true,
+            "ok": true
+          }
+        },
+        "gaia_dr3": {
+          "sources": 74,
+          "g_limit": 16.0,
+          "cap": 200,
+          "returned": 74,
+          "truncated": false,
+          "is_simulated_fallback": false,
+          "source": "NASA/IPAC IRSA TAP gaia_dr3_source (Gaia DR3)"
+        }
+      }
+    }
+  },
+  "targets": {
+    "wise_0855": {
+      "target_name": "WISE 0855",
+      "status": "pass",
+      "checks_passed": 2,
+      "checks_total": 2,
+      "checks": [
+        {
+          "name": "band_dependent_difference_signal",
+          "passed": true,
+          "metric": {
+            "difference_frame_rms_adu_by_band": {
+              "1": 6.462725305132474,
+              "2": 4.098478969944519,
+              "3": 5.717011647728582,
+              "4": 4.564938194725397,
+              "5": 20.08681108385541,
+              "6": 20.374696613961333
+            },
+            "thermal_rms_adu": 20.374696613961333,
+            "short_wavelength_rms_adu": 6.462725305132474,
+            "thermal_to_short_ratio": 3.1526477843303122
+          },
+          "threshold": "max(B5,B6) difference-frame RMS > 2x max(B1-B4)",
+          "note": "Single-epoch B1-B4 frames are crowded; the band dependence is measured on adjacent-epoch difference frames where static field stars cancel."
+        },
+        {
+          "name": "proper_motion_signal",
+          "passed": true,
+          "metric": {
+            "max_thermal_new_minus_old_adu": 33.75,
+            "per_band_max_motion_adu": {
+              "1": 12.550000000000011,
+              "2": 10.5,
+              "3": 14.0,
+              "4": 4.25,
+              "5": 33.75,
+              "6": 29.75
+            },
+            "expected_motion_px": {
+              "2025_E2_minus_2025_E1": 1.2471307495156465,
+              "2026_E1_minus_2025_E2": 1.1155595014208055
+            }
+          },
+          "threshold": "thermal (B5/B6) new-minus-old aperture signal > 5 ADU",
+          "note": "The source moves ~4 arcsec/epoch (~1.3 px); the difference aperture at the old/new propagated positions isolates it."
+        }
+      ],
+      "epochs": [
+        "2025_E1",
+        "2025_E2",
+        "2026_E1"
+      ],
+      "missing_bands_by_epoch": {},
+      "halo_display_mode": true,
+      "reference_overlays": [
+        "attribution",
+        "attribution_json",
+        "gaia_sources_url",
+        "mid_ir_wise",
+        "mid_ir_wise_w1",
+        "mid_ir_wise_w2",
+        "optical_dss2_red",
+        "optical_dss_gaia"
+      ],
+      "telemetry": {
+        "count": 3,
+        "total_bytes": 309762,
+        "by_epoch": {
+          "2025_E1": {
+            "file": "telemetry_2025_E1.bin.gz",
+            "byte_size": 102394,
+            "kib": 100.0,
+            "flux_band": "thermal",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2025_E2": {
+            "file": "telemetry_2025_E2.bin.gz",
+            "byte_size": 104716,
+            "kib": 102.3,
+            "flux_band": "thermal",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2026_E1": {
+            "file": "telemetry_2026_E1.bin.gz",
+            "byte_size": 102652,
+            "kib": 100.2,
+            "flux_band": "thermal",
+            "format": "float16_uint32_le_gzip"
+          }
+        }
+      },
+      "spectrum": {
+        "available": true,
+        "max_visits_per_band": 12,
+        "confidence": "high",
+        "by_epoch": {
+          "2025_E1": {
+            "total": 46,
+            "used": 43
+          },
+          "2025_E2": {
+            "total": 60,
+            "used": 59
+          },
+          "2026_E1": {
+            "total": 58,
+            "used": 56
+          }
+        }
+      },
+      "caveats": [
+        "The field is crowded; single-epoch B1-B4 frames do not show an obvious isolated source. The band-dependent result is a difference-mode measurement.",
+        "The B3 spectrum has used channels in all bands, but the 12.3\" aperture is contaminated; do not quote it as clean photometry."
+      ]
+    },
+    "barnards_star": {
+      "target_name": "Barnard's Star",
+      "status": "pass",
+      "checks_passed": 1,
+      "checks_total": 1,
+      "checks": [
+        {
+          "name": "position_shift",
+          "passed": true,
+          "metric": {
+            "band": 2,
+            "measured_dx_px": 0.6049967861319487,
+            "measured_dy_px": 2.9156205903700965,
+            "measured_separation_px": 2.9777280833246103,
+            "expected_separation_px": 3.2375047598632802,
+            "direction_dot": 0.9918972162246711,
+            "first_epoch": "2025_E1",
+            "last_epoch": "2026_E1"
+          },
+          "threshold": "measured separation > 1.0 px and direction dot > 0.7",
+          "note": "Proper motion ~10.4 arcsec/yr = ~1.7 px per six-month epoch."
+        }
+      ],
+      "epochs": [
+        "2025_E1",
+        "2025_E2",
+        "2026_E1"
+      ],
+      "missing_bands_by_epoch": {},
+      "halo_display_mode": true,
+      "reference_overlays": [
+        "attribution",
+        "attribution_json",
+        "gaia_sources_url",
+        "mid_ir_wise",
+        "mid_ir_wise_w1",
+        "optical_dss2_red",
+        "optical_dss_gaia"
+      ],
+      "telemetry": {
+        "count": 3,
+        "total_bytes": 334920,
+        "by_epoch": {
+          "2025_E1": {
+            "file": "telemetry_2025_E1.bin.gz",
+            "byte_size": 110239,
+            "kib": 107.7,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2025_E2": {
+            "file": "telemetry_2025_E2.bin.gz",
+            "byte_size": 114080,
+            "kib": 111.4,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2026_E1": {
+            "file": "telemetry_2026_E1.bin.gz",
+            "byte_size": 110601,
+            "kib": 108.0,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          }
+        }
+      },
+      "spectrum": {
+        "available": true,
+        "max_visits_per_band": 12,
+        "confidence": "high",
+        "by_epoch": {
+          "2025_E1": {
+            "total": 71,
+            "used": 1
+          },
+          "2025_E2": {
+            "total": 72,
+            "used": 1
+          },
+          "2026_E1": {
+            "total": 72,
+            "used": 0
+          }
+        }
+      },
+      "caveats": [
+        "The stellar core is saturated (OVERFLOW/SUR_ERROR); the position is measured from the saturated halo centroid, not clean core photometry."
+      ]
+    },
+    "eps_indi_b": {
+      "target_name": "Epsilon Indi B",
+      "status": "pass",
+      "checks_passed": 3,
+      "checks_total": 3,
+      "checks": [
+        {
+          "name": "unresolved_blend",
+          "passed": true,
+          "metric": {
+            "separation_arcsec": 0.6,
+            "separation_px": 0.19512195121951217
+          },
+          "threshold": "separation < 1 output pixel",
+          "note": "The pair is blended inside one 6.15 arcsec native pixel."
+        },
+        {
+          "name": "composite_spectrum",
+          "passed": true,
+          "metric": {
+            "bands_with_used_channels": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "epochs": [
+              "2024_E1",
+              "2025_E1",
+              "2025_E2",
+              "2026_E1"
+            ]
+          },
+          "threshold": "used channels in at least 4 bands",
+          "note": "B3 used-channel photometry; many bright-core channels are flagged."
+        },
+        {
+          "name": "thermal_difference_signal",
+          "passed": true,
+          "metric": {
+            "thermal_difference_rms_adu": 21.435249406470184,
+            "short_wavelength_difference_rms_adu": 10.424412824283621,
+            "ratio": 2.0562548479025
+          },
+          "threshold": "thermal difference-frame RMS > 1.5x short-wavelength",
+          "note": "The T-dwarf pair is red; the difference signal is thermal-dominated."
+        }
+      ],
+      "epochs": [
+        "2024_E1",
+        "2025_E1",
+        "2025_E2",
+        "2026_E1"
+      ],
+      "missing_bands_by_epoch": {},
+      "halo_display_mode": true,
+      "reference_overlays": [
+        "attribution",
+        "attribution_json",
+        "gaia_sources_url",
+        "mid_ir_wise",
+        "mid_ir_wise_w1",
+        "optical_dss2_red",
+        "optical_dss_gaia"
+      ],
+      "telemetry": {
+        "count": 4,
+        "total_bytes": 377290,
+        "by_epoch": {
+          "2024_E1": {
+            "file": "telemetry_2024_E1.bin.gz",
+            "byte_size": 94332,
+            "kib": 92.1,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2025_E1": {
+            "file": "telemetry_2025_E1.bin.gz",
+            "byte_size": 95888,
+            "kib": 93.6,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2025_E2": {
+            "file": "telemetry_2025_E2.bin.gz",
+            "byte_size": 95860,
+            "kib": 93.6,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2026_E1": {
+            "file": "telemetry_2026_E1.bin.gz",
+            "byte_size": 91210,
+            "kib": 89.1,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          }
+        }
+      },
+      "spectrum": {
+        "available": true,
+        "max_visits_per_band": 12,
+        "confidence": "high",
+        "by_epoch": {
+          "2024_E1": {
+            "total": 55,
+            "used": 50
+          },
+          "2025_E1": {
+            "total": 72,
+            "used": 64
+          },
+          "2025_E2": {
+            "total": 69,
+            "used": 67
+          },
+          "2026_E1": {
+            "total": 50,
+            "used": 47
+          }
+        }
+      },
+      "caveats": [
+        "Epsilon Indi Ba/Bb are 0.6 arcsec apart; at 3.075 arcsec/pixel they are unresolved (0.2 pixel separation). The tool must explain the blend, not claim a resolved pair."
+      ]
+    },
+    "rw_aurigae": {
+      "target_name": "RW Aurigae",
+      "status": "pass",
+      "checks_passed": 1,
+      "checks_total": 1,
+      "checks": [
+        {
+          "name": "epoch_variability_or_nir_excess",
+          "passed": true,
+          "metric": {
+            "per_band_epoch_variation": {
+              "1": 0.14129329151694406,
+              "2": 0.632136935112813,
+              "3": 0.32803213691343286,
+              "6": 0.13833816127355503,
+              "5": 0.031574235559928415
+            },
+            "max_variation": 0.632136935112813,
+            "nir_b6_over_b1": 7.270166062690413
+          },
+          "threshold": "max variation >= 20% or B6/B1 >= 2",
+          "note": "A T Tauri disk can vary between epochs and/or show a strong NIR excess."
+        }
+      ],
+      "epochs": [
+        "2025_E1",
+        "2025_E2",
+        "2026_E1"
+      ],
+      "missing_bands_by_epoch": {},
+      "halo_display_mode": true,
+      "reference_overlays": [
+        "attribution",
+        "attribution_json",
+        "gaia_sources_url",
+        "mid_ir_wise",
+        "mid_ir_wise_w1",
+        "optical_dss2_red",
+        "optical_dss_gaia"
+      ],
+      "telemetry": {
+        "count": 3,
+        "total_bytes": 332801,
+        "by_epoch": {
+          "2025_E1": {
+            "file": "telemetry_2025_E1.bin.gz",
+            "byte_size": 109001,
+            "kib": 106.4,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2025_E2": {
+            "file": "telemetry_2025_E2.bin.gz",
+            "byte_size": 111918,
+            "kib": 109.3,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2026_E1": {
+            "file": "telemetry_2026_E1.bin.gz",
+            "byte_size": 111882,
+            "kib": 109.3,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          }
+        }
+      },
+      "spectrum": {
+        "available": true,
+        "max_visits_per_band": 12,
+        "confidence": "high",
+        "by_epoch": {
+          "2025_E1": {
+            "total": 72,
+            "used": 23
+          },
+          "2025_E2": {
+            "total": 72,
+            "used": 41
+          },
+          "2026_E1": {
+            "total": 72,
+            "used": 38
+          }
+        }
+      },
+      "caveats": [
+        "The bright stellar core is saturated (OVERFLOW); several spectral channels are hard-bad or have clean_fraction < 0.5.",
+        "The variability is measured from used-channel spectra and difference frames, not from a calibrated light curve."
+      ]
+    },
+    "r_draconis": {
+      "target_name": "R Draconis",
+      "status": "pass",
+      "checks_passed": 2,
+      "checks_total": 2,
+      "checks": [
+        {
+          "name": "saturation_flags_visible",
+          "passed": true,
+          "metric": {
+            "active_warning_flags_union": [
+              "HALO",
+              "OVERFLOW",
+              "PERSIST",
+              "TRANSIENT"
+            ]
+          },
+          "threshold": "OVERFLOW, HALO, or TRANSIENT present",
+          "note": "Saturation/artifact flags are expected for this bright Mira."
+        },
+        {
+          "name": "epoch_variability",
+          "passed": true,
+          "metric": {
+            "max_abs_difference_central_mean_adu": 62.279000594883996,
+            "difference_central_mean_adu": {
+              "2025_E1_minus_2024_E1_D3": -2.210588935157644,
+              "2025_E1_minus_2024_E1_D6": 14.4360499702558,
+              "2025_E2_minus_2025_E1_D1": -56.85841760856633,
+              "2025_E2_minus_2025_E1_D2": -55.972635336109455,
+              "2025_E2_minus_2025_E1_D3": -25.446757882212967,
+              "2025_E2_minus_2025_E1_D4": -6.008328375966687,
+              "2025_E2_minus_2025_E1_D5": -50.91017251635931,
+              "2025_E2_minus_2025_E1_D6": -43.19869125520523,
+              "2026_E1_minus_2025_E2_D1": -19.57763236168947,
+              "2026_E1_minus_2025_E2_D2": 33.747174301011306,
+              "2026_E1_minus_2025_E2_D3": -62.279000594883996,
+              "2026_E1_minus_2025_E2_D4": -28.496728138013086,
+              "2026_E1_minus_2025_E2_D5": -27.879833432480666,
+              "2026_E1_minus_2025_E2_D6": -49.8720999405116
+            }
+          },
+          "threshold": "> 20 ADU coherent central change",
+          "note": "Large coherent difference levels indicate brightness changes."
+        }
+      ],
+      "epochs": [
+        "2024_E1",
+        "2025_E1",
+        "2025_E2",
+        "2026_E1"
+      ],
+      "missing_bands_by_epoch": {
+        "2024_E1": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "halo_display_mode": true,
+      "reference_overlays": [
+        "attribution",
+        "attribution_json",
+        "gaia_sources_url",
+        "mid_ir_wise",
+        "mid_ir_wise_w1",
+        "optical_dss2_red",
+        "optical_dss_gaia"
+      ],
+      "telemetry": {
+        "count": 4,
+        "total_bytes": 376015,
+        "by_epoch": {
+          "2024_E1": {
+            "file": "telemetry_2024_E1.bin.gz",
+            "byte_size": 84594,
+            "kib": 82.6,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2025_E1": {
+            "file": "telemetry_2025_E1.bin.gz",
+            "byte_size": 96672,
+            "kib": 94.4,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2025_E2": {
+            "file": "telemetry_2025_E2.bin.gz",
+            "byte_size": 97299,
+            "kib": 95.0,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          },
+          "2026_E1": {
+            "file": "telemetry_2026_E1.bin.gz",
+            "byte_size": 97450,
+            "kib": 95.2,
+            "flux_band": "all",
+            "format": "float16_uint32_le_gzip"
+          }
+        }
+      },
+      "spectrum": {
+        "available": true,
+        "max_visits_per_band": 12,
+        "confidence": "high",
+        "by_epoch": {
+          "2024_E1": {
+            "total": 24,
+            "used": 0
+          },
+          "2025_E1": {
+            "total": 72,
+            "used": 0
+          },
+          "2025_E2": {
+            "total": 72,
+            "used": 0
+          },
+          "2026_E1": {
+            "total": 72,
+            "used": 0
+          }
+        }
+      },
+      "caveats": [
+        "The Mira core is saturated and hard-masked (OVERFLOW/SUR_ERROR); the display frame shows a saturated halo with a black core hole.",
+        "Variability is therefore measured from the difference-frame mean level, not from calibrated aperture photometry."
+      ]
+    }
+  },
+  "summary": {
+    "pass": 5,
+    "partial": 0,
+    "fail": 0,
+    "total": 5,
+    "result": "5/5"
+  }
+}

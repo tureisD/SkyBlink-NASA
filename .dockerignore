@@ -1,0 +1,70 @@
+# Build context hygiene for SPHEREx SkyBlink.
+# Keep the image small and prevent local caches, FITS products, secrets, and
+# development-only material from entering the build context.
+
+# Version control, hooks, CI/editor state
+.git
+.githooks
+.github
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# Python virtualenvs and caches
+.venv
+.venv311
+**/.venv
+**/.venv311
+**/__pycache__
+**/*.py[cod]
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+backend/.cache
+backend/backend/.cache
+**/.cache
+
+# Node / frontend build artifacts
+**/node_modules
+frontend/dist
+frontend/qa/**
+!frontend/qa/phase1/
+!frontend/qa/phase1/check-real-data.mjs
+
+# Data products that must never be baked into the image
+**/*.fits
+**/*.fits.gz
+**/*.fit
+
+# Documentation, agent material, and local project files
+docs/**
+!docs/evidence/
+!docs/evidence/phase1/
+!docs/evidence/phase1/phase1-data-inventory.json
+agents/
+.opencode/
+SPHEREx Challenge Research and Pain Points.pdf
+**/*.pdf
+
+# Secrets and local environment overrides
+.env
+.env.*
+!.env.example
+
+# Only the runtime server wrapper is needed from scripts/
+scripts/*
+!scripts/serve.py
+!scripts/verify_real_data.py
+
+# Retired synthetic products must not enter either build stage.
+frontend/public/mock/
+golden_cache/fallback_*/
+frontend/src/data/eps_indi_templates.json
+frontend/src/components/ForwardComparator.tsx
+
+# Tests and test fixtures are not required at runtime
+backend/tests/
+
+# Package manager noise
+npm-debug.log*

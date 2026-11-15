@@ -1,0 +1,853 @@
+{
+  "created_at": "2026-11-14T21:26:10.188260+00:00",
+  "status": "failed",
+  "all_eight_cells_attempted": true,
+  "primary_method": "exact_SAPM",
+  "preregistration_sha256": "e913d6ae59d84f084a8c09cef50b8a18cf2e76cad45460351d2bf02e9a2c5d5a",
+  "amendment_sha256": "71c349523647ba8d275f6d34c128af93fcd273ea6e50b76800ff88748f4feb98",
+  "cells": [
+    {
+      "field": "north_galactic_pole",
+      "detector": 1,
+      "status": "no_qualified_pair_within_frozen_bounds",
+      "pair_lock": "docs/phase4-science-online-north_galactic_pole-D1-retry-pair-lock.json",
+      "pair_attempts": 24,
+      "rejections": {
+        "Fewer than3 lockedcontrols pass calibrated neighborhood matching": 24
+      }
+    },
+    {
+      "field": "north_galactic_pole",
+      "detector": 3,
+      "status": "pass",
+      "pair_lock": "docs/phase4-science-online-north_galactic_pole-D3-pair-lock.json",
+      "pair_attempts": 2,
+      "primary": {
+        "status": "pass",
+        "count": 3,
+        "median_z": -0.33893174095682355,
+        "robust_scatter_z": 0.30799996223989373,
+        "max_abs_z": 0.5466748694067721,
+        "z": [
+          0.1360194062487185,
+          -0.33893174095682355,
+          -0.5466748694067721
+        ]
+      },
+      "summaries": {
+        "sapm": {
+          "center": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.41954733100612124,
+            "robust_scatter_z": 0.6197234203770848,
+            "max_abs_z": 0.8375450514816944,
+            "z": [
+              0.18110417518540134,
+              -0.41954733100612124,
+              -0.8375450514816944
+            ]
+          },
+          "subpixel": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.34158094647753035,
+            "robust_scatter_z": 0.3264315248168549,
+            "max_abs_z": 0.5617559935683538,
+            "z": [
+              0.0986138856661922,
+              -0.34158094647753035,
+              -0.5617559935683538
+            ]
+          },
+          "exact": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.33893174095682355,
+            "robust_scatter_z": 0.30799996223989373,
+            "max_abs_z": 0.5466748694067721,
+            "z": [
+              0.1360194062487185,
+              -0.33893174095682355,
+              -0.5466748694067721
+            ]
+          }
+        },
+        "constant_wcs": {
+          "center": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.38046652212415966,
+            "robust_scatter_z": 0.6537840847379414,
+            "max_abs_z": 0.8214378459727644,
+            "z": [
+              0.22810786232343563,
+              -0.38046652212415966,
+              -0.8214378459727644
+            ]
+          },
+          "subpixel": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.30215271808329863,
+            "robust_scatter_z": 0.3601786538014559,
+            "max_abs_z": 0.5450898918331003,
+            "z": [
+              0.1470958244849822,
+              -0.30215271808329863,
+              -0.5450898918331003
+            ]
+          },
+          "exact": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.29957585856651386,
+            "robust_scatter_z": 0.3415144206211047,
+            "max_abs_z": 0.5299241795034522,
+            "z": [
+              0.18444514255552988,
+              -0.29957585856651386,
+              -0.5299241795034522
+            ]
+          }
+        }
+      },
+      "measurement": "docs/phase4-science-online-north_galactic_pole-D3-measurements.json",
+      "subpixel_exact_max_abs_sigma": 0.03218624778864737,
+      "subpixel_exact_above_point1_sigma": 0,
+      "eligible_source_ids": [
+        "3961694090282546304",
+        "3961692681533288064",
+        "3961807133821796992"
+      ]
+    },
+    {
+      "field": "south_galactic_pole",
+      "detector": 1,
+      "status": "pass",
+      "pair_lock": "docs/phase4-science-online-south_galactic_pole-D1-retry-pair-lock.json",
+      "pair_attempts": 1,
+      "primary": {
+        "status": "pass",
+        "count": 9,
+        "median_z": 0.9404697568109281,
+        "robust_scatter_z": 0.5572904185536695,
+        "max_abs_z": 3.809816519668711,
+        "z": [
+          0.965357949850487,
+          -0.44767721461769583,
+          -3.809816519668711,
+          -1.0429809846722788,
+          1.0870962775888713,
+          1.3163569944702223,
+          0.25249615969320927,
+          1.0328030771219863,
+          0.9404697568109281
+        ]
+      },
+      "summaries": {
+        "sapm": {
+          "center": {
+            "status": "pass",
+            "count": 9,
+            "median_z": 0.8912942964496612,
+            "robust_scatter_z": 0.5698057526055594,
+            "max_abs_z": 3.90268594814781,
+            "z": [
+              1.0534314164063587,
+              -0.36627540344892795,
+              -3.90268594814781,
+              -1.2083678567147937,
+              1.130124642315694,
+              1.275623011278718,
+              0.2814470008447814,
+              0.8912942964496612,
+              0.9148022748453238
+            ]
+          },
+          "subpixel": {
+            "status": "pass",
+            "count": 9,
+            "median_z": 0.9172307899791365,
+            "robust_scatter_z": 0.5846205810078806,
+            "max_abs_z": 3.84092930402934,
+            "z": [
+              0.9639357403578789,
+              -0.4629052972498685,
+              -3.84092930402934,
+              -1.0545007742596033,
+              1.1002638146553543,
+              1.3115519696687903,
+              0.26146401079639287,
+              1.0098203986105356,
+              0.9172307899791365
+            ]
+          },
+          "exact": {
+            "status": "pass",
+            "count": 9,
+            "median_z": 0.9404697568109281,
+            "robust_scatter_z": 0.5572904185536695,
+            "max_abs_z": 3.809816519668711,
+            "z": [
+              0.965357949850487,
+              -0.44767721461769583,
+              -3.809816519668711,
+              -1.0429809846722788,
+              1.0870962775888713,
+              1.3163569944702223,
+              0.25249615969320927,
+              1.0328030771219863,
+              0.9404697568109281
+            ]
+          }
+        },
+        "constant_wcs": {
+          "center": {
+            "status": "pass",
+            "count": 9,
+            "median_z": 0.8968593548504727,
+            "robust_scatter_z": 0.5754436170303948,
+            "max_abs_z": 3.879848542330969,
+            "z": [
+              1.0859840138177197,
+              -0.33909130878475735,
+              -3.879848542330969,
+              -1.1925334924882318,
+              1.1352015141729392,
+              1.2849907571372627,
+              0.28855140265727486,
+              0.8968593548504727,
+              0.91845778262341
+            ]
+          },
+          "subpixel": {
+            "status": "pass",
+            "count": 9,
+            "median_z": 0.9210938182195686,
+            "robust_scatter_z": 0.5931743140433701,
+            "max_abs_z": 3.817454033492995,
+            "z": [
+              0.9960892800285168,
+              -0.43544690415019394,
+              -3.817454033492995,
+              -1.0385757920554128,
+              1.1053199007929062,
+              1.3211844118006897,
+              0.26891445058434393,
+              1.0156795967801202,
+              0.9210938182195686
+            ]
+          },
+          "exact": {
+            "status": "pass",
+            "count": 9,
+            "median_z": 0.9443330636128306,
+            "robust_scatter_z": 0.5658957488311538,
+            "max_abs_z": 3.786351205805241,
+            "z": [
+              0.9974834373798211,
+              -0.42018422913746534,
+              -3.786351205805241,
+              -1.0270260422779367,
+              1.0921632698158257,
+              1.3260245170265321,
+              0.2599538762644776,
+              1.0386852781887623,
+              0.9443330636128306
+            ]
+          }
+        }
+      },
+      "measurement": "docs/phase4-science-online-south_galactic_pole-D1-retry-measurements.json",
+      "subpixel_exact_max_abs_sigma": 0.0394232204983536,
+      "subpixel_exact_above_point1_sigma": 0,
+      "eligible_source_ids": [
+        "2342673285785556864",
+        "2342678886422908544",
+        "2342687545077003136",
+        "2342875699006181376",
+        "2342656002837160832",
+        "2342663149662738432",
+        "2342557733985442176",
+        "2342863363860108032",
+        "2342646966225943296"
+      ]
+    },
+    {
+      "field": "south_galactic_pole",
+      "detector": 3,
+      "status": "pass",
+      "pair_lock": "docs/phase4-science-online-south_galactic_pole-D3-pair-lock.json",
+      "pair_attempts": 1,
+      "primary": {
+        "status": "pass",
+        "count": 5,
+        "median_z": -0.11822919514937041,
+        "robust_scatter_z": 0.6489072109551505,
+        "max_abs_z": 1.5459136242760758,
+        "z": [
+          -0.5559111126963491,
+          0.6218243655394329,
+          -0.11822919514937041,
+          0.2862056512281841,
+          -1.5459136242760758
+        ]
+      },
+      "summaries": {
+        "sapm": {
+          "center": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.4855702935543399,
+            "robust_scatter_z": 0.8775588914315411,
+            "max_abs_z": 1.511467430665385,
+            "z": [
+              -0.6972285693126645,
+              0.43163795589279397,
+              -0.4855702935543399,
+              0.1063350696127592,
+              -1.511467430665385
+            ]
+          },
+          "subpixel": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.12307548137755091,
+            "robust_scatter_z": 0.5993599213993277,
+            "max_abs_z": 1.5293260423850064,
+            "z": [
+              -0.5273382099620159,
+              0.6546712986553068,
+              -0.12307548137755091,
+              0.27803460623671666,
+              -1.5293260423850064
+            ]
+          },
+          "exact": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.11822919514937041,
+            "robust_scatter_z": 0.6489072109551505,
+            "max_abs_z": 1.5459136242760758,
+            "z": [
+              -0.5559111126963491,
+              0.6218243655394329,
+              -0.11822919514937041,
+              0.2862056512281841,
+              -1.5459136242760758
+            ]
+          }
+        },
+        "constant_wcs": {
+          "center": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.5375271810901631,
+            "robust_scatter_z": 0.918411903356043,
+            "max_abs_z": 1.5359455614106852,
+            "z": [
+              -0.7903640768400699,
+              0.34909524442148554,
+              -0.5375271810901631,
+              0.08193316111679969,
+              -1.5359455614106852
+            ]
+          },
+          "subpixel": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.17635135764933788,
+            "robust_scatter_z": 0.6607371593312351,
+            "max_abs_z": 1.5545324291361329,
+            "z": [
+              -0.6220124660610707,
+              0.5713500626065725,
+              -0.17635135764933788,
+              0.2525827835295393,
+              -1.5545324291361329
+            ]
+          },
+          "exact": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.17161009782792508,
+            "robust_scatter_z": 0.7102513510821292,
+            "max_abs_z": 1.571148081190951,
+            "z": [
+              -0.6506680710385883,
+              0.5384122226928252,
+              -0.17161009782792508,
+              0.26066684419537134,
+              -1.571148081190951
+            ]
+          }
+        }
+      },
+      "measurement": "docs/phase4-science-online-south_galactic_pole-D3-measurements.json",
+      "subpixel_exact_max_abs_sigma": 0.07926123842177926,
+      "subpixel_exact_above_point1_sigma": 0,
+      "eligible_source_ids": [
+        "2342678886422908544",
+        "2342687545077003136",
+        "2342875699006181376",
+        "2342557733985442176",
+        "2342863363860108032"
+      ]
+    },
+    {
+      "field": "north_b60",
+      "detector": 1,
+      "status": "pass",
+      "pair_lock": "docs/phase4-science-online-north_b60-D1-pair-lock.json",
+      "pair_attempts": 1,
+      "primary": {
+        "status": "pass",
+        "count": 3,
+        "median_z": -0.22379802311734373,
+        "robust_scatter_z": 1.2703232284084387,
+        "max_abs_z": 1.0806193022273118,
+        "z": [
+          0.9055730661022908,
+          -0.22379802311734373,
+          -1.0806193022273118
+        ]
+      },
+      "summaries": {
+        "sapm": {
+          "center": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.05871966561093532,
+            "robust_scatter_z": 0.7243623888622801,
+            "max_abs_z": 1.149900926890687,
+            "z": [
+              0.4298560721890648,
+              -0.05871966561093532,
+              -1.149900926890687
+            ]
+          },
+          "subpixel": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.21240737977950508,
+            "robust_scatter_z": 1.279287813407575,
+            "max_abs_z": 1.0752751886339331,
+            "z": [
+              0.8882589748340152,
+              -0.21240737977950508,
+              -1.0752751886339331
+            ]
+          },
+          "exact": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.22379802311734373,
+            "robust_scatter_z": 1.2703232284084387,
+            "max_abs_z": 1.0806193022273118,
+            "z": [
+              0.9055730661022908,
+              -0.22379802311734373,
+              -1.0806193022273118
+            ]
+          }
+        },
+        "constant_wcs": {
+          "center": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.080912876678805,
+            "robust_scatter_z": 0.6525048707828975,
+            "max_abs_z": 1.1581988406388406,
+            "z": [
+              0.3591956291777292,
+              -0.080912876678805,
+              -1.1581988406388406
+            ]
+          },
+          "subpixel": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.23581958061873184,
+            "robust_scatter_z": 1.2576986822174687,
+            "max_abs_z": 1.0841257199803054,
+            "z": [
+              0.8163534810571212,
+              -0.23581958061873184,
+              -1.0841257199803054
+            ]
+          },
+          "exact": {
+            "status": "pass",
+            "count": 3,
+            "median_z": -0.2471662907411335,
+            "robust_scatter_z": 1.2487855957957594,
+            "max_abs_z": 1.0894606356728478,
+            "z": [
+              0.8335936029435946,
+              -0.2471662907411335,
+              -1.0894606356728478
+            ]
+          }
+        }
+      },
+      "measurement": "docs/phase4-science-online-north_b60-D1-measurements.json",
+      "subpixel_exact_max_abs_sigma": 0.05649263519234332,
+      "subpixel_exact_above_point1_sigma": 0,
+      "eligible_source_ids": [
+        "779219771731540736",
+        "779213277740995840",
+        "779153766674162816"
+      ]
+    },
+    {
+      "field": "north_b60",
+      "detector": 3,
+      "status": "failed",
+      "pair_lock": "docs/phase4-science-online-north_b60-D3-pair-lock.json",
+      "pair_attempts": 1,
+      "primary": {
+        "status": "failed",
+        "count": 7,
+        "median_z": 0.39832940974405473,
+        "robust_scatter_z": 2.148690175448137,
+        "max_abs_z": 2.17409181348323,
+        "z": [
+          -2.17409181348323,
+          1.8476010780619674,
+          0.39832940974405473,
+          -1.1943404610011972,
+          2.113421365835318,
+          0.4944508028707691,
+          0.01570726316397755
+        ]
+      },
+      "summaries": {
+        "sapm": {
+          "center": {
+            "status": "pass",
+            "count": 7,
+            "median_z": 0.18078880575864778,
+            "robust_scatter_z": 1.9086878513498151,
+            "max_abs_z": 1.9817363664158296,
+            "z": [
+              -1.9817363664158296,
+              1.7331375238012088,
+              0.18078880575864778,
+              -1.1066035127020397,
+              1.6625266690068998,
+              1.2775240046034937,
+              0.14992213761527776
+            ]
+          },
+          "subpixel": {
+            "status": "failed",
+            "count": 7,
+            "median_z": 0.44818710078466056,
+            "robust_scatter_z": 2.0394889942644903,
+            "max_abs_z": 2.1159606391547077,
+            "z": [
+              -2.1159606391547077,
+              1.8238035814702738,
+              0.44818710078466056,
+              -1.2361949658221303,
+              2.1105463359717618,
+              0.47531058063284504,
+              0.011487539875581116
+            ]
+          },
+          "exact": {
+            "status": "failed",
+            "count": 7,
+            "median_z": 0.39832940974405473,
+            "robust_scatter_z": 2.148690175448137,
+            "max_abs_z": 2.17409181348323,
+            "z": [
+              -2.17409181348323,
+              1.8476010780619674,
+              0.39832940974405473,
+              -1.1943404610011972,
+              2.113421365835318,
+              0.4944508028707691,
+              0.01570726316397755
+            ]
+          }
+        },
+        "constant_wcs": {
+          "center": {
+            "status": "pass",
+            "count": 7,
+            "median_z": 0.18478247576238063,
+            "robust_scatter_z": 1.9105562563208731,
+            "max_abs_z": 1.9754178041554882,
+            "z": [
+              -1.9754178041554882,
+              1.7382518389314887,
+              0.18478247576238063,
+              -1.1038700645862456,
+              1.6651537842265405,
+              1.2799923988547506,
+              0.1518615992116861
+            ]
+          },
+          "subpixel": {
+            "status": "failed",
+            "count": 7,
+            "median_z": 0.4523671695787034,
+            "robust_scatter_z": 2.0408984102617826,
+            "max_abs_z": 2.113267471861867,
+            "z": [
+              -2.1095240859720126,
+              1.8289342883307491,
+              0.4523671695787034,
+              -1.2333048378833427,
+              2.113267471861867,
+              0.4778128869444871,
+              0.013434812738587688
+            ]
+          },
+          "exact": {
+            "status": "failed",
+            "count": 7,
+            "median_z": 0.4025085225803626,
+            "robust_scatter_z": 2.1501083386934576,
+            "max_abs_z": 2.167663280306034,
+            "z": [
+              -2.167663280306034,
+              1.8527367289026733,
+              0.4025085225803626,
+              -1.1914427681063502,
+              2.1161422267554797,
+              0.4969509422149681,
+              0.017659570255643558
+            ]
+          }
+        }
+      },
+      "measurement": "docs/phase4-science-online-north_b60-D3-measurements.json",
+      "subpixel_exact_max_abs_sigma": 0.08337523459395724,
+      "subpixel_exact_above_point1_sigma": 0,
+      "eligible_source_ids": [
+        "779253577418809856",
+        "779227949349245184",
+        "779236985960428032",
+        "779413526296415488",
+        "779425724003552000",
+        "779219874810790144",
+        "779409506207043072"
+      ]
+    },
+    {
+      "field": "south_b60",
+      "detector": 1,
+      "status": "no_qualified_pair_within_frozen_bounds",
+      "pair_lock": "docs/phase4-science-online-south_b60-D1-pair-lock.json",
+      "pair_attempts": 23,
+      "rejections": {
+        "Fewer than3 lockedcontrols pass fixed aperture/background/isolation prerequisites": 1,
+        "Fewer than3 lockedcontrols pass calibrated neighborhood matching": 22
+      }
+    },
+    {
+      "field": "south_b60",
+      "detector": 3,
+      "status": "pass",
+      "pair_lock": "docs/phase4-science-online-south_b60-D3-pair-lock.json",
+      "pair_attempts": 2,
+      "primary": {
+        "status": "pass",
+        "count": 5,
+        "median_z": -0.043910425617873644,
+        "robust_scatter_z": 1.1674490350617766,
+        "max_abs_z": 1.7270675981139039,
+        "z": [
+          -1.7270675981139039,
+          -0.39188185693873906,
+          0.7435231606911623,
+          1.2647929759220047,
+          -0.043910425617873644
+        ]
+      },
+      "summaries": {
+        "sapm": {
+          "center": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.28422812152141697,
+            "robust_scatter_z": 1.5768294135685972,
+            "max_abs_z": 1.3477849902443344,
+            "z": [
+              -1.3477849902443344,
+              -0.28422812152141697,
+              1.131156524073052,
+              1.136548235050071,
+              -0.3452040803110089
+            ]
+          },
+          "subpixel": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.059431332990022574,
+            "robust_scatter_z": 1.1632986720854606,
+            "max_abs_z": 1.7263378158086775,
+            "z": [
+              -1.7263378158086775,
+              -0.39640510169112864,
+              0.7252028718430145,
+              1.2356546040539482,
+              -0.059431332990022574
+            ]
+          },
+          "exact": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.043910425617873644,
+            "robust_scatter_z": 1.1674490350617766,
+            "max_abs_z": 1.7270675981139039,
+            "z": [
+              -1.7270675981139039,
+              -0.39188185693873906,
+              0.7435231606911623,
+              1.2647929759220047,
+              -0.043910425617873644
+            ]
+          }
+        },
+        "constant_wcs": {
+          "center": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.2689053828990141,
+            "robust_scatter_z": 1.579924992442358,
+            "max_abs_z": 1.334550190967514,
+            "z": [
+              -1.334550190967514,
+              -0.2689053828990141,
+              1.1403809216761815,
+              1.1421906236407446,
+              -0.34163216636879007
+            ]
+          },
+          "subpixel": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.055697562730198096,
+            "robust_scatter_z": 1.1715452264442021,
+            "max_abs_z": 1.7129035571719249,
+            "z": [
+              -1.7129035571719249,
+              -0.3809656342953264,
+              0.7344988668153315,
+              1.2415083822880182,
+              -0.055697562730198096
+            ]
+          },
+          "exact": {
+            "status": "pass",
+            "count": 5,
+            "median_z": -0.0401867455386814,
+            "robust_scatter_z": 1.1757598395325557,
+            "max_abs_z": 1.713600484935553,
+            "z": [
+              -1.713600484935553,
+              -0.3764377072572055,
+              0.7528524015897118,
+              1.270669343714744,
+              -0.0401867455386814
+            ]
+          }
+        }
+      },
+      "measurement": "docs/phase4-science-online-south_b60-D3-measurements.json",
+      "subpixel_exact_max_abs_sigma": 0.03470264767087461,
+      "subpixel_exact_above_point1_sigma": 0,
+      "eligible_source_ids": [
+        "6545815486666996352",
+        "6593973821085589504",
+        "6545964711010651904",
+        "6593871841382186112",
+        "6545927911730889600"
+      ]
+    }
+  ],
+  "valid_cells": 6,
+  "passing_cells": 5,
+  "eligible_source_detector_comparisons": 32,
+  "unique_eligible_gaia_sources": 27,
+  "references": [
+    {
+      "path": "docs/phase4-science-online-north_galactic_pole-D1-retry-pair-lock.json",
+      "sha256": "c95c762775e69524753ee4e402459caa40f4cd8113e97ec5c2133d0d9b210ae0"
+    },
+    {
+      "path": "docs/phase4-science-online-north_galactic_pole-D3-pair-lock.json",
+      "sha256": "2c464b1a9fb350ceb713d6afa68a5cd04f01b24e4ca4ac0f0dfa3d64ff6e9a0e"
+    },
+    {
+      "path": "docs/phase4-science-online-north_galactic_pole-D3-measurements.json",
+      "sha256": "ac6496a24ffd6e13816b6c7eef3bb707c8bf6f3c3cd246c0c78d07ce16de5480"
+    },
+    {
+      "path": "docs/phase4-science-online-south_galactic_pole-D1-retry-pair-lock.json",
+      "sha256": "6b88260350986ec85885dffd496a261e83330f1e06e40fbe7b82b53df0f61f57"
+    },
+    {
+      "path": "docs/phase4-science-online-south_galactic_pole-D1-retry-measurements.json",
+      "sha256": "502362e0b69148b980217bb2dc2709c7225b2d9cb4d7afd0c32c2a1efdbcfcc9"
+    },
+    {
+      "path": "docs/phase4-science-online-south_galactic_pole-D3-pair-lock.json",
+      "sha256": "a6decb6cee21f0e1c3fb925c207e01948cf2c422a79d1b8604fb46e990d08aff"
+    },
+    {
+      "path": "docs/phase4-science-online-south_galactic_pole-D3-measurements.json",
+      "sha256": "7102e1a531dbbc03480c846cc51d1a01a3aa55cbc472e8f9497f4b8737b50c9f"
+    },
+    {
+      "path": "docs/phase4-science-online-north_b60-D1-pair-lock.json",
+      "sha256": "69935432f45688ef488a89b4310a19c4e252fcf7e20e808f0988dca757e19415"
+    },
+    {
+      "path": "docs/phase4-science-online-north_b60-D1-measurements.json",
+      "sha256": "8e28b49f78b5f4ab3fa9eed0fff26f0b44ee56283de765f4838e6bc084d2e0d0"
+    },
+    {
+      "path": "docs/phase4-science-online-north_b60-D3-pair-lock.json",
+      "sha256": "f97afe4c8b46858327cb43e099b8268da4dd85d4f15167c5c5564d3a58a39919"
+    },
+    {
+      "path": "docs/phase4-science-online-north_b60-D3-measurements.json",
+      "sha256": "46094e9d151151355d7918379d7e392feec03d665a2a98a8ffc3fbb2ebd0c056"
+    },
+    {
+      "path": "docs/phase4-science-online-south_b60-D1-pair-lock.json",
+      "sha256": "92409284f193dd4838eb41f1a2ddf3620003115fcb7650030ee1a9ebd4a21410"
+    },
+    {
+      "path": "docs/phase4-science-online-south_b60-D3-pair-lock.json",
+      "sha256": "7a133c0c61dbfa96beba9676956bbdfdfe93e7a38cdef3035fd07de1ced8ed98"
+    },
+    {
+      "path": "docs/phase4-science-online-south_b60-D3-measurements.json",
+      "sha256": "e38a99bcf626bf7e236efac1e2eaf789e30fb07884a8089cd2aa28cde6717a4c"
+    }
+  ],
+  "scope": "Scoped repeatability only: isolated full-support clean-annulus controls, D1/D3, recorded calibration/release/input pairs. Not all-sky or crowded/saturated certification; no totalflux or significance claim.",
+  "source_code_sha256": "7583a097023d1ad18bd50f1fcc9d29bd5f6a499a8ff3ca58f5d79c3567cdee7f",
+  "software": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "astropy": "8.0.2",
+    "photutils": "3.0.0",
+    "scipy": "1.17.1",
+    "reproject": "0.21.0"
+  },
+  "secondary_existing_production_method": {
+    "method": "center_pixel_constant_WCS",
+    "role": "Predeclared baseline, separate secondary result; cannot redefine failed primary study",
+    "population": "Same full-support/annulus/SAPM-SNR-qualified controls as primary; no method-specific reselection",
+    "status": "pass",
+    "passing_cells": 6,
+    "valid_cells": 6
+  }
+}

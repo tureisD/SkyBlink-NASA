@@ -1,0 +1,31 @@
+﻿{
+    "created_at":  "2026-11-15T20:30:44.3703428Z",
+    "scope":  "Styling verification using explicit saved real WISE 0855 revision-3 observations; not new archive retrieval or scientific validation",
+    "files":  [
+                  {
+                      "sha256":  "7a9bec47455e16c35159bb58162d729b97d83d65110f2759d7572ad9e613a454",
+                      "path":  "frontend/src/styles/observatory.css"
+                  },
+                  {
+                      "sha256":  "bcc0da18ff24f09bddd9db513e67160f2ab6e1fc0ed58134418904d0a62c14ac",
+                      "path":  "frontend/src/main.tsx"
+                  },
+                  {
+                      "sha256":  "9fe5e3ac5f0a2c0fba886da7496f963a06ecab936d50df384ceb6dbee809953a",
+                      "path":  "frontend/src/styles/global.css"
+                  },
+                  {
+                      "sha256":  "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1",
+                      "path":  "golden_cache/wise_0855/manifest.json"
+                  },
+                  {
+                      "sha256":  "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884",
+                      "path":  "golden_cache/wise_0855/spectrum.json"
+                  },
+                  {
+                      "sha256":  "28a69a268178f2af57803c973e25bb0216fdfecac63bb3465f0c409ee9438bf4",
+                      "path":  "docs/screenshots/visual-polish/verify.mjs"
+                  }
+              ],
+    "source_url":  "http://localhost:5173/?source=saved\u0026target=wise_0855"
+}

@@ -1,0 +1,381 @@
+{
+  "scope": "fresh archive access, not universal scientific validity",
+  "started_at": "2026-11-14T21:38:56.579264+00:00",
+  "results": [
+    {
+      "name": "north_galactic_pole",
+      "endpoint": "sky",
+      "query": {
+        "source": "archive",
+        "ra": 192.85948,
+        "dec": 27.12825,
+        "size": 0.05
+      },
+      "requested_at": "2026-11-14T21:38:56.580261+00:00",
+      "http_status": 200,
+      "elapsed_seconds": 90.907,
+      "analysis_id": "sha256:be1aec7271e5730165ba8be854b97174b68938895597257b6a3869d3e6072e3e",
+      "data_access": "archive",
+      "record_sha256": "f5af9af20958f65fc7f247a34894730ee1aabb1080a1d693cd1603b496117d51",
+      "comparison_status": "unmatched_single_epoch",
+      "comparison_reason": "PARTIAL_DOWNLOAD_NO_MATCHED_PAIR",
+      "discovery": {
+        "collection_results": [
+          {
+            "collection": "spherex_dr1",
+            "rows": 268,
+            "status": "complete"
+          },
+          {
+            "collection": "spherex_qr3",
+            "rows": 131,
+            "status": "complete"
+          },
+          {
+            "collection": "spherex_dr1_deep",
+            "rows": 0,
+            "status": "complete"
+          },
+          {
+            "collection": "spherex_qr3_deep",
+            "rows": 0,
+            "status": "complete"
+          }
+        ],
+        "collections": [
+          "spherex_dr1",
+          "spherex_qr3",
+          "spherex_dr1_deep",
+          "spherex_qr3_deep"
+        ],
+        "completeness_scope": "requested_current_release_collections_at_query_time",
+        "ingestion_note": "Official IRSA documentation notes SIA may lag new directory/TAP products by about one day",
+        "method": "sia2",
+        "missing_collections": [],
+        "parallel_collections": true,
+        "policy": "sia2_then_tap",
+        "query": {
+          "dec": 27.12825,
+          "ra": 192.85948
+        },
+        "record_count": 399,
+        "responses": [
+          {
+            "cache_relative_path": "discovery-responses/fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_qr3_deep",
+              "MAXREC": 100000,
+              "POS": "circle 192.85948000 27.12825000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd",
+            "size_bytes": 27474,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3_deep&POS=circle+192.85948000+27.12825000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          },
+          {
+            "cache_relative_path": "discovery-responses/fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_dr1_deep",
+              "MAXREC": 100000,
+              "POS": "circle 192.85948000 27.12825000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd",
+            "size_bytes": 27474,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_dr1_deep&POS=circle+192.85948000+27.12825000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          },
+          {
+            "cache_relative_path": "discovery-responses/46a062fa78d28671f1668763d734732981490fa1615b4aa5a71c3918068e6918.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_qr3",
+              "MAXREC": 100000,
+              "POS": "circle 192.85948000 27.12825000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "46a062fa78d28671f1668763d734732981490fa1615b4aa5a71c3918068e6918",
+            "size_bytes": 300833,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=circle+192.85948000+27.12825000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          },
+          {
+            "cache_relative_path": "discovery-responses/4b22004cdc8e36ec070e4fbfe8c3978c259e6ca2731233d390a358e9ead99f23.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_dr1",
+              "MAXREC": 100000,
+              "POS": "circle 192.85948000 27.12825000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "4b22004cdc8e36ec070e4fbfe8c3978c259e6ca2731233d390a358e9ead99f23",
+            "size_bytes": 586687,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_dr1&POS=circle+192.85948000+27.12825000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          }
+        ],
+        "status": "complete"
+      },
+      "acquired_inputs": 52,
+      "linked_inputs": 52,
+      "fresh_input_receipts": true,
+      "all_inputs_have_fresh_receipts": true,
+      "epochs": [
+        {
+          "id": "2026_E1",
+          "range": {
+            "mjd_min": 61192.195468,
+            "mjd_max": 61215.008103,
+            "date_start_iso": "2026-06-01",
+            "date_end_iso": "2026-06-24",
+            "time_scale": "utc"
+          },
+          "release": "QR3",
+          "availability": null
+        }
+      ],
+      "access_verified": true,
+      "science_acceptance": "not_established_by_access_probe",
+      "assets": [
+        {
+          "url": "/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_ALL_6e08472db6edbf5b05df2b52b73fb80ed7d39514fc3317b2ffe05bf1198179c1.webp",
+          "sha256": "6e08472db6edbf5b05df2b52b73fb80ed7d39514fc3317b2ffe05bf1198179c1"
+        },
+        {
+          "url": "/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_B56_6c9c9f4e8e953348d9152bd75af982658512079480e691c3d8626fb65382c3e2.webp",
+          "sha256": "6c9c9f4e8e953348d9152bd75af982658512079480e691c3d8626fb65382c3e2"
+        },
+        {
+          "url": "/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D1_20f0b55b476127d9339a96d78bce2f9178ca9a04f196201f66aaad2c3bbe9d34.webp",
+          "sha256": "20f0b55b476127d9339a96d78bce2f9178ca9a04f196201f66aaad2c3bbe9d34"
+        },
+        {
+          "url": "/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D2_1660d3827cc384114d10f559e1c2e758a283183cd639ea32a55ae1eae93a1e13.webp",
+          "sha256": "1660d3827cc384114d10f559e1c2e758a283183cd639ea32a55ae1eae93a1e13"
+        },
+        {
+          "url": "/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D3_3f07b706b00edc98d6b79505d62950c8c5e24b08b173381355c8dcc3ee00d705.webp",
+          "sha256": "3f07b706b00edc98d6b79505d62950c8c5e24b08b173381355c8dcc3ee00d705"
+        },
+        {
+          "url": "/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D4_4a653940a17807944eb3b5716b66e9612a4f8337796b12968db8a212e7d3ecfa.webp",
+          "sha256": "4a653940a17807944eb3b5716b66e9612a4f8337796b12968db8a212e7d3ecfa"
+        },
+        {
+          "url": "/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D5_0ada89a7272c5e91c835cb264cb590cefd6e46d7b2f5ef1f815466ca43604bd1.webp",
+          "sha256": "0ada89a7272c5e91c835cb264cb590cefd6e46d7b2f5ef1f815466ca43604bd1"
+        },
+        {
+          "url": "/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_D6_e5ea6afb93e790c7eae8ff228c0cee83e34f2bfc43c2b0fe5ee34dfdbec2615f.webp",
+          "sha256": "e5ea6afb93e790c7eae8ff228c0cee83e34f2bfc43c2b0fe5ee34dfdbec2615f"
+        },
+        {
+          "url": "/api/v1/assets/live_0adc6c1e975f34dd/2026_E1_FLAGS_45fccb65d5d89fb5df104cebedff6e1edbd1680c42d6ccf0ad0a5fc47c774d8b.webp",
+          "sha256": "45fccb65d5d89fb5df104cebedff6e1edbd1680c42d6ccf0ad0a5fc47c774d8b"
+        }
+      ],
+      "differences": []
+    },
+    {
+      "name": "north_celestial_pole",
+      "endpoint": "sky",
+      "query": {
+        "source": "archive",
+        "ra": 0.0,
+        "dec": 90.0,
+        "size": 0.05
+      },
+      "requested_at": "2026-11-14T21:40:27.565296+00:00",
+      "http_status": 200,
+      "elapsed_seconds": 80.422,
+      "analysis_id": "sha256:e53421288d02933270e73f8dbd3911839740c19869faae446b57e64c4c058cae",
+      "data_access": "archive",
+      "record_sha256": "9eec63fef7bd82a7d1dd73ce5077c5f8f34feafe44bd6cf06068740a11c4319c",
+      "comparison_status": "unmatched_single_epoch",
+      "comparison_reason": "PARTIAL_DOWNLOAD_NO_MATCHED_PAIR",
+      "discovery": {
+        "collection_results": [
+          {
+            "collection": "spherex_dr1",
+            "rows": 292,
+            "status": "complete"
+          },
+          {
+            "collection": "spherex_qr3",
+            "rows": 138,
+            "status": "complete"
+          },
+          {
+            "collection": "spherex_dr1_deep",
+            "rows": 0,
+            "status": "complete"
+          },
+          {
+            "collection": "spherex_qr3_deep",
+            "rows": 0,
+            "status": "complete"
+          }
+        ],
+        "collections": [
+          "spherex_dr1",
+          "spherex_qr3",
+          "spherex_dr1_deep",
+          "spherex_qr3_deep"
+        ],
+        "completeness_scope": "requested_current_release_collections_at_query_time",
+        "ingestion_note": "Official IRSA documentation notes SIA may lag new directory/TAP products by about one day",
+        "method": "sia2",
+        "missing_collections": [],
+        "parallel_collections": true,
+        "policy": "sia2_then_tap",
+        "query": {
+          "dec": 90.0,
+          "ra": 0.0
+        },
+        "record_count": 430,
+        "responses": [
+          {
+            "cache_relative_path": "discovery-responses/fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_qr3_deep",
+              "MAXREC": 100000,
+              "POS": "circle 0.00000000 90.00000000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd",
+            "size_bytes": 27474,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3_deep&POS=circle+0.00000000+90.00000000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          },
+          {
+            "cache_relative_path": "discovery-responses/fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_dr1_deep",
+              "MAXREC": 100000,
+              "POS": "circle 0.00000000 90.00000000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "fa538a0a6daf723452a8645c90efb86c1d6ddc68903b280bed9fb13ca1cdd3bd",
+            "size_bytes": 27474,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_dr1_deep&POS=circle+0.00000000+90.00000000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          },
+          {
+            "cache_relative_path": "discovery-responses/7ada52c620f8097bf7d504ab12a86a7d8f667cffd5256c9ac4528ac03afe53f1.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_qr3",
+              "MAXREC": 100000,
+              "POS": "circle 0.00000000 90.00000000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "7ada52c620f8097bf7d504ab12a86a7d8f667cffd5256c9ac4528ac03afe53f1",
+            "size_bytes": 314831,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=circle+0.00000000+90.00000000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          },
+          {
+            "cache_relative_path": "discovery-responses/77c7e1264e659e9125e9b92404277c7fa16cd09f937457f070f018d2c09857fd.response",
+            "http_status": 200,
+            "parameters": {
+              "COLLECTION": "spherex_dr1",
+              "MAXREC": 100000,
+              "POS": "circle 0.00000000 90.00000000 0.000000",
+              "RESPONSEFORMAT": "votable"
+            },
+            "raw_response_retained": true,
+            "sha256": "77c7e1264e659e9125e9b92404277c7fa16cd09f937457f070f018d2c09857fd",
+            "size_bytes": 635285,
+            "source_url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_dr1&POS=circle+0.00000000+90.00000000+0.000000&RESPONSEFORMAT=votable&MAXREC=100000"
+          }
+        ],
+        "status": "complete"
+      },
+      "acquired_inputs": 51,
+      "linked_inputs": 51,
+      "fresh_input_receipts": true,
+      "all_inputs_have_fresh_receipts": true,
+      "epochs": [
+        {
+          "id": "2026_E1",
+          "range": {
+            "mjd_min": 61287.279148,
+            "mjd_max": 61309.407938,
+            "date_start_iso": "2026-09-04",
+            "date_end_iso": "2026-09-26",
+            "time_scale": "utc"
+          },
+          "release": "QR3",
+          "availability": null
+        }
+      ],
+      "access_verified": true,
+      "science_acceptance": "not_established_by_access_probe",
+      "assets": [
+        {
+          "url": "/api/v1/assets/live_2c0c79adac672056/2026_E1_ALL_747c5c9bedd642f1e9934dcbefdf3a08ed86c3e7d1d4cdac10b1b0d7c25e95c3.webp",
+          "sha256": "747c5c9bedd642f1e9934dcbefdf3a08ed86c3e7d1d4cdac10b1b0d7c25e95c3"
+        },
+        {
+          "url": "/api/v1/assets/live_2c0c79adac672056/2026_E1_B56_a778ea0b954ddd710d633e01c34abf1c66ffbe96a9037070ffdfd60783ab752d.webp",
+          "sha256": "a778ea0b954ddd710d633e01c34abf1c66ffbe96a9037070ffdfd60783ab752d"
+        },
+        {
+          "url": "/api/v1/assets/live_2c0c79adac672056/2026_E1_D1_a522865487f8c61b64f96895b113a88d9d810a7eec41730792e0ca07151035fc.webp",
+          "sha256": "a522865487f8c61b64f96895b113a88d9d810a7eec41730792e0ca07151035fc"
+        },
+        {
+          "url": "/api/v1/assets/live_2c0c79adac672056/2026_E1_D2_0647c376ffefe48223136c144d6a893e1b46a7f911f8f1826d4684b8a8adc920.webp",
+          "sha256": "0647c376ffefe48223136c144d6a893e1b46a7f911f8f1826d4684b8a8adc920"
+        },
+        {
+          "url": "/api/v1/assets/live_2c0c79adac672056/2026_E1_D3_e168cb4b6af3e6169201461fd52592bd9aa13235e8b49a5d191e95fa0d0e98ea.webp",
+          "sha256": "e168cb4b6af3e6169201461fd52592bd9aa13235e8b49a5d191e95fa0d0e98ea"
+        },
+        {
+          "url": "/api/v1/assets/live_2c0c79adac672056/2026_E1_D4_ddb586663d01e7e040ae0ac3e32ff5db54cb68ffb70c38dabd1aa3271e711ebf.webp",
+          "sha256": "ddb586663d01e7e040ae0ac3e32ff5db54cb68ffb70c38dabd1aa3271e711ebf"
+        },
+        {
+          "url": "/api/v1/assets/live_2c0c79adac672056/2026_E1_D5_c740b8cdc697cd20b15938704ede1e76a2126b0a8bb1ecb03a5ce8a86d60d464.webp",
+          "sha256": "c740b8cdc697cd20b15938704ede1e76a2126b0a8bb1ecb03a5ce8a86d60d464"
+        },
+        {
+          "url": "/api/v1/assets/live_2c0c79adac672056/2026_E1_D6_3b95a99161b408c8186932746c8cb107efbcdff78ac9af60ebcad2016014898a.webp",
+          "sha256": "3b95a99161b408c8186932746c8cb107efbcdff78ac9af60ebcad2016014898a"
+        },
+        {
+          "url": "/api/v1/assets/live_2c0c79adac672056/2026_E1_FLAGS_fd659052ce56c39dab51160e158712b4ed49ad64925e985b21f6969887408311.webp",
+          "sha256": "fd659052ce56c39dab51160e158712b4ed49ad64925e985b21f6969887408311"
+        }
+      ],
+      "differences": []
+    },
+    {
+      "name": "ra_wrap",
+      "endpoint": "sky",
+      "query": {
+        "source": "archive",
+        "ra": 359.9999999,
+        "dec": -20.0,
+        "size": 0.05
+      },
+      "requested_at": "2026-11-14T21:41:48.036907+00:00",
+      "http_status": 503,
+      "elapsed_seconds": 61.421,
+      "error": {
+        "error": {
+          "code": "UPSTREAM_UNAVAILABLE",
+          "message": "Observation discovery incomplete: TAP=IRSA request deadline exhausted; SIA2=SIA2 collection discovery is incomplete: spherex_dr1, spherex_qr3, spherex_qr3_deep",
+          "detail": {}
+        }
+      },
+      "access_verified": false
+    }
+  ]
+}

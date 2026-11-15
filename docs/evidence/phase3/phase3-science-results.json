@@ -1,0 +1,3069 @@
+{
+  "generated_at": "2026-11-14T19:03:29.029849+00:00",
+  "thresholds": {
+    "registered_before_raw_download": "2026-11-14",
+    "matched_aperture_relative_tolerance": 1e-08,
+    "minimum_static_controls": 3,
+    "max_abs_median_standardized_control_residual": 1.0,
+    "max_robust_control_scatter": 2.0,
+    "max_abs_individual_control_sigma": 5.0,
+    "spectral_tolerance_fraction_narrower_bandwidth": 0.25,
+    "minimum_bandwidth_ratio": 0.8,
+    "aperture_radius_arcsec": 12.3,
+    "annulus_inner_native_pixels": 3.0,
+    "annulus_outer_native_pixels": 5.0,
+    "minimum_annulus_pixels": 10,
+    "minimum_control_clean_fraction": 1.0,
+    "minimum_control_snr_each_visit": 5.0,
+    "control_g_mag_range": [
+      10,
+      15.5
+    ],
+    "max_control_proper_motion_mas_year": 100,
+    "known_neighbor_exclusion_arcsec": 12.3,
+    "max_controls_sorted_by_source_id": 10,
+    "max_temporal_drift_arcsec": 1.5375,
+    "exclude_control_radius_around_target_arcsec": 30.0,
+    "note": "Fixed engineering audit gates, not calibrated false-positive probabilities; no tuning after target flux inspection."
+  },
+  "sample_selection": "11 preselected recorded input exposures plus three recorded WISE D3 contributors selected from manifest DICHROIC warning for actual flag coverage; raw units only; no golden rebuild.",
+  "samples": [
+    {
+      "id": "wise_0855_2025_E1_D6",
+      "target_id": "wise_0855",
+      "epoch_id": "2025_E1",
+      "band": 6,
+      "uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/6/level2_2025W19_1B_0116_1D6_spx_l2b-v27-2026-197.fits",
+      "ra": 133.75921,
+      "dec": -7.24216,
+      "recorded_epoch_mjd_mean": 60840.77881372222,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/83e8e9058dcc65bbfc76c0eb0ecbe1823fec8e475edfc5193e59a809ad870cc4.fits",
+      "bytes": 4400640,
+      "sha256": "60929e20ea787d772994f9f6675ce5e4a7a18bdd9722ad33200f696001f3b1e2",
+      "seconds": 12.188,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60800.700028461,
+          "MJD-END": 60800.701360839,
+          "MJD-AVG": 60800.70069465,
+          "DATE-OBS": "2025-05-05T16:48:02.459"
+        },
+        "shape": [
+          168,
+          168
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 11244,
+            "target_aperture": 11
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 352,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 18,
+            "target_aperture": 0
+          },
+          "SUR_ERROR": {
+            "whole_frame": 134,
+            "target_aperture": 0
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 16282,
+          "valid_cells": 16,
+          "scalar_mjy_sr": 0.03061985969543457,
+          "scalar_pixel_mad_mjy_sr": 0.06962085789442062,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.0014305844834690985,
+          "plane_heldout_rms_mjy_sr": 0.0018383431009330404,
+          "plane_gradient_across_frame_mjy_sr": 0.011756489674250302,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_median",
+          "status": "ok_scalar",
+          "clean_pixels": 16282,
+          "valid_cells": 16,
+          "subtracted": true,
+          "clean_fraction": 0.5768849206349206,
+          "covered_quadrants": 4,
+          "scalar_mjy_sr": 0.03061985969543457,
+          "robust_scatter_mjy_sr": 0.06962085789442062,
+          "scalar_holdout_abs_mjy_sr": 0.0014427006244659424,
+          "plane_holdout_abs_mjy_sr": 0.0019295910709279628,
+          "candidate_gradient_mjy_sr": 0.0050688377346636716
+        },
+        "pipeline_channel": {
+          "detector": 6,
+          "wavelength_um": 4.967329876813456,
+          "bandwidth_um": 0.03718706870371086,
+          "flux_ujy": 207.98734080710923,
+          "flux_err_ujy": 255.66793630287043,
+          "flags": 2097152,
+          "is_flagged_bad": false,
+          "clean_fraction": 1.0,
+          "is_used_in_photometry": true
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": 207.98734080710923,
+          "error_ujy": 210.00542318481533,
+          "clean_pixels": 12,
+          "aperture_pixels": 12,
+          "annulus_pixels": 38,
+          "annulus_background_mjy_sr": -0.00020432472229003906,
+          "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+        },
+        "matched_aperture_agrees": true,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": 242.94678466140428,
+          "annulus_median_mjy_sr": -0.00020432472229003906,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": 1.217434923467999,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "wise_0855_2025_E1_D1",
+      "target_id": "wise_0855",
+      "epoch_id": "2025_E1",
+      "band": 1,
+      "uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/1/level2_2025W19_1B_0241_1D1_spx_l2b-v27-2026-197.fits",
+      "ra": 133.75921,
+      "dec": -7.24216,
+      "recorded_epoch_mjd_mean": 60840.77881372222,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/6885b1b39a6d87ed1f1999ccb9064e1147641dad027ad7ba775d7ca00b757eef.fits",
+      "bytes": 4392000,
+      "sha256": "7ad77e4b3c1d8daefcd4fb2a4c0063fcfa4757d04f372d23190a809e10f94a1d",
+      "seconds": 11.922,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60801.514176944,
+          "MJD-END": 60801.515509323,
+          "MJD-AVG": 60801.514843134,
+          "DATE-OBS": "2025-05-06T12:20:24.888"
+        },
+        "shape": [
+          168,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 12924,
+            "target_aperture": 11
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 510,
+            "target_aperture": 1
+          },
+          "OVERFLOW": {
+            "whole_frame": 2,
+            "target_aperture": 0
+          },
+          "SUR_ERROR": {
+            "whole_frame": 117,
+            "target_aperture": 0
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 14356,
+          "valid_cells": 16,
+          "scalar_mjy_sr": 0.03039614111185074,
+          "scalar_pixel_mad_mjy_sr": 0.01881842505633831,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.0028060743012698233,
+          "plane_heldout_rms_mjy_sr": 0.0016707693390283077,
+          "plane_gradient_across_frame_mjy_sr": 0.006628478383115963,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_median",
+          "status": "ok_scalar",
+          "clean_pixels": 14356,
+          "valid_cells": 15,
+          "subtracted": true,
+          "clean_fraction": 0.5116909039064728,
+          "covered_quadrants": 4,
+          "scalar_mjy_sr": 0.03039614111185074,
+          "robust_scatter_mjy_sr": 0.01881842505633831,
+          "scalar_holdout_abs_mjy_sr": 0.0021522194147109985,
+          "plane_holdout_abs_mjy_sr": 0.002181221711551228,
+          "candidate_gradient_mjy_sr": 0.006295701759527301
+        },
+        "pipeline_channel": {
+          "detector": 1,
+          "wavelength_um": 0.9926080065443094,
+          "bandwidth_um": 0.026345671641328505,
+          "flux_ujy": 1012.6704695872861,
+          "flux_err_ujy": 73.20035423982857,
+          "flags": 2097152,
+          "is_flagged_bad": false,
+          "clean_fraction": 0.9166666666666666,
+          "is_used_in_photometry": true
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": 1012.6704695872861,
+          "error_ujy": 62.621257920779584,
+          "clean_pixels": 11,
+          "aperture_pixels": 12,
+          "annulus_pixels": 34,
+          "annulus_background_mjy_sr": 0.0005393102765083313,
+          "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+        },
+        "matched_aperture_agrees": true,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": 997.0871316932705,
+          "annulus_median_mjy_sr": 0.0005393102765083313,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": 1.1689377804009033,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "wise_0855_2025_E1_D3",
+      "target_id": "wise_0855",
+      "epoch_id": "2025_E1",
+      "band": 3,
+      "uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_1D3_spx_l2b-v27-2026-197.fits",
+      "ra": 133.75921,
+      "dec": -7.24216,
+      "recorded_epoch_mjd_mean": 60840.77881372222,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/1533868684feba33e5fd26fcca3dbad3e7e5dc189fe5a440fad46e15fc9382cb.fits",
+      "bytes": 4475520,
+      "sha256": "b8735a287e84e6ca9ed537ff5880bf74dbfe0472878608b88b41659767f222e1",
+      "seconds": 10.281,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60800.700028461,
+          "MJD-END": 60800.701360839,
+          "MJD-AVG": 60800.70069465,
+          "DATE-OBS": "2025-05-05T16:48:02.459"
+        },
+        "shape": [
+          168,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 14186,
+            "target_aperture": 13
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 462,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 2,
+            "target_aperture": 0
+          },
+          "SUR_ERROR": {
+            "whole_frame": 105,
+            "target_aperture": 0
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 13120,
+          "valid_cells": 16,
+          "scalar_mjy_sr": 0.013707362115383148,
+          "scalar_pixel_mad_mjy_sr": 0.01606480959802866,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.004120649425652213,
+          "plane_heldout_rms_mjy_sr": 0.0018763063807266168,
+          "plane_gradient_across_frame_mjy_sr": 0.015062537516993529,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_plane_2d",
+          "status": "ok_2d",
+          "clean_pixels": 13120,
+          "valid_cells": 16,
+          "subtracted": true,
+          "clean_fraction": 0.46763615625891075,
+          "covered_quadrants": 4,
+          "scalar_mjy_sr": 0.013707362115383148,
+          "robust_scatter_mjy_sr": 0.01606480959802866,
+          "scalar_holdout_abs_mjy_sr": 0.0026823729276657104,
+          "plane_holdout_abs_mjy_sr": 0.0013265286873146622,
+          "candidate_gradient_mjy_sr": 0.014057663297465469,
+          "coefficients": [
+            0.014056241501298741,
+            -0.00023370967787230898,
+            0.01382395361959316
+          ]
+        },
+        "pipeline_channel": {
+          "detector": 3,
+          "wavelength_um": 2.3633523585721625,
+          "bandwidth_um": 0.05855412728410415,
+          "flux_ujy": 668.8579882208053,
+          "flux_err_ujy": 62.868041762453146,
+          "flags": 2097152,
+          "is_flagged_bad": false,
+          "clean_fraction": 1.0,
+          "is_used_in_photometry": true
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": 668.8579882208052,
+          "error_ujy": 52.11866321197103,
+          "clean_pixels": 13,
+          "aperture_pixels": 13,
+          "annulus_pixels": 36,
+          "annulus_background_mjy_sr": -0.0019607636664283274,
+          "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+        },
+        "matched_aperture_agrees": true,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": 645.8363007863187,
+          "annulus_median_mjy_sr": -0.001960763707756996,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": 1.2062481630958852,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "wise_0855_2025_E1_D3_visit2",
+      "target_id": "wise_0855",
+      "epoch_id": "2025_E1",
+      "band": 3,
+      "uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_2D3_spx_l2b-v27-2026-197.fits",
+      "ra": 133.75921,
+      "dec": -7.24216,
+      "recorded_epoch_mjd_mean": 60840.77881372222,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "Additional recorded D3 contributors to the manifest's DICHROIC warning; first contributor has no DICHROIC in this cutout. Flag coverage only.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/f2ae3456bb8ccdbb0af8025021c0211b821095311d4d08a14d46db3aaf25d3ae.fits",
+      "bytes": 4371840,
+      "sha256": "a037b8404fe653205654b1b6c9450c8342ff95f6b16351033e393b991645454b",
+      "seconds": 10.203,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60800.701520718,
+          "MJD-END": 60800.702853096,
+          "MJD-AVG": 60800.702186907,
+          "DATE-OBS": "2025-05-05T16:50:11.390"
+        },
+        "shape": [
+          128,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 11227,
+            "target_aperture": 12
+          },
+          "DICHROIC": {
+            "whole_frame": 9605,
+            "target_aperture": 12
+          },
+          "HALO": {
+            "whole_frame": 255,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 2,
+            "target_aperture": 0
+          },
+          "SUR_ERROR": {
+            "whole_frame": 55,
+            "target_aperture": 1
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 4875,
+          "valid_cells": 12,
+          "scalar_mjy_sr": 0.0070371925830841064,
+          "scalar_pixel_mad_mjy_sr": 0.01740287267267704,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.0033989532538836226,
+          "plane_heldout_rms_mjy_sr": 0.0017233871732094252,
+          "plane_gradient_across_frame_mjy_sr": 0.019482892382040512,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_median",
+          "status": "scalar_limited_support",
+          "clean_pixels": 4875,
+          "valid_cells": 7,
+          "subtracted": true,
+          "clean_fraction": 0.22805950598802396,
+          "covered_quadrants": 4,
+          "scalar_mjy_sr": 0.0070371925830841064,
+          "robust_scatter_mjy_sr": 0.01740287267267704
+        },
+        "pipeline_channel": {
+          "detector": 3,
+          "wavelength_um": 2.412599414764439,
+          "bandwidth_um": 0.050509169769192216,
+          "flux_ujy": null,
+          "flux_err_ujy": null,
+          "flags": 2097280,
+          "is_flagged_bad": false,
+          "clean_fraction": 0.0,
+          "is_used_in_photometry": false
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": null,
+          "error_ujy": null,
+          "clean_pixels": 0,
+          "annulus_pixels": 0
+        },
+        "matched_aperture_agrees": null,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": null,
+          "annulus_median_mjy_sr": null,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": null,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "wise_0855_2025_E1_D3_visit3",
+      "target_id": "wise_0855",
+      "epoch_id": "2025_E1",
+      "band": 3,
+      "uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0138_1D3_spx_l2b-v27-2026-197.fits",
+      "ra": 133.75921,
+      "dec": -7.24216,
+      "recorded_epoch_mjd_mean": 60840.77881372222,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "Additional recorded D3 contributors to the manifest's DICHROIC warning; first contributor has no DICHROIC in this cutout. Flag coverage only.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/9ec6c9bd63e998951eff5edd6ca4004b9d2eba4ed50d039e3356cb13c3f6aa8a.fits",
+      "bytes": 4475520,
+      "sha256": "b5554de4ae5ea4542e1065e4248618287209110ff5ef18c22fc06679d3b1f6b1",
+      "seconds": 10.203,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60800.834437847,
+          "MJD-END": 60800.835770226,
+          "MJD-AVG": 60800.835104036,
+          "DATE-OBS": "2025-05-05T20:01:35.430"
+        },
+        "shape": [
+          168,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 14218,
+            "target_aperture": 11
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 652,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 6,
+            "target_aperture": 0
+          },
+          "SUR_ERROR": {
+            "whole_frame": 123,
+            "target_aperture": 0
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 12899,
+          "valid_cells": 16,
+          "scalar_mjy_sr": 0.020932704210281372,
+          "scalar_pixel_mad_mjy_sr": 0.015271458256244659,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.001576360101630171,
+          "plane_heldout_rms_mjy_sr": 0.0013078366185313563,
+          "plane_gradient_across_frame_mjy_sr": 0.003270915170769463,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_median",
+          "status": "ok_scalar",
+          "clean_pixels": 12899,
+          "valid_cells": 15,
+          "subtracted": true,
+          "clean_fraction": 0.45975905332192757,
+          "covered_quadrants": 4,
+          "scalar_mjy_sr": 0.020932704210281372,
+          "robust_scatter_mjy_sr": 0.015271458256244659,
+          "scalar_holdout_abs_mjy_sr": 0.0006396546959877014,
+          "plane_holdout_abs_mjy_sr": 0.0013045864953331807,
+          "candidate_gradient_mjy_sr": 0.002318177487143771
+        },
+        "pipeline_channel": {
+          "detector": 3,
+          "wavelength_um": 2.2078358877105244,
+          "bandwidth_um": 0.05530633929032565,
+          "flux_ujy": 519.7184066839092,
+          "flux_err_ujy": 57.76922993232327,
+          "flags": 2097152,
+          "is_flagged_bad": false,
+          "clean_fraction": 1.0,
+          "is_used_in_photometry": true
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": 519.7184066839092,
+          "error_ujy": 48.748244317396306,
+          "clean_pixels": 11,
+          "aperture_pixels": 11,
+          "annulus_pixels": 36,
+          "annulus_background_mjy_sr": -0.001368597149848938,
+          "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+        },
+        "matched_aperture_agrees": true,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": 512.6928104208465,
+          "annulus_median_mjy_sr": -0.001368597149848938,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": 1.1850525232496985,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "wise_0855_2025_E2_D6",
+      "target_id": "wise_0855",
+      "epoch_id": "2025_E2",
+      "band": 6,
+      "uri": "ibe/data/spherex/dr1/level2/2025W46_1A/l2b-v27-2026-206/6/level2_2025W46_1A_0075_4D6_spx_l2b-v27-2026-206.fits",
+      "ra": 133.75921,
+      "dec": -7.24216,
+      "recorded_epoch_mjd_mean": 61012.720102777785,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/a51670db7754e1afbac84db4e6f1cbd4e13f251bc016b84df972ce666d356e07.fits",
+      "bytes": 4320000,
+      "sha256": "50be5da9b3752ddc039a01e26a7849f07ab9bef2c89f8b705f310ad764dbedc1",
+      "seconds": 7.375,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60989.296807454,
+          "MJD-END": 60989.298139832,
+          "MJD-AVG": 60989.297473643,
+          "DATE-OBS": "2025-11-10T07:07:24.164"
+        },
+        "shape": [
+          141,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 9654,
+            "target_aperture": 12
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 178,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 17,
+            "target_aperture": 0
+          },
+          "SUR_ERROR": {
+            "whole_frame": 78,
+            "target_aperture": 0
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 13466,
+          "valid_cells": 16,
+          "scalar_mjy_sr": 0.02826407551765442,
+          "scalar_pixel_mad_mjy_sr": 0.048716661447286605,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.004815196404532215,
+          "plane_heldout_rms_mjy_sr": 0.0040822024792140236,
+          "plane_gradient_across_frame_mjy_sr": 0.024744742692548102,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_plane_2d",
+          "status": "ok_2d",
+          "clean_pixels": 13466,
+          "valid_cells": 16,
+          "subtracted": true,
+          "clean_fraction": 0.5718775215526394,
+          "covered_quadrants": 4,
+          "scalar_mjy_sr": 0.02826407551765442,
+          "robust_scatter_mjy_sr": 0.048716661447286605,
+          "scalar_holdout_abs_mjy_sr": 0.00340188667178154,
+          "plane_holdout_abs_mjy_sr": 0.0029977877388563095,
+          "candidate_gradient_mjy_sr": 0.018196945854590117,
+          "coefficients": [
+            0.028454574185331087,
+            0.0010358999872708378,
+            0.01716104586731928
+          ]
+        },
+        "pipeline_channel": {
+          "detector": 6,
+          "wavelength_um": 4.417846547397682,
+          "bandwidth_um": 0.037247631062110376,
+          "flux_ujy": 782.8631178429434,
+          "flux_err_ujy": 203.313608617527,
+          "flags": 2097152,
+          "is_flagged_bad": false,
+          "clean_fraction": 1.0,
+          "is_used_in_photometry": true
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": 782.8631178429432,
+          "error_ujy": 159.11732905214836,
+          "clean_pixels": 12,
+          "aperture_pixels": 12,
+          "annulus_pixels": 36,
+          "annulus_background_mjy_sr": -0.016005183346460013,
+          "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+        },
+        "matched_aperture_agrees": true,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": 753.660138500496,
+          "annulus_median_mjy_sr": -0.01600518263876438,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": 1.27775905885709,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "barnards_star_2025_E1_D3",
+      "target_id": "barnards_star",
+      "epoch_id": "2025_E1",
+      "band": 3,
+      "uri": "ibe/data/spherex/dr1/level2/2025W33_2C/l2b-v27-2026-228/3/level2_2025W33_2C_0321_1D3_spx_l2b-v27-2026-228.fits",
+      "ra": 269.4463,
+      "dec": 4.7676,
+      "recorded_epoch_mjd_mean": 60916.310574388895,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/86297ee220f24751163e9005ace554e6faa284bb5cfb472685949f2757daa147.fits",
+      "bytes": 4475520,
+      "sha256": "eb53a8db58dd92ea19a4d49bc99551629f7ae6d37a1c97de38d4bfbf8aae1cb9",
+      "seconds": 11.25,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60902.86471456,
+          "MJD-END": 60902.866046939,
+          "MJD-AVG": 60902.865380749,
+          "DATE-OBS": "2025-08-15T20:45:11.338"
+        },
+        "shape": [
+          168,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 27194,
+            "target_aperture": 10
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 341,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 12,
+            "target_aperture": 5
+          },
+          "SUR_ERROR": {
+            "whole_frame": 136,
+            "target_aperture": 10
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 803,
+          "valid_cells": 12,
+          "scalar_mjy_sr": 0.042874641716480255,
+          "scalar_pixel_mad_mjy_sr": 0.017119956609606742,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.005302031461969213,
+          "plane_heldout_rms_mjy_sr": 0.005233321256811985,
+          "plane_gradient_across_frame_mjy_sr": 0.0019220340354670928,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "none",
+          "status": "insufficient_spatial_support",
+          "clean_pixels": 803,
+          "valid_cells": 0,
+          "subtracted": false,
+          "clean_fraction": 0.02862132877102937,
+          "covered_quadrants": 4
+        },
+        "pipeline_channel": {
+          "detector": 3,
+          "wavelength_um": 2.3075212224332793,
+          "bandwidth_um": 0.057333364239084667,
+          "flux_ujy": null,
+          "flux_err_ujy": null,
+          "flags": 69206022,
+          "is_flagged_bad": true,
+          "clean_fraction": 0.0,
+          "is_used_in_photometry": false
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": null,
+          "error_ujy": null,
+          "clean_pixels": 0,
+          "annulus_pixels": 0
+        },
+        "matched_aperture_agrees": null,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": null,
+          "annulus_median_mjy_sr": null,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": null,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "barnards_star_2025_E2_D3",
+      "target_id": "barnards_star",
+      "epoch_id": "2025_E2",
+      "band": 3,
+      "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/3/level2_2026W12_1A_0598_1D3_spx_l2b-v27-2026-235.fits",
+      "ra": 269.4463,
+      "dec": 4.7676,
+      "recorded_epoch_mjd_mean": 61117.73525483333,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/13691626dc003e751d85396bdc1c5b1af3eae744893358d1fd29ad5ad1e60f44.fits",
+      "bytes": 4475520,
+      "sha256": "b95827e88a389b24f1c99d36de6e400074b4ca2ca2b5e8f69e80a064e765f216",
+      "seconds": 11.89,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 61118.309231262,
+          "MJD-END": 61118.31056364,
+          "MJD-AVG": 61118.309897451,
+          "DATE-OBS": "2026-03-19T07:25:17.581"
+        },
+        "shape": [
+          168,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 27172,
+            "target_aperture": 13
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 399,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 17,
+            "target_aperture": 5
+          },
+          "SUR_ERROR": {
+            "whole_frame": 135,
+            "target_aperture": 10
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 755,
+          "valid_cells": 13,
+          "scalar_mjy_sr": 0.056665778160095215,
+          "scalar_pixel_mad_mjy_sr": 0.02274374735355377,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.006793566241352237,
+          "plane_heldout_rms_mjy_sr": 0.005019488811829659,
+          "plane_gradient_across_frame_mjy_sr": 0.01771889249046886,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "none",
+          "status": "insufficient_spatial_support",
+          "clean_pixels": 755,
+          "valid_cells": 0,
+          "subtracted": false,
+          "clean_fraction": 0.02691046478471628,
+          "covered_quadrants": 4
+        },
+        "pipeline_channel": {
+          "detector": 3,
+          "wavelength_um": 1.7937197075518392,
+          "bandwidth_um": 0.044197661212716885,
+          "flux_ujy": null,
+          "flux_err_ujy": null,
+          "flags": 69206018,
+          "is_flagged_bad": true,
+          "clean_fraction": 0.0,
+          "is_used_in_photometry": false
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": null,
+          "error_ujy": null,
+          "clean_pixels": 0,
+          "annulus_pixels": 0
+        },
+        "matched_aperture_agrees": null,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": null,
+          "annulus_median_mjy_sr": null,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": null,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "rw_aurigae_2025_E1_D3",
+      "target_id": "rw_aurigae",
+      "epoch_id": "2025_E1",
+      "band": 3,
+      "uri": "ibe/data/spherex/dr1/level2/2025W37_2A/l2b-v27-2026-236/3/level2_2025W37_2A_0051_1D3_spx_l2b-v27-2026-236.fits",
+      "ra": 76.9561,
+      "dec": 30.4011,
+      "recorded_epoch_mjd_mean": 60928.29610782353,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/dd839d8947608f2fabfca24d7816042ee3a258c2c8c359520c79047bbd40e1cf.fits",
+      "bytes": 4475520,
+      "sha256": "df41a50f399036af70d949da337e1b4d8c8a10e36f5f79c65d3dec7ae9a93834",
+      "seconds": 9.312,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60929.677476481,
+          "MJD-END": 60929.67880886,
+          "MJD-AVG": 60929.678142671,
+          "DATE-OBS": "2025-09-11T16:15:33.968"
+        },
+        "shape": [
+          168,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 24642,
+            "target_aperture": 13
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 872,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 5,
+            "target_aperture": 0
+          },
+          "SUR_ERROR": {
+            "whole_frame": 253,
+            "target_aperture": 2
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 3128,
+          "valid_cells": 16,
+          "scalar_mjy_sr": 0.029729075729846954,
+          "scalar_pixel_mad_mjy_sr": 0.01991322803646326,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.00248746830888428,
+          "plane_heldout_rms_mjy_sr": 0.0016788098379684334,
+          "plane_gradient_across_frame_mjy_sr": 0.0064113930210695416,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_median",
+          "status": "scalar_limited_support",
+          "clean_pixels": 3128,
+          "valid_cells": 0,
+          "subtracted": true,
+          "clean_fraction": 0.11149130310806958,
+          "covered_quadrants": 4,
+          "scalar_mjy_sr": 0.029729075729846954,
+          "robust_scatter_mjy_sr": 0.01991322803646326
+        },
+        "pipeline_channel": {
+          "detector": 3,
+          "wavelength_um": 2.3540211452440074,
+          "bandwidth_um": 0.05869950479605469,
+          "flux_ujy": 102861.39895786208,
+          "flux_err_ujy": 341.65541370255914,
+          "flags": 69206021,
+          "is_flagged_bad": true,
+          "clean_fraction": 0.6153846153846154,
+          "is_used_in_photometry": false
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": 102861.39895786205,
+          "error_ujy": 341.6406537241043,
+          "clean_pixels": 8,
+          "aperture_pixels": 13,
+          "annulus_pixels": 0,
+          "annulus_background_mjy_sr": 0.0,
+          "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+        },
+        "matched_aperture_agrees": true,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": null,
+          "annulus_median_mjy_sr": null,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": 1.0000432032262376,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "rw_aurigae_2025_E2_D3",
+      "target_id": "rw_aurigae",
+      "epoch_id": "2025_E2",
+      "band": 3,
+      "uri": "ibe/data/spherex/dr1/level2/2026W08_2A/l2b-v27-2026-227/3/level2_2026W08_2A_0233_1D3_spx_l2b-v27-2026-227.fits",
+      "ra": 76.9561,
+      "dec": 30.4011,
+      "recorded_epoch_mjd_mean": 61102.95329472222,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/e70d2613bae30ac257a7b6f847b4fe7c5b5c37c37e38dd202289a0680239b544.fits",
+      "bytes": 4475520,
+      "sha256": "bfb5deeaacb6eabb8dc68b00b29adbf552a59004cb50074c77b387ff7385efe9",
+      "seconds": 13.282,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 61091.719615949,
+          "MJD-END": 61091.720948328,
+          "MJD-AVG": 61091.720282138,
+          "DATE-OBS": "2026-02-20T17:16:14.818"
+        },
+        "shape": [
+          168,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 24690,
+            "target_aperture": 13
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 338,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 17,
+            "target_aperture": 1
+          },
+          "SUR_ERROR": {
+            "whole_frame": 112,
+            "target_aperture": 2
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 3114,
+          "valid_cells": 16,
+          "scalar_mjy_sr": 0.04139181971549988,
+          "scalar_pixel_mad_mjy_sr": 0.019894051779806615,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.0028254635528336233,
+          "plane_heldout_rms_mjy_sr": 0.00386622454192517,
+          "plane_gradient_across_frame_mjy_sr": 0.016129982887302854,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_median",
+          "status": "scalar_limited_support",
+          "clean_pixels": 3114,
+          "valid_cells": 0,
+          "subtracted": true,
+          "clean_fraction": 0.1109923011120616,
+          "covered_quadrants": 4,
+          "scalar_mjy_sr": 0.04139181971549988,
+          "robust_scatter_mjy_sr": 0.019894051779806615
+        },
+        "pipeline_channel": {
+          "detector": 3,
+          "wavelength_um": 1.9366990112779285,
+          "bandwidth_um": 0.047177641835308495,
+          "flux_ujy": 61518.308505542525,
+          "flux_err_ujy": 248.3931772891242,
+          "flags": 69206018,
+          "is_flagged_bad": true,
+          "clean_fraction": 0.46153846153846156,
+          "is_used_in_photometry": false
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": 61518.308505542525,
+          "error_ujy": 248.38172605956152,
+          "clean_pixels": 6,
+          "aperture_pixels": 13,
+          "annulus_pixels": 0,
+          "annulus_background_mjy_sr": 0.0,
+          "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+        },
+        "matched_aperture_agrees": true,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": null,
+          "annulus_median_mjy_sr": null,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": 1.000046103349648,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "r_draconis_2024_E1_D3",
+      "target_id": "r_draconis",
+      "epoch_id": "2024_E1",
+      "band": 3,
+      "uri": "ibe/data/spherex/dr1/level2/2025W17_4B/l2b-v27-2026-196/3/level2_2025W17_4B_0021_1D3_spx_l2b-v27-2026-196.fits",
+      "ra": 248.1674,
+      "dec": 66.7548,
+      "recorded_epoch_mjd_mean": 60792.59980216667,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/8960d89e20cf4824d26dff3d1120af1a8f481545b5105252567ccd8962997970.fits",
+      "bytes": 4475520,
+      "sha256": "fc1672f3bd225c36f8caddd0a40870acf86940feadc54a035f142c2cf72accd9",
+      "seconds": 11.265,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60789.879611007,
+          "MJD-END": 60789.880943385,
+          "MJD-AVG": 60789.880277196,
+          "DATE-OBS": "2025-04-24T21:06:38.391"
+        },
+        "shape": [
+          167,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 24791,
+            "target_aperture": 13
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 296,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 45,
+            "target_aperture": 13
+          },
+          "SUR_ERROR": {
+            "whole_frame": 250,
+            "target_aperture": 13
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 2970,
+          "valid_cells": 12,
+          "scalar_mjy_sr": 0.054619383066892624,
+          "scalar_pixel_mad_mjy_sr": 0.016708142079412937,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.006866699155438585,
+          "plane_heldout_rms_mjy_sr": 0.006213824156215324,
+          "plane_gradient_across_frame_mjy_sr": 0.013365748514946473,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_median",
+          "status": "scalar_limited_support",
+          "clean_pixels": 2970,
+          "valid_cells": 4,
+          "subtracted": true,
+          "clean_fraction": 0.10649359962709312,
+          "covered_quadrants": 4,
+          "scalar_mjy_sr": 0.054619383066892624,
+          "robust_scatter_mjy_sr": 0.016708142079412937
+        },
+        "pipeline_channel": {
+          "detector": 3,
+          "wavelength_um": 1.6627474048031863,
+          "bandwidth_um": 0.039758815985529695,
+          "flux_ujy": null,
+          "flux_err_ujy": null,
+          "flags": 69206022,
+          "is_flagged_bad": true,
+          "clean_fraction": 0.0,
+          "is_used_in_photometry": false
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": null,
+          "error_ujy": null,
+          "clean_pixels": 0,
+          "annulus_pixels": 0
+        },
+        "matched_aperture_agrees": null,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": null,
+          "annulus_median_mjy_sr": null,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": null,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "r_draconis_2025_E1_D3",
+      "target_id": "r_draconis",
+      "epoch_id": "2025_E1",
+      "band": 3,
+      "uri": "ibe/data/spherex/dr1/level2/2025W18_2B/l2b-v27-2026-197/3/level2_2025W18_2B_0015_1D3_spx_l2b-v27-2026-197.fits",
+      "ra": 248.1674,
+      "dec": 66.7548,
+      "recorded_epoch_mjd_mean": 60858.637992722215,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/1295d1d11ce018dfcd166fe5bd3734a6d9c405abd50df730253e7fd09ca8010d.fits",
+      "bytes": 4475520,
+      "sha256": "52106d6d0a1f853d27dff9d0b3498c869eec3e5f94506026f6e185a7c886a6d7",
+      "seconds": 5.813,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60796.606066875,
+          "MJD-END": 60796.607399253,
+          "MJD-AVG": 60796.606733064,
+          "DATE-OBS": "2025-05-01T14:32:44.178"
+        },
+        "shape": [
+          168,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 25128,
+            "target_aperture": 12
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 337,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 35,
+            "target_aperture": 12
+          },
+          "SUR_ERROR": {
+            "whole_frame": 210,
+            "target_aperture": 12
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 2800,
+          "valid_cells": 10,
+          "scalar_mjy_sr": 0.04030595347285271,
+          "scalar_pixel_mad_mjy_sr": 0.015534866675734518,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.0026631320328831046,
+          "plane_heldout_rms_mjy_sr": 0.004271235104549465,
+          "plane_gradient_across_frame_mjy_sr": 0.016247406804480558,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_median",
+          "status": "scalar_limited_support",
+          "clean_pixels": 2800,
+          "valid_cells": 4,
+          "subtracted": true,
+          "clean_fraction": 0.0998003992015968,
+          "covered_quadrants": 4,
+          "scalar_mjy_sr": 0.04030595347285271,
+          "robust_scatter_mjy_sr": 0.015534866675734518
+        },
+        "pipeline_channel": {
+          "detector": 3,
+          "wavelength_um": 1.7559202464908117,
+          "bandwidth_um": 0.04268795182079724,
+          "flux_ujy": null,
+          "flux_err_ujy": null,
+          "flags": 69206022,
+          "is_flagged_bad": true,
+          "clean_fraction": 0.0,
+          "is_used_in_photometry": false
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": null,
+          "error_ujy": null,
+          "clean_pixels": 0,
+          "annulus_pixels": 0
+        },
+        "matched_aperture_agrees": null,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": null,
+          "annulus_median_mjy_sr": null,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": null,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "eps_indi_b_2024_E1_D3",
+      "target_id": "eps_indi_b",
+      "epoch_id": "2024_E1",
+      "band": 3,
+      "uri": "ibe/data/spherex/dr1/level2/2025W18_1B/l2b-v27-2026-196/3/level2_2025W18_1B_0081_2D3_spx_l2b-v27-2026-196.fits",
+      "ra": 331.0962,
+      "dec": -56.8005,
+      "recorded_epoch_mjd_mean": 60792.504828972225,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/91825cf5584ae5f5f3c82e34803cd4ce28bbcf30ea7cf087f7ae1b724d6037e5.fits",
+      "bytes": 4475520,
+      "sha256": "9d4fb57bf944c155ca65c8885581cb2d36cb4152fe382ddf0980072c363a179c",
+      "seconds": 11.75,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60794.06481272,
+          "MJD-END": 60794.066145098,
+          "MJD-AVG": 60794.065478909,
+          "DATE-OBS": "2025-04-29T01:33:19.819"
+        },
+        "shape": [
+          167,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 20998,
+            "target_aperture": 11
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 314,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 42,
+            "target_aperture": 0
+          },
+          "SUR_ERROR": {
+            "whole_frame": 202,
+            "target_aperture": 0
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 6584,
+          "valid_cells": 10,
+          "scalar_mjy_sr": 0.03372088074684143,
+          "scalar_pixel_mad_mjy_sr": 0.017655113352835178,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.0043250556799091225,
+          "plane_heldout_rms_mjy_sr": 0.0020301667222318086,
+          "plane_gradient_across_frame_mjy_sr": 0.04020483662529718,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_median",
+          "status": "scalar_limited_support",
+          "clean_pixels": 6584,
+          "valid_cells": 5,
+          "subtracted": true,
+          "clean_fraction": 0.23607874072214852,
+          "covered_quadrants": 3,
+          "scalar_mjy_sr": 0.03372088074684143,
+          "robust_scatter_mjy_sr": 0.017655113352835178
+        },
+        "pipeline_channel": {
+          "detector": 3,
+          "wavelength_um": 1.647095371211071,
+          "bandwidth_um": 0.03940473350857722,
+          "flux_ujy": 32628.110570258857,
+          "flux_err_ujy": 194.04642653825385,
+          "flags": 2097152,
+          "is_flagged_bad": false,
+          "clean_fraction": 1.0,
+          "is_used_in_photometry": true
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": 32628.110570258857,
+          "error_ujy": 194.02803803075253,
+          "clean_pixels": 11,
+          "aperture_pixels": 11,
+          "annulus_pixels": 0,
+          "annulus_background_mjy_sr": 0.0,
+          "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+        },
+        "matched_aperture_agrees": true,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": null,
+          "annulus_median_mjy_sr": null,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": 1.000094772424068,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    },
+    {
+      "id": "eps_indi_b_2025_E1_D3",
+      "target_id": "eps_indi_b",
+      "epoch_id": "2025_E1",
+      "band": 3,
+      "uri": "ibe/data/spherex/dr1/level2/2025W18_2B/l2b-v27-2026-197/3/level2_2025W18_2B_0011_2D3_spx_l2b-v27-2026-197.fits",
+      "ra": 331.0962,
+      "dec": -56.8005,
+      "recorded_epoch_mjd_mean": 60921.74081033334,
+      "release": "DR1",
+      "collection": "spherex_dr1",
+      "requested_size_deg": 0.2,
+      "fetch_size_deg": 0.28625937914128574,
+      "selection": "First recorded URI, first two stored epochs; WISE D3 additional flag-coverage sample from manifest DICHROIC warning. Not chosen by measured flux.",
+      "download_status": "success",
+      "path": "backend/.cache/phase3/cutouts/a4aa1da2935465a18a90103b54520b1170fe3a2bdd3fca63673a14a63850cfb0.fits",
+      "bytes": 4475520,
+      "sha256": "730d8183e77882b0a37e61256250956d67b5b7730db465e402dbae4337e05661",
+      "seconds": 12.828,
+      "analysis": {
+        "dates": {
+          "MJD-BEG": 60796.580361042,
+          "MJD-END": 60796.58169342,
+          "MJD-AVG": 60796.581027231,
+          "DATE-OBS": "2025-05-01T13:55:43.194"
+        },
+        "shape": [
+          168,
+          167
+        ],
+        "flag_coverage": {
+          "SOURCE": {
+            "whole_frame": 21112,
+            "target_aperture": 14
+          },
+          "DICHROIC": {
+            "whole_frame": 0,
+            "target_aperture": 0
+          },
+          "HALO": {
+            "whole_frame": 193,
+            "target_aperture": 0
+          },
+          "OVERFLOW": {
+            "whole_frame": 39,
+            "target_aperture": 0
+          },
+          "SUR_ERROR": {
+            "whole_frame": 165,
+            "target_aperture": 0
+          }
+        },
+        "background_comparison": {
+          "clean_pixels": 6620,
+          "valid_cells": 10,
+          "scalar_mjy_sr": 0.03366576135158539,
+          "scalar_pixel_mad_mjy_sr": 0.0174542155534029,
+          "status": "measured",
+          "scalar_heldout_rms_mjy_sr": 0.0049206679840454615,
+          "plane_heldout_rms_mjy_sr": 0.004495178154768583,
+          "plane_gradient_across_frame_mjy_sr": 0.044854334754171346,
+          "note": "Independent fixed4x4 checkerboard holdout trial; scalar and plane evaluated on same held-out cells, not fit residuals. Does not establish diffuse emission is sky background."
+        },
+        "production_background": {
+          "method": "masked_median",
+          "status": "scalar_limited_support",
+          "clean_pixels": 6620,
+          "valid_cells": 5,
+          "subtracted": true,
+          "clean_fraction": 0.23595665811234673,
+          "covered_quadrants": 3,
+          "scalar_mjy_sr": 0.03366576135158539,
+          "robust_scatter_mjy_sr": 0.0174542155534029
+        },
+        "pipeline_channel": {
+          "detector": 3,
+          "wavelength_um": 1.6472000526576556,
+          "bandwidth_um": 0.03940635548946218,
+          "flux_ujy": 32511.938241995605,
+          "flux_err_ujy": 195.47528090990542,
+          "flags": 2097152,
+          "is_flagged_bad": false,
+          "clean_fraction": 1.0,
+          "is_used_in_photometry": true
+        },
+        "matched_aperture_reference": {
+          "flux_ujy": 32511.9382419956,
+          "error_ujy": 195.44659750003086,
+          "clean_pixels": 14,
+          "aperture_pixels": 14,
+          "annulus_pixels": 0,
+          "annulus_background_mjy_sr": 0.0,
+          "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+        },
+        "matched_aperture_agrees": true,
+        "official_irsa_aperture": {
+          "status": "executed",
+          "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+          "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+          "flux_ujy": null,
+          "annulus_median_mjy_sr": null,
+          "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+          "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+        },
+        "error_ratio_including_background_to_native_floor": 1.0001467582973633,
+        "display_stretch_independent": true,
+        "distinct_display_hashes": 3,
+        "display_test_scope": "Actual production WebP renderer at three fixed-relative displaylimits; raw-unit arrays unchanged and extraction repeated; previews discarded."
+      }
+    }
+  ],
+  "science_acceptance": "not_established",
+  "temporal_smearing": [
+    {
+      "target_id": "wise_0855",
+      "epoch_id": "2025_E1",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 182,
+      "proper_motion_arcsec_year": 8.14643013841032,
+      "predicted_drift_upper_bound_arcsec": 4.059275250350933,
+      "exceeds_half_output_pixel": true,
+      "between_band_mean_date_span_days": 119.6211891666535,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 182,
+          "drift_upper_bound_arcsec": 4.059275250350933
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.15612597116734356
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.15612597116734356
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 182,
+          "drift_upper_bound_arcsec": 4.059275250350933
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.15612597116734356
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.15612597116734356
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "wise_0855",
+      "epoch_id": "2025_E2",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 182,
+      "proper_motion_arcsec_year": 8.14643013841032,
+      "predicted_drift_upper_bound_arcsec": 4.059275250350933,
+      "exceeds_half_output_pixel": true,
+      "between_band_mean_date_span_days": 74.56391266667924,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.15612597116734356
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 42,
+          "drift_upper_bound_arcsec": 0.9367558270040613
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 175,
+          "drift_upper_bound_arcsec": 3.903149279183589
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.15612597116734356
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 42,
+          "drift_upper_bound_arcsec": 0.9367558270040613
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 175,
+          "drift_upper_bound_arcsec": 3.903149279183589
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "wise_0855",
+      "epoch_id": "2026_E1",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 21,
+      "proper_motion_arcsec_year": 8.14643013841032,
+      "predicted_drift_upper_bound_arcsec": 0.4683779135020307,
+      "exceeds_half_output_pixel": false,
+      "between_band_mean_date_span_days": 6.359036833317077,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.3122519423346871
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 21,
+          "drift_upper_bound_arcsec": 0.4683779135020307
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.3122519423346871
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.3122519423346871
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 21,
+          "drift_upper_bound_arcsec": 0.4683779135020307
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.3122519423346871
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "barnards_star",
+      "epoch_id": "2025_E1",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 56,
+      "proper_motion_arcsec_year": 10.393358279208892,
+      "predicted_drift_upper_bound_arcsec": 1.5935059921579682,
+      "exceeds_half_output_pixel": true,
+      "between_band_mean_date_span_days": 18.479318999998213,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 42,
+          "drift_upper_bound_arcsec": 1.1951294941184762
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.39837649803949204
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 21,
+          "drift_upper_bound_arcsec": 0.5975647470592381
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 42,
+          "drift_upper_bound_arcsec": 1.1951294941184762
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.39837649803949204
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 21,
+          "drift_upper_bound_arcsec": 0.5975647470592381
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "barnards_star",
+      "epoch_id": "2025_E2",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 35,
+      "proper_motion_arcsec_year": 10.393358279208892,
+      "predicted_drift_upper_bound_arcsec": 0.9959412450987302,
+      "exceeds_half_output_pixel": false,
+      "between_band_mean_date_span_days": 15.730838000003132,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.19918824901974602
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.39837649803949204
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 28,
+          "drift_upper_bound_arcsec": 0.7967529960789841
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.19918824901974602
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.39837649803949204
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 28,
+          "drift_upper_bound_arcsec": 0.7967529960789841
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "barnards_star",
+      "epoch_id": "2026_E1",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 147,
+      "proper_motion_arcsec_year": 10.393358279208892,
+      "predicted_drift_upper_bound_arcsec": 4.182953229414666,
+      "exceeds_half_output_pixel": true,
+      "between_band_mean_date_span_days": 47.751400666667905,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 21,
+          "drift_upper_bound_arcsec": 0.5975647470592381
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 42,
+          "drift_upper_bound_arcsec": 1.1951294941184762
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 112,
+          "drift_upper_bound_arcsec": 3.1870119843159364
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 21,
+          "drift_upper_bound_arcsec": 0.5975647470592381
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 42,
+          "drift_upper_bound_arcsec": 1.1951294941184762
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 112,
+          "drift_upper_bound_arcsec": 3.1870119843159364
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "rw_aurigae",
+      "epoch_id": "2025_E1",
+      "recorded_uri_count": 17,
+      "planning_week_span_upper_bound_days": 21,
+      "proper_motion_arcsec_year": 0.027523081222857296,
+      "predicted_drift_upper_bound_arcsec": 0.0015824358813963128,
+      "exceeds_half_output_pixel": false,
+      "between_band_mean_date_span_days": 13.631089666661865,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.0005274786271321042
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.0005274786271321042
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0010549572542642085
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.0005274786271321042
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.0005274786271321042
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0010549572542642085
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "rw_aurigae",
+      "epoch_id": "2025_E2",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 28,
+      "proper_motion_arcsec_year": 0.027523081222857296,
+      "predicted_drift_upper_bound_arcsec": 0.002109914508528417,
+      "exceeds_half_output_pixel": false,
+      "between_band_mean_date_span_days": 10.026559833335341,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0010549572542642085
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 21,
+          "drift_upper_bound_arcsec": 0.0015824358813963128
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 21,
+          "drift_upper_bound_arcsec": 0.0015824358813963128
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0010549572542642085
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 21,
+          "drift_upper_bound_arcsec": 0.0015824358813963128
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 21,
+          "drift_upper_bound_arcsec": 0.0015824358813963128
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "rw_aurigae",
+      "epoch_id": "2026_E1",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 21,
+      "proper_motion_arcsec_year": 0.027523081222857296,
+      "predicted_drift_upper_bound_arcsec": 0.0015824358813963128,
+      "exceeds_half_output_pixel": false,
+      "between_band_mean_date_span_days": 8.347680000006221,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0010549572542642085
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0010549572542642085
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0010549572542642085
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0010549572542642085
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0010549572542642085
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0010549572542642085
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "r_draconis",
+      "epoch_id": "2024_E1",
+      "recorded_uri_count": 6,
+      "planning_week_span_upper_bound_days": 14,
+      "proper_motion_arcsec_year": 0.03389232951568835,
+      "predicted_drift_upper_bound_arcsec": 0.0012990899745917506,
+      "exceeds_half_output_pixel": false,
+      "between_band_mean_date_span_days": 0.0,
+      "per_band": {
+        "3": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0012990899745917506
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0012990899745917506
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "r_draconis",
+      "epoch_id": "2025_E1",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 189,
+      "proper_motion_arcsec_year": 0.03389232951568835,
+      "predicted_drift_upper_bound_arcsec": 0.017537714656988633,
+      "exceeds_half_output_pixel": false,
+      "between_band_mean_date_span_days": 98.042673333337,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 154,
+          "drift_upper_bound_arcsec": 0.014289989720509258
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 35,
+          "drift_upper_bound_arcsec": 0.0032477249364793763
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 49,
+          "drift_upper_bound_arcsec": 0.004546814911071127
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 154,
+          "drift_upper_bound_arcsec": 0.014289989720509258
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 35,
+          "drift_upper_bound_arcsec": 0.0032477249364793763
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 49,
+          "drift_upper_bound_arcsec": 0.004546814911071127
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "r_draconis",
+      "epoch_id": "2025_E2",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 182,
+      "proper_motion_arcsec_year": 0.03389232951568835,
+      "predicted_drift_upper_bound_arcsec": 0.016888169669692758,
+      "exceeds_half_output_pixel": false,
+      "between_band_mean_date_span_days": 113.82107266666571,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 28,
+          "drift_upper_bound_arcsec": 0.0025981799491835013
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 28,
+          "drift_upper_bound_arcsec": 0.0025981799491835013
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 126,
+          "drift_upper_bound_arcsec": 0.011691809771325756
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 28,
+          "drift_upper_bound_arcsec": 0.0025981799491835013
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 28,
+          "drift_upper_bound_arcsec": 0.0025981799491835013
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 126,
+          "drift_upper_bound_arcsec": 0.011691809771325756
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "r_draconis",
+      "epoch_id": "2026_E1",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 154,
+      "proper_motion_arcsec_year": 0.03389232951568835,
+      "predicted_drift_upper_bound_arcsec": 0.014289989720509258,
+      "exceeds_half_output_pixel": false,
+      "between_band_mean_date_span_days": 92.09092716666783,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 84,
+          "drift_upper_bound_arcsec": 0.007794539847550503
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0012990899745917506
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 49,
+          "drift_upper_bound_arcsec": 0.004546814911071127
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 84,
+          "drift_upper_bound_arcsec": 0.007794539847550503
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 14,
+          "drift_upper_bound_arcsec": 0.0012990899745917506
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 49,
+          "drift_upper_bound_arcsec": 0.004546814911071127
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "eps_indi_b",
+      "epoch_id": "2024_E1",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 14,
+      "proper_motion_arcsec_year": 4.6841676144220115,
+      "predicted_drift_upper_bound_arcsec": 0.17954372786285602,
+      "exceeds_half_output_pixel": false,
+      "between_band_mean_date_span_days": 3.578760666656308,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.08977186393142801
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.08977186393142801
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.08977186393142801
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.08977186393142801
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.08977186393142801
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.08977186393142801
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "eps_indi_b",
+      "epoch_id": "2025_E1",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 182,
+      "proper_motion_arcsec_year": 4.6841676144220115,
+      "predicted_drift_upper_bound_arcsec": 2.3340684622171284,
+      "exceeds_half_output_pixel": true,
+      "between_band_mean_date_span_days": 59.36517550001008,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 28,
+          "drift_upper_bound_arcsec": 0.35908745572571205
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 182,
+          "drift_upper_bound_arcsec": 2.3340684622171284
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 168,
+          "drift_upper_bound_arcsec": 2.1545247343542724
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 28,
+          "drift_upper_bound_arcsec": 0.35908745572571205
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 182,
+          "drift_upper_bound_arcsec": 2.3340684622171284
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 168,
+          "drift_upper_bound_arcsec": 2.1545247343542724
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "eps_indi_b",
+      "epoch_id": "2025_E2",
+      "recorded_uri_count": 18,
+      "planning_week_span_upper_bound_days": 189,
+      "proper_motion_arcsec_year": 4.6841676144220115,
+      "predicted_drift_upper_bound_arcsec": 2.4238403261485564,
+      "exceeds_half_output_pixel": true,
+      "between_band_mean_date_span_days": 1.0395328333470388,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 175,
+          "drift_upper_bound_arcsec": 2.2442965982857004
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 182,
+          "drift_upper_bound_arcsec": 2.3340684622171284
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 189,
+          "drift_upper_bound_arcsec": 2.4238403261485564
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 175,
+          "drift_upper_bound_arcsec": 2.2442965982857004
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 182,
+          "drift_upper_bound_arcsec": 2.3340684622171284
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 189,
+          "drift_upper_bound_arcsec": 2.4238403261485564
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    },
+    {
+      "target_id": "eps_indi_b",
+      "epoch_id": "2026_E1",
+      "recorded_uri_count": 14,
+      "planning_week_span_upper_bound_days": 161,
+      "proper_motion_arcsec_year": 4.6841676144220115,
+      "predicted_drift_upper_bound_arcsec": 2.0647528704228444,
+      "exceeds_half_output_pixel": true,
+      "between_band_mean_date_span_days": 149.8815313333398,
+      "per_band": {
+        "1": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.08977186393142801
+        },
+        "2": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.08977186393142801
+        },
+        "3": {
+          "planning_week_span_upper_bound_days": 161,
+          "drift_upper_bound_arcsec": 2.0647528704228444
+        },
+        "4": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.08977186393142801
+        },
+        "5": {
+          "planning_week_span_upper_bound_days": 7,
+          "drift_upper_bound_arcsec": 0.08977186393142801
+        },
+        "6": {
+          "planning_week_span_upper_bound_days": 161,
+          "drift_upper_bound_arcsec": 2.0647528704228444
+        }
+      },
+      "method": "Conservative ISO planning-week bounds from all recorded image URIs; not exact per-exposure dates. Per-downloaded exposure FITS dates recorded separately."
+    }
+  ],
+  "static_controls": [
+    {
+      "target_id": "wise_0855",
+      "band": 6,
+      "controls": [],
+      "status": "not_established",
+      "sample_ids": [
+        "wise_0855_2025_E1_D6",
+        "wise_0855_2025_E2_D6"
+      ],
+      "coarse_wavelength_compatible": false,
+      "center_wavelength_um": [
+        4.967329876813456,
+        4.417846547397682
+      ],
+      "center_bandwidth_um": [
+        0.03718706870371085,
+        0.03724763106211039
+      ],
+      "reason": "Recorded exposures fail spectral compatibility; no variability inference or unmatched control subtraction performed"
+    },
+    {
+      "target_id": "barnards_star",
+      "band": 3,
+      "controls": [],
+      "status": "not_established",
+      "sample_ids": [
+        "barnards_star_2025_E1_D3",
+        "barnards_star_2025_E2_D3"
+      ],
+      "coarse_wavelength_compatible": false,
+      "center_wavelength_um": [
+        2.3075212224332793,
+        1.7937197075518387
+      ],
+      "center_bandwidth_um": [
+        0.05733336423908467,
+        0.04419766121271687
+      ],
+      "reason": "Recorded exposures fail spectral compatibility; no variability inference or unmatched control subtraction performed"
+    },
+    {
+      "target_id": "rw_aurigae",
+      "band": 3,
+      "controls": [],
+      "status": "not_established",
+      "sample_ids": [
+        "rw_aurigae_2025_E1_D3",
+        "rw_aurigae_2025_E2_D3"
+      ],
+      "coarse_wavelength_compatible": false,
+      "center_wavelength_um": [
+        2.3540211452440074,
+        1.9366990112779285
+      ],
+      "center_bandwidth_um": [
+        0.05869950479605469,
+        0.047177641835308495
+      ],
+      "reason": "Recorded exposures fail spectral compatibility; no variability inference or unmatched control subtraction performed"
+    },
+    {
+      "target_id": "r_draconis",
+      "band": 3,
+      "controls": [],
+      "status": "not_established",
+      "sample_ids": [
+        "r_draconis_2024_E1_D3",
+        "r_draconis_2025_E1_D3"
+      ],
+      "coarse_wavelength_compatible": false,
+      "center_wavelength_um": [
+        1.6627474048031863,
+        1.7559202464908117
+      ],
+      "center_bandwidth_um": [
+        0.039758815985529695,
+        0.04268795182079724
+      ],
+      "reason": "Recorded exposures fail spectral compatibility; no variability inference or unmatched control subtraction performed"
+    },
+    {
+      "target_id": "eps_indi_b",
+      "band": 3,
+      "controls": [
+        {
+          "gaia_source_id": "6412591751539163136",
+          "flux_ujy": [
+            3350.9995956388757,
+            3765.1820725017787
+          ],
+          "difference_ujy": 414.18247686290306,
+          "approx_error_ujy": 127.0718160248213,
+          "standardized_residual": 3.2594361977324664,
+          "catalog_ra": 331.26264117465,
+          "catalog_dec": -56.85732321403,
+          "g_mag": 15.282647132873535,
+          "nearest_saved_gaia_neighbor": {
+            "distance_arcsec": 41.45461728530684,
+            "source_id": "6412591957697593728"
+          },
+          "exploratory_diagnostics": [
+            {
+              "reference": {
+                "flux_ujy": 3350.9995956388757,
+                "error_ujy": 80.91461053034287,
+                "clean_pixels": 14,
+                "aperture_pixels": 14,
+                "annulus_pixels": 31,
+                "annulus_background_mjy_sr": -8.442997932434082e-05,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": 3281.451122842983,
+                "annulus_median_mjy_sr": -8.442997932434082e-05,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 3281.452290401049,
+              "center_x": 48.12573956417409,
+              "center_y": 32.35306690104764,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.036527867919168955,
+                0.001990965932208155
+              ],
+              "flags_at_extraction_center": 2097152
+            },
+            {
+              "reference": {
+                "flux_ujy": 3765.182072501778,
+                "error_ujy": 79.6341075255728,
+                "clean_pixels": 11,
+                "aperture_pixels": 11,
+                "annulus_pixels": 30,
+                "annulus_background_mjy_sr": -0.006910406053066254,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": 3769.297865746156,
+                "annulus_median_mjy_sr": -0.006910406053066254,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 3769.3131135392387,
+              "center_x": 47.849790031069794,
+              "center_y": 33.036613052344336,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.0038016879060549513,
+                -0.017361006373810994
+              ],
+              "flags_at_extraction_center": 2097152
+            }
+          ],
+          "exploratory_note": "Same locked controls; no rejection based on residual. Official/subpixel alternatives are diagnostic, not a new acceptance threshold. Centroid is positive-pixel aperture moment, not a PSF fit."
+        },
+        {
+          "gaia_source_id": "6412591957697593728",
+          "flux_ujy": [
+            5640.2846544989125,
+            5621.679192401784
+          ],
+          "difference_ujy": -18.60546209712811,
+          "approx_error_ujy": 155.31762655729887,
+          "standardized_residual": -0.11978976571770039,
+          "catalog_ra": 331.24382057106,
+          "catalog_dec": -56.85215538734,
+          "g_mag": 14.300392150878906,
+          "nearest_saved_gaia_neighbor": {
+            "distance_arcsec": 41.454617285307386,
+            "source_id": "6412591751539163136"
+          },
+          "exploratory_diagnostics": [
+            {
+              "reference": {
+                "flux_ujy": 5640.2846544989125,
+                "error_ujy": 92.78963335420282,
+                "clean_pixels": 13,
+                "aperture_pixels": 13,
+                "annulus_pixels": 14,
+                "annulus_background_mjy_sr": 0.0058826059103012085,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": 5613.780571920363,
+                "annulus_median_mjy_sr": 0.0058826059103012085,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 5614.9565242195695,
+              "center_x": 52.341366657325345,
+              "center_y": 37.41832282385004,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.015846920074785942,
+                -0.018686373847835114
+              ],
+              "flags_at_extraction_center": 2097152
+            },
+            {
+              "reference": {
+                "flux_ujy": 5621.679192401783,
+                "error_ujy": 89.83294064106363,
+                "clean_pixels": 11,
+                "aperture_pixels": 11,
+                "annulus_pixels": 11,
+                "annulus_background_mjy_sr": 0.001661255955696106,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": 5598.836192776267,
+                "annulus_median_mjy_sr": 0.001661255955696106,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 5598.7142963994675,
+              "center_x": 52.065482156486766,
+              "center_y": 38.10221100701892,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.023049768301135032,
+                -0.050338538494088425
+              ],
+              "flags_at_extraction_center": 2097152
+            }
+          ],
+          "exploratory_note": "Same locked controls; no rejection based on residual. Official/subpixel alternatives are diagnostic, not a new acceptance threshold. Centroid is positive-pixel aperture moment, not a PSF fit."
+        },
+        {
+          "gaia_source_id": "6412591992057334144",
+          "flux_ujy": [
+            4731.187516391866,
+            4404.906908551277
+          ],
+          "difference_ujy": -326.28060784058835,
+          "approx_error_ujy": 136.24350290779387,
+          "standardized_residual": -2.394834255409645,
+          "catalog_ra": 331.22020754265,
+          "catalog_dec": -56.85643003988,
+          "g_mag": 15.109783172607422,
+          "nearest_saved_gaia_neighbor": {
+            "distance_arcsec": 48.96051871034215,
+            "source_id": "6412591957697593728"
+          },
+          "exploratory_diagnostics": [
+            {
+              "reference": {
+                "flux_ujy": 4731.187516391866,
+                "error_ujy": 85.08347535349102,
+                "clean_pixels": 11,
+                "aperture_pixels": 11,
+                "annulus_pixels": 20,
+                "annulus_background_mjy_sr": 0.0030517950654029846,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": 4731.636249496874,
+                "annulus_median_mjy_sr": 0.0030517950654029846,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 4731.702759090242,
+              "center_x": 60.245028253167405,
+              "center_y": 37.96433023016336,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.030748941532479535,
+                -0.005238982678172022
+              ],
+              "flags_at_extraction_center": 2097152
+            },
+            {
+              "reference": {
+                "flux_ujy": 4404.9069085512765,
+                "error_ujy": 84.36071792555443,
+                "clean_pixels": 12,
+                "aperture_pixels": 12,
+                "annulus_pixels": 20,
+                "annulus_background_mjy_sr": 0.007611311972141266,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": 4451.18712035156,
+                "annulus_median_mjy_sr": 0.007611311972141266,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 4451.441173172289,
+              "center_x": 59.96889926764526,
+              "center_y": 38.6481346806185,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.01788142097155543,
+                0.027084521577400267
+              ],
+              "flags_at_extraction_center": 2097152
+            }
+          ],
+          "exploratory_note": "Same locked controls; no rejection based on residual. Official/subpixel alternatives are diagnostic, not a new acceptance threshold. Centroid is positive-pixel aperture moment, not a PSF fit."
+        },
+        {
+          "gaia_source_id": "6412592370014523776",
+          "flux_ujy": [
+            13008.73069939359,
+            13130.359966035403
+          ],
+          "difference_ujy": 121.62926664181214,
+          "approx_error_ujy": 203.04046357992647,
+          "standardized_residual": 0.5990395436323116,
+          "catalog_ra": 331.26888412039,
+          "catalog_dec": -56.83154742305,
+          "g_mag": 14.068264961242676,
+          "nearest_saved_gaia_neighbor": {
+            "distance_arcsec": 66.91482070331085,
+            "source_id": "6412592404374220928"
+          },
+          "exploratory_diagnostics": [
+            {
+              "reference": {
+                "flux_ujy": 13008.73069939359,
+                "error_ujy": 129.72508238420482,
+                "clean_pixels": 14,
+                "aperture_pixels": 14,
+                "annulus_pixels": 22,
+                "annulus_background_mjy_sr": 0.004634149372577667,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": 12951.198998224574,
+                "annulus_median_mjy_sr": 0.004634149372577667,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 12951.134915751312,
+              "center_x": 40.1109387375089,
+              "center_y": 45.522483677949054,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.038596234829839204,
+                0.010958816663524829
+              ],
+              "flags_at_extraction_center": 2097152
+            },
+            {
+              "reference": {
+                "flux_ujy": 13130.3599660354,
+                "error_ujy": 128.78951371110247,
+                "clean_pixels": 12,
+                "aperture_pixels": 12,
+                "annulus_pixels": 27,
+                "annulus_background_mjy_sr": 0.003429308533668518,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": 13108.13166177658,
+                "annulus_median_mjy_sr": 0.0036033019423484802,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 13110.678012598823,
+              "center_x": 39.83583052814134,
+              "center_y": 46.207230434807464,
+              "positive_aperture_centroid_offset_pixels": [
+                0.009258155551535197,
+                -0.06595223674830208
+              ],
+              "flags_at_extraction_center": 2097152
+            }
+          ],
+          "exploratory_note": "Same locked controls; no rejection based on residual. Official/subpixel alternatives are diagnostic, not a new acceptance threshold. Centroid is positive-pixel aperture moment, not a PSF fit."
+        },
+        {
+          "gaia_source_id": "6412592404374220928",
+          "flux_ujy": [
+            6410.832892418304,
+            6505.892750443081
+          ],
+          "difference_ujy": 95.05985802477699,
+          "approx_error_ujy": 173.85402907095275,
+          "standardized_residual": 0.546779723960159,
+          "catalog_ra": 331.23596522338,
+          "catalog_dec": -56.83614881192,
+          "g_mag": 15.048111915588379,
+          "nearest_saved_gaia_neighbor": {
+            "distance_arcsec": 59.6632067217851,
+            "source_id": "6412591957697593728"
+          },
+          "exploratory_diagnostics": [
+            {
+              "reference": {
+                "flux_ujy": 6410.832892418304,
+                "error_ujy": 95.73638949167194,
+                "clean_pixels": 11,
+                "aperture_pixels": 11,
+                "annulus_pixels": 23,
+                "annulus_background_mjy_sr": 0.008632346987724304,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": 6413.132009476646,
+                "annulus_median_mjy_sr": 0.008632346987724304,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 6414.2426418561745,
+              "center_x": 50.80402000124244,
+              "center_y": 47.03048235347271,
+              "positive_aperture_centroid_offset_pixels": [
+                0.05546926574490385,
+                -0.028724124976569954
+              ],
+              "flags_at_extraction_center": 2097152
+            },
+            {
+              "reference": {
+                "flux_ujy": 6505.892750443079,
+                "error_ujy": 98.9554397620332,
+                "clean_pixels": 14,
+                "aperture_pixels": 14,
+                "annulus_pixels": 21,
+                "annulus_background_mjy_sr": 0.0052329301834106445,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": 6462.9297135128145,
+                "annulus_median_mjy_sr": 0.0052329301834106445,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 6462.359526226374,
+              "center_x": 50.52862522045469,
+              "center_y": 47.71519651050147,
+              "positive_aperture_centroid_offset_pixels": [
+                0.006741595637677733,
+                -0.022713196265186752
+              ],
+              "flags_at_extraction_center": 2097152
+            }
+          ],
+          "exploratory_note": "Same locked controls; no rejection based on residual. Official/subpixel alternatives are diagnostic, not a new acceptance threshold. Centroid is positive-pixel aperture moment, not a PSF fit."
+        },
+        {
+          "gaia_source_id": "6412593435166417536",
+          "flux_ujy": [
+            8981.590380197615,
+            9304.458099898327
+          ],
+          "difference_ujy": 322.86771970071277,
+          "approx_error_ujy": 158.19872198849245,
+          "standardized_residual": 2.040899671264086,
+          "catalog_ra": 331.17188294203,
+          "catalog_dec": -56.79333744618,
+          "g_mag": 13.931794166564941,
+          "nearest_saved_gaia_neighbor": {
+            "distance_arcsec": 106.9720593505728,
+            "source_id": "6412596458823395328"
+          },
+          "exploratory_diagnostics": [
+            {
+              "reference": {
+                "flux_ujy": 8981.590380197615,
+                "error_ujy": 109.65644198175501,
+                "clean_pixels": 11,
+                "aperture_pixels": 11,
+                "annulus_pixels": 0,
+                "annulus_background_mjy_sr": 0.0,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": null,
+                "annulus_median_mjy_sr": null,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 9026.572332257045,
+              "center_x": 59.10583409971104,
+              "center_y": 77.88426672125837,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.034836829229043076,
+                0.05069597959297312
+              ],
+              "flags_at_extraction_center": 2097152
+            },
+            {
+              "reference": {
+                "flux_ujy": 9304.458099898326,
+                "error_ujy": 113.94714251802971,
+                "clean_pixels": 14,
+                "aperture_pixels": 14,
+                "annulus_pixels": 0,
+                "annulus_background_mjy_sr": 0.0,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": null,
+                "annulus_median_mjy_sr": null,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 9207.648063260842,
+              "center_x": 58.831453712039114,
+              "center_y": 78.57146342848691,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.011769881107078106,
+                -0.027825956373334293
+              ],
+              "flags_at_extraction_center": 2097152
+            }
+          ],
+          "exploratory_note": "Same locked controls; no rejection based on residual. Official/subpixel alternatives are diagnostic, not a new acceptance threshold. Centroid is positive-pixel aperture moment, not a PSF fit."
+        },
+        {
+          "gaia_source_id": "6412593916202695552",
+          "flux_ujy": [
+            12886.395857268666,
+            12599.0703668543
+          ],
+          "difference_ujy": -287.32549041436687,
+          "approx_error_ujy": 178.15820182828912,
+          "standardized_residual": -1.6127547733743655,
+          "catalog_ra": 330.99810233056,
+          "catalog_dec": -56.87521042699,
+          "g_mag": 13.943490028381348,
+          "nearest_saved_gaia_neighbor": {
+            "distance_arcsec": 13.79973093305723,
+            "source_id": "6412593916202695936"
+          },
+          "exploratory_diagnostics": [
+            {
+              "reference": {
+                "flux_ujy": 12886.395857268666,
+                "error_ujy": 127.4259554905874,
+                "clean_pixels": 13,
+                "aperture_pixels": 13,
+                "annulus_pixels": 0,
+                "annulus_background_mjy_sr": 0.0,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": null,
+                "annulus_median_mjy_sr": null,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 12346.167884474371,
+              "center_x": 129.2966131620274,
+              "center_y": 54.46281164276993,
+              "positive_aperture_centroid_offset_pixels": [
+                0.24562842341816804,
+                0.04099389116740326
+              ],
+              "flags_at_extraction_center": 2097152
+            },
+            {
+              "reference": {
+                "flux_ujy": 12599.070366854296,
+                "error_ujy": 124.44308533597189,
+                "clean_pixels": 11,
+                "aperture_pixels": 11,
+                "annulus_pixels": 0,
+                "annulus_background_mjy_sr": 0.0,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": null,
+                "annulus_median_mjy_sr": null,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 12374.680066324056,
+              "center_x": 129.01849354212396,
+              "center_y": 55.14657433839417,
+              "positive_aperture_centroid_offset_pixels": [
+                0.2821745490263936,
+                -0.04319754244570362
+              ],
+              "flags_at_extraction_center": 2097152
+            }
+          ],
+          "exploratory_note": "Same locked controls; no rejection based on residual. Official/subpixel alternatives are diagnostic, not a new acceptance threshold. Centroid is positive-pixel aperture moment, not a PSF fit."
+        },
+        {
+          "gaia_source_id": "6412593916202695936",
+          "flux_ujy": [
+            8656.51198496404,
+            6640.35284105694
+          ],
+          "difference_ujy": -2016.1591439070999,
+          "approx_error_ujy": 147.3810796126031,
+          "standardized_residual": -13.679904837219626,
+          "catalog_ra": 330.99127902602,
+          "catalog_dec": -56.87609983845,
+          "g_mag": 14.830817222595215,
+          "nearest_saved_gaia_neighbor": {
+            "distance_arcsec": 13.799730933055246,
+            "source_id": "6412593916202695552"
+          },
+          "exploratory_diagnostics": [
+            {
+              "reference": {
+                "flux_ujy": 8656.51198496404,
+                "error_ujy": 109.30817337640046,
+                "clean_pixels": 14,
+                "aperture_pixels": 14,
+                "annulus_pixels": 0,
+                "annulus_background_mjy_sr": 0.0,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": null,
+                "annulus_median_mjy_sr": null,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 8222.731158028302,
+              "center_x": 131.47631328865924,
+              "center_y": 54.78681803552864,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.4796183487197254,
+                -0.0720738253140567
+              ],
+              "flags_at_extraction_center": 2097152
+            },
+            {
+              "reference": {
+                "flux_ujy": 6640.352841056939,
+                "error_ujy": 98.74276464337875,
+                "clean_pixels": 14,
+                "aperture_pixels": 14,
+                "annulus_pixels": 0,
+                "annulus_background_mjy_sr": 0.0,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": null,
+                "annulus_median_mjy_sr": null,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 7843.026009156692,
+              "center_x": 131.19810324186136,
+              "center_y": 55.470550043181234,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.1326929503336487,
+                -0.009832304971908457
+              ],
+              "flags_at_extraction_center": 2097152
+            }
+          ],
+          "exploratory_note": "Same locked controls; no rejection based on residual. Official/subpixel alternatives are diagnostic, not a new acceptance threshold. Centroid is positive-pixel aperture moment, not a PSF fit."
+        },
+        {
+          "gaia_source_id": "6412594259800093568",
+          "flux_ujy": [
+            21671.647852996648,
+            22456.992004178494
+          ],
+          "difference_ujy": 785.3441511818455,
+          "approx_error_ujy": 228.6255751775122,
+          "standardized_residual": 3.4350669236023976,
+          "catalog_ra": 331.05421275123,
+          "catalog_dec": -56.8616539362,
+          "g_mag": 12.961528778076172,
+          "nearest_saved_gaia_neighbor": {
+            "distance_arcsec": 120.71002854864932,
+            "source_id": "6412593916202695552"
+          },
+          "exploratory_diagnostics": [
+            {
+              "reference": {
+                "flux_ujy": 21671.647852996648,
+                "error_ujy": 159.88686627121677,
+                "clean_pixels": 12,
+                "aperture_pixels": 12,
+                "annulus_pixels": 0,
+                "annulus_background_mjy_sr": 0.0,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": null,
+                "annulus_median_mjy_sr": null,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 21690.772157586514,
+              "center_x": 109.70208218380867,
+              "center_y": 55.0837161954563,
+              "positive_aperture_centroid_offset_pixels": [
+                0.043866957256014416,
+                0.0017140213719102348
+              ],
+              "flags_at_extraction_center": 2097152
+            },
+            {
+              "reference": {
+                "flux_ujy": 22456.992004178486,
+                "error_ujy": 163.36365180178504,
+                "clean_pixels": 13,
+                "aperture_pixels": 13,
+                "annulus_pixels": 0,
+                "annulus_background_mjy_sr": 0.0,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": null,
+                "annulus_median_mjy_sr": null,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 22308.990108614664,
+              "center_x": 109.42477131831959,
+              "center_y": 55.76796806153546,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.01862574420934493,
+                0.016352445409189897
+              ],
+              "flags_at_extraction_center": 2097152
+            }
+          ],
+          "exploratory_note": "Same locked controls; no rejection based on residual. Official/subpixel alternatives are diagnostic, not a new acceptance threshold. Centroid is positive-pixel aperture moment, not a PSF fit."
+        },
+        {
+          "gaia_source_id": "6412595771628639616",
+          "flux_ujy": [
+            23562.679751529628,
+            23901.938864329404
+          ],
+          "difference_ujy": 339.25911279977663,
+          "approx_error_ujy": 238.93828272815853,
+          "standardized_residual": 1.419860848275007,
+          "catalog_ra": 330.94318738378,
+          "catalog_dec": -56.76508499194,
+          "g_mag": 14.189458847045898,
+          "nearest_saved_gaia_neighbor": {
+            "distance_arcsec": 56.960615019741205,
+            "source_id": "6412597077298696576"
+          },
+          "exploratory_diagnostics": [
+            {
+              "reference": {
+                "flux_ujy": 23562.679751529628,
+                "error_ujy": 168.45730423902188,
+                "clean_pixels": 13,
+                "aperture_pixels": 13,
+                "annulus_pixels": 0,
+                "annulus_background_mjy_sr": 0.0,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": null,
+                "annulus_median_mjy_sr": null,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 23175.8068273789,
+              "center_x": 118.93881933186647,
+              "center_y": 120.57275714933942,
+              "positive_aperture_centroid_offset_pixels": [
+                -0.010947870775410706,
+                0.012479953608448113
+              ],
+              "flags_at_extraction_center": 2097152
+            },
+            {
+              "reference": {
+                "flux_ujy": 23901.938864329397,
+                "error_ujy": 169.39304681557962,
+                "clean_pixels": 13,
+                "aperture_pixels": 13,
+                "annulus_pixels": 0,
+                "annulus_background_mjy_sr": 0.0,
+                "assumptions": "Same center-pixel aperture/annulus, masks, local background and constant WCS-determinant pixel area as SkyBlink; independent Photutils sum."
+              },
+              "official_irsa": {
+                "status": "executed",
+                "source_url": "https://raw.githubusercontent.com/Caltech-IPAC/irsa-tutorials/main/tutorials/spherex/spherex_source_discovery/spherex_source_discovery_tool/aperture_photometry.py",
+                "source_sha256": "d89cbe1042383a8e1d03747e9728d4ec310d8201d05ca150367917b3b1a1270d",
+                "flux_ujy": null,
+                "annulus_median_mjy_sr": null,
+                "assumptions": "Reviewed actual IRSA function: 5x5 subpixel aperture, sigma-clipped median annulus. Radius/annulus adapted to SkyBlink 12.3arcsec and3-5pixels; masked pixels setNaN including SOURCE only in annulus. Constant WCS pixel area, not SAPM. Not IRSA Tractor photometry; no aperture correction.",
+                "limitation": "IRSA function subtracts full geometric aperture area, SkyBlink only retained center pixels; flagged or fractional boundary apertures need not agree."
+              },
+              "same_background_fractional_flux_ujy": 23620.080987807458,
+              "center_x": 118.6639980247983,
+              "center_y": 121.26260325737748,
+              "positive_aperture_centroid_offset_pixels": [
+                0.03486403472702193,
+                -0.001712166014954164
+              ],
+              "flags_at_extraction_center": 2097152
+            }
+          ],
+          "exploratory_note": "Same locked controls; no rejection based on residual. Official/subpixel alternatives are diagnostic, not a new acceptance threshold. Centroid is positive-pixel aperture moment, not a PSF fit."
+        }
+      ],
+      "status": "failed",
+      "sample_ids": [
+        "eps_indi_b_2024_E1_D3",
+        "eps_indi_b_2025_E1_D3"
+      ],
+      "coarse_wavelength_compatible": true,
+      "center_wavelength_um": [
+        1.647095371211071,
+        1.6472000526576556
+      ],
+      "center_bandwidth_um": [
+        0.03940473350857722,
+        0.03940635548946218
+      ],
+      "dense_wavelength_compatible": true,
+      "dense_samples_per_exposure": 54756,
+      "limitation": "Saved Gaia G<16 metadata and proper motions; faint blends/IR variability not excluded. Approximate errors include background-estimate uncertainty but not all covariance/model error. Not independently certified static sources.",
+      "median_standardized_residual": 0.5729096337962353,
+      "robust_scatter": 2.7084540398104844,
+      "max_abs_residual": 13.679904837219626,
+      "exploratory_fractional_aperture": {
+        "median_using_original_errors": 0.5312679802196548,
+        "robust_scatter_using_original_errors": 1.4558702935940233,
+        "max_abs_using_original_errors": 3.8392527816151953,
+        "acceptance": "not_retested; exploratory geometry diagnosis on same locked controls, not independent validation"
+      }
+    }
+  ],
+  "exploratory_diagnostic_note": "Same locked ten controls retained. Alternative aperture methods diagnose discrepancy; acceptance thresholds unchanged."
+}

@@ -1,0 +1,376 @@
+{
+  "captured_at": "2026-11-15T00:21:56.730Z",
+  "browser": "159.0.8154.6",
+  "api_version": "1.5.0",
+  "mode": "Live local API explicit saved mode; no route interception and no new observation discovery or cutouts",
+  "source_revision": [
+    {
+      "path": "frontend/src/App.tsx",
+      "sha256": "f04afa8954eb7751f489739859b21eaf4a39d9554a1f4a3a3734848245cd2ba8"
+    },
+    {
+      "path": "frontend/src/components/ArtifactShield.tsx",
+      "sha256": "baf343c108382789eed1c9eec13676085c1c64d7003e342451713f2ff8c3f31a"
+    },
+    {
+      "path": "frontend/src/components/AudioPanel.tsx",
+      "sha256": "b8c3d2a0ae3f797ac55e2ed55798f64bf40749844a391a9a5aaf1edc5862bc86"
+    },
+    {
+      "path": "frontend/src/components/BlinkCanvas.tsx",
+      "sha256": "11072071a6ce13104982b12e07586a168ca79d54d29f0599bf82712c3f01c067"
+    },
+    {
+      "path": "frontend/src/components/CrossMissionCurtain.tsx",
+      "sha256": "45c28a59157585bd0068d7ea430eca525f34ad0d348f11915ece5ce17e39dc42"
+    },
+    {
+      "path": "frontend/src/components/DisplayPanel.tsx",
+      "sha256": "e9cb5488efd35ae62796bd8fece931ca2f3891e1b6f50203a2e9b4d3c3b96a3b"
+    },
+    {
+      "path": "frontend/src/components/HelpDialog.tsx",
+      "sha256": "f77fa282fc8d6cd6e5eb5526648f8331b4432b2288835a7fe6c4fc60fc047ae3"
+    },
+    {
+      "path": "frontend/src/components/Modal.tsx",
+      "sha256": "f74aa6183b2635100890397a317df5715d365da5c413d38065c138fe139eb8e4"
+    },
+    {
+      "path": "frontend/src/components/SearchDialog.tsx",
+      "sha256": "76ffb4a263e61400ec94958ef37de2b98025e030538b447712643e8d9719ba8c"
+    },
+    {
+      "path": "frontend/src/components/SourceSelector.tsx",
+      "sha256": "0cd6d34d7d73435007c246942f53d54e9a0f87526869e8544fdd798071d67d7a"
+    },
+    {
+      "path": "frontend/src/components/SpectrumDrawer.tsx",
+      "sha256": "f19bd9e0d23371ebdb69011f7ab17f53ac8be155bf19335175ee3c2618957fa1"
+    },
+    {
+      "path": "frontend/src/components/SpectrumPlot.tsx",
+      "sha256": "2de3ab2d2fa57dbb0fa3bd2c775242942ae4e826995bc01ff0f40ddaa5c7badf"
+    },
+    {
+      "path": "frontend/src/components/TargetPanel.tsx",
+      "sha256": "464837e0af30bb1a952dfae48bb4b7c977106979fee1e5d969eca90192fe0c0e"
+    },
+    {
+      "path": "frontend/src/components/TimelineDock.tsx",
+      "sha256": "5b0995f73294479eedfdbdc217e13aed0fcb807193af0f88d9ea88d05bcde2d4"
+    },
+    {
+      "path": "frontend/src/components/TopBar.tsx",
+      "sha256": "c8af3c327189fe6d46ce80ec7ea3f1d41a5297a7d7e671a5a11c24b181895eec"
+    },
+    {
+      "path": "frontend/src/components/TriageModal.tsx",
+      "sha256": "dab3fc188f6bf47f6da018684ae39aed47ec75d670c408fd53b6bcdbbacfbbd7"
+    },
+    {
+      "path": "frontend/src/components/TrialMotionPanel.tsx",
+      "sha256": "3bf1280b61a50a44bde10a9ea51efe2a3eb5fb52aab91903fe0328dbe67755c9"
+    },
+    {
+      "path": "frontend/src/hooks/useGaiaSources.ts",
+      "sha256": "8b7f7159bf03b9c87f360f6683e862cdb13f434fc69f4d1373ce78e62b0fa921"
+    },
+    {
+      "path": "frontend/src/hooks/usePrefersReducedMotion.ts",
+      "sha256": "b08b8700a2b135ef16bb1fadb15ca6dc397f7507c4da0d41c5362c99f29b0ca0"
+    },
+    {
+      "path": "frontend/src/hooks/useRecentFields.ts",
+      "sha256": "b5c8c9ada18f6903956935c5eb1ae95883f05daec6a219c036ba9bc80f0ec69f"
+    },
+    {
+      "path": "frontend/src/hooks/useSkyData.ts",
+      "sha256": "e02b821880a26dfc6feba53605bfce707302f64990346b08bc7b931c0b4c030e"
+    },
+    {
+      "path": "frontend/src/hooks/useSpectrum.ts",
+      "sha256": "990f42c609fadf93a7b23028476c5bd084758be949da287538fbd81e9781dae4"
+    },
+    {
+      "path": "frontend/src/hooks/useUrlState.ts",
+      "sha256": "c323308b92b0cd3b4dae1e238a4823eed38e34703d637a4e5184d65b7db9b53b"
+    },
+    {
+      "path": "frontend/src/lib/api.ts",
+      "sha256": "bb41de15f163b300f30ccf44cd6feef457df4ea605354d6481431b2637eff6a5"
+    },
+    {
+      "path": "frontend/src/lib/audio.ts",
+      "sha256": "5e8b2789171d88f1b5afb4f9b37b75c20630faa3a96e8d204b03add9fc70bbff"
+    },
+    {
+      "path": "frontend/src/lib/colormaps.ts",
+      "sha256": "b86ec0b733aedeb5e6a8af80921782d5dbe14c3726464ce8879ed75c371d21b7"
+    },
+    {
+      "path": "frontend/src/lib/comparisonRecovery.ts",
+      "sha256": "9c43a16ab34f3c597c731ce68b402d5977b7e6d988d1f3cc4cb9da02b5200f35"
+    },
+    {
+      "path": "frontend/src/lib/coordinates.ts",
+      "sha256": "621b8b5225349e090d5d53567d556cf86408c211607cfef42657334273de4dec"
+    },
+    {
+      "path": "frontend/src/lib/display.ts",
+      "sha256": "73b1ee154e44c6f022aaa3817880d0a42a2dcbe3557c529a2a7e122d8d818e26"
+    },
+    {
+      "path": "frontend/src/lib/flags.ts",
+      "sha256": "477d260a9e5cefd340d23dea6d3324db47cb0d3d7d439a07b5d12941c72a6b3a"
+    },
+    {
+      "path": "frontend/src/lib/frames.ts",
+      "sha256": "02f08751dc98473dd12ae7cd6dca969dc150b9e73d199cc6d83e548574f8995e"
+    },
+    {
+      "path": "frontend/src/lib/gaia.ts",
+      "sha256": "634606bff2373fcf0fa496e06a7bee261c33658fd6544cbfeb1835498776bf89"
+    },
+    {
+      "path": "frontend/src/lib/lvf.ts",
+      "sha256": "923c870ab9ab6ca1716e11e6c738dbb6eeffe41a30e2a8e7e6b491ff76a375ad"
+    },
+    {
+      "path": "frontend/src/lib/semantics.ts",
+      "sha256": "d746d3973176bb86d8f53db118ee0597df196f26d03b75f66c5932f0e102e6fb"
+    },
+    {
+      "path": "frontend/src/lib/share.ts",
+      "sha256": "5a0983162a985f51d640c3e21449b6aad33ae36e77a474ac1445e0f192af8b13"
+    },
+    {
+      "path": "frontend/src/lib/targets.ts",
+      "sha256": "5ea68f5bed39ee6ec4c191dc3b0f0027939293da362dac99996114304cb50c16"
+    },
+    {
+      "path": "frontend/src/lib/telemetry.ts",
+      "sha256": "8259b9601ea8c5ee28045e324aa4b8bceafd64dfad143f7e204d14f97ba7e725"
+    },
+    {
+      "path": "frontend/src/lib/triage.ts",
+      "sha256": "ff53f39bf57c2fb782e3ff443abc9aa82f8c17c26cb94955d6e8e21afbcfca8c"
+    },
+    {
+      "path": "frontend/src/lib/trial.ts",
+      "sha256": "db5d111338a902e6cf45fa571590d6549dfe9654331b30d835f8ac81f23c2715"
+    },
+    {
+      "path": "frontend/src/lib/types.ts",
+      "sha256": "5e5e67dc62ac9427046bdf0edd89d11a0938885688f65345d845d595509ab5ed"
+    },
+    {
+      "path": "frontend/src/lib/wcs.ts",
+      "sha256": "15c8e8753b7eb746b44a3004dcc92d465204b8d5d36ebfb4cee6f7fc200bb0fb"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "sha256": "39712b6173d682cf17dcbb5783851f73c080776989ba5e4603a9a63f0510baa9"
+    },
+    {
+      "path": "frontend/src/styles/global.css",
+      "sha256": "18909deaf732a17c3d1f0807db0590c0fea907dca117fd2852eef62ffccfa79e"
+    },
+    {
+      "path": "frontend/src/vite-env.d.ts",
+      "sha256": "6f3aec004321e961cc3ed41138c382317ff8acb8589143f8b26ce516751193e1"
+    }
+  ],
+  "build_artifacts": [
+    {
+      "path": "frontend/dist/assets/index-4_RUdz0T.css",
+      "sha256": "643939ff2dc08ee90373de7354f317420db3a2330cf32916f3bf4d0404e1972c"
+    },
+    {
+      "path": "frontend/dist/assets/index-BtPqlhFi.js",
+      "sha256": "de11df9ce3ebead90a7dab92bd7ce20cd15ca4ab179e65374f8d8cdcf62ed973"
+    }
+  ],
+  "capture_script": {
+    "path": "frontend/qa/phase5/browser-polish-captures.mjs",
+    "sha256": "9ebba5a243261717a01fbf33345b35434d1dbd00fbe4955219cd15b3b96887e2"
+  },
+  "images": [
+    {
+      "file": "workspace-desktop.png",
+      "sha256": "49b3887809e1d8d66fa09de0a0007c6c9b2dba049b6ad7144754198a681cdba0",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Real historical saved WISE; paused Observe workspace, unvalidated comparison explicitly labeled.",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/wise_0855/manifest.json",
+          "sha256": "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1"
+        },
+        {
+          "path": "golden_cache/wise_0855/spectrum.json",
+          "sha256": "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884"
+        }
+      ]
+    },
+    {
+      "file": "comparison-desktop.png",
+      "sha256": "27eef92e390d87280ecae2ee6d4126f48f932636499ff47b9c29cbf4b6af1bd6",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=compare&comparisonLayout=side-by-side&pingpong=0&advanced=0&source=saved&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Actual saved A/B frames with shared display controls; dates and comparison limitations remain visible.",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/wise_0855/manifest.json",
+          "sha256": "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1"
+        },
+        {
+          "path": "golden_cache/wise_0855/spectrum.json",
+          "sha256": "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884"
+        }
+      ]
+    },
+    {
+      "file": "workspace-mobile-390.png",
+      "sha256": "bd173e1d0796963a2f955024c0509bdca0f1b7d173414a5368c1f76a0be759d6",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Real historical saved WISE; paused Observe workspace, unvalidated comparison explicitly labeled.",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/wise_0855/manifest.json",
+          "sha256": "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1"
+        },
+        {
+          "path": "golden_cache/wise_0855/spectrum.json",
+          "sha256": "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884"
+        }
+      ]
+    },
+    {
+      "file": "spectrum-mobile-390.png",
+      "sha256": "8cf2c6b3dd8341608cdb44f9edd0e262955cb0c583a88d9bc4e423a25c4bda24",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Real saved WISE discrete signed spectrum; responsive 13px axes, full error limits, no fitted connector.",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/wise_0855/manifest.json",
+          "sha256": "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1"
+        },
+        {
+          "path": "golden_cache/wise_0855/spectrum.json",
+          "sha256": "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884"
+        }
+      ]
+    },
+    {
+      "file": "workspace-mobile-320.png",
+      "sha256": "f37dbac560cb1c5a1a267c4c995fee1a1b3e7673bbf5f28dea43d4e81dd5e18d",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=observe&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Real historical saved WISE; paused Observe workspace, unvalidated comparison explicitly labeled.",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/wise_0855/manifest.json",
+          "sha256": "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1"
+        },
+        {
+          "path": "golden_cache/wise_0855/spectrum.json",
+          "sha256": "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884"
+        }
+      ]
+    },
+    {
+      "file": "spectrum-mobile-320.png",
+      "sha256": "2e2660d702ccf293626b4c40c0304fa56d2d5a5aab8859c2756d984d5508b705",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2025_E1&epochB=2025_E2&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=measure&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=133.75921&dec=-7.24216&size=0.2&target=wise_0855&bands=all&epoch=2025_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Real saved WISE discrete signed spectrum; responsive 13px axes, full error limits, no fitted connector.",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/wise_0855/manifest.json",
+          "sha256": "9603ac1040940afd0ccbd91819d57de653f3aaa0563a80a604a44919717293a1"
+        },
+        {
+          "path": "golden_cache/wise_0855/spectrum.json",
+          "sha256": "5e8800faf540bb6d91c77f076f3d54fc9dbe6c0153a88bdaca4b25f85b684884"
+        }
+      ]
+    },
+    {
+      "file": "spectrum-signed.png",
+      "sha256": "4e20ebac618b69696ab05e053671dfc7a5b903098213b1f0c4bc20868ecb07b4",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2024_E1&epochB=2025_E1&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=measure&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=331.0962&dec=-56.8005&size=0.2&target=eps_indi_b&bands=all&epoch=2024_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Actual saved Epsilon Indi spectrum retains its negative flux sample and complete error range.",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/eps_indi_b/manifest.json",
+          "sha256": "0c746f10bc8d64ff430067bce4eba438ef52fc8d0ad66d674ccad8b1e4bdb2b9"
+        },
+        {
+          "path": "golden_cache/eps_indi_b/spectrum.json",
+          "sha256": "3904ff476a81a5ca00562d648b941bdecdd448004b71cb5c24a05bcc4c027501"
+        }
+      ]
+    },
+    {
+      "file": "spectrum-unavailable.png",
+      "sha256": "36abc49c11cabdd06fb55eab0b9109a04709005116065420c9065186685c5aa2",
+      "url": "http://127.0.0.1:5176/?v=1&epochA=2024_E1&epochB=2025_E1&colormap=gray&stretch=linear&contrast=1&bias=0&zoom=1&panX=0&panY=0&task=measure&comparisonLayout=single&pingpong=0&advanced=0&source=saved&ra=248.1674&dec=66.7548&size=0.2&target=r_draconis&bands=all&epoch=2024_E1&mode=still&fps=4&diff=0&overlay=scale%2Ccompass&track=0&parallax=0&au=400",
+      "description": "Actual saved R Draconis: all240 flux values unavailable; metadata and reasons remain accessible.",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "data_access": "saved",
+      "is_simulated_fallback": false,
+      "source_files": [
+        {
+          "path": "golden_cache/r_draconis/manifest.json",
+          "sha256": "16edff53c4c79e8cef4840971d6335916246aeb7c8c82013c3bc2fccf546ca87"
+        },
+        {
+          "path": "golden_cache/r_draconis/spectrum.json",
+          "sha256": "9fef380de4d6aeab7c3ebf05154687bbafadb11fd72b84381d0dbacff1c110a7"
+        }
+      ]
+    }
+  ]
+}

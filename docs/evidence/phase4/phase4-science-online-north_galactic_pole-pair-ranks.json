@@ -1,0 +1,1146 @@
+{
+  "registered_at": "2026-11-14T20:55:19.164388+00:00",
+  "field": {
+    "id": "north_galactic_pole",
+    "ra": 192.85948,
+    "dec": 27.12825,
+    "research_radius_deg": 0.5
+  },
+  "preregistration_sha256": "e913d6ae59d84f084a8c09cef50b8a18cf2e76cad45460351d2bf02e9a2c5d5a",
+  "catalog_lock_sha256": "46302334aad02d5cf4b19895dc10b3ee412e65dadbb57605a036ffac8ed29e4c",
+  "discovery_sources": [
+    {
+      "id": "sia_qr3_current",
+      "endpoint": "https://irsa.ipac.caltech.edu/SIA",
+      "parameters": {
+        "COLLECTION": "spherex_qr3",
+        "POS": "circle 192.85948000 27.12825000 0.000000",
+        "RESPONSEFORMAT": "votable",
+        "MAXREC": 100000
+      },
+      "sha256": "46a062fa78d28671f1668763d734732981490fa1615b4aa5a71c3918068e6918",
+      "response_path": "backend/.cache/phase4/online-discovery/ngp-transport-initial/sia_qr3_current-46a062fa78d28671f1668763d734732981490fa1615b4aa5a71c3918068e6918.response",
+      "requested_at": "2026-11-14T20:51:24.243784+00:00",
+      "votable_rows": 131
+    },
+    {
+      "id": "sia_dr1_current",
+      "endpoint": "https://irsa.ipac.caltech.edu/SIA",
+      "parameters": {
+        "COLLECTION": "spherex_dr1",
+        "POS": "circle 192.85948000 27.12825000 0.000000",
+        "RESPONSEFORMAT": "votable",
+        "MAXREC": 100000
+      },
+      "sha256": "4b22004cdc8e36ec070e4fbfe8c3978c259e6ca2731233d390a358e9ead99f23",
+      "response_path": "backend/.cache/phase4/online-discovery/ngp-transport-initial/sia_dr1_current-4b22004cdc8e36ec070e4fbfe8c3978c259e6ca2731233d390a358e9ead99f23.response",
+      "requested_at": "2026-11-14T20:51:24.240723+00:00",
+      "votable_rows": 268
+    }
+  ],
+  "discovery_scope": "Fresh available wide-fieldSIAresponses; no claim of fullarchive/deep completeness",
+  "selection": "Metadata-only footprint ranking with >=3 locked controls in both frames plus31arcsec margin; no flux inspected",
+  "cells": [
+    {
+      "detector": 1,
+      "available_footprint_qualified_records": 54,
+      "ranked_pair_count": 576,
+      "candidate_records": [
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+            "mjd_lower": 60825.422315,
+            "mjd_upper": 60825.423647,
+            "band": 1,
+            "band_name": "SPHEREx-D1",
+            "planeid": "2025W22_2B_0166_3",
+            "release": "DR1",
+            "collection": "spherex_dr1",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 192.84543625469303 29.128553400537225 196.45891573564052 27.71959906646606 194.74143507105805 24.59498109088641 191.17424512340858 25.968561983554725 192.84543625469303 29.128553400537225",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+            "mjd_lower": 60825.423807,
+            "mjd_upper": 60825.42514,
+            "band": 1,
+            "band_name": "SPHEREx-D1",
+            "planeid": "2025W22_2B_0166_4",
+            "release": "DR1",
+            "collection": "spherex_dr1",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 192.75441629191573 28.949532425291874 196.36279787746747 27.5420939895375 194.65016453256268 24.416570494359366 191.08746883880775 25.788937445385706 192.75441629191573 28.949532425291874",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+            "mjd_lower": 60826.574299,
+            "mjd_upper": 60826.575631,
+            "band": 1,
+            "band_name": "SPHEREx-D1",
+            "planeid": "2025W22_2B_0359_1",
+            "release": "DR1",
+            "collection": "spherex_dr1",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 192.67033427683006 28.768422072238348 196.27324957387606 27.36265938237984 194.56530090578516 24.236342610356786 191.00723178354593 25.607422175058375 192.67033427683006 28.768422072238348",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+            "mjd_lower": 60826.575791,
+            "mjd_upper": 60826.577124,
+            "band": 1,
+            "band_name": "SPHEREx-D1",
+            "planeid": "2025W22_2B_0359_2",
+            "release": "DR1",
+            "collection": "spherex_dr1",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 192.5782948545595 28.58989469483586 196.17637030474364 27.186093215413127 194.4727675875565 24.05857956194744 190.91922334323363 25.428224747247693 192.5782948545595 28.58989469483586",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+            "mjd_lower": 60827.732519,
+            "mjd_upper": 60827.733851,
+            "band": 1,
+            "band_name": "SPHEREx-D1",
+            "planeid": "2025W22_2B_0557_3",
+            "release": "DR1",
+            "collection": "spherex_dr1",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 191.85028127590573 30.74344944596418 195.51022710559616 29.31414425781699 193.74478129612524 26.19982736518508 190.13597235704262 27.590459679204965 191.85028127590573 30.74344944596418",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+            "mjd_lower": 60827.734011,
+            "mjd_upper": 60827.735343,
+            "band": 1,
+            "band_name": "SPHEREx-D1",
+            "planeid": "2025W22_2B_0557_4",
+            "release": "DR1",
+            "collection": "spherex_dr1",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 191.7565526653902 30.564756500915564 195.41123377801853 29.137519954867024 193.65080064747 26.02230970445318 190.04694817913835 27.411384607774572 191.7565526653902 30.564756500915564",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+            "mjd_lower": 60832.621461,
+            "mjd_upper": 60832.622793,
+            "band": 1,
+            "band_name": "SPHEREx-D1",
+            "planeid": "2025W23_2B_0235_1",
+            "release": "DR1",
+            "collection": "spherex_dr1",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 191.67108395518542 30.38382413803976 195.31996065414035 28.95833072557461 193.56452944750356 25.842161498148396 189.96561948115504 27.229810045465214 191.67108395518542 30.38382413803976",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+            "mjd_lower": 60833.300543,
+            "mjd_upper": 60833.301875,
+            "band": 1,
+            "band_name": "SPHEREx-D1",
+            "planeid": "2025W23_2B_0383_1",
+            "release": "DR1",
+            "collection": "spherex_dr1",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 191.57922716377522 30.204401143031195 195.2227201128046 28.780895417614616 193.472255750062 25.663797616223313 189.87834983544195 27.049760445574993 191.57922716377522 30.204401143031195",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "pairs_in_order": [
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 704.7652942944239,
+          "time_separation_days": 4.887450000001991,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 704.9285103156591,
+          "time_separation_days": 1.1504920000006678,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 1410.9743683960019,
+          "time_separation_days": 4.888942000005045,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 1411.3367207731042,
+          "time_separation_days": 1.151984000003722,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 1411.6600560196225,
+          "time_separation_days": 1.151983999996446,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 1411.8680127296298,
+          "time_separation_days": 5.566531999997096,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 2118.200736493902,
+          "time_separation_days": 5.56802400000015,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 2118.20178778192,
+          "time_separation_days": 1.1534759999995003,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 5592.677228023142,
+          "time_separation_days": 7.878227999994124,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 5860.206717653982,
+          "time_separation_days": 7.199145999999018,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 5865.361970701899,
+          "time_separation_days": 7.8767359999983455,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 6202.134293874785,
+          "time_separation_days": 7.19765400000324,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 6213.707144454703,
+          "time_separation_days": 2.3116959999970277,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 6223.879150145971,
+          "time_separation_days": 6.726243999997678,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_3D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 6604.330702489236,
+          "time_separation_days": 2.3102039999939734,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 6612.933962943268,
+          "time_separation_days": 2.3102040000012494,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0383_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 6617.5398579470975,
+          "time_separation_days": 6.7247519999946235,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 6617.943759870676,
+          "time_separation_days": 6.047162000002572,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0166_4D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 7052.424756831602,
+          "time_separation_days": 2.308711999998195,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W23_2B/l2b-v27-2026-201/1/level2_2025W23_2B_0235_1D1_spx_l2b-v27-2026-201.fits",
+          "corner_distance_arcsec": 7060.598611394507,
+          "time_separation_days": 6.045669999999518,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 7074.976827626334,
+          "time_separation_days": 1.1597120000005816,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_1D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 7553.554007313883,
+          "time_separation_days": 1.1582199999975273,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_4D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 7556.84546013875,
+          "time_separation_days": 1.1582199999975273,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0359_2D1_spx_l2b-v27-2026-200.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W22_2B/l2b-v27-2026-200/1/level2_2025W22_2B_0557_3D1_spx_l2b-v27-2026-200.fits",
+          "corner_distance_arcsec": 8068.786913557499,
+          "time_separation_days": 1.156727999994473,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "detector": 3,
+      "available_footprint_qualified_records": 62,
+      "ranked_pair_count": 781,
+      "candidate_records": [
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W21_2A/l2b-v27-2026-268/3/level2_2026W21_2A_0496_4D3_spx_l2b-v27-2026-268.fits",
+            "mjd_lower": 61184.455728,
+            "mjd_upper": 61184.45706,
+            "band": 3,
+            "band_name": "SPHEREx-D3",
+            "planeid": "2026W21_2A_0496_4",
+            "release": "QR3",
+            "collection": "spherex_qr3",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 193.81478002806037 30.541165800069088 197.20091147819178 28.692431452628217 195.2393439122616 25.668930677877402 191.88981833286272 27.490504651411825 193.81478002806037 30.541165800069088",
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_2D3_spx_l2b-v27-2026-269.fits",
+            "mjd_lower": 61186.08264,
+            "mjd_upper": 61186.083973,
+            "band": 3,
+            "band_name": "SPHEREx-D3",
+            "planeid": "2026W22_1A_0171_2",
+            "release": "QR3",
+            "collection": "spherex_qr3",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 193.59472344316725 30.197502954360264 196.97452695660598 28.355610265835484 195.02710833213524 25.327848466957573 191.6834971682534 27.143116051803567 193.59472344316725 30.197502954360264",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_3D3_spx_l2b-v27-2026-269.fits",
+            "mjd_lower": 61186.084133,
+            "mjd_upper": 61186.085465,
+            "band": 3,
+            "band_name": "SPHEREx-D3",
+            "planeid": "2026W22_1A_0171_3",
+            "release": "QR3",
+            "collection": "spherex_qr3",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 193.4855930392218 30.024832686500027 196.86219794731187 28.18661345254076 194.9219491737238 25.15683181299021 191.5811097296095 26.968854885289904 193.4855930392218 30.024832686500027",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_4D3_spx_l2b-v27-2026-269.fits",
+            "mjd_lower": 61186.085625,
+            "mjd_upper": 61186.086957,
+            "band": 3,
+            "band_name": "SPHEREx-D3",
+            "planeid": "2026W22_1A_0171_4",
+            "release": "QR3",
+            "collection": "spherex_qr3",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 193.37675327262042 29.852452293761107 196.75019645215252 28.017492700337804 194.81684702958884 24.985707638089455 191.4788309715964 26.79484063671651 193.37675327262042 29.852452293761107",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0167_1D3_spx_l2b-v27-2026-273.fits",
+            "mjd_lower": 61213.785786,
+            "mjd_upper": 61213.787118,
+            "band": 3,
+            "band_name": "SPHEREx-D3",
+            "planeid": "2026W26_1A_0167_1",
+            "release": "QR3",
+            "collection": "spherex_qr3",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 193.81760294594994 30.538649303985512 197.20347448782871 28.689893093492348 195.24204177808593 25.666459746763085 191.89269137504556 27.48794010903867 193.81760294594994 30.538649303985512",
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0294_1D3_spx_l2b-v27-2026-273.fits",
+            "mjd_lower": 61214.328665,
+            "mjd_upper": 61214.329997,
+            "band": 3,
+            "band_name": "SPHEREx-D3",
+            "planeid": "2026W26_1A_0294_1",
+            "release": "QR3",
+            "collection": "spherex_qr3",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 193.5982275471707 30.194366918517048 196.97772808211465 28.35265300091129 195.03038042132908 25.325042723664634 191.68683801530773 27.140434466917924 193.5982275471707 30.194366918517048",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0312_1D3_spx_l2b-v27-2026-273.fits",
+            "mjd_lower": 61214.396953,
+            "mjd_upper": 61214.398286,
+            "band": 3,
+            "band_name": "SPHEREx-D3",
+            "planeid": "2026W26_1A_0312_1",
+            "release": "QR3",
+            "collection": "spherex_qr3",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 193.48849208208904 30.022340702515375 196.86497043351784 28.18393764054577 194.92474113187637 25.15418435307281 191.5841224731757 26.96646105315211 193.48849208208904 30.022340702515375",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "artifact": {
+            "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0328_1D3_spx_l2b-v27-2026-273.fits",
+            "mjd_lower": 61214.465437,
+            "mjd_upper": 61214.466769,
+            "band": 3,
+            "band_name": "SPHEREx-D3",
+            "planeid": "2026W26_1A_0328_1",
+            "release": "QR3",
+            "collection": "spherex_qr3",
+            "contentlength": null
+          },
+          "s_region": "POLYGON ICRS 193.37957291756803 29.85011586343204 196.75305788713382 28.015164406961937 194.81953936688387 24.983376404984927 191.48163259019972 26.792607501943607 193.37957291756803 29.85011586343204",
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "pairs_in_order": [
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_4D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0328_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 12.190830399609988,
+          "time_separation_days": 28.37981199999922,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W21_2A/l2b-v27-2026-268/3/level2_2026W21_2A_0496_4D3_spx_l2b-v27-2026-268.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0167_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 12.575167808476637,
+          "time_separation_days": 29.330057999999553,
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_3D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0312_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 12.976254783744691,
+          "time_separation_days": 28.312820000006468,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_2D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0294_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 14.871961198139191,
+          "time_separation_days": 28.246025000000373,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_3D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0294_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 702.6387027141742,
+          "time_separation_days": 28.244532000004256,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_4D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0312_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 702.6936950772104,
+          "time_separation_days": 28.311328000003414,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_3D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0328_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 709.248531998309,
+          "time_separation_days": 28.381304000002274,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_2D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0312_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 710.2131699830621,
+          "time_separation_days": 28.314313000002585,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_2D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0167_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 1407.3550500350784,
+          "time_separation_days": 27.703145999999833,
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_4D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0294_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 1408.7654388599844,
+          "time_separation_days": 28.2430400000012,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W21_2A/l2b-v27-2026-268/3/level2_2026W21_2A_0496_4D3_spx_l2b-v27-2026-268.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_2D3_spx_l2b-v27-2026-269.fits",
+          "corner_distance_arcsec": 1410.993492183667,
+          "time_separation_days": 1.6269119999997201,
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W21_2A/l2b-v27-2026-268/3/level2_2026W21_2A_0496_4D3_spx_l2b-v27-2026-268.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0294_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 1415.0175316858172,
+          "time_separation_days": 29.872937000000093,
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_2D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0328_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 1415.686571904624,
+          "time_separation_days": 28.38279699999839,
+          "control_indices_inside": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_3D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0167_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 2113.8075521567625,
+          "time_separation_days": 27.701653000003716,
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W21_2A/l2b-v27-2026-268/3/level2_2026W21_2A_0496_4D3_spx_l2b-v27-2026-268.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_3D3_spx_l2b-v27-2026-269.fits",
+          "corner_distance_arcsec": 2117.473777225412,
+          "time_separation_days": 1.628404999995837,
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W21_2A/l2b-v27-2026-268/3/level2_2026W21_2A_0496_4D3_spx_l2b-v27-2026-268.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0312_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 2121.110398575271,
+          "time_separation_days": 29.941225000002305,
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_4D3_spx_l2b-v27-2026-269.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0167_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 2819.989709506757,
+          "time_separation_days": 27.700161000000662,
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W21_2A/l2b-v27-2026-268/3/level2_2026W21_2A_0496_4D3_spx_l2b-v27-2026-268.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W22_1A/l2b-v27-2026-269/3/level2_2026W22_1A_0171_4D3_spx_l2b-v27-2026-269.fits",
+          "corner_distance_arcsec": 2823.666924012762,
+          "time_separation_days": 1.6298969999988913,
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W21_2A/l2b-v27-2026-268/3/level2_2026W21_2A_0496_4D3_spx_l2b-v27-2026-268.fits",
+          "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0328_1D3_spx_l2b-v27-2026-273.fits",
+          "corner_distance_arcsec": 2826.640833455588,
+          "time_separation_days": 30.00970899999811,
+          "control_indices_inside": [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        }
+      ]
+    }
+  ]
+}

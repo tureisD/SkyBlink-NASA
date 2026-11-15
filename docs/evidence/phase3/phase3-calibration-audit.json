@@ -1,0 +1,778 @@
+{
+  "generated_at": "2026-11-14T19:02:22.770330+00:00",
+  "is_real_data_audit": true,
+  "flags": {
+    "status": "verified",
+    "source": {
+      "path": "backend/.cache/phase3/SPHEREx_Expsupp.pdf",
+      "bytes": 30087730,
+      "sha256": "9f3085cea74c6cdb647cc373bef27aaae50e394d348402e68ea2558ea06011cd",
+      "url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/SPHEREx_Expsupp.pdf"
+    },
+    "supplement_version": "2.1",
+    "supplement_date": "2026-11-10",
+    "pages_one_based": [
+      33,
+      34,
+      35
+    ],
+    "official_defined_count": 23,
+    "all_bits": [
+      {
+        "bit": 0,
+        "official_name": "TRANSIENT",
+        "defined_in_table16": true,
+        "backend_name": "TRANSIENT",
+        "hard_mask": false,
+        "warning_mask": true,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 1,
+        "official_name": "OVERFLOW",
+        "defined_in_table16": true,
+        "backend_name": "OVERFLOW",
+        "hard_mask": false,
+        "warning_mask": true,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 2,
+        "official_name": "SUR_ERROR",
+        "defined_in_table16": true,
+        "backend_name": "SUR_ERROR",
+        "hard_mask": true,
+        "warning_mask": false,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 3,
+        "official_name": null,
+        "defined_in_table16": false,
+        "backend_name": null,
+        "hard_mask": false,
+        "warning_mask": false,
+        "excluded_from_photometry": false
+      },
+      {
+        "bit": 4,
+        "official_name": null,
+        "defined_in_table16": false,
+        "backend_name": null,
+        "hard_mask": false,
+        "warning_mask": false,
+        "excluded_from_photometry": false
+      },
+      {
+        "bit": 5,
+        "official_name": null,
+        "defined_in_table16": false,
+        "backend_name": null,
+        "hard_mask": false,
+        "warning_mask": false,
+        "excluded_from_photometry": false
+      },
+      {
+        "bit": 6,
+        "official_name": "NONFUNC",
+        "defined_in_table16": true,
+        "backend_name": "NONFUNC",
+        "hard_mask": true,
+        "warning_mask": false,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 7,
+        "official_name": "DICHROIC",
+        "defined_in_table16": true,
+        "backend_name": "DICHROIC",
+        "hard_mask": false,
+        "warning_mask": true,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 8,
+        "official_name": null,
+        "defined_in_table16": false,
+        "backend_name": null,
+        "hard_mask": false,
+        "warning_mask": false,
+        "excluded_from_photometry": false
+      },
+      {
+        "bit": 9,
+        "official_name": "MISSING_DATA",
+        "defined_in_table16": true,
+        "backend_name": "MISSING_DATA",
+        "hard_mask": true,
+        "warning_mask": false,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 10,
+        "official_name": "HOT",
+        "defined_in_table16": true,
+        "backend_name": "HOT",
+        "hard_mask": true,
+        "warning_mask": false,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 11,
+        "official_name": "COLD",
+        "defined_in_table16": true,
+        "backend_name": "COLD",
+        "hard_mask": true,
+        "warning_mask": false,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 12,
+        "official_name": "FULLSAMPLE",
+        "defined_in_table16": true,
+        "backend_name": "FULLSAMPLE",
+        "hard_mask": false,
+        "warning_mask": false,
+        "excluded_from_photometry": false
+      },
+      {
+        "bit": 13,
+        "official_name": null,
+        "defined_in_table16": false,
+        "backend_name": null,
+        "hard_mask": false,
+        "warning_mask": false,
+        "excluded_from_photometry": false
+      },
+      {
+        "bit": 14,
+        "official_name": "PHANMISS",
+        "defined_in_table16": true,
+        "backend_name": "PHANMISS",
+        "hard_mask": true,
+        "warning_mask": false,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 15,
+        "official_name": "NONLINEAR",
+        "defined_in_table16": true,
+        "backend_name": "NONLINEAR",
+        "hard_mask": true,
+        "warning_mask": false,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 16,
+        "official_name": null,
+        "defined_in_table16": false,
+        "backend_name": null,
+        "hard_mask": false,
+        "warning_mask": false,
+        "excluded_from_photometry": false
+      },
+      {
+        "bit": 17,
+        "official_name": "PERSIST",
+        "defined_in_table16": true,
+        "backend_name": "PERSIST",
+        "hard_mask": false,
+        "warning_mask": true,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 18,
+        "official_name": null,
+        "defined_in_table16": false,
+        "backend_name": null,
+        "hard_mask": false,
+        "warning_mask": false,
+        "excluded_from_photometry": false
+      },
+      {
+        "bit": 19,
+        "official_name": "OUTLIER",
+        "defined_in_table16": true,
+        "backend_name": "OUTLIER",
+        "hard_mask": false,
+        "warning_mask": true,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 20,
+        "official_name": "CROSSTALK",
+        "defined_in_table16": true,
+        "backend_name": "CROSSTALK",
+        "hard_mask": false,
+        "warning_mask": true,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 21,
+        "official_name": "SOURCE",
+        "defined_in_table16": true,
+        "backend_name": "SOURCE",
+        "hard_mask": false,
+        "warning_mask": false,
+        "excluded_from_photometry": false
+      },
+      {
+        "bit": 22,
+        "official_name": "GHOST",
+        "defined_in_table16": true,
+        "backend_name": "GHOST",
+        "hard_mask": false,
+        "warning_mask": true,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 23,
+        "official_name": "GHOST_FPA",
+        "defined_in_table16": true,
+        "backend_name": "GHOST_FPA",
+        "hard_mask": false,
+        "warning_mask": true,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 24,
+        "official_name": "GHOST_EXT",
+        "defined_in_table16": true,
+        "backend_name": "GHOST_EXT",
+        "hard_mask": false,
+        "warning_mask": true,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 25,
+        "official_name": "STREAK",
+        "defined_in_table16": true,
+        "backend_name": "STREAK",
+        "hard_mask": false,
+        "warning_mask": true,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 26,
+        "official_name": "BLOOM",
+        "defined_in_table16": true,
+        "backend_name": "BLOOM",
+        "hard_mask": true,
+        "warning_mask": false,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 27,
+        "official_name": "SNOWBALL",
+        "defined_in_table16": true,
+        "backend_name": "SNOWBALL",
+        "hard_mask": true,
+        "warning_mask": false,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 28,
+        "official_name": "HALO",
+        "defined_in_table16": true,
+        "backend_name": "HALO",
+        "hard_mask": true,
+        "warning_mask": false,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 29,
+        "official_name": "SATELLITE_HALO",
+        "defined_in_table16": true,
+        "backend_name": "SATELLITE_HALO",
+        "hard_mask": true,
+        "warning_mask": false,
+        "excluded_from_photometry": true
+      },
+      {
+        "bit": 30,
+        "official_name": null,
+        "defined_in_table16": false,
+        "backend_name": null,
+        "hard_mask": false,
+        "warning_mask": false,
+        "excluded_from_photometry": false
+      },
+      {
+        "bit": 31,
+        "official_name": null,
+        "defined_in_table16": false,
+        "backend_name": null,
+        "hard_mask": false,
+        "warning_mask": false,
+        "excluded_from_photometry": false
+      }
+    ],
+    "policy_notes": [
+      "DICHROIC has low throughput and is unsuitable for photometry; measurement mask excludes it.",
+      "SOURCE identifies known objects and is retained in measurement/display, excluded only for background.",
+      "FULLSAMPLE is informational; no runtime bad-pixel mask contains it.",
+      "HALO is a caution in Table 16; the application's hard measurement exclusion is conservative policy.",
+      "GHOST_FPA is unused and scheduled for removal in Year 2 processing; retaining its warning bit is conservative.",
+      "Undeclared bit numbers are not invented flag definitions."
+    ]
+  },
+  "wavelengths": {
+    "status": "measured_subset",
+    "source": {
+      "path": "backend/.cache/phase3/spectral_wcs_D6_spx_cal-swcs-v5-2026-191.fits",
+      "bytes": 33312960,
+      "sha256": "19195d253892883586aa2183cb66238b32f6032ade62d490b36b85b0dd18f212",
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/6/spectral_wcs_D6_spx_cal-swcs-v5-2026-191.fits"
+    },
+    "calibration_version": "cal-swcs-v5-2026-191",
+    "release": "DR1",
+    "detector": 6,
+    "official_guidance": "https://caltech-ipac.github.io/spherex-archive-documentation/spherex-data-products/",
+    "header_approximation_error_um": {
+      "WLERRMAX": 0.002823,
+      "BWERRMAX": 0.004923,
+      "WLERRP99": 0.001265,
+      "BWERRP99": 0.002884
+    },
+    "mapping": "Original zero-based active detector pixel = 1 + cutout zero-based pixel - CRPIXnA; DETCOORD sky already accounts for MWIR X flip.",
+    "samples": [
+      {
+        "sample_id": "wise_0855_2025_E1_D6",
+        "status": "measured",
+        "source": {
+          "path": "backend/.cache/phase3/cutouts/83e8e9058dcc65bbfc76c0eb0ecbe1823fec8e475edfc5193e59a809ad870cc4.fits",
+          "bytes": 4400640,
+          "sha256": "60929e20ea787d772994f9f6675ce5e4a7a18bdd9722ad33200f696001f3b1e2",
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/6/level2_2025W19_1B_0116_1D6_spx_l2b-v27-2026-197.fits"
+        },
+        "calibration_pairing": "DR1/D6/sky orientation and exact equality of all X,Y,VALUES lookup arrays",
+        "spectral_calibration_history": [
+          "[CALIB] spectral_wcs 019f4f99-5f21-722d-bd8d-a6033df45708",
+          "[CALIB] spectral_wcs 019f4f99-5f21-722d-bd8d-a6033df45708"
+        ],
+        "original_pixel_bounds_xy": [
+          276,
+          443,
+          66,
+          233
+        ],
+        "absolute_wave_error_nm": {
+          "count": 28224,
+          "median": 0.386073399579967,
+          "p95": 1.020253123159076,
+          "p99": 1.2790232461485476,
+          "max": 2.0685211322435393
+        },
+        "absolute_bandwidth_error_nm": {
+          "count": 28224,
+          "median": 0.6304888195232567,
+          "p95": 1.950667122088912,
+          "p99": 2.6891939522382744,
+          "max": 4.390680594702767
+        },
+        "bandwidth_relative_error_fraction": {
+          "count": 28224,
+          "median": 0.01691626770451351,
+          "p95": 0.05203100656609716,
+          "p99": 0.07363742897208203,
+          "max": 0.1330857979206516
+        },
+        "target_nearest_native_pixel": {
+          "cutout_xy_zero_based": [
+            83,
+            83
+          ],
+          "original_xy_zero_based": [
+            359,
+            149
+          ],
+          "cwave_um": 4.9671759605407715,
+          "cband_um": 0.03911532834172249,
+          "lookup_wave_um": 4.96740389512622,
+          "lookup_bandwidth_um": 0.037187969377296605,
+          "wave_error_nm": 0.22793458544878575,
+          "bandwidth_error_nm": 1.9273589644258835
+        }
+      },
+      {
+        "sample_id": "wise_0855_2025_E2_D6",
+        "status": "measured",
+        "source": {
+          "path": "backend/.cache/phase3/cutouts/a51670db7754e1afbac84db4e6f1cbd4e13f251bc016b84df972ce666d356e07.fits",
+          "bytes": 4320000,
+          "sha256": "50be5da9b3752ddc039a01e26a7849f07ab9bef2c89f8b705f310ad764dbedc1",
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W46_1A/l2b-v27-2026-206/6/level2_2025W46_1A_0075_4D6_spx_l2b-v27-2026-206.fits"
+        },
+        "calibration_pairing": "DR1/D6/sky orientation and exact equality of all X,Y,VALUES lookup arrays",
+        "spectral_calibration_history": [
+          "[CALIB] spectral_wcs 019f4f99-5f21-722d-bd8d-a6033df45708",
+          "[CALIB] spectral_wcs 019f4f99-5f21-722d-bd8d-a6033df45708"
+        ],
+        "original_pixel_bounds_xy": [
+          848,
+          1014,
+          1899,
+          2039
+        ],
+        "absolute_wave_error_nm": {
+          "count": 23547,
+          "median": 0.5032470729524618,
+          "p95": 0.9573499055513858,
+          "p99": 1.1520562642359167,
+          "max": 1.61444761898899
+        },
+        "absolute_bandwidth_error_nm": {
+          "count": 23547,
+          "median": 2.346033946006215,
+          "p95": 3.2928473572864396,
+          "p99": 3.4919133689611175,
+          "max": 3.809087746867945
+        },
+        "bandwidth_relative_error_fraction": {
+          "count": 23547,
+          "median": 0.06759505337968913,
+          "p95": 0.0972654325752721,
+          "p99": 0.1037084011467683,
+          "max": 0.11484411003335603
+        },
+        "target_nearest_native_pixel": {
+          "cutout_xy_zero_based": [
+            83,
+            83
+          ],
+          "original_xy_zero_based": [
+            931,
+            1982
+          ],
+          "cwave_um": 4.417258262634277,
+          "cband_um": 0.03477469086647034,
+          "lookup_wave_um": 4.417959137490877,
+          "lookup_bandwidth_um": 0.037245139116818794,
+          "wave_error_nm": 0.7008748565997536,
+          "bandwidth_error_nm": 2.4704482503484573
+        }
+      }
+    ],
+    "limitation": "One detector calibration and available DR1 sample cutouts only; not all bands/releases. WCS-WAVE remains visualization-only regardless of measured error."
+  },
+  "gaia_targets": {
+    "status": "verified_catalog_records",
+    "source": {
+      "path": "backend/.cache/phase3/gaia.csv",
+      "bytes": 690,
+      "sha256": "e2039397d2c804c42c44ea0d7d694a2ccb55d9b5c0580b026080d4b32326d1ef",
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync"
+    },
+    "adql": "SELECT source_id,ra,dec,ref_epoch,pmra,pmdec,parallax,ruwe,astrometric_excess_noise,phot_g_mean_mag FROM gaiadr3.gaia_source WHERE source_id IN (4472832130942575872,6412596012146801152,156430822114424576,1648328016354496384)",
+    "method": "Gaia DR3 ICRS epoch2016.0 TCB; Astropy space motion to decimal2025.8 TT; no parallax/reflex or perspective acceleration applied, matching current product convention.",
+    "targets": [
+      {
+        "target_id": "barnards_star",
+        "source_id": "4472832130942575872",
+        "gaia_dr3": {
+          "ra": 269.44850252543836,
+          "dec": 4.739420051112412,
+          "ref_epoch": 2016.0,
+          "pmra": -801.5509783684709,
+          "pmdec": 10362.394206546573,
+          "parallax": 546.975939730948,
+          "ruwe": 1.0848505,
+          "astrometric_excess_noise": 0.20481846,
+          "phot_g_mean_mag": 8.1939745
+        },
+        "stored_reference": {
+          "ra": 269.4521,
+          "dec": 4.6934,
+          "epoch": "J2000",
+          "pm_ra_mas_yr": -801.6,
+          "pm_dec_mas_yr": 10362.4
+        },
+        "gaia_back_propagated_j2000": {
+          "ra": 269.45207695848376,
+          "dec": 4.693364968317131,
+          "stored_reference_separation_arcsec": 0.15079556420999732
+        },
+        "gaia_propagated_2025_8": {
+          "ra": 269.44631291911435,
+          "dec": 4.767629180929986,
+          "stored_center_separation_arcsec": 0.11482122064387526,
+          "stored_to_gaia_offset_arcsec": [
+            0.046347890060491864,
+            0.10505134838597159
+          ]
+        },
+        "proper_motion_delta_mas_yr": [
+          0.04902163152917183,
+          -0.005793453427031636
+        ]
+      },
+      {
+        "target_id": "eps_indi_b",
+        "source_id": "6412596012146801152",
+        "gaia_dr3": {
+          "ra": 331.07645259656397,
+          "dec": -56.79381206688221,
+          "ref_epoch": 2016.0,
+          "pmra": 3981.97666296105,
+          "pmdec": -2466.8318147663504,
+          "parallax": 270.6580324694526,
+          "ruwe": 4.2955413,
+          "astrometric_excess_noise": 5.842894,
+          "phot_g_mean_mag": 18.030664
+        },
+        "stored_reference": {
+          "ra": 331.04415,
+          "dec": -56.78284,
+          "epoch": "J2000",
+          "pm_ra_mas_yr": 3982.0,
+          "pm_dec_mas_yr": -2466.8
+        },
+        "gaia_back_propagated_j2000": {
+          "ra": 331.0441465924795,
+          "dec": -56.782844196356905,
+          "stored_reference_separation_arcsec": 0.016534126453380822
+        },
+        "gaia_propagated_2025_8": {
+          "ra": 331.0962496336297,
+          "dec": -56.80052585840758,
+          "stored_center_separation_arcsec": 0.1350482924394715,
+          "stored_to_gaia_offset_arcsec": [
+            0.09783780875340788,
+            -0.09309030275257492
+          ]
+        },
+        "proper_motion_delta_mas_yr": [
+          -0.023337038950103306,
+          -0.031814766350180435
+        ]
+      },
+      {
+        "target_id": "rw_aurigae",
+        "source_id": "156430822114424576",
+        "gaia_dr3": {
+          "ra": 76.95608119552952,
+          "dec": 30.401204589097233,
+          "ref_epoch": 2016.0,
+          "pmra": 2.6406431770317083,
+          "pmdec": -27.397582540455325,
+          "parallax": 6.406249329219477,
+          "ruwe": 1.5003728,
+          "astrometric_excess_noise": 0.3025894,
+          "phot_g_mean_mag": 12.184072
+        },
+        "stored_reference": {
+          "ra": 76.95607,
+          "dec": 30.40133,
+          "epoch": "J2000",
+          "pm_ra_mas_yr": 2.6,
+          "pm_dec_mas_yr": -27.4
+        },
+        "gaia_back_propagated_j2000": {
+          "ra": 76.95606758838186,
+          "dec": 30.401326356125434,
+          "stored_reference_separation_arcsec": 0.015104703928482191
+        },
+        "gaia_propagated_2025_8": {
+          "ra": 76.95608953000796,
+          "dec": 30.401130005742516,
+          "stored_center_separation_arcsec": 0.11280661064238445,
+          "stored_to_gaia_offset_arcsec": [
+            -0.03250946438802633,
+            0.10802067455280559
+          ]
+        },
+        "proper_motion_delta_mas_yr": [
+          0.040643177031708166,
+          0.0024174595446737612
+        ]
+      },
+      {
+        "target_id": "r_draconis",
+        "source_id": "1648328016354496384",
+        "gaia_dr3": {
+          "ra": 248.1673783672889,
+          "dec": 66.75500674547219,
+          "ref_epoch": 2016.0,
+          "pmra": -20.642811719160797,
+          "pmdec": 6.148818852711324,
+          "parallax": 1.2509180143740992,
+          "ruwe": 1.297982,
+          "astrometric_excess_noise": 0.6926325,
+          "phot_g_mean_mag": 6.374379
+        },
+        "stored_reference": {
+          "ra": 248.1676,
+          "dec": 66.755,
+          "epoch": "J2000",
+          "pm_ra_mas_yr": -13.7,
+          "pm_dec_mas_yr": -31.0
+        },
+        "gaia_back_propagated_j2000": {
+          "ra": 248.16761083294367,
+          "dec": 66.75497941721842,
+          "stored_reference_separation_arcsec": 0.07567964624609304
+        },
+        "gaia_propagated_2025_8": {
+          "ra": 248.16723597981732,
+          "dec": 66.7550234840942,
+          "stored_center_separation_arcsec": 0.8376133767335456,
+          "stored_to_gaia_offset_arcsec": [
+            -0.23303788672684864,
+            0.8045430455748345
+          ]
+        },
+        "proper_motion_delta_mas_yr": [
+          -6.942811719160797,
+          37.14881885271132
+        ]
+      }
+    ],
+    "cautions": [
+      "Epsilon Indi B is Gaia DR3 6412596012146801152; previous no-Gaia-B claim was incorrect. RUWE approximately4.30 and binary photocenter make it unsuitable as a precision static control.",
+      "R Draconis stored proper motion differs from Gaia; its reference position nevertheless matches Gaia back-propagated to J2000. The mixed-source trajectory needs a documented catalog decision.",
+      "Gaia point-source astrometry and unresolved IR photocenters need not coincide for binaries/variables."
+    ]
+  },
+  "wise_reference": {
+    "status": "reference_epoch_inconsistent_with_primary_astrometry",
+    "source": {
+      "path": "backend/.cache/phase3/luhman2016.pdf",
+      "bytes": 621034,
+      "sha256": "b25841cb8102ee540a8156c4691ea78b033f51d4b370d41ed31b474c7804dd2a",
+      "url": "https://arxiv.org/pdf/1605.06655"
+    },
+    "citation": "Luhman & Esplin 2016, AJ152:78, Tables2 and4, doi:10.3847/0004-6256/152/3/78",
+    "measurements_columns": [
+      "observed_ra_deg",
+      "observed_dec_deg",
+      "mjd_utc"
+    ],
+    "real_hst_measurements": [
+      [
+        133.7851503,
+        -7.2443041,
+        56986.82
+      ],
+      [
+        133.7843602,
+        -7.2442366,
+        57084.82
+      ],
+      [
+        133.7840688,
+        -7.2441796,
+        57123.17
+      ],
+      [
+        133.7819058,
+        -7.2440115,
+        57474.62
+      ],
+      [
+        133.7818923,
+        -7.2440157,
+        57475.41
+      ],
+      [
+        133.78183,
+        -7.2440063,
+        57484.38
+      ]
+    ],
+    "table4_pm_mas_yr": [
+      -8118.0,
+      680.0
+    ],
+    "table4_parallax_mas": 449.0,
+    "inferred_reference_2010_0": {
+      "ra": 133.79617443481308,
+      "dec": -7.2451878602482935
+    },
+    "scatter_about_inferred_reference_mas": [
+      13.535409410149501,
+      16.345104395787242
+    ],
+    "opposite_parallax_sign_scatter_mas": [
+      571.4824834995003,
+      137.5194106692316
+    ],
+    "independent_hst_only_five_parameter_fit": {
+      "fit_epoch_decimalyear": 2015.5,
+      "pm_ra_cosdec_mas_yr": -8098.925189899111,
+      "pm_dec_mas_yr": 655.9983595002856,
+      "parallax_mas": 467.51418261671375,
+      "formal_errors_pmra_pmdec_parallax": [
+        18.847013261075496,
+        15.393229382116091,
+        18.992793048904897
+      ],
+      "chi_square": 2.9767585333302757,
+      "degrees_of_freedom": 7,
+      "note": "Diagnostic fit only, Earth observer approximation; errors from published Table2 uncertainties, not rescaled by residuals."
+    },
+    "published_pm_error_contribution_at_2025_8_mas": [
+      80.95531990917516,
+      70.83590492052826
+    ],
+    "uncertainty_note": "The 13-16 mas epoch scatter is not total uncertainty. Published PM errors alone contribute roughly80masRA*/70masDec to extrapolation from mean HST epoch to2025.8; calibration frame and observer approximations are additional. This cannot support sub-mas coordinate replacement.",
+    "inferred_barycentric_2025_8": {
+      "ra": 133.7602585983584,
+      "dec": -7.242201982179112
+    },
+    "stored_center_separation_arcsec": 3.7478866829478403,
+    "method": "Subtract Table4 linear proper motion and parallax from six Table2 HST positions; use Astropy builtin Earth barycentric ephemeris as HST observer approximation; average inferred2010.0 coordinates. No Spitzer positions are treated as Earth observations.",
+    "limitations": "Diagnostic, not a new astrometric solution. HST orbital baseline is omitted; paper coordinates are rounded; tangent-plane parallax removal is approximate. Adopt a published complete solution before changing query coordinates/rebuilding cache. Report barycentric centers separately from date-dependent apparent parallax."
+  },
+  "wise_published_solution": {
+    "status": "published_solution_confirms_reference_epoch_problem",
+    "source": {
+      "path": "backend/.cache/phase3/kirkpatrick2021_plx.tsv",
+      "bytes": 4807,
+      "sha256": "1b63fb11cd01e0669eaaa7e09a0f46bb61323593656e9f886b0ff405b77656bb",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv"
+    },
+    "query_parameters": {
+      "-source": "J/ApJS/253/7/plx",
+      "FName": "*0855*",
+      "-out.all": "1",
+      "-out.max": "10"
+    },
+    "citation": "Kirkpatrick et al.2021 ApJS253:7 Table5; doi:10.3847/1538-4365/abd107; CDS J/ApJS/253/7/plx",
+    "object": "WISE   J085510.83-071442.5",
+    "quality": "h",
+    "published_values": {
+      "RA_ICRS": 133.780984,
+      "DE_ICRS": -7.243932,
+      "e_RA_ICRS": 2.3,
+      "e_DE_ICRS": 2.3,
+      "MJD": 57633.39,
+      "plx": 439.0,
+      "e_plx": 2.4,
+      "pmRA": -8123.7,
+      "e_pmRA": 1.3,
+      "pmDE": 673.2,
+      "e_pmDE": 1.3,
+      "chisq": 19.56,
+      "dof": 33.0,
+      "chisq/dof": 0.59,
+      "NSp": 19.0,
+      "NGDR2": 46.0
+    },
+    "epoch_decimalyear": 2016.6704644808742,
+    "published_barycentric_2025_8": {
+      "ra": 133.76021647484097,
+      "dec": -7.242224282436729
+    },
+    "published_back_propagated_2010_0": {
+      "ra": 133.7961576340003,
+      "dec": -7.245179127349992
+    },
+    "stored_center_separation_arcsec": 3.601845059587563,
+    "diagonal_only_position_uncertainty_2025_8_mas": [
+      12.089364941307233,
+      12.089364941307233
+    ],
+    "proposed_phase4_source": "Adopt the complete published epoch/coordinate/proper-motion solution together, then regenerate target centers, reticles, traces and cache. No current product value changed by this audit.",
+    "limitations": "Barycentric position, not date-dependent apparent location. Parallax439mas is not added; covariance unavailable in this table, so diagonal-only propagated errors are indicative. MJD interpreted asUTC; any time-scale ambiguity is negligible compared with the3.6arcsec discrepancy."
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "created_at": "2026-11-14T21:20:18.098249+00:00",
+  "field": {
+    "id": "north_b60",
+    "ra": 159.8833073544,
+    "dec": 39.5544404047,
+    "research_radius_deg": 0.5
+  },
+  "detector": 3,
+  "pair_ranks_sha256": "2064ab09bbb3628aee8f071b4ad27dd9cb9f3baeade692359de1f064a82c79b6",
+  "attempts": [
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W18_1B/l2b-v27-2026-196/3/level2_2025W18_1B_0117_1D3_spx_l2b-v27-2026-196.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2026W18_1A/l2b-v27-2026-244/3/level2_2026W18_1A_0004_1D3_spx_l2b-v27-2026-244.fits",
+        "corner_distance_arcsec": 1.7542132121471177,
+        "time_separation_days": 362.72118700000283,
+        "control_indices_inside": [
+          0,
+          2,
+          3,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "status": "calibrated_candidate_locked_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/3/spectral_wcs_D3_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D3.fits",
+        "sha256": "51750c8f948a30541d391e54930279aa067c62c398a7cc2679e592bc6044427a",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T21:18:53.650848+00:00",
+        "elapsed_seconds": 8.09400000050664,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W18_1B/l2b-v27-2026-196/3/level2_2025W18_1B_0117_1D3_spx_l2b-v27-2026-196.fits?center=159.883307,39.554440&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_b60/fits/ab5c8675c28c2ad07cea5329e94d5b87d0db1fd321ad60f684e187670b188f5f.fits",
+          "sha256": "6aad26d4718e212d1be149411fdb00e7c40a0e93df5cb738666cad56a432b0b9",
+          "bytes": 9947520,
+          "retrieved_at": "2026-11-14T21:18:44.704095+00:00",
+          "elapsed_seconds": 14.015000000596046,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2026W18_1A/l2b-v27-2026-244/3/level2_2026W18_1A_0004_1D3_spx_l2b-v27-2026-244.fits?center=159.883307,39.554440&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/north_b60/fits/af7c270533b319ed3faefe6e89a0c5bfad2c884a9aa936f1ed4df267b335f4b2.fits",
+          "sha256": "d64866c08dc482fbd2055b3685d4de8982cef34ba73988e75b9bda06a0cf6b11",
+          "bytes": 9936000,
+          "retrieved_at": "2026-11-14T21:18:45.550488+00:00",
+          "elapsed_seconds": 14.859000001102686,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "control_rejections": [],
+      "support_qualified_control_indices": [
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "independent_astrometry_prerequisite": [
+        {
+          "status": "pass",
+          "count": 83,
+          "median_offset_arcsec": [
+            -0.13729122995470616,
+            0.04488046202758243
+          ],
+          "robust_sigma_axes_arcsec": [
+            0.18640958029010146,
+            0.20448320089452146
+          ],
+          "robust_rms_including_bias_arcsec": 0.3121298588188677,
+          "raw_radial_rms_arcsec": 0.2968076294832413,
+          "maximum_residual_arcsec": 0.6707059931394352,
+          "above_threshold": 0,
+          "threshold_arcsec": 1.5375
+        },
+        {
+          "status": "pass",
+          "count": 83,
+          "median_offset_arcsec": [
+            0.04426185387201281,
+            0.12600137916943335
+          ],
+          "robust_sigma_axes_arcsec": [
+            0.1476569873670436,
+            0.24152693568280956
+          ],
+          "robust_rms_including_bias_arcsec": 0.3130068782621654,
+          "raw_radial_rms_arcsec": 0.35885301452783763,
+          "maximum_residual_arcsec": 1.2157203620295267,
+          "above_threshold": 0,
+          "threshold_arcsec": 1.5375
+        }
+      ],
+      "positions": [
+        {
+          "mjd": 60794.303084731,
+          "scale": "UTC"
+        },
+        {
+          "mjd": 61157.024272289,
+          "scale": "UTC"
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "pair": {
+      "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W18_1B/l2b-v27-2026-196/3/level2_2025W18_1B_0117_1D3_spx_l2b-v27-2026-196.fits",
+      "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2026W18_1A/l2b-v27-2026-244/3/level2_2026W18_1A_0004_1D3_spx_l2b-v27-2026-244.fits",
+      "corner_distance_arcsec": 1.7542132121471177,
+      "time_separation_days": 362.72118700000283,
+      "control_indices_inside": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "status": "calibrated_candidate_locked_before_flux",
+    "calibration": {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/spectral_wcs/cal-swcs-v5-2026-191/3/spectral_wcs_D3_spx_cal-swcs-v5-2026-191.fits",
+      "path": "backend/.cache/phase4/online-science/calibration/dr1_spectral_D3.fits",
+      "sha256": "51750c8f948a30541d391e54930279aa067c62c398a7cc2679e592bc6044427a",
+      "bytes": 33312960,
+      "retrieved_at": "2026-11-14T21:18:53.650848+00:00",
+      "elapsed_seconds": 8.09400000050664,
+      "is_simulated_fallback": false
+    },
+    "inputs": [
+      {
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W18_1B/l2b-v27-2026-196/3/level2_2025W18_1B_0117_1D3_spx_l2b-v27-2026-196.fits?center=159.883307,39.554440&size=1.400000",
+        "path": "backend/.cache/phase4/online-science/north_b60/fits/ab5c8675c28c2ad07cea5329e94d5b87d0db1fd321ad60f684e187670b188f5f.fits",
+        "sha256": "6aad26d4718e212d1be149411fdb00e7c40a0e93df5cb738666cad56a432b0b9",
+        "bytes": 9947520,
+        "retrieved_at": "2026-11-14T21:18:44.704095+00:00",
+        "elapsed_seconds": 14.015000000596046,
+        "is_simulated_fallback": false
+      },
+      {
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2026W18_1A/l2b-v27-2026-244/3/level2_2026W18_1A_0004_1D3_spx_l2b-v27-2026-244.fits?center=159.883307,39.554440&size=1.400000",
+        "path": "backend/.cache/phase4/online-science/north_b60/fits/af7c270533b319ed3faefe6e89a0c5bfad2c884a9aa936f1ed4df267b335f4b2.fits",
+        "sha256": "d64866c08dc482fbd2055b3685d4de8982cef34ba73988e75b9bda06a0cf6b11",
+        "bytes": 9936000,
+        "retrieved_at": "2026-11-14T21:18:45.550488+00:00",
+        "elapsed_seconds": 14.859000001102686,
+        "is_simulated_fallback": false
+      }
+    ],
+    "calibrated_control_indices": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "control_rejections": [],
+    "support_qualified_control_indices": [
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "independent_astrometry_prerequisite": [
+      {
+        "status": "pass",
+        "count": 83,
+        "median_offset_arcsec": [
+          -0.13729122995470616,
+          0.04488046202758243
+        ],
+        "robust_sigma_axes_arcsec": [
+          0.18640958029010146,
+          0.20448320089452146
+        ],
+        "robust_rms_including_bias_arcsec": 0.3121298588188677,
+        "raw_radial_rms_arcsec": 0.2968076294832413,
+        "maximum_residual_arcsec": 0.6707059931394352,
+        "above_threshold": 0,
+        "threshold_arcsec": 1.5375
+      },
+      {
+        "status": "pass",
+        "count": 83,
+        "median_offset_arcsec": [
+          0.04426185387201281,
+          0.12600137916943335
+        ],
+        "robust_sigma_axes_arcsec": [
+          0.1476569873670436,
+          0.24152693568280956
+        ],
+        "robust_rms_including_bias_arcsec": 0.3130068782621654,
+        "raw_radial_rms_arcsec": 0.35885301452783763,
+        "maximum_residual_arcsec": 1.2157203620295267,
+        "above_threshold": 0,
+        "threshold_arcsec": 1.5375
+      }
+    ],
+    "positions": [
+      {
+        "mjd": 60794.303084731,
+        "scale": "UTC"
+      },
+      {
+        "mjd": 61157.024272289,
+        "scale": "UTC"
+      }
+    ]
+  },
+  "flux_extracted": false,
+  "scope": "Calibrated geometry first; astrometry/support prerequisites will be assessed without flux residual-based selection"
+}

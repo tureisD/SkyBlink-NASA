@@ -1,0 +1,88 @@
+{
+  "registered_at": "2026-11-14T20:03:40.018013+00:00",
+  "status": "frozen_before_holdout_catalog_or_flux_inspection",
+  "scope": "Strictly disjoint Gaia sources in recorded Epsilon Indi D3 pair; the shared pair is not an independent detector/systematics sample.",
+  "phase3_report_sha256": "15b31d406e68c910a9d96ff2babe8222632898c993b457b0e12dadf642225466",
+  "samples": [
+    {
+      "id": "eps_indi_b_2024_E1_D3",
+      "uri": "ibe/data/spherex/dr1/level2/2025W18_1B/l2b-v27-2026-196/3/level2_2025W18_1B_0081_2D3_spx_l2b-v27-2026-196.fits",
+      "path": "backend/.cache/phase3/cutouts/91825cf5584ae5f5f3c82e34803cd4ce28bbcf30ea7cf087f7ae1b724d6037e5.fits",
+      "sha256": "9d4fb57bf944c155ca65c8885581cb2d36cb4152fe382ddf0980072c363a179c",
+      "ra": 331.0962,
+      "dec": -56.8005,
+      "band": 3,
+      "release": "DR1"
+    },
+    {
+      "id": "eps_indi_b_2025_E1_D3",
+      "uri": "ibe/data/spherex/dr1/level2/2025W18_2B/l2b-v27-2026-197/3/level2_2025W18_2B_0011_2D3_spx_l2b-v27-2026-197.fits",
+      "path": "backend/.cache/phase3/cutouts/a4aa1da2935465a18a90103b54520b1170fe3a2bdd3fca63673a14a63850cfb0.fits",
+      "sha256": "730d8183e77882b0a37e61256250956d67b5b7730db465e402dbae4337e05661",
+      "ra": 331.0962,
+      "dec": -56.8005,
+      "band": 3,
+      "release": "DR1"
+    }
+  ],
+  "excluded_phase3_source_ids": [
+    "6412591751539163136",
+    "6412591957697593728",
+    "6412591992057334144",
+    "6412592370014523776",
+    "6412592404374220928",
+    "6412593435166417536",
+    "6412593916202695552",
+    "6412593916202695936",
+    "6412594259800093568",
+    "6412595771628639616"
+  ],
+  "catalog_selection": {
+    "gaia_query_radius_deg": 0.18,
+    "gaia_neighborhood_g_limit": 20,
+    "control_g_range": [
+      10,
+      17
+    ],
+    "max_ruwe": 1.4,
+    "max_pm_mas_year": 100,
+    "max_abs_parallax_mas": 10,
+    "exclude_gaia_variable": true,
+    "target_exclusion_arcsec": 30,
+    "gaia_neighbor_exclusion_arcsec": 30.75,
+    "allwise_match_arcsec": 3,
+    "allwise_reference_decimalyear": 2010.5,
+    "allwise_neighbor_exclusion_arcsec": 30.75,
+    "allwise_quality": "W1/W2 ph_qual A or B, cc_flags00, var_flg digits0or1, ext_flg0, W1/W2 SNR>=10",
+    "allwise_neighbors": "All returned source-catalog entries, no magnitude cut; unresolved/subthreshold blends remain possible",
+    "max_controls": 20,
+    "ordering": "numeric Gaia source_id ascending; lock first20 catalog-eligible; never replace flux/quality failures",
+    "proper_motion": "Propagate controls and Gaia neighbors with measured PM to both FITS epochs; AllWISE match at2010.5. Missing neighbor PM retains catalog position and is counted as a completeness limitation.",
+    "field": "Entire31arcsec neighborhood must lie within requested .2degree TAN square in both exposures"
+  },
+  "measurement_gates": {
+    "complete_aperture_support_both_methods": true,
+    "minimum_clean_annulus_pixels": 10,
+    "require_supported_field_background": true,
+    "minimum_snr_both_methods_both_visits": 5,
+    "minimum_controls": 3,
+    "max_abs_median_z": 1,
+    "max_robust_scatter_z": 2,
+    "max_abs_z": 5,
+    "astrometry_minimum_stars_each_visit": 3,
+    "astrometry_max_robust_rms_arcsec": 1.5375,
+    "spectral_tolerance_narrower_bandwidth": 0.25,
+    "minimum_bandwidth_ratio": 0.8
+  },
+  "methods": {
+    "center": "distance<=12.3/native_scale_arcsec; weight1",
+    "fractional": "Photutils CircularAperture.to_mask(method=subpixel,subpixels=5)",
+    "annulus": "Same native pixel-center annulus3<=r<=5, excludeSOURCE/hard/warning, median; N>=10 mandatory",
+    "background_variance": "max[(pi/2)*mean(V_ann)/N_ann,(1.2533*MAD_scaled_ann)^2/N_ann]",
+    "flux": "1e12*Omega*sum(w*(I-background))",
+    "variance": "(1e12*Omega)^2*(sum(w^2*V)+sum(w)^2*background_variance)",
+    "unmodeled": "Detector/plane covariance, aperture correction, PSF variations, unresolved companions and infrared variability; no absolute calibrated-flux claim"
+  },
+  "failure_policy": "No threshold relaxation, no residual-based rejection, no replacement of unavailable inputs. Fewer than3 controls or failed prerequisite => insufficient, not pass.",
+  "independence": "Excluded all Phase3controlIDs; no flux of new controls has been inspected. Samefield residual systematics may persist; validation does not generalize to all bands."
+}

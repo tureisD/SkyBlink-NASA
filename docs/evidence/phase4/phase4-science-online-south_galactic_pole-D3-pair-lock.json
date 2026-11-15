@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-11-14T21:02:27.378160+00:00",
+  "field": {
+    "id": "south_galactic_pole",
+    "ra": 12.85948,
+    "dec": -27.12825,
+    "research_radius_deg": 0.5
+  },
+  "detector": 3,
+  "pair_ranks_sha256": "0d42f9e750f3078313295454415a66adb57f0f23467c692338c9188586546894",
+  "attempts": [
+    {
+      "pair": {
+        "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0043_1D3_spx_l2b-v27-2026-273.fits",
+        "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W28_1A/l2b-v27-2026-275/3/level2_2026W28_1A_0346_1D3_spx_l2b-v27-2026-275.fits",
+        "corner_distance_arcsec": 13.181073986210189,
+        "time_separation_days": 15.413538000000699,
+        "control_indices_inside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "status": "calibrated_candidate_locked_before_flux",
+      "calibration": {
+        "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/spectral_wcs/cal-swcs-v5-2026-191/3/spectral_wcs_D3_spx_cal-swcs-v5-2026-191.fits",
+        "path": "backend/.cache/phase4/online-science/calibration/qr3_spectral_D3.fits",
+        "sha256": "51750c8f948a30541d391e54930279aa067c62c398a7cc2679e592bc6044427a",
+        "bytes": 33312960,
+        "retrieved_at": "2026-11-14T20:57:19.991278+00:00",
+        "elapsed_seconds": 5.406999999657273,
+        "is_simulated_fallback": false
+      },
+      "inputs": [
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0043_1D3_spx_l2b-v27-2026-273.fits?center=12.859480,-27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/south_galactic_pole/fits/956a371e82069f4f5bc89eeb12b2714faa2a434ddefb638f96c5c471ecb4ebf4.fits",
+          "sha256": "9d8f49fa2f020b247ea51ab1f3a2116d97a7cc0e4305142dbd495db716f07266",
+          "bytes": 14751360,
+          "retrieved_at": "2026-11-14T21:02:21.388455+00:00",
+          "elapsed_seconds": 10.187999999150634,
+          "is_simulated_fallback": false
+        },
+        {
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W28_1A/l2b-v27-2026-275/3/level2_2026W28_1A_0346_1D3_spx_l2b-v27-2026-275.fits?center=12.859480,-27.128250&size=1.400000",
+          "path": "backend/.cache/phase4/online-science/south_galactic_pole/fits/5bcc019998d88f28797ce99c493136353b584c855c7a7b9a6699d9f85606387f.fits",
+          "sha256": "cebbfd3777269b68ddfc39a04de1523c1b33bdf07f3eff422aa7d61ab241392e",
+          "bytes": 14762880,
+          "retrieved_at": "2026-11-14T21:02:18.784183+00:00",
+          "elapsed_seconds": 7.578999999910593,
+          "is_simulated_fallback": false
+        }
+      ],
+      "calibrated_control_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "control_rejections": [],
+      "positions": [
+        {
+          "mjd": 61213.205787393,
+          "scale": "UTC"
+        },
+        {
+          "mjd": 61228.619325298,
+          "scale": "UTC"
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "pair": {
+      "first_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0043_1D3_spx_l2b-v27-2026-273.fits",
+      "second_uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W28_1A/l2b-v27-2026-275/3/level2_2026W28_1A_0346_1D3_spx_l2b-v27-2026-275.fits",
+      "corner_distance_arcsec": 13.181073986210189,
+      "time_separation_days": 15.413538000000699,
+      "control_indices_inside": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "status": "calibrated_candidate_locked_before_flux",
+    "calibration": {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/spectral_wcs/cal-swcs-v5-2026-191/3/spectral_wcs_D3_spx_cal-swcs-v5-2026-191.fits",
+      "path": "backend/.cache/phase4/online-science/calibration/qr3_spectral_D3.fits",
+      "sha256": "51750c8f948a30541d391e54930279aa067c62c398a7cc2679e592bc6044427a",
+      "bytes": 33312960,
+      "retrieved_at": "2026-11-14T20:57:19.991278+00:00",
+      "elapsed_seconds": 5.406999999657273,
+      "is_simulated_fallback": false
+    },
+    "inputs": [
+      {
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W26_1A/l2b-v27-2026-273/3/level2_2026W26_1A_0043_1D3_spx_l2b-v27-2026-273.fits?center=12.859480,-27.128250&size=1.400000",
+        "path": "backend/.cache/phase4/online-science/south_galactic_pole/fits/956a371e82069f4f5bc89eeb12b2714faa2a434ddefb638f96c5c471ecb4ebf4.fits",
+        "sha256": "9d8f49fa2f020b247ea51ab1f3a2116d97a7cc0e4305142dbd495db716f07266",
+        "bytes": 14751360,
+        "retrieved_at": "2026-11-14T21:02:21.388455+00:00",
+        "elapsed_seconds": 10.187999999150634,
+        "is_simulated_fallback": false
+      },
+      {
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W28_1A/l2b-v27-2026-275/3/level2_2026W28_1A_0346_1D3_spx_l2b-v27-2026-275.fits?center=12.859480,-27.128250&size=1.400000",
+        "path": "backend/.cache/phase4/online-science/south_galactic_pole/fits/5bcc019998d88f28797ce99c493136353b584c855c7a7b9a6699d9f85606387f.fits",
+        "sha256": "cebbfd3777269b68ddfc39a04de1523c1b33bdf07f3eff422aa7d61ab241392e",
+        "bytes": 14762880,
+        "retrieved_at": "2026-11-14T21:02:18.784183+00:00",
+        "elapsed_seconds": 7.578999999910593,
+        "is_simulated_fallback": false
+      }
+    ],
+    "calibrated_control_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "control_rejections": [],
+    "positions": [
+      {
+        "mjd": 61213.205787393,
+        "scale": "UTC"
+      },
+      {
+        "mjd": 61228.619325298,
+        "scale": "UTC"
+      }
+    ]
+  },
+  "flux_extracted": false,
+  "scope": "Calibrated geometry first; astrometry/support prerequisites will be assessed without flux residual-based selection"
+}

@@ -1,0 +1,401 @@
+[
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "errors": [],
+    "images": [
+      {
+        "label": "workspace",
+        "width": 1048,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 1440,
+        "viewport": 1440,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "compare",
+        "width": 1048,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 1440,
+        "viewport": 1440,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "spectrum",
+        "width": 1048,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 1440,
+        "viewport": 1440,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      }
+    ],
+    "axe": [],
+    "status": "pass"
+  },
+  {
+    "engine": "chromium",
+    "width": 390,
+    "errors": [],
+    "images": [
+      {
+        "label": "workspace",
+        "width": 342,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 390,
+        "viewport": 390,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "compare",
+        "width": 342,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 390,
+        "viewport": 390,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "spectrum",
+        "width": 342,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 390,
+        "viewport": 390,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      }
+    ],
+    "axe": [],
+    "status": "pass"
+  },
+  {
+    "engine": "chromium",
+    "width": 320,
+    "errors": [],
+    "images": [
+      {
+        "label": "workspace",
+        "width": 272,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 320,
+        "viewport": 320,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "compare",
+        "width": 272,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 320,
+        "viewport": 320,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "spectrum",
+        "width": 272,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 320,
+        "viewport": 320,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      }
+    ],
+    "axe": [],
+    "status": "pass"
+  },
+  {
+    "engine": "firefox",
+    "width": 1440,
+    "errors": [],
+    "images": [
+      {
+        "label": "workspace",
+        "width": 1048,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 1440,
+        "viewport": 1440,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "compare",
+        "width": 1048,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 1440,
+        "viewport": 1440,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "spectrum",
+        "width": 1048,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 1440,
+        "viewport": 1440,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      }
+    ],
+    "status": "pass"
+  },
+  {
+    "engine": "firefox",
+    "width": 390,
+    "errors": [],
+    "images": [
+      {
+        "label": "workspace",
+        "width": 342,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 390,
+        "viewport": 390,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "compare",
+        "width": 342,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 390,
+        "viewport": 390,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "spectrum",
+        "width": 342,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 390,
+        "viewport": 390,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      }
+    ],
+    "status": "pass"
+  },
+  {
+    "engine": "firefox",
+    "width": 320,
+    "errors": [],
+    "images": [
+      {
+        "label": "workspace",
+        "width": 272,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 320,
+        "viewport": 320,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "compare",
+        "width": 272,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 320,
+        "viewport": 320,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "spectrum",
+        "width": 272,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 320,
+        "viewport": 320,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      }
+    ],
+    "status": "pass"
+  },
+  {
+    "engine": "webkit",
+    "width": 1440,
+    "errors": [],
+    "images": [
+      {
+        "label": "workspace",
+        "width": 1032,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 1440,
+        "viewport": 1440,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "compare",
+        "width": 1032,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 1440,
+        "viewport": 1440,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "spectrum",
+        "width": 1032,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 1440,
+        "viewport": 1440,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      }
+    ],
+    "status": "pass"
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "errors": [],
+    "images": [
+      {
+        "label": "workspace",
+        "width": 326,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 390,
+        "viewport": 390,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "compare",
+        "width": 326,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 390,
+        "viewport": 390,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "spectrum",
+        "width": 326,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 390,
+        "viewport": 390,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      }
+    ],
+    "status": "pass"
+  },
+  {
+    "engine": "webkit",
+    "width": 320,
+    "errors": [],
+    "images": [
+      {
+        "label": "workspace",
+        "width": 256,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 320,
+        "viewport": 320,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "compare",
+        "width": 256,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 320,
+        "viewport": 320,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      },
+      {
+        "label": "spectrum",
+        "width": 256,
+        "scrollWidth": 1600,
+        "natural": 1600,
+        "doc": 320,
+        "viewport": 320,
+        "keyboardScroll": {
+          "left": 64,
+          "focused": true
+        }
+      }
+    ],
+    "status": "pass"
+  }
+]

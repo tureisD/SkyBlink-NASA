@@ -1,0 +1,363 @@
+/* Observatory finish: presentation only. Layout, typography metrics and the
+   observation canvas remain owned by global.css and their existing components.
+   Keep effects on the chrome, never on image pixels or scientific plot marks. */
+:root {
+  --bg: #080e1a;
+  --panel: #101d30;
+  --panel-raised: #17283e;
+  --panel-inset: #0a1424;
+  --hairline: rgba(135, 175, 219, 0.17);
+  --hairline-strong: rgba(135, 175, 219, 0.34);
+  --text: #dce6f3;
+  --text-bright: #f3f7ff;
+  --text-muted: #b1c1d5;
+  --text-dim: #99acc5;
+  --accent: #75dcf2;
+  --accent-soft: rgba(89, 205, 236, 0.13);
+  --finish-edge: rgba(134, 182, 225, 0.3);
+  --finish-ease: 180ms cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+.app {
+  background:
+    radial-gradient(ellipse at 4% 0%, rgba(31, 104, 145, 0.15), transparent 45%),
+    radial-gradient(ellipse at 98% 16%, rgba(81, 68, 158, 0.13), transparent 45%),
+    #080e1a;
+}
+
+.topbar {
+  background: linear-gradient(110deg, #14273a, #101c30 52%, #171d35);
+  border-bottom-color: var(--finish-edge);
+  box-shadow: 0 1px 0 rgba(100, 206, 239, 0.08), 0 8px 28px #03081355;
+}
+
+.brand-name {
+  color: #eff8ff;
+  text-shadow: 0 2px 16px rgba(115, 212, 247, 0.2);
+}
+
+.brand-mark {
+  color: #84e1f3;
+  filter: drop-shadow(0 0 7px rgba(88, 208, 242, 0.28));
+}
+
+.brand-sub,
+.header-source-context {
+  color: #afc3dc;
+}
+
+.centered-workspace .fields-sidebar,
+.centered-workspace .inspector-sidebar {
+  background:
+    radial-gradient(ellipse at 0 0, rgba(58, 119, 159, 0.13), transparent 65%),
+    linear-gradient(155deg, #14243a, #101a2d 75%);
+  border-color: var(--finish-edge);
+  box-shadow: inset 0 1px 0 #b5d8ff14, 0 8px 24px #02071333;
+}
+
+.centered-workspace .inspector-sidebar {
+  background:
+    radial-gradient(ellipse at 100% 0, rgba(109, 90, 182, 0.13), transparent 60%),
+    linear-gradient(155deg, #152238, #101a2d 75%);
+}
+
+.sidebar-heading,
+.field-settings,
+.field-position,
+.sidebar-footnote,
+.drawer-head,
+.recent-fields,
+.observation-status,
+.keyboard-reference dl > div {
+  border-color: var(--hairline-strong);
+}
+
+.sidebar-heading h1,
+.sidebar-heading h2,
+.drawer-head h2 {
+  color: #eef5ff;
+  text-shadow: 0 2px 18px #6bb7ec15;
+}
+
+.eyebrow,
+.sidebar-heading .eyebrow,
+.drawer-kicker {
+  color: #9edcec;
+}
+
+.field-position dd,
+.metric-v {
+  color: #d1e8ff;
+}
+
+.btn,
+.icon-btn,
+.field-chip,
+.rail-search {
+  color: #d7e4f5;
+  border-color: #48617d;
+  background: linear-gradient(180deg, #1c3049, #15253b);
+  box-shadow: inset 0 1px 0 #b4d4ff0d, 0 2px 4px #03081426;
+  transition:
+    background-color var(--finish-ease),
+    border-color var(--finish-ease),
+    box-shadow var(--finish-ease),
+    color var(--finish-ease);
+}
+
+.btn:hover:not(:disabled),
+.icon-btn:hover:not(:disabled),
+.field-chip:hover:not(:disabled),
+.rail-search:hover:not(:disabled) {
+  color: #f4fbff;
+  background: linear-gradient(180deg, #28415c, #1c3049);
+  border-color: #7db6d3;
+  box-shadow: inset 0 1px 0 #c1e9ff21, 0 0 14px #4cbde512;
+}
+
+.btn:active:not(:disabled),
+.icon-btn:active:not(:disabled) {
+  box-shadow: inset 0 2px 6px #03081466;
+}
+
+.btn--accent,
+.btn[aria-pressed="true"],
+.task-nav .btn[aria-pressed="true"],
+.fields-sidebar .task-nav .btn[aria-pressed="true"] {
+  color: #e5faff;
+  border-color: #67bfd6;
+  background: linear-gradient(110deg, #1f5268, #263d60);
+  box-shadow: inset 0 1px 0 #c3f3ff26, inset 0 -1px 0 #07152c66, 0 0 16px #3dbce20c;
+}
+
+.btn--accent:hover:not(:disabled),
+.btn[aria-pressed="true"]:hover:not(:disabled),
+.fields-sidebar .task-nav .btn[aria-pressed="true"]:hover:not(:disabled) {
+  color: #fff;
+  border-color: #a4e9f8;
+  background: linear-gradient(110deg, #28667b, #334f78);
+  box-shadow: inset 0 1px 0 #d9faff38, 0 0 18px #58d4ed1a;
+}
+
+.btn--quiet {
+  background: transparent;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.topbar .search-primary {
+  background: linear-gradient(110deg, #1c354a, #1c2a45);
+  border-color: #547590;
+  box-shadow: inset 0 1px 0 #b9e3ff14, 0 3px 12px #03081333;
+}
+
+.topbar .search-primary:hover {
+  border-color: #85cbdc;
+  background: linear-gradient(110deg, #24475d, #2a3758);
+}
+
+.inspector-tabs,
+.task-nav {
+  background: #0b1527;
+  border-color: var(--hairline-strong);
+  box-shadow: inset 0 1px 5px #02081544;
+}
+
+.centered-workspace .fields-sidebar .task-nav {
+  box-shadow: none;
+}
+
+select,
+input[type="text"],
+input[type="number"],
+textarea {
+  color: #e2edfa;
+  background-color: #0b1628;
+  border-color: #48617d;
+  box-shadow: inset 0 2px 5px #03091540;
+  transition: border-color var(--finish-ease), box-shadow var(--finish-ease);
+}
+
+select:hover:not(:disabled),
+input:hover:not(:disabled),
+textarea:hover:not(:disabled) {
+  border-color: #82abc7;
+}
+
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  border-color: #8ae4f3;
+  box-shadow: 0 0 0 3px #69d7ed1a;
+}
+
+:focus-visible {
+  outline-color: #9ceafa;
+}
+
+option {
+  background: #101d30;
+  color: #e2edfa;
+}
+
+kbd {
+  background: linear-gradient(#21344c, #142339);
+  border-color: #4d6582;
+  color: #c7d8ed;
+  box-shadow: 0 1px 2px #02081355;
+}
+
+.centered-workspace .timeline-dock,
+.centered-workspace .comparison-controls {
+  background: linear-gradient(130deg, #16283d, #111d30 70%);
+  border-color: var(--finish-edge);
+  box-shadow: inset 0 1px 0 #b1dbff12, 0 5px 16px #02071326;
+}
+
+.observation-caption strong {
+  color: #edf6ff;
+}
+
+.viewer-section-label {
+  color: #c6d8ee;
+}
+
+.notification-toggle,
+.comparison-notification,
+.comparison-recovery,
+.known-exposure-recovery {
+  color: #f0d8ad;
+  background: linear-gradient(135deg, #302c27, #252737);
+  border-color: #8e795a;
+  box-shadow: inset 0 1px 0 #efd6a512, 0 4px 16px #02071326;
+}
+
+.comparison-notification h2,
+.comparison-recovery h2 {
+  color: #ffe2b0;
+}
+
+.modal-backdrop {
+  background: #030917bf;
+  backdrop-filter: blur(8px);
+}
+
+.modal-panel {
+  background:
+    radial-gradient(ellipse at 100% 0, #5d63ae1a, transparent 55%),
+    linear-gradient(145deg, #17283e, #101c30);
+  border-color: #607f9b;
+  box-shadow: inset 0 1px 0 #c4e4ff1f, 0 24px 90px #000a;
+}
+
+.spectrum-selection,
+.spectrum-recovery-note {
+  background: linear-gradient(125deg, #172c42, #16223b);
+  border-color: #527592;
+}
+
+.spectrum-mode-note {
+  border-color: #77cfdf;
+}
+
+.spec-table th,
+.spectrum-table th {
+  background: #14273d;
+  color: #dceafa;
+}
+
+.spec-table tbody tr:hover,
+.spectrum-table tbody tr:hover {
+  background-color: #78c6ec0d;
+}
+
+.spec-table .spec-row--selected {
+  background: #23536d66;
+}
+
+.request-state {
+  background:
+    radial-gradient(ellipse at 0 0, #347fa124, transparent 70%),
+    linear-gradient(135deg, #14243a, #111b30);
+  border-top-color: #79dceb;
+  box-shadow: inset 0 1px 0 #b1ecff12, 0 18px 60px #0207134d;
+}
+
+.statusbar {
+  background: #0c1625;
+  border-color: var(--hairline);
+  color: #a9bdd5;
+}
+
+/* Motion is finite and restricted to interface chrome. Nothing animates the
+   canvas, observation column, plot, scientific marks, or their ancestors. */
+@media (prefers-reduced-motion: no-preference) {
+  .brand-mark {
+    animation: observatory-mark 900ms ease-out both;
+  }
+
+  .fields-sidebar,
+  .inspector-sidebar,
+  .request-state {
+    animation: observatory-reveal 400ms ease-out both;
+  }
+
+  .modal-panel {
+    animation: observatory-dialog 220ms ease-out;
+  }
+
+  .fields-sidebar .task-nav .btn {
+    background-size: 160% 100%;
+    background-position: 100% 50%;
+    transition:
+      background-position 350ms ease,
+      border-color var(--finish-ease),
+      box-shadow var(--finish-ease),
+      color var(--finish-ease);
+  }
+
+  .fields-sidebar .task-nav .btn:hover:not(:disabled) {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes observatory-reveal {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}
+
+@keyframes observatory-mark {
+  from { opacity: 0.5; filter: drop-shadow(0 0 0 transparent); }
+  to { opacity: 1; filter: drop-shadow(0 0 7px #58d0f247); }
+}
+
+@keyframes observatory-dialog {
+  from { box-shadow: inset 0 1px 0 #c4e4ff1f, 0 10px 30px #0005; }
+  to { box-shadow: inset 0 1px 0 #c4e4ff1f, 0 24px 90px #000a; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .btn,
+  .icon-btn,
+  .modal-panel,
+  .centered-workspace .fields-sidebar,
+  .centered-workspace .inspector-sidebar {
+    box-shadow: none;
+  }
+
+  .btn[aria-pressed="true"],
+  .fields-sidebar .task-nav .btn[aria-pressed="true"] {
+    outline: 2px solid Highlight;
+    outline-offset: -3px;
+  }
+}

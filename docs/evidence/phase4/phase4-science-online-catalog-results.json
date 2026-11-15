@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-11-14T20:53:30.593880+00:00",
+  "fields": [
+    {
+      "field": "north_galactic_pole",
+      "status": "locked",
+      "count": 9,
+      "catalog_eligible": 9,
+      "rejections": {
+        "region_margin": 44,
+        "gaia_quality": 830,
+        "allwise_neighbor": 147,
+        "gaia_neighbor": 63,
+        "missing_quality": 31,
+        "allwise_quality": 1
+      },
+      "path": "docs/phase4-science-online-north_galactic_pole-controls.json",
+      "sha256": "46302334aad02d5cf4b19895dc10b3ee412e65dadbb57605a036ffac8ed29e4c"
+    },
+    {
+      "field": "south_galactic_pole",
+      "status": "locked",
+      "count": 10,
+      "catalog_eligible": 10,
+      "rejections": {
+        "gaia_quality": 984,
+        "region_margin": 62,
+        "missing_quality": 15,
+        "allwise_neighbor": 155,
+        "gaia_neighbor": 88,
+        "allwise_quality": 1
+      },
+      "path": "docs/phase4-science-online-south_galactic_pole-controls.json",
+      "sha256": "3eaa2044e843391a561cee067883e334c6342655bedb83a03f9491652ee4eede"
+    },
+    {
+      "field": "north_b60",
+      "status": "locked",
+      "count": 16,
+      "catalog_eligible": 16,
+      "rejections": {
+        "gaia_quality": 934,
+        "missing_quality": 28,
+        "region_margin": 62,
+        "gaia_neighbor": 86,
+        "allwise_neighbor": 128,
+        "allwise_quality": 2
+      },
+      "path": "docs/phase4-science-online-north_b60-controls.json",
+      "sha256": "7ac348d533919a3d0ab819cc17f1fc4866443ebc529097a591878a0d1cd399be"
+    },
+    {
+      "field": "south_b60",
+      "status": "locked",
+      "count": 12,
+      "catalog_eligible": 12,
+      "rejections": {
+        "gaia_quality": 1744,
+        "region_margin": 108,
+        "allwise_neighbor": 193,
+        "gaia_neighbor": 227,
+        "missing_quality": 28,
+        "allwise_quality": 1,
+        "allwise_missing_or_ambiguous": 1
+      },
+      "path": "docs/phase4-science-online-south_b60-controls.json",
+      "sha256": "f114c0a13f5326c2cd927f74c0236556760610414ad832b977635c6c3ff4ee80"
+    }
+  ],
+  "scope": "Catalog screening only; no SPHEREx control flux extracted"
+}

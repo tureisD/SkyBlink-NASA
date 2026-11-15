@@ -1,0 +1,28 @@
+{
+  "name": "spherex-skyblink-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "SPHEREx SkyBlink \u2014 blink through SPHEREx epochs in the browser",
+  "scripts": {
+    "dev": "vite",
+    "build": "node qa/phase1/check-real-data.mjs && tsc --noEmit && vite build && node qa/phase1/check-real-data.mjs --dist",
+    "test:real-data": "node qa/phase1/real-data.test.mjs",
+    "test:wcs": "node qa/phase2/wcs.test.mjs",
+    "test:semantics": "node qa/phase4/semantics.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "test:views": "node qa/phase5/share.test.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.8"
+  }
+}

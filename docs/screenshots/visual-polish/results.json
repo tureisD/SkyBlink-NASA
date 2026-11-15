@@ -1,0 +1,368 @@
+[
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "state": "observe",
+    "elements": 281,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "state": "compare",
+    "elements": 300,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "state": "axe",
+    "violations": []
+  },
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "state": "spectrum",
+    "elements": 3538,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "state": "help",
+    "elements": 364,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "chromium",
+    "width": 390,
+    "state": "observe",
+    "elements": 71,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "chromium",
+    "width": 390,
+    "state": "compare",
+    "elements": 118,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "chromium",
+    "width": 390,
+    "state": "spectrum",
+    "elements": 3356,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "chromium",
+    "width": 390,
+    "state": "help",
+    "elements": 182,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "chromium",
+    "width": 320,
+    "state": "observe",
+    "elements": 71,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "chromium",
+    "width": 320,
+    "state": "compare",
+    "elements": 118,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "chromium",
+    "width": 320,
+    "state": "spectrum",
+    "elements": 3356,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "chromium",
+    "width": 320,
+    "state": "help",
+    "elements": 182,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 1440,
+    "state": "observe",
+    "elements": 281,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 1440,
+    "state": "compare",
+    "elements": 300,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 1440,
+    "state": "spectrum",
+    "elements": 3705,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 1440,
+    "state": "help",
+    "elements": 364,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 390,
+    "state": "observe",
+    "elements": 71,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 390,
+    "state": "compare",
+    "elements": 118,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 390,
+    "state": "spectrum",
+    "elements": 3523,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 390,
+    "state": "help",
+    "elements": 182,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 320,
+    "state": "observe",
+    "elements": 71,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 320,
+    "state": "compare",
+    "elements": 118,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 320,
+    "state": "spectrum",
+    "elements": 3523,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "width": 320,
+    "state": "help",
+    "elements": 182,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 1440,
+    "state": "observe",
+    "elements": 281,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 1440,
+    "state": "compare",
+    "elements": 300,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 1440,
+    "state": "spectrum",
+    "elements": 3538,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 1440,
+    "state": "help",
+    "elements": 364,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "state": "observe",
+    "elements": 71,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "state": "compare",
+    "elements": 118,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "state": "spectrum",
+    "elements": 3356,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "state": "help",
+    "elements": 182,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 320,
+    "state": "observe",
+    "elements": 71,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 320,
+    "state": "compare",
+    "elements": 118,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 320,
+    "state": "spectrum",
+    "elements": 3356,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  },
+  {
+    "engine": "webkit",
+    "width": 320,
+    "state": "help",
+    "elements": 182,
+    "differences": [],
+    "pixelsUnchanged": true,
+    "textUnchanged": true,
+    "overflow": false
+  }
+]

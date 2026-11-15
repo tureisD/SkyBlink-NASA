@@ -1,0 +1,15 @@
+{
+  "preregistration_sha256": "75840b11617cea84a777aae74ff3506dbbf3591ca0e6f72c7a4a99b8e249a858",
+  "catalog_hashes": {
+    "gaia": "370d89e569f3313e6b3a49fe560621af5436ec57141b95d447b59a2522e02389",
+    "allwise": "63745c82a04869d84863bf7a166faa778cb54c0cf3241db2bef49ddc15357ece"
+  },
+  "shortlist": [],
+  "catalog_rejections": {
+    "gaia_quality": 321,
+    "outside_guarded_field": 58,
+    "allwise_neighbor": 12,
+    "gaia_neighbor": 21,
+    "phase3_control": 10
+  }
+}

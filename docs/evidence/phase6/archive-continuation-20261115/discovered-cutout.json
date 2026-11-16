@@ -1,0 +1,27 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr3/level2/2026W40_2A/l2b-v27-2026-285/1/level2_2026W40_2A_0001_1D1_spx_l2b-v27-2026-285.fits?center=286.0012867435891%2C43.70488424019806&size=0.2",
+  "selected_by": "Independent AWS header index, center containment",
+  "ra": 286.0012867435891,
+  "dec": 43.70488424019806,
+  "snapshot_sha256": "f813fc326eb55b1fc48f919d37fc9bcb37cd9da14685fe4c5116050283f51de8",
+  "comparison_accepted": false,
+  "status": 200,
+  "bytes": 4173120,
+  "sha256": "c16c0b5cc9f40796ae5ea193a5d9e59e19e02cec0ad60e9b6971fca3082bb4d1",
+  "path": "backend\\.cache\\archive-index-prototype\\qr3-d1\\discovered-cutout.fits",
+  "extensions": [
+    "PRIMARY",
+    "IMAGE",
+    "FLAGS",
+    "VARIANCE",
+    "ZODI",
+    "EPSF",
+    "WCS-WAVE"
+  ],
+  "image_shape": [
+    117,
+    117
+  ],
+  "required_extensions_present": true,
+  "seconds": 13.813
+}

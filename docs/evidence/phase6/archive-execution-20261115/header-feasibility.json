@@ -1,0 +1,284 @@
+[
+  {
+    "prefix": "dr1/level2/2025W17_4B/",
+    "listing_rows": 1000,
+    "listing_truncated": "true",
+    "first_page_total_bytes": 65601218880,
+    "object": "dr1/level2/2025W17_4B/l2b-v27-2026-196/1/level2_2025W17_4B_0001_1D1_spx_l2b-v27-2026-196.fits",
+    "object_size": 65393280,
+    "bytes_read": 65536,
+    "header_sha256": "561f4cafff1a272acca3030ed8b03c80aa62653f69d702408248bde555db5122",
+    "range_elapsed_seconds": 0.25,
+    "header_names": [
+      "PRIMARY",
+      "IMAGE"
+    ],
+    "primary_metadata": {},
+    "image_offset": 2880,
+    "image_metadata": {
+      "NAXIS1": 2040,
+      "NAXIS2": 2040,
+      "DETECTOR": 1,
+      "RADESYS": "ICRS",
+      "CTYPE1": "RA---TAN-SIP",
+      "CTYPE2": "DEC--TAN-SIP",
+      "CRVAL1": 160.615237739,
+      "CRVAL2": 30.6690774567,
+      "DATE-OBS": "2025-04-24T18:01:05.843",
+      "MJD-OBS": 60789.750762072
+    },
+    "corner_world_deg": [
+      [
+        159.51029490878,
+        32.887238189769484
+      ],
+      [
+        163.32409072631492,
+        31.591598437842716
+      ],
+      [
+        161.6651861437853,
+        28.417380578532388
+      ],
+      [
+        157.9205741537382,
+        29.672428387510948
+      ]
+    ]
+  },
+  {
+    "prefix": "dr1/level2/2025W45_1A/",
+    "listing_rows": 1000,
+    "listing_truncated": "true",
+    "first_page_total_bytes": 65626983360,
+    "object": "dr1/level2/2025W45_1A/l2b-v27-2026-247/1/level2_2025W45_1A_0001_1D1_spx_l2b-v27-2026-247.fits",
+    "object_size": 65424960,
+    "bytes_read": 65536,
+    "header_sha256": "7572c84f94e082d694b0cc721f01f67c1037e214eb9a0e458e91aa22c562a8cb",
+    "range_elapsed_seconds": 0.266,
+    "header_names": [
+      "PRIMARY",
+      "IMAGE"
+    ],
+    "primary_metadata": {},
+    "image_offset": 2880,
+    "image_metadata": {
+      "NAXIS1": 2040,
+      "NAXIS2": 2040,
+      "DETECTOR": 1,
+      "RADESYS": "ICRS",
+      "CTYPE1": "RA---TAN-SIP",
+      "CTYPE2": "DEC--TAN-SIP",
+      "CRVAL1": 331.456938126,
+      "CRVAL2": -34.6085609488,
+      "DATE-OBS": "2025-11-03T00:02:15.107",
+      "MJD-OBS": 60982.001563738
+    },
+    "corner_world_deg": [
+      [
+        328.8269947140772,
+        -33.57782523193252
+      ],
+      [
+        332.6976614222717,
+        -32.33800977012111
+      ],
+      [
+        334.16689620372904,
+        -35.60197660134385
+      ],
+      [
+        330.12896898472826,
+        -36.90189660973438
+      ]
+    ]
+  },
+  {
+    "prefix": "dr1/level2/2026W20_1A/",
+    "listing_rows": 1000,
+    "listing_truncated": "true",
+    "first_page_total_bytes": 65109864960,
+    "object": "dr1/level2/2026W20_1A/l2b-v27-2026-246/1/level2_2026W20_1A_0001_1D1_spx_l2b-v27-2026-246.fits",
+    "object_size": 65943360,
+    "bytes_read": 65536,
+    "header_sha256": "cdc635cf371212fa3bcdbe366dfe28354fc42f17d6278cff2d28d3817ea3aa3d",
+    "range_elapsed_seconds": 0.234,
+    "header_names": [
+      "PRIMARY",
+      "IMAGE"
+    ],
+    "primary_metadata": {},
+    "image_offset": 2880,
+    "image_metadata": {
+      "NAXIS1": 2040,
+      "NAXIS2": 2040,
+      "DETECTOR": 1,
+      "RADESYS": "ICRS",
+      "CTYPE1": "RA---TAN-SIP",
+      "CTYPE2": "DEC--TAN-SIP",
+      "CRVAL1": 276.073592774,
+      "CRVAL2": 73.704122925,
+      "DATE-OBS": "2026-05-11T00:06:59.973",
+      "MJD-OBS": 61171.004860799
+    },
+    "corner_world_deg": [
+      [
+        284.6022367746255,
+        74.21534976441457
+      ],
+      [
+        278.2229689609495,
+        71.2937893298067
+      ],
+      [
+        268.11507572591745,
+        72.87947076685883
+      ],
+      [
+        273.13958794152563,
+        76.1213788490497
+      ]
+    ]
+  },
+  {
+    "prefix": "qr3/level2/2026W20_2A/",
+    "listing_rows": 1000,
+    "listing_truncated": "true",
+    "first_page_total_bytes": 65541432960,
+    "object": "qr3/level2/2026W20_2A/l2b-v27-2026-267/1/level2_2026W20_2A_0001_1D1_spx_l2b-v27-2026-267.fits",
+    "object_size": 65977920,
+    "bytes_read": 65536,
+    "header_sha256": "bab0a8c548c7297ed089e218f8cb22b9ef183e23f8986b38b5736eee8a35ee4c",
+    "range_elapsed_seconds": 0.203,
+    "header_names": [
+      "PRIMARY",
+      "IMAGE"
+    ],
+    "primary_metadata": {},
+    "image_offset": 2880,
+    "image_metadata": {
+      "NAXIS1": 2040,
+      "NAXIS2": 2040,
+      "DETECTOR": 1,
+      "RADESYS": "ICRS",
+      "CTYPE1": "RA---TAN-SIP",
+      "CTYPE2": "DEC--TAN-SIP",
+      "CRVAL1": 327.98488968,
+      "CRVAL2": -48.701815136,
+      "DATE-OBS": "2026-05-14T12:08:39.329",
+      "MJD-OBS": 61174.506010752
+    },
+    "corner_world_deg": [
+      [
+        331.49270543098186,
+        -49.42504146839985
+      ],
+      [
+        326.68892824563784,
+        -51.053651797066514
+      ],
+      [
+        324.5617838370667,
+        -47.85482804998865
+      ],
+      [
+        329.17707980063216,
+        -46.298817036282514
+      ]
+    ]
+  },
+  {
+    "prefix": "qr3/level2/2026W30_2A/",
+    "listing_rows": 1000,
+    "listing_truncated": "true",
+    "first_page_total_bytes": 65402150400,
+    "object": "qr3/level2/2026W30_2A/l2b-v27-2026-224/1/level2_2026W30_2A_0001_1D1_spx_l2b-v27-2026-224.fits",
+    "object_size": 65243520,
+    "bytes_read": 65536,
+    "header_sha256": "97ae8b962e35453f6effbcc2911a3ad1b0683fccc23620d97756820c289ebe77",
+    "range_elapsed_seconds": 0.25,
+    "header_names": [
+      "PRIMARY",
+      "IMAGE"
+    ],
+    "primary_metadata": {},
+    "image_offset": 2880,
+    "image_metadata": {
+      "NAXIS1": 2040,
+      "NAXIS2": 2040,
+      "DETECTOR": 1,
+      "RADESYS": "ICRS",
+      "CTYPE1": "RA---TAN-SIP",
+      "CTYPE2": "DEC--TAN-SIP",
+      "CRVAL1": 39.8143436361,
+      "CRVAL2": 1.13861145953,
+      "DATE-OBS": "2026-07-23T12:03:42.621",
+      "MJD-OBS": 61244.502576632
+    },
+    "corner_world_deg": [
+      [
+        41.98237910449561,
+        0.08683680425212016
+      ],
+      [
+        38.71522169929137,
+        -1.1018185018354618
+      ],
+      [
+        37.632475007623924,
+        2.21024029603345
+      ],
+      [
+        40.92929878311611,
+        3.4148937115358553
+      ]
+    ]
+  },
+  {
+    "prefix": "qr3/level2/2026W40_2A/",
+    "listing_rows": 1000,
+    "listing_truncated": "true",
+    "first_page_total_bytes": 65134941120,
+    "object": "qr3/level2/2026W40_2A/l2b-v27-2026-285/1/level2_2026W40_2A_0001_1D1_spx_l2b-v27-2026-285.fits",
+    "object_size": 65131200,
+    "bytes_read": 65536,
+    "header_sha256": "fdb334bd6a50a10ce9aaab49534b53fe1e5c2239f649e6862b247f22b4536767",
+    "range_elapsed_seconds": 0.218,
+    "header_names": [
+      "PRIMARY",
+      "IMAGE"
+    ],
+    "primary_metadata": {},
+    "image_offset": 2880,
+    "image_metadata": {
+      "NAXIS1": 2040,
+      "NAXIS2": 2040,
+      "DETECTOR": 1,
+      "RADESYS": "ICRS",
+      "CTYPE1": "RA---TAN-SIP",
+      "CTYPE2": "DEC--TAN-SIP",
+      "CRVAL1": 286.001556271,
+      "CRVAL2": 43.7027191277,
+      "DATE-OBS": "2026-10-01T12:09:28.693",
+      "MJD-OBS": 61314.506582095
+    },
+    "corner_world_deg": [
+      [
+        282.85208704639257,
+        44.53516708703869
+      ],
+      [
+        287.3223286565482,
+        46.01592063798993
+      ],
+      [
+        289.0787194816752,
+        42.76563941576526
+      ],
+      [
+        284.7654675004305,
+        41.33824707219351
+      ]
+    ]
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "epochs": [
+    [
+      "2025_E1",
+      "2025-05-05",
+      [
+        "3",
+        "all",
+        "flag_overlay"
+      ]
+    ],
+    [
+      "2026_E1",
+      "2026-05-11",
+      [
+        "3",
+        "all",
+        "flag_overlay"
+      ]
+    ]
+  ],
+  "difference_keys": [
+    "2026_E1_minus_2025_E1"
+  ],
+  "fresh_input_count": 3,
+  "comparison_status": "matched_visual",
+  "seconds": 30.015,
+  "assets": [
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2025_E1_ALL.webp",
+      "bytes": 41790,
+      "sha256": "6dd80cc87b0f61637e526693be9cd568b0978af6d63635852fca236dbea22876"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2025_E1_ALL_6dd80cc87b0f61637e526693be9cd568b0978af6d63635852fca236dbea22876.webp",
+      "bytes": 41790,
+      "sha256": "6dd80cc87b0f61637e526693be9cd568b0978af6d63635852fca236dbea22876"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2025_E1_D3.webp",
+      "bytes": 41790,
+      "sha256": "6dd80cc87b0f61637e526693be9cd568b0978af6d63635852fca236dbea22876"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2025_E1_D3_6dd80cc87b0f61637e526693be9cd568b0978af6d63635852fca236dbea22876.webp",
+      "bytes": 41790,
+      "sha256": "6dd80cc87b0f61637e526693be9cd568b0978af6d63635852fca236dbea22876"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2025_E1_FLAGS.webp",
+      "bytes": 1006,
+      "sha256": "51ed5338cca693a585d3c59a1a6a3c46957fa8bcbbf706bd5684405b7bea4e46"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2025_E1_FLAGS_51ed5338cca693a585d3c59a1a6a3c46957fa8bcbbf706bd5684405b7bea4e46.webp",
+      "bytes": 1006,
+      "sha256": "51ed5338cca693a585d3c59a1a6a3c46957fa8bcbbf706bd5684405b7bea4e46"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2026_E1_ALL.webp",
+      "bytes": 41390,
+      "sha256": "cdf95f7094ccd4b8e3ecf36607581d6b152e76936631a42f1df92f651f496ac8"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2026_E1_ALL_cdf95f7094ccd4b8e3ecf36607581d6b152e76936631a42f1df92f651f496ac8.webp",
+      "bytes": 41390,
+      "sha256": "cdf95f7094ccd4b8e3ecf36607581d6b152e76936631a42f1df92f651f496ac8"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2026_E1_D3.webp",
+      "bytes": 41390,
+      "sha256": "cdf95f7094ccd4b8e3ecf36607581d6b152e76936631a42f1df92f651f496ac8"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2026_E1_D3_cdf95f7094ccd4b8e3ecf36607581d6b152e76936631a42f1df92f651f496ac8.webp",
+      "bytes": 41390,
+      "sha256": "cdf95f7094ccd4b8e3ecf36607581d6b152e76936631a42f1df92f651f496ac8"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2026_E1_FLAGS.webp",
+      "bytes": 1124,
+      "sha256": "783613302b48de1eb40ff46f46ae9623f2674a40ad1f6fbda2d4c18465ce6a24"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\2026_E1_FLAGS_783613302b48de1eb40ff46f46ae9623f2674a40ad1f6fbda2d4c18465ce6a24.webp",
+      "bytes": 1124,
+      "sha256": "783613302b48de1eb40ff46f46ae9623f2674a40ad1f6fbda2d4c18465ce6a24"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\diff_2026_E1_minus_2025_E1_ALL.webp",
+      "bytes": 26076,
+      "sha256": "2dcae1fea7ab9f7eb426a5a89aef8b2c36359d4dfabab870fc25d6736a5c7998"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\diff_2026_E1_minus_2025_E1_ALL_2dcae1fea7ab9f7eb426a5a89aef8b2c36359d4dfabab870fc25d6736a5c7998.webp",
+      "bytes": 26076,
+      "sha256": "2dcae1fea7ab9f7eb426a5a89aef8b2c36359d4dfabab870fc25d6736a5c7998"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\diff_2026_E1_minus_2025_E1_D3.webp",
+      "bytes": 26076,
+      "sha256": "2dcae1fea7ab9f7eb426a5a89aef8b2c36359d4dfabab870fc25d6736a5c7998"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\wise-pair-attempt1\\cache\\live\\research_cloud_wise\\diff_2026_E1_minus_2025_E1_D3_2dcae1fea7ab9f7eb426a5a89aef8b2c36359d4dfabab870fc25d6736a5c7998.webp",
+      "bytes": 26076,
+      "sha256": "2dcae1fea7ab9f7eb426a5a89aef8b2c36359d4dfabab870fc25d6736a5c7998"
+    }
+  ],
+  "report_sha256": "b50c18fe25a1ed73c5bfcb57dc7d27224bd4b157b7e623757b31ccc04e0fa884",
+  "research_manifest_sha256": "98680d062e4338d54bc5973b06f60ca73b606b1d5372f4869849f9b3ba5e044c",
+  "scope": "One detector, two WISE-field epochs; not target detection or astrophysical validation"
+}

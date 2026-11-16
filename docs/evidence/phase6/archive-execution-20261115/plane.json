@@ -1,0 +1,14 @@
+{
+  "name": "plane",
+  "requested_at": "2026-11-15T22:10:50.215473+00:00",
+  "url": "https://irsa.ipac.caltech.edu/TAP/sync?QUERY=SELECT+TOP+1+planeid+FROM+spherex.plane&FORMAT=votable&MAXREC=1",
+  "status": 502,
+  "bytes": 341,
+  "sha256": "6c5cbf315d1e65021bda341d39f2f9126b1e63d3099d07c315894bd11add085b",
+  "headers": {
+    "server": "nginx",
+    "date": "Sun, 15 Nov 2026 22:10:51 GMT",
+    "content-type": "text/html; charset=iso-8859-1"
+  },
+  "elapsed_seconds": 1.015
+}

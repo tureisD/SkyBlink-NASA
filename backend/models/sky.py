@@ -28,12 +28,14 @@ class SkyQuery(APIModel):
     bands: str = "all"
     include_diff: bool = True
     source: Literal["archive", "saved"] = "archive"
-    discovery: Literal["live", "known"] = "live"
+    discovery: Literal["live", "known", "indexed"] = "live"
 
     @model_validator(mode="after")
     def _validate_discovery_scope(self) -> "SkyQuery":
         if self.discovery == "known" and (self.source != "archive" or self.target_id is None):
             raise ValueError("known discovery requires source=archive and a catalog target_id")
+        if self.discovery == "indexed" and self.source != "archive":
+            raise ValueError("indexed discovery requires source=archive")
         return self
 
     @field_validator("size", mode="before")
@@ -190,7 +192,7 @@ class SkyProvenance(APIModel):
     analysis_record_url: str | None = None
     processing_version: str | None = None
     data_access: Literal["archive", "saved"] | None = None
-    discovery_mode: Literal["live", "known"] | None = None
+    discovery_mode: Literal["live", "known", "indexed"] | None = None
     comparison_status: Literal["matched_visual", "single_epoch", "unmatched_single_epoch", "legacy_unvalidated"] | None = None
     comparison_reason: str | None = None
     discovery_status: Literal["complete", "partial", "unknown"] = "unknown"

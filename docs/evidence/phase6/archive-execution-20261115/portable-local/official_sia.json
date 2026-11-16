@@ -1,0 +1,10 @@
+{
+  "name": "official_sia",
+  "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_dr1&POS=circle+127.69444+-39.17760+0.01&RESPONSEFORMAT=HTML",
+  "requested_at": "2026-11-15T22:13:01.313067+00:00",
+  "socket_timeout_seconds": 10.0,
+  "exception": "TimeoutError",
+  "message": "The read operation timed out",
+  "science_query_success": false,
+  "elapsed_seconds": 10.454
+}

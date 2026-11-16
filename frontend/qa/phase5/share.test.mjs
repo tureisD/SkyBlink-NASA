@@ -92,6 +92,18 @@ const [realB, realA] = realPair.split("_minus_");
 
 assert.equal(urls.parseUrl("").state.mode, "still");
 assert.equal(urls.parseUrl("").state.discovery, "live");
+const indexedState = urls.parseUrl("?source=archive&ra=286.00128674&dec=43.70488424&discovery=indexed").state;
+assert.equal(indexedState.discovery, "indexed");
+assert.equal(urls.parseUrl(urls.serialise(indexedState)).state.discovery, "indexed");
+assert.equal(urls.parseUrl("?source=saved&target=wise_0855&discovery=indexed").state.discovery, "live");
+assert.doesNotThrow(() => api.assertDiscoveryMode("indexed", "indexed", "archive"));
+for (const actual of [undefined, null, "live", "known"]) assert.throws(() => api.assertDiscoveryMode(actual, "indexed", "archive"));
+assert.match(semantics.discoveryNotice({ discovery_mode: "indexed", discovery_status: "partial" }), /limited spatial index/);
+assert.equal(recovery.comparisonRecovery(null, "partial", "indexed").title, "Limited archive index");
+for (const build of [api.buildSkyUrl, api.buildSpectrumUrl]) {
+  const url = build({ source: "archive", target: null, ra: 286, dec: 43, size: .2, discovery: "indexed" });
+  assert.equal(new URL(url, "https://example.invalid").searchParams.get("discovery"), "indexed");
+}
 const knownState = urls.parseUrl("?source=archive&target=wise_0855&discovery=known").state;
 assert.equal(knownState.discovery, "known");
 assert.equal(urls.parseUrl(urls.serialise(knownState)).state.discovery, "known");

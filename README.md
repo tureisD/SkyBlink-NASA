@@ -24,6 +24,7 @@ The project brings image comparison, spectrum inspection and traceable evidence 
 | Source | What happens | Supported fields |
 |---|---|---|
 | **Online archive — fresh search** | Queries current archive metadata, downloads selected FITS cutouts and runs the processing checks. This is the default. | Catalog targets and arbitrary coordinates; depends on upstream discovery. |
+| **Online archive - indexed coverage** | Searches a reviewed spatial metadata subset and downloads FITS inputs afresh. Coverage is explicitly partial. | Coordinates inside the indexed exposure footprints, including catalog fields; a usable image or pair is not guaranteed. |
 | **Known exposures — fresh downloads** | Uses a bounded, previously verified exposure list and downloads the FITS inputs again. It does not discover newer coverage. | The five catalog targets only. |
 | **Saved catalog data** | Loads historical real products shipped with the repository. Their comparisons remain labeled unvalidated. | The five catalog targets only; no archive acquisition required. |
 
@@ -64,6 +65,24 @@ This is a completed response with unsupported measurements, not a network failur
 - **Accessible navigation:** paused initial views, manual comparison, visible keyboard focus, responsive panels and reduced-motion support. Blink playback is capped at 8 FPS; that cap is not a photosensitivity safety certification.
 
 ## Current status
+
+**November 16: API 1.7.0 / method 13.** The new frontend and indexed archive
+mode run locally in `.cache/archive-frontend-integration`.
+[Open WISE online](http://127.0.0.1:5174/?target=wise_0855&source=archive&discovery=indexed)
+or choose **Online archive - indexed coverage**. Actual requests returned paired
+images for WISE 0855, Barnard's Star and R Draconis, one epoch for RW Aurigae,
+and no usable completed image for Epsilon Indi B. A non-catalog indexed position
+and the WISE spectrum also fetched successfully. The 5,223-exposure index is
+limited; original live TAP/SIA search remains unavailable and downloads can fail.
+
+Final checks: 313 backend tests passed, 19 skipped; frontend build, source/view
+semantics, real-data packaging and the real Chromium WISE comparison/spectrum
+flow passed. [Verification and remaining limitations](docs/current-limitations-and-next-steps.md).
+Integration branch: `integration/archive-and-frontend-20261116`; not merged into
+`main`. Older measurements below retain their
+historical scope and describe the earlier styling.
+
+### Previous checkpoint
 
 **Checkpoint: 15 November 2026. API 1.6.0; image method/cache revision 13.**
 

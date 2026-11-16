@@ -1,0 +1,10 @@
+{
+  "name": "obscore",
+  "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+TOP+1+obs_id%2Caccess_url+FROM+spherex.obscore&FORMAT=votable&MAXREC=1",
+  "requested_at": "2026-11-15T22:12:51.061608+00:00",
+  "socket_timeout_seconds": 10.0,
+  "exception": "URLError",
+  "message": "<urlopen error _ssl.c:989: The handshake operation timed out>",
+  "science_query_success": false,
+  "elapsed_seconds": 10.25
+}

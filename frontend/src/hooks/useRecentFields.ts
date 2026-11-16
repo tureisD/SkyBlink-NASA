@@ -8,7 +8,7 @@ export interface RecentField {
   size: number;
   target: string | null;
   source: DataAccess;
-  discovery: "live" | "known";
+  discovery: "live" | "known" | "indexed";
   spectrumDiscovery: "inherit" | "known";
   name: string;
 }
@@ -43,6 +43,7 @@ function readRecent(): RecentField[] {
           (entry.source !== "saved" || entry.target !== null) &&
           (entry.discovery === undefined ||
             entry.discovery === "live" ||
+            (entry.discovery === "indexed" && entry.source === "archive") ||
             (entry.discovery === "known" &&
               entry.source === "archive" &&
               entry.target !== null)) &&

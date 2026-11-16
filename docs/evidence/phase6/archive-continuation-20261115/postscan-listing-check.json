@@ -1,0 +1,17 @@
+{
+  "same_keys_etags_sizes": true,
+  "objects": 1718,
+  "seconds": 1.844,
+  "pages": [
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\qr3-d1\\postscan-list-0.xml",
+      "sha256": "8127c1a72601383b80f086c490d6c37ea73cdd5c714e84102f75672103135c2e"
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\qr3-d1\\postscan-list-1.xml",
+      "sha256": "a9d5a740d7cb6a4b8b76f11cd1a188b311c08ab582a55a9bd8bc46e8fbc03efa"
+    }
+  ],
+  "scope": "qr3/level2/2026W40_2A/l2b-v27-2026-285/1/",
+  "meaning": "No difference between listing views; not a transactional or future completeness guarantee"
+}

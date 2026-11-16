@@ -1,0 +1,174 @@
+{
+  "research_only": true,
+  "promotion_eligible": false,
+  "script_sha256": "5a35f653c9256d5e5c262b35cf2512a6838d4e3c66260043e556ed1527890e35",
+  "ra": 133.76021647484097,
+  "dec": -7.242224282436729,
+  "deadline_seconds": 120,
+  "status": "built",
+  "epochs": 2,
+  "comparison": {
+    "status": "matched_visual",
+    "reason": null,
+    "validated_field_size_deg": 0.2,
+    "validated_output_pixels": 54756,
+    "method": "dense_output_field_wavelength_and_bandwidth",
+    "centre_tolerance_narrower_bandwidth_fraction": 0.25,
+    "minimum_bandwidth_ratio": 0.8,
+    "maximum_within_epoch_span_days": 30,
+    "visits_per_band_epoch": 1,
+    "science_calibration": "WCS-WAVE visual approximation; CWAVE/CBAND validation separate"
+  },
+  "difference_keys": [
+    "2026_E1_minus_2025_E1"
+  ],
+  "provenance": {
+    "source": "NASA/IPAC IRSA SPHEREx DR1",
+    "collection": "spherex_dr1",
+    "release": "DR1",
+    "zodi_subtracted": true,
+    "background_subtracted": true,
+    "flux_normalization": {
+      "method": "static_source_p99_5",
+      "scope": "per_band_across_epochs",
+      "reference_epoch": "2025_E1",
+      "applied": true,
+      "status": "ok",
+      "clamped": false,
+      "raw_stats_location": "server_only"
+    },
+    "is_simulated_fallback": false,
+    "citation": "SPHEREx Quick Release (JPL/Caltech/IRSA)",
+    "comparison_status": "matched_visual",
+    "comparison_reason": null,
+    "discovery_status": "partial",
+    "discovery_mode": "live",
+    "missing_collections": [],
+    "generated_at": "2026-11-15T23:30:39.581152+00:00",
+    "analysis_id": "sha256:8192c415c1651d0d7159754d74503315f560ec808f5926aac70b9da389a9de4c",
+    "analysis_record_url": "/api/v1/assets/research_cloud_wise/analysis_8192c415c1651d0d7159754d74503315f560ec808f5926aac70b9da389a9de4c.json",
+    "processing_version": "matched_image_comparison/13"
+  },
+  "live_selection": {
+    "download_size_deg": 0.28625937914128574,
+    "missing_candidate_cutouts": 0,
+    "candidate_epoch_ids": [
+      "2025_E1",
+      "2026_E1"
+    ],
+    "candidate_visits_per_band": 3,
+    "method": "spectral_wcs_dense_field_quarter_bandwidth",
+    "exhaustive_visit_search": false,
+    "acquisition_policy": "comparison_first_with_bounded_completion",
+    "completion_retry_pair_limit": 2,
+    "maximum_attempts_per_candidate": 2,
+    "completion_retry_window_seconds": 30,
+    "candidate_pair_limit": 24,
+    "candidate_pair_ranks": [
+      {
+        "rank": 1,
+        "first_uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_1D3_spx_l2b-v27-2026-197.fits",
+        "second_uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0033_1D3_spx_l2b-v27-2026-246.fits",
+        "ranking_method": "recorded_footprint_neighbor_shortlist",
+        "corner_chord_distance": 1.2966873678103396e-05
+      },
+      {
+        "rank": 2,
+        "first_uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_2D3_spx_l2b-v27-2026-197.fits",
+        "second_uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0033_1D3_spx_l2b-v27-2026-246.fits",
+        "ranking_method": "recorded_footprint_neighbor_shortlist",
+        "corner_chord_distance": 0.003436871038210557
+      },
+      {
+        "rank": 3,
+        "first_uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0138_1D3_spx_l2b-v27-2026-197.fits",
+        "second_uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0033_1D3_spx_l2b-v27-2026-246.fits",
+        "ranking_method": "recorded_footprint_neighbor_shortlist",
+        "corner_chord_distance": 0.010255142402397274
+      }
+    ],
+    "retrieval_rounds": [
+      {
+        "phase": "ranked_search",
+        "rank_start": 1,
+        "requested_uris": [
+          "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_1D3_spx_l2b-v27-2026-197.fits",
+          "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0033_1D3_spx_l2b-v27-2026-246.fits",
+          "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_2D3_spx_l2b-v27-2026-197.fits"
+        ],
+        "downloaded_uris": [
+          "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_1D3_spx_l2b-v27-2026-197.fits",
+          "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0033_1D3_spx_l2b-v27-2026-246.fits",
+          "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_2D3_spx_l2b-v27-2026-197.fits"
+        ],
+        "missing_uris": [],
+        "outcome": "matched_visual"
+      }
+    ]
+  },
+  "seconds": 30.015,
+  "discovery": {
+    "status": "partial",
+    "method": "research_aws_header_snapshot",
+    "mode": "research_cloud",
+    "query": {
+      "ra": 133.76021647484097,
+      "dec": -7.242224282436729
+    },
+    "scopes": [
+      {
+        "prefix": "dr1/level2/2025W19_1B/l2b-v27-2026-197/3/",
+        "snapshot_sha256": "a8d6dd53060875588a1e43402947291952179f18375f9b1da6c6b0be0ceb2f06",
+        "index_sha256": "de17b46a995d7fc134bc56f832166886235d56edb121d65bc721b4e8ddcc5a06",
+        "indexed_objects": 1812,
+        "headers_complete": true,
+        "started_at": "2026-11-15T23:22:59.112994+00:00",
+        "finished_at": "2026-11-15T23:25:43.626567+00:00"
+      },
+      {
+        "prefix": "dr1/level2/2026W20_1A/l2b-v27-2026-246/3/",
+        "snapshot_sha256": "072befe6842c021f2e6ca027ff522a6dc3a936c1a64071ad94eb119b4c8155a1",
+        "index_sha256": "d7879e8d858e3b450fa953a68eed130b3e6274859c612f19b0e216ecd2ede59e",
+        "indexed_objects": 1672,
+        "headers_complete": true,
+        "started_at": "2026-11-15T23:23:22.080848+00:00",
+        "finished_at": "2026-11-15T23:27:43.884948+00:00"
+      }
+    ],
+    "record_count": 4,
+    "responses": [],
+    "completeness_scope": "Only enumerated detector/period prefixes; archive coverage unknown",
+    "collection_membership": "wide/deep unknown; not inferred",
+    "period_selection": "Historical WISE coverage hints; fresh listing and header discovery",
+    "all_archive_complete": false
+  },
+  "acquisition": [
+    {
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_1D3_spx_l2b-v27-2026-197.fits?center=133.760216,-7.242224&size=0.286259",
+      "sha256": "b8735a287e84e6ca9ed537ff5880bf74dbfe0472878608b88b41659767f222e1",
+      "size_bytes": 4475520,
+      "retrieved_at": "2026-11-15T23:30:18.328009+00:00",
+      "from_cache": false,
+      "outcome": "fresh_archive_response",
+      "proxy_revalidation_requested": true
+    },
+    {
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0033_1D3_spx_l2b-v27-2026-246.fits?center=133.760216,-7.242224&size=0.286259",
+      "sha256": "82c93649cc19311fd634640b924b7ad6f2574fcc7ed7eda441230c58062e1604",
+      "size_bytes": 4475520,
+      "retrieved_at": "2026-11-15T23:30:22.194567+00:00",
+      "from_cache": false,
+      "outcome": "fresh_archive_response",
+      "proxy_revalidation_requested": true
+    },
+    {
+      "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_2D3_spx_l2b-v27-2026-197.fits?center=133.760216,-7.242224&size=0.286259",
+      "sha256": "240e40dc2d823f7463cbeeaf71529eac2526262749097580c7cde25975f655d7",
+      "size_bytes": 4371840,
+      "retrieved_at": "2026-11-15T23:30:21.295696+00:00",
+      "from_cache": false,
+      "outcome": "fresh_archive_response",
+      "proxy_revalidation_requested": true
+    }
+  ]
+}

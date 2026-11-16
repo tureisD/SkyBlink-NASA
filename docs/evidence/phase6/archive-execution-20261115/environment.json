@@ -1,0 +1,10 @@
+{
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.11.9",
+  "httpx": "0.28.1",
+  "proxy_variable_names_present": [],
+  "system_proxy_schemes": [],
+  "irsa_addresses": [
+    "134.4.54.42"
+  ]
+}

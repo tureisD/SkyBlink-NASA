@@ -1,0 +1,31 @@
+{
+  "prefix": "qr3/",
+  "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/?list-type=2&delimiter=%2F&prefix=qr3%2F&max-keys=1000",
+  "status": 200,
+  "elapsed_seconds": 0.765,
+  "sha256": "994474a6a2e3a447f96ac528a84aa1f76752df2fd66434440cc0fe9689297afd",
+  "truncated": "false",
+  "prefixes": [
+    "qr3/abs_gain_matrix/",
+    "qr3/aurora_template/",
+    "qr3/dark/",
+    "qr3/dichroic/",
+    "qr3/epsf/",
+    "qr3/gain_factors/",
+    "qr3/he_template/",
+    "qr3/l3_flux_corrections/",
+    "qr3/level2/",
+    "qr3/nonfunc_v2/",
+    "qr3/nonlinear_pars/",
+    "qr3/readnoise_pars/",
+    "qr3/shuttle_glow_template/",
+    "qr3/sip/",
+    "qr3/solid_angle_pixel_map/",
+    "qr3/spectral_channels/",
+    "qr3/spectral_wcs/",
+    "qr3/xtalk_class1/",
+    "qr3/xtalk_class2/",
+    "qr3/zodi_scaling_v2/"
+  ],
+  "objects": []
+}

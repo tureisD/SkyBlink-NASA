@@ -16,7 +16,7 @@ import type { LiveSource } from "../lib/api";
 
 export interface SkyRequestState {
   source: LiveSource;
-  discovery?: "live" | "known";
+  discovery?: "live" | "known" | "indexed";
   ra: number;
   dec: number;
   target: string | null;

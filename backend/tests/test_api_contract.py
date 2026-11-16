@@ -135,7 +135,7 @@ TARGET_KEYS = {
 # ---------------------------------------------------------------------------
 def test_contract_version_1_2_0_is_frozen() -> None:
     """1.2.0 adds the DR1/QR3 data values; no 1.0.0/1.1.0 field changed."""
-    assert API_CONTRACT_VERSION == "1.6.0"
+    assert API_CONTRACT_VERSION == "1.7.0"
 
 
 def test_sky_response_field_sets_are_exact() -> None:

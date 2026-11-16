@@ -1,0 +1,78 @@
+{
+  "prefix": "qr3/level2/2026W40_2A/",
+  "page_limit": 20,
+  "pages": [
+    {
+      "page": 0,
+      "rows": 1000,
+      "sha256": "b355eee4146f0d0e3d3e6383c864dd2c8948c1e256504287bf3654665763eef2",
+      "truncated": "true"
+    },
+    {
+      "page": 1,
+      "rows": 1000,
+      "sha256": "61e98dc340543ee9301219e4c339d411e2b496b970c44ef433e5f1a7a71c8cff",
+      "truncated": "true"
+    },
+    {
+      "page": 2,
+      "rows": 1000,
+      "sha256": "da0dbcd677e99eb5ff8dea93db15a23f7d3cc566e35890f3071027a42f06ba7f",
+      "truncated": "true"
+    },
+    {
+      "page": 3,
+      "rows": 1000,
+      "sha256": "b72efd25973e6835d086da904bd5b5ab811d1d1bb8ea35099601fe791fd560cd",
+      "truncated": "true"
+    },
+    {
+      "page": 4,
+      "rows": 1000,
+      "sha256": "88221bf426c4d1603b3cf33df293e3d1882217d6701c8e7ad627ac07f2d0b1c1",
+      "truncated": "true"
+    },
+    {
+      "page": 5,
+      "rows": 1000,
+      "sha256": "b5f23d10d533fe72db01c4ddc73290a96c72254079d905fe6ad640d1299e97fa",
+      "truncated": "true"
+    },
+    {
+      "page": 6,
+      "rows": 1000,
+      "sha256": "15c986f2fb96e783f94c1a3d31f84fd7676d16ee6011b570574f3dd9e1388287",
+      "truncated": "true"
+    },
+    {
+      "page": 7,
+      "rows": 1000,
+      "sha256": "5ef652aa891514f3fbe2d9eb06259fb6d0b699d208336a1558e22b088ac9a44b",
+      "truncated": "true"
+    },
+    {
+      "page": 8,
+      "rows": 1000,
+      "sha256": "c8df86525521f3742e5ab1c29e5dd1f6bce3bd067b590750d3347c578eaa6a6a",
+      "truncated": "true"
+    },
+    {
+      "page": 9,
+      "rows": 1000,
+      "sha256": "21adcc390e775089f2b054ecb77cf1ede881687bb718bc4a21e356f1f1264b91",
+      "truncated": "true"
+    },
+    {
+      "page": 10,
+      "rows": 352,
+      "sha256": "4aacd3be33a9bcdbba1659343a35710b9af9af051766915bf91322351bb01ab3",
+      "truncated": "false"
+    }
+  ],
+  "objects": 10352,
+  "total_file_bytes": 672703073280,
+  "complete_listing": true,
+  "elapsed_seconds": 4.578,
+  "raw_pages_directory": "backend\\.cache\\archive-index-feasibility",
+  "scope": "one planning period; not all archive coverage"
+}

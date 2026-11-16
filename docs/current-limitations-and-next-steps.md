@@ -2,6 +2,88 @@
 
 [Documentation home](README.md) · [Implementation plan](audit-and-remediation-plan-2026-11-14.md)
 
+## Current repair: indexed online acquisition is integrated (November 16)
+
+The new frontend and API **1.7.0** now support **Data source -> Online archive -
+indexed coverage**. Open the local [WISE online comparison](http://127.0.0.1:5174/?target=wise_0855&source=archive&discovery=indexed).
+The landing page also links to this explicit recovery choice. This searches a
+reviewed spatial metadata index and downloads real FITS inputs afresh; it does
+not load saved observation products. Image method 13 and scientific gates are unchanged.
+
+Measured through the actual frontend proxy: **WISE 0855, Barnard's Star and
+R Draconis returned two compatible epochs**. RW Aurigae returned one usable
+epoch with incomplete partner downloads. Epsilon Indi B did not yield a usable
+image: completed detector-2 inputs lack supported local background and other
+inputs failed to complete. These are field-image results, not proof of target
+detection or astrophysical variability. See the [runtime verification](verification/archive-recovery-execution-2026-11-15.md).
+
+The index contains **5,223 exposure headers**, from three bounded directory scans
+plus 21 fresh header reads at historically recorded addresses. It permits
+coordinate searches within those footprints, but is neither all-sky nor a
+complete current inventory. A miss explicitly means unknown coverage. Every
+result carries the indexed mode, partial discovery status, index identity and
+fresh-input lineage; source choices never change silently. The
+[API decision](decisions/indexed-archive-contract-decision.md) records this scope.
+
+**Still unresolved:** IRSA TAP/SIA live discovery and intermittent busy/incomplete
+cutout transfers. The original **Online archive - fresh search** remains a
+separate default choice and can still fail. Earlier attempts changed timeouts,
+transports or pair downloads without providing a working spatial discovery
+source; the first successful independent-index experiment was also outside the
+app. This repair connects that separate metadata path to the real application.
+
+**Next steps:** expand independently listed detector/period coverage around
+unserved fields, preserve complete-enumeration receipts for each added scope,
+and approve a new index hash only after footprint and fresh-download checks.
+Seek an official bulk spatial manifest or restored TAP/SIA before claiming
+all-sky/current discovery. Keep acquisition failures distinct from quality
+rejections. No second-network test or current container/public-host acceptance
+is claimed. The integrated work remains on the local integration branch; it
+uses `integration/archive-and-frontend-20261116` for GitHub delivery and has not
+been merged into `main`.
+
+## Earlier investigation checkpoints (historical)
+
+The following entries describe earlier states, including research-only results;
+the integrated status above supersedes their next-step and runtime statements.
+
+**Two-epoch recovery test (November 16 local):** the independent AWS index
+now feeds the unchanged processing pipeline successfully: **two real WISE-field
+epochs and a difference product in 30 seconds**, using fresh cutout downloads.
+The targeted scan indexed 3,484 detector-3 exposures and discovered four
+candidates. This is an isolated research result, not an integrated app mode or
+proof of WISE target detection. Both local development servers were restarted;
+TAP still times out. See [results and integration requirements](verification/archive-recovery-execution-2026-11-15.md).
+
+**Independent search prototype (November 15 UTC / November 16 local):**
+[the continuation results](verification/archive-recovery-execution-2026-11-15.md)
+now include a working AWS-header coordinate index: 1,718 real exposures indexed
+in 149 seconds, with seven accelerated searches matching exhaustive WCS results.
+The positive control found eight exposures and a fresh 4.17 MB FITS cutout
+was downloaded from one result. This one detector/period contains
+none of the five catalog positions. Default archive search is **still unresolved**:
+TAP/SIA fail, and the research index is not integrated into the app. The next
+index milestone is measured multi-period/multi-detector coverage and a real
+comparison through the unchanged scientific gates.
+
+**New working metadata route (2026-11-15):** the documented IRSA Moving Object Search Tool (MOST) returned **66 SPHEREx observations** for Neptune during June 2025, including DR1 file paths, observation bounds and footprints. A returned DR1 file served a real FITS header range. This revises the broader suggestion that no current science-metadata route works. MOST searches solar-system trajectories; it has not restored fixed-coordinate discovery for our catalog targets. See the [resource recheck](research/challenge-data-sources-recheck-2026-11-15.md).
+
+**Challenge-resource recheck (2026-11-15):** [provider review and measured downloads](research/challenge-data-sources-recheck-2026-11-15.md) found useful additional routes: direct SPHEREx spectral-cube tile access, an official static 3I/ATLAS observation list (259 legacy QR2 rows), and working independent unWISE W1/W2 cutouts. These enable separately labeled context or curated examples; none establishes restored arbitrary-coordinate SPHEREx temporal discovery. The challenge page itself could not be freshly retrieved, so the eight-link inventory remains grounded in the recorded November 13 check.
+
+**Execution follow-up (2026-11-15):** [recovery execution and measured index feasibility](verification/archive-recovery-execution-2026-11-15.md) records the completed next steps. Native curl and the portable Python probe still reproduce discovery failures. The actual frontend proxy reaches API 1.6.0. No second machine is available, so independent-network verification remains open. An [IRSA incident draft](verification/irsa-incident-draft-2026-11-15.md) and [portable probe](research/archive-recovery/README.md) are prepared. AWS-only listing/header experiments recovered time and spatial metadata across both releases and all six detectors; a complete sample period contains 10,352 objects. This makes an independent index technically plausible, but no complete index or runtime search replacement has been built. **Default discovery remains unresolved.**
+
+**Latest investigation — 2026-11-15, 22:04–22:06 UTC:** see the
+[concrete archive recovery plan](plans/archive-recovery-plan-2026-11-15.md)
+for the failure history, fresh probes, decision gates, owners and acceptance
+criteria. Availability, schema, a non-SPHEREx catalog, ObsCore and the official
+SIA example now return matching 502 proxy errors; one plane query times out.
+Static documentation and a small AWS FITS range remain accessible. The local
+API was also stopped; it has been started with API 1.6.0 / method 13. A fresh
+default WISE request still returned 503 after 62.203 seconds. Search is **not
+restored**. The next diagnostic is a controlled second-network comparison,
+followed by service escalation or a demonstrated query/transport repair.
+Earlier availability successes below describe their own recorded time windows.
+
 **Renewed search attempt:** the official Explorer also reports TAP inaccessible;
 its server-side search proxy returns a 502 error. Documented async GET, multipart
 POST and the separate ObsCore table did not return science rows. Public cloud
@@ -9,7 +91,7 @@ listing works but exposes no independent coordinate index at the root/release
 levels inspected. No working replacement for fresh discovery was established.
 See [the renewed investigation](verification/phase6-archive-search-renewed.md).
 
-## Active issue: default archive search — 2026-11-15 follow-up
+## Historical diagnosis: default archive search — 2026-11-15 follow-up
 
 **Default live search is currently failing in this environment; it is not a
 completed reliability fix.** Direct SIA requests failed outside SkyBlink using

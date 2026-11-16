@@ -671,7 +671,8 @@ def epoch_collection_release(epoch: EpochBucket) -> tuple[str, str]:
         return "spherex", "unknown"
     if len(releases) == 1:
         release = next(iter(releases))
-        return (f"spherex_{release.lower()}", release)
+        collection_prefix = "indexed" if all(r.collection.startswith("indexed_") for r in epoch.records) else "spherex"
+        return (f"{collection_prefix}_{release.lower()}", release)
     return "mixed", mixed_release_label(releases)
 
 
@@ -1408,7 +1409,8 @@ def _top_level_provenance(
         if release in {"QR2+QR3", "DR1+QR3"}:
             collection = "mixed"
         else:
-            collection = f"spherex_{release.lower()}"
+            prefix = "indexed" if all(str(e.get("collection", "")).startswith("indexed_") for e in epochs_payload) else "spherex"
+            collection = f"{prefix}_{release.lower()}"
     else:
         release = mixed_release_label(releases)
         collection = "mixed"
@@ -2012,8 +2014,12 @@ def _build_manifest(
     SIA fallback, downloads and processing share a remaining deadline.
     """
     started = time.monotonic()
-    if discovery_mode not in {"live", "known"}:
+    if discovery_mode not in {"live", "known", "indexed"}:
         raise ValueError("Unknown discovery mode")
+    if discovery_mode == "indexed":
+        if not live_mode:
+            raise ValueError("Indexed discovery requires an explicit online request")
+        force_refresh = True
     if discovery_mode == "known":
         if not live_mode or not target_id:
             raise ValueError("Known discovery requires an explicit live catalog request")
@@ -2054,9 +2060,12 @@ def _build_manifest(
     if discovery_mode == "known":
         from services.known_exposures import KnownExposureClient
         client = KnownExposureClient(client.settings, target_id=target_id, deadline_at=deadline_at)
+    if discovery_mode == "indexed":
+        from services.indexed_archive import IndexedArchiveClient
+        client = IndexedArchiveClient(client.settings, deadline_at=deadline_at)
     if archive_client is not None:
-        if discovery_mode == "known":
-            raise ValueError("Known discovery cannot substitute a caller-provided inventory")
+        if discovery_mode in {"known", "indexed"}:
+            raise ValueError("Explicit indexed discovery cannot substitute a caller-provided inventory")
         client = archive_client
     records = client.query_artifacts(
         float(ra),

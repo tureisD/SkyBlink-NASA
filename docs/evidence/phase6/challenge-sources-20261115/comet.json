@@ -1,0 +1,17 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/comet3iatlas/index.html",
+  "status": 200,
+  "sha256": "8641f47ec981c39a18e929ecaa1552a8076529a1f52822b2bd9c8632f844e03c",
+  "links": [
+    "https://science.nasa.gov/solar-system/comets/3i-atlas/",
+    "https://irsa.ipac.caltech.edu/Missions/spherex.html",
+    "https://irsa.ipac.caltech.edu/irsaviewer/",
+    "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/cutout_tool.html",
+    "obscore_3I_Atlas.vot",
+    "3IATLASImages-wget.sh",
+    "3IATLASImages-curl.sh",
+    " https://ui.adsabs.harvard.edu/abs/2025RNAAS...9..242L/abstract",
+    "https://ui.adsabs.harvard.edu/abs/2025arXiv251207318L/abstract",
+    "https://ui.adsabs.harvard.edu/abs/2026arXiv260106759L/abstract"
+  ]
+}

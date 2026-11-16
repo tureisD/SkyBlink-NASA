@@ -9,7 +9,7 @@
 import type { SkyResponse, SpectrumResponse } from "./types";
 export type DataAccess = "archive" | "saved";
 export type LiveSource = DataAccess;
-export type DiscoveryMode = "live" | "known";
+export type DiscoveryMode = "live" | "known" | "indexed";
 
 const rawBase = import.meta.env.VITE_API_BASE?.trim() || "/api/v1";
 export const API_BASE = rawBase.replace(/\/+$/, "");
@@ -278,12 +278,13 @@ export function assertDiscoveryMode(
     actual !== undefined &&
     actual !== null &&
     actual !== "live" &&
-    actual !== "known"
+    actual !== "known" &&
+    actual !== "indexed"
   ) {
     throw new Error("Observation discovery mode is malformed.");
   }
   if (
-    (requested === "known" && (source !== "archive" || actual !== "known")) ||
+    (requested !== "live" && (source !== "archive" || actual !== requested)) ||
     (actual !== undefined && actual !== null && actual !== requested)
   ) {
     throw new Error(
@@ -300,7 +301,8 @@ function assertDiscoveryMetadata(provenance: {
   if (
     provenance.discovery_mode != null &&
     provenance.discovery_mode !== "live" &&
-    provenance.discovery_mode !== "known"
+    provenance.discovery_mode !== "known" &&
+    provenance.discovery_mode !== "indexed"
   )
     throw new Error("Observation discovery mode is malformed.");
   const status = provenance.discovery_status;

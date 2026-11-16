@@ -467,7 +467,7 @@ export default function App() {
       setWarningsHidden(false);
       update({
         source: "archive",
-        discovery: "live",
+        discovery: state.discovery === "indexed" ? "indexed" : "live",
         spectrumDiscovery: "inherit",
         analysis: null,
         pair: null,
@@ -490,11 +490,11 @@ export default function App() {
         diff: false,
       });
       setNotice(
-        "Fresh archive search selected for these coordinates. " +
+        (state.discovery === "indexed" ? "Limited indexed archive selected for these coordinates. " : "Fresh archive search selected for these coordinates. ") +
           ARBITRARY_COORDINATES_NOTICE,
       );
     },
-    [update],
+    [update, state.discovery],
   );
 
   const handleTarget = useCallback(
@@ -912,7 +912,7 @@ export default function App() {
             {state.source === "archive"
               ? state.discovery === "known"
                 ? "known exposures / fresh downloads (no new archive search)"
-                : "online archive / fresh search"
+                : state.discovery === "indexed" ? "indexed archive / fresh downloads (limited coverage)" : "online archive / fresh search"
               : "saved observations"}
           </p>
           <div role="status">
@@ -958,6 +958,12 @@ export default function App() {
                 </button>
               </section>
             )}
+          {sky.status === "error" && state.source === "archive" && state.discovery !== "indexed" && (
+            <section className="known-exposure-recovery" aria-label="Indexed archive recovery">
+              <p>Search unavailable? A limited spatial index can locate some exposures for fresh online downloads. Other coverage remains unknown.</p>
+              <button className="btn" onClick={() => handleSource("archive", "indexed")}>Try indexed archive online</button>
+            </section>
+          )}
           <div className="action-row">
             {sky.status === "loading" ? (
               <button className="btn" onClick={sky.cancel}>
@@ -1208,7 +1214,7 @@ export default function App() {
                 : manifest.provenance.data_access === "archive"
                   ? manifest.provenance.discovery_mode === "known"
                     ? "Known exposures / fresh downloads"
-                    : "Online archive observations"
+                    : manifest.provenance.discovery_mode === "indexed" ? "Indexed archive / fresh downloads" : "Online archive observations"
                   : "Data access unrecorded"}{" "}
               / {manifest.provenance.release}
             </p>
@@ -1276,6 +1282,7 @@ export default function App() {
                     : "epochs; comparison unvalidated"}
                 {manifest.provenance.discovery_mode === "known"
                   ? "; known exposure list"
+                  : manifest.provenance.discovery_mode === "indexed" ? "; limited spatial index"
                   : manifest.provenance.discovery_status === "partial"
                     ? "; archive search incomplete"
                     : ""}
@@ -1591,7 +1598,7 @@ export default function App() {
               <h2>
                 {manifest.provenance.discovery_mode === "known"
                   ? "Known exposure list"
-                  : "Observation notice"}
+                  : manifest.provenance.discovery_mode === "indexed" ? "Limited archive index" : "Observation notice"}
               </h2>
               <button
                 className="btn"
@@ -1712,7 +1719,7 @@ export default function App() {
                   {manifest.provenance.data_access === "archive"
                     ? manifest.provenance.discovery_mode === "known"
                       ? "Previously verified exposure list; images downloaded afresh. No new coverage search."
-                      : "Retrieved from the online archive."
+                      : manifest.provenance.discovery_mode === "indexed" ? "Fresh online downloads selected from a limited spatial index. Other coverage is unknown." : "Retrieved from the online archive."
                     : manifest.provenance.data_access === "saved"
                       ? "Saved real observations; archive not refreshed."
                       : "Access mode unrecorded."}

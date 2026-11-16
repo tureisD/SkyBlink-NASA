@@ -73,9 +73,9 @@ def _telemetry_path(url: str) -> Path:
 
 
 def test_contract_and_openapi_are_the_current_version() -> None:
-    assert API_CONTRACT_VERSION == "1.6.0"
+    assert API_CONTRACT_VERSION == "1.7.0"
     spec = _load_json(REPO_ROOT / "backend" / "openapi.json")
-    assert spec["info"]["version"] == "1.6.0"
+    assert spec["info"]["version"] == "1.7.0"
     schemas = spec["components"]["schemas"]
     for name in ("TelemetryAsset", "LVFGeometry", "DetectedCandidate"):
         assert name in schemas

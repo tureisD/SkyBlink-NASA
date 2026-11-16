@@ -1,0 +1,9 @@
+{
+  "name": "local_health",
+  "requested_at": "2026-11-15T22:04:22.808322+00:00",
+  "url": "http://127.0.0.1:8000/api/v1/health",
+  "timeout_seconds": 25,
+  "exception": "ConnectError",
+  "message": "[WinError 10061] No connection could be made because the target machine actively refused it",
+  "elapsed_seconds": 2.36
+}

@@ -1,0 +1,136 @@
+{
+  "scope": "qr3/level2/2026W40_2A/l2b-v27-2026-285/1/",
+  "all_archive_complete": false,
+  "enumeration_complete": true,
+  "headers_complete": true,
+  "started_at": "2026-11-15T22:56:59.851734+00:00",
+  "base_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/",
+  "script_sha256": "d97766c70645d212868a39a3caf7ed07774f1cfa025cb6174b7a3860ae21cb47",
+  "max_objects": 2000,
+  "workers": 4,
+  "listed_objects": 1718,
+  "finished_at": "2026-11-15T22:59:28.454042+00:00",
+  "elapsed_seconds": 148.61,
+  "range_bytes_received": 49478400,
+  "snapshot_path": "backend\\.cache\\archive-index-prototype\\qr3-d1\\snapshot.json",
+  "snapshot_sha256": "f813fc326eb55b1fc48f919d37fc9bcb37cd9da14685fe4c5116050283f51de8",
+  "header_failures": 0,
+  "queries": [
+    {
+      "name": "wise_0855",
+      "ra": 133.76021647484097,
+      "dec": -7.242224282436729,
+      "matches": 0,
+      "errors": 0,
+      "scope_complete": true,
+      "elapsed_seconds": 57.094,
+      "receipt": "backend\\.cache\\archive-index-prototype\\qr3-d1\\wise_0855-query.json",
+      "sha256": "0e21915fa66316e659e710b9395acd1857d2799631e0e595ccc8eaa7de47a8b8",
+      "first_matches": []
+    },
+    {
+      "name": "barnards_star",
+      "ra": 269.44631291911435,
+      "dec": 4.767629180929986,
+      "matches": 0,
+      "errors": 0,
+      "scope_complete": true,
+      "elapsed_seconds": 39.75,
+      "receipt": "backend\\.cache\\archive-index-prototype\\qr3-d1\\barnards_star-query.json",
+      "sha256": "c5425d67f1cea62f0e831f177500f5a1af09c8569626fb9cb8077ac3e42ed997",
+      "first_matches": []
+    },
+    {
+      "name": "eps_indi_b",
+      "ra": 331.0962496336297,
+      "dec": -56.80052585840758,
+      "matches": 0,
+      "errors": 0,
+      "scope_complete": true,
+      "elapsed_seconds": 41.531,
+      "receipt": "backend\\.cache\\archive-index-prototype\\qr3-d1\\eps_indi_b-query.json",
+      "sha256": "01913658fe3976747a121710c8da963e89fd6cde854f25f256c3630901ad3e4c",
+      "first_matches": []
+    },
+    {
+      "name": "rw_aurigae",
+      "ra": 76.95608953000796,
+      "dec": 30.401130005742516,
+      "matches": 0,
+      "errors": 0,
+      "scope_complete": true,
+      "elapsed_seconds": 40.516,
+      "receipt": "backend\\.cache\\archive-index-prototype\\qr3-d1\\rw_aurigae-query.json",
+      "sha256": "d1f4f7e48e96b8dd692671670b5b9e0bc4efb9d4f31b6de8fbd737ed08457b0e",
+      "first_matches": []
+    },
+    {
+      "name": "r_draconis",
+      "ra": 248.16723597981732,
+      "dec": 66.7550234840942,
+      "matches": 0,
+      "errors": 0,
+      "scope_complete": true,
+      "elapsed_seconds": 38.328,
+      "receipt": "backend\\.cache\\archive-index-prototype\\qr3-d1\\r_draconis-query.json",
+      "sha256": "2b76c7ecb8a7e37856bf8e67e4733ddd664bd1200bfc43fa5ce95dd48847b791",
+      "first_matches": []
+    },
+    {
+      "name": "header_center_control",
+      "ra": 286.0012867435891,
+      "dec": 43.70488424019806,
+      "matches": 8,
+      "errors": 0,
+      "scope_complete": true,
+      "elapsed_seconds": 41.156,
+      "receipt": "backend\\.cache\\archive-index-prototype\\qr3-d1\\header_center_control-query.json",
+      "sha256": "935116540aee5f91b245935ca9089345700b00b14251aeb1114002773ab6ac5c",
+      "first_matches": [
+        {
+          "key": "qr3/level2/2026W40_2A/l2b-v27-2026-285/1/level2_2026W40_2A_0001_1D1_spx_l2b-v27-2026-285.fits",
+          "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W40_2A/l2b-v27-2026-285/1/level2_2026W40_2A_0001_1D1_spx_l2b-v27-2026-285.fits",
+          "etag": "\"b3d2689e7bb71e43d85f6f7d76c7bd52\"",
+          "mjd_begin": 61314.506582095,
+          "mjd_end": 61314.507914473,
+          "detector": 1,
+          "header_sha256": "cc62219a93122f2594a18518529c3966c588aeb83c8038131d2f380d8dc185e7"
+        },
+        {
+          "key": "qr3/level2/2026W40_2A/l2b-v27-2026-285/1/level2_2026W40_2A_0001_2D1_spx_l2b-v27-2026-285.fits",
+          "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W40_2A/l2b-v27-2026-285/1/level2_2026W40_2A_0001_2D1_spx_l2b-v27-2026-285.fits",
+          "etag": "\"77513fd8fd8b0ed09a08e71e808a3831\"",
+          "mjd_begin": 61314.508074352,
+          "mjd_end": 61314.50940673,
+          "detector": 1,
+          "header_sha256": "44fa0b86272ef041956d942c964e4bbb24a04e633347868be380fd16b4f536d5"
+        },
+        {
+          "key": "qr3/level2/2026W40_2A/l2b-v27-2026-285/1/level2_2026W40_2A_0001_3D1_spx_l2b-v27-2026-285.fits",
+          "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W40_2A/l2b-v27-2026-285/1/level2_2026W40_2A_0001_3D1_spx_l2b-v27-2026-285.fits",
+          "etag": "\"f5106a8219e760bf303262233fc50a70\"",
+          "mjd_begin": 61314.509566609,
+          "mjd_end": 61314.510898987,
+          "detector": 1,
+          "header_sha256": "19b36844754a78573c8fe4f8553db0a268c5fd8b2fb9faf5410563a85c5594df"
+        }
+      ]
+    },
+    {
+      "name": "independent_position",
+      "ra": 10.0,
+      "dec": 20.0,
+      "matches": 0,
+      "errors": 0,
+      "scope_complete": true,
+      "elapsed_seconds": 37.797,
+      "receipt": "backend\\.cache\\archive-index-prototype\\qr3-d1\\independent_position-query.json",
+      "sha256": "1d74c9ef4d2f6f5c82155db8e56fec439321c570d5b1f6c4cd7f1c6b7c339b6a",
+      "first_matches": []
+    }
+  ],
+  "real_header_checks_passed": 96,
+  "most_control_rows": 66,
+  "retained_header_bytes": 44530560,
+  "range_requests": 1718
+}

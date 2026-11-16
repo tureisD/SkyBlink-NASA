@@ -35,6 +35,7 @@ RUN python -m pip install --no-cache-dir -r /app/backend/requirements.txt
 
 COPY backend/ /app/backend/
 COPY data/catalog-exposure-index.json /app/data/catalog-exposure-index.json
+COPY data/archive-spatial-index.json.gz /app/data/archive-spatial-index.json.gz
 COPY golden_cache/wise_0855/ /app/golden_cache/wise_0855/
 COPY golden_cache/barnards_star/ /app/golden_cache/barnards_star/
 COPY golden_cache/eps_indi_b/ /app/golden_cache/eps_indi_b/

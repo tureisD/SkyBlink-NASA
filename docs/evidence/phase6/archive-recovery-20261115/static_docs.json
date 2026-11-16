@@ -1,0 +1,12 @@
+{
+  "name": "static_docs",
+  "url": "https://irsa.ipac.caltech.edu/cloud_access/",
+  "request_headers": {},
+  "requested_at": "2026-11-15T22:05:22.727522+00:00",
+  "status": 200,
+  "bytes_read": 15392,
+  "sha256": "406d90b900b1b1acd0dff492b444aa3efd819ba0237c6a6e3908e2a573240fde",
+  "content_range": null,
+  "fits_signature": false,
+  "elapsed_seconds": 1.547
+}

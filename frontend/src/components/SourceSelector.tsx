@@ -15,14 +15,15 @@ export function SourceSelector({
     <label className="source-selector">
       Data source{" "}
       <select
-        value={source === "archive" && discovery === "known" ? "known" : source}
+        value={source === "archive" && discovery !== "live" ? discovery : source}
         onChange={(event) =>
-          event.target.value === "known"
-            ? onChange("archive", "known")
+          event.target.value === "known" || event.target.value === "indexed"
+            ? onChange("archive", event.target.value as DiscoveryMode)
             : onChange(event.target.value as DataAccess, "live")
         }
       >
         <option value="archive">Online archive — fresh search</option>
+        <option value="indexed">Online archive - indexed coverage</option>
         <option value="known" disabled={!savedAvailable}>
           Known exposures — fresh downloads
         </option>

@@ -67,7 +67,7 @@ export function TopBar({
             {source === "archive"
               ? discovery === "known"
                 ? "Known exposures / fresh downloads"
-                : "Online archive / fresh search"
+                : discovery === "indexed" ? "Indexed archive / fresh downloads" : "Online archive / fresh search"
               : "Saved observations"}
           </span>
         ) : (

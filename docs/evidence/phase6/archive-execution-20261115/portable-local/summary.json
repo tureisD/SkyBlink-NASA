@@ -1,0 +1,117 @@
+[
+  {
+    "name": "availability",
+    "url": "https://irsa.ipac.caltech.edu/TAP/availability",
+    "requested_at": "2026-11-15T22:12:47.106933+00:00",
+    "socket_timeout_seconds": 10.0,
+    "status": 502,
+    "final_url": "https://irsa.ipac.caltech.edu/TAP/availability",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Sun, 15 Nov 2026 22:12:48 GMT",
+      "Content-Type": "text/html; charset=iso-8859-1"
+    },
+    "bytes_retained": 341,
+    "truncated": false,
+    "sha256": "6c5cbf315d1e65021bda341d39f2f9126b1e63d3099d07c315894bd11add085b",
+    "xml": false,
+    "science_query_success": false,
+    "elapsed_seconds": 1.094
+  },
+  {
+    "name": "schema",
+    "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+TOP+1+table_name+FROM+TAP_SCHEMA.tables&FORMAT=votable&MAXREC=1",
+    "requested_at": "2026-11-15T22:12:48.203405+00:00",
+    "socket_timeout_seconds": 10.0,
+    "status": 502,
+    "final_url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+TOP+1+table_name+FROM+TAP_SCHEMA.tables&FORMAT=votable&MAXREC=1",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Sun, 15 Nov 2026 22:12:48 GMT",
+      "Content-Type": "text/html; charset=iso-8859-1"
+    },
+    "bytes_retained": 341,
+    "truncated": false,
+    "sha256": "6c5cbf315d1e65021bda341d39f2f9126b1e63d3099d07c315894bd11add085b",
+    "xml": false,
+    "science_query_success": false,
+    "elapsed_seconds": 0.656
+  },
+  {
+    "name": "catalog",
+    "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+TOP+1+ra%2Cdec+FROM+fp_psc&FORMAT=votable&MAXREC=1",
+    "requested_at": "2026-11-15T22:12:48.855471+00:00",
+    "socket_timeout_seconds": 10.0,
+    "status": 502,
+    "final_url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+TOP+1+ra%2Cdec+FROM+fp_psc&FORMAT=votable&MAXREC=1",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Sun, 15 Nov 2026 22:12:49 GMT",
+      "Content-Type": "text/html; charset=iso-8859-1"
+    },
+    "bytes_retained": 341,
+    "truncated": false,
+    "sha256": "6c5cbf315d1e65021bda341d39f2f9126b1e63d3099d07c315894bd11add085b",
+    "xml": false,
+    "science_query_success": false,
+    "elapsed_seconds": 0.578
+  },
+  {
+    "name": "plane",
+    "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+TOP+1+planeid+FROM+spherex.plane&FORMAT=votable&MAXREC=1",
+    "requested_at": "2026-11-15T22:12:49.441012+00:00",
+    "socket_timeout_seconds": 10.0,
+    "status": 502,
+    "final_url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+TOP+1+planeid+FROM+spherex.plane&FORMAT=votable&MAXREC=1",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Sun, 15 Nov 2026 22:12:51 GMT",
+      "Content-Type": "text/html; charset=iso-8859-1"
+    },
+    "bytes_retained": 341,
+    "truncated": false,
+    "sha256": "6c5cbf315d1e65021bda341d39f2f9126b1e63d3099d07c315894bd11add085b",
+    "xml": false,
+    "science_query_success": false,
+    "elapsed_seconds": 1.609
+  },
+  {
+    "name": "obscore",
+    "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+TOP+1+obs_id%2Caccess_url+FROM+spherex.obscore&FORMAT=votable&MAXREC=1",
+    "requested_at": "2026-11-15T22:12:51.061608+00:00",
+    "socket_timeout_seconds": 10.0,
+    "exception": "URLError",
+    "message": "<urlopen error _ssl.c:989: The handshake operation timed out>",
+    "science_query_success": false,
+    "elapsed_seconds": 10.25
+  },
+  {
+    "name": "official_sia",
+    "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_dr1&POS=circle+127.69444+-39.17760+0.01&RESPONSEFORMAT=HTML",
+    "requested_at": "2026-11-15T22:13:01.313067+00:00",
+    "socket_timeout_seconds": 10.0,
+    "exception": "TimeoutError",
+    "message": "The read operation timed out",
+    "science_query_success": false,
+    "elapsed_seconds": 10.454
+  },
+  {
+    "name": "static_control",
+    "url": "https://irsa.ipac.caltech.edu/cloud_access/",
+    "requested_at": "2026-11-15T22:13:11.758396+00:00",
+    "socket_timeout_seconds": 10.0,
+    "status": 200,
+    "final_url": "https://irsa.ipac.caltech.edu/cloud_access/",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Sun, 15 Nov 2026 22:13:12 GMT",
+      "Content-Type": "text/html"
+    },
+    "bytes_retained": 15392,
+    "truncated": false,
+    "sha256": "406d90b900b1b1acd0dff492b444aa3efd819ba0237c6a6e3908e2a573240fde",
+    "xml": false,
+    "science_query_success": false,
+    "elapsed_seconds": 0.796
+  }
+]

@@ -1,0 +1,12 @@
+# Local-only files that must not be uploaded with a deployment.
+.venv-local
+.venv
+.venv311
+venv
+backend/.cache
+frontend/node_modules
+frontend/dist
+docs
+agents
+*.zip
+*.tar.gz

@@ -48,7 +48,9 @@ export function FieldsPanel(props: FieldsPanelProps) {
               ? "Historical observations; comparison unvalidated."
               : props.discovery === "known"
                 ? "Verified exposure list, fresh downloads. No new coverage search."
-                : "Fresh archive search and downloads."}
+                : props.discovery === "indexed"
+                  ? "Limited spatial index, fresh online downloads. Coverage outside the index is unknown."
+                  : "Fresh archive search and downloads."}
           </p>
           {props.spectrumDiscovery === "known" && (
             <p className="spectrum-mode-note">

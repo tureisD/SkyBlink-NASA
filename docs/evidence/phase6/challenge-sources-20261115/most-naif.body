@@ -1,0 +1,20 @@
+\output_url = "https://irsa.ipac.caltech.edu/workspace/TMP_sVDri7_2981181/MOST/pid2981181"
+\catalog = "spherex"
+\user_input_begin_time = "2025 08 01"
+\user_input_end_time = "2025 08 02"
+\object_name = "Neptune (899)"
+\element_epoch = "60888.0000   (2025-Aug-01 00:00:00.0000)"
+\eccentricity = " 0.011694618012584"
+\inclination = " 1.774270029416790"
+\argument_perihelion = "273.373976605167627"
+\ascending_node = "131.934126253533492"
+\semimajor_axis  =  "30.139055658970172"
+\mean_anomaly = "315.719541290631696"
+\magnitude_parameters = " 0.00  0.00" 
+\job_time_stamp = "Sun Nov 15 14:26:29 2026"
+\description = MOST ODBC query result
+\ odbc_dsn = postgres
+\ odbc_table = (null)
+\fixlen = T
+|    ra_obj|   dec_obj|sun_dist|geo_dist|  dist_ctr|   phase|  vmag|match|                                                                                                                     proposal_id|                                                     target_name|target_moving|                                                                                                                                                                                                                                                  observationid|                             planeid|                                                       productid|      instrument|              start_date|                end_date|               mjd_start|                 mjd_end|           exposure_time|                      ra|                     dec|                     ra1|                    dec1|                     ra2|                    dec2|                     ra3|                    dec3|                     ra4|                    dec4|                                                                                                                                                                                                                                                            uri|
+|    double|    double|  double|  double|    double|  double|double|  int|                                                                                                                            char|                                                            char|         char|                                                                                                                                                                                                                                                           char|                                char|                                                            char|            char|                    char|                    char|                  double|                  double|                  double|                  double|                  double|                  double|                  double|                  double|                  double|                  double|                  double|                  double|                  double|                                                                                                                                                                                                                                                           char|

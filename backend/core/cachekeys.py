@@ -94,11 +94,14 @@ def live_asset_key(
     *, discovery_mode: str = "live",
 ) -> str:
     """Return ``live_<16 hex chars>`` for an arbitrary-coordinate query."""
-    if discovery_mode not in {"live", "known"}:
+    if discovery_mode not in {"live", "known", "indexed"}:
         raise ValueError("Unknown discovery mode")
     query = canonical_query(ra, dec, size, bands, epochs, include_diff)
-    if discovery_mode == "known":
-        query += "_discovery_known"
+    if discovery_mode != "live":
+        query += "_discovery_" + discovery_mode
+    if discovery_mode == "indexed":
+        from core.archive_index_approval import INDEX_SHA256
+        query += "_index_" + INDEX_SHA256
     digest = hashlib.sha256(query.encode("utf-8")).hexdigest()
     return f"live_{digest[:16]}"
 

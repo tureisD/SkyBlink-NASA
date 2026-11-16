@@ -2,6 +2,9 @@
 import type { AnalysisProvenance, ObservationRange, SpectrumChannel, SpectrumResponse, Target, TelemetryAsset } from "./types";
 
 export function discoveryNotice(provenance: AnalysisProvenance): string | null {
+  if (provenance.discovery_mode === "indexed") {
+    return "Images downloaded online using a limited spatial index. Coverage and newer observations outside the index are unknown.";
+  }
   if (provenance.discovery_mode === "known") {
     return "Using a previously verified exposure list; no new archive search. Newer observations may exist.";
   }

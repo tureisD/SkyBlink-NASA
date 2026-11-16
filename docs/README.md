@@ -4,11 +4,14 @@ Start with the current guides below. Dated verification reports describe what
 was tested at that checkpoint; they are not promises about today's archive
 availability or broader scientific accuracy.
 
-**Current status — 2026-11-15:** API 1.6.0, image method 13. Fresh archive
-discovery remains unavailable in the tested environment, including through the
-official Explorer. Explicit known-exposure mode can download the five catalog
-fields online, but cannot discover new coverage or serve arbitrary positions.
-Publishing is deferred and the current container remains unverified.
+**Current status - 2026-11-16:** API 1.7.0, image method 13. Explicit indexed
+archive acquisition is integrated with the newer frontend and has returned
+fresh two-epoch comparisons for three catalog fields, an arbitrary-coordinate
+image and a WISE spectrum. The 5,223-exposure metadata index has limited scope;
+TAP/SIA live discovery remains unavailable and some transfers fail. See
+[current limitations](current-limitations-and-next-steps.md) for the local link,
+per-target outcomes and remaining work. Publishing is deferred and the current
+container remains unverified.
 
 ## Start here
 
@@ -18,6 +21,7 @@ Publishing is deferred and the current container remains unverified.
 | Use the interface, compare dates and inspect spectra | [Observing guide](guides/observing-guide.md) |
 | Understand what a result does and does not establish | [Result meanings](guides/result-meaning.md) |
 | See current blockers, priorities and time estimates | [Current limitations and next steps](current-limitations-and-next-steps.md) |
+| Diagnose and restore online archive discovery | [Archive recovery plan and fresh probe results](plans/archive-recovery-plan-2026-11-15.md) |
 | Follow the implementation phases | [Audit and remediation plan](audit-and-remediation-plan-2026-11-14.md) |
 | Trace inputs and reproduce recorded arithmetic | [Reproducibility](guides/reproducibility.md) and [real evidence walkthrough](guides/phase4-evidence-walkthrough.md) |
 | Write the data, architecture and mathematics documentation | [Documentation writing plan](plans/documentation-writing-plan.md) |
@@ -25,6 +29,11 @@ Publishing is deferred and the current container remains unverified.
 | Understand real-data requirements | [Real-data policy](guides/real-data-policy.md) |
 
 ## Current evidence
+
+- [Integrated indexed archive verification](verification/archive-recovery-execution-2026-11-15.md): actual online image/spectrum responses, browser checks, limited coverage and remaining failures.
+
+
+- [Archive recovery execution](verification/archive-recovery-execution-2026-11-15.md): fresh transport failures, portable support bundle and measured AWS header-index feasibility.
 
 - [Renewed archive-search investigation](verification/phase6-archive-search-renewed.md): official Explorer, alternate TAP routes and remaining blockage.
 - [Discovery diagnosis and download recovery](verification/phase6-live-discovery-diagnosis.md): method-13 scope, actual WISE acquisition and replay.

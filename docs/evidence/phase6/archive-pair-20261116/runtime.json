@@ -1,0 +1,27 @@
+[
+  {
+    "url": "http://127.0.0.1:8000/api/v1/health",
+    "status": 200,
+    "health": {
+      "status": "ok",
+      "version": "1.6.0",
+      "irsa_reachable": false,
+      "cache_entries": 678
+    }
+  },
+  {
+    "url": "http://127.0.0.1:5173/api/v1/health",
+    "status": 200,
+    "health": {
+      "status": "ok",
+      "version": "1.6.0",
+      "irsa_reachable": false,
+      "cache_entries": 678
+    }
+  },
+  {
+    "url": "http://127.0.0.1:5173/",
+    "status": 200,
+    "health": null
+  }
+]

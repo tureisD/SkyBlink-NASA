@@ -1,0 +1,14 @@
+{
+  "name": "cloud_root",
+  "requested_at": "2026-11-15T22:10:51.225812+00:00",
+  "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/?list-type=2&delimiter=%2F&max-keys=1000",
+  "status": 200,
+  "bytes": 725,
+  "sha256": "982be1c23aa6bae34bd53d62cb62dd9b53881520a5db3a2b55173b0be84ecdcf",
+  "headers": {
+    "server": "AmazonS3",
+    "date": "Sun, 15 Nov 2026 22:10:53 GMT",
+    "content-type": "application/xml"
+  },
+  "elapsed_seconds": 0.86
+}

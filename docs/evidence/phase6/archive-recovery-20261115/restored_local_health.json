@@ -1,0 +1,9 @@
+{
+  "name": "restored_local_health",
+  "url": "http://127.0.0.1:8000/api/v1/health",
+  "request_headers": {},
+  "requested_at": "2026-11-15T22:05:23.990135+00:00",
+  "exception": "ConnectError",
+  "message": "[WinError 10061] No connection could be made because the target machine actively refused it",
+  "elapsed_seconds": 2.391
+}

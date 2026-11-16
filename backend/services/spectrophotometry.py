@@ -82,11 +82,14 @@ MOLECULAR_FEATURES: tuple[dict[str, Any], ...] = (
 def spectrum_asset_key(ra: float, dec: float, *, target_id: str | None = None,
                        discovery_mode: str = "live") -> str:
     """Stable server-side cache key for an arbitrary-coordinate spectrum."""
-    if discovery_mode not in {"live", "known"}:
+    if discovery_mode not in {"live", "known", "indexed"}:
         raise ValueError("Unknown discovery mode")
     query = f"native_spectrum|{target_id}|{float(ra):.10f}_{float(dec):.10f}"
-    if discovery_mode == "known":
-        query += "|discovery_known"
+    if discovery_mode != "live":
+        query += "|discovery_" + discovery_mode
+    if discovery_mode == "indexed":
+        from core.archive_index_approval import INDEX_SHA256
+        query += "|index_" + INDEX_SHA256
     digest = hashlib.sha256(query.encode("utf-8")).hexdigest()
     return f"live_{digest[:16]}"
 
@@ -402,8 +405,12 @@ def _build_spectrum(
     Live discovery, fallback, downloads and extraction share one deadline;
     ``max_epochs`` limits the build to the latest N full-set epochs.
     """
-    if discovery_mode not in {"live", "known"}:
+    if discovery_mode not in {"live", "known", "indexed"}:
         raise ValueError("Unknown discovery mode")
+    if discovery_mode == "indexed":
+        if not live_mode:
+            raise ValueError("Indexed discovery requires an explicit online request")
+        force_refresh = True
     if discovery_mode == "known":
         if not live_mode or target_record is None:
             raise ValueError("Known discovery requires an explicit live catalog request")
@@ -439,9 +446,12 @@ def _build_spectrum(
     if discovery_mode == "known":
         from services.known_exposures import KnownExposureClient
         client = KnownExposureClient(client.settings, target_id=target_record.id, deadline_at=deadline_at)
+    if discovery_mode == "indexed":
+        from services.indexed_archive import IndexedArchiveClient
+        client = IndexedArchiveClient(client.settings, deadline_at=deadline_at)
     if archive_client is not None:
-        if discovery_mode == "known":
-            raise ValueError("Known discovery cannot substitute a caller-provided inventory")
+        if discovery_mode in {"known", "indexed"}:
+            raise ValueError("Explicit indexed discovery cannot substitute a caller-provided inventory")
         client = archive_client
     records = client.query_artifacts(
         float(ra),

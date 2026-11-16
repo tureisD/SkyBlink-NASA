@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VOTABLE version="1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:stc="http://www.ivoa.net/xml/STC/v1.30" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/STC/v1.30 http://www.ivoa.net/xml/STC/v1.30">
+  <RESOURCE ID="ibe-cutout" type="meta" utype="adhoc:service">
+    <DESCRIPTION>Link to generate an image cutout</DESCRIPTION>
+    <GROUP name="inputParams">
+      <PARAM name="ra" datatype="double" ref="col_13" ucd="pos.eq.ra;meta.main" value="">
+        <DESCRIPTION>center RA (J2000)</DESCRIPTION>
+      </PARAM>
+      <PARAM name="dec" datatype="double" ref="col_14" ucd="pos.eq.dec;meta.main" value="">
+        <DESCRIPTION>center DEC (J2000)</DESCRIPTION>
+      </PARAM>
+      <PARAM name="size" datatype="double" ucd="phys.size" value="0.01">
+        <DESCRIPTION>cutout size in degrees</DESCRIPTION>
+      </PARAM>
+      <PARAM name="path" datatype="char" arraysize="*" ref="col_12" value="">
+        <DESCRIPTION>Path to input file</DESCRIPTION>
+      </PARAM>
+    </GROUP>
+    <PARAM name="accessURL" datatype="char" arraysize="*" ucd="meta.ref.url" value="https://irsa.ipac.caltech.edu/ibe/cutout"/>
+  </RESOURCE>
+  <RESOURCE type="results">
+    <INFO name="QUERY_STATUS" value="OK"/>
+    <TABLE>
+      <FIELD name="id" datatype="char" arraysize="*" ID="col_0" ucd="meta.id;meta.main">
+        <DESCRIPTION>Unique identifier</DESCRIPTION>
+      </FIELD>
+      <FIELD name="access_url" datatype="char" arraysize="*" ID="col_1" ucd="meta.ref.url"/>
+      <FIELD name="service_def" datatype="char" arraysize="*" ID="col_2" ucd="meta.ref"/>
+      <FIELD name="error_message" datatype="char" arraysize="*" ID="col_3" ucd="meta.code.error"/>
+      <FIELD name="semantics" datatype="char" arraysize="*" ID="col_4" ucd="meta.code"/>
+      <FIELD name="description" datatype="char" arraysize="*" ID="col_5" ucd="meta.note"/>
+      <FIELD name="content_type" datatype="char" arraysize="*" ID="col_6" ucd="meta.code.mime"/>
+      <FIELD name="content_length" datatype="long" ID="col_7" ucd="phys.size;meta.file" unit="byte"/>
+      <FIELD name="content_qualifier" datatype="char" arraysize="*" ID="col_8"/>
+      <FIELD name="local_semantics" datatype="char" arraysize="*" ID="col_9" ucd="meta.code">
+        <DESCRIPTION>Local tag indicating equivalent meaning or role of &apos;this&apos; link (DataLink-1.1).</DESCRIPTION>
+      </FIELD>
+      <FIELD name="link_auth" datatype="char" arraysize="*" ID="col_10" ucd="meta.code"/>
+      <FIELD name="link_authorized" datatype="boolean" ID="col_11" ucd="meta.code"/>
+      <FIELD name="path" datatype="char" arraysize="*" ID="col_12"/>
+      <FIELD name="center_ra" datatype="double" ID="col_13" ucd="pos.eq.ra" unit="deg" utype="obscore:char.spatialaxis.coverage.location.coord.position2d.value2.c1">
+        <DESCRIPTION>Central Spatial Position in ICRS Right ascension</DESCRIPTION>
+      </FIELD>
+      <FIELD name="center_dec" datatype="double" ID="col_14" ucd="pos.eq.dec" unit="deg" utype="obscore:char.spatialaxis.coverage.location.coord.position2d.value2.c2">
+        <DESCRIPTION>Central Spatial Position in ICRS Declination</DESCRIPTION>
+      </FIELD>
+      <FIELD name="cloud_access" datatype="char" arraysize="*" ID="col_15"/>
+      <DATA>
+        <TABLEDATA>
+        </TABLEDATA>
+      </DATA>
+    </TABLE>
+  </RESOURCE>
+</VOTABLE>

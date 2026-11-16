@@ -1,0 +1,12 @@
+{
+  "url": "http://127.0.0.1:8000/api/v1/sky?source=archive&discovery=live&target_id=wise_0855&ra=133.76021647484097&dec=-7.242224282436729&size=0.2",
+  "status": 503,
+  "elapsed_seconds": 62.203,
+  "body": {
+    "error": {
+      "code": "UPSTREAM_UNAVAILABLE",
+      "message": "Observation discovery incomplete: TAP=IRSA request deadline exhausted; SIA2=SIA2 collection discovery is incomplete: spherex_dr1, spherex_qr3, spherex_dr1_deep, spherex_qr3_deep",
+      "detail": {}
+    }
+  }
+}

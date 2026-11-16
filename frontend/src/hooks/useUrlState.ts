@@ -53,7 +53,7 @@ export interface UrlState {
   comparisonLayout: "single" | "side-by-side";
   advanced: boolean;
   source: "archive" | "saved";
-  discovery: "live" | "known";
+  discovery: "live" | "known" | "indexed";
   spectrumDiscovery: "inherit" | "known";
   ra: number | null;
   dec: number | null;
@@ -472,6 +472,8 @@ function parseUrl(search: string, restorePaused = true): ParseResult {
     state.target !== null
   )
     state.discovery = "known";
+  else if (discovery === "indexed" && state.source === "archive")
+    state.discovery = "indexed";
   else if (discovery === "known")
     warnings.push(
       "Known exposures require an online archive catalog target; recovery mode was not enabled.",

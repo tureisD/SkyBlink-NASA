@@ -1,0 +1,19 @@
+{
+  "name": "most-control",
+  "url": "https://irsa.ipac.caltech.edu/cgi-bin/MOST/nph-most?catalog=spherex&input_type=naifid_input&obj_naifid=899&obs_begin=2025+06+01&obs_end=2025+06+30&output_mode=Brief",
+  "requested_at": "2026-11-15T22:53:59.468965+00:00",
+  "socket_timeout_seconds": 20,
+  "status": 200,
+  "final_url": "https://irsa.ipac.caltech.edu/cgi-bin/MOST/nph-most?catalog=spherex&input_type=naifid_input&obj_naifid=899&obs_begin=2025+06+01&obs_end=2025+06+30&output_mode=Brief",
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sun, 15 Nov 2026 22:54:00 GMT",
+    "Content-Type": "text/plain"
+  },
+  "bytes_retained": 88344,
+  "truncated": false,
+  "sha256": "849c269aa8d9d844d8509095e47eae41aeadacc7532179a77034c62ddb1a8f7c",
+  "xml": false,
+  "science_query_success": false,
+  "elapsed_seconds": 1.891
+}

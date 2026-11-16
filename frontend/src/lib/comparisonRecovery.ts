@@ -8,8 +8,11 @@ export interface ComparisonRecovery {
 export function comparisonRecovery(
   reason: string | null | undefined,
   discoveryStatus?: "complete" | "partial" | "unknown" | null,
-  discoveryMode?: "live" | "known" | null,
+  discoveryMode?: "live" | "known" | "indexed" | null,
 ): ComparisonRecovery {
+  if (!reason && discoveryMode === "indexed") {
+    return { title: "Limited archive index", explanation: "Fresh downloads from the indexed exposures did not establish a temporal comparison. Other coverage and newer observations may exist.", smallerFieldMayHelp: false };
+  }
   if (!reason && discoveryMode === "known") {
     return {
       title: "Known exposure list",

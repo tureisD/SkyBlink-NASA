@@ -1,0 +1,10 @@
+{
+  "name": "tap-existing-artifact",
+  "url": "https://irsa.ipac.caltech.edu/TAP/sync?QUERY=SELECT+TOP+1+uri+FROM+spherex.artifact+WHERE+planeid%3D%2701A0D2DE-63D3-7A96-868D-ACBFF3652C21%27&FORMAT=votable&MAXREC=1",
+  "requested_at": "2026-11-15T22:52:58.988557+00:00",
+  "socket_timeout_seconds": 60,
+  "exception": "TimeoutError",
+  "message": "The read operation timed out",
+  "science_query_success": false,
+  "elapsed_seconds": 60.469
+}

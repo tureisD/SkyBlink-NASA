@@ -1,0 +1,24 @@
+[
+  {
+    "base": "http://127.0.0.1:8000",
+    "status": 200,
+    "body": {
+      "status": "ok",
+      "version": "1.6.0",
+      "irsa_reachable": true,
+      "cache_entries": 678
+    },
+    "seconds": 1.218
+  },
+  {
+    "base": "http://localhost:5173",
+    "status": 200,
+    "body": {
+      "status": "ok",
+      "version": "1.6.0",
+      "irsa_reachable": true,
+      "cache_entries": 678
+    },
+    "seconds": 0.328
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/dr1/hips5_cube/hips_20261026/Norder5/Dir0/Npix445_cube.fits",
+  "request_headers": {
+    "Range": "bytes=0-5759"
+  },
+  "status": 206,
+  "content_type": "application/fits",
+  "content_range": "bytes 0-5759/320909760",
+  "bytes_retained": 5760,
+  "truncated": false,
+  "sha256": "0dcd1f94552e6954280d4f64f88b16062fb398f203e5bfc8dbfcaf1a9060bb6f",
+  "fits_signature": true,
+  "elapsed_seconds": 1.5
+}

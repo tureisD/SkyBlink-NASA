@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Cloud Data Access</title>
+</head>
+
+
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/print_style.css" />
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/ui.css" />
+<script type="text/javascript" src="/ui_verbose.js"></script>
+
+<!--[if lt IE 7]>
+<style type="text/css" media="screen, projection">
+#irsa-menu li
+{
+float: left;
+height: 1%;
+}
+#irsa-menu a
+{
+height: 1%;
+}
+</style>
+<![endif]-->
+</head>
+<body >
+
+<div id="irsa-banner"   style= "min-width:768px; min-height:95px"></div>
+<script type="text/javascript" language='javascript' src='/frontpage/frontpage.nocache.js'> </script>
+
+<div id="content">
+<!--   #include virtual="/include/sysnotice.html"  -->
+
+
+<div class="webpage">
+
+    <h1>Cloud Data Access</h1>
+
+    <p>IRSA datasets are available on Amazon Web Services (AWS) S3 cloud storage.
+        The files are hosted through the AWS Open Data Sponsorship Program, allowing them to be downloaded or accessed directly without credentials or egress charges.
+    </p>
+
+    <p><b><u>Accessing IRSA Data on AWS S3</b></u></p>
+
+    <p>Here are some key terms for accessing data on S3:</p>
+    <ul>
+        <li>Bucket: Container holding objects.</li>
+        <li>Object: Analogous to a file. We ignore the minor differences here and just use "file" for simplicity.</li>
+        <li>S3 prefix: Path to a directory, relative to the bucket.</li>
+        <li>S3 key: Path to a file, relative to the bucket.</li>
+    </ul>
+
+    <p>There are many ways to access the buckets, including:</p>
+    <ul>
+        <li>Python:&ensp;See our <a href="/docs/notebooks/">Notebook Tutorials</a> for python demonstrations.</li>
+        <li>Command line:&ensp;See the <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html">AWS Command Line Interface</a> documentation.
+            <ul>
+                <li>Basic example:
+                    <br><code>aws s3 ls --no-sign-request "s3://${bucket_name}/${prefix}/"</code>
+                </li>
+            </ul>
+        </li>
+        <li>Bulk downloads:&ensp;Download scripts are provided in most buckets.
+            Download scripts for catalogs can also be found through the links at <a href="/data/download/">Catalog Bulk Download</a>.
+        </li>
+    </ul>
+
+    <p><b>Note:</b>
+        The data are freely available and no special permissions or credentials are required.
+        However, most tools will look for credentials by default and raise an error when none are found.
+        To avoid this, make an anonymous connection.
+        Typically this is done by including a parameter such as <code>--no-sign-request</code> or <code>anonymous=True</code>.
+        Consult the tool's documentation for details.
+    </p>
+
+    <hr>
+
+    <!-- SPHEREx -->
+    <h2 id="spherex"><a href="/Missions/spherex.html">SPHEREx</a></h2>
+
+    <p>
+        For descriptions of the releases, data products, and access methods, see the <a href="/spherex-archive-documentation/">SPHEREx Archive User Guide</a>.
+        To find a specific product in the bucket, prepend the S3 prefix listed below to the directory names described at <a href="/spherex-archive-documentation/spherex-data-access/#browsable-directories">Browsable Directories</a>.
+    </p>
+
+    <p>
+        Bucket: <b><code>nasa-irsa-spherex</code></b>
+        <br>Region: us-east-1
+        <br><a href="https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/index.html">Browse nasa-irsa-spherex</a>
+    </p>
+
+    <p><b><u>Data Release 1 (DR1)</u></b></p>
+
+    <p>
+        <a href="https://registry.opendata.aws/spherex-dr1/">registry.opendata.aws/<b>spherex-dr1</b></a> (pending publish by AWS)
+    </p>
+
+    <ul>
+        <li><b>Spectral Images, calibration, and other products</b>
+            <br>S3 prefix: <code>dr1</code>
+        </li>
+    </ul>
+
+    <p><b><u>Quick Release 3 (QR3)</u></b></p>
+
+    <p>
+        <a href="https://registry.opendata.aws/spherex-qr3/">registry.opendata.aws/<b>spherex-qr3</b></a> (pending publish by AWS)
+    </p>
+
+    <ul>
+        <li><b>Spectral Images, calibration, and other products</b>
+            <br>S3 prefix: <code>qr3</code>
+        </li>
+    </ul>
+
+    <p><b><u>Quick Release 2 (QR2)</u></b></p>
+
+    <p>
+        <a href="https://registry.opendata.aws/spherex-qr/">registry.opendata.aws/<b>spherex-qr</b></a>
+    </p>
+
+    <ul>
+        <li><b>Spectral Images, calibration, and other products</b>
+            <br>S3 prefix: <code>qr2</code>
+        </li>
+    </ul>
+
+    <!-- Euclid -->
+    <h2 id="euclid"><a href="/Missions/euclid.html">Euclid</a></h2>
+
+    <p>
+        For descriptions of the releases, data products, and access methods, see the <a href="/euclid-archive-documentation/">Euclid Archive User Guide</a>.
+        To find a specific product in a bucket, prepend the S3 prefix listed below to the directory names described at <a href="/euclid-archive-documentation/data-products/">Data Products</a>.
+    </p>
+
+    <p><b><u>Data Release 1 (DR1)</u></b></p>
+
+    <p>
+        Bucket: <b><code>nasa-irsa-euclid-dr1</code></b>
+        <br>Region: us-east-1
+        <br><a href="https://nasa-irsa-euclid-dr1.s3.us-east-1.amazonaws.com/index.html">Browse nasa-irsa-euclid-dr1</a>
+        <br><a href="https://registry.opendata.aws/euclid-dr1/">registry.opendata.aws/<b>euclid-dr1</b></a> (pending publish by AWS)
+    </p>
+
+    <ul>
+        <li><b>Images, Spectra, and Catalogs</b>
+            <br>S3 prefix: <code>dr1</code>
+        </li>
+    </ul>
+
+    <p>Enhanced Contributed Data Products:</p>
+
+    <ul>
+        <li><b>Catalogs and Spectra in HATS Format</b> (<a href="/docs/parquet_catalogs/">HATS Parquet</a>)
+            <br>S3 prefix: <code>contributed/dr1/hats</code>
+        </li>
+    </ul>
+
+    <p><b><u>Quick Release 2 (Q2)</u></b></p>
+
+    <p>
+        Bucket: <b><code>nasa-irsa-euclid-q2</code></b>
+        <br>Region: us-east-1
+        <br><a href="https://nasa-irsa-euclid-q2.s3.us-east-1.amazonaws.com/index.html">Browse nasa-irsa-euclid-q2</a>
+        <br><a href="https://registry.opendata.aws/euclid-q2/">registry.opendata.aws/<b>euclid-q2</b></a> (pending publish by AWS)
+    </p>
+
+    <ul>
+        <li><b>Images and Catalogs</b>
+            <br>S3 prefix: <code>q2</code>
+        </li>
+    </ul>
+
+    <p><b><u>Quick Release 1 (Q1)</u></b></p>
+
+    <p>
+        Bucket: <b><code>nasa-irsa-euclid-q1</code></b>
+        <br>Region: us-east-1
+        <br><a href="https://nasa-irsa-euclid-q1.s3.us-east-1.amazonaws.com/index.html">Browse nasa-irsa-euclid-q1</a>
+        <br><a href="https://registry.opendata.aws/euclid-q1/">registry.opendata.aws/<b>euclid-q1</b></a>
+    </p>
+
+    <ul>
+        <li><b>Images, Spectra, and Catalogs</b>
+            <br>S3 prefix: <code>q1</code>
+        </li>
+    </ul>
+
+    <p>Enhanced Contributed Data Products:</p>
+
+    <ul>
+        <li><b>Merged Objects HATS Catalog</b> (<a href="/docs/parquet_catalogs/">HATS Parquet</a>)
+            <br>S3 prefix: <code>contributed/q1/merged_objects/hats</code>
+        </li>
+    </ul>
+
+    <!-- WISE -->
+    <h2 id="wise"><a href="/Missions/wise.html">WISE</a></h2>
+
+    <p>
+        Bucket: <b><code>nasa-irsa-wise</code></b>
+        <br>Region: us-west-2
+        <br><a href="https://nasa-irsa-wise.s3.us-west-2.amazonaws.com/index.html">Browse nasa-irsa-wise</a>
+    </p>
+
+    <p><b><u>AllWISE</u></b></p>
+
+    <p>
+        <a href="https://registry.opendata.aws/wise-allwise/">registry.opendata.aws/<b>wise-allwise</b></a>
+    </p>
+
+    <ul>
+        <li><b>Images Atlas</b> (FITS)
+            <br>S3 prefix: <code>wise/allwise/images/p3am_cdd</code>
+            <br>For file naming conventions, see <a href="/ibe/docs/wise/allwise/p3am_cdd/">AllWISE IBE docs</a> and <a href="ibe_to_cloud_paths.html">Map IBE to cloud paths</a>.
+        </li>
+    </ul>
+
+    <p>Enhanced Contributed Data Products:</p>
+
+    <ul>
+        <li><b>Source Catalog</b> (<a href="/docs/parquet_catalogs/">HEALPix Parquet</a>)
+            <br>S3 prefix: <code>wise/allwise/catalogs/p3as_psd/healpix_k5</code>
+            <br>Parquet name: <code>wise-allwise.parquet</code>
+        </li>
+    </ul>
+
+    <p><b><u>All-Sky</u></b></p>
+
+    <p>
+        <a href="https://registry.opendata.aws/wise-allsky/">registry.opendata.aws/<b>wise-allsky</b></a>
+    </p>
+
+    <ul>
+        <li><b>Single-exposure Image Sets</b> (FITS)
+            <br>S3 prefix: <code>wise/allsky/images/4band_p1bm_frm</code>
+            <br>For file naming conventions, see <a href="/ibe/docs/wise/allsky/4band_p1bm_frm/">All-Sky IBE docs</a> and <a href="ibe_to_cloud_paths.html">Map IBE to cloud paths</a>.
+        </li>
+    </ul>
+
+    <p><b><u>3-Band Cryo</u></b></p>
+
+    <p>
+        <a href="https://registry.opendata.aws/wise-cryo-3band/">registry.opendata.aws/<b>wise-cryo-3band</b></a>
+    </p>
+
+    <ul>
+        <li><b>Single-exposure Image Sets</b> (FITS)
+            <br>S3 prefix: <code>wise/cryo-3band/images/3band_p1bm_frm</code>
+            <br>For file naming conventions, see <a href="/ibe/docs/wise/cryo_3band/3band_p1bm_frm/">3-Band Cryo IBE docs</a> and <a href="ibe_to_cloud_paths.html">Map IBE to cloud paths</a>.
+        </li>
+    </ul>
+
+    <p><b><u>Post-Cryo</u></b></p>
+
+    <p>
+        <a href="https://registry.opendata.aws/wise-postcryo/">registry.opendata.aws/<b>wise-postcryo</b></a>
+    </p>
+
+    <ul>
+        <li><b>Single-exposure Image Sets</b> (FITS)
+            <br>S3 prefix: <code>wise/postcryo/images/2band_p1bm_frm</code>
+            <br>For file naming conventions, see <a href="/ibe/docs/wise/postcryo/2band_p1bm_frm/">Post-Cryo IBE docs</a> and <a href="ibe_to_cloud_paths.html">Map IBE to cloud paths</a>.
+        </li>
+    </ul>
+
+    <!-- NEOWISE -->
+    <h2 id="neowise"><a href="/Missions/wise.html">NEOWISE Reactivation</a></h2>
+
+    <p>
+        Bucket: <b><code>nasa-irsa-wise</code></b>
+        <br>Region: us-west-2
+        <br><a href="https://nasa-irsa-wise.s3.us-west-2.amazonaws.com/index.html">Browse nasa-irsa-wise</a>
+    </p>
+
+    <p><b><u>NEOWISE-R</u></b></p>
+
+    <p>
+        <a href="https://registry.opendata.aws/wise-neowiser/">registry.opendata.aws/<b>wise-neowiser</b></a>
+    </p>
+
+    <ul>
+        <li><b>Single-exposure Image Sets</b> (FITS)
+            <br>S3 prefix: <code>wise/neowiser/images/p1bm_frm</code>
+            <br>For file naming conventions, see <a href="/ibe/docs/wise/neowiser/p1bm_frm/">NEOWISE-R IBE docs</a> and <a href="ibe_to_cloud_paths.html">Map IBE to cloud paths</a>.
+        </li>
+    </ul>
+
+    <p>Enhanced Contributed Data Products:</p>
+
+    <ul>
+        <li><b>Single-exposure Source Table</b> (<a href="/docs/parquet_catalogs/">HEALPix Parquet</a>)
+            <br>S3 prefix: <code>wise/neowiser/catalogs/p1bs_psd/healpix_k5/{PART}</code>
+            <br>Parquet name: <code>neowiser-healpix_k5-{PART}.parquet</code>
+            <br>Composed of yearly data releases plus an addendum, stored separately.
+            Replace <code>{PART}</code> with either <code>yearN</code> (where N is an integer, 1&#8209;11) or <code>addendum</code>.
+        </li>
+    </ul>
+
+    <!-- Spitzer -->
+    <h2 id="spitzer"><a href="/Missions/spitzer.html">Spitzer</a></h2>
+
+    <p>
+        Bucket: <b><code>nasa-irsa-spitzer</code></b>
+        <br>Region: us-west-2
+        <br><a href="https://nasa-irsa-spitzer.s3.us-west-2.amazonaws.com/index.html">Browse nasa-irsa-spitzer</a>
+    </p>
+
+    <p><b><u>Spitzer Enhanced Imaging Products (SEIP)</u></b></p>
+
+    <p>
+        <a href="https://registry.opendata.aws/spitzer-seip/">registry.opendata.aws/<b>spitzer-seip</b></a>
+    </p>
+
+    <ul>
+        <li><b>Super Mosaics</b> (FITS)
+            <br>S3 prefix: <code>spitzer/seip/seip_science/images</code>
+        </li>
+    </ul>
+
+    <!-- ZTF -->
+    <h2 id="ztf"><a href="/Missions/ztf.html">Zwicky Transient Facility (ZTF)</a></h2>
+
+    <p>
+        Bucket: <b><code>ipac-irsa-ztf</code></b>
+        <br>Region: us-east-1
+        <br><a href="https://ipac-irsa-ztf.s3.us-east-1.amazonaws.com/index.html">Browse ipac-irsa-ztf</a>
+    </p>
+
+    <p>
+        <a href="https://registry.opendata.aws/ztf/">registry.opendata.aws/<b>ztf</b></a>
+    </p>
+
+    <p><b><u>Data Release 24 (DR24)</u></b></p>
+
+    <p>Enhanced Contributed Data Products:</p>
+
+    <ul>
+        <li><b>Objects Table</b> (<a href="/docs/parquet_catalogs/">HATS Parquet</a>)
+            <br>S3 prefix: <code>ztf/enhanced/dr24/objects/hats</code>
+        </li>
+        <li><b>Lightcurves</b> (<a href="/docs/parquet_catalogs/">HATS Parquet</a>)
+            <br>S3 prefix: <code>ztf/enhanced/dr24/lc/hats</code>
+        </li>
+    </ul>
+
+    <!-- unWISE -->
+    <h2 id="unwise"><a href="/data/WISE/unWISE/overview.html">unWISE</a></h2>
+
+    <p>
+        Bucket: <b><code>nasa-irsa-wise</code></b>
+        <br>Region: us-west-2
+        <br><a href="https://nasa-irsa-wise.s3.us-west-2.amazonaws.com/index.html">Browse nasa-irsa-wise</a>
+    </p>
+
+    <p>
+        <a href="https://registry.opendata.aws/wise-unwise/">registry.opendata.aws/<b>wise-unwise</b></a>
+    </p>
+
+    <p>Enhanced Contributed Data Products:</p>
+
+    <ul>
+        <li><b>Time-Domain Catalog</b> (<a href="/docs/parquet_catalogs/">HEALPix Parquet</a>)
+            <br>S3 prefix: <code>unwise/neo7/catalogs/time_domain/healpix_k5</code>
+            <br>Parquet name: <code>unwise-neo7-time_domain-healpix_k5.parquet</code>
+        </li>
+    </ul>
+
+    <!-- OpenUniverse -->
+    <h2 id="openuniverse"><a href="/data/theory/openuniverse2024/overview.html">OpenUniverse 2024 Matched Rubin and Roman Simulations</a></h2>
+
+    <p>
+        Bucket: <b><code>nasa-irsa-simulations</code></b>
+        <br>Region: us-east-1
+        <br><a href="https://nasa-irsa-simulations.s3.us-east-1.amazonaws.com/index.html">Browse nasa-irsa-simulations</a>
+    </p>
+
+    <p>
+        <a href="https://registry.opendata.aws/openuniverse2024/">registry.opendata.aws/<b>openuniverse2024</b></a>
+    </p>
+
+    <p><b><u>Preview</u></b></p>
+
+    <ul>
+        <li><b>Preview of Roman simulated data products</b> (FITS, Parquet)
+            <br>S3 prefix: <code>openuniverse2024/roman/preview</code>
+        </li>
+        <li><b>Preview of Rubin simulated data products</b> (FITS, Parquet)
+            <br>S3 prefix: <code>openuniverse2024/rubin/preview</code>
+        </li>
+    </ul>
+
+    <p><b><u>Full area release</u></b></p>
+
+    <ul>
+        <li><b>Full area release of Roman simulated data products</b> (FITS, Parquet)
+            <br>S3 prefix: <code>openuniverse2024/roman/full</code>
+        </li>
+        <li><b>Full area release of Rubin simulated data products</b> (FITS, Parquet)
+            <br>S3 prefix: <code>openuniverse2024/rubin/full</code>
+        </li>
+    </ul>
+
+    <hr>
+
+    <p>
+        <b>Requesting additional datasets:</b>&ensp;If there are other IRSA holdings that you would like us to make available on the cloud, please contact IRSA's <a href="/docs/help_desk.html">Help Desk</a>.
+    </p>
+
+    
+</div> <!-- end #content -->
+<div id="irsa-footer" style="position:absolute;left:0;right:0;margin-top:20px">
+<iframe src="/frontpage/footer.html" width="100%" frameborder=0 scrolling=0 seamless=1/>
+</div>  <!-- end #irsa-footer -->
+
+</body>
+</html>
+
+
+</div>
+
+</html>

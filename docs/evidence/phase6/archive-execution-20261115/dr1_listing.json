@@ -1,0 +1,32 @@
+{
+  "prefix": "dr1/",
+  "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/?list-type=2&delimiter=%2F&prefix=dr1%2F&max-keys=1000",
+  "status": 200,
+  "elapsed_seconds": 0.828,
+  "sha256": "4c44c4d525d10b0e5ae78c86ad09b7eb969c30c962544a2ecb2f499e97534b9a",
+  "truncated": "false",
+  "prefixes": [
+    "dr1/abs_gain_matrix/",
+    "dr1/aurora_template/",
+    "dr1/dark/",
+    "dr1/dichroic/",
+    "dr1/epsf/",
+    "dr1/gain_factors/",
+    "dr1/he_template/",
+    "dr1/hips5_cube/",
+    "dr1/l3_flux_corrections/",
+    "dr1/level2/",
+    "dr1/nonfunc_v2/",
+    "dr1/nonlinear_pars/",
+    "dr1/readnoise_pars/",
+    "dr1/shuttle_glow_template/",
+    "dr1/sip/",
+    "dr1/solid_angle_pixel_map/",
+    "dr1/spectral_channels/",
+    "dr1/spectral_wcs/",
+    "dr1/xtalk_class1/",
+    "dr1/xtalk_class2/",
+    "dr1/zodi_scaling_v2/"
+  ],
+  "objects": []
+}

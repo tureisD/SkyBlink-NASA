@@ -128,6 +128,9 @@ def test_real_only_guard_detects_modified_and_unapproved_assets(tmp_path):
     metadata.parent.mkdir()
     metadata.write_bytes((ROOT / "data/catalog-exposure-index.json").read_bytes())
     files.append({"path": "data/catalog-exposure-index.json", "sha256": digest(metadata), "approved_runtime_metadata": True})
+    spatial = tmp_path / "data/archive-spatial-index.json.gz"
+    spatial.write_bytes((ROOT / "data/archive-spatial-index.json.gz").read_bytes())
+    files.append({"path": "data/archive-spatial-index.json.gz", "sha256": digest(spatial), "approved_runtime_metadata": True})
     inventory = tmp_path / "inventory.json"
     inventory.write_text(json.dumps({"files": files}))
     assert verify(tmp_path, inventory) == []

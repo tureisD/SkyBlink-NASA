@@ -3,7 +3,7 @@
   "info": {
     "title": "SPHEREx SkyBlink API",
     "description": "Contract for the SPHEREx SkyBlink public web tool. Schemas are defined in backend/models and AGENTS.md \u00a73.",
-    "version": "1.6.0"
+    "version": "1.7.0"
   },
   "paths": {
     "/api/v1/health": {
@@ -194,7 +194,8 @@
             "schema": {
               "enum": [
                 "live",
-                "known"
+                "known",
+                "indexed"
               ],
               "type": "string",
               "default": "live",
@@ -320,7 +321,8 @@
             "schema": {
               "enum": [
                 "live",
-                "known"
+                "known",
+                "indexed"
               ],
               "type": "string",
               "default": "live",
@@ -946,7 +948,8 @@
                 "type": "string",
                 "enum": [
                   "live",
-                  "known"
+                  "known",
+                  "indexed"
                 ]
               },
               {
@@ -1405,7 +1408,8 @@
                 "type": "string",
                 "enum": [
                   "live",
-                  "known"
+                  "known",
+                  "indexed"
                 ]
               },
               {

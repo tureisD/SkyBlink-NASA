@@ -98,7 +98,7 @@ export interface MeasurementAvailability {
 
 export interface AnalysisProvenance {
   data_access?: "archive" | "saved" | null;
-  discovery_mode?: "live" | "known" | null;
+  discovery_mode?: "live" | "known" | "indexed" | null;
   discovery_status?: "complete" | "partial" | "unknown" | null;
   missing_collections?: string[] | null;
   analysis_id?: string | null;

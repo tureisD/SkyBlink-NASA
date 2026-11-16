@@ -15,6 +15,7 @@ from pathlib import Path
 
 TARGETS = ("wise_0855", "barnards_star", "eps_indi_b", "rw_aurigae", "r_draconis")
 KNOWN_EXPOSURE_INDEX = "data/catalog-exposure-index.json"
+SPATIAL_EXPOSURE_INDEX = "data/archive-spatial-index.json.gz"
 EDUCATIONAL_UI = {
     "frontend/public/help/guide-workspace.png",
     "frontend/public/help/guide-compare.png",
@@ -24,6 +25,7 @@ DATA_SUFFIXES = {".json", ".jsonc", ".yaml", ".yml", ".toml", ".csv", ".tsv",
                  ".webp", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".pdf",
                  ".gz", ".fits", ".fit", ".bin", ".lock"}
 TEST_INPUTS = {
+    "backend/tests/test_indexed_archive.py": "Reviewed real spatial metadata and isolated invalid hashes/protocol inputs verify partial coverage, arbitrary positions, mode contracts and distinct work identities; no generated sky observations.",
     "frontend/qa/phase6/browser-compare-sidebar.mjs": "Narrow relocation regression uses explicit saved Epsilon Indi B to verify left-rail comparison controls, native keyboard order, A/B/layout selection and persistent real-frame playback; no archive acquisition or generated observations.",
     "backend/tests/test_build_limits.py": "Isolated temporary storage trees, capacity values and concurrency synchronization test admission and immutable retention; no generated observations.",
     "frontend/qa/phase6/browser-release.mjs": "Real saved products verify compact navigation, persistent canvas, responsive layout, notifications, modal focus, differences and reduced motion; no generated observations.",
@@ -140,6 +142,11 @@ def inventory(root: Path) -> dict:
                         source_analysis_ids=[value["analysis_id"] for value in index["targets"].values()],
                         source_analysis_record_sha256=[value["analysis_record_sha256"] for value in index["targets"].values()],
                         limitation="Explicit known-exposure lookup only; historical bounded inventory, never complete current discovery. FITS must be downloaded fresh and all current gates rerun.")
+        elif raw == SPATIAL_EXPOSURE_INDEX:
+            item.update(category="bounded_real_spatial_metadata", approved_runtime_metadata=True,
+                        origin="Verified real AWS IMAGE headers: bounded directory scans plus targeted fresh headers at historical catalog addresses; no image pixels",
+                        evidence="docs/decisions/indexed-archive-contract-decision.md",
+                        limitation="Explicit indexed mode only; partial spatial coverage and unknown newer observations. Fresh downloads and unchanged scientific gates required.")
         elif raw == "backend/core/staged_astrometry.json":
             profile = json.loads(content)
             item.update(category="real_catalog_staged_profile", origin="Primary Gaia DR3 and Kirkpatrick et al.2021 astrometry with derived barycentric query coordinates; proposed staging profile only",
@@ -179,8 +186,8 @@ def verify(root: Path, inventory_path: Path, require_dist: bool = False) -> list
                    for item in payload["files"] if item.get("approved_runtime_ui")}
     approved_metadata = {item["path"]: item["sha256"] for item in payload["files"]
                          if item.get("approved_runtime_metadata")}
-    if set(approved_metadata) != {KNOWN_EXPOSURE_INDEX}:
-        errors.append("Exactly the approved bounded exposure metadata index is required")
+    if set(approved_metadata) != {KNOWN_EXPOSURE_INDEX, SPATIAL_EXPOSURE_INDEX}:
+        errors.append("Exactly the two approved bounded exposure metadata indexes are required")
     for name, expected in approved_metadata.items():
         path = root / name
         if not path.is_file() or digest(path) != expected:

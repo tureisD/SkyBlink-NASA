@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "queries": [
+    {
+      "query": "barnards_star-query.json",
+      "candidates": 0,
+      "matches": 0,
+      "seconds": 0.0,
+      "identical": true
+    },
+    {
+      "query": "eps_indi_b-query.json",
+      "candidates": 8,
+      "matches": 0,
+      "seconds": 0.203,
+      "identical": true
+    },
+    {
+      "query": "header_center_control-query.json",
+      "candidates": 17,
+      "matches": 8,
+      "seconds": 0.375,
+      "identical": true
+    },
+    {
+      "query": "independent_position-query.json",
+      "candidates": 0,
+      "matches": 0,
+      "seconds": 0.0,
+      "identical": true
+    },
+    {
+      "query": "r_draconis-query.json",
+      "candidates": 20,
+      "matches": 0,
+      "seconds": 0.484,
+      "identical": true
+    },
+    {
+      "query": "rw_aurigae-query.json",
+      "candidates": 0,
+      "matches": 0,
+      "seconds": 0.0,
+      "identical": true
+    },
+    {
+      "query": "wise_0855-query.json",
+      "candidates": 0,
+      "matches": 0,
+      "seconds": 0.016,
+      "identical": true
+    }
+  ],
+  "index_sha256": "a4c2563ff820cf681d7d6a98d1ed69e7d0f081ed6b85e8ae567b6128c58aba64",
+  "script_sha256": "c2a1bab3f381e62f0dbbabe1421f922cec9289b463bfa2ae1a538874a32c7876",
+  "scope": "Research subset only; not runtime discovery or science acceptance"
+}

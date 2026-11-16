@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "script_sha256": "dc9a1f8819975901ba469189881744ba870f2c3de9c738359bfcb4b60b5bfb8d",
+  "snapshot_sha256": "f813fc326eb55b1fc48f919d37fc9bcb37cd9da14685fe4c5116050283f51de8",
+  "verified_header_hashes": 1718,
+  "real_header_geometry_checks": 96,
+  "samples": [
+    {
+      "path": "docs\\evidence\\phase6\\archive-execution-20261115\\detector-1.header",
+      "sha256": "43ca87012d521a6cb655a9eeb113d5444c7b2ac02a8a121fbd7f6956c8b41d74"
+    },
+    {
+      "path": "docs\\evidence\\phase6\\archive-execution-20261115\\detector-2.header",
+      "sha256": "df27e4bb39f74da2b50542d56f2435a0bf89920c042f693c0380ad5185ddcda0"
+    },
+    {
+      "path": "docs\\evidence\\phase6\\archive-execution-20261115\\detector-3.header",
+      "sha256": "216c04a06903f17d74a0626e923deb5ac2347e971330342065311cce16c25b5e"
+    },
+    {
+      "path": "docs\\evidence\\phase6\\archive-execution-20261115\\detector-4.header",
+      "sha256": "a9dc5ee4ef4b8be7372afc99ffc85d21f5929a2f8160b1761823eff7ea01a70a"
+    },
+    {
+      "path": "docs\\evidence\\phase6\\archive-execution-20261115\\detector-5.header",
+      "sha256": "6669ad13322fdb8eac56e714cc230fa79d27039e457eed47297ff3d60ea3e321"
+    },
+    {
+      "path": "docs\\evidence\\phase6\\archive-execution-20261115\\detector-6.header",
+      "sha256": "d49d37e509aeecaff1b4411578e165bbff5d6ee11a488ad8fb45d6c9f516bcc3"
+    }
+  ],
+  "queries": [
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\qr3-d1\\barnards_star-query.json",
+      "sha256": "c5425d67f1cea62f0e831f177500f5a1af09c8569626fb9cb8077ac3e42ed997",
+      "matches": 0
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\qr3-d1\\eps_indi_b-query.json",
+      "sha256": "01913658fe3976747a121710c8da963e89fd6cde854f25f256c3630901ad3e4c",
+      "matches": 0
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\qr3-d1\\header_center_control-query.json",
+      "sha256": "935116540aee5f91b245935ca9089345700b00b14251aeb1114002773ab6ac5c",
+      "matches": 8
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\qr3-d1\\independent_position-query.json",
+      "sha256": "1d74c9ef4d2f6f5c82155db8e56fec439321c570d5b1f6c4cd7f1c6b7c339b6a",
+      "matches": 0
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\qr3-d1\\r_draconis-query.json",
+      "sha256": "2b76c7ecb8a7e37856bf8e67e4733ddd664bd1200bfc43fa5ce95dd48847b791",
+      "matches": 0
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\qr3-d1\\rw_aurigae-query.json",
+      "sha256": "d1f4f7e48e96b8dd692671670b5b9e0bc4efb9d4f31b6de8fbd737ed08457b0e",
+      "matches": 0
+    },
+    {
+      "path": "backend\\.cache\\archive-index-prototype\\qr3-d1\\wise_0855-query.json",
+      "sha256": "0e21915fa66316e659e710b9395acd1857d2799631e0e595ccc8eaa7de47a8b8",
+      "matches": 0
+    }
+  ],
+  "scope": "Internal header identity, spatial boundary/wrap and receipt checks only"
+}

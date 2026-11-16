@@ -193,7 +193,7 @@ def _source_file_hashes(repo_root: Path) -> dict[str, str]:
     for name in ("backend/requirements.txt", "scripts/build_golden_cache.py",
                  "scripts/replay_analysis.py", "scripts/stage_phase4.py",
                  "scripts/curate_phase4_replay.py", "scripts/bundle_analysis.py",
-                 "backend/core/staged_astrometry.json", "data/catalog-exposure-index.json", "Dockerfile"):
+                 "backend/core/staged_astrometry.json", "data/catalog-exposure-index.json", "data/archive-spatial-index.json.gz", "Dockerfile"):
         if (root / name).is_file():
             paths.add(root / name)
     files = {}

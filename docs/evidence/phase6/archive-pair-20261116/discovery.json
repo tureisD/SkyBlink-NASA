@@ -1,0 +1,109 @@
+{
+  "discovery": {
+    "status": "partial",
+    "method": "research_aws_header_snapshot",
+    "mode": "research_cloud",
+    "query": {
+      "ra": 133.76021647484097,
+      "dec": -7.242224282436729
+    },
+    "scopes": [
+      {
+        "prefix": "dr1/level2/2025W19_1B/l2b-v27-2026-197/3/",
+        "snapshot_sha256": "a8d6dd53060875588a1e43402947291952179f18375f9b1da6c6b0be0ceb2f06",
+        "index_sha256": "de17b46a995d7fc134bc56f832166886235d56edb121d65bc721b4e8ddcc5a06",
+        "indexed_objects": 1812,
+        "headers_complete": true,
+        "started_at": "2026-11-15T23:22:59.112994+00:00",
+        "finished_at": "2026-11-15T23:25:43.626567+00:00"
+      },
+      {
+        "prefix": "dr1/level2/2026W20_1A/l2b-v27-2026-246/3/",
+        "snapshot_sha256": "072befe6842c021f2e6ca027ff522a6dc3a936c1a64071ad94eb119b4c8155a1",
+        "index_sha256": "d7879e8d858e3b450fa953a68eed130b3e6274859c612f19b0e216ecd2ede59e",
+        "indexed_objects": 1672,
+        "headers_complete": true,
+        "started_at": "2026-11-15T23:23:22.080848+00:00",
+        "finished_at": "2026-11-15T23:27:43.884948+00:00"
+      }
+    ],
+    "record_count": 4,
+    "responses": [],
+    "completeness_scope": "Only enumerated detector/period prefixes; archive coverage unknown",
+    "collection_membership": "wide/deep unknown; not inferred",
+    "period_selection": "Historical WISE coverage hints; fresh listing and header discovery",
+    "all_archive_complete": false
+  },
+  "records": [
+    {
+      "uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_1D3_spx_l2b-v27-2026-197.fits",
+      "mjd_lower": 60800.700028461,
+      "mjd_upper": 60800.701360839,
+      "band": 3,
+      "band_name": "SPHEREx-D3",
+      "planeid": "",
+      "release": "DR1",
+      "collection": "unclassified_cloud_subset",
+      "contentlength": 65790720,
+      "s_region": "POLYGON ICRS 133.25046831379356 -6.793443095386925 136.5726771399239 -7.894439205277948 135.60813041084822 -11.251171053204192 132.23105529834638 -10.126708115263067"
+    },
+    {
+      "uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_2D3_spx_l2b-v27-2026-197.fits",
+      "mjd_lower": 60800.701520718,
+      "mjd_upper": 60800.702853096,
+      "band": 3,
+      "band_name": "SPHEREx-D3",
+      "planeid": "",
+      "release": "DR1",
+      "collection": "unclassified_cloud_subset",
+      "contentlength": 65905920,
+      "s_region": "POLYGON ICRS 133.1922617502939 -6.981599151871418 136.51610540271713 -8.082276802856878 135.5515183313869 -11.43920172275132 132.17224201148093 -10.31479746372583"
+    },
+    {
+      "uri": "ibe/data/spherex/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0138_1D3_spx_l2b-v27-2026-197.fits",
+      "mjd_lower": 60800.834437847,
+      "mjd_upper": 60800.835770226,
+      "band": 3,
+      "band_name": "SPHEREx-D3",
+      "planeid": "",
+      "release": "DR1",
+      "collection": "unclassified_cloud_subset",
+      "contentlength": 66418560,
+      "s_region": "POLYGON ICRS 133.4160311436619 -6.2275131341182535 136.7337891773644 -7.329827239953179 135.76883954143 -10.686021449380728 132.39802794759697 -9.560741983155081"
+    },
+    {
+      "uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0033_1D3_spx_l2b-v27-2026-246.fits",
+      "mjd_lower": 61171.096350255,
+      "mjd_upper": 61171.097682633,
+      "band": 3,
+      "band_name": "SPHEREx-D3",
+      "planeid": "",
+      "release": "DR1",
+      "collection": "unclassified_cloud_subset",
+      "contentlength": 66064320,
+      "s_region": "POLYGON ICRS 133.2511319068122 -6.793174887732024 136.5733946917078 -7.894123523371287 135.6088553251766 -11.250844215434748 132.2316730549556 -10.126361153960975"
+    }
+  ],
+  "snapshots": [
+    {
+      "scope": "dr1/level2/2025W19_1B/l2b-v27-2026-197/3/",
+      "listed_objects": 1812,
+      "elapsed_seconds": 164.515,
+      "range_bytes_received": 52185600,
+      "headers_complete": true,
+      "snapshot_sha256": "a8d6dd53060875588a1e43402947291952179f18375f9b1da6c6b0be0ceb2f06",
+      "bound_checks": 16308,
+      "index_build_seconds": 127.485
+    },
+    {
+      "scope": "dr1/level2/2026W20_1A/l2b-v27-2026-246/3/",
+      "listed_objects": 1672,
+      "elapsed_seconds": 261.812,
+      "range_bytes_received": 48153600,
+      "headers_complete": true,
+      "snapshot_sha256": "072befe6842c021f2e6ca027ff522a6dc3a936c1a64071ad94eb119b4c8155a1",
+      "bound_checks": 15048,
+      "index_build_seconds": 86.718
+    }
+  ]
+}

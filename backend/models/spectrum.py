@@ -24,12 +24,14 @@ class SpectrumQuery(APIModel):
     target_id: TargetId | None = None
     epoch_id: str | None = None
     source: Literal["archive", "saved"] = "archive"
-    discovery: Literal["live", "known"] = "live"
+    discovery: Literal["live", "known", "indexed"] = "live"
 
     @model_validator(mode="after")
     def _validate_discovery_scope(self) -> "SpectrumQuery":
         if self.discovery == "known" and (self.source != "archive" or self.target_id is None):
             raise ValueError("known discovery requires source=archive and a catalog target_id")
+        if self.discovery == "indexed" and self.source != "archive":
+            raise ValueError("indexed discovery requires source=archive")
         return self
 
     @field_validator("epoch_id")
@@ -98,7 +100,7 @@ class SpectrumProvenance(APIModel):
     analysis_record_url: str | None = None
     processing_version: str | None = None
     data_access: Literal["archive", "saved"] | None = None
-    discovery_mode: Literal["live", "known"] | None = None
+    discovery_mode: Literal["live", "known", "indexed"] | None = None
     discovery_status: Literal["complete", "partial", "unknown"] = "unknown"
     missing_collections: list[str] = Field(default_factory=list)
 

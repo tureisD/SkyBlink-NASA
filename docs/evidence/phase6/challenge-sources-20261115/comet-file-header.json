@@ -1,0 +1,14 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W31_2A/l2b-v20-2025-264/6/level2_2025W31_2A_0156_1D6_spx_l2b-v20-2025-264.fits",
+  "request_headers": {
+    "Range": "bytes=0-5759"
+  },
+  "status": 206,
+  "content_type": "application/fits",
+  "content_range": "bytes 0-5759/71634240",
+  "bytes_retained": 5760,
+  "truncated": false,
+  "sha256": "ac7423f5caafaff3769bdcfde017ce898e2837bcf079e0f63e7eadbed71f756d",
+  "fits_signature": true,
+  "elapsed_seconds": 3.015
+}

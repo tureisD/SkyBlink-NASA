@@ -89,6 +89,7 @@ export function HelpDialog({ onClose, keyboardOnly = false }: HelpDialogProps) {
               </GuideFigure>
               <dl className="guide-source-list">
                 <div><dt>Online archive — fresh search</dt><dd>Searches current coverage and downloads images. This is the default. If discovery fails, the app reports an error.</dd></div>
+                <div><dt>Online archive - indexed coverage</dt><dd>Searches a limited, verified spatial metadata index and downloads images afresh. Works for coordinates inside indexed exposures. It cannot establish complete coverage or find newer observations outside the index.</dd></div>
                 <div><dt>Known exposures — fresh downloads</dt><dd>For catalog targets only. Downloads real files from a previously verified list; it does not search for newer coverage. Choose it explicitly when archive search is unavailable.</dd></div>
                 <div><dt>Saved catalog data</dt><dd>Opens historical real observations already stored with the app. Their comparisons remain unvalidated. This is an explicit choice, never an automatic fallback.</dd></div>
               </dl>
@@ -130,7 +131,7 @@ export function HelpDialog({ onClose, keyboardOnly = false }: HelpDialogProps) {
               <h3 id="help-more">When you need more</h3>
               <details>
                 <summary>A request failed, or a comparison is missing</summary>
-                <p>Fresh archive discovery is currently unreliable. For a named target, explicitly choose Known exposures — fresh downloads or use Fetch known exposures online when offered. Downloads can still fail, and a downloaded pair must still pass comparison checks. Arbitrary coordinates require working fresh discovery.</p>
+                <p>Fresh archive discovery is currently unreliable. For a named target, explicitly choose Known exposures — fresh downloads or use Fetch known exposures online when offered. Downloads can still fail, and a downloaded pair must still pass comparison checks. Arbitrary coordinates require working live discovery or coverage in the limited spatial index.</p>
                 <p>If only Spectrum fails, Fetch known spectrum online retries that part using the verified list. It leaves the image mode unchanged; source labels show the separate choice. A retrieval failure differs from a successful response with zero eligible samples.</p>
                 <p>Archive requests can take about two minutes. Cancel stops browser waiting; shared server work may continue. A single returned epoch or incomplete search does not prove that no other observations exist.</p>
               </details>

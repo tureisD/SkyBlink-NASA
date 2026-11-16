@@ -1,0 +1,7 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/TAP/availability",
+  "status": 502,
+  "body_preview": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>502 Proxy Error</title>\n</head><body>\n<h1>Proxy Error</h1>\n<p>The proxy server received an invalid\r\nresponse from an upstream server.<br />\r\nThe proxy server could not handle the ",
+  "sha256": "6c5cbf315d1e65021bda341d39f2f9126b1e63d3099d07c315894bd11add085b",
+  "seconds": 0.875
+}

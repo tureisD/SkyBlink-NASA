@@ -1,0 +1,14 @@
+{
+  "name": "cloud_header",
+  "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/dr1/level2/2025W19_1B/l2b-v27-2026-197/3/level2_2025W19_1B_0116_1D3_spx_l2b-v27-2026-197.fits",
+  "request_headers": {
+    "Range": "bytes=0-5759"
+  },
+  "requested_at": "2026-11-15T22:05:22.738022+00:00",
+  "status": 206,
+  "bytes_read": 5760,
+  "sha256": "af9d238c94c065d54aa0d2268d31a6db049af5603e47c7ecf060140c7349dbc2",
+  "content_range": "bytes 0-5759/65790720",
+  "fits_signature": true,
+  "elapsed_seconds": 1.25
+}

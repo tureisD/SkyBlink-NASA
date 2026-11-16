@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-11-15T22:12:47.034742+00:00",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.11.9",
+  "proxy_variable_names_present": [],
+  "system_proxy_schemes": [],
+  "script_sha256": "bd156d33a0cf9e68baaf4486fd8a5cb9de8b115502971c3377eac3312c3c0d0d",
+  "scope": "Read-only diagnostics, not complete discovery or scientific acceptance",
+  "resolved_addresses": [
+    "134.4.54.42"
+  ]
+}

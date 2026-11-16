@@ -1,0 +1,12 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/cgi-bin/MOST/nph-most?catalog=spherex&input_type=name_input&obj_name=3I%2FATLAS&obs_begin=2025+08+01&obs_end=2025+08+02&output_mode=Brief",
+  "request_headers": {},
+  "status": 400,
+  "content_type": "text/plain",
+  "content_range": null,
+  "bytes_retained": 169,
+  "truncated": false,
+  "sha256": "f7e9eaa4947ee6ab2f811b79a6d467b0cea873be2ab8911fc651c6f29835fc5c",
+  "fits_signature": false,
+  "elapsed_seconds": 2.859
+}

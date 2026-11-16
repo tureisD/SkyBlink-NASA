@@ -357,6 +357,8 @@ function drawSpectrumPanel(
     : "SPHEREx spectrum — not available";
   const discoveryLabel = spectrum?.provenance.discovery_mode === "known"
     ? "Known exposures / fresh downloads"
+    : spectrum?.provenance.discovery_mode === "indexed"
+      ? "Indexed archive / fresh downloads (limited coverage)"
     : spectrum?.provenance.data_access === "saved"
       ? "Saved spectrum"
       : spectrum?.provenance.discovery_mode === "live"
@@ -628,6 +630,7 @@ function buildMarkdown(
   lines.push(`- **Data label:** real data · ${input.manifest.provenance.release}`);
   lines.push(`- **Sky data access:** ${input.manifest.provenance.data_access ?? "unrecorded"}`);
   lines.push(`- **Sky discovery mode:** ${input.manifest.provenance.discovery_mode ?? "unrecorded"}`);
+  if (input.manifest.provenance.discovery_mode === "indexed") lines.push("- Limited spatial exposure index; images downloaded afresh. All-sky coverage and newer observations are unknown.");
   if (input.manifest.provenance.discovery_mode === "known") lines.push("- Previously verified exposure list; images downloaded afresh. No new archive coverage search.");
   lines.push(`- **Sky discovery status:** ${input.manifest.provenance.discovery_status ?? "unknown"}`);
   lines.push(`- **Sky missing collections:** ${input.manifest.provenance.missing_collections?.join(", ") || "not recorded"}`);

@@ -20,4 +20,5 @@ readable and are identified as pre-audit visualizations.
 
 # 1.4.0 adds explicit lineage/ranges/telemetry meaning and preserves creation time.
 # 1.6.0 adds explicit known-exposure discovery with fresh upstream downloads.
-API_CONTRACT_VERSION = "1.6.0"
+# 1.7.0 adds explicit bounded spatial-index acquisition with fresh downloads.
+API_CONTRACT_VERSION = "1.7.0"

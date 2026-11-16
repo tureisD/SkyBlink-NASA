@@ -1,0 +1,15 @@
+{
+  "name": "official_sia",
+  "requested_at": "2026-11-15T22:04:21.890169+00:00",
+  "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_dr1&POS=circle+127.69444+-39.17760+0.01&RESPONSEFORMAT=HTML",
+  "timeout_seconds": 25,
+  "status": 502,
+  "bytes": 341,
+  "sha256": "6c5cbf315d1e65021bda341d39f2f9126b1e63d3099d07c315894bd11add085b",
+  "headers": {
+    "server": "nginx",
+    "date": "Sun, 15 Nov 2026 22:04:22 GMT",
+    "content-type": "text/html; charset=iso-8859-1"
+  },
+  "elapsed_seconds": 0.921
+}

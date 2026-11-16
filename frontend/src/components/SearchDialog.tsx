@@ -109,7 +109,7 @@ export function SearchDialog({
                     {field.source === "archive"
                       ? field.discovery === "known"
                         ? "Known exposures / fresh downloads"
-                        : "Online archive / fresh search"
+                        : field.discovery === "indexed" ? "Indexed archive / fresh downloads" : "Online archive / fresh search"
                       : "Saved observations"}{" "}
                     · {field.size}° field
                     {field.spectrumDiscovery === "known"

@@ -5,7 +5,7 @@
 Policy v1.19 approves an explicit `discovery=indexed` source in both image and
 spectrum APIs. The newer landing/frontend is integrated in
 `.cache/archive-frontend-integration` on branch
-`integration/archive-and-frontend-20261116`; frontend port 5174 proxies the
+`integration/archive-and-frontend`; frontend port 5174 proxies the
 integrated API on port 8000. No GitHub commit or push is claimed.
 
 The shipped metadata-only index contains **5,223 records**: 1,718 QR3 detector-1

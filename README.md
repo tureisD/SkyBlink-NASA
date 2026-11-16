@@ -78,7 +78,7 @@ limited; original live TAP/SIA search remains unavailable and downloads can fail
 Final checks: 313 backend tests passed, 19 skipped; frontend build, source/view
 semantics, real-data packaging and the real Chromium WISE comparison/spectrum
 flow passed. [Verification and remaining limitations](docs/current-limitations-and-next-steps.md).
-Integration branch: `integration/archive-and-frontend-20261116`; not merged into
+Integration branch: `integration/archive-and-frontend`; not merged into
 `main`. Older measurements below retain their
 historical scope and describe the earlier styling.
 

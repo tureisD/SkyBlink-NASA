@@ -39,7 +39,7 @@ Seek an official bulk spatial manifest or restored TAP/SIA before claiming
 all-sky/current discovery. Keep acquisition failures distinct from quality
 rejections. No second-network test or current container/public-host acceptance
 is claimed. The integrated work remains on the local integration branch; it
-uses `integration/archive-and-frontend-20261116` for GitHub delivery and has not
+uses `integration/archive-and-frontend` for GitHub delivery and has not
 been merged into `main`.
 
 ## Earlier investigation checkpoints (historical)

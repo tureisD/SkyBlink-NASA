@@ -1,6 +1,6 @@
 # Archive recovery execution — 2026-11-15
 
-## Integrated runtime recovery (November 16 local, API 1.7.0)
+## Integrated runtime recovery (API 1.7.0)
 
 Policy v1.19 approves an explicit `discovery=indexed` source in both image and
 spectrum APIs. The newer landing/frontend is integrated in
@@ -95,7 +95,7 @@ still requires restored official discovery or a much broader versioned index.
 
 The sections below preserve the earlier experiments and their original scope.
 
-## Two-epoch recovery experiment (November 16 local)
+## Two-epoch recovery experiment
 
 **A real two-epoch WISE-field comparison now works through the independent
 index in an isolated research process. The normal app still uses TAP/SIA and
@@ -151,7 +151,7 @@ coverage remain necessary before claiming general archive recovery.
 
 ## Continuation: independent coordinate-index prototype
 
-November 15, 22:48 UTC onward (November 16 locally). **Default application
+November 15, 22:48 UTC onward. **Default application
 archive discovery is still unresolved.** This continuation produced working
 research code for an independent search route; it is not wired into the API.
 

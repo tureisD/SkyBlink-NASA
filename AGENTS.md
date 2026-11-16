@@ -3,7 +3,7 @@
 **Project:** SPHEREx SkyBlink — NASA Space Apps Challenge 2026, *Planet X and SPHEREx*  
 **Repository:** Monorepo — `backend/` (Python 3.11, FastAPI), `frontend/` (React 18, TypeScript, Vite), `scripts/` (data precomputation), `golden_cache/` (offline frames)  
 **GitHub:** <https://github.com/tureisD/SkyBlink> (account `tureisD`) — **private** as of 2026-11-14; make it public or grant judge access before judging if required.
-**Document:** v1.19 (2026-11-16 indexed archive recovery; API contract 1.7.0)
+**Document:** v1.19 (indexed archive recovery; API contract 1.7.0)
 **Companion:** `ROADMAP.md` — product, science, scope, and 48-hour plan.
 **Status:** Execution contract. Changes require Orchestrator approval and a contract version bump.
 

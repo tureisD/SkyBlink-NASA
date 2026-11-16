@@ -66,7 +66,7 @@ This is a completed response with unsupported measurements, not a network failur
 
 ## Current status
 
-**November 16: API 1.7.0 / method 13.** The new frontend and indexed archive
+**API 1.7.0 / method 13.** The new frontend and indexed archive
 mode run locally in `.cache/archive-frontend-integration`.
 [Open WISE online](http://127.0.0.1:5174/?target=wise_0855&source=archive&discovery=indexed)
 or choose **Online archive - indexed coverage**. Actual requests returned paired

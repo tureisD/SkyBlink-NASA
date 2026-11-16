@@ -2,7 +2,7 @@
 
 [Documentation home](README.md) · [Implementation plan](audit-and-remediation-plan-2026-11-14.md)
 
-## Current repair: indexed online acquisition is integrated (November 16)
+## Current repair: indexed online acquisition is integrated
 
 The new frontend and API **1.7.0** now support **Data source -> Online archive -
 indexed coverage**. Open the local [WISE online comparison](http://127.0.0.1:5174/?target=wise_0855&source=archive&discovery=indexed).
@@ -47,7 +47,7 @@ been merged into `main`.
 The following entries describe earlier states, including research-only results;
 the integrated status above supersedes their next-step and runtime statements.
 
-**Two-epoch recovery test (November 16 local):** the independent AWS index
+**Two-epoch recovery test:** the independent AWS index
 now feeds the unchanged processing pipeline successfully: **two real WISE-field
 epochs and a difference product in 30 seconds**, using fresh cutout downloads.
 The targeted scan indexed 3,484 detector-3 exposures and discovered four
@@ -55,7 +55,7 @@ candidates. This is an isolated research result, not an integrated app mode or
 proof of WISE target detection. Both local development servers were restarted;
 TAP still times out. See [results and integration requirements](verification/archive-recovery-execution-2026-11-15.md).
 
-**Independent search prototype (November 15 UTC / November 16 local):**
+**Independent search prototype (November 15 UTC):**
 [the continuation results](verification/archive-recovery-execution-2026-11-15.md)
 now include a working AWS-header coordinate index: 1,718 real exposures indexed
 in 149 seconds, with seven accelerated searches matching exhaustive WCS results.

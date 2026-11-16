@@ -4,7 +4,7 @@ Start with the current guides below. Dated verification reports describe what
 was tested at that checkpoint; they are not promises about today's archive
 availability or broader scientific accuracy.
 
-**Current status - 2026-11-16:** API 1.7.0, image method 13. Explicit indexed
+**Current status:** API 1.7.0, image method 13. Explicit indexed
 archive acquisition is integrated with the newer frontend and has returned
 fresh two-epoch comparisons for three catalog fields, an arbitrary-coordinate
 image and a WISE spectrum. The 5,223-exposure metadata index has limited scope;
